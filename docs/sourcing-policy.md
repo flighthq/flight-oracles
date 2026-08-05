@@ -24,61 +24,94 @@ of assets in-tree (140 JPGs, 31 PNGs, 4 AWD, 4 OBJ, MD5/MD2/3DS meshes) purely s
 examples can run. Every consumer wanting the same coverage pays that cost again, and nobody
 can tell from the tree where any of it came from or what it's licensed under.
 
-## Governing principle: record honestly, remove cheaply
+## Governing principle: report the source's assertion, remove cheaply
 
-We do not pre-emptively exclude files on a guess about rights we can't resolve. We record
-what we actually know, we mark clearly what we *don't* know, and we make any individual file
-removable from the build in one edit.
+We do not pre-emptively exclude files on a guess about rights we can't resolve, and we do not
+second-guess an upstream's stated license. We record **what the source asserted**, we capture
+the evidence of that assertion, and we make any individual file removable in one edit.
 
-This is a deliberate rejection of two easier designs:
+The distinction that makes this work at scale: a manifest entry is not a claim about the
+world, it is a claim about a document. Not *"this file is MIT"* — which we cannot verify for
+409 files and would be overclaiming — but *"retrieved from `rive-app/rive-runtime` at commit
+`abc123`, whose LICENSE stated MIT."* That is mechanically derivable, automatically true, and
+stays true even if upstream's assertion turns out to have been wrong.
 
-- **Blanket include-everything with no metadata** — leaves consumers unable to make their own
-  decisions, and leaves us unable to act quickly on a request.
-- **Blanket exclusion rules** — a rule like "drop anything that looks like third-party IP"
-  has to be maintained by hand against 400+ files, degrades silently as upstreams change, and
-  substitutes our guess for the truth. A fetch script has the same flaw: it encodes a policy
-  in code that nobody re-reads.
+This is the **declared vs. concluded** split that SPDX and every package ecosystem already
+use, so the field names are conventional and existing tooling understands them:
 
-Per-file honest metadata plus per-file exclusion is more work up front and far less work to
-keep correct.
+- **`license.declared`** — always present, derived mechanically from the source. What they
+  said.
+- **`license.concluded`** — optional and rare. Present only where a human actually analysed
+  the file. Its absence is not a gap to be flagged; it is the honest default.
+
+It rejects two easier designs:
+
+- **Include everything with no metadata** — leaves consumers unable to make their own
+  decisions and leaves us unable to act on a request.
+- **Blanket exclusion rules** — "drop anything that looks like third-party IP" must be
+  maintained by hand against 400+ files, degrades silently as upstreams change, and
+  substitutes our guess for the record. A fetch script has the same flaw: policy encoded in
+  code nobody re-reads.
+
+### Capture the assertion, don't just cite it
+
+For every source we snapshot its LICENSE file **as it existed at the pinned commit** into
+`LICENSES/`. If upstream relicenses, restructures, or disappears, our account of what they
+said remains verifiable. This is the difference between *saying* we trusted the source and
+being able to show exactly what we trusted.
 
 ### Honesty includes "we don't know"
 
-Some files have no resolvable license. A `.swf` recovered from a defunct site has an unknown
-author and unknown terms. The correct manifest entry says exactly that — where it was found,
-when, and that the license is unknown — rather than omitting the file to avoid the awkward
-field. An `UNKNOWN` we've labelled is more useful to a downstream consumer than a gap.
+Some files have no resolvable license — a `.swf` recovered from a defunct site has unknown
+author and unknown terms. The entry says exactly that: where it was found, when, and
+`declared: UNKNOWN`. A labelled unknown is more useful to a consumer than an omission.
+
+These entries are also structurally distinct in a way worth marking: they have **no upstream
+asserting anything and nobody to notify** if a dispute arrives (see below). The `source.kind`
+field distinguishes `upstream` (a project making a declaration) from `recovered` (found, with
+no declaration available), because the invalidation loop only has an upstream leg for the
+former.
 
 ### Authorship and subject matter are separate facts
 
-If you model Mickey Mouse, you own the model and not the character, and where one ends and
-the other begins is genuinely blurry. The manifest doesn't try to resolve that blur — it
-records both facts side by side:
+If you model Mickey Mouse you own the model and not the character, and where one ends and the
+other begins is genuinely blurry. The manifest doesn't resolve that blur — where anyone
+happens to notice, it records both facts side by side as optional annotation, not as a
+liability judgment we are obliged to make for every file:
 
 ```yaml
 - path: rivs/adventuretime_marceline-pb.riv
   source:
+    kind: upstream
     repo: rive-app/rive-runtime
     commit: <sha>
     path: renderer/webgpu_player/rivs/adventuretime_marceline-pb.riv
     retrieved: 2026-08-05
   sha256: <sha256>
   license:
-    found: MIT
-    file: LICENSES/rive-runtime-MIT.txt
+    declared: MIT                              # what the source said
+    declaredBy: LICENSES/rive-runtime@<sha>.txt  # snapshot of them saying it
     covers: "Rive's authorship of the .riv (rig, curves, state machine)"
-  depicts:
+  depicts:                                     # optional annotation
     subject: "Marceline and Princess Bubblegum, Adventure Time"
     rightsHolder: "Cartoon Network"
     status: unresolved
-    note: "Upstream's MIT grant covers their authorship; rights in the depicted
-           characters are separate and not established here."
   commercialUse: unknown
 ```
 
-Three honest fields — `license.found`, `license.covers`, `depicts` — say more than any
-include/exclude decision could, and they let a consumer with stricter requirements filter on
-them.
+## Invalidation
+
+If a file is challenged, the challenge is evidence that an upstream declaration was wrong —
+so it flows back to the source rather than stopping with us.
+
+- The entry gets a `dispute:` block recording who, when, and the outcome.
+- **We notify the upstream.** They are distributing the same file under the same declaration
+  and have both the relationship and the standing to resolve it. Routing it to them is what
+  the declared-license model is for.
+- **The pass is batch-aware.** Because every entry records `source.repo` and `commit`, one
+  challenge surfaces every other file from that origin for review. A complaint about one Rive
+  file is information about the other 408, and the manifest can answer that query directly.
+- Removal, if warranted, is the one-line `exclude:` below.
 
 ## Per-file exclusion
 
@@ -107,11 +140,18 @@ without us choosing for them:
 
 - **`<pack>-full`** — everything not explicitly excluded. The default for flight sdk's own
   compatibility suite.
-- **`<pack>-clear`** — filtered to entries with a known permissive license, no unresolved
-  `depicts`, and `commercialUse: true`. For consumers who need a clean provenance story.
+- **`<pack>-permissive`** — filtered to entries whose *declared* license is a recognised
+  permissive SPDX id, with no unresolved `depicts` and `commercialUse: true`.
 
 Both derive from identical metadata, so there is no second policy to maintain and no way for
 the two to drift.
+
+The name is deliberately descriptive of the filter, not of a conclusion. An earlier draft
+called it `-clear`, which implies a clearance we have no basis to grant — if a consumer ships
+commercially on the strength of that name and one declaration was wrong, the name itself was
+a representation. `-permissive` says what the filter did: selected on declared licenses. The
+archive README states plainly that this is filtering on recorded metadata, not legal
+clearance.
 
 ## Sources and what we know about them
 
@@ -120,7 +160,7 @@ the two to drift.
   by this license file. The images may not be used for commercial use of any kind. The
   project file is released into the public domain."* Note the split: the `.spine` project
   file is public domain, the `images/` are restricted. Ships with `commercialUse: false`,
-  which keeps it out of `-clear`. The same per-example `license.txt` pattern runs throughout
+  which keeps it out of `-permissive`. The same per-example `license.txt` pattern runs throughout
   `spine-runtimes/examples/`, so `raptor`, `goblins`, `dragon`, `owl` and the rest each get
   evaluated the same way.
 - **Rive `.riv`** — MIT via root `LICENSE` and `renderer/LICENSE`. A handful
@@ -133,7 +173,17 @@ the two to drift.
   rather than a risk question. For generated SWFs (`misc-ming.all`, `misc-swfmill.all`,
   `misc-mtasc.all`, `misc-swfc.all`) the corresponding source is the generator script in the
   Gnash repo; the manifest entry carries a `sourceCode:` pointer to it.
-- **Recovered SWFs** — `license.found: UNKNOWN`, with the URL and retrieval date recorded.
+- **Recovered SWFs** — `source.kind: recovered`, `license.declared: UNKNOWN`, with the URL and
+  retrieval date recorded. No upstream declaration to snapshot and no upstream to notify.
+
+### Pin the format version, not just the commit
+
+A commit SHA pins *which file we took*; it does not pin *what format that file is in*. If
+upstream re-exports its `.riv` assets to a newer runtime format, the same logical fixture
+starts exercising a different code path than the one we think we're testing, and nothing in
+the manifest would show it. Each entry therefore records the container format version
+(`.riv` runtime version, Spine skeleton version, SWF version byte) parsed from the file
+itself at ingest. Drift detection compares it alongside the SHA-256.
 
 ## Don't fork; extract, pin, vendor
 
