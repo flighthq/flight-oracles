@@ -119,28 +119,32 @@ liability judgment we are obliged to make for every file:
   commercialUse: unknown
 ```
 
-## The one exclusion: declarations that grant no redistribution right
+## The one exclusion: an author who explicitly forbids redistribution
 
-Nothing is excluded on a guess about risk. There is exactly one case where we do not vendor,
-and it is compliance rather than judgement — honouring the declaration and republishing the
-bytes are incompatible. Two shapes:
+Nothing is excluded on a guess about risk. There is one case where we do not vendor, and it
+is compliance rather than judgement — honouring the declaration and republishing the bytes
+are incompatible.
 
-**Explicit prohibition.** The clause says so. Spine's `dragon` (Thiago Brayner) and `hero`
-(XDTech): *"may not be redistributed for any reason"*. glTF's `VirtualCity` (3DRT): *"You are
-not permitted to: Market, distribute, give, transfer, sell or sublicense the products in any
-form"* — its special exemption covers *use* in glTF tool testing, not redistribution.
+**The author says so, in their own licence file.** Spine's `dragon` (Thiago Brayner) and
+`hero` (XDTech), both: *"The project file and images … are provided for demonstration
+purposes only and may not be redistributed for any reason nor used as the basis for
+derivative work."* These are third-party authors whose work sits inside Esoteric Software's
+repository; the other eighteen Spine examples are Esoteric's own and are redistributable.
 
-**Proprietary instruments that grant nothing.** A EULA licenses an end user; a stock-image
-licence licenses a licensee. Neither conveys a right to redistribute the asset as such.
-glTF's `BrainStem` (Poser EULA, Smith Micro), `EnvironmentTest` (Adobe Stock), and `Sponza`
-(CRYENGINE Limited License Agreement — whose bundled `LICENSES/` entry is a bare URL, so no
-grant is captured at the pinned commit at all). This is not guessing that redistribution
-*might* be disallowed; it is observing that the named instrument is not a redistribution
-licence.
+They carry `redistributable = false` and a `prohibition` quoting the clause, and stay in the
+spec so the record of having checked is durable and nobody re-adds them without reading why.
+Ingest refuses to vendor them; `pack` raises if one ever reaches a lock.
 
-Both carry `redistributable = false` and a `prohibition` recording the clause or the basis.
-Both stay in the spec, so the record of having checked is durable and nobody re-adds them
-without reading why. Ingest refuses to vendor them; `pack` raises if one ever reaches a lock.
+**What this case is not.** An earlier draft also excluded four glTF models whose *origin*
+instruments (Adobe Stock, CRYENGINE, a Poser EULA, a 3DRT licence) grant no redistribution
+right. That conflated two different things: an author forbidding redistribution of their own
+work, and a publisher redistributing third-party material under separately negotiated terms.
+The second is not an exclusion case at all — it is a layered declaration, handled below.
+
+The distinction that matters: is the restrictive instrument *the grant our upstream is
+operating under*, or *the history of how the material reached them*? For `dragon` it is the
+former — Esoteric publishes it under exactly those terms and claims nothing more. For the
+glTF four it is the latter.
 
 ### A declared identifier may name the origin instrument, not the grant in force
 
