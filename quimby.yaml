@@ -1,0 +1,55 @@
+hosts:
+  remote:
+    type: ssh
+    host: remote
+
+runtimeProfiles:
+  claude-sbx:
+    runtime: sbx
+    entrypoint: claude
+    requiredTools: [claude]
+  codex-sbx:
+    runtime: sbx
+    entrypoint: codex
+    requiredTools: [codex]
+
+defaults:
+  runtimeProfile: claude-sbx
+  tmux: true
+  hostAlias: remote
+
+# Every delivered parcel wakes its recipient — advisory notes included, not only directed ones.
+# The RECIPIENT governs interruption, so one top-level declaration covers both agents and neither
+# overrides it: review's directed work wakes builder, and builder's replies wake review back.
+# Read once when `quimby serve` starts, so restart the server after changing it.
+nudge: all
+whenFocused: nudge
+
+roles:
+  review:
+    runtimeProfile: claude-sbx
+  builder:
+    runtimeProfile: codex-sbx
+
+services:
+  serve: quimby serve
+
+layouts:
+  default:
+    expr: (review | builder):80 / (host $serve):20
+
+default: default
+
+presets:
+  default:
+    layout: default
+    agents:
+      review:
+        role: review
+        # The coordination edge, host-enforced at dispatch: review may direct builder on its own
+        # initiative, which stamps those parcels `userDirected` in meta.yaml. Authority is separate
+        # from interruption — `nudge: all` above already wakes both sides, so what this edge adds
+        # is directive weight one way. Escalation is the inverse edge, so builder may summon review.
+        directs: [builder]
+      builder:
+        role: builder
