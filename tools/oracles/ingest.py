@@ -30,7 +30,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-from . import formats
+from . import derive, formats
 
 USER_AGENT = "flight-oracles-ingest"
 CACHE = Path(os.environ.get("ORACLES_CACHE", ".cache"))
@@ -268,6 +268,56 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
                     "vendored": False,
                 }
             )
+            continue
+
+        if source.kind == "derived":
+            parent = load_lock(source.from_pack, root)
+            parent_src = next((x for x in parent["sources"] if x["id"] == source.from_source), None)
+            if parent_src is None:
+                raise ValueError(
+                    f"{spec.name}: source {source.id!r} derives from "
+                    f"{source.from_pack}/{source.from_source}, which is not in that lock"
+                )
+            originals = [e for e in parent["files"] if e["sourceId"] == source.from_source]
+            if source.sample:
+                # Deterministic sample: sort by hash, take a prefix. Stable across runs and
+                # independent of upstream ordering.
+                originals = sorted(originals, key=lambda e: e["sha256"])[:source.sample]
+            parent_vendor = root / "vendor" / source.from_pack
+            count = 0
+            for entry in originals:
+                blob = (parent_vendor / entry["path"]).read_bytes()
+                base = entry["path"].split("/")[-1]
+                for derived_name, mutated, label in derive.derive_all(
+                        base, blob, source.strategies):
+                    dest = f"{source.dest}{derived_name}".lstrip("/")
+                    if dest in seen_dest:
+                        continue
+                    seen_dest[dest] = source.id
+                    target = vendor_root / dest
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    target.write_bytes(mutated)
+                    lock_files.append({
+                        "path": dest,
+                        "sourceId": source.id,
+                        "derivedFrom": f"{source.from_pack}/{entry['path']}",
+                        "derivedFromSha256": entry["sha256"],
+                        "strategy": label,
+                        "sha256": _sha256(mutated),
+                        "size": len(mutated),
+                    })
+                    count += 1
+            _log(f"  derived {count} files from {len(originals)} originals")
+            lock_sources.append({
+                "id": source.id,
+                "kind": "derived",
+                "derivedFrom": {"pack": source.from_pack, "source": source.from_source,
+                                "originals": len(originals),
+                                "strategies": list(source.strategies)},
+                "retrieved": today,
+                # A mutation inherits the declaration of what it was mutated from.
+                "license": parent_src["license"],
+            })
             continue
 
         if source.kind == "recovered":

@@ -1,0 +1,57 @@
+# text-conformance-fixtures — Unicode conformance data.
+#
+# THE FIRST ORACLE-BEARING PACK. Every other pack here supplies inputs; these files supply
+# inputs AND their required outputs, on the same line. From GraphemeBreakTest.txt:
+#
+#     ÷ 0020 ÷ 0020 ÷  #  ÷ [0.2] SPACE (Other) ÷ [999.0] SPACE (Other) ÷ [0.3]
+#
+# The ÷ and × marks are the expected break opportunities. A test harness reads the line,
+# runs its segmenter over the code points, and compares. Nothing needs generating, no
+# reference implementation has to be run, and there is no rendering involved — which is why
+# this is the cheapest possible place for the oracle work to start, and why it sidesteps the
+# golden-image stability problem entirely.
+#
+# WHAT IT COVERS in flight: textsegment implements UAX #29 (grapheme, word and sentence
+# breaking) and UAX #14 (line breaking); textbidi implements UAX #9. These are the reference
+# conformance suites for exactly those algorithms — the ones the specifications themselves
+# point at.
+#
+# Note this is data ABOUT text, not fonts. flight delegates glyph shaping to the platform
+# (textshaper-canvas), so what it implements itself is itemization, clustering, bidi and
+# segmentation — all of which are exercised by character data rather than font binaries.
+#
+# VERSION: 14.0.0, the latest in this upstream. The segmentation rules genuinely change
+# between Unicode versions, so the upstream's other 31 version directories are worth reaching
+# for if "which UAX revision do we implement" ever becomes a question.
+
+[pack]
+name = "text-conformance-fixtures"
+kind = "conformance"
+summary = "Unicode conformance data for UAX #9 bidi, UAX #14 line breaking and UAX #29 segmentation — inputs paired with their required outputs."
+
+[[source]]
+id = "unicode-ucd-14"
+kind = "upstream"
+repo = "unicode-org/unicodetools"
+ref = "main"
+fetch = "blobs"
+include = [
+  "unicodetools/data/ucd/14.0.0-Update/BidiTest.txt",
+  "unicodetools/data/ucd/14.0.0-Update/BidiCharacterTest.txt",
+  "unicodetools/data/ucd/14.0.0-Update/BidiBrackets.txt",
+  "unicodetools/data/ucd/14.0.0-Update/NormalizationTest.txt",
+  "unicodetools/data/ucd/14.0.0-Update/auxiliary/GraphemeBreakTest.txt",
+  "unicodetools/data/ucd/14.0.0-Update/auxiliary/WordBreakTest.txt",
+  "unicodetools/data/ucd/14.0.0-Update/auxiliary/SentenceBreakTest.txt",
+  "unicodetools/data/ucd/14.0.0-Update/auxiliary/LineBreakTest.txt",
+]
+strip = "unicodetools/data/ucd/14.0.0-Update/"
+dest = "ucd-14.0.0/"
+
+[source.license]
+declared = "Unicode-3.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "UNICODE LICENSE V3, Copyright (c) 2001-2024 Unicode, Inc. Grants use, copy, modify, merge, publish, distribute and sell, subject to retaining the copyright notice and this permission notice in all copies of the Data Files."

@@ -1,0 +1,89 @@
+{
+  "pack": {
+    "name": "text-conformance-fixtures",
+    "kind": "conformance",
+    "summary": "Unicode conformance data for UAX #9 bidi, UAX #14 line breaking and UAX #29 segmentation \u2014 inputs paired with their required outputs."
+  },
+  "sources": [
+    {
+      "id": "unicode-ucd-14",
+      "kind": "upstream",
+      "repo": "unicode-org/unicodetools",
+      "ref": "main",
+      "commit": "be583d58114e0a5a2db347fd83a4c97b22d5e7d5",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "Unicode-3.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "UNICODE LICENSE V3, Copyright (c) 2001-2024 Unicode, Inc. Grants use, copy, modify, merge, publish, distribute and sell, subject to retaining the copyright notice and this permission notice in all copies of the Data Files.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/unicode-ucd-14@be583d58114e.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "ucd-14.0.0/BidiBrackets.txt",
+      "sourceId": "unicode-ucd-14",
+      "upstreamPath": "unicodetools/data/ucd/14.0.0-Update/BidiBrackets.txt",
+      "sha256": "24a74555f918bbe99f5b3f1b83cf36fc0e205bb8a600a6a3aa539c710a3dcf27",
+      "size": 8950
+    },
+    {
+      "path": "ucd-14.0.0/BidiCharacterTest.txt",
+      "sourceId": "unicode-ucd-14",
+      "upstreamPath": "unicodetools/data/ucd/14.0.0-Update/BidiCharacterTest.txt",
+      "sha256": "7739891361250475fe55cfc7eeee7024ba2626bdce8c7db02bf7ae9d1bcdfb3f",
+      "size": 6880546
+    },
+    {
+      "path": "ucd-14.0.0/BidiTest.txt",
+      "sourceId": "unicode-ucd-14",
+      "upstreamPath": "unicodetools/data/ucd/14.0.0-Update/BidiTest.txt",
+      "sha256": "306a86c1c29458531e56c29ffde6badede65897275a5941ac7fc6985d6b0994f",
+      "size": 7959972
+    },
+    {
+      "path": "ucd-14.0.0/NormalizationTest.txt",
+      "sourceId": "unicode-ucd-14",
+      "upstreamPath": "unicodetools/data/ucd/14.0.0-Update/NormalizationTest.txt",
+      "sha256": "7cb30cc2abe6c29c292b99095865d379ce1213045c78c4ff59c7e9391bbe2331",
+      "size": 2610352
+    },
+    {
+      "path": "ucd-14.0.0/auxiliary/GraphemeBreakTest.txt",
+      "sourceId": "unicode-ucd-14",
+      "upstreamPath": "unicodetools/data/ucd/14.0.0-Update/auxiliary/GraphemeBreakTest.txt",
+      "sha256": "ddc7d4d1f3838573b94fc5d83ff7217e63c47b22ae1cd40c5fe1a54efc15589b",
+      "size": 83689
+    },
+    {
+      "path": "ucd-14.0.0/auxiliary/LineBreakTest.txt",
+      "sourceId": "unicode-ucd-14",
+      "upstreamPath": "unicodetools/data/ucd/14.0.0-Update/auxiliary/LineBreakTest.txt",
+      "sha256": "488dbb6a7e1d0070d4aa7c175352c818ff6425172850d1b40c6177726658cb05",
+      "size": 1085568
+    },
+    {
+      "path": "ucd-14.0.0/auxiliary/SentenceBreakTest.txt",
+      "sourceId": "unicode-ucd-14",
+      "upstreamPath": "unicodetools/data/ucd/14.0.0-Update/auxiliary/SentenceBreakTest.txt",
+      "sha256": "7e42dd749dbb94aa44b13faf9df6319d9a16ce2ea09a3a094fcfbb5962168040",
+      "size": 87608
+    },
+    {
+      "path": "ucd-14.0.0/auxiliary/WordBreakTest.txt",
+      "sourceId": "unicode-ucd-14",
+      "upstreamPath": "unicodetools/data/ucd/14.0.0-Update/auxiliary/WordBreakTest.txt",
+      "sha256": "8094b544ec1580c7e41ac0187805cc1aeb330a90301ec7505563e1a59318284e",
+      "size": 297532
+    }
+  ],
+  "totals": {
+    "files": 8,
+    "bytes": 19014217
+  }
+}

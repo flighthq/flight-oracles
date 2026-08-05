@@ -299,6 +299,16 @@ def _obj_mtl(data: bytes, name: str):
     return None
 
 
+def _atf(data: bytes):
+    """Adobe Texture Format: 'ATF' magic, then a length and a version byte."""
+    if not data.startswith(b"ATF") or len(data) < 8:
+        return None
+    # Post-3.0 files carry an explicit version at offset 6; earlier ones have a 3-byte
+    # big-endian length there instead, so only trust it when it looks like a version.
+    version = data[6] if data[6] < 16 else None
+    return FormatInfo(kind="atf", version=str(version) if version is not None else None)
+
+
 def _png(data: bytes):
     if not data.startswith(b"\x89PNG\r\n\x1a\n"):
         return None
@@ -311,7 +321,7 @@ def _png(data: bytes):
 
 def detect(data: bytes, name: str = "") -> FormatInfo | None:
     """Identify *data*, using *name* only where the bytes are ambiguous."""
-    for probe in (_riv, _swf, _glb, _ktx2, _ktx1, _basis, _dds, _md2, _awd,
+    for probe in (_riv, _swf, _glb, _ktx2, _ktx1, _basis, _dds, _md2, _awd, _atf,
                   _png, _gltf_json, _spine_json, _lottie):
         info = probe(data)
         if info is not None:

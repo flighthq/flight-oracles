@@ -19,11 +19,12 @@ suite can pin.
 
 ## Current packs
 
-| Pack | Files | Size | Sources |
+| Pack | Files | Size | Contents |
 | --- | ---: | ---: | --- |
-| `swf-ruffle-fixtures` | 4810 | 42.9 MB | Ruffle's SWF corpus — versions 4 through 50 |
-| `spine-fixtures` | 1126 | 57.4 MB | Spine 4.2 exports, 19 examples + spine-unity |
+| `swf-ruffle-fixtures` | 4,810 | 42.9 MB | Ruffle's SWF corpus — versions 4 through 50 |
+| `spine-fixtures` | 1,126 | 57.4 MB | Spine 4.2 exports, 19 examples + spine-unity |
 | `gltf-khronos-textures` | 765 | 500.1 MB | Raster textures — merges with `gltf-khronos-fixtures` |
+| `malformed-fixtures` | 661 | 7.7 MB | **Derived** — truncation, header damage, bit flips |
 | `spine-fixtures-38` | 510 | 28.1 MB | Spine 3.8 — prior format version, rejection testing |
 | `gltf-khronos-fixtures` | 476 | 293.5 MB | 148 Khronos glTF 2.0 models — 29 KHR/EXT extensions |
 | `rive-fixtures-unit` | 388 | 148.3 MB | Rive unit-test corpus — all 12 feature areas |
@@ -35,11 +36,16 @@ suite can pin.
 | `image-fixtures` | 60 | 0.1 MB | PngSuite — canonical PNG conformance corpus |
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
 | `mesh-legacy-fixtures` | 24 | 36.8 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
+| `atf-fixtures` | 14 | 8.1 MB | Adobe Texture Format — undeclared, build input only |
 | `spritesheet-fixtures` | 14 | 0.4 MB | libgdx `.atlas` texture atlas descriptors |
 | `bitmapfont-fixtures` | 10 | 0.2 MB | AngelCode BMFont `.fnt` descriptors |
+| `text-conformance-fixtures` | 8 | 19.0 MB | **Oracles** — 614,914 Unicode conformance cases |
 | `particle-fixtures` | 3 | 0.0 MB | libgdx `.p` particle effect configs |
 
-17 packs, 8,838 files. Every parser in `skeleton2d-formats`, `scene3d-formats`, `tilemap-formats` and `bitmapfont-formats` now has fixtures behind it.
+20 packs, 9,521 files.
+
+Every parser in `skeleton2d-formats`, `scene3d-formats`, `tilemap-formats`,
+`bitmapfont-formats` and `texture-formats` now has fixtures behind it.
 
 **Git LFS is resolved, not stored.** `raw.githubusercontent` serves LFS *pointers* rather
 than objects, and a 130-byte text stub where a texture belongs passes every other check —

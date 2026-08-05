@@ -1,0 +1,59 @@
+# atf-fixtures — Adobe Texture Format.
+#
+# Closes the last gap in texture-formats: flight has parseAtf.ts and had nothing to run it
+# against. Recorded in docs/fixture-coverage.md as a known gap; these two sources fill it.
+#
+# BOTH SOURCES ARE UNDECLARED. Neither repository carries a licence of any kind — no LICENSE
+# file, no SPDX metadata, nothing in the README. ATF was a Flash-era Adobe format and its
+# sample files were never published as a licensed corpus; what exists is scattered through
+# tools and demos. So these ship as declared UNKNOWN with onward_use = "unknown": usable as
+# build input, structurally barred from -demo and -permissive.
+#
+# That is the honest position rather than a comfortable one. If ATF coverage ever needs to
+# reach a published demo, these are not the files for it.
+
+[pack]
+name = "atf-fixtures"
+kind = "fixtures"
+summary = "Adobe Texture Format fixtures — undeclared provenance, build input only."
+
+# Purpose-built unit fixtures from an ATF encoder's own test suite: the closest thing to a
+# conformance set that exists. Includes 2x2 and 8x8 minimal cases, which is exactly what a
+# container parser wants, plus mipmapped and non-mipmapped variants of the same image.
+[[source]]
+id = "atf-encoder-units"
+kind = "upstream"
+repo = "plepers/ATF-Encoder"
+ref = "master"
+fetch = "blobs"
+include = ["unit/assets/**/*.atf"]
+strip = "unit/assets/"
+dest = "units/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "plepers/ATF-Encoder carries no licence declaration of any kind. These are the encoder's own unit-test assets; nothing about their terms is established."
+
+# Cubemap and embedded-texture variants, for format coverage the unit set does not reach.
+# DELIBERATELY EXCLUDES src/assets/sponza/: that is the Crytek Sponza texture set, which
+# already caused a layered-declaration problem in gltf-khronos-fixtures. Re-importing it
+# here under an undeclared banner would be strictly worse than not having it.
+[[source]]
+id = "away3d-atf-embeds"
+kind = "upstream"
+repo = "away3d/away3d-examples-fp11"
+ref = "master"
+fetch = "blobs"
+include = ["embeds/**/*.atf"]
+strip = "embeds/"
+dest = "embeds/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "away3d/away3d-examples-fp11 carries no licence declaration. Note this is the same Away3D example lineage as mesh-legacy-fixtures, where the flighthq-ports port added an MIT declaration the original never had."

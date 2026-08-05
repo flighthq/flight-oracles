@@ -26,7 +26,7 @@ __all__ = ["PackSpec", "SourceSpec", "LicenseSpec", "load_spec", "load_all", "co
 # the asset speaks about the asset. Consumers deserve to know which one they have.
 SCOPES = ("file-adjacent", "directory", "repository-root")
 
-SOURCE_KINDS = ("upstream", "recovered")
+SOURCE_KINDS = ("upstream", "recovered", "derived")
 
 # How far material may travel once it leaves the build — see LicenseSpec.onward_use.
 ONWARD_USE = ("unrestricted", "non-commercial", "testing-only", "unknown")
@@ -211,8 +211,10 @@ class LicenseSpec:
 class SourceSpec:
     id: str
     kind: str
-    include: list
     license: LicenseSpec
+    # Not required for kind = "derived": those generate from an already-ingested pack
+    # rather than selecting paths out of an upstream.
+    include: list = field(default_factory=list)
     repo: str | None = None
     ref: str | None = None
     commit: str | None = None
@@ -223,6 +225,11 @@ class SourceSpec:
     # dwarfs the slice we want (glTF-Sample-Assets is 1.4 GB), and where many sources share
     # one repo, since it avoids re-walking a huge archive per source.
     fetch: str = "tarball"
+    # kind = "derived": generate from an already-ingested pack rather than fetch.
+    from_pack: str | None = None
+    from_source: str | None = None
+    strategies: list = field(default_factory=list)
+    sample: int = 0                 # 0 = every file in the source
     strip: str = ""                 # upstream prefix removed from the archive path
     dest: str = ""                  # archive-relative prefix added back on
     exclude_paths: list = field(default_factory=list)
@@ -233,11 +240,22 @@ class SourceSpec:
             raise ValueError(f"source.kind must be one of {SOURCE_KINDS}, got {self.kind!r}")
         if self.kind == "upstream" and not self.repo:
             raise ValueError(f"source {self.id!r}: kind=upstream requires repo")
+        if self.kind != "derived" and not self.include:
+            raise ValueError(f"source {self.id!r}: include patterns are required")
         if self.fetch not in ("tarball", "blobs"):
             raise ValueError(
                 f"source {self.id!r}: fetch must be \"tarball\" or \"blobs\", "
                 f"got {self.fetch!r}"
             )
+        if self.kind == "derived":
+            if not (self.from_pack and self.from_source):
+                raise ValueError(
+                    f"source {self.id!r}: kind=derived requires from_pack and from_source. "
+                    f"Deriving from ONE source block keeps the inherited declaration "
+                    f"unambiguous — a mutation of a GPL fixture is still GPL-derived"
+                )
+            if not self.strategies:
+                raise ValueError(f"source {self.id!r}: kind=derived requires strategies")
         if self.kind == "recovered" and self.license.declared != "UNKNOWN":
             raise ValueError(
                 f"source {self.id!r}: kind=recovered has no upstream declaration to "

@@ -19,7 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from oracles import formats, pack, spec  # noqa: E402
+from oracles import derive, formats, pack, spec  # noqa: E402
 
 
 class TestFormats(unittest.TestCase):
@@ -263,6 +263,61 @@ class TestGitLfs(unittest.TestCase):
         # returns None and the entry records `format: null` — indistinguishable from a
         # format we simply do not recognise yet.
         self.assertIsNone(formats.detect(self.POINTER, "conftest.ktx"))
+
+
+class TestDerive(unittest.TestCase):
+    """Malformed fixtures are generated, so they must be generated the same way twice."""
+
+    SAMPLE = b"FWS" + bytes([6]) + (999).to_bytes(4, "little") + bytes(range(200))
+
+    def test_derivation_is_deterministic(self):
+        # Offsets come from the content's own hash, never a PRNG or a clock — which is what
+        # lets these live in the same byte-reproducible pipeline as everything fetched.
+        first = derive.derive_all("x.swf", self.SAMPLE, list(derive.STRATEGIES))
+        second = derive.derive_all("x.swf", self.SAMPLE, list(derive.STRATEGIES))
+        self.assertEqual([(n, b) for n, b, _ in first], [(n, b) for n, b, _ in second])
+
+    def test_every_strategy_actually_changes_the_bytes(self):
+        for name in derive.STRATEGIES:
+            for label, mutated in derive.STRATEGIES[name](self.SAMPLE):
+                self.assertNotEqual(mutated, self.SAMPLE, f"{name}/{label} was a no-op")
+
+    def test_degenerate_inputs_are_included(self):
+        labels = {label for label, _ in derive.STRATEGIES["empty"](self.SAMPLE)}
+        self.assertEqual(labels, {"empty", "one-byte"})
+
+    def test_short_input_does_not_crash_any_strategy(self):
+        for blob in (b"", b"A", b"AB" * 3):
+            for name in derive.STRATEGIES:
+                list(derive.STRATEGIES[name](blob))
+
+    def test_derived_names_keep_the_extension(self):
+        # A decoder chosen by file extension has to still be reachable, or the corpus
+        # tests nothing.
+        for name, _, _ in derive.derive_all("a/b.swf", self.SAMPLE, ["truncate"]):
+            self.assertTrue(name.endswith(".swf"), name)
+
+
+class TestDerivedSpec(unittest.TestCase):
+    def _license(self):
+        return spec.LicenseSpec(declared="MIT", declared_scope="repository-root")
+
+    def test_derived_requires_a_single_named_parent(self):
+        # Deriving from one source block keeps the inherited declaration unambiguous.
+        with self.assertRaises(ValueError):
+            spec.SourceSpec(id="d", kind="derived", license=self._license(),
+                            strategies=["truncate"], from_pack="p")
+        spec.SourceSpec(id="d", kind="derived", license=self._license(),
+                        strategies=["truncate"], from_pack="p", from_source="s")
+
+    def test_derived_requires_strategies(self):
+        with self.assertRaises(ValueError):
+            spec.SourceSpec(id="d", kind="derived", license=self._license(),
+                            from_pack="p", from_source="s")
+
+    def test_non_derived_still_requires_include(self):
+        with self.assertRaises(ValueError):
+            spec.SourceSpec(id="u", kind="upstream", repo="o/r", license=self._license())
 
 
 class TestGlobs(unittest.TestCase):

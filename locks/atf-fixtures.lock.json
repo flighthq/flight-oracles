@@ -1,0 +1,197 @@
+{
+  "pack": {
+    "name": "atf-fixtures",
+    "kind": "fixtures",
+    "summary": "Adobe Texture Format fixtures \u2014 undeclared provenance, build input only."
+  },
+  "sources": [
+    {
+      "id": "atf-encoder-units",
+      "kind": "upstream",
+      "repo": "plepers/ATF-Encoder",
+      "ref": "master",
+      "commit": "9b18ae60b9bd32349a46e9d289c423e231747a32",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "plepers/ATF-Encoder carries no licence declaration of any kind. These are the encoder's own unit-test assets; nothing about their terms is established.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "away3d-atf-embeds",
+      "kind": "upstream",
+      "repo": "away3d/away3d-examples-fp11",
+      "ref": "master",
+      "commit": "316a728a6beb65df465208d06a98693771854e74",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "away3d/away3d-examples-fp11 carries no licence declaration. Note this is the same Away3D example lineage as mesh-legacy-fixtures, where the flighthq-ports port added an MIT declaration the original never had.",
+        "onwardUse": "unknown"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "embeds/fire.atf",
+      "sourceId": "away3d-atf-embeds",
+      "upstreamPath": "embeds/fire.atf",
+      "sha256": "64c92a26af2a92511c3fbe84e49356334f78cc9efb1871889059375547cf3ce7",
+      "size": 156463,
+      "format": {
+        "kind": "atf",
+        "version": "2"
+      }
+    },
+    {
+      "path": "embeds/skybox/hourglass_cubemap.atf",
+      "sourceId": "away3d-atf-embeds",
+      "upstreamPath": "embeds/skybox/hourglass_cubemap.atf",
+      "sha256": "f4d1cf65b6d2c4aac32c0cb1b4dcaf0e29139e99de403feb7690a819321187cb",
+      "size": 585895,
+      "format": {
+        "kind": "atf",
+        "version": null
+      }
+    },
+    {
+      "path": "units/2x2.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/2x2.atf",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "units/8x8.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/8x8.atf",
+      "sha256": "b3c0d7ca47a27fc7c0845e636296cf31027021f20277778425bf35d0d8a760c3",
+      "size": 534,
+      "format": {
+        "kind": "atf",
+        "version": "2"
+      }
+    },
+    {
+      "path": "units/Tire_COLOR.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/Tire_COLOR.atf",
+      "sha256": "46b2922c85a75106b7e7562130f8fa8e88f3f85c4215a3861bb9170ce9430cb2",
+      "size": 173281,
+      "format": {
+        "kind": "atf",
+        "version": "2"
+      }
+    },
+    {
+      "path": "units/bb_mip.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/bb_mip.atf",
+      "sha256": "65e688f2f795c449ad36dc9529d3684e1886b6080a42e64a0b25f5e6468672f8",
+      "size": 406035,
+      "format": {
+        "kind": "atf",
+        "version": "2"
+      }
+    },
+    {
+      "path": "units/bb_mip_tmp.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/bb_mip_tmp.atf",
+      "sha256": "52353b08f12d29ba7e6a64f682cf6d25e7201bd40bde80025cbfb6aab8b7e089",
+      "size": 454435,
+      "format": {
+        "kind": "atf",
+        "version": "2"
+      }
+    },
+    {
+      "path": "units/bb_nomip.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/bb_nomip.atf",
+      "sha256": "f2064f5604798202da541213b562fbeaece16cb92a0da970246fbf8b90d9cd18",
+      "size": 295471,
+      "format": {
+        "kind": "atf",
+        "version": "2"
+      }
+    },
+    {
+      "path": "units/jxr_mip.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/jxr_mip.atf",
+      "sha256": "9e38e4a3d62f87ddf405eddad6483e13817a2a1d11a81bb3cf5127f96dc0492b",
+      "size": 513498,
+      "format": {
+        "kind": "atf",
+        "version": "0"
+      }
+    },
+    {
+      "path": "units/jxr_nomip.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/jxr_nomip.atf",
+      "sha256": "fbb9b7a3bab4e011dd534dbd03cc532e6ba7d32a0dc017eec0c394ef554aa0bd",
+      "size": 374296,
+      "format": {
+        "kind": "atf",
+        "version": "0"
+      }
+    },
+    {
+      "path": "units/lcm/atlas_bg_1_opak.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/lcm/atlas_bg_1_opak.atf",
+      "sha256": "858aba8b6055daf93b48d6c509661561f01ce5044fce0d6a3c2eba94dc9a1058",
+      "size": 1230342,
+      "format": {
+        "kind": "atf",
+        "version": "2"
+      }
+    },
+    {
+      "path": "units/lcm/atlas_bg_2_opak.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/lcm/atlas_bg_2_opak.atf",
+      "sha256": "495c25029733fe0974e51105abb98bdc74d9c432852b45f583aa118df1b3368b",
+      "size": 2130775,
+      "format": {
+        "kind": "atf",
+        "version": "2"
+      }
+    },
+    {
+      "path": "units/lcm/chapter1_anim_opak.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/lcm/chapter1_anim_opak.atf",
+      "sha256": "7c089dfd2da8bc81a6e7df46b90fc0ea0d18b1592cd35b84b7520e499cc71434",
+      "size": 1615487,
+      "format": {
+        "kind": "atf",
+        "version": "2"
+      }
+    },
+    {
+      "path": "units/modified_atf.atf",
+      "sourceId": "atf-encoder-units",
+      "upstreamPath": "unit/assets/modified_atf.atf",
+      "sha256": "c47e6f3f7832606995693345e53b2dea47f1069a3e2f17fcf1449c8cb2031ff9",
+      "size": 118988,
+      "format": {
+        "kind": "atf",
+        "version": "1"
+      }
+    }
+  ],
+  "totals": {
+    "files": 14,
+    "bytes": 8055500
+  }
+}

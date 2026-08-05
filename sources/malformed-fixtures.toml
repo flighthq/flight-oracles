@@ -1,0 +1,87 @@
+# malformed-fixtures — deliberately broken inputs, derived from the healthy corpus.
+#
+# flight's decoders share one error contract, stated in swfDocument.test.ts: "The package's
+# whole error contract is a null sentinel, so the property that matters is that no input
+# produces an exception." No amount of well-formed material can establish that.
+#
+# DERIVED, NOT SOURCED. Every file here is a deterministic mutation of a fixture we already
+# hold — truncated, header-damaged, length-field poisoned, bit-flipped, or degenerate.
+# Offsets come from the source file's own SHA-256 rather than a random generator, so
+# re-deriving produces byte-identical output and these sit in the same reproducible pipeline
+# as everything else.
+#
+# DECLARATIONS ARE INHERITED. A mutation of a GPL fixture is still GPL-derived, so each
+# derived source names exactly ONE parent source block and takes its declaration verbatim.
+# That is why this file has several blocks rather than one sweeping over whole packs.
+#
+# Parents are chosen for clean, permissive declarations — deliberately not the GPL-3.0 or
+# UNKNOWN-declared material, since a negative corpus is not worth complicating anyone's
+# licence story over.
+
+[pack]
+name = "malformed-fixtures"
+kind = "malformed"
+summary = "Deterministically corrupted inputs — truncation, header damage, poisoned length fields, bit flips and degenerate cases."
+
+[[source]]
+id = "malformed-swf"
+kind = "derived"
+from_pack = "swf-ruffle-fixtures"
+from_source = "ruffle-authored"
+strategies = ["truncate", "header", "lengths", "bitflip", "empty"]
+sample = 30
+dest = "swf/"
+
+[source.license]
+declared = "Apache-2.0 OR MIT"
+declared_scope = "repository-root"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Inherited from ruffle-authored; these are mutations of Ruffle's own test SWFs."
+
+[[source]]
+id = "malformed-gltf"
+kind = "derived"
+from_pack = "gltf-khronos-binary"
+from_source = "glb-box"
+strategies = ["truncate", "header", "lengths", "bitflip", "empty"]
+dest = "glb/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Inherited from the Box model, CC0-1.0. GLB is a chunked binary container, so a truncated or length-poisoned one exercises chunk-boundary handling specifically."
+
+[[source]]
+id = "malformed-png"
+kind = "derived"
+from_pack = "image-fixtures"
+from_source = "pngsuite"
+strategies = ["truncate", "header", "bitflip", "empty"]
+sample = 20
+dest = "png/"
+
+[source.license]
+declared = "LicenseRef-PngSuite-Permissive"
+declared_scope = "file-adjacent"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Inherited from pngsuite. Bit flips are especially pointed here: PNG chunks are CRC-checked, so a flipped payload byte is a decoder's chance to notice and refuse."
+
+[[source]]
+id = "malformed-riv"
+kind = "derived"
+from_pack = "rive-fixtures"
+from_source = "rive-runtime"
+strategies = ["truncate", "header", "lengths", "bitflip", "empty"]
+sample = 15
+dest = "riv/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Inherited from rive-runtime. Rive's format is a self-describing object stream, so a single byte of drift collapses everything downstream — exactly the case riveDocument.test.ts calls cursor discipline."
