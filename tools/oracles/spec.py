@@ -28,6 +28,26 @@ SCOPES = ("file-adjacent", "directory", "repository-root")
 
 SOURCE_KINDS = ("upstream", "recovered")
 
+# Declarations we refuse to ingest at all, rather than merely leaving unvendored.
+#
+# `redistributable = false` is the right answer for a licence that forbids republishing: we
+# still fetch nothing, but holding the bytes locally would be harmless. These are different.
+# Their *derivative works* clauses make merely deriving from the material hazardous, so the
+# safe handling is never to bring it into the pipeline in the first place — and that has to
+# be enforced, because the whole point is that it is invisible to anyone screening on the
+# SPDX identifier alone.
+HAZARDOUS_DECLARATIONS = {
+    "LicenseRef-UGent-Academic": (
+        "UGent Academic License section 3(b): every licensee grants Ghent University a "
+        "'perpetual, worldwide, exclusive, no-charge, royalty-free, irrevocable' licence to "
+        "commercially exploit any Derivative Works. A golden or oracle IS a derivative of "
+        "its fixture, so generating one would irrevocably assign exclusive commercial rights "
+        "in our own output. Section 2 separately forbids distributing the Work. Unlike an "
+        "ordinary no-redistribution licence, removal on request cannot undo a grant that "
+        "attached when the derivative was created."
+    ),
+}
+
 
 def compile_globs(patterns):
     """Translate glob patterns to a regex, supporting ``**`` across separators."""
@@ -78,6 +98,16 @@ class LicenseSpec:
         if self.declared_scope not in SCOPES:
             raise ValueError(
                 f"license.declared_scope must be one of {SCOPES}, got {self.declared_scope!r}"
+            )
+        hazard = HAZARDOUS_DECLARATIONS.get(self.declared)
+        if hazard:
+            # Refuse the whole spec rather than quietly skipping the source: this is not a
+            # "don't publish it" case, it is a "don't touch it" case.
+            raise ValueError(
+                f"license.declared = {self.declared!r} is refused outright.\n\n{hazard}\n\n"
+                f"See docs/sourcing-policy.md. If you believe this is wrong, change the "
+                f"entry in HAZARDOUS_DECLARATIONS deliberately — do not work around it by "
+                f"relabelling the declaration."
             )
         if self.commercial_use not in (True, False, "unknown"):
             raise ValueError("license.commercial_use must be true, false, or \"unknown\"")

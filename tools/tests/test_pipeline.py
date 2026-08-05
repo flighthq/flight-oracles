@@ -110,6 +110,23 @@ class TestSpecValidation(unittest.TestCase):
             self._license(redistributable=False)
         self._license(redistributable=False, prohibition="may not be redistributed")
 
+    def test_hazardous_declaration_is_refused_outright(self):
+        # Not "don't publish it" but "don't touch it": the UGent Academic License assigns
+        # Ghent University exclusive commercial rights in any derivative, and a golden is a
+        # derivative of its fixture. Loading must fail, not merely skip vendoring.
+        with self.assertRaises(ValueError) as caught:
+            self._license(declared="LicenseRef-UGent-Academic")
+        message = str(caught.exception)
+        self.assertIn("refused outright", message)
+        self.assertIn("exclusive", message)
+
+    def test_hazard_check_precedes_the_redistributable_escape_hatch(self):
+        # Marking it non-redistributable must not make it loadable — the hazard is in
+        # deriving from the material, which happens before anything is published.
+        with self.assertRaises(ValueError):
+            self._license(declared="LicenseRef-UGent-Academic",
+                          redistributable=False, prohibition="section 2")
+
     def test_recovered_source_cannot_claim_a_declaration(self):
         # A recovered file has no upstream asserting anything; claiming MIT would be
         # inventing a declaration that nobody made.

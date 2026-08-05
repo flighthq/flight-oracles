@@ -2591,7 +2591,7 @@
         "redistributable": false,
         "declaredFrom": "Models/EnvironmentTest/LICENSE.md",
         "covers": "Everything \u2014 Adobe, 2017 (owner: Adobe).",
-        "prohibition": "Declared under the Adobe Stock License. The bundled LICENSES/LicenseRef-Adobe-Stock.txt is a URL reference only; Adobe Stock terms do not permit redistributing a stock asset as such."
+        "prohibition": "Adobe Stock License, all tiers: 'With a Standard license, you may not: Distribute the stand-alone file.' The identical prohibition appears under the Enhanced and Extended licenses. A model file in a fixture archive IS the stand-alone file, so no Adobe Stock tier \u2014 including Extended \u2014 would permit it."
       },
       "vendored": false
     },
@@ -2608,7 +2608,7 @@
         "redistributable": false,
         "declaredFrom": "Models/Sponza/LICENSE.md",
         "covers": "Everything \u2014 Crytek, 2016 (owner: Crytek).",
-        "prohibition": "Declared under the CRYENGINE Limited License Agreement. The bundled LICENSES/LicenseRef-CRYENGINE-Agreement.txt is a URL reference only \u2014 no grant is captured at the pinned commit, and a proprietary engine agreement is not a redistribution licence."
+        "prohibition": "CRYENGINE Limited License Agreement s2.4: 'Licensee shall not: distribute, sublicense or exploit in any other form: the CRYENGINE (except for the Redistributables)'. s1.1 defines CRYENGINE to include the CRYENGINE Assets and s1.2 defines those as the audiovisual files. s2.1.3-2.1.4 permit distributing Assets ONLY embedded in a Game in object code form; a fixture archive is not a Game in object code form. NOTE: the Khronos README sources this model from the CRYENGINE Marketplace (CEMP-1102) plus a third-party PBR texture pack, i.e. the newer marketplace build - NOT the 2010 Crytek release commonly cited as CC-BY-3.0. A differently-licensed classic Sponza may be sourceable elsewhere; see docs/sourcing-policy.md."
       },
       "vendored": false
     },

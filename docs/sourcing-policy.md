@@ -142,6 +142,70 @@ Both carry `redistributable = false` and a `prohibition` recording the clause or
 Both stay in the spec, so the record of having checked is durable and nobody re-adds them
 without reading why. Ingest refuses to vendor them; `pack` raises if one ever reaches a lock.
 
+### The clauses, quoted
+
+Full texts were read rather than inferred from the SPDX identifier. `prohibition` now carries
+the operative wording so nobody has to re-derive it:
+
+**Adobe Stock** (`EnvironmentTest`) — *"With a Standard license, you may not: Distribute the
+stand-alone file."* The identical prohibition appears under the Enhanced and Extended
+licences. A model file in a fixture archive **is** the stand-alone file, so no Adobe Stock
+tier — including the most expensive — would permit this. Note also that Adobe Stock's
+"Editorial Use Only" assets additionally forbid modification and require a credit line, which
+would bind any golden derived from one.
+
+**CRYENGINE** (`Sponza`) — §2.4: *"Licensee shall not: distribute, sublicense or exploit in
+any other form: the CRYENGINE (except for the Redistributables)."* §1.1 defines CRYENGINE to
+*include* the CRYENGINE Assets; §1.2 defines those as the audiovisual files. §§2.1.3–2.1.4
+permit distributing Assets **only** embedded in a Game in object code form. A fixture archive
+is not a Game in object code form. The agreement also reserves the right to change terms
+unilaterally on 30 days' notice, so even a favourable reading would not be stable.
+
+### A licence can be worse than non-redistributable: the UGent Academic License
+
+Not currently in any pack, recorded because it is a live hazard for academic 3D and scan
+corpora and because its shape is one this project must never accept.
+
+Two clauses, in combination:
+
+- §2 — *"The Licensee shall not distribute or sub-license the Work to third parties without
+  the prior written authorization of the Licensor."* So the Work itself is not
+  redistributable. That much is ordinary.
+- §3(b) — each Licensee grants the Licensor *"a perpetual, worldwide, **exclusive**,
+  no-charge, royalty-free, irrevocable copyright license to reproduce, prepare, publicly
+  display, publicly perform, sublicense, and distribute the **Derivative Works** for
+  **commercial purposes**."*
+
+The second is the dangerous one, and it bites this project specifically. **A golden is a
+derivative work of its fixture** — we established that oracles inherit their fixture's record.
+Under §3(b), generating an oracle from a UGent-licensed fixture would irrevocably hand Ghent
+University *exclusive* commercial rights in that oracle. The contamination flows the wrong
+way: it is not a restriction we inherit, it is a grant we make.
+
+So UGent-licensed material is **not to be ingested at all**, not merely left unvendored. Its
+`redistributable = false` is the least of it; the reason to record it here is that the usual
+mitigation — "we can always take it down" — does not undo an irrevocable exclusive grant that
+attached the moment a derivative was created.
+
+The general lesson: read the *derivative works* clause, not only the redistribution clause.
+An instrument that permits redistribution can still be unacceptable, and that is invisible if
+you screen on the SPDX identifier alone.
+
+### The same asset can carry different declarations at different upstreams
+
+Khronos's `Sponza` README sources the model from the **CRYENGINE Marketplace** (CEMP-1102)
+plus a third-party PBR texture pack — the newer marketplace build, not the 2010 Crytek
+release that is widely cited as CC-BY-3.0. The name is the same; the instrument is not.
+
+That means a model blocked at one upstream may be available under acceptable terms from
+another, and it is worth looking before writing something off. It also means the reverse: an
+asset acquired from a convenient mirror may carry weaker provenance than the same bytes from
+their origin. Prefer the upstream whose declaration is strongest and capturable.
+
+For Sponza specifically this is an open lead rather than a finding — no upstream with a
+citable, snapshottable CC-BY-3.0 declaration has been identified yet. Until one is, it stays
+unvendored.
+
 The contrast with their neighbours is the point, and it is why this is read one model at a
 time rather than inferred from a repository:
 
