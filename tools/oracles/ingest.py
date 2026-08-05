@@ -132,6 +132,61 @@ def fetch_tree(repo: str, commit: str) -> list:
     return tree
 
 
+LFS_POINTER = b"version https://git-lfs.github.com/spec/v1"
+
+
+def _lfs_pointer(data: bytes):
+    """Parse a Git LFS pointer, or return None if this is real content.
+
+    raw.githubusercontent serves the *pointer* for LFS-tracked paths, not the object. A
+    130-byte text stub sitting where a texture should be would sail through every check we
+    have — it hashes fine, it is byte-identical on re-ingest, and only a decoder would ever
+    notice. Silent corpus corruption is the worst outcome this pipeline can produce, so
+    pointers are detected and resolved rather than stored.
+    """
+    if not data.startswith(LFS_POINTER):
+        return None
+    oid = size = None
+    for line in data[:512].decode("utf-8", "replace").splitlines():
+        if line.startswith("oid sha256:"):
+            oid = line.split(":", 1)[1].strip()
+        elif line.startswith("size "):
+            try:
+                size = int(line.split(None, 1)[1])
+            except ValueError:
+                pass
+    return (oid, size) if oid and size is not None else None
+
+
+def _lfs_fetch(repo: str, oid: str, size: int) -> bytes:
+    """Resolve one LFS object through the batch API."""
+    body = json.dumps({
+        "operation": "download",
+        "transfers": ["basic"],
+        "objects": [{"oid": oid, "size": size}],
+    }).encode()
+    req = urllib.request.Request(
+        f"https://github.com/{repo}.git/info/lfs/objects/batch", data=body,
+        headers={"User-Agent": USER_AGENT,
+                 "Accept": "application/vnd.git-lfs+json",
+                 "Content-Type": "application/vnd.git-lfs+json"})
+    with urllib.request.urlopen(req) as resp:
+        doc = json.load(resp)
+    objects = doc.get("objects") or []
+    if not objects or "actions" not in objects[0]:
+        raise ValueError(
+            f"{repo}: LFS object {oid[:12]} has no download action — "
+            f"{objects[0].get('error') if objects else 'empty batch response'}")
+    action = objects[0]["actions"]["download"]
+    dl = urllib.request.Request(action["href"], headers=action.get("header", {}))
+    with urllib.request.urlopen(dl) as resp:
+        data = resp.read()
+    actual = hashlib.sha256(data).hexdigest()
+    if actual != oid:
+        raise ValueError(f"{repo}: LFS object hash mismatch (want {oid[:12]}, got {actual[:12]})")
+    return data
+
+
 def _blob_cached(repo: str, commit: str, path: str, blob_sha: str) -> bytes:
     """Fetch one file's bytes, cached by its git blob SHA.
 
@@ -146,6 +201,9 @@ def _blob_cached(repo: str, commit: str, path: str, blob_sha: str) -> bytes:
     url = f"https://raw.githubusercontent.com/{repo}/{commit}/{urllib.parse.quote(path)}"
     with urllib.request.urlopen(_request(url)) as resp:
         data = resp.read()
+    pointer = _lfs_pointer(data)
+    if pointer is not None:
+        data = _lfs_fetch(repo, *pointer)
     cache_dir.mkdir(parents=True, exist_ok=True)
     cached.write_bytes(data)
     return data
@@ -277,6 +335,9 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(data)
 
+            if _lfs_pointer(data) is not None:
+                pointer = _lfs_pointer(data)
+                data = _lfs_fetch(source.repo, *pointer)
             fmt = formats.detect(data, dest)
             entry = {
                 "path": dest,

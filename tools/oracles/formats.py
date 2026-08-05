@@ -186,6 +186,64 @@ def _ktx2(data: bytes):
     return FormatInfo(kind="ktx2", version="2.0")
 
 
+def _ktx1(data: bytes):
+    if not data.startswith(b"\xabKTX 11\xbb\r\n\x1a\n"):
+        return None
+    return FormatInfo(kind="ktx", version="1.1")
+
+
+def _basis(data: bytes):
+    """Basis Universal: 0x4273 'sB' little-endian magic, then a uint16 header size."""
+    if len(data) < 4 or data[:2] != b"sB":
+        return None
+    return FormatInfo(kind="basis", version=None)
+
+
+def _dds(data: bytes):
+    if not data.startswith(b"DDS "):
+        return None
+    if len(data) >= 20:
+        height, width = struct.unpack("<II", data[12:20])
+        return FormatInfo(kind="dds", version=None, width=width, height=height)
+    return FormatInfo(kind="dds", version=None)
+
+
+def _md2(data: bytes):
+    """Quake II MD2: 'IDP2' magic then an int32 version (always 8)."""
+    if not data.startswith(b"IDP2") or len(data) < 8:
+        return None
+    return FormatInfo(kind="md2", version=str(struct.unpack("<i", data[4:8])[0]))
+
+
+def _awd(data: bytes):
+    """AWD2: 'AWD' magic, then major/minor version bytes."""
+    if not data.startswith(b"AWD") or len(data) < 6:
+        return None
+    return FormatInfo(kind="awd", version=f"{data[3]}.{data[4]}")
+
+
+_MD5_VERSION = re.compile(rb"MD5Version\s+(\d+)")
+
+
+def _md5(data: bytes, name: str):
+    if not name.endswith((".md5mesh", ".md5anim")):
+        return None
+    match = _MD5_VERSION.search(data[:64])
+    kind = "md5mesh" if name.endswith(".md5mesh") else "md5anim"
+    return FormatInfo(kind=kind, version=match.group(1).decode() if match else None)
+
+
+def _obj_mtl(data: bytes, name: str):
+    lowered = name.lower()
+    if lowered.endswith(".obj"):
+        return FormatInfo(kind="obj", version=None)
+    if lowered.endswith(".mtl"):
+        return FormatInfo(kind="mtl", version=None)
+    if lowered.endswith(".3ds"):
+        return FormatInfo(kind="3ds", version=None)
+    return None
+
+
 def _png(data: bytes):
     if not data.startswith(b"\x89PNG\r\n\x1a\n"):
         return None
@@ -198,11 +256,12 @@ def _png(data: bytes):
 
 def detect(data: bytes, name: str = "") -> FormatInfo | None:
     """Identify *data*, using *name* only where the bytes are ambiguous."""
-    for probe in (_riv, _swf, _glb, _ktx2, _png, _gltf_json, _spine_json, _lottie):
+    for probe in (_riv, _swf, _glb, _ktx2, _ktx1, _basis, _dds, _md2, _awd,
+                  _png, _gltf_json, _spine_json, _lottie):
         info = probe(data)
         if info is not None:
             return info
-    for probe in (_dragonbones, _spine_skel, _spine_atlas):
+    for probe in (_dragonbones, _md5, _spine_skel, _spine_atlas, _obj_mtl):
         info = probe(data, name)
         if info is not None:
             return info

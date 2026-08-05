@@ -1,0 +1,56 @@
+# mesh-legacy-fixtures — OBJ, MTL, AWD2, MD5, MD2 and 3DS meshes.
+#
+# Closes the largest remaining hole in scene3d-formats: objParse, mtlParse, awd2Parse,
+# md5Parse, md5AnimParse, md2Parse and threeDsParse — seven parsers that had no fixtures at
+# all. One repository covers every one of them.
+#
+# LAYERED DECLARATION, worth reading before assuming this is simply MIT.
+# flighthq-ports/awayjs-examples declares MIT at its root. The upstream it was ported from,
+# awayjs/awayjs-examples, carries NO licence declaration at all. So the MIT covers the port's
+# own authorship; it is not evidence that the bundled art was ever licensed. Recorded as an
+# underlying layer rather than glossed, exactly as it would be for anyone else's repository.
+#
+# Several assets are also recognisable third-party game content and carry `depicts`
+# annotations. As everywhere else, the annotation is a fact recorded beside the declaration,
+# not a verdict — and it keeps those files out of -demo and -permissive automatically while
+# leaving them usable as test fixtures.
+
+[pack]
+name = "mesh-legacy-fixtures"
+kind = "fixtures"
+summary = "Legacy 3D mesh formats — OBJ/MTL, AWD2, MD5 mesh and anim, MD2, 3DS."
+
+[[source]]
+id = "awayjs-examples-meshes"
+kind = "upstream"
+repo = "flighthq-ports/awayjs-examples"
+ref = "main"
+include = [
+  "assets/**/*.obj", "assets/**/*.mtl", "assets/**/*.awd",
+  "assets/**/*.md5mesh", "assets/**/*.md5anim",
+  "assets/**/*.md2", "assets/**/*.3ds",
+]
+strip = "assets/"
+dest = "meshes/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "The awayjs-examples port as published by flighthq-ports."
+
+[[source.license.underlying]]
+declared = "UNKNOWN"
+note = "The upstream this was ported from, awayjs/awayjs-examples, carries no licence declaration of any kind. The MIT above is the port's own declaration and covers the port's authorship; it does not establish that the bundled art was licensed to begin with. Recorded so the distinction survives, since these files are game assets rather than the port's original work."
+
+[source.annotations."meshes/Halo_3_SPARTAN4.obj".depicts]
+subject = "Halo 3 SPARTAN-IV armour"
+rightsHolder = "Bungie / Microsoft"
+status = "unresolved"
+
+[source.annotations."meshes/hellknight/hellknight.md5mesh".depicts]
+subject = "Hell Knight, Doom 3"
+rightsHolder = "id Software / ZeniMax"
+status = "unresolved"

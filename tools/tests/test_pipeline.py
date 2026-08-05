@@ -211,6 +211,39 @@ class TestSpecValidation(unittest.TestCase):
             source(fetch="sparse-checkout")
 
 
+class TestGitLfs(unittest.TestCase):
+    """raw.githubusercontent serves LFS *pointers*, not objects.
+
+    A 130-byte text stub sitting where a texture belongs passes every other check we have:
+    it hashes consistently, it is byte-identical on re-ingest, and only a decoder would
+    notice. KTX-Software stores its whole conformance corpus in LFS, so this is not
+    hypothetical — it silently replaced 76 of 98 texture fixtures before being caught.
+    """
+
+    POINTER = (b"version https://git-lfs.github.com/spec/v1\n"
+               b"oid sha256:" + b"ab" * 32 + b"\nsize 4096\n")
+
+    def test_pointer_is_recognised(self):
+        from oracles.ingest import _lfs_pointer
+        self.assertEqual(_lfs_pointer(self.POINTER), ("ab" * 32, 4096))
+
+    def test_real_content_is_not_mistaken_for_a_pointer(self):
+        from oracles.ingest import _lfs_pointer
+        for blob in (b"\x89PNG\r\n\x1a\n", b"RIVE\x07\x00", b"", b"version 2"):
+            self.assertIsNone(_lfs_pointer(blob))
+
+    def test_malformed_pointer_is_not_silently_accepted(self):
+        from oracles.ingest import _lfs_pointer
+        truncated = b"version https://git-lfs.github.com/spec/v1\noid sha256:abc\n"
+        self.assertIsNone(_lfs_pointer(truncated))   # no size line -> not usable
+
+    def test_format_detection_would_not_have_caught_it(self):
+        # The reason this needed its own guard: a pointer is plain text, so every probe
+        # returns None and the entry records `format: null` — indistinguishable from a
+        # format we simply do not recognise yet.
+        self.assertIsNone(formats.detect(self.POINTER, "conftest.ktx"))
+
+
 class TestGlobs(unittest.TestCase):
     def test_double_star_crosses_separators(self):
         rx = spec.compile_globs(["a/**/*.swf"])

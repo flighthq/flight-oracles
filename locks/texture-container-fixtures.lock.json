@@ -1,0 +1,1133 @@
+{
+  "pack": {
+    "name": "texture-container-fixtures",
+    "kind": "fixtures",
+    "summary": "GPU texture container fixtures \u2014 KTX2, KTX1 and Basis Universal, plus DDS."
+  },
+  "sources": [
+    {
+      "id": "ktx-software-tests",
+      "kind": "upstream",
+      "repo": "KhronosGroup/KTX-Software",
+      "ref": "main",
+      "commit": "02f39de0409046ce722f2efccbcd8dafeb5b56a0",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "Apache-2.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE.md",
+        "covers": "Files unique to KTX-Software, per its LICENSE.md: 'Files unique to this repository generally fall under the Apache 2.0 license', copyright Mark Callow, The Khronos Group and KTX contributors. The repository is REUSE-compliant with per-file SPDX headers; this pack takes only tests/resources, which is KTX's own conformance material rather than incorporated third-party work.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/ktx-software-tests@02f39de04090.txt"
+    },
+    {
+      "id": "basis-universal-tests",
+      "kind": "upstream",
+      "repo": "BinomialLLC/basis_universal",
+      "ref": "master",
+      "commit": "9bebe16726b3a61c8c213eeee3b7cffb462ef34e",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "Apache-2.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "Basis Universal, Binomial LLC. Test textures published with the encoder.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/basis-universal-tests@9bebe16726b3.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "basis/test_files/base_xuastc_arith.ktx2",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "test_files/base_xuastc_arith.ktx2",
+      "sha256": "6e6d055e74a2a2068baad8882dbcbe1be6ab7fd00f6818a5b1b063dc2aa579ab",
+      "size": 95602,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "basis/test_files/base_xuastc_zstd.ktx2",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "test_files/base_xuastc_zstd.ktx2",
+      "sha256": "65d618f9216b83624f9dae3acfb944e8a3938c2267c5245c348a1267bf7691a5",
+      "size": 109759,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "basis/test_files/kodim01.dds",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "test_files/kodim01.dds",
+      "sha256": "198a5605d0c5e368c3687842820ddf565176d35b757e9d0fd2b79e352dccc1c3",
+      "size": 196756,
+      "format": {
+        "kind": "dds",
+        "version": null,
+        "width": 768,
+        "height": 512
+      }
+    },
+    {
+      "path": "basis/test_files/kodim01.ktx2",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "test_files/kodim01.ktx2",
+      "sha256": "8ef0f9b3a5337bec4f436c586249dc848c3547e2f77e79491bb068136a2d50b2",
+      "size": 224388,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "basis/test_files/kodim23.ktx2",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "test_files/kodim23.ktx2",
+      "sha256": "0eb567d4e19be85562c74a77067631b7804d4042cc2ff78e161dc5915f8390a8",
+      "size": 97138,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "basis/test_files/texarray_alpha_0.dds",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "test_files/texarray_alpha_0.dds",
+      "sha256": "6a3330c5ddee2e65746be7476fb0e88fc9c6da735e4955d3fe0e7485842b7e22",
+      "size": 196756,
+      "format": {
+        "kind": "dds",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/alpha3.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/alpha3.basis",
+      "sha256": "e98ddf9163b8b6f8439b788d1116f3a9818d8779af96b07cf425c7db1635096a",
+      "size": 148691,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/base.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/base.basis",
+      "sha256": "4a98d46492c4693674049c3f60ed3d34c9da2da8f764dcb1698cfaca0235bf36",
+      "size": 122783,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/desk.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/desk.basis",
+      "sha256": "ab28757822d158af87ddadc0e03a8f46809cf5936d39d90189272eb33da5c1ad",
+      "size": 564244,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/desk_6x6.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/desk_6x6.basis",
+      "sha256": "c5e4765c7048688083616b31b20fa76a92e4597df61e574c637fb700ffcc8144",
+      "size": 252388,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/desk_6x6i.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/desk_6x6i.basis",
+      "sha256": "2b52a5985d233b0dc012701e23245ad440242b66fc96ce2916ca63da44ec1d78",
+      "size": 231455,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/kodim01_mipmapped.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/kodim01_mipmapped.basis",
+      "sha256": "3b76804aa7bf9488b5f2c758373fc4ec09d7a400dd3ff1fe5a8ed8e2ca09d5ce",
+      "size": 75791,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/kodim03.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/kodim03.basis",
+      "sha256": "7a4ca0565bb9bff36b37821200b2a08db75d42618fa92b0fc8c98c32e46cf8b8",
+      "size": 85304,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/kodim03_uastc.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/kodim03_uastc.basis",
+      "sha256": "4f11ae2a95c9358c0f3613c747e84e41f3917e8cc0bc6792a2ffaf37bf33b997",
+      "size": 393316,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/kodim18_uastc.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/kodim18_uastc.basis",
+      "sha256": "0e2fbd8467f0c3dc577c03aed747f6bd3058d766a683a80eaa4b3bb6a781d083",
+      "size": 393316,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/kodim20.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/kodim20.basis",
+      "sha256": "1be7948a2eddbc0d5e1ab8f6915930969c1362334944726ed6cc31c5bab8ffdf",
+      "size": 52496,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/kodim20_1024x1024.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/kodim20_1024x1024.basis",
+      "sha256": "a8c368950acc5c730ef9abdf0ba399b625bd204580f60187c9792629f01466ba",
+      "size": 90783,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/kodim23_hdr.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/kodim23_hdr.basis",
+      "sha256": "fe12df12f736be8c8a067ec03973664db9aded44d3ac17d4967738df999bb9c0",
+      "size": 393316,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "basis/webgl/texture_test/assets/kodim26_uastc_1024.basis",
+      "sourceId": "basis-universal-tests",
+      "upstreamPath": "webgl/texture_test/assets/kodim26_uastc_1024.basis",
+      "sha256": "6b896fb8350839fd6635345fbc44a279e8fb5f72f7a5b836bbb03f3aed3aa9ae",
+      "size": 1048676,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "ktx/basis/alpha_simple.basis",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/basis/alpha_simple.basis",
+      "sha256": "b7a7237eb92a23a6a93fe11c4362449af3994dfc3b330f867cd7d6be4f1d6ff9",
+      "size": 226,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "ktx/basis/color_grid.basis",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/basis/color_grid.basis",
+      "sha256": "2e9164fcc0faf19f6932725cfbff672a504b006d85e0fb07b95b758bb13f575d",
+      "size": 71560,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "ktx/basis/kodim17.basis",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/basis/kodim17.basis",
+      "sha256": "11242a431cf85ba6d1b834f51f79851a53a9b2091dae93118eaf54c223c05a35",
+      "size": 55685,
+      "format": {
+        "kind": "basis",
+        "version": null
+      }
+    },
+    {
+      "path": "ktx/ktx/astc_8x8_unorm_array_7.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/astc_8x8_unorm_array_7.ktx",
+      "sha256": "046f6f04070340bfaa465129a49e4ea082923a5de83fc9d819d6abea4bf779cf",
+      "size": 114788,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/bc3_unorm_array_7.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/bc3_unorm_array_7.ktx",
+      "sha256": "94c364ad7f7f6c8c4bccfffb48d74a1e5bd9cb6934ae46130a5cc76cdcb6cc57",
+      "size": 458852,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/conftestimage_R11_EAC.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/conftestimage_R11_EAC.ktx",
+      "sha256": "f74e8716e5f6b49d321cc2cefe7f7b60362affd585f501134676a843afea34b2",
+      "size": 1092,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/conftestimage_RG11_EAC.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/conftestimage_RG11_EAC.ktx",
+      "sha256": "5dd368207e358607b7596f5a73201934d33f87eb2dec71cdc16ac1d20eaf1e1d",
+      "size": 2116,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/conftestimage_SIGNED_R11_EAC.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/conftestimage_SIGNED_R11_EAC.ktx",
+      "sha256": "b4369caeb34d25a9a9fa01de3f47d82769be2e7703c7a09178c9ade99c429a2c",
+      "size": 1092,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/conftestimage_SIGNED_RG11_EAC.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/conftestimage_SIGNED_RG11_EAC.ktx",
+      "sha256": "43624d9d106d4eb4bb5943bcd7d11470571590300078754c7288074436e05789",
+      "size": 2116,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/etc1.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/etc1.ktx",
+      "sha256": "48a8b5441e0018a39590116de834b226a2ec4de29517b097880390f9f4141a34",
+      "size": 8260,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/etc2_rgb.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/etc2_rgb.ktx",
+      "sha256": "9c6133cde76286b9a0a4de4102037e2121c0984d6ac4b10e8be2ef5f96a18203",
+      "size": 8260,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/etc2_rgba1.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/etc2_rgba1.ktx",
+      "sha256": "0f835ddb08aa6ddc682dbf7685fdfeea6693c3f6adcbabfbec95ec83062a43ef",
+      "size": 8260,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/etc2_rgba8.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/etc2_rgba8.ktx",
+      "sha256": "ad5c697098f8e5b452c87b6d4cb1fbdb51399b4f52c1b1e3e74790c820b40db3",
+      "size": 16452,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/etc2_srgb.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/etc2_srgb.ktx",
+      "sha256": "7b0b1c3c27161480e0d350536f22aed932bf576574ccb74bfd6be951b1b533e9",
+      "size": 8260,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/etc2_srgba1.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/etc2_srgba1.ktx",
+      "sha256": "283dc7e336c08819e63cfe9a8aa3f805470c93ff69a9069c6d268c652250a2a0",
+      "size": 8260,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/etc2_srgba8.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/etc2_srgba8.ktx",
+      "sha256": "1578a53ee20dab9d9f2c47860451977d856bad9898e688905c842b0c9c663894",
+      "size": 16452,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/etc2_unorm_array_7.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/etc2_unorm_array_7.ktx",
+      "sha256": "8305e9adea781bc9c2eae6c43f7a9ee76dff4ad5fb9ba689be0d8e1fd8ef4d35",
+      "size": 229476,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/hi_mark.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/hi_mark.ktx",
+      "sha256": "c671cf4e1114a7eb5c53e74ab86a8f443159192f2f15e641ba88514eed6ec503",
+      "size": 50856,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/hi_mark_sq.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/hi_mark_sq.ktx",
+      "sha256": "386a6657e310cab2458c9abe226b3e3f2f1c60edf7ec755d1b8227fd78f52ea8",
+      "size": 56776,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/l8_unorm_metadata.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/l8_unorm_metadata.ktx",
+      "sha256": "76532fa0853853c2dced2c5e6c6eabf8c07d20cb2956cc0fb94046ca4e9101ca",
+      "size": 20096,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/metalplate_amg.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/metalplate_amg.ktx",
+      "sha256": "89070d4a8981320936a25b3a5821e4cdec212e23ffc331aa915c64fa72329858",
+      "size": 1048676,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/no_npot.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/no_npot.ktx",
+      "sha256": "03994ddab794672bbd1e961906f6407a84a784c1aff377b871c3b77a6d91c47f",
+      "size": 196704,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/not4_r8g8b8_srgb.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/not4_r8g8b8_srgb.ktx",
+      "sha256": "f99f7d4a88bd2eb3be9b5841db55dfd57b3cdceae91ea1f90a286919ccc0425c",
+      "size": 292448,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/orient_down_metadata.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/orient_down_metadata.ktx",
+      "sha256": "0ab5d8e17e22c51ad70ddabe25387647b0d81c2b1f316942e44320826d849b00",
+      "size": 49248,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/orient_up_metadata.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/orient_up_metadata.ktx",
+      "sha256": "da74ead1bac6259a5110e8cbcd85610852780cc7b6b6c2c2ae72061c2a28d71f",
+      "size": 49248,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/pattern_02_bc2.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/pattern_02_bc2.ktx",
+      "sha256": "92124aa86d4f0386f35dcb8652f0e985cbd023b60a6b6f1b06c2a9f116ce4419",
+      "size": 1398268,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/r8g8b8_srgb.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/r8g8b8_srgb.ktx",
+      "sha256": "da0fe3fcd31da0a99682972dee68079a3e0dfb6d8092fefbb3cacc6e92a6e024",
+      "size": 49220,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/r8g8b8_srgb_mip.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/r8g8b8_srgb_mip.ktx",
+      "sha256": "144a9af1beb84939c74424062ee1ce53fcd64e6c36b32e71ffa79e2722dd84dd",
+      "size": 16480,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/r8g8b8_unorm_amg.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/r8g8b8_unorm_amg.ktx",
+      "sha256": "06aaa2f325f34ef2bac8f0e3b7761f2982fd9de717c7fc975f1c1ac6269a0d7f",
+      "size": 49220,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx/r8g8b8a8_srgb.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx/r8g8b8a8_srgb.ktx",
+      "sha256": "a6ee5dfd91a32b8dc5adcc4a22d9244599e08ca699caedae18352f5c90d967f6",
+      "size": 65604,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/ktx2/Desk_astc_hdr6x6.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/Desk_astc_hdr6x6.ktx2",
+      "sha256": "203824a5f1197cd857e12113cf6df0104cb2b413ec48d4df320d18378f363742",
+      "size": 244041,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/Desk_small_zstd_15.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/Desk_small_zstd_15.ktx2",
+      "sha256": "97d2525ce9057782eb69d54ffa3143ae79b969eb87f3b368d24e438358496ce9",
+      "size": 194396,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/Desk_uastc_hdr4x4_zstd_15.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/Desk_uastc_hdr4x4_zstd_15.ktx2",
+      "sha256": "723a272653cd2e7931a63a445110dcf17a4c059687858f245228c8ca4c9e9209",
+      "size": 529024,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/Desk_uastc_hdr6x6i.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/Desk_uastc_hdr6x6i.ktx2",
+      "sha256": "9e0c0179e26d2c0ab41b7c3a3c41f2511c1f494ad4a1910d0e7d6f9f134c30f6",
+      "size": 217374,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/FlightHelmet_baseColor_blze.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/FlightHelmet_baseColor_blze.ktx2",
+      "sha256": "8b43bcd46e5c359fa554fe3164cae613d5dc911feeb3ef6a9576deaee1589146",
+      "size": 221447,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/Iron_Bars_001_normal_blze.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/Iron_Bars_001_normal_blze.ktx2",
+      "sha256": "ce08dcfba94ab4123596fd7ca3a9943a4e529b639244b61522469db2de7bd2b9",
+      "size": 346583,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/Iron_Bars_001_normal_uastc_zstd_10.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/Iron_Bars_001_normal_uastc_zstd_10.ktx2",
+      "sha256": "75805cdb40b474f6237d670d393c5337a7ed6efd1ed35f7d7aa2d90b1bcf7beb",
+      "size": 1306224,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/alpha_complex_premultiplied.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/alpha_complex_premultiplied.ktx2",
+      "sha256": "1c9819274ed2b8cba3dec872ca266c6db5537ee1402b2aace483d2038e6eaa68",
+      "size": 109928,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/alpha_complex_straight.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/alpha_complex_straight.ktx2",
+      "sha256": "4e4e07ce49bfcd362456b1c3f1daebd6255ab054eeb936de2eb81524a49f93d3",
+      "size": 110100,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/alpha_simple_blze.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/alpha_simple_blze.ktx2",
+      "sha256": "59042e0998161c8dd3d5dc66b9f879fe30b7111aaa6214d910960c870d3dcb5b",
+      "size": 375,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/astc_8x8_unorm_array_7.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/astc_8x8_unorm_array_7.ktx2",
+      "sha256": "55aad050d084e345616503bff1896e133cb8f9d0540bf22703c8453d296a9a93",
+      "size": 114944,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/bc3_unorm_array_7.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/bc3_unorm_array_7.ktx2",
+      "sha256": "161e4a31ccf8a38edf0125ddfe9ab67e94f56a148ca5b63c9924707363b51ffe",
+      "size": 459024,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/color_grid_blze.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/color_grid_blze.ktx2",
+      "sha256": "726393af40730a2c349b6a70217c6da89d4bc6fee78bac30935088f62a2b5581",
+      "size": 71716,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/color_grid_uastc_zstd_5.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/color_grid_uastc_zstd_5.ktx2",
+      "sha256": "b9739e8d42a1bb525e6244f5d01367b620b6431100371ec3b8157741b39c5b85",
+      "size": 170535,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/color_grid_zstd_5.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/color_grid_zstd_5.ktx2",
+      "sha256": "3c880a37399189bf0a873bd43f77e83489950850842e8b295690c16dfe115eba",
+      "size": 266422,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/cubemap_goldengate_uastc_rdo_4_zstd_5.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/cubemap_goldengate_uastc_rdo_4_zstd_5.ktx2",
+      "sha256": "a005d013c0cc80f7d2a1e747b2155beaf342b15b6b69187739cc2fc77f4ec980",
+      "size": 4097440,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/cubemap_yokohama_blze.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/cubemap_yokohama_blze.ktx2",
+      "sha256": "455aaf681dd16b0af4cec0e86f81e966c9d076c56a1d4f7f1ee16e6fb314c7ff",
+      "size": 2636337,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/etc2_unorm_array_7.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/etc2_unorm_array_7.ktx2",
+      "sha256": "5b442fbbbc8ba46a330e644d594054e84971f93e1eb6728cbfff6d523809f170",
+      "size": 229624,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/kodim17_blze.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/kodim17_blze.ktx2",
+      "sha256": "6e39c30cd98ee90b93d26223662da4b49d5203c798955340188c6873df32560f",
+      "size": 55841,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/ktx_app_astc_8x8.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/ktx_app_astc_8x8.ktx2",
+      "sha256": "a694c68e7d94cc5fa3a26c986d50c0e1bb398fb31a56854c1a613c1cc3951e4e",
+      "size": 350032,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/ktx_document_blze.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/ktx_document_blze.ktx2",
+      "sha256": "f1e2dee78bc8e4ba3194ff938b541a16e21807495f9d73c375c1373cb0aea22e",
+      "size": 28815,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/ktx_document_uastc_rdo_4_zstd_5.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/ktx_document_uastc_rdo_4_zstd_5.ktx2",
+      "sha256": "15913638d6d882c41bde2021443d1f0a83de29adb294dcb835fd4618baf19780",
+      "size": 64160,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/orient_down_metadata.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/orient_down_metadata.ktx2",
+      "sha256": "7bcac6605de7a372416f95164b0757c89901b18046f658feeb8322c2a3e1edd4",
+      "size": 65824,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/orient_up_metadata.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/orient_up_metadata.ktx2",
+      "sha256": "08a3ac4af02412a75a7d0fbf1e0ba0d128f14aaa2b4e9ab916417ea382030202",
+      "size": 65824,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/pattern_02_bc2.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/pattern_02_bc2.ktx2",
+      "sha256": "ad229ffdd85fcdc41004a3da9d4874a4b79e6978ed1116a03750df6c91a86807",
+      "size": 1398640,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/r8g8b8_srgb_mip.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/r8g8b8_srgb_mip.ktx2",
+      "sha256": "da5c0dd90920620dc3634ff0842c775c36e86c4477ffde29607c9e3fa536bd91",
+      "size": 16788,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/r8g8b8a8_srgb.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/r8g8b8a8_srgb.ktx2",
+      "sha256": "e49f639e1af5e557e03b630ae07b8090c830924fabba3e0ee13c083cf552eeaf",
+      "size": 65800,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/r8g8b8a8_srgb_3d_7.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/r8g8b8a8_srgb_3d_7.ktx2",
+      "sha256": "469833ae8e3c22bcfdf6c21473b1b06df77b3d09eac4f7f7d60c59e8d6056507",
+      "size": 7432,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/r8g8b8a8_srgb_array_7_mip.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/r8g8b8a8_srgb_array_7_mip.ktx2",
+      "sha256": "b9f7b8719fa16f53dc5706438d8e04b0b0af21e756492579849d9c5809ea06d3",
+      "size": 9908,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/r8g8b8a8_srgb_mip.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/r8g8b8a8_srgb_mip.ktx2",
+      "sha256": "e24340bf5a06666bbb112c62bd9c676e979f8a0f6f8833b4efa667285a48b07e",
+      "size": 22252,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/r8g8b8a8_srgb_mip_astc.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/r8g8b8a8_srgb_mip_astc.ktx2",
+      "sha256": "015d6d645de2afa02542a0bdc1b52ec8e39170c514eb5c8e21368408b84faad9",
+      "size": 5856,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/r8g8b8a8_srgb_mip_blze.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/r8g8b8a8_srgb_mip_blze.ktx2",
+      "sha256": "0ebd1ca3c9c8016c97226c7144606a78c900ddb42819495aea4acd05c76d11ff",
+      "size": 666,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/r8g8b8a8_srgb_mip_etc2.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/r8g8b8a8_srgb_mip_etc2.ktx2",
+      "sha256": "6faf1fb53718c81eb8eef1f73320c864c7bfb7af14b9748225458422e26f08c8",
+      "size": 5872,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/ktx2/skybox_zstd_22.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/ktx2/skybox_zstd_22.ktx2",
+      "sha256": "67033a35dc0f5af1019e0e742b2191218af5d47bb22da987bad69ee7e4d1711d",
+      "size": 13630377,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/unicode/h\u0171t\u0151.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/h\u0171t\u0151.ktx",
+      "sha256": "be2eb71374bb05499fef2cbdbc76384196b4af747f7901d787fbb3be84972db9",
+      "size": 1120,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/unicode/h\u0171t\u0151.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/h\u0171t\u0151.ktx2",
+      "sha256": "91b74c6fdc05ec485eb07e5782c062f8b5489594b3fb9b5c801bd86429c6d61d",
+      "size": 1288,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/unicode/h\u0171t\u0151_zstd.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/h\u0171t\u0151_zstd.ktx2",
+      "sha256": "9a23d92153d7809d024c3da9166f8c6b840b0acdf608f85844817920d18f4469",
+      "size": 769,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/unicode/\u0646\u064e\u0633\u0650\u064a\u062c.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\u0646\u064e\u0633\u0650\u064a\u062c.ktx",
+      "sha256": "be2eb71374bb05499fef2cbdbc76384196b4af747f7901d787fbb3be84972db9",
+      "size": 1120,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/unicode/\u0646\u064e\u0633\u0650\u064a\u062c.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\u0646\u064e\u0633\u0650\u064a\u062c.ktx2",
+      "sha256": "91b74c6fdc05ec485eb07e5782c062f8b5489594b3fb9b5c801bd86429c6d61d",
+      "size": 1288,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/unicode/\u0646\u064e\u0633\u0650\u064a\u062c_zstd.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\u0646\u064e\u0633\u0650\u064a\u062c_zstd.ktx2",
+      "sha256": "9a23d92153d7809d024c3da9166f8c6b840b0acdf608f85844817920d18f4469",
+      "size": 769,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/unicode/\u30c6\u30af\u30b9\u30c1\u30e3.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\u30c6\u30af\u30b9\u30c1\u30e3.ktx",
+      "sha256": "be2eb71374bb05499fef2cbdbc76384196b4af747f7901d787fbb3be84972db9",
+      "size": 1120,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/unicode/\u30c6\u30af\u30b9\u30c1\u30e3.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\u30c6\u30af\u30b9\u30c1\u30e3.ktx2",
+      "sha256": "91b74c6fdc05ec485eb07e5782c062f8b5489594b3fb9b5c801bd86429c6d61d",
+      "size": 1288,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/unicode/\u30c6\u30af\u30b9\u30c1\u30e3_zstd.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\u30c6\u30af\u30b9\u30c1\u30e3_zstd.ktx2",
+      "sha256": "9a23d92153d7809d024c3da9166f8c6b840b0acdf608f85844817920d18f4469",
+      "size": 769,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/unicode/\u8d28\u5730.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\u8d28\u5730.ktx",
+      "sha256": "be2eb71374bb05499fef2cbdbc76384196b4af747f7901d787fbb3be84972db9",
+      "size": 1120,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/unicode/\u8d28\u5730.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\u8d28\u5730.ktx2",
+      "sha256": "91b74c6fdc05ec485eb07e5782c062f8b5489594b3fb9b5c801bd86429c6d61d",
+      "size": 1288,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/unicode/\u8d28\u5730_zstd.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\u8d28\u5730_zstd.ktx2",
+      "sha256": "9a23d92153d7809d024c3da9166f8c6b840b0acdf608f85844817920d18f4469",
+      "size": 769,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/unicode/\uc870\uc9c1.ktx",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\uc870\uc9c1.ktx",
+      "sha256": "be2eb71374bb05499fef2cbdbc76384196b4af747f7901d787fbb3be84972db9",
+      "size": 1120,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "ktx/unicode/\uc870\uc9c1.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\uc870\uc9c1.ktx2",
+      "sha256": "91b74c6fdc05ec485eb07e5782c062f8b5489594b3fb9b5c801bd86429c6d61d",
+      "size": 1288,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "ktx/unicode/\uc870\uc9c1_zstd.ktx2",
+      "sourceId": "ktx-software-tests",
+      "upstreamPath": "tests/resources/unicode/\uc870\uc9c1_zstd.ktx2",
+      "sha256": "9a23d92153d7809d024c3da9166f8c6b840b0acdf608f85844817920d18f4469",
+      "size": 769,
+      "format": {
+        "kind": "ktx2",
+        "version": "2.0"
+      }
+    }
+  ],
+  "totals": {
+    "files": 98,
+    "bytes": 36262515
+  }
+}

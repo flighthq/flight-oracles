@@ -30,9 +30,17 @@ suite can pin.
 | `dragonbones-fixtures` | 145 | 14.2 MB | DragonBones skeletons, JSON + binary `.dbbin` |
 | `gltf-khronos-binary` | 118 | 432.7 MB | GLB: self-contained models, textures embedded |
 | `lottie-fixtures` | 76 | 15.1 MB | Lottie animations — 14 format versions, v3.1.6–v5.12.2 |
+| `texture-container-fixtures` | 98 | 36.3 MB | KTX2, KTX1, Basis Universal, DDS |
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
+| `mesh-legacy-fixtures` | 24 | 36.8 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
 
-Ten packs, 8,441 files. Every `skeleton2d-formats` parser now has fixtures behind it.
+Twelve packs, 8,563 files. Every parser in `skeleton2d-formats` and `scene3d-formats` now
+has fixtures behind it.
+
+**Git LFS is resolved, not stored.** `raw.githubusercontent` serves LFS *pointers* rather
+than objects, and a 130-byte text stub where a texture belongs passes every other check —
+it hashes consistently and only a decoder would notice. Pointers are detected and resolved
+through the LFS batch API, with the object verified against the `oid` it claims.
 
 **Merge groups.** `gltf-khronos-fixtures` and `gltf-khronos-textures` share the merge group
 `gltf-khronos` and must be extracted into the **same directory** — glTF references its

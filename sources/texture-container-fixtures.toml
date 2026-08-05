@@ -1,0 +1,57 @@
+# texture-container-fixtures — GPU texture containers.
+#
+# flight's texture-formats parses four containers: KTX2, Basis, DDS and ATF
+# (parseKtx2.ts, parseBasis.ts, parseDds.ts, parseAtf.ts) plus detectTextureContainer.ts.
+# Three of the four are covered here.
+#
+# ATF (Adobe Texture Format) is NOT included: no corpus with a usable declaration has been
+# found. It was a Flash-era Adobe format and the sample files that exist are scattered
+# through AIR SDK distributions rather than published as a corpus. Recorded as a known gap
+# rather than filled with something unattributable.
+#
+# EXCLUDES external/ in both repositories. Those are vendored copies of other projects
+# (astc-encoder, basis_universal inside KTX-Software) carrying their own separate licences —
+# taking them here would attribute their files to the wrong upstream.
+
+[pack]
+name = "texture-container-fixtures"
+kind = "fixtures"
+summary = "GPU texture container fixtures — KTX2, KTX1 and Basis Universal, plus DDS."
+
+# The KTX conformance resources: the reference corpus for the format, by its own authors.
+[[source]]
+id = "ktx-software-tests"
+kind = "upstream"
+repo = "KhronosGroup/KTX-Software"
+ref = "main"
+fetch = "blobs"
+include = ["tests/resources/**/*.ktx2", "tests/resources/**/*.ktx", "tests/resources/**/*.basis"]
+strip = "tests/resources/"
+dest = "ktx/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Files unique to KTX-Software, per its LICENSE.md: 'Files unique to this repository generally fall under the Apache 2.0 license', copyright Mark Callow, The Khronos Group and KTX contributors. The repository is REUSE-compliant with per-file SPDX headers; this pack takes only tests/resources, which is KTX's own conformance material rather than incorporated third-party work."
+
+# Basis Universal's own test textures, from the format's authors.
+[[source]]
+id = "basis-universal-tests"
+kind = "upstream"
+repo = "BinomialLLC/basis_universal"
+ref = "master"
+fetch = "blobs"
+include = ["test_files/**/*.dds", "test_files/**/*.basis", "test_files/**/*.ktx2", "webgl/texture_test/**/*.basis"]
+strip = ""
+dest = "basis/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Basis Universal, Binomial LLC. Test textures published with the encoder."

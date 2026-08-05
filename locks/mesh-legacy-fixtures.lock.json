@@ -1,0 +1,313 @@
+{
+  "pack": {
+    "name": "mesh-legacy-fixtures",
+    "kind": "fixtures",
+    "summary": "Legacy 3D mesh formats \u2014 OBJ/MTL, AWD2, MD5 mesh and anim, MD2, 3DS."
+  },
+  "sources": [
+    {
+      "id": "awayjs-examples-meshes",
+      "kind": "upstream",
+      "repo": "flighthq-ports/awayjs-examples",
+      "ref": "main",
+      "commit": "6d608332831f3c98fbfdfedfaf99327ce5bfca81",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "The awayjs-examples port as published by flighthq-ports.",
+        "onwardUse": "unrestricted",
+        "underlying": [
+          {
+            "declared": "UNKNOWN",
+            "note": "The upstream this was ported from, awayjs/awayjs-examples, carries no licence declaration of any kind. The MIT above is the port's own declaration and covers the port's authorship; it does not establish that the bundled art was licensed to begin with. Recorded so the distinction survives, since these files are game assets rather than the port's original work."
+          }
+        ]
+      },
+      "licenseSnapshot": "licenses/awayjs-examples-meshes@6d608332831f.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "meshes/Halo_3_SPARTAN4.obj",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/Halo_3_SPARTAN4.obj",
+      "sha256": "481327aba58e6345a78f159496e49329aeb2bfc1f52c62b9d90dfef4044bfca3",
+      "size": 433578,
+      "format": {
+        "kind": "obj",
+        "version": null
+      },
+      "depicts": {
+        "subject": "Halo 3 SPARTAN-IV armour",
+        "rightsHolder": "Bungie / Microsoft",
+        "status": "unresolved"
+      }
+    },
+    {
+      "path": "meshes/f14/f14d.mtl",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/f14/f14d.mtl",
+      "sha256": "d9c661104d3ee140237dbb7e7a3de4b67c0ba166f12b5ea99d7588e63dd3782f",
+      "size": 4329,
+      "format": {
+        "kind": "mtl",
+        "version": null
+      }
+    },
+    {
+      "path": "meshes/f14/f14d.obj",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/f14/f14d.obj",
+      "sha256": "e7cd3b2138625e7400eade2027b1e2b2098d085520268e75f475b34e8dd46588",
+      "size": 14234733,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "meshes/head.obj",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/head.obj",
+      "sha256": "38ce7f4e423d0f9bb655ab2d66cd67064f5f06db465ce10e76e44b12bd6f78fd",
+      "size": 1488165,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "meshes/hellknight/attack2.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/attack2.md5anim",
+      "sha256": "ef3017159d29ce4456e5eee42635287215705c2a81c9bddb22f7eeb0e6dd9fc5",
+      "size": 114002,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/hellknight/attack3.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/attack3.md5anim",
+      "sha256": "f04cfe1b8d2d82bf77e595dd921df4541eaeecb5a0c859c2b9953e67db903bfa",
+      "size": 131205,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/hellknight/chest.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/chest.md5anim",
+      "sha256": "dd9faef8bae95af3257b8ff4cc4e59b7b360720b86f2d288ae4c8884ee1f17c6",
+      "size": 43462,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/hellknight/headpain.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/headpain.md5anim",
+      "sha256": "58b3f70e0773badff64c04a3aeff60ba1492e230e433f347fc768e969910497d",
+      "size": 32859,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/hellknight/hellknight.md5mesh",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/hellknight.md5mesh",
+      "sha256": "3f316658df548954e2b50cb4d86d0011946b1f0a7b3e5a27f5d1a86fb08a488d",
+      "size": 396086,
+      "format": {
+        "kind": "md5mesh",
+        "version": "10"
+      },
+      "depicts": {
+        "subject": "Hell Knight, Doom 3",
+        "rightsHolder": "id Software / ZeniMax",
+        "status": "unresolved"
+      }
+    },
+    {
+      "path": "meshes/hellknight/idle2.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/idle2.md5anim",
+      "sha256": "91d8634d4ea029c21c268788ae5b2dcf7d5426c099b80af876acc26a6a5f3b9d",
+      "size": 292064,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/hellknight/leftslash.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/leftslash.md5anim",
+      "sha256": "127813d29690a3a7de9bd9ecc36ab2a7d88727fd5e17d1ef0c4cbf9c367f83a1",
+      "size": 109516,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/hellknight/pain1.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/pain1.md5anim",
+      "sha256": "728c3a0922666e056ec7efa4b416b23785d2d919236437ee915b7fbe8e2ebe87",
+      "size": 26872,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/hellknight/pain_luparm.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/pain_luparm.md5anim",
+      "sha256": "f0cd365d54e3bcc1d9a1ba553acda73e5445a41fd1b262eafbba475c52a221f3",
+      "size": 32879,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/hellknight/range_attack2.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/range_attack2.md5anim",
+      "sha256": "7e70a00758e90bd9064862af08a5a4cb2f233570eeaaf1e3db7569fecec2caa4",
+      "size": 201292,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/hellknight/roar1.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/roar1.md5anim",
+      "sha256": "a38ddcce053aca5d1881b9b411b69aca063e45222e2bfa3ac9a39113fd5f33a7",
+      "size": 138450,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/hellknight/turret_attack.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/turret_attack.md5anim",
+      "sha256": "0dbbcf32bd32f199c3c829261ee05d289eddcb3082828b667990d3975b672378",
+      "size": 92070,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/hellknight/walk7.md5anim",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/hellknight/walk7.md5anim",
+      "sha256": "a698eb3d92c8257c8679a2aa98a8d1fc7478af6c5a5640692b93b4a18a58d268",
+      "size": 108971,
+      "format": {
+        "kind": "md5anim",
+        "version": "10"
+      }
+    },
+    {
+      "path": "meshes/monsterhead/MonsterHead.awd",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/monsterhead/MonsterHead.awd",
+      "sha256": "52b4f60c906c04bba4d141200f436e8e2a411b905d4f427ecd785affe2576712",
+      "size": 5868198,
+      "format": {
+        "kind": "awd",
+        "version": "2.1"
+      }
+    },
+    {
+      "path": "meshes/pknight.md2",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/pknight.md2",
+      "sha256": "cf52dc930cc51d39ce728cb3e6cb684cfb9816230eb879f349657089415e7f00",
+      "size": 320236,
+      "format": {
+        "kind": "md2",
+        "version": "8"
+      }
+    },
+    {
+      "path": "meshes/shambler.awd",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/shambler.awd",
+      "sha256": "614268c68b663f45e4990093848825517152c1cebd54856b40071b9b5d31fe55",
+      "size": 2049443,
+      "format": {
+        "kind": "awd",
+        "version": "2.1"
+      }
+    },
+    {
+      "path": "meshes/soldier_ant.3ds",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/soldier_ant.3ds",
+      "sha256": "5b313104c27be1d4bac08b14e7fa401388ba521c433fb5d7b4677346fe0ee06b",
+      "size": 348402,
+      "format": {
+        "kind": "3ds",
+        "version": null
+      }
+    },
+    {
+      "path": "meshes/sponza/sponza.awd",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/sponza/sponza.awd",
+      "sha256": "5e50060dc5b3dbbe386ffe2aa7d976af654d9fee140c33caff4a4815d12ca47d",
+      "size": 7929561,
+      "format": {
+        "kind": "awd",
+        "version": "2.1"
+      }
+    },
+    {
+      "path": "meshes/suzanne.awd",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/suzanne.awd",
+      "sha256": "4b4f5a78cee203ffeb0e30594db3202a28611671a9bd6618eb3e8baf70721b69",
+      "size": 1737335,
+      "format": {
+        "kind": "awd",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "meshes/terrain.obj",
+      "sourceId": "awayjs-examples-meshes",
+      "upstreamPath": "assets/terrain.obj",
+      "sha256": "accac1819f56cf08562782a08f2c1c0395edfd300579eb195aa5a398a4b19a69",
+      "size": 659160,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    }
+  ],
+  "totals": {
+    "files": 24,
+    "bytes": 36792868
+  }
+}
