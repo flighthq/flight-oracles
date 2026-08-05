@@ -111,6 +111,27 @@ class TestFormats(unittest.TestCase):
         blob = json.dumps({"imagePath": "x.png", "SubTexture": []}).encode()
         self.assertEqual(formats.detect(blob, "x_tex.json")["kind"], "dragonbones-atlas")
 
+    def test_tiled_xml_and_json_serialisations(self):
+        tmx = b'<?xml version="1.0"?><map version="1.10" orientation="orthogonal">'
+        info = formats.detect(tmx, "a.tmx")
+        self.assertEqual((info["kind"], info["version"], info["orientation"]),
+                         ("tmx", "1.10", "orthogonal"))
+        tmj = json.dumps({"version": "1.10", "orientation": "isometric"}).encode()
+        self.assertEqual(formats.detect(tmj, "a.tmj")["kind"], "tmj")
+        self.assertEqual(formats.detect(tmx.replace(b"map", b"tileset"), "a.tsx")["kind"],
+                         "tsx")
+
+    def test_tiled_probes_key_off_extension_not_content(self):
+        # TMX and TSX are both XML with a version attribute; only the extension separates
+        # a map from a tileset, and a tileset parsed as a map would silently yield nothing.
+        xml = b'<tileset version="1.5">'
+        self.assertEqual(formats.detect(xml, "x.tsx")["kind"], "tsx")
+        self.assertIsNone(formats.detect(xml, "x.xml"))
+
+    def test_bmfont_text_serialisation(self):
+        info = formats.detect(b"info face=\"Arial\" size=32\n", "a.fnt")
+        self.assertEqual((info["kind"], info["version"]), ("fnt", "text"))
+
     def test_unknown_returns_none_rather_than_raising(self):
         # Not knowing a format is a fact to record, never a reason to drop a fixture.
         self.assertIsNone(formats.detect(b"\x00\x01\x02\x03nonsense", "mystery.bin"))

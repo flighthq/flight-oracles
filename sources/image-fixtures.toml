@@ -1,0 +1,32 @@
+# image-fixtures — PNG conformance corpus.
+#
+# The canonical PngSuite, as bundled by the PNG reference implementation. Covers every basic
+# colour type, bit depth, interlacing, gamma and ancillary-chunk combination the format
+# allows — and deliberately includes cases designed to break naive decoders.
+#
+# This is also the natural home for the negative corpus later: PngSuite's siblings at
+# schaik.com include corrupt files with documented expected behaviour, which is what
+# `image-codec`'s error paths need.
+
+[pack]
+name = "image-fixtures"
+kind = "fixtures"
+summary = "PngSuite — the canonical PNG conformance corpus, covering colour types, bit depths, interlacing and ancillary chunks."
+
+[[source]]
+id = "pngsuite"
+kind = "upstream"
+repo = "pnggroup/libpng"
+ref = "libpng16"
+fetch = "blobs"
+include = ["contrib/pngsuite/**/*.png"]
+strip = "contrib/pngsuite/"
+dest = "pngsuite/"
+
+[source.license]
+declared = "LicenseRef-PngSuite-Permissive"
+declared_scope = "file-adjacent"
+declared_from = "contrib/pngsuite/README"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Copyright (c) Willem van Schaik, 1999/2011/2012; two images by Glenn Randers-Pehrson, 2012. The README grants it plainly: 'Permission to use, copy, modify, and distribute these images for any purpose and without fee is hereby granted.'"

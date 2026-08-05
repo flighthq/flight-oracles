@@ -1,0 +1,143 @@
+{
+  "pack": {
+    "name": "bitmapfont-fixtures",
+    "kind": "fixtures",
+    "summary": "AngelCode BMFont descriptors \u2014 the text .fnt serialisation."
+  },
+  "sources": [
+    {
+      "id": "libgdx-bmfont",
+      "kind": "upstream",
+      "repo": "libgdx/libgdx",
+      "ref": "master",
+      "commit": "81cdb92811403f148daff195bff1da896877824c",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "Apache-2.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "libgdx and its bundled test assets.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/libgdx-bmfont@81cdb9281140.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "libgdx/extensions/gdx-tools/assets/default.fnt",
+      "sourceId": "libgdx-bmfont",
+      "upstreamPath": "extensions/gdx-tools/assets/default.fnt",
+      "sha256": "e0832518ed49832cd7fddd8447745aa6e33c7e597c4e151309b1ce437dd22e5b",
+      "size": 11628,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/default.fnt",
+      "sourceId": "libgdx-bmfont",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/default.fnt",
+      "sha256": "350b45628b4bad013f12c9b8e04666f7e6dad8b6ce9706b5978ffb3ec634ea08",
+      "size": 11628,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/font.fnt",
+      "sourceId": "libgdx-bmfont",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/font.fnt",
+      "sha256": "6a288037aeb78f15f8b7222d1b6a9cede6a26a302a3266c7a6febc3abfe3160c",
+      "size": 15633,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/lsans-15.fnt",
+      "sourceId": "libgdx-bmfont",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/lsans-15.fnt",
+      "sha256": "28ef42e6874c83702285df17de4e06b038f749ba6c2d718e0adf36e2c450f2c7",
+      "size": 11292,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/lsans-32-pad.fnt",
+      "sourceId": "libgdx-bmfont",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/lsans-32-pad.fnt",
+      "sha256": "bbaf54fb3dd8d8262261bd2f4ab7acd40c1dbcdd936627157db1a3fb53ea2ae6",
+      "size": 12655,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/lsans-32.fnt",
+      "sourceId": "libgdx-bmfont",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/lsans-32.fnt",
+      "sha256": "9d021be8394aa9d070bf50bebf30ca1e22dbdd3daffb2ad8a6f5128d2063d276",
+      "size": 12290,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/multipagefont.fnt",
+      "sourceId": "libgdx-bmfont",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/multipagefont.fnt",
+      "sha256": "68825c6bbfd2094a4dc751135546b82506e71c0c677f5f9fe8b466e98ee11d6c",
+      "size": 26069,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/utf-font.fnt",
+      "sourceId": "libgdx-bmfont",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/utf-font.fnt",
+      "sha256": "479f79d6508e7d73dfa8d903a5f7cf96dd646ab17e6ec3e13c16a4537ba4008c",
+      "size": 29269,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/verdana39.fnt",
+      "sourceId": "libgdx-bmfont",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/verdana39.fnt",
+      "sha256": "576537db03fb6a39bce190ea588be7ba80f8c2925b6c210cfd0dae2202588662",
+      "size": 19269,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/verdana39distancefield.fnt",
+      "sourceId": "libgdx-bmfont",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/verdana39distancefield.fnt",
+      "sha256": "2ad03cd632853c35d494445af7381715e5a486dd76e1baf5abc8d94f1280f639",
+      "size": 18995,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    }
+  ],
+  "totals": {
+    "files": 10,
+    "bytes": 168728
+  }
+}

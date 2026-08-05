@@ -1,0 +1,187 @@
+{
+  "pack": {
+    "name": "spritesheet-fixtures",
+    "kind": "fixtures",
+    "summary": "Texture atlas descriptors \u2014 libgdx .atlas dialect, with page and region metadata."
+  },
+  "sources": [
+    {
+      "id": "libgdx-atlas",
+      "kind": "upstream",
+      "repo": "libgdx/libgdx",
+      "ref": "master",
+      "commit": "81cdb92811403f148daff195bff1da896877824c",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "Apache-2.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "libgdx and its bundled test assets.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/libgdx-atlas@81cdb9281140.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "libgdx/extensions/gdx-tools/assets/uiskin.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "extensions/gdx-tools/assets/uiskin.atlas",
+      "sha256": "772ac026559d7d984c6aaa7f07219b96d30364157f162a50315486118b1e4cb3",
+      "size": 2894,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/packed.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/packed.atlas",
+      "sha256": "e2ddb506c631ff74e4aaa061d410c90f62ad27b06aeb7e99e3d9373bb7d0cd08",
+      "size": 4123,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test.atlas",
+      "sha256": "e952bbbb21e6906d6e4da3bf251bc67f95d19adb6b0845a9f3c202fc3a0a61a2",
+      "size": 94435,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_gwt_uncompressed.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_gwt_uncompressed.atlas",
+      "sha256": "4eca75a326ad3583077ba64522447644eace5116852a010beb5066d206a8edaf",
+      "size": 46466,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayer_props.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayer_props.atlas",
+      "sha256": "704f7f181207af128112801d9a080f667f1e6b80d0df256d9bddd7501e151627",
+      "size": 24044,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers.atlas",
+      "sha256": "862941aeb1e6d1a6cdb6248005eda675fe856fc565d1d1d53e532d96480ab734",
+      "size": 47650,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi.atlas",
+      "sha256": "8a467aa2784b5429747309f0f504f2271bbf6e4a3d0aac2866ce5391a321d207",
+      "size": 48108,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi_gwt_uncompressed.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi_gwt_uncompressed.atlas",
+      "sha256": "945a31d1f34fead40aa9c3093f6d011b4847a87342792090604bad05252f4a5d",
+      "size": 48125,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_gwt_uncompressed.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_gwt_uncompressed.atlas",
+      "sha256": "265a45a2246df43715c9f0790c85397445710df35271f1354aee2cb33184119f",
+      "size": 47667,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/maps/tiled-groups/tileset/packed.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups/tileset/packed.atlas",
+      "sha256": "9e6ca4bcbde6002b1de4512a90725d94119c93f03e3f97f28b2baf5e049a29b9",
+      "size": 1010,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/pack.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/pack.atlas",
+      "sha256": "12a54ebcc32b04965b3f4f0904c3e82a93aec29cb27cbd8030e4112a585a07ff",
+      "size": 566,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/particles.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particles.atlas",
+      "sha256": "a78dd98dff6b711ef3b615c5566c36d95b201862a34dcbac0acbd9a97b3d0657",
+      "size": 487,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/testAtlas.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/testAtlas.atlas",
+      "sha256": "2c105ed59f2b5fccc9f51e4511ceaa05c49a6af1eb762c81c924064fc81f0cd8",
+      "size": 434,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/tests/gdx-tests-android/assets/data/uiskin.atlas",
+      "sourceId": "libgdx-atlas",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/uiskin.atlas",
+      "sha256": "24d3b79297877859cb33c960b5024ff78d067a042071db6f7def96db343091ef",
+      "size": 2924,
+      "format": {
+        "kind": "libgdx-atlas",
+        "version": null
+      }
+    }
+  ],
+  "totals": {
+    "files": 14,
+    "bytes": 368933
+  }
+}

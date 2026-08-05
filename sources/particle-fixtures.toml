@@ -1,0 +1,31 @@
+# particle-fixtures — particle effect configurations.
+#
+# flight's particles-formats reads six dialects: libgdx, ParticleDesigner, Pixi, Spine,
+# Starling PEX and Unity. This pack covers the libgdx dialect; the rest are named in
+# docs/fixture-coverage.md.
+#
+# Note that Spine particle configs are a seventh thing again and would come from the Spine
+# corpus rather than here.
+
+[pack]
+name = "particle-fixtures"
+kind = "fixtures"
+summary = "Particle effect configurations — the libgdx .p dialect."
+
+[[source]]
+id = "libgdx-particles"
+kind = "upstream"
+repo = "libgdx/libgdx"
+ref = "master"
+fetch = "blobs"
+include = ["tests/gdx-tests-android/assets/**/*.p"]
+strip = "tests/gdx-tests-android/assets/"
+dest = "libgdx/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "libgdx and its bundled test assets."

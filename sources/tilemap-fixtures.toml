@@ -1,0 +1,77 @@
+# tilemap-fixtures — Tiled maps and tilesets.
+#
+# flight's tilemap-formats reads both Tiled serialisations: tiledXmlParse for .tmx/.tsx and
+# tiledJsonParse for .tmj/.tsj, plus tiledProject for .tiled-project. Three sources, because
+# they carry three different declarations — and the editor's own repository is the murkiest
+# of them, which is worth knowing.
+
+[pack]
+name = "tilemap-fixtures"
+kind = "fixtures"
+summary = "Tiled tilemap fixtures — TMX/TSX XML and TMJ/TSJ JSON serialisations, plus project files."
+
+# Cleanest declaration of the three: libgdx is Apache-2.0 throughout and ships both
+# serialisations side by side, which is exactly what a dual-parser package needs.
+[[source]]
+id = "libgdx-tiled"
+kind = "upstream"
+repo = "libgdx/libgdx"
+ref = "master"
+fetch = "blobs"
+include = [
+  "tests/gdx-tests-android/assets/**/*.tmx", "tests/gdx-tests-android/assets/**/*.tmj",
+  "tests/gdx-tests-android/assets/**/*.tsx", "tests/gdx-tests-android/assets/**/*.tsj",
+  "tests/gdx-tests-android/assets/**/*.tiled-project",
+]
+strip = "tests/gdx-tests-android/assets/"
+dest = "libgdx/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "libgdx and its bundled test assets."
+
+# Tiled's COPYING assigns licences per SOURCE directory and names util/java/libtiled-java as
+# BSD 2-clause. The maps under it are inside that declaration.
+[[source]]
+id = "tiled-libtiled-java"
+kind = "upstream"
+repo = "mapeditor/tiled"
+ref = "master"
+fetch = "blobs"
+include = ["util/java/libtiled-java/**/*.tmx", "util/java/libtiled-java/**/*.tsx"]
+strip = "util/java/libtiled-java/"
+dest = "libtiled-java/"
+
+[source.license]
+declared = "BSD-2-Clause"
+declared_scope = "directory"
+declared_from = "COPYING"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Tiled's COPYING lists licences by directory and assigns util/java/libtiled-java the BSD 2-clause licence."
+
+# The editor's own test and example maps — targeted fixtures (automapping cases especially),
+# but NOT covered by any declaration. COPYING enumerates source directories and stops there;
+# it says nothing about tests/ or examples/. Recorded as undeclared rather than assumed to
+# inherit the application's GPL or libtiled's BSD, since neither was stated about these files.
+[[source]]
+id = "tiled-test-maps"
+kind = "upstream"
+repo = "mapeditor/tiled"
+ref = "master"
+fetch = "blobs"
+include = ["tests/**/*.tmx", "tests/**/*.tsx", "examples/**/*.tmx", "examples/**/*.tsx",
+           "examples/**/*.tiled-project"]
+strip = ""
+dest = "tiled/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "Tiled's COPYING assigns licences to source directories only and is silent on tests/ and examples/. No declaration covers these map files."

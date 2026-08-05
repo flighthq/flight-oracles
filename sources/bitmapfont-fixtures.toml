@@ -1,0 +1,32 @@
+# bitmapfont-fixtures — AngelCode BMFont descriptors.
+#
+# flight's bitmapfont-formats reads three serialisations of the same model: bitmapFontFnt
+# (the original text .fnt), bitmapFontXml and bitmapFontJson. libgdx ships the text form,
+# which is the one the other two were derived from.
+#
+# Distinct from `font-signature-fixtures` in the coverage plan: those are four-byte magic
+# numbers for TTF/OTF/WOFF container sniffing. These are glyph-atlas descriptors, a
+# completely different thing that happens to share the word "font".
+
+[pack]
+name = "bitmapfont-fixtures"
+kind = "fixtures"
+summary = "AngelCode BMFont descriptors — the text .fnt serialisation."
+
+[[source]]
+id = "libgdx-bmfont"
+kind = "upstream"
+repo = "libgdx/libgdx"
+ref = "master"
+fetch = "blobs"
+include = ["tests/gdx-tests-android/assets/**/*.fnt", "extensions/gdx-tools/assets/**/*.fnt"]
+strip = ""
+dest = "libgdx/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "libgdx and its bundled test assets."

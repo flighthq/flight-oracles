@@ -1,0 +1,30 @@
+# spritesheet-fixtures — texture atlas and spritesheet descriptors.
+#
+# flight reads five atlas dialects across two packages (spritesheet-formats and
+# textureatlas-formats): libgdx, TexturePacker, Starling, Cocos plist and Aseprite.
+# This pack currently covers the libgdx dialect; the others are named in
+# docs/fixture-coverage.md and will be added as sources with usable declarations are found.
+# Each pack here starts as one source and grows — that is the point of the source-block model.
+
+[pack]
+name = "spritesheet-fixtures"
+kind = "fixtures"
+summary = "Texture atlas descriptors — libgdx .atlas dialect, with page and region metadata."
+
+[[source]]
+id = "libgdx-atlas"
+kind = "upstream"
+repo = "libgdx/libgdx"
+ref = "master"
+fetch = "blobs"
+include = ["tests/gdx-tests-android/assets/**/*.atlas", "extensions/gdx-tools/assets/**/*.atlas"]
+strip = ""
+dest = "libgdx/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "libgdx and its bundled test assets."

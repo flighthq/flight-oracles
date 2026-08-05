@@ -1,0 +1,66 @@
+{
+  "pack": {
+    "name": "particle-fixtures",
+    "kind": "fixtures",
+    "summary": "Particle effect configurations \u2014 the libgdx .p dialect."
+  },
+  "sources": [
+    {
+      "id": "libgdx-particles",
+      "kind": "upstream",
+      "repo": "libgdx/libgdx",
+      "ref": "master",
+      "commit": "81cdb92811403f148daff195bff1da896877824c",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "Apache-2.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "libgdx and its bundled test assets.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/libgdx-particles@81cdb9281140.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "libgdx/data/particle-animation.p",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-animation.p",
+      "sha256": "9f46c1b363b1df306b0d435a3174f1f564b0c9c43ea8ef43776317e7eed1d9ce",
+      "size": 2041,
+      "format": {
+        "kind": "libgdx-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/data/singleTextureAllAdditive.p",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/singleTextureAllAdditive.p",
+      "sha256": "0d568de7222a3968acc35942217451c0a200f3d595cd91dcef76276ff845de6f",
+      "size": 6990,
+      "format": {
+        "kind": "libgdx-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/data/test.p",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/test.p",
+      "sha256": "a733ebb89e3de6d15a1d6fa65990800cb5d2f19b36ba87a1cc46c2de612cda8e",
+      "size": 8696,
+      "format": {
+        "kind": "libgdx-particle",
+        "version": null
+      }
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "bytes": 17727
+  }
+}

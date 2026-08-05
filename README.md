@@ -27,15 +27,19 @@ suite can pin.
 | `spine-fixtures-38` | 510 | 28.1 MB | Spine 3.8 — prior format version, rejection testing |
 | `gltf-khronos-fixtures` | 476 | 293.5 MB | 148 Khronos glTF 2.0 models — 29 KHR/EXT extensions |
 | `rive-fixtures-unit` | 388 | 148.3 MB | Rive unit-test corpus — all 12 feature areas |
+| `tilemap-fixtures` | 188 | 0.5 MB | Tiled TMX/TSX/TMJ/TSJ — map versions 1.0 through 1.11 |
 | `dragonbones-fixtures` | 145 | 14.2 MB | DragonBones skeletons, JSON + binary `.dbbin` |
 | `gltf-khronos-binary` | 118 | 432.7 MB | GLB: self-contained models, textures embedded |
-| `lottie-fixtures` | 76 | 15.1 MB | Lottie animations — 14 format versions, v3.1.6–v5.12.2 |
 | `texture-container-fixtures` | 98 | 36.3 MB | KTX2, KTX1, Basis Universal, DDS |
+| `lottie-fixtures` | 76 | 15.1 MB | Lottie animations — 14 versions, v3.1.6–v5.12.2 |
+| `image-fixtures` | 60 | 0.1 MB | PngSuite — canonical PNG conformance corpus |
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
 | `mesh-legacy-fixtures` | 24 | 36.8 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
+| `spritesheet-fixtures` | 14 | 0.4 MB | libgdx `.atlas` texture atlas descriptors |
+| `bitmapfont-fixtures` | 10 | 0.2 MB | AngelCode BMFont `.fnt` descriptors |
+| `particle-fixtures` | 3 | 0.0 MB | libgdx `.p` particle effect configs |
 
-Twelve packs, 8,563 files. Every parser in `skeleton2d-formats` and `scene3d-formats` now
-has fixtures behind it.
+17 packs, 8,838 files. Every parser in `skeleton2d-formats`, `scene3d-formats`, `tilemap-formats` and `bitmapfont-formats` now has fixtures behind it.
 
 **Git LFS is resolved, not stored.** `raw.githubusercontent` serves LFS *pointers* rather
 than objects, and a 130-byte text stub where a texture belongs passes every other check —

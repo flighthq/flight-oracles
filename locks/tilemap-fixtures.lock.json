@@ -1,0 +1,2292 @@
+{
+  "pack": {
+    "name": "tilemap-fixtures",
+    "kind": "fixtures",
+    "summary": "Tiled tilemap fixtures \u2014 TMX/TSX XML and TMJ/TSJ JSON serialisations, plus project files."
+  },
+  "sources": [
+    {
+      "id": "libgdx-tiled",
+      "kind": "upstream",
+      "repo": "libgdx/libgdx",
+      "ref": "master",
+      "commit": "81cdb92811403f148daff195bff1da896877824c",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "Apache-2.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "libgdx and its bundled test assets.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/libgdx-tiled@81cdb9281140.txt"
+    },
+    {
+      "id": "tiled-libtiled-java",
+      "kind": "upstream",
+      "repo": "mapeditor/tiled",
+      "ref": "master",
+      "commit": "aa069419db754412a2b4d51d8ea03bb048499f0a",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "BSD-2-Clause",
+        "declaredScope": "directory",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "COPYING",
+        "covers": "Tiled's COPYING lists licences by directory and assigns util/java/libtiled-java the BSD 2-clause licence.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/tiled-libtiled-java@aa069419db75.txt"
+    },
+    {
+      "id": "tiled-test-maps",
+      "kind": "upstream",
+      "repo": "mapeditor/tiled",
+      "ref": "master",
+      "commit": "aa069419db754412a2b4d51d8ea03bb048499f0a",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "Tiled's COPYING assigns licences to source directories only and is silent on tests/ and examples/. No declaration covers these map files.",
+        "onwardUse": "unknown"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "libgdx/data/maps/tiled-animations/test-load-animations.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-animations/test-load-animations.tmx",
+      "sha256": "39490e6c78fb98d75a2aabe6b48f22d1dee06f5bdf971a4fc91414e412502396",
+      "size": 1480,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/test.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/test.tmj",
+      "sha256": "53707a1ca37cabe60b27ceb56ab5bafcdf7fc1ca93129ceccbef80b75423e909",
+      "size": 1466,
+      "format": {
+        "kind": "tmj",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/test.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/test.tmx",
+      "sha256": "72a0de3f9379d0a8a386f1a73c56488976be51d06e5c067315495c5eafd61885",
+      "size": 961,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/test_gwt_uncompressed.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/test_gwt_uncompressed.tmx",
+      "sha256": "f127cf9742978e1dad283bc6f74e14cf5e79ea9231a5c98eca195c619c72ce9f",
+      "size": 3052,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/test_w_imglayer_props.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/test_w_imglayer_props.tmj",
+      "sha256": "f4c0051d4db364ab5e95e4f826b5f8204c501e20906557835986fd7dd4dd6b8e",
+      "size": 3089,
+      "format": {
+        "kind": "tmj",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/test_w_imglayers.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/test_w_imglayers.tmx",
+      "sha256": "b9528ecb5d49d803edbb83c51b26726cac71e8fa54407a9cc40c106129513103",
+      "size": 1502,
+      "format": {
+        "kind": "tmx",
+        "version": "1.11",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/test_w_imglayers_coi.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/test_w_imglayers_coi.tmx",
+      "sha256": "56ad067f4d77bcb91480f03a368c294c61f2e1585d0018b2eb78509a3e913adc",
+      "size": 2765,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/test_w_imglayers_coi_gwt_uncompressed.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/test_w_imglayers_coi_gwt_uncompressed.tmx",
+      "sha256": "50e873bac06c52cd497490fa4740d26cb57a97fe52e21aea5c43dab2a7b56d4e",
+      "size": 4652,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/test_w_imglayers_gwt_uncompressed.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/test_w_imglayers_gwt_uncompressed.tmx",
+      "sha256": "080f02f5b61aff771afcab310e55c8dba7332ac31bb25eda12f786d32807e52b",
+      "size": 3429,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tiled-prop-test.tiled-project",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tiled-prop-test.tiled-project",
+      "sha256": "6eb17f81b084c03cfdd4c09f0032d20f343c223dea21eae7e06d314a94055281",
+      "size": 4677,
+      "format": {
+        "kind": "tiled-project",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/test.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/test.tmj",
+      "sha256": "ab85c2457b7685d0d6389369bf210cf2ffdbe771dfb1b4510167a7a0a619e4ac",
+      "size": 1705,
+      "format": {
+        "kind": "tmj",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/test.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/test.tmx",
+      "sha256": "72afaef53abb366b9a61c00ee50e34deb7e44f5815d31b2a4babc38387259054",
+      "size": 869,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/test_gwt_uncompressed.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/test_gwt_uncompressed.tmx",
+      "sha256": "9ec3a5b26a54ba002894e8f52914db2b66278481a6bb2b794be48220a139b327",
+      "size": 2945,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/test_w_imglayer_props.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/test_w_imglayer_props.tmj",
+      "sha256": "5b9d1430fa83923f5ec75f92c09435a77850fbb8b49b363db0840b0d2da73dd9",
+      "size": 5325,
+      "format": {
+        "kind": "tmj",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/test_w_imglayers.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/test_w_imglayers.tmx",
+      "sha256": "fabe66e2d39b6fca2ea90d38a4bafd6901203a69e9e06153f10fa2d36e88a8dd",
+      "size": 1352,
+      "format": {
+        "kind": "tmx",
+        "version": "1.11",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/test_w_imglayers_coi.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/test_w_imglayers_coi.tmx",
+      "sha256": "834791e97582f6dccae30012d42311b978ca1be701be16ddfb6acdef9e0491f2",
+      "size": 2611,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/test_w_imglayers_coi_gwt_uncompressed.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/test_w_imglayers_coi_gwt_uncompressed.tmx",
+      "sha256": "85b786e1a5fbe1fc984b80d97ec4da093a848b666aa33846254447adea458e94",
+      "size": 4481,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/test_w_imglayers_gwt_uncompressed.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/test_w_imglayers_gwt_uncompressed.tmx",
+      "sha256": "36ddd8db706bb9ea317a4e253abf9c9bb1b282e7bc627fe68010d0f7e9e0a97c",
+      "size": 3262,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/tiled-prop-test.tiled-project",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/tiled-prop-test.tiled-project",
+      "sha256": "6eb17f81b084c03cfdd4c09f0032d20f343c223dea21eae7e06d314a94055281",
+      "size": 4677,
+      "format": {
+        "kind": "tiled-project",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/groups_test_tileset.tsx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/groups_test_tileset.tsx",
+      "sha256": "293a255c1306bb190fa0f867cdee72c444dd0708c07a77adc209ec19b739ab22",
+      "size": 528,
+      "format": {
+        "kind": "tsx",
+        "version": "1.10"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/test.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/test.tmx",
+      "sha256": "f14e15474e5d9e294e7419f13871c181bc302534643b1b60de105e1bd8d2360f",
+      "size": 2377,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups/test.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups/test.tmx",
+      "sha256": "13e20d03fb005b537f0e0e484682cd445eab976d7c60216e9cc62a31207c1bb3",
+      "size": 4287,
+      "format": {
+        "kind": "tmx",
+        "version": "1.2",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-imagelayer/hex_x.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-imagelayer/hex_x.tmx",
+      "sha256": "536e110990306f5733949fda93c4e0e4e1b3cfc689421df69ba50d45bdb99f20",
+      "size": 4881,
+      "format": {
+        "kind": "tmx",
+        "version": "1.9",
+        "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-imagelayer/hex_y.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-imagelayer/hex_y.tmx",
+      "sha256": "91f2b901e83d25c826b4ef2ad08022ed1c3517146930a80fe7b043a4bd637bd0",
+      "size": 4886,
+      "format": {
+        "kind": "tmx",
+        "version": "1.9",
+        "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-imagelayer/iso.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-imagelayer/iso.tmx",
+      "sha256": "4bcc2bc34c713ae872b0f1021bab44555edef46d09b33f08e481dc5a47028f23",
+      "size": 4301,
+      "format": {
+        "kind": "tmx",
+        "version": "1.9",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-imagelayer/iso_stag.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-imagelayer/iso_stag.tmx",
+      "sha256": "aa1cd700513616017656d9df59b3e2969e8f6ac5d98da12b4c254f80674d4c1f",
+      "size": 6812,
+      "format": {
+        "kind": "tmx",
+        "version": "1.9",
+        "orientation": "staggered"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-imagelayer/ortho.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-imagelayer/ortho.tmx",
+      "sha256": "02f4478db5c85c7036ad9f575290bcaa63d70c7990ddc84c80aca96174d55023",
+      "size": 4738,
+      "format": {
+        "kind": "tmx",
+        "version": "1.9",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-json/hex_x.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-json/hex_x.tmj",
+      "sha256": "ce9d9b668bf55d61ac00eb4d6fb8d3f19d6f8f2b516f9459b13f335dab7c3e38",
+      "size": 4746,
+      "format": {
+        "kind": "tmj",
+        "version": "1.9",
+        "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-json/hex_y.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-json/hex_y.tmj",
+      "sha256": "500462af724d9428280e0f01ddc779913c5f6d535c9a07d5b95ea7ed931f1c1d",
+      "size": 4746,
+      "format": {
+        "kind": "tmj",
+        "version": "1.9",
+        "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-json/iso.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-json/iso.tmj",
+      "sha256": "283dcc0dcb45669a088af265db666aacf7571a445394406f78011a392465e463",
+      "size": 7472,
+      "format": {
+        "kind": "tmj",
+        "version": "1.9",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-json/iso_stag.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-json/iso_stag.tmj",
+      "sha256": "0cd17a4a4f194bf33daa13897f503fca4e5cca303e03f9ee06651375c91ffa82",
+      "size": 10058,
+      "format": {
+        "kind": "tmj",
+        "version": "1.9",
+        "orientation": "staggered"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-json/ortho.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-json/ortho.tmj",
+      "sha256": "af0aedf82b6654abd18838eaa5354ec5272bccb306444da8bc2a6a6db92b909e",
+      "size": 5752,
+      "format": {
+        "kind": "tmj",
+        "version": "1.9",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-json/ortho2.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-json/ortho2.tmj",
+      "sha256": "c31bb5c3ae8e7c2aff51f749af167a67b6cfb4e34fd8a2e518e0c793f669c52e",
+      "size": 10928,
+      "format": {
+        "kind": "tmj",
+        "version": "1.9",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-json/tiles.tsj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-json/tiles.tsj",
+      "sha256": "a1be3d5a6ab31ee898ffb62ae334300089316aea7c72cd946ea7ffca306c2ca4",
+      "size": 5731,
+      "format": {
+        "kind": "tsj",
+        "version": "1.9"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/grass.tsj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/grass.tsj",
+      "sha256": "7f87a5d173ed40bc343eb584012b82b2968b00e77b513d1f823dac8ae58084ac",
+      "size": 235,
+      "format": {
+        "kind": "tsj",
+        "version": "1.10"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/grass.tsx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/grass.tsx",
+      "sha256": "25a480366a421edc6b4dcb57952c8a6d9104ccef0e6fb6695aae0422e49c6d7e",
+      "size": 221,
+      "format": {
+        "kind": "tsx",
+        "version": "1.10"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/templateTileset.tsj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/templateTileset.tsj",
+      "sha256": "34d0e4b0f98312d3fd176d59f26294a2e2aaf1186ee437622c3dfd12e93f3bf6",
+      "size": 897,
+      "format": {
+        "kind": "tsj",
+        "version": "1.11"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/templateTileset.tsx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/templateTileset.tsx",
+      "sha256": "80af515fe456218a98ffc4fa43849e494aaf7183e672cf38dbda2edeb92b58ae",
+      "size": 594,
+      "format": {
+        "kind": "tsx",
+        "version": "1.9"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/test-load-mapobjects.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/test-load-mapobjects.tmj",
+      "sha256": "a4cc3a5012a1bf850ac5cec026933bff5dadcd28688bf480ea1961b4fdbad51a",
+      "size": 6236,
+      "format": {
+        "kind": "tmj",
+        "version": "1.11",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/test-load-mapobjects.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/test-load-mapobjects.tmx",
+      "sha256": "d321e3efbeb537510b70fe6bb6792beb24f62d5ccacc48ee05559b01c19d991b",
+      "size": 1868,
+      "format": {
+        "kind": "tmx",
+        "version": "1.9",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/test-load-maptemplateobjects.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/test-load-maptemplateobjects.tmj",
+      "sha256": "b96eb854a36d5aa5d0e7b3cf4dd4ab385e63655985e64aea4582c65ea4535a75",
+      "size": 9793,
+      "format": {
+        "kind": "tmj",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/test-load-maptemplateobjects.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/test-load-maptemplateobjects.tmx",
+      "sha256": "833ce472d379d64972c02233267d27a3707839519f4cd834eed55501830eb92f",
+      "size": 4086,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/test-object-properties.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/test-object-properties.tmx",
+      "sha256": "6cd7c93564a66a410c5161fbe39c849add7c50a0453d677ac2a9b923b4efd0a6",
+      "size": 2503,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-offsets/hex_x.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-offsets/hex_x.tmx",
+      "sha256": "2382168bb7f5bb87026e9e7c5a1eabe1f084a8bb9a4478c4b5bbdbe6fdf43650",
+      "size": 4145,
+      "format": {
+        "kind": "tmx",
+        "version": "1.5",
+        "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-offsets/hex_y.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-offsets/hex_y.tmx",
+      "sha256": "9fbfe8744118cb2cea49c9394b5e8ece215d1125287bdf1ce2597578f800ecdd",
+      "size": 4145,
+      "format": {
+        "kind": "tmx",
+        "version": "1.5",
+        "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-offsets/iso.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-offsets/iso.tmx",
+      "sha256": "5aad78e75b47b2d3c7a1208bae3603179cd227e18ac699cd87cc9b4224153c16",
+      "size": 3537,
+      "format": {
+        "kind": "tmx",
+        "version": "1.5",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-offsets/iso_stag.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-offsets/iso_stag.tmx",
+      "sha256": "6c2400239d0d07d665d3ea7c2b502eb925cbd882ec32bbe3516a5e18d9609900",
+      "size": 6081,
+      "format": {
+        "kind": "tmx",
+        "version": "1.5",
+        "orientation": "staggered"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-offsets/ortho.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-offsets/ortho.tmx",
+      "sha256": "fb44e752528c9d404e9005a64d158d14cbc112072b63400517ab55a9923e4167",
+      "size": 2758,
+      "format": {
+        "kind": "tmx",
+        "version": "1.5",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-properties/tiled-prop-test.tiled-project",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-properties/tiled-prop-test.tiled-project",
+      "sha256": "6eb17f81b084c03cfdd4c09f0032d20f343c223dea21eae7e06d314a94055281",
+      "size": 4677,
+      "format": {
+        "kind": "tiled-project",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-properties/tiled-prop-test.tmj",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-properties/tiled-prop-test.tmj",
+      "sha256": "2936c5bc8e9aee2f8f98c81bb48fd1439c62dbfcfaaf56786a648701d2d31d31",
+      "size": 8251,
+      "format": {
+        "kind": "tmj",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-properties/tiled-prop-test.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-properties/tiled-prop-test.tmx",
+      "sha256": "d177ff5e4471bc53c1651f8302856b1d738e83594410b81c3f23e1846729949a",
+      "size": 3440,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-tint-opacity/hex.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/hex.tmx",
+      "sha256": "b98d90ce5cf3db834ebfbb46d932bad13e97c3521272a271c25b5e6396dd0300",
+      "size": 10755,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-tint-opacity/iso.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/iso.tmx",
+      "sha256": "86f9c059db8ca7698dd76c1af026056503adcba4ed23d2e4ed75d562c87e1343",
+      "size": 5264,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-tint-opacity/iso_stag.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/iso_stag.tmx",
+      "sha256": "a6838055b87caa9b9893e5ab7328c8652a23810805850f3aeb379f0241ba3573",
+      "size": 10619,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "staggered"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-tint-opacity/ortho.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/ortho.tmx",
+      "sha256": "d56a5dc61f11f2ad2786b2478b3c6dd0bbdc7933c2c0ebf114103f15d8c79108",
+      "size": 5823,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-tint-opacity/ortho_cached.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/ortho_cached.tmx",
+      "sha256": "d81386f3c3609dab49b142cdca15c6f77525d2491b2020d30f7a1ca11fb279a0",
+      "size": 5715,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-tint-opacity/ortho_deep_group_tints.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/ortho_deep_group_tints.tmx",
+      "sha256": "d90b4c59ac91c9abd7ba7bbf25e03300a5f704e4985a9d95e0033d2083b30e5b",
+      "size": 5521,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-tint-opacity/ortho_w_img_layer.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/ortho_w_img_layer.tmx",
+      "sha256": "03b29cddbc64755d69c8d09735d50a7542cd8565c63bc378bf63c1a9f29ac022",
+      "size": 6964,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/external-tilesets/grass.tsx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/grass.tsx",
+      "sha256": "c7eb467456c1d92b27a7deef196bdb5196f1804a3ce87c99b3c361b7e18ac5f2",
+      "size": 158,
+      "format": {
+        "kind": "tsx",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/external-tilesets/grass_1.tsx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/grass_1.tsx",
+      "sha256": "9ce3f1338278620651de3bf127471afd84ff328bdd8d6a588ee67cc40e6d06da",
+      "size": 158,
+      "format": {
+        "kind": "tsx",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/external-tilesets/grass_extended.tsx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/grass_extended.tsx",
+      "sha256": "10ac3afc4cda23ea304db284b92d3a7ad0905a919736d2cb4b15613687b37c7e",
+      "size": 158,
+      "format": {
+        "kind": "tsx",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/external-tilesets/test_extended.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/test_extended.tmx",
+      "sha256": "c7ab3582c5bc452c52bcc275a5732d520060279eac8603e6f98ea8eaf4ce7ace",
+      "size": 922,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/external-tilesets/test_original.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/test_original.tmx",
+      "sha256": "96dbc9e242707fee32006f05147e5607410e46138dabca2c1c5fdee5377c8e2d",
+      "size": 913,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/external-tilesets/water.tsx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/water.tsx",
+      "sha256": "d719d08eb2746b4993b9e69e1dcdce1ae89c4866efc1a3ebb7f0c6ceaa91bca1",
+      "size": 158,
+      "format": {
+        "kind": "tsx",
+        "version": null
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/isometric_grass_and_water.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/isometric_grass_and_water.tmx",
+      "sha256": "0620f384ceb07e055fae3dda102e22a484bf5f6bee9909876e6702dc44c5f1be",
+      "size": 2718,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/super-koalio/level1.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/super-koalio/level1.tmx",
+      "sha256": "44aa8292052c7277ef65ceb23e47287c06bca6aa08efc1631be9ac0327536ac8",
+      "size": 46005,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/tiles.tmx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/tiles.tmx",
+      "sha256": "1d64bb2fbad559a8875326ca3b0104a0b0f958cd6a135224481ce28c40b9c221",
+      "size": 1127,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/tiles.tsx",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/tiles.tsx",
+      "sha256": "752ab479c5f7b02edba0647603ababff88b1c4903351f1466491af06bc159b13",
+      "size": 158,
+      "format": {
+        "kind": "tsx",
+        "version": null
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/csvmap/csvmap.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/csvmap/csvmap.tmx",
+      "sha256": "e312f5f90c77a7a29c337744300b5ea49fc5597b59b9f4cbee55266a1f97e349",
+      "size": 20653,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/csvmap_embedded_image_collection/csvmap_embedded_image_collection.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/csvmap_embedded_image_collection/csvmap_embedded_image_collection.tmx",
+      "sha256": "046b2165176ab8ca49975f071ce4b2a1e7393d577d7bf4edb8292aca5c33355c",
+      "size": 740,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/desert/desert.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/desert/desert.tmx",
+      "sha256": "7f93b5109e32f7bed02f2e11af07d94686635123783fdedf876bfdbee5ce43cb",
+      "size": 817,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/desert/desert.tsx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/desert/desert.tsx",
+      "sha256": "df8fa8c91762baee8425c3692088f01ff27f0cbab427bac6259d984b9104486a",
+      "size": 4514,
+      "format": {
+        "kind": "tsx",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/desert_missing_image/desert.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/desert_missing_image/desert.tmx",
+      "sha256": "7f93b5109e32f7bed02f2e11af07d94686635123783fdedf876bfdbee5ce43cb",
+      "size": 817,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/desert_missing_image/desert.tsx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/desert_missing_image/desert.tsx",
+      "sha256": "5bed56015fcbf226c94c75f213336e2b41ce61dcefed009fc75068afedb1c953",
+      "size": 4479,
+      "format": {
+        "kind": "tsx",
+        "version": null
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/desert_missing_tileset/desert.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/desert_missing_tileset/desert.tmx",
+      "sha256": "7f93b5109e32f7bed02f2e11af07d94686635123783fdedf876bfdbee5ce43cb",
+      "size": 817,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/flipped/flipped.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/flipped/flipped.tmx",
+      "sha256": "b9b672694b753936d420705cde88564b2e05ed82c36ba11c492d44127561c51f",
+      "size": 439,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/hexagonal-mini/hexagonal-mini.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/hexagonal-mini/hexagonal-mini.tmx",
+      "sha256": "c5de7ae005f8acfa814439f87aeb8fb6d9bfa4009e44db068ea2c915d742cccc",
+      "size": 914,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/isometric_grass_and_water/isometric_grass_and_water.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/isometric_grass_and_water/isometric_grass_and_water.tmx",
+      "sha256": "84b805b55d4cf9a7f3c2f10920c92467fbba706eca90c84b944106b82f1c1fe7",
+      "size": 3611,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/isometric_grass_and_water/isometric_staggered_grass_and_water.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/isometric_grass_and_water/isometric_staggered_grass_and_water.tmx",
+      "sha256": "0360bfdd4aeff5b2e0910464f17d6f45c4585a9bc88201ead59d48ffe9d67724",
+      "size": 4158,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "staggered"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/orthogonal-outside/orthogonal-outside.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/orthogonal-outside/orthogonal-outside.tmx",
+      "sha256": "520848374a33b9f866c2cacb8b2e66501b5e3e8d5805e03c1ae60b29350c0cbb",
+      "size": 13600,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/perspective_walls/perspective_walls.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/perspective_walls/perspective_walls.tmx",
+      "sha256": "8d89524e6b58cb7493239ae371fe10498948be1287487d190529b977a6875db4",
+      "size": 955,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/perspective_walls/perspective_walls.tsx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/perspective_walls/perspective_walls.tsx",
+      "sha256": "dd963367d6cbe6c43c1d5771b289845749031ac1209bbafa4a0fe0aecf802523",
+      "size": 563,
+      "format": {
+        "kind": "tsx",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/relative_paths/relative_paths.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/relative_paths/relative_paths.tmx",
+      "sha256": "54b5227c61eee844de6b4ac85295d954a3ed37fc95f39f0ae0669029adbc7320",
+      "size": 391,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewer_automap/rule_001.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/rule_001.tmx",
+      "sha256": "204ae8314d0dfe72dbe73301dc0331d6b4ae1b323be7a2662867708cadb72550",
+      "size": 1182,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewer_automap/rule_002.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/rule_002.tmx",
+      "sha256": "7b9bed48f282163c5d7a78734518419322ccc5781163c30b56cf2f93b40081fa",
+      "size": 1099,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewer_automap/rule_003.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/rule_003.tmx",
+      "sha256": "909ee8fe629c2315e659b053913bf3604c3f2aa3ea24775024db372a2ff85a06",
+      "size": 1237,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewer_automap/rule_004.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/rule_004.tmx",
+      "sha256": "06ef44ec17d153ce1d1474db4b88d219803a237eafa083806d4f43e2022f57d2",
+      "size": 1225,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewer_automap/rule_005.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/rule_005.tmx",
+      "sha256": "3c9b638f9c0febdbc1eb2abbf981233f609130c5b16e13fdcf0a47be03e14cb0",
+      "size": 1282,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewer_automap/rule_006.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/rule_006.tmx",
+      "sha256": "09fa823f61f5fcbb377330943032b7bc9cf74e6db1ae9c8cdfa6ddd10f92ae75",
+      "size": 1566,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewer_automap/rule_007.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/rule_007.tmx",
+      "sha256": "e702bd54354675aad811a40d5f4dbc240f9e297ac40b11b6e422a85784a4982a",
+      "size": 1425,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewer_automap/rule_008.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/rule_008.tmx",
+      "sha256": "c4c82c7c4ae0c5dcacfe34c3cd39f337e292e7a5deb134ed455e69ea0f3ede38",
+      "size": 1376,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewer_automap/rule_009.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/rule_009.tmx",
+      "sha256": "67764480b0a1267b9fb43f31f97addb916af590a33c4742991e094e7e2554c50",
+      "size": 1223,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewer_automap/sewers.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/sewers.tmx",
+      "sha256": "19263570919a73092e59b49813fbac1c38c6b9e5f6f35f3d4c7baef67b8e6522",
+      "size": 882,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewers/sewers.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewers/sewers.tmx",
+      "sha256": "267c3b79ddd769db08fb5c426698c2b1bad80c98bd9c12839a1e5fbc17f281b2",
+      "size": 1529,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/staggered.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/staggered.tmx",
+      "sha256": "c603009692e47f114047882cf5d4d064b60dffba7c3dd88d0cc19e7709848d88",
+      "size": 416,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "staggered"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/test_hexagonal_tile/test_hexagonal_tile_60x60x30.tmx",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/test_hexagonal_tile/test_hexagonal_tile_60x60x30.tmx",
+      "sha256": "930cc4ef32f08f0d0c800395939984a7a49301d4acb8b504b26d2f94d8750ed4",
+      "size": 1521,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "tiled/examples/desert.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/desert.tmx",
+      "sha256": "704616f981378edd51765ef98a22050145fb93833e8a58147ad37775c817d537",
+      "size": 817,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/desert.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/desert.tsx",
+      "sha256": "7d765b9da4e1e0a34e2f8209f64d2d270c4b4d884c6fb85e5fee3d97db6958c2",
+      "size": 3404,
+      "format": {
+        "kind": "tsx",
+        "version": "1.4"
+      }
+    },
+    {
+      "path": "tiled/examples/examples.tiled-project",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/examples.tiled-project",
+      "sha256": "1cdc39cfd88b80ee02a123132db8acd34cad7d2587a26ea4422b34f0a9abea3f",
+      "size": 6047,
+      "format": {
+        "kind": "tiled-project",
+        "version": null
+      }
+    },
+    {
+      "path": "tiled/examples/forest/forest.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/forest/forest.tmx",
+      "sha256": "289224ce67af0577e77e3006cbf6c744a090539f3ca0ad3e16a34383e5087876",
+      "size": 2919,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/forest/forest.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/forest/forest.tsx",
+      "sha256": "df4afb4a5beb936d73a8d8b50a01c94bec4fcbf4b3a4f99e2dfe7146436d7b1f",
+      "size": 1192,
+      "format": {
+        "kind": "tsx",
+        "version": "1.8"
+      }
+    },
+    {
+      "path": "tiled/examples/hexagonal-mini.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/hexagonal-mini.tmx",
+      "sha256": "168511ef45c0b7a78055288b3e31405c1c7df2b09d04e04a91653879eadcc82e",
+      "size": 830,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "tiled/examples/isometric_grass_and_water.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/isometric_grass_and_water.tmx",
+      "sha256": "cee62611b56522503e8901d98fe90388a9df9a08fd7bbebc2fc17c622c419aaf",
+      "size": 2771,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "tiled/examples/isometric_staggered_grass_and_water.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/isometric_staggered_grass_and_water.tmx",
+      "sha256": "46f8bad5e5330d41d42c721cb9e939e38ba106b235afd17826d02b30e9f427d1",
+      "size": 4321,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "staggered"
+      }
+    },
+    {
+      "path": "tiled/examples/orthogonal-outside.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/orthogonal-outside.tmx",
+      "sha256": "17e5060daf78973c903be0b2c1f8abae69dbf36956be851aa72b0d896f3c5858",
+      "size": 17210,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/perspective_walls.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/perspective_walls.tmx",
+      "sha256": "9019d2b44870a90ea9c30f9baa756f57b1db01e056e3972adab835a4a4079091",
+      "size": 842,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/perspective_walls.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/perspective_walls.tsx",
+      "sha256": "3426b0d06eb51f423439b423b32281dc78abf9e395058be514d1ba323c445b14",
+      "size": 476,
+      "format": {
+        "kind": "tsx",
+        "version": null
+      }
+    },
+    {
+      "path": "tiled/examples/rpg/beach_tileset.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/rpg/beach_tileset.tsx",
+      "sha256": "392eb76c6b8b4d2fbcf2aa37ad4ea2d5478a90abffd4a2ed97b03fd3b67e6a2d",
+      "size": 7243,
+      "format": {
+        "kind": "tsx",
+        "version": "1.8"
+      }
+    },
+    {
+      "path": "tiled/examples/rpg/island.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/rpg/island.tmx",
+      "sha256": "a110e4d6ddacc8f63044e169f74d8568a4e63e0c5490d5920a88e8a0c41798e2",
+      "size": 2770,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewer_automap/rule_001.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_automap/rule_001.tmx",
+      "sha256": "428fa57502a7e245fa15d6f4677361b9add82fb4435201b84699bdf88a238465",
+      "size": 1077,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewer_automap/rule_002.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_automap/rule_002.tmx",
+      "sha256": "4e4c4ca782daf3ff78facd6257fc871bcaa76785946e42c1adc5773fd28dce2f",
+      "size": 933,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewer_automap/rule_003.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_automap/rule_003.tmx",
+      "sha256": "cf1724ad8cd992303e2826e5e76ff0e86c3c3d824d7ff4e9f5b4031c564163ac",
+      "size": 1125,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewer_automap/rule_004.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_automap/rule_004.tmx",
+      "sha256": "eb38e5abda3829cdfbab90a0f4f0bf6521190c7583deb9b1343ea50447d1dab0",
+      "size": 1052,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewer_automap/rule_005.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_automap/rule_005.tmx",
+      "sha256": "38345b4e185bc53c60e191eedf496041a4d7dc65f8762435a9a8e0058cee98b2",
+      "size": 1109,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewer_automap/rule_006.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_automap/rule_006.tmx",
+      "sha256": "6cdc717cea4cc69eb445c86f2262229f8eafba497d91992b0cd384feef2e4ad1",
+      "size": 1379,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewer_automap/rule_007.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_automap/rule_007.tmx",
+      "sha256": "814361232e02e150e64827ea2a6e8970737a6e67070770e3edd97dca14426251",
+      "size": 1245,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewer_automap/rule_008.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_automap/rule_008.tmx",
+      "sha256": "34e59343f34e14be654e786663a63514089baa219623bd1231d5e9ae74da4e19",
+      "size": 1278,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewer_automap/rule_009.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_automap/rule_009.tmx",
+      "sha256": "a3532d3f6aea6953daaa32074dd085677186e020a31d10ed64371485d32aded3",
+      "size": 1132,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewer_automap/sewers.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_automap/sewers.tmx",
+      "sha256": "3d81cdeff7e014da58ccdabb25b6bae458fa6dab144740c3eda043d7eec144ea",
+      "size": 791,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewers.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewers.tmx",
+      "sha256": "5180634b25993789dc56a767a39ac1cc2ee2c1ec1744130e1c4a88f2577c0162",
+      "size": 1075,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/objs.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/objs.tsx",
+      "sha256": "60f14d0e46eaa880ec976ad4ff62192b22935fb223bcb861c20283c287df47af",
+      "size": 5396,
+      "format": {
+        "kind": "tsx",
+        "version": "1.4"
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/sandbox.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/sandbox.tmx",
+      "sha256": "0f9de90191f8618caceb9bfacf50d9625ff73ba2eb8a1285aff698252c00aae7",
+      "size": 12437,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/sandbox2.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/sandbox2.tmx",
+      "sha256": "513472ec8721f0d75461ac39f32f09e5bc583d0211f4cb7879d1d6fd20d3d17f",
+      "size": 13319,
+      "format": {
+        "kind": "tmx",
+        "version": "1.4",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/test_hexagonal_tile_60x60x30.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/test_hexagonal_tile_60x60x30.tmx",
+      "sha256": "d938f76515a042f169bdf2b207bb1d75c2da55f353b73727ea76765ee7016cff",
+      "size": 1464,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/add-tileset/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/add-tileset/map-result.tmx",
+      "sha256": "694f06043346c0812fb7cd3fe7782f71666c557ab3a04676b00a8d102f110d83",
+      "size": 584,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/add-tileset/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/add-tileset/map.tmx",
+      "sha256": "d1975fd7ca655d5960cbfe967399ecc9c48a2aea0d118c0855cbc7a8b065e275",
+      "size": 526,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/add-tileset/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/add-tileset/rules.tmx",
+      "sha256": "4293acbc9ff94c401356ad5efbe814822d54075a366c0446c78be14d8ebea7a9",
+      "size": 585,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/grow-region-while-drawing/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/grow-region-while-drawing/map.tmx",
+      "sha256": "bc9dea27e7435c9daeeaa9ba9ed4e7ee9a5aac04ec83926b02788b43f560d86a",
+      "size": 417,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/grow-region-while-drawing/rules1.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/grow-region-while-drawing/rules1.tmx",
+      "sha256": "7bf635cd45cf15b9c99f9a45c04d4dee35fc0cf722f2f84203751c3784959655",
+      "size": 550,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/grow-region-while-drawing/rules2.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/grow-region-while-drawing/rules2.tmx",
+      "sha256": "54838776fbff14e4589193ef764183eed0da0ff2d47fefb418949bcd8194921d",
+      "size": 526,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/ignore-empty-region/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/ignore-empty-region/map-result.tmx",
+      "sha256": "5b4474cb347f4cece05251a39d9d2e621e4be703f06eb822a02d455be20cb694",
+      "size": 394,
+      "format": {
+        "kind": "tmx",
+        "version": "1.11",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/ignore-empty-region/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/ignore-empty-region/map.tmx",
+      "sha256": "5b4474cb347f4cece05251a39d9d2e621e4be703f06eb822a02d455be20cb694",
+      "size": 394,
+      "format": {
+        "kind": "tmx",
+        "version": "1.11",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/ignore-empty-region/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/ignore-empty-region/rules.tmx",
+      "sha256": "1b03ed977f7963d67c84fe475472d63637f9eb15f7b1bd082d7bcf4cff694cc7",
+      "size": 553,
+      "format": {
+        "kind": "tmx",
+        "version": "1.11",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/ignore-flip/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/ignore-flip/map-result.tmx",
+      "sha256": "dc22978ca6c0d2665ed219e467ffd7339c7cee55eeee9f3a3baf155c8a7c99eb",
+      "size": 405,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/ignore-flip/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/ignore-flip/map.tmx",
+      "sha256": "61f57bd8895bf1eef6bb7635fcc66dfaa95a76355b6eef1638b8eb730375062e",
+      "size": 464,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/ignore-flip/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/ignore-flip/rules.tmx",
+      "sha256": "92a9066ee07255c3c16785c10c5e8929e5b9592e939876f3c078dbc50a90842e",
+      "size": 3129,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/infinite-target-map/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/infinite-target-map/map-result.tmx",
+      "sha256": "8725c9dfad41c3e36e32eb275714f57c47cd6d645f02a6372877651f6aebbc74",
+      "size": 2721,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/infinite-target-map/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/infinite-target-map/map.tmx",
+      "sha256": "7a50c2f5c17cfaab679056bab5790efa6890b46ed6e77e66b0cda91868bbc375",
+      "size": 2721,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/infinite-target-map/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/infinite-target-map/rules.tmx",
+      "sha256": "1bf2d8b817d03972a7e265670536cdc6af5634ba66ac046657a8dd51eaa786eb",
+      "size": 614,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/inputnot/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/inputnot/map-result.tmx",
+      "sha256": "1fb2731db8fa07efcbb87fed982944b86c8f58c87592b5c5d3a65cc5db682c3a",
+      "size": 546,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/inputnot/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/inputnot/map.tmx",
+      "sha256": "e30908e2c0e69d2c9c1e685e17f8888b60b8bda9da679f37ee9b9985524a468f",
+      "size": 419,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/inputnot/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/inputnot/rules.tmx",
+      "sha256": "11afe127474db33756e46437d19ab6c0b7646136be6f8afbeb71ba7bae3b0b49",
+      "size": 1125,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/match-type/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/match-type/map-result.tmx",
+      "sha256": "f172be049170fd8e605f853b799c6204dbd5d05f45f8a9c41a1ec40bfef71d16",
+      "size": 456,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/match-type/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/match-type/map.tmx",
+      "sha256": "752903f445df0661a99cc4cc790eea8f025f4ab5365ec629e155434be531a0b6",
+      "size": 450,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/match-type/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/match-type/rules.tmx",
+      "sha256": "efa3b81f8a3ff353ee9091fe024f52426ede411a03103c6a6bf831a400a3bca2",
+      "size": 998,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/mod-and-offset/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/mod-and-offset/map-result.tmx",
+      "sha256": "817c73a88cb621bf682826d0352a021bc379898612e1089c8ca604f01e569fdc",
+      "size": 582,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/mod-and-offset/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/mod-and-offset/map.tmx",
+      "sha256": "c4d23dd350280a9922f94a59b7f257fcd668240d65a947d089550e27cb751955",
+      "size": 437,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/mod-and-offset/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/mod-and-offset/rules.tmx",
+      "sha256": "ada7ba09bd4b5c45b5e3769bdeff94c9efdebc81d28daac02c5f10816af7192d",
+      "size": 1203,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-ignore-lock/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-ignore-lock/map-result.tmx",
+      "sha256": "d8120e1a7724de0d8aff422f00281df488b689630f9cdc53378c44c82795861f",
+      "size": 450,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-ignore-lock/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-ignore-lock/map.tmx",
+      "sha256": "bf700b839a76de5a43d18055638161c9d8b5ae92f94b1f82c122b2ac70542b82",
+      "size": 450,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-ignore-lock/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-ignore-lock/rules.tmx",
+      "sha256": "f3c5c23c710be843a09725b4caec08cae66a8b30f866004c79e9a44bd776e6ce",
+      "size": 769,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-no-overlapping-output/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-no-overlapping-output/map-result.tmx",
+      "sha256": "53176ad5b73e098d4b314bd51c6a1d0bfa05dc41eebd31f19dc7ecddad8f01ea",
+      "size": 544,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-no-overlapping-output/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-no-overlapping-output/map.tmx",
+      "sha256": "d469d5918f34aabfd30699f7c28460666f6d3a58c08f8d6a560024d08031a56e",
+      "size": 418,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-no-overlapping-output/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-no-overlapping-output/rules.tmx",
+      "sha256": "192a41cadab97cdfe2aed91c24785c2e40f52e6044306c8afa42ed33863a9aac",
+      "size": 650,
+      "format": {
+        "kind": "tmx",
+        "version": "1.9",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-overflow-border/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-overflow-border/map-result.tmx",
+      "sha256": "c0339d456b17158a2af841b9bc7e7cb5ad922d70ed11d6d08c5decf94e266398",
+      "size": 418,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-overflow-border/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-overflow-border/map.tmx",
+      "sha256": "9db35d57c2bd0b5e2f2083d16b8b17a66ca8ad4835b1bcf3b6fb0b78d5da7189",
+      "size": 418,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-overflow-border/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-overflow-border/rules.tmx",
+      "sha256": "20dd7022e4fee2dd2b238e70f477fdbd7c2b4206e3d0c883aa64431e532ddbd1",
+      "size": 694,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-wrap-border/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-wrap-border/map-result.tmx",
+      "sha256": "691968ef8acc378f3663fca241362a970eef42101aafb46b7d42dfb3b4bef397",
+      "size": 418,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-wrap-border/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-wrap-border/map.tmx",
+      "sha256": "2a5010afcd0fe4344d03ab4cc9d9ed72e23a02977387d3a2bcff147772ae641e",
+      "size": 418,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/option-wrap-border/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/option-wrap-border/rules.tmx",
+      "sha256": "9a4cfaea8d0f5d10977b46ca64a0c58f0c8725b8281429ac8cf76eb2d3530e67",
+      "size": 680,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/output-probability/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/output-probability/map.tmx",
+      "sha256": "ab26843038bc5fc4d83fa79af9f125cafa222371c9177d25cb6e92b097ea1336",
+      "size": 735,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/output-probability/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/output-probability/rules.tmx",
+      "sha256": "962c204af461f95d7091b8e7578a3bc3615baa184cc85a739643255292b6c9c0",
+      "size": 920,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/rule-probability/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/rule-probability/map.tmx",
+      "sha256": "886ae7f065b666fbe8ceb034721695199cd0449e4751c7eb027656df6f4acdb4",
+      "size": 584,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/rule-probability/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/rule-probability/rules.tmx",
+      "sha256": "74d5b6a0490efba1b34d68ed7cd4484f9fe123ce286d32f4d17ac1011396ced8",
+      "size": 1002,
+      "format": {
+        "kind": "tmx",
+        "version": "1.10",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/rules-file-recursive/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/rules-file-recursive/map.tmx",
+      "sha256": "bd62c78bf79b8fcf40211505cda28ad088f0fb222edc970f98d0e92a971cc042",
+      "size": 345,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/rules-file-references-work-map/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/rules-file-references-work-map/map.tmx",
+      "sha256": "2d8e9f6461be6e87324c054690731281f57ab4ed56dec732d0bee5eb6d7dc875",
+      "size": 1062,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/simple-2x2-rule/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/simple-2x2-rule/map-result.tmx",
+      "sha256": "f2f99228f0840c21bac8fca8abc86fb8c372cd34614fe2126295cc9e917ad6ac",
+      "size": 437,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/simple-2x2-rule/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/simple-2x2-rule/map.tmx",
+      "sha256": "f58835b8e9e14f0119810ccbedb535bd5c1647c1b25b8c8abad4de44825459d7",
+      "size": 437,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/simple-2x2-rule/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/simple-2x2-rule/rules.tmx",
+      "sha256": "a92b1c3e48e1d483a974e3887f894315e90572492ecd3149694d29ff1ee060f7",
+      "size": 644,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/simple-replace/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/simple-replace/map-result.tmx",
+      "sha256": "a12184be1ff97bab587e2567b0bd174e0f903017eef3167a591048f34395a936",
+      "size": 437,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/simple-replace/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/simple-replace/map.tmx",
+      "sha256": "68ff801549c9e39310eaec5d065f590fa4f6484da8626e859b6103009a7ca400",
+      "size": 437,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/simple-replace/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/simple-replace/rules.tmx",
+      "sha256": "34f1a529df228f44dab38eae3e1bea323a0e49836dfda5b66d3d7e4e9e32c053",
+      "size": 662,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/spr_test_tileset.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/spr_test_tileset.tsx",
+      "sha256": "cfabc009be23421c8abd728f94989acd907da38c8a60d4e1c644069dc6318207",
+      "size": 258,
+      "format": {
+        "kind": "tsx",
+        "version": "1.8"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/terrain-corner/isometric_grass_and_water.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/terrain-corner/isometric_grass_and_water.tsx",
+      "sha256": "258033a3893ba4fd6bb79f2856888e7f94daaf929eb21002e7eb8ffda491e679",
+      "size": 1838,
+      "format": {
+        "kind": "tsx",
+        "version": "1.8"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/terrain-corner/map-result.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/terrain-corner/map-result.tmx",
+      "sha256": "a6dab8d4b62655e71c32a415e589be5ca8d0d05f08376ecfadd2f853b4f251ef",
+      "size": 1027,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/terrain-corner/map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/terrain-corner/map.tmx",
+      "sha256": "b687cdefc700cb5b8fd137b18a3379e89407833cc5f23159f089ffef22b7c85d",
+      "size": 689,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "tiled/tests/automapping/terrain-corner/rules.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/automapping/terrain-corner/rules.tmx",
+      "sha256": "c3a01ca2d6d6ac2dfbdfc161985a055d772b288f114b46c241971643807e611f",
+      "size": 760,
+      "format": {
+        "kind": "tmx",
+        "version": "1.8",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "tiled/tests/data/mapobject.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/data/mapobject.tmx",
+      "sha256": "67abd219f7df51a74587e723b7d78561894f0a4ff66f524dc437ac66d8d43499",
+      "size": 562,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/errors/tile_image_not_found_in_tileset.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/errors/tile_image_not_found_in_tileset.tmx",
+      "sha256": "94fa33edc4c39ce7f482cc3d44f377dfa8875314a99ab82ce67209d17b3f71ce",
+      "size": 560,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/errors/tile_image_not_found_in_tileset.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/errors/tile_image_not_found_in_tileset.tsx",
+      "sha256": "ed74d51b9def8f8f0a1104f79804f42014417743701865d517b64ed89327ad5b",
+      "size": 257,
+      "format": {
+        "kind": "tsx",
+        "version": null
+      }
+    },
+    {
+      "path": "tiled/tests/errors/tileset_image_not_found_in_map.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/errors/tileset_image_not_found_in_map.tmx",
+      "sha256": "f3e2f29423675c3e89972c7aad8f8edb9b882fee06d40e089c598897a3de6213",
+      "size": 2133,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "isometric"
+      }
+    },
+    {
+      "path": "tiled/tests/errors/tileset_image_not_found_in_tileset.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/errors/tileset_image_not_found_in_tileset.tmx",
+      "sha256": "cfc8825e243b1a2f3fc1514a4672a2c13ec4883cee43f4311ffe0f534019f831",
+      "size": 788,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/errors/tileset_image_not_found_in_tileset.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/errors/tileset_image_not_found_in_tileset.tsx",
+      "sha256": "74623235a9d7dbbd1210df2d2872712a78966a925a6a193e98c0da6722ec1abe",
+      "size": 2243,
+      "format": {
+        "kind": "tsx",
+        "version": null
+      }
+    },
+    {
+      "path": "tiled/tests/errors/tileset_not_found.tmx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/errors/tileset_not_found.tmx",
+      "sha256": "1e17fc78c270b788614c88a6cffa1d56aca8ac9fc0d4a4ef34544130f8499fe8",
+      "size": 793,
+      "format": {
+        "kind": "tmx",
+        "version": "1.0",
+        "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/tests/wangtiles/PathAndObjects.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/wangtiles/PathAndObjects.tsx",
+      "sha256": "5969254c4dec6537336a45fbccf7daaac721da2aeac96914af91dfb1f4d1788d",
+      "size": 5444,
+      "format": {
+        "kind": "tsx",
+        "version": "1.5"
+      }
+    },
+    {
+      "path": "tiled/tests/wangtiles/grassAndWater.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/wangtiles/grassAndWater.tsx",
+      "sha256": "20d6216d351101d3e0e8e63939d2ba26d11b9ce0c0a9197932605297404bec4c",
+      "size": 1769,
+      "format": {
+        "kind": "tsx",
+        "version": "1.5"
+      }
+    },
+    {
+      "path": "tiled/tests/wangtiles/walkways.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/wangtiles/walkways.tsx",
+      "sha256": "8102c8a0209a4fd7e2ffea40562febf30306e75df2fc25feb716b554804216d7",
+      "size": 5781,
+      "format": {
+        "kind": "tsx",
+        "version": "1.5"
+      }
+    },
+    {
+      "path": "tiled/tests/wangtiles/wangblob.tsx",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/wangtiles/wangblob.tsx",
+      "sha256": "4cd0e6070f7067095f09f28ff01ef5408dcbbb2028313744ad1c9a1ed2aeaeea",
+      "size": 8145,
+      "format": {
+        "kind": "tsx",
+        "version": "1.5"
+      }
+    }
+  ],
+  "totals": {
+    "files": 188,
+    "bytes": 540106
+  }
+}

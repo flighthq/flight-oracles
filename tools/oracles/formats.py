@@ -233,6 +233,61 @@ def _md5(data: bytes, name: str):
     return FormatInfo(kind=kind, version=match.group(1).decode() if match else None)
 
 
+_TMX_VERSION = re.compile(rb'<map[^>]*\sversion="([^"]+)"')
+_TSX_VERSION = re.compile(rb'<tileset[^>]*\sversion="([^"]+)"')
+_TMX_ORIENT = re.compile(rb'<map[^>]*\sorientation="([^"]+)"')
+
+
+def _tiled_xml(data: bytes, name: str):
+    """Tiled TMX/TSX: XML with a version attribute on the root element."""
+    if not name.lower().endswith((".tmx", ".tsx")):
+        return None
+    head = data[:2048]
+    if name.lower().endswith(".tmx"):
+        match = _TMX_VERSION.search(head)
+        info = FormatInfo(kind="tmx", version=match.group(1).decode() if match else None)
+        orient = _TMX_ORIENT.search(head)
+        if orient:
+            info["orientation"] = orient.group(1).decode()
+        return info
+    match = _TSX_VERSION.search(head)
+    return FormatInfo(kind="tsx", version=match.group(1).decode() if match else None)
+
+
+def _tiled_json(data: bytes, name: str):
+    """Tiled TMJ/TSJ: the JSON serialisation of the same model."""
+    if not name.lower().endswith((".tmj", ".tsj", ".tiled-project")):
+        return None
+    try:
+        doc = json.loads(data)
+    except (ValueError, UnicodeDecodeError):
+        return None
+    if not isinstance(doc, dict):
+        return None
+    kind = {"tmj": "tmj", "tsj": "tsj"}.get(name.lower().rsplit(".", 1)[-1], "tiled-project")
+    info = FormatInfo(kind=kind, version=str(doc.get("version") or "") or None)
+    if doc.get("orientation"):
+        info["orientation"] = str(doc["orientation"])
+    return info
+
+
+def _bmfont(data: bytes, name: str):
+    """AngelCode BMFont, text serialisation: starts with an `info face=...` line."""
+    if not name.lower().endswith(".fnt"):
+        return None
+    if data[:4].lower() != b"info":
+        return FormatInfo(kind="fnt", version=None)
+    return FormatInfo(kind="fnt", version="text")
+
+
+def _libgdx_atlas(data: bytes, name: str):
+    if name.lower().endswith(".atlas"):
+        return FormatInfo(kind="libgdx-atlas", version=None)
+    if name.lower().endswith(".p"):
+        return FormatInfo(kind="libgdx-particle", version=None)
+    return None
+
+
 def _obj_mtl(data: bytes, name: str):
     lowered = name.lower()
     if lowered.endswith(".obj"):
@@ -261,7 +316,8 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
         info = probe(data)
         if info is not None:
             return info
-    for probe in (_dragonbones, _md5, _spine_skel, _spine_atlas, _obj_mtl):
+    for probe in (_dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont,
+                  _libgdx_atlas, _spine_skel, _spine_atlas, _obj_mtl):
         info = probe(data, name)
         if info is not None:
             return info
