@@ -5,15 +5,15 @@ dist/
 __pycache__/
 *.pyc
 
-# Vendored upstream bytes (119 MB and growing).
+# Vendored upstream bytes (~2.1 GB across 21 packs).
 #
 # DELIBERATE, AND REVERSIBLE. The sourcing policy argues for vendoring because a commit
 # pin gives reproducibility while only the bytes give *survival* — a pin does not outlive
 # a repository being deleted. That argument still stands.
 #
-# It is ignored for now because committing 119 MB of third-party binaries is a decision
-# about repository weight that belongs to the maintainer, not to the tooling. Nothing is
-# lost meanwhile: locks/ pins the exact commit and SHA-256 for every file, so
+# It is ignored because committing gigabytes of third-party binaries is a decision about
+# repository weight that belongs to the maintainer, not to the tooling. Nothing is lost
+# meanwhile: locks/ pins the exact commit and SHA-256 for every file, so
 # `python3 -m oracles ingest` reconstructs vendor/ byte-for-byte and `verify` proves it.
 #
 # To adopt vendoring, delete the line below and commit. Do it before you need it — the
