@@ -1,0 +1,101 @@
+# swf-ruffle-fixtures — SWF test corpus from ruffle-rs/ruffle.
+#
+# FOUR source blocks, not one, because Ruffle's test tree carries four different
+# declarations. Ruffle's own tests are Apache-2.0 OR MIT; the three imported corpora carry
+# their ORIGIN's terms, which Ruffle documents per-subdirectory in from_*/README.md.
+# Treating the repository-root licence as covering all of them would misreport three of the
+# four. Ruffle already practises exactly this per-source provenance discipline — the split
+# here mirrors theirs.
+
+[pack]
+name = "swf-ruffle-fixtures"
+kind = "fixtures"
+summary = "SWF test fixtures from the Ruffle test suite, split by the declaration covering each subtree."
+
+# ---------------------------------------------------------------------------
+# Ruffle's own tests — AVM1/AVM2 semantics, rendering, timeline, text, audio.
+# ---------------------------------------------------------------------------
+[[source]]
+id = "ruffle-authored"
+kind = "upstream"
+repo = "ruffle-rs/ruffle"
+ref = "master"
+include = [
+  "tests/tests/swfs/avm1/**/*.swf",
+  "tests/tests/swfs/avm2/**/*.swf",
+  "tests/tests/swfs/visual/**/*.swf",
+  "tests/tests/swfs/timeline/**/*.swf",
+  "tests/tests/swfs/text/**/*.swf",
+  "tests/tests/swfs/fonts/**/*.swf",
+  "tests/tests/swfs/audio/**/*.swf",
+  "tests/tests/swfs/stage3d/**/*.swf",
+  "tests/tests/swfs/mixed_avm/**/*.swf",
+  "tests/tests/swfs/swf/**/*.swf",
+  "tests/tests/swfs/import_assets/**/*.swf",
+]
+strip = "tests/tests/swfs/"
+
+[source.license]
+declared = "Apache-2.0 OR MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE.md"
+commercial_use = true
+covers = "Ruffle LLC and Ruffle contributors' authorship of the test SWFs."
+
+# ---------------------------------------------------------------------------
+# Imported from Gnash. GPL-3.0 carries an actual mechanical condition rather than a risk
+# profile: the corresponding source for these generated SWFs is the Ming/swfmill/mtasc/swfc
+# script that produced them, which lives in the Gnash tree. source_code records the pointer.
+# ---------------------------------------------------------------------------
+[[source]]
+id = "ruffle-from-gnash"
+kind = "upstream"
+repo = "ruffle-rs/ruffle"
+ref = "master"
+include = ["tests/tests/swfs/from_gnash/**/*.swf"]
+strip = "tests/tests/swfs/"
+
+[source.license]
+declared = "GPL-3.0-or-later"
+declared_scope = "directory"
+declared_from = "tests/tests/swfs/from_gnash/README.md"
+commercial_use = true
+source_code = "https://github.com/ruffle-rs/gnash-testsuite — Ruffle's fork of the Gnash testsuite, named by from_gnash/README.md as the origin of these modified tests. This, not upstream Gnash, is the corresponding source for the SWFs actually distributed here."
+covers = "GNU Gnash project test cases, imported by Ruffle under their originating terms."
+
+# ---------------------------------------------------------------------------
+# Imported from Adobe's avmplus. MPL-2.0 is file-level weak copyleft — satisfied by
+# carrying the licence text.
+# ---------------------------------------------------------------------------
+[[source]]
+id = "ruffle-from-avmplus"
+kind = "upstream"
+repo = "ruffle-rs/ruffle"
+ref = "master"
+include = ["tests/tests/swfs/from_avmplus/**/*.swf"]
+strip = "tests/tests/swfs/"
+
+[source.license]
+declared = "MPL-2.0"
+declared_scope = "directory"
+declared_from = "tests/tests/swfs/from_avmplus/README.md"
+commercial_use = true
+covers = "Adobe avmplus ActionScript VM acceptance tests, imported by Ruffle."
+
+# ---------------------------------------------------------------------------
+# Imported from Mozilla Shumway.
+# ---------------------------------------------------------------------------
+[[source]]
+id = "ruffle-from-shumway"
+kind = "upstream"
+repo = "ruffle-rs/ruffle"
+ref = "master"
+include = ["tests/tests/swfs/from_shumway/**/*.swf"]
+strip = "tests/tests/swfs/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "directory"
+declared_from = "tests/tests/swfs/from_shumway/README.md"
+commercial_use = true
+covers = "Mozilla Shumway test cases, imported by Ruffle."

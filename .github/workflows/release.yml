@@ -1,0 +1,94 @@
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to build (e.g. v0.1.0)"
+        required: true
+
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+
+env:
+  PYTHONPATH: tools
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve version
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "value=${{ inputs.version }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=${GITHUB_REF#refs/tags/}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Cache upstream tarballs
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: oracles-tarballs-${{ hashFiles('locks/*.lock.json') }}
+
+      # Reconstruct vendor/ from the locked commits. Reproducible by construction: the
+      # lock pins commit and SHA-256 for every file, and `verify` fails if either moved.
+      - name: Ingest from pinned commits
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 -m oracles ingest
+
+      - name: Verify vendored bytes against locks
+        run: python3 -m oracles verify
+
+      # Builds every pack and variant, and fails hard if an excluded file's bytes reach
+      # an archive. That guard is what makes the removal promise mechanical.
+      - name: Build archives
+        run: python3 -m oracles pack --version ${{ steps.version.outputs.value }}
+
+      - name: Attest build provenance
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: "dist/*.tar.gz, dist/*.zip"
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.value }}
+          files: |
+            dist/*.tar.gz
+            dist/*.zip
+            dist/index.json
+            dist/SHA256SUMS
+          body: |
+            Fixture archives for downstream flight sdk projects.
+
+            Each archive is self-contained: `manifest.json` (per-file source, pinned
+            commit, SHA-256, container format version, declared licence), `NOTICE.md`
+            (human-readable attribution), `LICENSES/` (upstream licence texts captured at
+            the pinned commit), and a `README.md`.
+
+            **Variants.** `-full` is everything not excluded. `-permissive` is filtered to
+            entries whose *declared* licence is a recognised permissive SPDX identifier,
+            with no unresolved third-party subject matter and commercial use permitted.
+            That is a filter over recorded metadata — not legal clearance.
+
+            **Some archives contain non-commercial-only assets.** See each archive's
+            `NOTICE.md`. Downstream consumers do not inherit a permissive licence from the
+            surrounding tooling.
+
+            `index.json` lists every artifact with its digest, for programmatic resolution.
+            Verify with `sha256sum -c SHA256SUMS`.
+
+            If you hold rights in something here and want it removed, open an issue —
+            removal is a one-line change and a re-cut release.

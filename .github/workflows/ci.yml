@@ -1,0 +1,73 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Unit tests
+        run: python3 -m unittest discover -s tools/tests -v
+
+      # Every spec must parse and validate even when its corpus has not been ingested.
+      # A malformed declaration should fail here, not at release time.
+      - name: Validate source specs
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, "tools")
+          from oracles import spec
+          specs = spec.load_all(Path("sources"))
+          for s in specs:
+              nonredist = [x.id for x in s.sources if not x.license.redistributable]
+              print(f"{s.name}: {len(s.sources)} source(s)"
+                    + (f", {len(nonredist)} non-redistributable: {nonredist}" if nonredist else ""))
+          print(f"OK — {len(specs)} spec(s) valid")
+          PY
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache upstream tarballs
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: oracles-tarballs-${{ hashFiles('locks/*.lock.json') }}
+
+      # Rebuild vendor/ from the pinned commits and prove it matches the lock byte for
+      # byte. If an upstream ever serves different content at a pinned SHA, this is where
+      # it surfaces.
+      - name: Ingest from pinned commits
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 -m oracles ingest
+        working-directory: .
+        # PYTHONPATH so `oracles` resolves without installation.
+      - name: Verify vendored bytes against locks
+        run: python3 -m oracles verify
+
+      - name: Build archives (dry run)
+        run: python3 -m oracles pack --version ci-${{ github.sha }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: archives
+          path: dist/
+          retention-days: 7
+
+env:
+  PYTHONPATH: tools

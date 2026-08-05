@@ -1,0 +1,318 @@
+# spine-fixtures — Spine skeletal animation example exports.
+#
+# Each example is a separate [[source]] because each ships its own license.txt and those
+# declarations are NOT uniform: eighteen are Esoteric Software's own (redistributable with
+# the licence file attached, non-commercial), and two are by third-party authors who
+# explicitly forbid redistribution. Collapsing these into one repo-level declaration would
+# have been wrong in both directions.
+
+[pack]
+name = "spine-fixtures"
+kind = "fixtures"
+summary = "Spine skeletal animation example exports (skeleton data, atlases, textures) from EsotericSoftware/spine-runtimes."
+
+[[source]]
+id = "spine-alien"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/alien/export/**", "examples/alien/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/alien/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+
+[[source]]
+id = "spine-celestial-circus"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/celestial-circus/export/**", "examples/celestial-circus/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/celestial-circus/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC."
+
+[[source]]
+id = "spine-chibi-stickers"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/chibi-stickers/export/**", "examples/chibi-stickers/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/chibi-stickers/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2022, Esoteric Software LLC."
+
+[[source]]
+id = "spine-cloud-pot"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/cloud-pot/export/**", "examples/cloud-pot/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/cloud-pot/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC."
+
+[[source]]
+id = "spine-coin"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/coin/export/**", "examples/coin/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/coin/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2018, Esoteric Software LLC."
+
+[[source]]
+id = "spine-goblins"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/goblins/export/**", "examples/goblins/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/goblins/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+
+[[source]]
+id = "spine-mix-and-match"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/mix-and-match/export/**", "examples/mix-and-match/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/mix-and-match/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2019, Esoteric Software LLC."
+
+[[source]]
+id = "spine-owl"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/owl/export/**", "examples/owl/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/owl/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2018, Esoteric Software LLC."
+
+[[source]]
+id = "spine-powerup"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/powerup/export/**", "examples/powerup/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/powerup/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+
+[[source]]
+id = "spine-raptor"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/raptor/export/**", "examples/raptor/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/raptor/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+
+[[source]]
+id = "spine-snowglobe"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/snowglobe/export/**", "examples/snowglobe/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/snowglobe/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC."
+
+[[source]]
+id = "spine-speedy"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/speedy/export/**", "examples/speedy/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/speedy/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+
+[[source]]
+id = "spine-spineboy"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/spineboy/export/**", "examples/spineboy/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/spineboy/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+
+[[source]]
+id = "spine-spinosaurus"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/spinosaurus/export/**", "examples/spinosaurus/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/spinosaurus/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+
+[[source]]
+id = "spine-stretchyman"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/stretchyman/export/**", "examples/stretchyman/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/stretchyman/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC."
+
+[[source]]
+id = "spine-tank"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/tank/export/**", "examples/tank/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/tank/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC."
+
+[[source]]
+id = "spine-vine"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/vine/export/**", "examples/vine/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/vine/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC."
+
+[[source]]
+id = "spine-windmill"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/windmill/export/**", "examples/windmill/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/windmill/license.txt"
+commercial_use = false
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2017, Esoteric Software LLC."
+
+# NOT VENDORED — declaration explicitly forbids redistribution. Kept here so the record of
+# having checked is durable and nobody re-adds it later without reading this.
+[[source]]
+id = "spine-dragon"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/dragon/export/**", "examples/dragon/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-NoRedistribution"
+declared_scope = "file-adjacent"
+declared_from = "examples/dragon/license.txt"
+commercial_use = false
+redistributable = false
+prohibition = "The project file and images in this \"dragon\" project are provided for demonstration purposes only and may not be redistributed for any reason nor used as the basis for derivative work. Copyright (c) 2013, Thiago Brayner."
+
+# NOT VENDORED — declaration explicitly forbids redistribution. Kept here so the record of
+# having checked is durable and nobody re-adds it later without reading this.
+[[source]]
+id = "spine-hero"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/hero/export/**", "examples/hero/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-NoRedistribution"
+declared_scope = "file-adjacent"
+declared_from = "examples/hero/license.txt"
+commercial_use = false
+redistributable = false
+prohibition = "The project file and images in this \"hero\" project are provided for demonstration purposes only and may not be redistributed for any reason nor used as the basis for derivative work. Copyright (c) 2014, XDTech."

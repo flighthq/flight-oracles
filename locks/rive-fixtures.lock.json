@@ -1,0 +1,388 @@
+{
+  "pack": {
+    "name": "rive-fixtures",
+    "kind": "fixtures",
+    "summary": "Rive vector animation files from the rive-runtime WebGPU player demo corpus."
+  },
+  "sources": [
+    {
+      "id": "rive-runtime",
+      "kind": "upstream",
+      "repo": "rive-app/rive-runtime",
+      "ref": "main",
+      "commit": "d25e6a4b6c1b8382b588f08371231373780fbcd5",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "Rive's authorship of the .riv files (rig, curves, state machines). Copyright (c) 2020 Rive."
+      },
+      "licenseSnapshot": "licenses/rive-runtime@d25e6a4b6c1b.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "rivs/Coffee_Cup.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/Coffee_Cup.riv",
+      "sha256": "d2653a9f2090a22b9edfc8b7336d235a6273e027a9272e2df6e0f320ef2e6d04",
+      "size": 4220,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/Santa_Claus.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/Santa_Claus.riv",
+      "sha256": "28db7f79a5cb5475dc6b58f75ea9f62950d8982983254efea510268a6c98f071",
+      "size": 129909,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/Timer.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/Timer.riv",
+      "sha256": "c63e02521744fb6fc5adf82fcb9928bf986be5ae2342c68062b55b2edaf2bd06",
+      "size": 7510,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/adventuretime_marceline-pb.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/adventuretime_marceline-pb.riv",
+      "sha256": "e51cd067041e464be1e39260f66d6c6ec1392df42fbd4e7fa53ae9f9869b39b3",
+      "size": 104007,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      },
+      "depicts": {
+        "subject": "Marceline and Princess Bubblegum, Adventure Time",
+        "rightsHolder": "Cartoon Network",
+        "status": "unresolved"
+      }
+    },
+    {
+      "path": "rivs/avatar_demo.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/avatar_demo.riv",
+      "sha256": "e8930da1fc88a895f4df94ef6c9c976a039d996bf85c786eea17777053b114a9",
+      "size": 18337,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/car_demo.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/car_demo.riv",
+      "sha256": "1f0b236e252f686192d0cc9d2cf9441f77859eb509c86c8d8c9a900f0dad2bb5",
+      "size": 19789,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/cloud_icon.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/cloud_icon.riv",
+      "sha256": "cbc2004990415bf753f73e5bc76403d34ed203b4e3c6dccd70731b3d645bbe07",
+      "size": 7159,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/coffee_loader.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/coffee_loader.riv",
+      "sha256": "b89d55f169811f31e48b0f87bceedbb689d64b296036077011b7010c23fa1ab0",
+      "size": 2605,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/coin_demo.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/coin_demo.riv",
+      "sha256": "cb775ed246df65b23f5a9d390299988ab7308e68c61fb64cf690512fcc7de059",
+      "size": 10208,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/documentation.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/documentation.riv",
+      "sha256": "4edda3ad48ca0e5517cbf8895ead60985283b1f9061613f05a7f8a79667e17af",
+      "size": 4585,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/falling.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/falling.riv",
+      "sha256": "e130d00fc2317190c45f46f42900eaf7749bf03d89662574cacc8c101ff0f830",
+      "size": 427493,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/fire_button.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/fire_button.riv",
+      "sha256": "7c084a8aa6d4589a8b506ad14ad8d99a7358fbb49ac69b8cf1a8a9fc422879c4",
+      "size": 4407,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/lumberjackfinal.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/lumberjackfinal.riv",
+      "sha256": "6ad0fe8c8119b137900582e05e7909476046ab051e813cb7a5f28f1057d3a61d",
+      "size": 14038,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/mail_box.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/mail_box.riv",
+      "sha256": "49f668144609f4e2de6306d48e93a221a5e88ea3385b0706ac01da83f3f21102",
+      "size": 2838,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/new_file.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/new_file.riv",
+      "sha256": "05bd0a653654f9630f73a0fe6f104bd50e94b97e9b44830b35ec6d9344102a91",
+      "size": 3262,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/octopus_loop.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/octopus_loop.riv",
+      "sha256": "e568bb104fed7100fcf736c5253d5eb6f8ee0f8dd7af011c648923612ea4dce5",
+      "size": 8237,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/planets.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/planets.riv",
+      "sha256": "ab36c95ecb00d90058daa0e16f312a63060cdcb889fc863a8d071011f66f5345",
+      "size": 113993,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/poison_loader.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/poison_loader.riv",
+      "sha256": "11e2730acf9bf1e0079e441867c26848be55804f2f884a3173c6d44dfb95b4dd",
+      "size": 7539,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/popsicle_loader.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/popsicle_loader.riv",
+      "sha256": "b97e2b06df39286470179205e4112bd72617a596fa1dbe21abeeed173631e7b5",
+      "size": 4598,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/radio_button_example.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/radio_button_example.riv",
+      "sha256": "41b5a6b550c13fff75dacd10c41ce00025af5d1af88f9419d4d0238e7f107d09",
+      "size": 1065,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/skills_demov1.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/skills_demov1.riv",
+      "sha256": "ba6e7ec47c8dad897dc0392ddd3926704ffb80dcb324772f8df8977ecc045ca6",
+      "size": 52871,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/skull_404.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/skull_404.riv",
+      "sha256": "64afbaa59653beadb060b16a190604dea27f94ffa0634bb52306d0f72bca9b48",
+      "size": 10669,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/stopwatch.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/stopwatch.riv",
+      "sha256": "f153bad231209a3a0d707006b809043ad83dc9932ef5e817388ae54c851f4500",
+      "size": 762,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/tape.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/tape.riv",
+      "sha256": "5e5e43e962de83e538cee36f7191005d18b149d92206bbabbe0e070e9feb37b2",
+      "size": 116767,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/towersDemo.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/towersDemo.riv",
+      "sha256": "32e718f384583d68c33243a943ae582e591da55e836d14111b3efb899c89db93",
+      "size": 15922,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/travel_icons.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/travel_icons.riv",
+      "sha256": "f57a5c2afcd2e8a6cd2c37c5ee21c15180add7ba81b2f2aa9aa3a0d085517b46",
+      "size": 14706,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/volume_bars.riv",
+      "sourceId": "rive-runtime",
+      "upstreamPath": "renderer/webgpu_player/rivs/volume_bars.riv",
+      "sha256": "6d1d48e76bae32ec6d0d4d0719beb48086235bf99ac7c60e764d624e17d0c4d4",
+      "size": 1283,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    }
+  ],
+  "totals": {
+    "files": 27,
+    "bytes": 1108779
+  }
+}

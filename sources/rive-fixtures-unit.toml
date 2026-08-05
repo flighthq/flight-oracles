@@ -1,0 +1,40 @@
+# rive-fixtures-unit — Rive's own unit-test asset corpus.
+#
+# SIZE DECISION, NOT YET INGESTED. This tree is ~139 MB across ~380 files, with a long
+# tail (one file is 10.5 MB) against a median of 2.9 KB. That is a deliberate choice about
+# how much binary the repository carries, so it is a separate pack rather than a wider glob
+# on rive-fixtures: run `ingest rive-fixtures-unit` to adopt it.
+#
+# Coverage-wise it is the more valuable of the two — these are targeted feature fixtures
+# (data binding, layout, text, scripting, viewmodels) rather than demo content.
+
+[pack]
+name = "rive-fixtures-unit"
+kind = "fixtures"
+summary = "Rive unit-test asset corpus — targeted feature fixtures for data binding, layout, text, and scripting."
+
+[[source]]
+id = "rive-runtime-unit"
+kind = "upstream"
+repo = "rive-app/rive-runtime"
+ref = "main"
+include = ["tests/unit_tests/assets/**/*.riv"]
+strip = "tests/unit_tests/assets/"
+dest = "rivs/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+covers = "Rive's authorship of the .riv files (rig, curves, state machines). Copyright (c) 2020 Rive."
+
+[source.annotations."rivs/spotify_kids_demo.riv".depicts]
+subject = "Spotify Kids branding"
+rightsHolder = "Spotify AB"
+status = "unresolved"
+
+[source.annotations."rivs/spotify_kids_app_icon.riv".depicts]
+subject = "Spotify Kids app icon"
+rightsHolder = "Spotify AB"
+status = "unresolved"

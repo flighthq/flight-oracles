@@ -1,0 +1,44 @@
+# rive-fixtures — Rive vector animation files.
+#
+# rive-app/rive-runtime declares MIT at its repository root and again at renderer/LICENSE.
+# That is a repository-root scope declaration: it is a statement about the repository, not
+# a per-asset one, and declared_scope records that so consumers can weigh it.
+#
+# The webgpu_player set is a curated demo corpus (~1.1 MB across ~50 files). The much
+# larger tests/unit_tests/assets tree (~139 MB) is deliberately a SEPARATE pack — see
+# rive-fixtures-unit.toml — because vendoring it is a size decision worth making
+# explicitly rather than by glob.
+
+[pack]
+name = "rive-fixtures"
+kind = "fixtures"
+summary = "Rive vector animation files from the rive-runtime WebGPU player demo corpus."
+
+[[source]]
+id = "rive-runtime"
+kind = "upstream"
+repo = "rive-app/rive-runtime"
+ref = "main"
+include = ["renderer/webgpu_player/rivs/**"]
+strip = "renderer/webgpu_player/rivs/"
+dest = "rivs/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+covers = "Rive's authorship of the .riv files (rig, curves, state machines). Copyright (c) 2020 Rive."
+
+# Third-party subject matter. The declared MIT licence covers Rive's authorship; rights in
+# the depicted characters and marks are separate and are not established here. Recorded as
+# annotation, not as a verdict — and deliberately NOT excluded, because the honest record
+# is more useful to a downstream consumer than a silent omission.
+[source.annotations."rivs/adventuretime_marceline-pb.riv".depicts]
+subject = "Marceline and Princess Bubblegum, Adventure Time"
+rightsHolder = "Cartoon Network"
+status = "unresolved"
+
+# The Spotify-branded files live under tests/unit_tests/assets, so their annotations belong
+# to rive-fixtures-unit, not here. Ingest rejects an annotation that matches no vendored
+# file, which is how that misplacement was caught rather than silently doing nothing.

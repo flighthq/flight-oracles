@@ -1,0 +1,52 @@
+# Early warning for the scenario that motivated mirroring in the first place: an upstream
+# being taken down, renamed, or restructured. One cron job rather than an org full of forks.
+#
+# Drift is not a failure. A moved ref means our pin is still valid and there is newer
+# material to consider; a 404 means the source is gone and the vendored bytes are now the
+# only copy we have. Both are worth a human look, neither is worth a red build.
+
+name: drift
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"  # Mondays, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+env:
+  PYTHONPATH: tools
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check pinned upstreams
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python3 -m oracles drift | tee drift.txt
+          if [ -s drift.txt ] && ! grep -q '^no drift$' drift.txt; then
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open or update drift issue
+        if: steps.check.outputs.found == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BODY=$(printf 'Scheduled upstream check found divergence from the locks.\n\n```\n%s\n```\n\nPins remain valid — nothing is broken. To adopt newer upstream material:\n\n```\npython3 -m oracles ingest <pack> --update\npython3 -m oracles verify\n```\n\nA source reported unreachable is the takedown case: the vendored bytes and the captured licence snapshot are now the only copy, so re-check before assuming it will come back.\n' "$(cat drift.txt)")
+          EXISTING=$(gh issue list --label drift --state open --json number --jq '.[0].number')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "Upstream drift detected" --label drift --body "$BODY"
+          fi
