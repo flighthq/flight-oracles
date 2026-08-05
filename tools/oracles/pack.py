@@ -201,6 +201,19 @@ def _readme(lock, variant, entries) -> str:
         "glTF loaders and importers. The terms travel with the files; they do not stop at "
         "this archive.",
         "",
+        *( [
+            "## Extraction — this pack merges with others",
+            "",
+            f"This archive belongs to merge group `{lock['pack']['mergeGroup']}`. Packs in "
+            "the same group must be extracted into the **same directory**: glTF's "
+            "external-resource form references its buffers and images by relative URI, so "
+            "geometry and textures split across archives only resolve once reunited on "
+            "disk. Splitting them was our size decision; the format does not know about it.",
+            "",
+            "For self-contained models with textures already embedded, use the "
+            "`gltf-khronos-binary` pack instead — one file per model, nothing to resolve.",
+            "",
+          ] if lock["pack"].get("mergeGroup") else [] ),
         "## Provenance",
         "",
         "`manifest.json` records, per file: the source it came from, that source's pinned "
@@ -336,6 +349,13 @@ def _write_zip(members, dest: Path):
             zf.writestr(info, data)
 
 
+# Above this, a .zip is not worth its weight. These payloads are already-compressed PNG,
+# JPEG and binary buffers, so the zip comes out a near-identical copy of the tar.gz rather
+# than a meaningfully different artifact — and doubling half a gigabyte for format
+# convenience is a bad trade. Small packs still get both, where duplication is cheap.
+ZIP_MAX_BYTES = 150 * 1024 * 1024
+
+
 def build_pack(lock, root: Path, out_dir: Path, version: str, *, zip_too: bool = True):
     """Build every variant of one pack. Returns a list of artifact records."""
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -358,11 +378,14 @@ def build_pack(lock, root: Path, out_dir: Path, version: str, *, zip_too: bool =
             )
 
         stem = f"{name}-{variant}-{version}"
-        targets = [(out_dir / f"{stem}.tar.gz", _write_tar_gz)]
-        if zip_too:
-            targets.append((out_dir / f"{stem}.zip", _write_zip))
-        for dest, writer in targets:
-            writer(members, dest)
+        tar_dest = out_dir / f"{stem}.tar.gz"
+        _write_tar_gz(members, tar_dest)
+        targets = [tar_dest]
+        if zip_too and tar_dest.stat().st_size <= ZIP_MAX_BYTES:
+            zip_dest = out_dir / f"{stem}.zip"
+            _write_zip(members, zip_dest)
+            targets.append(zip_dest)
+        for dest in targets:
             digest = _sha256(dest.read_bytes())
             artifacts.append(
                 {

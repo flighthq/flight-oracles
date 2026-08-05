@@ -265,6 +265,13 @@ class PackSpec:
     summary: str
     sources: list
     path: Path | None = None
+    # Packs sharing a merge group must be extracted into the SAME directory.
+    #
+    # glTF's external-resource form references its buffers and images by relative URI, so
+    # splitting geometry from textures — which we did for size — breaks resolution unless
+    # they are reunited on disk. Recording the group lets a consumer honour that instead of
+    # discovering it as a pile of missing textures.
+    merge_group: str | None = None
 
     @property
     def annotations(self) -> dict:
@@ -314,6 +321,7 @@ def load_spec(path: Path) -> PackSpec:
         summary=pack.get("summary", ""),
         sources=sources,
         path=path,
+        merge_group=pack.get("merge_group"),
     )
 
 

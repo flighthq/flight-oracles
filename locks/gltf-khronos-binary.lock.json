@@ -2,9 +2,47 @@
   "pack": {
     "name": "gltf-khronos-binary",
     "kind": "fixtures",
-    "summary": "GLB container fixtures \u2014 the 40 smallest Khronos sample models in binary glTF form."
+    "summary": "GLB container fixtures \u2014 Khronos sample models in self-contained binary glTF form, textures embedded."
   },
   "sources": [
+    {
+      "id": "glb-abeautifulgame",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/ABeautifulGame/LICENSE.md",
+        "covers": "Original model \u2014 MaterialX Project, 2020 (owner: ASWF).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-abeautifulgame@2bac6f8c57bf.txt",
+      "adjacentPath": "ABeautifulGame/LICENSE.md"
+    },
+    {
+      "id": "glb-alphablendmodetest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/AlphaBlendModeTest/LICENSE.md",
+        "covers": "Everything \u2014 Ed Mackey, 2018 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-alphablendmodetest@2bac6f8c57bf.txt",
+      "adjacentPath": "AlphaBlendModeTest/LICENSE.md"
+    },
     {
       "id": "glb-animatedcolorscube",
       "kind": "upstream",
@@ -44,6 +82,82 @@
       "adjacentPath": "AnimatedMorphCube/LICENSE.md"
     },
     {
+      "id": "glb-animationpointeruvs",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/AnimationPointerUVs/LICENSE.md",
+        "covers": "3D asset and textures \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-animationpointeruvs@2bac6f8c57bf.txt",
+      "adjacentPath": "AnimationPointerUVs/LICENSE.md"
+    },
+    {
+      "id": "glb-anisotropybarnlamp",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/AnisotropyBarnLamp/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Copyright 2023 Wayfair, LLC).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-anisotropybarnlamp@2bac6f8c57bf.txt",
+      "adjacentPath": "AnisotropyBarnLamp/LICENSE.md"
+    },
+    {
+      "id": "glb-anisotropydisctest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/AnisotropyDiscTest/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-anisotropydisctest@2bac6f8c57bf.txt",
+      "adjacentPath": "AnisotropyDiscTest/LICENSE.md"
+    },
+    {
+      "id": "glb-anisotropyrotationtest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/AnisotropyRotationTest/LICENSE.md",
+        "covers": "Everything \u2014 Ed Mackey, 2023 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-anisotropyrotationtest@2bac6f8c57bf.txt",
+      "adjacentPath": "AnisotropyRotationTest/LICENSE.md"
+    },
+    {
       "id": "glb-anisotropystrengthtest",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -63,6 +177,25 @@
       "adjacentPath": "AnisotropyStrengthTest/LICENSE.md"
     },
     {
+      "id": "glb-antiquecamera",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/AntiqueCamera/LICENSE.md",
+        "covers": "Everything \u2014 Maximillan Kamps, 2018 (owner: UX3D). Supplementary marks: LicenseRef-LegalMark-UX3D.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-antiquecamera@2bac6f8c57bf.txt",
+      "adjacentPath": "AntiqueCamera/LICENSE.md"
+    },
+    {
       "id": "glb-attenuationtest",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -80,6 +213,63 @@
       },
       "licenseSnapshot": "licenses/glb-attenuationtest@2bac6f8c57bf.txt",
       "adjacentPath": "AttenuationTest/LICENSE.md"
+    },
+    {
+      "id": "glb-avocado",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/Avocado/LICENSE.md",
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-avocado@2bac6f8c57bf.txt",
+      "adjacentPath": "Avocado/LICENSE.md"
+    },
+    {
+      "id": "glb-barramundifish",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/BarramundiFish/LICENSE.md",
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-barramundifish@2bac6f8c57bf.txt",
+      "adjacentPath": "BarramundiFish/LICENSE.md"
+    },
+    {
+      "id": "glb-boombox",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/BoomBox/LICENSE.md",
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-boombox@2bac6f8c57bf.txt",
+      "adjacentPath": "BoomBox/LICENSE.md"
     },
     {
       "id": "glb-box",
@@ -196,6 +386,120 @@
       "adjacentPath": "BoxVertexColors/LICENSE.md"
     },
     {
+      "id": "glb-carconcept",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CarConcept/LICENSE.md",
+        "covers": "Model and textures \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-carconcept@2bac6f8c57bf.txt",
+      "adjacentPath": "CarConcept/LICENSE.md"
+    },
+    {
+      "id": "glb-carbonfibre",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CarbonFibre/LICENSE.md",
+        "covers": "Models and Textures \u2014 Eric Chadwick, 2023 (owner: Wayfair).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-carbonfibre@2bac6f8c57bf.txt",
+      "adjacentPath": "CarbonFibre/LICENSE.md"
+    },
+    {
+      "id": "glb-cesiumman",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "LicenseRef-CC-BY-TM",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CesiumMan/LICENSE.md",
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-cesiumman@2bac6f8c57bf.txt",
+      "adjacentPath": "CesiumMan/LICENSE.md"
+    },
+    {
+      "id": "glb-cesiummilktruck",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "LicenseRef-CC-BY-TM",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CesiumMilkTruck/LICENSE.md",
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-cesiummilktruck@2bac6f8c57bf.txt",
+      "adjacentPath": "CesiumMilkTruck/LICENSE.md"
+    },
+    {
+      "id": "glb-chairdamaskpurplegold",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/ChairDamaskPurplegold/LICENSE.md",
+        "covers": "Models and Textures \u2014 Eric Chadwick, 2021 (owner: Wayfair).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-chairdamaskpurplegold@2bac6f8c57bf.txt",
+      "adjacentPath": "ChairDamaskPurplegold/LICENSE.md"
+    },
+    {
+      "id": "glb-chronographwatch",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/ChronographWatch/LICENSE.md",
+        "covers": "Model and textures \u2014 Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-DGG, LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-chronographwatch@2bac6f8c57bf.txt",
+      "adjacentPath": "ChronographWatch/LICENSE.md"
+    },
+    {
       "id": "glb-clearcoatcarpaint",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -213,6 +517,139 @@
       },
       "licenseSnapshot": "licenses/glb-clearcoatcarpaint@2bac6f8c57bf.txt",
       "adjacentPath": "ClearCoatCarPaint/LICENSE.md"
+    },
+    {
+      "id": "glb-clearcoattest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/ClearCoatTest/LICENSE.md",
+        "covers": "Everything \u2014 Ed Mackey, 2020 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-clearcoattest@2bac6f8c57bf.txt",
+      "adjacentPath": "ClearCoatTest/LICENSE.md"
+    },
+    {
+      "id": "glb-clearcoatwicker",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/ClearcoatWicker/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-clearcoatwicker@2bac6f8c57bf.txt",
+      "adjacentPath": "ClearcoatWicker/LICENSE.md"
+    },
+    {
+      "id": "glb-commercialrefrigerator",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CommercialRefrigerator/LICENSE.md",
+        "covers": "Model and textures and all images in the README.md \u2014 Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-commercialrefrigerator@2bac6f8c57bf.txt",
+      "adjacentPath": "CommercialRefrigerator/LICENSE.md"
+    },
+    {
+      "id": "glb-comparealphacoverage",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CompareAlphaCoverage/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-comparealphacoverage@2bac6f8c57bf.txt",
+      "adjacentPath": "CompareAlphaCoverage/LICENSE.md"
+    },
+    {
+      "id": "glb-compareambientocclusion",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CompareAmbientOcclusion/LICENSE.md",
+        "covers": "Models \u2014 Polyhaven, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-compareambientocclusion@2bac6f8c57bf.txt",
+      "adjacentPath": "CompareAmbientOcclusion/LICENSE.md"
+    },
+    {
+      "id": "glb-compareanisotropy",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CompareAnisotropy/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-compareanisotropy@2bac6f8c57bf.txt",
+      "adjacentPath": "CompareAnisotropy/LICENSE.md"
+    },
+    {
+      "id": "glb-comparebasecolor",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CompareBaseColor/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-comparebasecolor@2bac6f8c57bf.txt",
+      "adjacentPath": "CompareBaseColor/LICENSE.md"
     },
     {
       "id": "glb-compareclearcoat",
@@ -329,6 +766,25 @@
       "adjacentPath": "CompareMetallic/LICENSE.md"
     },
     {
+      "id": "glb-comparenormal",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CompareNormal/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-comparenormal@2bac6f8c57bf.txt",
+      "adjacentPath": "CompareNormal/LICENSE.md"
+    },
+    {
       "id": "glb-compareroughness",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -348,6 +804,101 @@
       "adjacentPath": "CompareRoughness/LICENSE.md"
     },
     {
+      "id": "glb-comparesheen",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CompareSheen/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-comparesheen@2bac6f8c57bf.txt",
+      "adjacentPath": "CompareSheen/LICENSE.md"
+    },
+    {
+      "id": "glb-comparespecular",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CompareSpecular/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-comparespecular@2bac6f8c57bf.txt",
+      "adjacentPath": "CompareSpecular/LICENSE.md"
+    },
+    {
+      "id": "glb-comparetransmission",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CompareTransmission/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-comparetransmission@2bac6f8c57bf.txt",
+      "adjacentPath": "CompareTransmission/LICENSE.md"
+    },
+    {
+      "id": "glb-comparevolume",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/CompareVolume/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-comparevolume@2bac6f8c57bf.txt",
+      "adjacentPath": "CompareVolume/LICENSE.md"
+    },
+    {
+      "id": "glb-corset",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/Corset/LICENSE.md",
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: UX3D).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-corset@2bac6f8c57bf.txt",
+      "adjacentPath": "Corset/LICENSE.md"
+    },
+    {
       "id": "glb-cubevisibility",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -365,6 +916,158 @@
       },
       "licenseSnapshot": "licenses/glb-cubevisibility@2bac6f8c57bf.txt",
       "adjacentPath": "CubeVisibility/LICENSE.md"
+    },
+    {
+      "id": "glb-damagedhelmet",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/DamagedHelmet/LICENSE.md",
+        "covers": "Rebuild and conversion to glTF \u2014 ctxwing, 2018 (owner: ctxwing).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-damagedhelmet@2bac6f8c57bf.txt",
+      "adjacentPath": "DamagedHelmet/LICENSE.md"
+    },
+    {
+      "id": "glb-diffusetransmissionplant",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/DiffuseTransmissionPlant/LICENSE.md",
+        "covers": "Materials and animation \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-diffusetransmissionplant@2bac6f8c57bf.txt",
+      "adjacentPath": "DiffuseTransmissionPlant/LICENSE.md"
+    },
+    {
+      "id": "glb-diffusetransmissionteacup",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/DiffuseTransmissionTeacup/LICENSE.md",
+        "covers": "Models and Textures \u2014 Polyhaven.com, and Eric Chadwick, 2023 (owner: Public domain).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-diffusetransmissionteacup@2bac6f8c57bf.txt",
+      "adjacentPath": "DiffuseTransmissionTeacup/LICENSE.md"
+    },
+    {
+      "id": "glb-diffusetransmissiontest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/DiffuseTransmissionTest/LICENSE.md",
+        "covers": "Model and textures \u2014 Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-diffusetransmissiontest@2bac6f8c57bf.txt",
+      "adjacentPath": "DiffuseTransmissionTest/LICENSE.md"
+    },
+    {
+      "id": "glb-directionallight",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/DirectionalLight/LICENSE.md",
+        "covers": "Everything \u2014 Rickard Sahlin, 2020 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-directionallight@2bac6f8c57bf.txt",
+      "adjacentPath": "DirectionalLight/LICENSE.md"
+    },
+    {
+      "id": "glb-dispersiontest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/DispersionTest/LICENSE.md",
+        "covers": "Everything \u2014 Ed Mackey, 2023 (owner: AGI).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-dispersiontest@2bac6f8c57bf.txt",
+      "adjacentPath": "DispersionTest/LICENSE.md"
+    },
+    {
+      "id": "glb-dragonattenuation",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "LicenseRef-Stanford-Graphics",
+        "declaredScope": "file-adjacent",
+        "commercialUse": false,
+        "redistributable": true,
+        "declaredFrom": "Models/DragonAttenuation/LICENSE.md",
+        "covers": "Original dragon model \u2014 Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory).",
+        "onwardUse": "non-commercial"
+      },
+      "licenseSnapshot": "licenses/glb-dragonattenuation@2bac6f8c57bf.txt",
+      "adjacentPath": "DragonAttenuation/LICENSE.md"
+    },
+    {
+      "id": "glb-dragondispersion",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "LicenseRef-Stanford-Graphics",
+        "declaredScope": "file-adjacent",
+        "commercialUse": false,
+        "redistributable": true,
+        "declaredFrom": "Models/DragonDispersion/LICENSE.md",
+        "covers": "Original dragon model \u2014 Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory).",
+        "onwardUse": "non-commercial"
+      },
+      "licenseSnapshot": "licenses/glb-dragondispersion@2bac6f8c57bf.txt",
+      "adjacentPath": "DragonDispersion/LICENSE.md"
     },
     {
       "id": "glb-duck",
@@ -424,6 +1127,101 @@
       "adjacentPath": "Fox/LICENSE.md"
     },
     {
+      "id": "glb-glamvelvetsofa",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/GlamVelvetSofa/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick, 2021 (owner: Wayfair, LLC).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-glamvelvetsofa@2bac6f8c57bf.txt",
+      "adjacentPath": "GlamVelvetSofa/LICENSE.md"
+    },
+    {
+      "id": "glb-glassbrokenwindow",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/GlassBrokenWindow/LICENSE.md",
+        "covers": "Entire asset \u2014 Eric Chadwick, 2023 (owner: Wayfair).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-glassbrokenwindow@2bac6f8c57bf.txt",
+      "adjacentPath": "GlassBrokenWindow/LICENSE.md"
+    },
+    {
+      "id": "glb-glasshurricanecandleholder",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/GlassHurricaneCandleHolder/LICENSE.md",
+        "covers": "Model and textures \u2014 Eric Chadwick, 2021 (owner: Wayfair, LLC). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-glasshurricanecandleholder@2bac6f8c57bf.txt",
+      "adjacentPath": "GlassHurricaneCandleHolder/LICENSE.md"
+    },
+    {
+      "id": "glb-glassvaseflowers",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/GlassVaseFlowers/LICENSE.md",
+        "covers": "Glass vase \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-glassvaseflowers@2bac6f8c57bf.txt",
+      "adjacentPath": "GlassVaseFlowers/LICENSE.md"
+    },
+    {
+      "id": "glb-iortestgrid",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/IORTestGrid/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-iortestgrid@2bac6f8c57bf.txt",
+      "adjacentPath": "IORTestGrid/LICENSE.md"
+    },
+    {
       "id": "glb-interpolationtest",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -441,6 +1239,101 @@
       },
       "licenseSnapshot": "licenses/glb-interpolationtest@2bac6f8c57bf.txt",
       "adjacentPath": "InterpolationTest/LICENSE.md"
+    },
+    {
+      "id": "glb-iridescenceabalone",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/IridescenceAbalone/LICENSE.md",
+        "covers": "Everything \u2014 Abby Crawford, 2015 (owner: Abby Crawford).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-iridescenceabalone@2bac6f8c57bf.txt",
+      "adjacentPath": "IridescenceAbalone/LICENSE.md"
+    },
+    {
+      "id": "glb-iridescencelamp",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/IridescenceLamp/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick, 2022 (owner: Wayfair, LLC).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-iridescencelamp@2bac6f8c57bf.txt",
+      "adjacentPath": "IridescenceLamp/LICENSE.md"
+    },
+    {
+      "id": "glb-iridescencesuzanne",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/IridescenceSuzanne/LICENSE.md",
+        "covers": "Initial version \u2014 Mathias Kanzler, 2022 (owner: UX3D).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-iridescencesuzanne@2bac6f8c57bf.txt",
+      "adjacentPath": "IridescenceSuzanne/LICENSE.md"
+    },
+    {
+      "id": "glb-iridescentdishwitholives",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/IridescentDishWithOlives/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick, 2020 (owner: Wayfair, LLC).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-iridescentdishwitholives@2bac6f8c57bf.txt",
+      "adjacentPath": "IridescentDishWithOlives/LICENSE.md"
+    },
+    {
+      "id": "glb-lantern",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/Lantern/LICENSE.md",
+        "covers": "Initial version \u2014 sbtron, 2017 (owner: Microsoft).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-lantern@2bac6f8c57bf.txt",
+      "adjacentPath": "Lantern/LICENSE.md"
     },
     {
       "id": "glb-lightvisibility",
@@ -462,6 +1355,82 @@
       "adjacentPath": "LightVisibility/LICENSE.md"
     },
     {
+      "id": "glb-lightspunctuallamp",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/LightsPunctualLamp/LICENSE.md",
+        "covers": "Everything \u2014 DGG, 2021 (owner: DGG).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-lightspunctuallamp@2bac6f8c57bf.txt",
+      "adjacentPath": "LightsPunctualLamp/LICENSE.md"
+    },
+    {
+      "id": "glb-materialsvariantsshoe",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/MaterialsVariantsShoe/LICENSE.md",
+        "covers": "Everthing \u2014 Shopify, 2021 (owner: Shopify).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-materialsvariantsshoe@2bac6f8c57bf.txt",
+      "adjacentPath": "MaterialsVariantsShoe/LICENSE.md"
+    },
+    {
+      "id": "glb-metalroughspheres",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/MetalRoughSpheres/LICENSE.md",
+        "covers": "Everything \u2014 Ed Mackey, 2017 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-metalroughspheres@2bac6f8c57bf.txt",
+      "adjacentPath": "MetalRoughSpheres/LICENSE.md"
+    },
+    {
+      "id": "glb-metalroughspheresnotextures",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/MetalRoughSpheresNoTextures/LICENSE.md",
+        "covers": "Everything \u2014 Krill Gavrilov, 2019 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-metalroughspheresnotextures@2bac6f8c57bf.txt",
+      "adjacentPath": "MetalRoughSpheresNoTextures/LICENSE.md"
+    },
+    {
       "id": "glb-morphprimitivestest",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -479,6 +1448,44 @@
       },
       "licenseSnapshot": "licenses/glb-morphprimitivestest@2bac6f8c57bf.txt",
       "adjacentPath": "MorphPrimitivesTest/LICENSE.md"
+    },
+    {
+      "id": "glb-morphstresstest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/MorphStressTest/LICENSE.md",
+        "covers": "Everything \u2014 Ed Mackey, 2021 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-morphstresstest@2bac6f8c57bf.txt",
+      "adjacentPath": "MorphStressTest/LICENSE.md"
+    },
+    {
+      "id": "glb-mosquitoinamber",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/MosquitoInAmber/LICENSE.md",
+        "covers": "Model \u2014 Loic Norgeot, 2018 (owner: Sketchfab).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-mosquitoinamber@2bac6f8c57bf.txt",
+      "adjacentPath": "MosquitoInAmber/LICENSE.md"
     },
     {
       "id": "glb-multiuvtest",
@@ -519,6 +1526,63 @@
       "adjacentPath": "NegativeScaleTest/LICENSE.md"
     },
     {
+      "id": "glb-nodeperformancetest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/NodePerformanceTest/LICENSE.md",
+        "covers": "Everything \u2014 Jon Aspeheim, 2024 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-nodeperformancetest@2bac6f8c57bf.txt",
+      "adjacentPath": "NodePerformanceTest/LICENSE.md"
+    },
+    {
+      "id": "glb-normaltangentmirrortest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/NormalTangentMirrorTest/LICENSE.md",
+        "covers": "Everything \u2014 Ed Mackey, 2018 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-normaltangentmirrortest@2bac6f8c57bf.txt",
+      "adjacentPath": "NormalTangentMirrorTest/LICENSE.md"
+    },
+    {
+      "id": "glb-normaltangenttest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/NormalTangentTest/LICENSE.md",
+        "covers": "Everything \u2014 Ed Mackey, 2018 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-normaltangenttest@2bac6f8c57bf.txt",
+      "adjacentPath": "NormalTangentTest/LICENSE.md"
+    },
+    {
       "id": "glb-orientationtest",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -538,6 +1602,25 @@
       "adjacentPath": "OrientationTest/LICENSE.md"
     },
     {
+      "id": "glb-playsetlighttest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC BY-NC-SA 4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": false,
+        "redistributable": true,
+        "declaredFrom": "Models/PlaysetLightTest/LICENSE.md",
+        "covers": "Everything \u2014 Inter IKEA Systems B.V., 2024 (owner: Inter IKEA Systems B.V.).",
+        "onwardUse": "non-commercial"
+      },
+      "licenseSnapshot": "licenses/glb-playsetlighttest@2bac6f8c57bf.txt",
+      "adjacentPath": "PlaysetLightTest/LICENSE.md"
+    },
+    {
       "id": "glb-pointlightintensitytest",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -555,6 +1638,63 @@
       },
       "licenseSnapshot": "licenses/glb-pointlightintensitytest@2bac6f8c57bf.txt",
       "adjacentPath": "PointLightIntensityTest/LICENSE.md"
+    },
+    {
+      "id": "glb-potofcoals",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/PotOfCoals/LICENSE.md",
+        "covers": "Model and textures \u2014 Eric Chadwick, 2023 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-potofcoals@2bac6f8c57bf.txt",
+      "adjacentPath": "PotOfCoals/LICENSE.md"
+    },
+    {
+      "id": "glb-potofcoalsanimationpointer",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/PotOfCoalsAnimationPointer/LICENSE.md",
+        "covers": "Model and textures \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-potofcoalsanimationpointer@2bac6f8c57bf.txt",
+      "adjacentPath": "PotOfCoalsAnimationPointer/LICENSE.md"
+    },
+    {
+      "id": "glb-recursiveskeletons",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/RecursiveSkeletons/LICENSE.md",
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-recursiveskeletons@2bac6f8c57bf.txt",
+      "adjacentPath": "RecursiveSkeletons/LICENSE.md"
     },
     {
       "id": "glb-riggedfigure",
@@ -595,6 +1735,82 @@
       "adjacentPath": "RiggedSimple/LICENSE.md"
     },
     {
+      "id": "glb-scatteringskull",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/ScatteringSkull/LICENSE.md",
+        "covers": "Everything \u2014 Vladimir Petkovic, 2025 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-scatteringskull@2bac6f8c57bf.txt",
+      "adjacentPath": "ScatteringSkull/LICENSE.md"
+    },
+    {
+      "id": "glb-sheenchair",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/SheenChair/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick, 2020 (owner: Wayfair, LLC).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-sheenchair@2bac6f8c57bf.txt",
+      "adjacentPath": "SheenChair/LICENSE.md"
+    },
+    {
+      "id": "glb-sheentestgrid",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/SheenTestGrid/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-sheentestgrid@2bac6f8c57bf.txt",
+      "adjacentPath": "SheenTestGrid/LICENSE.md"
+    },
+    {
+      "id": "glb-sheenwoodleathersofa",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/SheenWoodLeatherSofa/LICENSE.md",
+        "covers": "Improvements \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-sheenwoodleathersofa@2bac6f8c57bf.txt",
+      "adjacentPath": "SheenWoodLeatherSofa/LICENSE.md"
+    },
+    {
       "id": "glb-simpleinstancing",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -612,6 +1828,82 @@
       },
       "licenseSnapshot": "licenses/glb-simpleinstancing@2bac6f8c57bf.txt",
       "adjacentPath": "SimpleInstancing/LICENSE.md"
+    },
+    {
+      "id": "glb-specglossvsmetalrough",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/SpecGlossVsMetalRough/LICENSE.md",
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: Microsoft).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-specglossvsmetalrough@2bac6f8c57bf.txt",
+      "adjacentPath": "SpecGlossVsMetalRough/LICENSE.md"
+    },
+    {
+      "id": "glb-specularsilkpouf",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/SpecularSilkPouf/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Copyright 2023 Wayfair, LLC).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-specularsilkpouf@2bac6f8c57bf.txt",
+      "adjacentPath": "SpecularSilkPouf/LICENSE.md"
+    },
+    {
+      "id": "glb-speculartest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/SpecularTest/LICENSE.md",
+        "covers": "Everything \u2014 Ed Mackey, 2021 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-speculartest@2bac6f8c57bf.txt",
+      "adjacentPath": "SpecularTest/LICENSE.md"
+    },
+    {
+      "id": "glb-sunglasseskhronos",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/SunglassesKhronos/LICENSE.md",
+        "covers": "Model and textures and all images in the README.md \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-sunglasseskhronos@2bac6f8c57bf.txt",
+      "adjacentPath": "SunglassesKhronos/LICENSE.md"
     },
     {
       "id": "glb-texturecoordinatetest",
@@ -690,6 +1982,139 @@
       "adjacentPath": "TextureSettingsTest/LICENSE.md"
     },
     {
+      "id": "glb-texturetransformmultitest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/TextureTransformMultiTest/LICENSE.md",
+        "covers": "Everything \u2014 Ed Mackey, 2020 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-texturetransformmultitest@2bac6f8c57bf.txt",
+      "adjacentPath": "TextureTransformMultiTest/LICENSE.md"
+    },
+    {
+      "id": "glb-toycar",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/ToyCar/LICENSE.md",
+        "covers": "Initial car model \u2014 Guido Odendahl, 2020 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-toycar@2bac6f8c57bf.txt",
+      "adjacentPath": "ToyCar/LICENSE.md"
+    },
+    {
+      "id": "glb-transmissionordertest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/TransmissionOrderTest/LICENSE.md",
+        "covers": "Everything but the cloth backdrop \u2014 Ed Mackey, 2025 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-transmissionordertest@2bac6f8c57bf.txt",
+      "adjacentPath": "TransmissionOrderTest/LICENSE.md"
+    },
+    {
+      "id": "glb-transmissionroughnesstest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/TransmissionRoughnessTest/LICENSE.md",
+        "covers": "Everything \u2014 Ed Mackey, 2021 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-transmissionroughnesstest@2bac6f8c57bf.txt",
+      "adjacentPath": "TransmissionRoughnessTest/LICENSE.md"
+    },
+    {
+      "id": "glb-transmissiontest",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/TransmissionTest/LICENSE.md",
+        "covers": "Everything \u2014 Adobe, 2020 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-transmissiontest@2bac6f8c57bf.txt",
+      "adjacentPath": "TransmissionTest/LICENSE.md"
+    },
+    {
+      "id": "glb-transmissionthinwalltestgrid",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/TransmissionThinwallTestGrid/LICENSE.md",
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-transmissionthinwalltestgrid@2bac6f8c57bf.txt",
+      "adjacentPath": "TransmissionThinwallTestGrid/LICENSE.md"
+    },
+    {
+      "id": "glb-usdshaderballforgltf",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/USDShaderBallForGltf/LICENSE.md",
+        "covers": "Model and textures and all images in the README.md \u2014 Geometry and textures: Chris Rydalch; original specification and validation: Andr\u00e9 Mazzone; original scene, inspiration and consultation: Thomas Anagnostou; glTF conversion: Eric Chadwick, 2026 (owner: Eric Chadwick).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-usdshaderballforgltf@2bac6f8c57bf.txt",
+      "adjacentPath": "USDShaderBallForGltf/LICENSE.md"
+    },
+    {
       "id": "glb-unlittest",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -728,6 +2153,25 @@
       "adjacentPath": "VertexColorTest/LICENSE.md"
     },
     {
+      "id": "glb-waterbottle",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/WaterBottle/LICENSE.md",
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-waterbottle@2bac6f8c57bf.txt",
+      "adjacentPath": "WaterBottle/LICENSE.md"
+    },
+    {
       "id": "glb-xmpmetadataroundedcube",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
@@ -745,9 +2189,104 @@
       },
       "licenseSnapshot": "licenses/glb-xmpmetadataroundedcube@2bac6f8c57bf.txt",
       "adjacentPath": "XmpMetadataRoundedCube/LICENSE.md"
+    },
+    {
+      "id": "glb-brainstem",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement",
+        "declaredScope": "repository-root",
+        "commercialUse": false,
+        "redistributable": true,
+        "declaredFrom": "SubmittingModels.md",
+        "covers": "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published.",
+        "onwardUse": "unknown",
+        "underlying": [
+          {
+            "declared": "LicenseRef-Poser-EULA",
+            "declaredFrom": "Models/BrainStem/LICENSE.md",
+            "note": "Poser End User License Agreement (Smith Micro Software). An end-user agreement conveys no redistribution right on its own, so Khronos's publication of this model rests on a separate arrangement rather than on this instrument.",
+            "snapshot": "licenses/glb-brainstem-underlying-0@2bac6f8c57bf.txt"
+          }
+        ]
+      },
+      "licenseSnapshot": "licenses/glb-brainstem@2bac6f8c57bf.txt"
+    },
+    {
+      "id": "glb-virtualcity",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement",
+        "declaredScope": "repository-root",
+        "commercialUse": false,
+        "redistributable": true,
+        "declaredFrom": "SubmittingModels.md",
+        "covers": "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published.",
+        "onwardUse": "testing-only",
+        "underlying": [
+          {
+            "declared": "LicenseRef-3DRT-Testing",
+            "declaredFrom": "Models/VirtualCity/LICENSE.md",
+            "note": "3DRT testing licence. Bars marketing/distribution generally, then grants a model-specific exemption: 'It is for use *only* in testing your glTF tools such as loaders and importers.' That exemption is the arrangement, and it scopes use to tool testing - which is exactly what this corpus is for, and is why it must not be deployed in a commercial application.",
+            "snapshot": "licenses/glb-virtualcity-underlying-0@2bac6f8c57bf.txt"
+          }
+        ]
+      },
+      "licenseSnapshot": "licenses/glb-virtualcity@2bac6f8c57bf.txt"
+    },
+    {
+      "id": "glb-unicode-test",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/Unicode\u2764\u267bTest/LICENSE.md",
+        "covers": "Everything - Viktor Kovacs, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/glb-unicode-test@2bac6f8c57bf.txt",
+      "adjacentPath": "Unicode\u2764\u267bTest/LICENSE.md"
     }
   ],
   "files": [
+    {
+      "path": "ABeautifulGame/glTF-Binary/ABeautifulGame.glb",
+      "sourceId": "glb-abeautifulgame",
+      "upstreamPath": "Models/ABeautifulGame/glTF-Binary/ABeautifulGame.glb",
+      "sha256": "bd7133b4b322aae97c589b8839dae8155ad2546acb35ae32a127e722a959d007",
+      "size": 42977928,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 42977928
+      }
+    },
+    {
+      "path": "AlphaBlendModeTest/glTF-Binary/AlphaBlendModeTest.glb",
+      "sourceId": "glb-alphablendmodetest",
+      "upstreamPath": "Models/AlphaBlendModeTest/glTF-Binary/AlphaBlendModeTest.glb",
+      "sha256": "37c3577d143071b42dd46e9d942b157837eb25c6340112171d7faecaa987b14e",
+      "size": 2978812,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 2978812
+      }
+    },
     {
       "path": "AnimatedColorsCube/glTF-Binary/AnimatedColorsCube.glb",
       "sourceId": "glb-animatedcolorscube",
@@ -773,6 +2312,54 @@
       }
     },
     {
+      "path": "AnimationPointerUVs/glTF-Binary/AnimationPointerUVs.glb",
+      "sourceId": "glb-animationpointeruvs",
+      "upstreamPath": "Models/AnimationPointerUVs/glTF-Binary/AnimationPointerUVs.glb",
+      "sha256": "a4a25ab261e62bd298f5601813a099bc329513047b47b912a515db0b740b4534",
+      "size": 7980492,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 7980492
+      }
+    },
+    {
+      "path": "AnisotropyBarnLamp/glTF-Binary/AnisotropyBarnLamp.glb",
+      "sourceId": "glb-anisotropybarnlamp",
+      "upstreamPath": "Models/AnisotropyBarnLamp/glTF-Binary/AnisotropyBarnLamp.glb",
+      "sha256": "0e728826c30bd6f3a18a0911db9f5f9ddc2dafa8e20bf9c3312c9625d1e32a24",
+      "size": 7833440,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 7833440
+      }
+    },
+    {
+      "path": "AnisotropyDiscTest/glTF-Binary/AnisotropyDiscTest.glb",
+      "sourceId": "glb-anisotropydisctest",
+      "upstreamPath": "Models/AnisotropyDiscTest/glTF-Binary/AnisotropyDiscTest.glb",
+      "sha256": "649b47c896f078fa56070f0ddaf07c57d6a7d109324acdd7d9f2d6748d9842ec",
+      "size": 242128,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 242128
+      }
+    },
+    {
+      "path": "AnisotropyRotationTest/glTF-Binary/AnisotropyRotationTest.glb",
+      "sourceId": "glb-anisotropyrotationtest",
+      "upstreamPath": "Models/AnisotropyRotationTest/glTF-Binary/AnisotropyRotationTest.glb",
+      "sha256": "8f6a45e69b1304cde2eb55edfd700cb3e73692be38d6f0ae146c41029a907e90",
+      "size": 832340,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 832340
+      }
+    },
+    {
       "path": "AnisotropyStrengthTest/glTF-Binary/AnisotropyStrengthTest.glb",
       "sourceId": "glb-anisotropystrengthtest",
       "upstreamPath": "Models/AnisotropyStrengthTest/glTF-Binary/AnisotropyStrengthTest.glb",
@@ -785,6 +2372,18 @@
       }
     },
     {
+      "path": "AntiqueCamera/glTF-Binary/AntiqueCamera.glb",
+      "sourceId": "glb-antiquecamera",
+      "upstreamPath": "Models/AntiqueCamera/glTF-Binary/AntiqueCamera.glb",
+      "sha256": "ae89695479ad997f09ebea8060a5ad01312ad8fe7ffb92f73b4e895109feecd2",
+      "size": 17540348,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 17540348
+      }
+    },
+    {
       "path": "AttenuationTest/glTF-Binary/AttenuationTest.glb",
       "sourceId": "glb-attenuationtest",
       "upstreamPath": "Models/AttenuationTest/glTF-Binary/AttenuationTest.glb",
@@ -794,6 +2393,42 @@
         "kind": "glb",
         "version": "2",
         "totalLength": 57532
+      }
+    },
+    {
+      "path": "Avocado/glTF-Binary/Avocado.glb",
+      "sourceId": "glb-avocado",
+      "upstreamPath": "Models/Avocado/glTF-Binary/Avocado.glb",
+      "sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "size": 8110040,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 8110040
+      }
+    },
+    {
+      "path": "BarramundiFish/glTF-Binary/BarramundiFish.glb",
+      "sourceId": "glb-barramundifish",
+      "upstreamPath": "Models/BarramundiFish/glTF-Binary/BarramundiFish.glb",
+      "sha256": "ecc3bafb6b00f2c8b810863c388e3768a7b7ea0d0335e8cb8c574c266e571f4a",
+      "size": 12488144,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 12488144
+      }
+    },
+    {
+      "path": "BoomBox/glTF-Binary/BoomBox.glb",
+      "sourceId": "glb-boombox",
+      "upstreamPath": "Models/BoomBox/glTF-Binary/BoomBox.glb",
+      "sha256": "f8b918445ebdd006768232205a62f5182d2208ca57f84c6ccc084943c0bc8f15",
+      "size": 10614184,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 10614184
       }
     },
     {
@@ -869,6 +2504,90 @@
       }
     },
     {
+      "path": "BrainStem/glTF-Binary/BrainStem.glb",
+      "sourceId": "glb-brainstem",
+      "upstreamPath": "Models/BrainStem/glTF-Binary/BrainStem.glb",
+      "sha256": "ddda3a53b5c9771f992463034a430340ba2bac571e5869c723f7cba4976e9174",
+      "size": 3194848,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 3194848
+      }
+    },
+    {
+      "path": "CarConcept/glTF-Binary/CarConcept.glb",
+      "sourceId": "glb-carconcept",
+      "upstreamPath": "Models/CarConcept/glTF-Binary/CarConcept.glb",
+      "sha256": "c272098089d78c5cd9fd9f24ff50ee8acf8d932c55f2d55fc10adb6c8998966b",
+      "size": 11778688,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 11778688
+      }
+    },
+    {
+      "path": "CarbonFibre/glTF-Binary/CarbonFibre.glb",
+      "sourceId": "glb-carbonfibre",
+      "upstreamPath": "Models/CarbonFibre/glTF-Binary/CarbonFibre.glb",
+      "sha256": "2def0763e86c723bccdf6ad234f4f858c678f2f2c3beee7fd1f003a1881c656e",
+      "size": 429880,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 429880
+      }
+    },
+    {
+      "path": "CesiumMan/glTF-Binary/CesiumMan.glb",
+      "sourceId": "glb-cesiumman",
+      "upstreamPath": "Models/CesiumMan/glTF-Binary/CesiumMan.glb",
+      "sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "size": 438044,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 438044
+      }
+    },
+    {
+      "path": "CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
+      "sourceId": "glb-cesiummilktruck",
+      "upstreamPath": "Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
+      "sha256": "09371b34608116de5842d23abe260bf11acf3e1554daf334a647eb566eee5c49",
+      "size": 369980,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 369980
+      }
+    },
+    {
+      "path": "ChairDamaskPurplegold/glTF-Binary/ChairDamaskPurplegold.glb",
+      "sourceId": "glb-chairdamaskpurplegold",
+      "upstreamPath": "Models/ChairDamaskPurplegold/glTF-Binary/ChairDamaskPurplegold.glb",
+      "sha256": "9862ff753f25ca6738bf5924afbfde01b794fae73db3f94bcd8cdc7cc570d9bb",
+      "size": 2028924,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 2028924
+      }
+    },
+    {
+      "path": "ChronographWatch/glTF-Binary/ChronographWatch.glb",
+      "sourceId": "glb-chronographwatch",
+      "upstreamPath": "Models/ChronographWatch/glTF-Binary/ChronographWatch.glb",
+      "sha256": "8e875fcd83efb433afed9ef1c18b2c2b2e075e2bf48371cadfd2a3cf529f1aef",
+      "size": 7446368,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 7446368
+      }
+    },
+    {
       "path": "ClearCoatCarPaint/glTF-Binary/ClearCoatCarPaint.glb",
       "sourceId": "glb-clearcoatcarpaint",
       "upstreamPath": "Models/ClearCoatCarPaint/glTF-Binary/ClearCoatCarPaint.glb",
@@ -878,6 +2597,90 @@
         "kind": "glb",
         "version": "2",
         "totalLength": 116948
+      }
+    },
+    {
+      "path": "ClearCoatTest/glTF-Binary/ClearCoatTest.glb",
+      "sourceId": "glb-clearcoattest",
+      "upstreamPath": "Models/ClearCoatTest/glTF-Binary/ClearCoatTest.glb",
+      "sha256": "c3a1cbe318cd043b937130af4eb83ec2ea0b03613387b1b7d769dfab4ac15948",
+      "size": 258048,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 258048
+      }
+    },
+    {
+      "path": "ClearcoatWicker/glTF-Binary/ClearcoatWicker.glb",
+      "sourceId": "glb-clearcoatwicker",
+      "upstreamPath": "Models/ClearcoatWicker/glTF-Binary/ClearcoatWicker.glb",
+      "sha256": "f162b0cd7f8e6b7cef211eec57762165a78039676b8592ce1f965e2ddb34e843",
+      "size": 1299752,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1299752
+      }
+    },
+    {
+      "path": "CommercialRefrigerator/glTF-Binary/CommercialRefrigerator.glb",
+      "sourceId": "glb-commercialrefrigerator",
+      "upstreamPath": "Models/CommercialRefrigerator/glTF-Binary/CommercialRefrigerator.glb",
+      "sha256": "ef8da8b144e650c277ac953e6d9e50ac1689ff1ee88c2c5bd9551ae8bccb6065",
+      "size": 10131180,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 10131180
+      }
+    },
+    {
+      "path": "CompareAlphaCoverage/glTF-Binary/CompareAlphaCoverage.glb",
+      "sourceId": "glb-comparealphacoverage",
+      "upstreamPath": "Models/CompareAlphaCoverage/glTF-Binary/CompareAlphaCoverage.glb",
+      "sha256": "c61a2aa562b4dae987c246202d1a1d20a36a8cc92d38e10c2dc89adc403b0e6c",
+      "size": 3872604,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 3872604
+      }
+    },
+    {
+      "path": "CompareAmbientOcclusion/glTF-Binary/CompareAmbientOcclusion.glb",
+      "sourceId": "glb-compareambientocclusion",
+      "upstreamPath": "Models/CompareAmbientOcclusion/glTF-Binary/CompareAmbientOcclusion.glb",
+      "sha256": "abdbb1427ccfa0bb12308d0e796a4d82640d8a4898e0ab8599cd379ef255df45",
+      "size": 4828680,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 4828680
+      }
+    },
+    {
+      "path": "CompareAnisotropy/glTF-Binary/CompareAnisotropy.glb",
+      "sourceId": "glb-compareanisotropy",
+      "upstreamPath": "Models/CompareAnisotropy/glTF-Binary/CompareAnisotropy.glb",
+      "sha256": "5b4d9c7e99f85054983697112bab468c344b8984feb7299702ea6c93ddab292e",
+      "size": 1085084,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1085084
+      }
+    },
+    {
+      "path": "CompareBaseColor/glTF-Binary/CompareBaseColor.glb",
+      "sourceId": "glb-comparebasecolor",
+      "upstreamPath": "Models/CompareBaseColor/glTF-Binary/CompareBaseColor.glb",
+      "sha256": "1fd21e793652874eaa20e9c3723c508c4f1039bf8d84c09e4d0998b97691f77b",
+      "size": 1507816,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1507816
       }
     },
     {
@@ -953,6 +2756,18 @@
       }
     },
     {
+      "path": "CompareNormal/glTF-Binary/CompareNormal.glb",
+      "sourceId": "glb-comparenormal",
+      "upstreamPath": "Models/CompareNormal/glTF-Binary/CompareNormal.glb",
+      "sha256": "076ab65c1ed62ad3097766c0dc74e41783e5f44a0711f9b2755bde892ec5075f",
+      "size": 220900,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 220900
+      }
+    },
+    {
       "path": "CompareRoughness/glTF-Binary/CompareRoughness.glb",
       "sourceId": "glb-compareroughness",
       "upstreamPath": "Models/CompareRoughness/glTF-Binary/CompareRoughness.glb",
@@ -965,6 +2780,66 @@
       }
     },
     {
+      "path": "CompareSheen/glTF-Binary/CompareSheen.glb",
+      "sourceId": "glb-comparesheen",
+      "upstreamPath": "Models/CompareSheen/glTF-Binary/CompareSheen.glb",
+      "sha256": "70b6ab5ba8006aa71079b567783a81cfe778a11cca8abc44c45e5e0b1f4252cc",
+      "size": 883968,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 883968
+      }
+    },
+    {
+      "path": "CompareSpecular/glTF-Binary/CompareSpecular.glb",
+      "sourceId": "glb-comparespecular",
+      "upstreamPath": "Models/CompareSpecular/glTF-Binary/CompareSpecular.glb",
+      "sha256": "57ea169e0b9b4a4ea1cb27980226974d0da25897445c9f29c3c817698dd923d8",
+      "size": 1408364,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1408364
+      }
+    },
+    {
+      "path": "CompareTransmission/glTF-Binary/CompareTransmission.glb",
+      "sourceId": "glb-comparetransmission",
+      "upstreamPath": "Models/CompareTransmission/glTF-Binary/CompareTransmission.glb",
+      "sha256": "012a3ace61050f4aef77b416c56b3f8f313e1fa68c9040ce3d5037f67eea484f",
+      "size": 357024,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 357024
+      }
+    },
+    {
+      "path": "CompareVolume/glTF-Binary/CompareVolume.glb",
+      "sourceId": "glb-comparevolume",
+      "upstreamPath": "Models/CompareVolume/glTF-Binary/CompareVolume.glb",
+      "sha256": "cb88f5dd70c1c2700e2a28caa5b612f4b6e8c34183d6261c681727d8bafdf7d2",
+      "size": 399760,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 399760
+      }
+    },
+    {
+      "path": "Corset/glTF-Binary/Corset.glb",
+      "sourceId": "glb-corset",
+      "upstreamPath": "Models/Corset/glTF-Binary/Corset.glb",
+      "sha256": "9582c0dc0dee813be77f60e6ddf7213987c7e11497bf3cc66fd7b18957ae0d26",
+      "size": 13491364,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 13491364
+      }
+    },
+    {
       "path": "CubeVisibility/glTF-Binary/CubeVisibility.glb",
       "sourceId": "glb-cubevisibility",
       "upstreamPath": "Models/CubeVisibility/glTF-Binary/CubeVisibility.glb",
@@ -974,6 +2849,102 @@
         "kind": "glb",
         "version": "2",
         "totalLength": 3284
+      }
+    },
+    {
+      "path": "DamagedHelmet/glTF-Binary/DamagedHelmet.glb",
+      "sourceId": "glb-damagedhelmet",
+      "upstreamPath": "Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb",
+      "sha256": "a1e3b04de97b11de564ce6e53b95f02954a297f0008183ac63a4f5974f6b32d8",
+      "size": 3773916,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 3773916
+      }
+    },
+    {
+      "path": "DiffuseTransmissionPlant/glTF-Binary/DiffuseTransmissionPlant.glb",
+      "sourceId": "glb-diffusetransmissionplant",
+      "upstreamPath": "Models/DiffuseTransmissionPlant/glTF-Binary/DiffuseTransmissionPlant.glb",
+      "sha256": "1748be8847e24bdd5cb6c5ac2bfd0afe8f11efc4f85091148550555e47c7ee83",
+      "size": 5759100,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 5759100
+      }
+    },
+    {
+      "path": "DiffuseTransmissionTeacup/glTF-Binary/DiffuseTransmissionTeacup.glb",
+      "sourceId": "glb-diffusetransmissionteacup",
+      "upstreamPath": "Models/DiffuseTransmissionTeacup/glTF-Binary/DiffuseTransmissionTeacup.glb",
+      "sha256": "d4f567186fea262819aac6664cb9d7cef7f4600406038046771a69e10363935b",
+      "size": 4795028,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 4795028
+      }
+    },
+    {
+      "path": "DiffuseTransmissionTest/glTF-Binary/DiffuseTransmissionTest.glb",
+      "sourceId": "glb-diffusetransmissiontest",
+      "upstreamPath": "Models/DiffuseTransmissionTest/glTF-Binary/DiffuseTransmissionTest.glb",
+      "sha256": "cac9152a1215177c479f33cc0f5d1b64f92010311d2316dc42dde87fa505e282",
+      "size": 238336,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 238336
+      }
+    },
+    {
+      "path": "DirectionalLight/glTF-Binary/DirectionalLight.glb",
+      "sourceId": "glb-directionallight",
+      "upstreamPath": "Models/DirectionalLight/glTF-Binary/DirectionalLight.glb",
+      "sha256": "82e50feb151203f431a3b43985e9f4b2a54131b61a7a8677954922630d90f3de",
+      "size": 453520,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 453520
+      }
+    },
+    {
+      "path": "DispersionTest/glTF-Binary/DispersionTest.glb",
+      "sourceId": "glb-dispersiontest",
+      "upstreamPath": "Models/DispersionTest/glTF-Binary/DispersionTest.glb",
+      "sha256": "bbac38386632b5a7a27289737963314c2f92095074dfdf0e8c0c1c25270b3e37",
+      "size": 2310944,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 2310944
+      }
+    },
+    {
+      "path": "DragonAttenuation/glTF-Binary/DragonAttenuation.glb",
+      "sourceId": "glb-dragonattenuation",
+      "upstreamPath": "Models/DragonAttenuation/glTF-Binary/DragonAttenuation.glb",
+      "sha256": "ec97df715d4207c0e39b60c329db43032872794df60e1279b7652314cf0a999e",
+      "size": 6401616,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 6401616
+      }
+    },
+    {
+      "path": "DragonDispersion/glTF-Binary/DragonDispersion.glb",
+      "sourceId": "glb-dragondispersion",
+      "upstreamPath": "Models/DragonDispersion/glTF-Binary/DragonDispersion.glb",
+      "sha256": "4656f3c0fd3fe3f2b69831dfbf1a33b66ca8ce51d5e46efd277f96b37de0b706",
+      "size": 6401724,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 6401724
       }
     },
     {
@@ -1013,6 +2984,66 @@
       }
     },
     {
+      "path": "GlamVelvetSofa/glTF-Binary/GlamVelvetSofa.glb",
+      "sourceId": "glb-glamvelvetsofa",
+      "upstreamPath": "Models/GlamVelvetSofa/glTF-Binary/GlamVelvetSofa.glb",
+      "sha256": "67202c74a1a33377771f162dc7fad612a6c9bd51ee15124c488e9851d9ac5266",
+      "size": 3149844,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 3149844
+      }
+    },
+    {
+      "path": "GlassBrokenWindow/glTF-Binary/GlassBrokenWindow.glb",
+      "sourceId": "glb-glassbrokenwindow",
+      "upstreamPath": "Models/GlassBrokenWindow/glTF-Binary/GlassBrokenWindow.glb",
+      "sha256": "66c4261fc0f5fe77f11a4f457b61774e5c7f43f9a382b49720cef0e128738416",
+      "size": 1076624,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1076624
+      }
+    },
+    {
+      "path": "GlassHurricaneCandleHolder/glTF-Binary/GlassHurricaneCandleHolder.glb",
+      "sourceId": "glb-glasshurricanecandleholder",
+      "upstreamPath": "Models/GlassHurricaneCandleHolder/glTF-Binary/GlassHurricaneCandleHolder.glb",
+      "sha256": "add23791ee6f5f550b94a21232a323720c92c20d280f4f7d19cf954234f0b7b8",
+      "size": 2705400,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 2705400
+      }
+    },
+    {
+      "path": "GlassVaseFlowers/glTF-Binary/GlassVaseFlowers.glb",
+      "sourceId": "glb-glassvaseflowers",
+      "upstreamPath": "Models/GlassVaseFlowers/glTF-Binary/GlassVaseFlowers.glb",
+      "sha256": "430c9937664cfc74299205dcc388e4269bb688817f3d3866ef35aab71e93b852",
+      "size": 1819824,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1819824
+      }
+    },
+    {
+      "path": "IORTestGrid/glTF-Binary/IORTestGrid.glb",
+      "sourceId": "glb-iortestgrid",
+      "upstreamPath": "Models/IORTestGrid/glTF-Binary/IORTestGrid.glb",
+      "sha256": "863cf24d0e48892ec830a7c712e4eb8bf5c0fd6cc2ae2f34d213b216f0bd6c12",
+      "size": 2628524,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 2628524
+      }
+    },
+    {
       "path": "InterpolationTest/glTF-Binary/InterpolationTest.glb",
       "sourceId": "glb-interpolationtest",
       "upstreamPath": "Models/InterpolationTest/glTF-Binary/InterpolationTest.glb",
@@ -1022,6 +3053,66 @@
         "kind": "glb",
         "version": "2",
         "totalLength": 7952
+      }
+    },
+    {
+      "path": "IridescenceAbalone/glTF-Binary/IridescenceAbalone.glb",
+      "sourceId": "glb-iridescenceabalone",
+      "upstreamPath": "Models/IridescenceAbalone/glTF-Binary/IridescenceAbalone.glb",
+      "sha256": "d15ab000d3b04f177e101b2a36aacbf1c99490fc9bfe3868d481d75736946bab",
+      "size": 9300744,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 9300744
+      }
+    },
+    {
+      "path": "IridescenceLamp/glTF-Binary/IridescenceLamp.glb",
+      "sourceId": "glb-iridescencelamp",
+      "upstreamPath": "Models/IridescenceLamp/glTF-Binary/IridescenceLamp.glb",
+      "sha256": "17cfdc79ec9e38fadb28db159734c5f9592ca423977b546e5057e350ba29ff13",
+      "size": 4083912,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 4083912
+      }
+    },
+    {
+      "path": "IridescenceSuzanne/glTF-Binary/IridescenceSuzanne.glb",
+      "sourceId": "glb-iridescencesuzanne",
+      "upstreamPath": "Models/IridescenceSuzanne/glTF-Binary/IridescenceSuzanne.glb",
+      "sha256": "866762602d60a0942b7608bfabf4e8686a29033636224f4b55c5e56abe8abf8f",
+      "size": 507608,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 507608
+      }
+    },
+    {
+      "path": "IridescentDishWithOlives/glTF-Binary/IridescentDishWithOlives.glb",
+      "sourceId": "glb-iridescentdishwitholives",
+      "upstreamPath": "Models/IridescentDishWithOlives/glTF-Binary/IridescentDishWithOlives.glb",
+      "sha256": "1540b4a36b790a907f4824cfe848ba481b3da3cc8070172b7b3ba178f78a7ed1",
+      "size": 5742828,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 5742828
+      }
+    },
+    {
+      "path": "Lantern/glTF-Binary/Lantern.glb",
+      "sourceId": "glb-lantern",
+      "upstreamPath": "Models/Lantern/glTF-Binary/Lantern.glb",
+      "sha256": "a79458c4b02d695187a952f23a63b8bf278e7bc3d316a3c2a314f2d6974181f1",
+      "size": 9564264,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 9564264
       }
     },
     {
@@ -1037,6 +3128,54 @@
       }
     },
     {
+      "path": "LightsPunctualLamp/glTF-Binary/LightsPunctualLamp.glb",
+      "sourceId": "glb-lightspunctuallamp",
+      "upstreamPath": "Models/LightsPunctualLamp/glTF-Binary/LightsPunctualLamp.glb",
+      "sha256": "b9a95cd0e17dea5284117e54807b49b746960038457a31a0011b9344acc11104",
+      "size": 4341320,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 4341320
+      }
+    },
+    {
+      "path": "MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb",
+      "sourceId": "glb-materialsvariantsshoe",
+      "upstreamPath": "Models/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb",
+      "sha256": "e1d7cb190382111e5a5b37b51e9a7f007f7eb2ab1b6185e0188e8d0a0d1265a7",
+      "size": 7833592,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 7833592
+      }
+    },
+    {
+      "path": "MetalRoughSpheres/glTF-Binary/MetalRoughSpheres.glb",
+      "sourceId": "glb-metalroughspheres",
+      "upstreamPath": "Models/MetalRoughSpheres/glTF-Binary/MetalRoughSpheres.glb",
+      "sha256": "450c05557b0823a10835e32c05caf77a7b175eba94516555c1c9bb084f563f01",
+      "size": 11221356,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 11221356
+      }
+    },
+    {
+      "path": "MetalRoughSpheresNoTextures/glTF-Binary/MetalRoughSpheresNoTextures.glb",
+      "sourceId": "glb-metalroughspheresnotextures",
+      "upstreamPath": "Models/MetalRoughSpheresNoTextures/glTF-Binary/MetalRoughSpheresNoTextures.glb",
+      "sha256": "5e677f260ec0f366967a6e9545de2f3dab2a160e307b9bcb9d050cd2028f63f8",
+      "size": 291316,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 291316
+      }
+    },
+    {
       "path": "MorphPrimitivesTest/glTF-Binary/MorphPrimitivesTest.glb",
       "sourceId": "glb-morphprimitivestest",
       "upstreamPath": "Models/MorphPrimitivesTest/glTF-Binary/MorphPrimitivesTest.glb",
@@ -1046,6 +3185,30 @@
         "kind": "glb",
         "version": "2",
         "totalLength": 53656
+      }
+    },
+    {
+      "path": "MorphStressTest/glTF-Binary/MorphStressTest.glb",
+      "sourceId": "glb-morphstresstest",
+      "upstreamPath": "Models/MorphStressTest/glTF-Binary/MorphStressTest.glb",
+      "sha256": "005f1d9dd938c553a506d6bf3d21830fc3f2ec3a199d9332e9a625baf7342bef",
+      "size": 575900,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 575900
+      }
+    },
+    {
+      "path": "MosquitoInAmber/glTF-Binary/MosquitoInAmber.glb",
+      "sourceId": "glb-mosquitoinamber",
+      "upstreamPath": "Models/MosquitoInAmber/glTF-Binary/MosquitoInAmber.glb",
+      "sha256": "1c0b49000650e8a8c00d69bc8d64e46d33527871a47d74e4f2278887325cc35f",
+      "size": 24229904,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 24229904
       }
     },
     {
@@ -1073,6 +3236,42 @@
       }
     },
     {
+      "path": "NodePerformanceTest/glTF-Binary/NodePerformanceTest.glb",
+      "sourceId": "glb-nodeperformancetest",
+      "upstreamPath": "Models/NodePerformanceTest/glTF-Binary/NodePerformanceTest.glb",
+      "sha256": "81eec3b14b8ed25068448ffdc824528d03f1e844b20e017f5c3aab3f076b1fb8",
+      "size": 37986536,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 37986536
+      }
+    },
+    {
+      "path": "NormalTangentMirrorTest/glTF-Binary/NormalTangentMirrorTest.glb",
+      "sourceId": "glb-normaltangentmirrortest",
+      "upstreamPath": "Models/NormalTangentMirrorTest/glTF-Binary/NormalTangentMirrorTest.glb",
+      "sha256": "31ce5f3c873fc55531a17ccacf001e3d1d482a508695aa826fa79cc196e0ce78",
+      "size": 1567084,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1567084
+      }
+    },
+    {
+      "path": "NormalTangentTest/glTF-Binary/NormalTangentTest.glb",
+      "sourceId": "glb-normaltangenttest",
+      "upstreamPath": "Models/NormalTangentTest/glTF-Binary/NormalTangentTest.glb",
+      "sha256": "5ac0932355ae1ea05a7485eeddcc3f1fbe56c678e00b519075feced80e9e9d6a",
+      "size": 1796996,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1796996
+      }
+    },
+    {
       "path": "OrientationTest/glTF-Binary/OrientationTest.glb",
       "sourceId": "glb-orientationtest",
       "upstreamPath": "Models/OrientationTest/glTF-Binary/OrientationTest.glb",
@@ -1085,6 +3284,18 @@
       }
     },
     {
+      "path": "PlaysetLightTest/glTF-Binary/PlaysetLightTest.glb",
+      "sourceId": "glb-playsetlighttest",
+      "upstreamPath": "Models/PlaysetLightTest/glTF-Binary/PlaysetLightTest.glb",
+      "sha256": "69bce5a89553139d0cb804213929009689178e977ec3839f7bf08d235d612371",
+      "size": 16434220,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 16434220
+      }
+    },
+    {
       "path": "PointLightIntensityTest/glTF-Binary/PointLightIntensityTest.glb",
       "sourceId": "glb-pointlightintensitytest",
       "upstreamPath": "Models/PointLightIntensityTest/glTF-Binary/PointLightIntensityTest.glb",
@@ -1094,6 +3305,42 @@
         "kind": "glb",
         "version": "2",
         "totalLength": 30148
+      }
+    },
+    {
+      "path": "PotOfCoals/glTF-Binary/PotOfCoals.glb",
+      "sourceId": "glb-potofcoals",
+      "upstreamPath": "Models/PotOfCoals/glTF-Binary/PotOfCoals.glb",
+      "sha256": "fac3323e77309413e96285e3ee86dd92ef5e797325e173aa180ba6472aba58ed",
+      "size": 4696240,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 4696240
+      }
+    },
+    {
+      "path": "PotOfCoalsAnimationPointer/glTF-Binary/PotOfCoalsAnimationPointer.glb",
+      "sourceId": "glb-potofcoalsanimationpointer",
+      "upstreamPath": "Models/PotOfCoalsAnimationPointer/glTF-Binary/PotOfCoalsAnimationPointer.glb",
+      "sha256": "eb370d1aa20e997cdd67f3be5590b80ab0d2292dda7fa01bd10b6414a182ad5f",
+      "size": 6326684,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 6326684
+      }
+    },
+    {
+      "path": "RecursiveSkeletons/glTF-Binary/RecursiveSkeletons.glb",
+      "sourceId": "glb-recursiveskeletons",
+      "upstreamPath": "Models/RecursiveSkeletons/glTF-Binary/RecursiveSkeletons.glb",
+      "sha256": "15fb11ee4d3b31735efe7dc776a31e8fa67568ea148a3315442970303675b641",
+      "size": 561620,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 561620
       }
     },
     {
@@ -1121,6 +3368,54 @@
       }
     },
     {
+      "path": "ScatteringSkull/glTF-Binary/ScatteringSkull.glb",
+      "sourceId": "glb-scatteringskull",
+      "upstreamPath": "Models/ScatteringSkull/glTF-Binary/ScatteringSkull.glb",
+      "sha256": "339eafce3fdbc4175ed4798addba7d0c175cb0dab316e9d91abc053422050a00",
+      "size": 8959044,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 8959044
+      }
+    },
+    {
+      "path": "SheenChair/glTF-Binary/SheenChair.glb",
+      "sourceId": "glb-sheenchair",
+      "upstreamPath": "Models/SheenChair/glTF-Binary/SheenChair.glb",
+      "sha256": "f0af2a2b102d28d540236306ae19f8fb36842df76bd38cf76f063f9bd2853399",
+      "size": 4125648,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 4125648
+      }
+    },
+    {
+      "path": "SheenTestGrid/glTF-Binary/SheenTestGrid.glb",
+      "sourceId": "glb-sheentestgrid",
+      "upstreamPath": "Models/SheenTestGrid/glTF-Binary/SheenTestGrid.glb",
+      "sha256": "b3d82dde0ae6b93bef1a8085ec05540b21139f9917bfe771135c5aed9ba1c101",
+      "size": 1841064,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1841064
+      }
+    },
+    {
+      "path": "SheenWoodLeatherSofa/glTF-Binary/SheenWoodLeatherSofa.glb",
+      "sourceId": "glb-sheenwoodleathersofa",
+      "upstreamPath": "Models/SheenWoodLeatherSofa/glTF-Binary/SheenWoodLeatherSofa.glb",
+      "sha256": "5349e042ad41e695e89f1110230c4ee0c75b2bc62ef830c7016be6ecf665bfb6",
+      "size": 10107912,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 10107912
+      }
+    },
+    {
       "path": "SimpleInstancing/glTF-Binary/SimpleInstancing.glb",
       "sourceId": "glb-simpleinstancing",
       "upstreamPath": "Models/SimpleInstancing/glTF-Binary/SimpleInstancing.glb",
@@ -1130,6 +3425,54 @@
         "kind": "glb",
         "version": "2",
         "totalLength": 7356
+      }
+    },
+    {
+      "path": "SpecGlossVsMetalRough/glTF-Binary/SpecGlossVsMetalRough.glb",
+      "sourceId": "glb-specglossvsmetalrough",
+      "upstreamPath": "Models/SpecGlossVsMetalRough/glTF-Binary/SpecGlossVsMetalRough.glb",
+      "sha256": "0152bf46e1239e3f0e5ab63651b219d9b78c4d1f3d21b25a53f918da2f3d21a6",
+      "size": 9984544,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 9984544
+      }
+    },
+    {
+      "path": "SpecularSilkPouf/glTF-Binary/SpecularSilkPouf.glb",
+      "sourceId": "glb-specularsilkpouf",
+      "upstreamPath": "Models/SpecularSilkPouf/glTF-Binary/SpecularSilkPouf.glb",
+      "sha256": "a028bc6a7ac8981044fba414c1de633ac775b53602ad386f8ece74aec81d1006",
+      "size": 4632512,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 4632512
+      }
+    },
+    {
+      "path": "SpecularTest/glTF-Binary/SpecularTest.glb",
+      "sourceId": "glb-speculartest",
+      "upstreamPath": "Models/SpecularTest/glTF-Binary/SpecularTest.glb",
+      "sha256": "cf789c68c3ab4b74877da3c5992c612c213f9c901ed4fafbf9be362f434e48d9",
+      "size": 223376,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 223376
+      }
+    },
+    {
+      "path": "SunglassesKhronos/glTF-Binary/SunglassesKhronos.glb",
+      "sourceId": "glb-sunglasseskhronos",
+      "upstreamPath": "Models/SunglassesKhronos/glTF-Binary/SunglassesKhronos.glb",
+      "sha256": "25d72dd0869c99f94a3c0d6dfe0707714eca056e531f6ff77e7545719c86ab8c",
+      "size": 371188,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 371188
       }
     },
     {
@@ -1181,6 +3524,102 @@
       }
     },
     {
+      "path": "TextureTransformMultiTest/glTF-Binary/TextureTransformMultiTest.glb",
+      "sourceId": "glb-texturetransformmultitest",
+      "upstreamPath": "Models/TextureTransformMultiTest/glTF-Binary/TextureTransformMultiTest.glb",
+      "sha256": "569aedb53822d5721e7e06af5983348683d4b2ffb1d469338ad4f02bf6a74911",
+      "size": 388264,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 388264
+      }
+    },
+    {
+      "path": "ToyCar/glTF-Binary/ToyCar.glb",
+      "sourceId": "glb-toycar",
+      "upstreamPath": "Models/ToyCar/glTF-Binary/ToyCar.glb",
+      "sha256": "01a60862de55cd4b9f3acfab0b0def86451800f9c42467fcd61052c16cb9838c",
+      "size": 5422412,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 5422412
+      }
+    },
+    {
+      "path": "TransmissionOrderTest/glTF-Binary/TransmissionOrderTest.glb",
+      "sourceId": "glb-transmissionordertest",
+      "upstreamPath": "Models/TransmissionOrderTest/glTF-Binary/TransmissionOrderTest.glb",
+      "sha256": "d904b6cd6c83792fd4a4d9ad4f0366bde76a63e347541c465f2ad4c5baf22a21",
+      "size": 2312512,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 2312512
+      }
+    },
+    {
+      "path": "TransmissionRoughnessTest/glTF-Binary/TransmissionRoughnessTest.glb",
+      "sourceId": "glb-transmissionroughnesstest",
+      "upstreamPath": "Models/TransmissionRoughnessTest/glTF-Binary/TransmissionRoughnessTest.glb",
+      "sha256": "43ace8f8dfe0b6148dc4668e6a768c8853ba37cf1f0fe7de76eaf0ea8e94bb73",
+      "size": 393808,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 393808
+      }
+    },
+    {
+      "path": "TransmissionTest/glTF-Binary/TransmissionTest.glb",
+      "sourceId": "glb-transmissiontest",
+      "upstreamPath": "Models/TransmissionTest/glTF-Binary/TransmissionTest.glb",
+      "sha256": "dd9732dae5517f8605ad4324d78b077b969c3e8357c056280d0a4e4b67797d15",
+      "size": 1473792,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1473792
+      }
+    },
+    {
+      "path": "TransmissionThinwallTestGrid/glTF-Binary/TransmissionThinwallTestGrid.glb",
+      "sourceId": "glb-transmissionthinwalltestgrid",
+      "upstreamPath": "Models/TransmissionThinwallTestGrid/glTF-Binary/TransmissionThinwallTestGrid.glb",
+      "sha256": "e4ee8e5a28f81f75ef40b264ad22725e9065470b8ee02f9a4c6fa96b669cbcc7",
+      "size": 1188724,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1188724
+      }
+    },
+    {
+      "path": "USDShaderBallForGltf/glTF-Binary/USDShaderBallForGltf.glb",
+      "sourceId": "glb-usdshaderballforgltf",
+      "upstreamPath": "Models/USDShaderBallForGltf/glTF-Binary/USDShaderBallForGltf.glb",
+      "sha256": "ab123a15d70c4553adcabb16bef45587ad17e3c00da6b54640624a7287a8b52e",
+      "size": 1319652,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 1319652
+      }
+    },
+    {
+      "path": "Unicode\u2764\u267bTest/glTF-Binary/Unicode\u2764\u267bTest.glb",
+      "sourceId": "glb-unicode-test",
+      "upstreamPath": "Models/Unicode\u2764\u267bTest/glTF-Binary/Unicode\u2764\u267bTest.glb",
+      "sha256": "845271aea314a15d13c27ce2e5ce5b44c6b329c6b6fb93b9403e770bdfd7fbb7",
+      "size": 5488,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 5488
+      }
+    },
+    {
       "path": "UnlitTest/glTF-Binary/UnlitTest.glb",
       "sourceId": "glb-unlittest",
       "upstreamPath": "Models/UnlitTest/glTF-Binary/UnlitTest.glb",
@@ -1205,6 +3644,30 @@
       }
     },
     {
+      "path": "VirtualCity/glTF-Binary/VirtualCity.glb",
+      "sourceId": "glb-virtualcity",
+      "upstreamPath": "Models/VirtualCity/glTF-Binary/VirtualCity.glb",
+      "sha256": "de6666bd842a44cba92fb25a5da9080459a36e045fbc0fd1fd85b830124561fe",
+      "size": 3085416,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 3085416
+      }
+    },
+    {
+      "path": "WaterBottle/glTF-Binary/WaterBottle.glb",
+      "sourceId": "glb-waterbottle",
+      "upstreamPath": "Models/WaterBottle/glTF-Binary/WaterBottle.glb",
+      "sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "size": 8966700,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 8966700
+      }
+    },
+    {
       "path": "XmpMetadataRoundedCube/glTF-Binary/XmpMetadataRoundedCube.glb",
       "sourceId": "glb-xmpmetadataroundedcube",
       "upstreamPath": "Models/XmpMetadataRoundedCube/glTF-Binary/XmpMetadataRoundedCube.glb",
@@ -1218,7 +3681,7 @@
     }
   ],
   "totals": {
-    "files": 39,
-    "bytes": 2277876
+    "files": 118,
+    "bytes": 432685588
   }
 }

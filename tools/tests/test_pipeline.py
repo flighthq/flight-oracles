@@ -416,6 +416,24 @@ class TestBuild(unittest.TestCase):
         self.assertIn("build input", full)
         self.assertIn("travel *onward*", permissive)
 
+    def test_merge_group_extraction_note_appears(self):
+        # Geometry and textures split across archives only resolve when extracted together.
+        # Discovering that as a pile of missing textures would be a poor way to learn it.
+        lock = self._lockfile()
+        lock["pack"]["mergeGroup"] = "gltf-khronos"
+        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
+            readme = tar.extractfile("README.md").read().decode()
+        self.assertIn("same directory", readme)
+        self.assertIn("gltf-khronos", readme)
+
+    def test_no_merge_note_when_pack_stands_alone(self):
+        lock = self._lockfile()
+        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
+            readme = tar.extractfile("README.md").read().decode()
+        self.assertNotIn("merge group", readme)
+
     def test_noncommercial_warning_appears_in_readme(self):
         lock = self._lockfile()
         lock["sources"][0]["license"]["commercialUse"] = False

@@ -27,6 +27,7 @@
 [pack]
 name = "gltf-khronos-fixtures"
 kind = "fixtures"
+merge_group = "gltf-khronos"
 summary = "Khronos glTF 2.0 sample assets — core, testing and extension models covering the KHR/EXT extension surface."
 
 [[source]]

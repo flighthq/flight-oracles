@@ -66,10 +66,13 @@ def _locked(spec, root, args):
 def cmd_verify(args):
     root = _root(args)
     failed = False
+    groups = {}
     for spec in _specs(args):
         lock = _locked(spec, root, args)
         if lock is None:
             continue
+        if spec.merge_group:
+            groups.setdefault(spec.merge_group, []).append(lock)
         problems = ingest_mod.verify_pack(lock, root)
         if problems:
             failed = True
@@ -80,6 +83,23 @@ def cmd_verify(args):
                 print(f"  … {len(problems) - 20} more")
         else:
             print(f"{spec.name}: OK ({lock['totals']['files']} files)")
+
+    for name, locks in sorted(groups.items()):
+        if len(locks) < 2:
+            print(f"merge group {name}: only one pack ingested — resolution unchecked")
+            continue
+        problems = ingest_mod.verify_merge_group(locks, root)
+        if problems:
+            failed = True
+            print(f"merge group {name}: {len(problems)} unresolved reference(s)")
+            for item in problems[:15]:
+                print(f"  {item}")
+            if len(problems) > 15:
+                print(f"  … {len(problems) - 15} more")
+        else:
+            total = sum(l["totals"]["files"] for l in locks)
+            print(f"merge group {name}: OK (every external URI resolves across "
+                  f"{len(locks)} packs, {total} files)")
     return 1 if failed else 0
 
 
@@ -100,6 +120,9 @@ def cmd_pack(args):
         artifacts = pack_mod.build_pack(
             lock, root, out_dir, args.version, zip_too=not args.no_zip
         )
+        if lock["pack"].get("mergeGroup"):
+            for art in artifacts:
+                art["mergeGroup"] = lock["pack"]["mergeGroup"]
         for art in artifacts:
             print(f"{art['file']}  {art['files']} files  "
                   f"{art['size'] / 1e6:.2f} MB  sha256:{art['sha256'][:12]}")

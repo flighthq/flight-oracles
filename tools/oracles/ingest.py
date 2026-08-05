@@ -361,7 +361,8 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
 
     lock_files.sort(key=lambda e: e["path"])
     return {
-        "pack": {"name": spec.name, "kind": spec.kind, "summary": spec.summary},
+        "pack": {"name": spec.name, "kind": spec.kind, "summary": spec.summary,
+                 **({"mergeGroup": spec.merge_group} if spec.merge_group else {})},
         "sources": lock_sources,
         "files": lock_files,
         "totals": {
@@ -433,3 +434,36 @@ def drift_pack(spec, lock: dict) -> list:
                 f"(pin still valid; re-ingest to adopt)"
             )
     return findings
+
+
+def verify_merge_group(locks, root: Path) -> list:
+    """Resolve every external URI a glTF declares, across a merge group's vendored trees.
+
+    A merge group only works if the union is complete: geometry in one pack, its textures in
+    another, reunited on extraction. An include-glob edited a year from now could drop a
+    texture and nothing else would notice — each pack would verify fine and the models would
+    simply render wrong. That is the property worth checking, so it is checked.
+    """
+    from urllib.parse import unquote
+
+    roots = [root / "vendor" / lock["pack"]["name"] for lock in locks]
+    problems = []
+    for lock in locks:
+        base_root = root / "vendor" / lock["pack"]["name"]
+        for entry in lock["files"]:
+            if not entry["path"].endswith(".gltf"):
+                continue
+            try:
+                doc = json.loads((base_root / entry["path"]).read_bytes())
+            except (ValueError, OSError):
+                continue
+            rel_dir = Path(entry["path"]).parent
+            uris = [b.get("uri") for b in doc.get("buffers", []) if b.get("uri")]
+            uris += [i.get("uri") for i in doc.get("images", []) if i.get("uri")]
+            for uri in uris:
+                if uri.startswith("data:"):
+                    continue
+                target = rel_dir / unquote(uri)
+                if not any((r / target).exists() for r in roots):
+                    problems.append(f"{lock['pack']['name']}/{entry['path']} -> {uri}")
+    return problems

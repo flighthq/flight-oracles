@@ -23,17 +23,28 @@ suite can pin.
 | --- | ---: | ---: | --- |
 | `swf-ruffle-fixtures` | 4810 | 42.9 MB | Ruffle's SWF test corpus — SWF versions 4 through 50 |
 | `spine-fixtures` | 905 | 48.6 MB | 18 Spine example exports (skeleton data, atlases, textures) |
-| `gltf-khronos-fixtures` | 471 | 293.5 MB | 142 Khronos glTF 2.0 models — 28 KHR/EXT extensions exercised |
+| `gltf-khronos-textures` | 765 | 500.1 MB | Raster textures — merges with `gltf-khronos-fixtures` |
+| `gltf-khronos-binary` | 118 | 432.7 MB | GLB: self-contained models, textures embedded |
+| `gltf-khronos-fixtures` | 476 | 293.5 MB | 148 Khronos glTF 2.0 models — 29 KHR/EXT extensions |
+| `rive-fixtures-unit` | 388 | 148.3 MB | Rive unit-test corpus — all 12 feature areas |
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
-| `rive-fixtures-unit` | — | ~139 MB | Rive unit-test assets — declared, not yet ingested |
-| `gltf-khronos-textures` | — | ~455 MB | Raster textures for the glTF models — declared, not ingested |
-| `gltf-khronos-binary` | — | ~455 MB | GLB container variant — declared, not ingested |
 
-Two variants build from each pack. **`-full`** is the build input: everything usable for
+**Merge groups.** `gltf-khronos-fixtures` and `gltf-khronos-textures` share the merge group
+`gltf-khronos` and must be extracted into the **same directory** — glTF references its
+buffers and images by relative URI, so splitting them for size only works if they are
+reunited on disk. `verify` checks that every external URI in the group resolves. For
+self-contained textured models, use `gltf-khronos-binary` instead: one file per model,
+nothing to resolve.
+
+Three variants build from each pack. **`-full`** is the build input: everything usable for
 testing, including material whose terms permit that use and nothing further.
-**`-permissive`** is the subset that may travel *onward* into something published — a demo,
-a sample repo, a package — filtered on declared licence, no unresolved third-party subject
-matter, commercial use permitted. `spine-fixtures` produces no `-permissive` archive — every Spine example is
+**`-demo`** may be shown publicly: excludes testing-only and unknown-scope material but keeps
+non-commercial assets an author intends to be displayed. **`-permissive`** may travel into
+commercial work — declared-permissive licence, no unresolved third-party subject matter,
+commercial use permitted.
+
+`.zip` is emitted alongside `.tar.gz` only for packs under 150 MB; above that the payloads
+are already-compressed images and the zip is a near-identical duplicate. `spine-fixtures` produces no `-permissive` archive — every Spine example is
 declared non-commercial.
 
 Two models are **not vendored at all**, because their declarations explicitly forbid
