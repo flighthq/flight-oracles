@@ -44,6 +44,26 @@ use, so the field names are conventional and existing tooling understands them:
 - **`license.concluded`** — optional and rare. Present only where a human actually analysed
   the file. Its absence is not a gap to be flagged; it is the honest default.
 
+### Not all declarations are equally specific
+
+A repository-root LICENSE is a declaration about *the repository*, not necessarily about
+every file in it. `rive-app/rive-runtime`'s MIT is plainly aimed at the C++ renderer; reading
+it as a statement about a `.riv` binary in a test directory is a small inferential step we
+are taking, not something upstream said. By contrast `examples/spineboy/license.txt` sits
+beside the assets and speaks about them explicitly.
+
+`license.declaredScope` records which kind we had, resolved by taking the most specific
+declaration found:
+
+| Scope | Source of the declaration |
+| --- | --- |
+| `file-adjacent` | SPDX header in the file, or a LICENSE beside it (spineboy) |
+| `directory` | A LICENSE governing the containing directory (`renderer/LICENSE`) |
+| `repository-root` | Only the repo's top-level LICENSE (most `.riv` assets) |
+
+This is mechanically derivable, costs nothing to record, and lets consumers weigh a
+declaration rather than treating all of them as equivalent.
+
 It rejects two easier designs:
 
 - **Include everything with no metadata** — leaves consumers unable to make their own
@@ -107,7 +127,9 @@ so it flows back to the source rather than stopping with us.
 - The entry gets a `dispute:` block recording who, when, and the outcome.
 - **We notify the upstream.** They are distributing the same file under the same declaration
   and have both the relationship and the standing to resolve it. Routing it to them is what
-  the declared-license model is for.
+  the declared-license model is for. The dispute template carries the upstream contact and a
+  dispute cannot be closed without the notification link — a promise this easy to skip has to
+  be enforced by the process rather than by intent.
 - **The pass is batch-aware.** Because every entry records `source.repo` and `commit`, one
   challenge surfaces every other file from that origin for review. A complaint about one Rive
   file is information about the other 408, and the manifest can answer that query directly.
@@ -225,13 +247,60 @@ not of their generator, and an excluded fixture's goldens are excluded with it.
 
 ## Packaging
 
-- **One archive per pack** — keeps downloads scoped and clear of the 2 GB per-file cap on
-  GitHub release assets.
-- Each archive carries `manifest.json`, a `LICENSES/` directory of verbatim upstream texts, a
-  generated human-readable `NOTICE.md`, and a README stating the compatibility-testing intent
+### Many small packs, not one archive
+
+Split by corpus **and** by kind, so fixtures and goldens are never in the same archive:
+
+```
+spine-fixtures          rive-fixtures          swf-ruffle-fixtures
+                        rive-goldens           swf-generated-fixtures
+```
+
+Each versioned independently, with an `index.json` on the release listing every pack and its
+digest so consumers resolve programmatically rather than hardcoding filenames.
+
+The decisive reason is **cache invalidation downstream**, not the 2 GB per-asset cap.
+Consumers cache by archive digest; in a monolith, changing one SWF fixture invalidates the
+whole cache and every CI job re-downloads everything, goldens included. Split packs make that
+cost proportional to what actually changed.
+
+The rest points the same way: a SWF parser test shouldn't pull Rive goldens; the spineboy pack
+changes almost never while the Ruffle corpus changes often; and a disputed file means
+re-cutting one pack rather than the world. Goldens in particular are per-frame PNGs across
+hundreds of fixtures and will dominate total bytes while fixtures stay in the kilobytes.
+
+### Licenses: shared within the archive, with one exception
+
+A single `LICENSES/` directory per archive, one file per distinct source declaration named
+`<source>@<sha>.txt`, referenced from each manifest entry by path. Duplicating MIT beside 409
+files is ~400 KB of identical text, makes diffs unreadable, and invites someone editing one
+copy into drift. Dedup is largely self-resolving since each source's copyright line differs,
+making them genuinely distinct declarations.
+
+*Shared within the archive*, never a URL to go fetch — every archive stays self-contained.
+
+**The exception is any `file-adjacent` declaration**, spineboy being the live case. Its terms
+say the images may be redistributed *"as long as they are accompanied by this license file"*,
+and the safe reading of "accompanied by" is adjacent to the images, not merely present
+somewhere in the tarball. Those licenses are preserved in place (`spineboy/license.txt`) *and*
+referenced from the manifest. `declaredScope: file-adjacent` identifies them automatically, so
+this needs no separate list to maintain.
+
+### Every archive also carries
+
+- `manifest.json` — the full per-file record.
+- `NOTICE.md` — generated human-readable attribution rollup, so the picture is legible without
+  parsing JSON.
+- `README.md` — the compatibility-testing intent, the non-commercial notice where it applies,
   and how to request removal.
+
+### Build mechanics
+
 - **Deterministic tar** — sorted entries, `mtime=0`, uid/gid 0, fixed permissions — so a
   rebuild at the same manifest is byte-identical.
+- `.tar.gz` for universal tooling, with `.zip` emitted alongside if Haxe/OpenFL consumers
+  prefer it. Goldens are PNGs and already compressed, so the codec matters far less than the
+  split; don't spend effort optimising it.
 - `SHA256SUMS` attached alongside, plus build provenance attestation.
 - **No Git LFS.** Release assets don't bloat clones or consume an LFS bandwidth quota.
 
