@@ -28,23 +28,23 @@ SCOPES = ("file-adjacent", "directory", "repository-root")
 
 SOURCE_KINDS = ("upstream", "recovered")
 
-# Declarations we refuse to ingest at all, rather than merely leaving unvendored.
-#
-# `redistributable = false` is the right answer for a licence that forbids republishing: we
-# still fetch nothing, but holding the bytes locally would be harmless. These are different.
-# Their *derivative works* clauses make merely deriving from the material hazardous, so the
-# safe handling is never to bring it into the pipeline in the first place — and that has to
-# be enforced, because the whole point is that it is invisible to anyone screening on the
-# SPDX identifier alone.
-HAZARDOUS_DECLARATIONS = {
+# Declarations carrying a term that must be read before adoption, not merely a restriction
+# on republishing. These are NOT forbidden — the guard exists so they cannot be adopted by
+# accident, since the hazard is invisible to anyone screening on the SPDX identifier alone.
+# Setting `hazard_reviewed = true` on the source unblocks it and records that someone looked.
+DECLARATIONS_NEEDING_REVIEW = {
     "LicenseRef-UGent-Academic": (
-        "UGent Academic License section 3(b): every licensee grants Ghent University a "
-        "'perpetual, worldwide, exclusive, no-charge, royalty-free, irrevocable' licence to "
-        "commercially exploit any Derivative Works. A golden or oracle IS a derivative of "
-        "its fixture, so generating one would irrevocably assign exclusive commercial rights "
-        "in our own output. Section 2 separately forbids distributing the Work. Unlike an "
-        "ordinary no-redistribution licence, removal on request cannot undo a grant that "
-        "attached when the derivative was created."
+        "UGent Academic License s3(b): every licensee grants Ghent University a 'perpetual, "
+        "worldwide, exclusive, no-charge, royalty-free, irrevocable' licence to commercially "
+        "exploit any Derivative Works. s2 separately forbids distributing the Work, so this "
+        "is redistributable = false regardless.\n\n"
+        "SCOPE - a decoder is NOT a derivative of what it decodes, any more than a DVD player "
+        "is a derivative of a DVD. Neither flight nor this pipeline nor a test suite becomes a "
+        "derivative by processing a fixture, and structural oracles (parse trees, traces, bone "
+        "transforms) are measurements about a file rather than adaptations of its expression. "
+        "The exposure is narrow: PIXEL GOLDENS rendered from this material plausibly are "
+        "derivatives, and s3(b) would assign exclusive commercial rights in them irrevocably. "
+        "Adopt for structural work if useful; do not render goldens from it."
     ),
 }
 
@@ -93,21 +93,21 @@ class LicenseSpec:
     # pipeline refuses to vendor or pack them.
     redistributable: bool = True
     prohibition: str | None = None      # verbatim clause, when redistributable is False
+    # Acknowledges a DECLARATIONS_NEEDING_REVIEW entry was read and a decision taken.
+    hazard_reviewed: bool = False
 
     def __post_init__(self):
         if self.declared_scope not in SCOPES:
             raise ValueError(
                 f"license.declared_scope must be one of {SCOPES}, got {self.declared_scope!r}"
             )
-        hazard = HAZARDOUS_DECLARATIONS.get(self.declared)
-        if hazard:
-            # Refuse the whole spec rather than quietly skipping the source: this is not a
-            # "don't publish it" case, it is a "don't touch it" case.
+        hazard = DECLARATIONS_NEEDING_REVIEW.get(self.declared)
+        if hazard and not self.hazard_reviewed:
             raise ValueError(
-                f"license.declared = {self.declared!r} is refused outright.\n\n{hazard}\n\n"
-                f"See docs/sourcing-policy.md. If you believe this is wrong, change the "
-                f"entry in HAZARDOUS_DECLARATIONS deliberately — do not work around it by "
-                f"relabelling the declaration."
+                f"license.declared = {self.declared!r} carries a term needing review before "
+                f"adoption.\n\n{hazard}\n\nSee docs/sourcing-policy.md. Set "
+                f"license.hazard_reviewed = true to proceed once the decision is recorded - "
+                f"do not work around this by relabelling the declaration."
             )
         if self.commercial_use not in (True, False, "unknown"):
             raise ValueError("license.commercial_use must be true, false, or \"unknown\"")

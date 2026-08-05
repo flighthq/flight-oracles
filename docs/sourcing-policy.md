@@ -142,7 +142,44 @@ Both carry `redistributable = false` and a `prohibition` recording the clause or
 Both stay in the spec, so the record of having checked is durable and nobody re-adds them
 without reading why. Ingest refuses to vendor them; `pack` raises if one ever reaches a lock.
 
+### A declared identifier may name the origin instrument, not the grant in force
+
+This one corrected an error of ours, and it generalises.
+
+Four glTF models are declared under instruments that plainly do not permit third-party
+redistribution — Adobe Stock, a CRYENGINE agreement, a Poser EULA, a 3DRT testing licence.
+The obvious question is how Khronos publishes them at all. The answer is in their own
+submission policy (`SubmittingModels.md`):
+
+> Assets to be included in the Sample Asset repository must have a license that allows
+> Khronos to publish the asset and allow others to use the asset in public. […] Assets with
+> **semi-restrictive licenses may be included in the repository provided arrangements are
+> made** prior to the Pull Request being posted.
+
+So Khronos operates under **separately negotiated arrangements** with Adobe, Crytek, Smith
+Micro and 3DRT. The SPDX identifier in `metadata.json` records the *provenance* of the
+material — where it came from and under what instrument it originally reached the
+contributor — not the grant Khronos itself relies on.
+
+We initially read those identifiers as the operative terms and concluded the licences
+"forbid" redistribution. That was wrong in its reasoning. The correct statement is narrower
+and less certain: **the grant actually in force is a private arrangement that is not
+published anywhere we can read**, so we cannot establish a redistribution right — which is
+an *unknown*, not a prohibition.
+
+Those four stay unvendored, because our rule is that we ship what we can establish, not what
+we can plausibly assume. But the recorded reason now says what is true. And unlike a real
+prohibition, this one has an obvious resolution: ask Khronos what the arrangements permit.
+That is the same upstream-notification channel invalidation uses, run pre-emptively.
+
+Note also what the policy says the arrangements must secure — that others may *use* the asset
+in public. Use is not redistribution, and the gap between them is exactly the unresolved part.
+
 ### The clauses, quoted
+
+The clauses below remain accurate as descriptions of the *origin* instruments, and are worth
+keeping because they establish that no off-the-shelf tier of those licences would cover us —
+which is why a private arrangement had to exist at all.
 
 Full texts were read rather than inferred from the SPDX identifier. `prohibition` now carries
 the operative wording so nobody has to re-derive it:
@@ -161,35 +198,50 @@ permit distributing Assets **only** embedded in a Game in object code form. A fi
 is not a Game in object code form. The agreement also reserves the right to change terms
 unilaterally on 30 days' notice, so even a favourable reading would not be stable.
 
-### A licence can be worse than non-redistributable: the UGent Academic License
+### Read the derivative-works clause too: the UGent Academic License
 
-Not currently in any pack, recorded because it is a live hazard for academic 3D and scan
-corpora and because its shape is one this project must never accept.
-
-Two clauses, in combination:
+Not currently in any pack. Recorded because the shape recurs in academic 3D and scan corpora,
+and because getting the scope right matters more than the verdict.
 
 - §2 — *"The Licensee shall not distribute or sub-license the Work to third parties without
-  the prior written authorization of the Licensor."* So the Work itself is not
-  redistributable. That much is ordinary.
+  the prior written authorization of the Licensor."* The Work is not redistributable. That is
+  ordinary, and it is the same handling as any `redistributable = false` source.
 - §3(b) — each Licensee grants the Licensor *"a perpetual, worldwide, **exclusive**,
-  no-charge, royalty-free, irrevocable copyright license to reproduce, prepare, publicly
-  display, publicly perform, sublicense, and distribute the **Derivative Works** for
-  **commercial purposes**."*
+  no-charge, royalty-free, irrevocable copyright license to … distribute the **Derivative
+  Works** for **commercial purposes**."* Producing a derivative assigns exclusive commercial
+  rights in that derivative to Ghent University, irrevocably.
 
-The second is the dangerous one, and it bites this project specifically. **A golden is a
-derivative work of its fixture** — we established that oracles inherit their fixture's record.
-Under §3(b), generating an oracle from a UGent-licensed fixture would irrevocably hand Ghent
-University *exclusive* commercial rights in that oracle. The contamination flows the wrong
-way: it is not a restriction we inherit, it is a grant we make.
+**How far that reaches depends entirely on what counts as a Derivative Work, and an earlier
+draft of this document overstated it.** A decoder is not a derivative of the files it
+decodes, any more than a DVD player is a derivative of a DVD. Nothing about flight, this
+pipeline, or a test suite becomes a derivative by processing a fixture.
 
-So UGent-licensed material is **not to be ingested at all**, not merely left unvendored. Its
-`redistributable = false` is the least of it; the reason to record it here is that the usual
-mitigation — "we can always take it down" — does not undo an irrevocable exclusive grant that
-attached the moment a derivative was created.
+The honest line runs through the *outputs*, and not uniformly:
 
-The general lesson: read the *derivative works* clause, not only the redistribution clause.
-An instrument that permits redistribution can still be unacceptable, and that is invisible if
-you screen on the SPDX identifier alone.
+| Output | Derivative work? |
+| --- | --- |
+| flight itself, this pipeline, test code | **No.** Tools that read a format. |
+| Parse trees, tag streams, AVM trace output, bone transforms | **Almost certainly not.** These are measurements *about* a file — facts extracted, not expression adapted. |
+| Rendered frames, golden PNGs | **Plausibly yes.** A render reproduces the model's expressive content in another medium. |
+
+So the exposure is narrow: it would attach to *pixel goldens* generated from UGent material,
+not to structural oracles and not to the SDK. Which happens to converge with the sequencing
+already recommended for unrelated reasons — structural oracles first, pixel goldens last and
+narrowly. Preferring structural oracles sidesteps the derivative-work question along with the
+determinism and size problems.
+
+On academic scope: §2's grant is for "non-commercial academic research purposes". That is a
+real limit for an MIT-licensed SDK whose test suite commercial users will run — but it is the
+same limit spineboy carries, and we ship spineboy with `commercialUse: false` rather than
+excluding it. Consistency says UGent material gets the same treatment, not a special class.
+
+The pipeline therefore flags rather than forbids: a declaration listed in
+`DECLARATIONS_NEEDING_REVIEW` fails to load until a spec sets `hazard_reviewed = true`,
+which forces the term to be read and a decision recorded rather than adopted by accident.
+The general lesson stands even though the verdict softened — **read the derivative-works
+clause, not only the redistribution clause**, because an instrument that permits
+redistribution can still carry a term you would not accept, and that is invisible to anyone
+screening on the SPDX identifier alone.
 
 ### The same asset can carry different declarations at different upstreams
 

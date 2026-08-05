@@ -110,22 +110,23 @@ class TestSpecValidation(unittest.TestCase):
             self._license(redistributable=False)
         self._license(redistributable=False, prohibition="may not be redistributed")
 
-    def test_hazardous_declaration_is_refused_outright(self):
-        # Not "don't publish it" but "don't touch it": the UGent Academic License assigns
-        # Ghent University exclusive commercial rights in any derivative, and a golden is a
-        # derivative of its fixture. Loading must fail, not merely skip vendoring.
+    def test_declaration_needing_review_blocks_until_acknowledged(self):
+        # A tripwire, not a ban: the UGent s3(b) derivative-works term is invisible to anyone
+        # screening on the SPDX id, so it must not be adoptable by accident.
         with self.assertRaises(ValueError) as caught:
             self._license(declared="LicenseRef-UGent-Academic")
-        message = str(caught.exception)
-        self.assertIn("refused outright", message)
-        self.assertIn("exclusive", message)
+        self.assertIn("needing review", str(caught.exception))
 
-    def test_hazard_check_precedes_the_redistributable_escape_hatch(self):
-        # Marking it non-redistributable must not make it loadable — the hazard is in
-        # deriving from the material, which happens before anything is published.
-        with self.assertRaises(ValueError):
-            self._license(declared="LicenseRef-UGent-Academic",
-                          redistributable=False, prohibition="section 2")
+    def test_review_acknowledgement_unblocks(self):
+        lic = self._license(declared="LicenseRef-UGent-Academic", hazard_reviewed=True)
+        self.assertEqual(lic.declared, "LicenseRef-UGent-Academic")
+
+    def test_review_guidance_scopes_the_hazard_to_rendered_output(self):
+        # The scope correction matters as much as the flag: a decoder is not a derivative of
+        # what it decodes, and structural oracles are measurements rather than adaptations.
+        guidance = spec.DECLARATIONS_NEEDING_REVIEW["LicenseRef-UGent-Academic"]
+        self.assertIn("DVD player", guidance)
+        self.assertIn("PIXEL GOLDENS", guidance)
 
     def test_recovered_source_cannot_claim_a_declaration(self):
         # A recovered file has no upstream asserting anything; claiming MIT would be
