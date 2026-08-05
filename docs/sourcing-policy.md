@@ -6,6 +6,48 @@ how anything can be removed on request.
 Grounded in licenses read from upstream on 2026-08-05. This is engineering judgment about a
 project's posture, not legal advice.
 
+## What this repository is — and is not
+
+A build step, not a distribution channel. The distinction is load-bearing, so it is stated
+first.
+
+`flight-oracles` exists to assemble verified, provenance-recorded inputs and hand them to
+flight's compatibility test suite and example builds. Its output is a build artifact that CI
+fetches, in the same way a lockfile or a container layer is fetched. It is **not** an asset
+library, there is no browse-and-download site, nothing here is indexed or promoted as
+downloadable content, and no asset is offered stripped of its terms.
+
+The contrast is with what a distribution channel actually looks like: a catalogue presented
+for its own sake, assets offered as the product, discovery and search as the point. None of
+that is here, and none of it is planned. When these assets reach the public it is through
+flight — a demo, an example, a rendered result — which is the "use in public" the Khronos
+arrangement contemplates. The archive is the plumbing that gets them there.
+
+**One fact this framing does not change, stated plainly rather than glossed:** GitHub release
+assets are publicly fetchable by anyone, invited or not. Intent does not alter reachability.
+That is equally true of every published CI artifact, npm package with bundled test data, and
+container image, and nobody calls those distribution services — but it is why the character
+of the thing has to be *documented in the artifact*, not merely asserted here. Every archive
+therefore carries a README stating what it is for, a `NOTICE.md` attributing every source and
+its terms, `LICENSES/` with the captured texts, and the removal path.
+
+Which is the strongest form of the argument: a stranger who downloads one of these does not
+get assets "without proper licenses". They get assets with more provenance attached than most
+deliberate distributions carry.
+
+This also sharpens what the two variants mean:
+
+- **`-full`** — the build input. Everything we may use, including material whose terms permit
+  our testing use but nothing further.
+- **`-permissive`** — the subset that may travel *onward* into something published: a demo, a
+  sample repository, a package. Filtered on declared licence, no unresolved `depicts`,
+  commercial use permitted.
+
+So the boundary the variants encode is exactly the boundary this section describes. Material
+like `VirtualCity`, whose 3DRT exemption is scoped to *"testing your glTF tools such as
+loaders and importers"*, belongs in the build input and must never reach a shipped demo —
+which is what keeping it out of `-permissive` mechanically ensures.
+
 ## What this data is for
 
 These archives are **fixtures**, not source and not assets to build products from. They exist

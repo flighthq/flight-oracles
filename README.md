@@ -3,6 +3,12 @@
 Sources, verifies, and publishes fixture data for downstream flight sdk projects as
 compressed archives attached to GitHub releases.
 
+**This is a build step, not a distribution channel.** The archives are build artifacts that
+flight's CI fetches — the role a lockfile or container layer plays. There is no
+browse-and-download site, nothing is promoted as downloadable content, and no asset is
+offered stripped of its terms. Assets reach the public through flight itself; this repository
+is the plumbing that gets them there.
+
 Downstream repos currently inline their fixtures — `flighthq-ports/awayjs-examples` carries
 ~65 MB in-tree — so every consumer pays that cost again and nobody can tell where any of it
 came from. This repository sources fixtures from their real upstreams, records provenance
@@ -23,9 +29,11 @@ suite can pin.
 | `gltf-khronos-textures` | — | ~455 MB | Raster textures for the glTF models — declared, not ingested |
 | `gltf-khronos-binary` | — | ~455 MB | GLB container variant — declared, not ingested |
 
-Two variants build from each pack: `-full` (everything not excluded) and `-permissive`
-(declared-permissive licence, no unresolved third-party subject matter, commercial use
-permitted). `spine-fixtures` produces no `-permissive` archive — every Spine example is
+Two variants build from each pack. **`-full`** is the build input: everything usable for
+testing, including material whose terms permit that use and nothing further.
+**`-permissive`** is the subset that may travel *onward* into something published — a demo,
+a sample repo, a package — filtered on declared licence, no unresolved third-party subject
+matter, commercial use permitted. `spine-fixtures` produces no `-permissive` archive — every Spine example is
 declared non-commercial.
 
 Two models are **not vendored at all**, because their declarations explicitly forbid

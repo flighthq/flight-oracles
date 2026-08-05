@@ -163,9 +163,21 @@ def _readme(lock, variant, entries) -> str:
         "",
         "## What this is for",
         "",
-        "These are **fixtures**: inputs for testing format compatibility in the flight sdk "
-        "packages. They are not source, and they are not assets to build products from. The "
-        "use is functional — we care that a file decodes correctly, not what it depicts.",
+        "This archive is a **build artifact**, not an asset library. It exists so flight's "
+        "compatibility test suite and example builds can fetch verified, provenance-recorded "
+        "inputs — the role a lockfile or a container layer plays. There is no "
+        "browse-and-download site, nothing here is promoted as downloadable content, and no "
+        "asset is offered stripped of its terms.",
+        "",
+        "The contents are **fixtures**: inputs for testing that a format decodes correctly. "
+        "They are not source, and they are not assets to build products from. The use is "
+        "functional — what matters is that a file parses, not what it depicts.",
+        "",
+        "**If you downloaded this without being flight's build system**, that is fine, but "
+        "read `NOTICE.md` first. Several sources carry terms narrower than the tooling around "
+        "them: some prohibit commercial use, and at least one is licensed only for testing "
+        "glTF loaders and importers. The terms travel with the files; they do not stop at "
+        "this archive.",
         "",
         "## Provenance",
         "",
@@ -179,10 +191,22 @@ def _readme(lock, variant, entries) -> str:
         out += [
             "## About this variant",
             "",
+            "This is the subset intended to travel *onward* into something published — a "
+            "demo, a sample repository, a package — rather than staying inside a build. "
             "Filtered to entries whose *declared* licence is a recognised permissive SPDX "
             "identifier, with no unresolved third-party subject matter and commercial use "
             "permitted. This is a filter over recorded metadata — it is not legal clearance, "
             "and it does not verify that any upstream's declaration was correct.",
+            "",
+        ]
+    if variant == "full":
+        out += [
+            "## About this variant",
+            "",
+            "`-full` is the **build input**: everything usable for testing, including "
+            "material whose terms permit that use and nothing further. To carry assets "
+            "onward into something you publish, use the `-permissive` archive instead — the "
+            "same corpus, filtered to what may travel.",
             "",
         ]
     if noncommercial:

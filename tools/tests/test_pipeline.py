@@ -357,6 +357,28 @@ class TestBuild(unittest.TestCase):
         self.assertIn("LicenseRef-Adobe-Stock", notice)
         self.assertIn("separate arrangement", notice)
 
+    def test_readme_states_the_build_artifact_character(self):
+        # The repository is a build step, not a distribution channel. GitHub releases are
+        # publicly fetchable regardless of intent, so that framing has to be documented in
+        # the artifact rather than only asserted in the policy doc.
+        lock = self._lockfile()
+        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
+            readme = tar.extractfile("README.md").read().decode()
+        self.assertIn("build artifact", readme)
+        self.assertIn("not an asset library", readme)
+        self.assertIn("terms travel with the files", readme)
+
+    def test_variants_state_which_may_travel_onward(self):
+        lock = self._lockfile()
+        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
+            full = tar.extractfile("README.md").read().decode()
+        with tarfile.open(self.root / "d" / "t-permissive-v1.tar.gz") as tar:
+            permissive = tar.extractfile("README.md").read().decode()
+        self.assertIn("build input", full)
+        self.assertIn("travel *onward*", permissive)
+
     def test_noncommercial_warning_appears_in_readme(self):
         lock = self._lockfile()
         lock["sources"][0]["license"]["commercialUse"] = False
