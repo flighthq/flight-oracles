@@ -93,7 +93,9 @@ File-adjacent licences travel beside their assets as well as in `LICENSES/`, bec
 spineboy's terms permit redistribution "as long as they are accompanied by this license
 file" and the safe reading of *accompanied* is adjacent, not merely present.
 
-See [`docs/sourcing-policy.md`](docs/sourcing-policy.md) for the full reasoning.
+See [`docs/sourcing-policy.md`](docs/sourcing-policy.md) for the full reasoning, and
+[`docs/fixture-coverage.md`](docs/fixture-coverage.md) for the exhaustive fixture target set
+derived from flight's decode surface.
 
 ## Removal requests
 
