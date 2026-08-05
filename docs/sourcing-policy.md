@@ -162,24 +162,52 @@ material — where it came from and under what instrument it originally reached 
 contributor — not the grant Khronos itself relies on.
 
 We initially read those identifiers as the operative terms and concluded the licences
-"forbid" redistribution. That was wrong in its reasoning. The correct statement is narrower
-and less certain: **the grant actually in force is a private arrangement that is not
-published anywhere we can read**, so we cannot establish a redistribution right — which is
-an *unknown*, not a prohibition.
+"forbid" redistribution. That was wrong, and the deeper problem was that a single `declared`
+field **could not express the situation at all**. It forced a choice between two statements
+that are each half true:
 
-Those four stay unvendored, because our rule is that we ship what we can establish, not what
-we can plausibly assume. But the recorded reason now says what is true. And unlike a real
-prohibition, this one has an obvious resolution: ask Khronos what the arrangements permit.
-That is the same upstream-notification channel invalidation uses, run pre-emptively.
+- Name only the **origin** — understates the rights, and misattributes restrictive terms to
+  Khronos, who is not publishing under them.
+- Name only the **operative grant** — drops attribution the origin instrument is owed.
 
-Note also what the policy says the arrangements must secure — that others may *use* the asset
-in public. Use is not redistribution, and the gap between them is exactly the unresolved part.
+### Licences are layered, so the schema is too
+
+`license.declared` is the layer we **rely on**. `license.underlying` is a list of the
+instruments the material carried before the immediate upstream published it, each attributed
+in `NOTICE.md` with its captured text shipped in `LICENSES/`.
+
+For these four the operative grant is the Khronos arrangement, recorded as
+`LicenseRef-Khronos-glTF-Sample-Assets-Arrangement` with `declaredFrom: SubmittingModels.md`
+— the document stating that every admitted asset must permit Khronos to publish it *and*
+permit others to use it in public. Beneath it sits Adobe Stock, the CRYENGINE agreement, the
+Poser EULA, or the 3DRT testing licence, each with a `note` explaining how the operative
+grant relates to it. Every layer must carry such a note: recording a restrictive instrument
+without saying why we may nonetheless publish reads as an unexplained contradiction, so the
+validator rejects a layer that omits it.
+
+That is what the corpus actually is, and it is what a downstream consumer needs in order to
+make their own call. They ship, in `-full`, and they stay out of `-permissive` for free —
+the arrangement is not a recognised permissive SPDX identifier, so the existing variant
+filter excludes them without a special case.
+
+**One honest residual.** The Khronos policy secures that others may *use* the asset in
+public. We redistribute — hosting copies in an archive — which is more than use. Nothing in
+the published policy speaks to third-party redistribution either way. We think mirroring a
+public corpus, for the purpose it exists to serve, with full attribution and a working
+removal path, is within what the arrangement is for; but that is a reading, not a grant, and
+it is recorded as such rather than dressed up. Asking Khronos would settle it, and remains
+worth doing.
+
+The generalisable point is the schema, not the verdict: **a declared identifier may name the
+origin instrument rather than the grant in force.** Do not read a repository's SPDX metadata
+as the terms its publisher operates under, and do not flatten the two.
 
 ### The clauses, quoted
 
-The clauses below remain accurate as descriptions of the *origin* instruments, and are worth
-keeping because they establish that no off-the-shelf tier of those licences would cover us —
-which is why a private arrangement had to exist at all.
+The clauses below describe the *origin* instruments, now recorded as `underlying` layers.
+They are worth keeping because they establish that no off-the-shelf tier of those licences
+would have covered Khronos either — which is why an arrangement had to exist at all, and is
+the evidence that one does.
 
 Full texts were read rather than inferred from the SPDX identifier. `prohibition` now carries
 the operative wording so nobody has to re-derive it:
@@ -267,7 +295,7 @@ time rather than inferred from a repository:
 | `DragonAttenuation` | Stanford Graphics | **ships**, `commercialUse: false` — "welcome to mirror or redistribute them for free", but "not to be used for commercial purposes" |
 | `DamagedHelmet` | CC-BY-4.0 | **ships** — the CC-BY-NC entry applies to an *earlier version* per its `what` field, not the asset we carry |
 | `PlaysetLightTest` | CC BY-NC-SA 4.0 | **ships**, `commercialUse: false` |
-| `Sponza` | CRYENGINE agreement | **not vendored** |
+| `Sponza` | Khronos arrangement, underlying CRYENGINE agreement | **ships** in `-full`, attributed, out of `-permissive` |
 
 ## Invalidation
 

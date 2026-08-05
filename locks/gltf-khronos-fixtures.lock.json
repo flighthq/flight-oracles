@@ -2566,68 +2566,100 @@
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
-      "commit": null,
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
       "license": {
-        "declared": "LicenseRef-Poser-EULA",
-        "declaredScope": "file-adjacent",
-        "commercialUse": true,
-        "redistributable": false,
-        "declaredFrom": "Models/BrainStem/LICENSE.md",
-        "covers": "Everything \u2014 Keith Hunter, 2017 (owner: Smith Micro Software, Inc.).",
-        "prohibition": "Khronos publishes this under a PRIVATE ARRANGEMENT with the rights holder, not under the instrument named above: SubmittingModels.md requires assets to have 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that 'assets with semi-restrictive licenses may be included in the repository provided arrangements are made'. The declared identifier records PROVENANCE - how the material originally reached the contributor - not the grant in force. That arrangement is not published anywhere we can read, so we cannot establish a redistribution right for ourselves. This is UNRESOLVED, not prohibited, and note the policy secures that others may USE the asset publicly, which is not the same as redistributing it. RESOLUTION: ask Khronos what the arrangements permit. Until then this stays unvendored, because we ship what we can establish rather than what we can plausibly assume. Origin instrument, for reference: Poser EULA (Smith Micro Software), which as an end-user agreement grants no redistribution right."
+        "declared": "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement",
+        "declaredScope": "repository-root",
+        "commercialUse": false,
+        "redistributable": true,
+        "declaredFrom": "SubmittingModels.md",
+        "covers": "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published.",
+        "underlying": [
+          {
+            "declared": "LicenseRef-Poser-EULA",
+            "declaredFrom": "Models/BrainStem/LICENSE.md",
+            "note": "Poser End User License Agreement (Smith Micro Software). An end-user agreement conveys no redistribution right on its own, so Khronos's publication of this model rests on a separate arrangement rather than on this instrument.",
+            "snapshot": "licenses/gltf-brainstem-underlying-0@2bac6f8c57bf.txt"
+          }
+        ]
       },
-      "vendored": false
+      "licenseSnapshot": "licenses/gltf-brainstem@2bac6f8c57bf.txt"
     },
     {
       "id": "gltf-environmenttest",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
-      "commit": null,
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
       "license": {
-        "declared": "LicenseRef-Adobe-Stock",
-        "declaredScope": "file-adjacent",
-        "commercialUse": true,
-        "redistributable": false,
-        "declaredFrom": "Models/EnvironmentTest/LICENSE.md",
-        "covers": "Everything \u2014 Adobe, 2017 (owner: Adobe).",
-        "prohibition": "Khronos publishes this under a PRIVATE ARRANGEMENT with the rights holder, not under the instrument named above: SubmittingModels.md requires assets to have 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that 'assets with semi-restrictive licenses may be included in the repository provided arrangements are made'. The declared identifier records PROVENANCE - how the material originally reached the contributor - not the grant in force. That arrangement is not published anywhere we can read, so we cannot establish a redistribution right for ourselves. This is UNRESOLVED, not prohibited, and note the policy secures that others may USE the asset publicly, which is not the same as redistributing it. RESOLUTION: ask Khronos what the arrangements permit. Until then this stays unvendored, because we ship what we can establish rather than what we can plausibly assume. Origin instrument, for reference: Adobe Stock License - 'you may not: Distribute the stand-alone file', identical across the Standard, Enhanced and Extended tiers, so no off-the-shelf tier would have covered Khronos either."
+        "declared": "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement",
+        "declaredScope": "repository-root",
+        "commercialUse": false,
+        "redistributable": true,
+        "declaredFrom": "SubmittingModels.md",
+        "covers": "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published.",
+        "underlying": [
+          {
+            "declared": "LicenseRef-Adobe-Stock",
+            "declaredFrom": "Models/EnvironmentTest/LICENSE.md",
+            "note": "Adobe Stock License, whose every tier states 'you may not: Distribute the stand-alone file'. Owner of record is Adobe, who as rights holder is not bound by their own licensee terms; publication here rests on that ownership plus the Khronos arrangement.",
+            "snapshot": "licenses/gltf-environmenttest-underlying-0@2bac6f8c57bf.txt"
+          }
+        ]
       },
-      "vendored": false
+      "licenseSnapshot": "licenses/gltf-environmenttest@2bac6f8c57bf.txt"
     },
     {
       "id": "gltf-sponza",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
-      "commit": null,
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
       "license": {
-        "declared": "LicenseRef-CRYENGINE-Agreement",
-        "declaredScope": "file-adjacent",
-        "commercialUse": true,
-        "redistributable": false,
-        "declaredFrom": "Models/Sponza/LICENSE.md",
-        "covers": "Everything \u2014 Crytek, 2016 (owner: Crytek).",
-        "prohibition": "Khronos publishes this under a PRIVATE ARRANGEMENT with the rights holder, not under the instrument named above: SubmittingModels.md requires assets to have 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that 'assets with semi-restrictive licenses may be included in the repository provided arrangements are made'. The declared identifier records PROVENANCE - how the material originally reached the contributor - not the grant in force. That arrangement is not published anywhere we can read, so we cannot establish a redistribution right for ourselves. This is UNRESOLVED, not prohibited, and note the policy secures that others may USE the asset publicly, which is not the same as redistributing it. RESOLUTION: ask Khronos what the arrangements permit. Until then this stays unvendored, because we ship what we can establish rather than what we can plausibly assume. Origin instrument, for reference: CRYENGINE Limited License Agreement s2.4 forbids distributing the CRYENGINE; s1.1/s1.2 include the audiovisual Assets in that definition and s2.1.3-2.1.4 permit them only embedded in a Game in object code form. The Khronos README sources this from the CRYENGINE Marketplace (CEMP-1102) plus a third-party PBR texture pack - the newer marketplace build, NOT the 2010 Crytek release commonly cited as CC-BY-3.0, which may be sourceable elsewhere."
+        "declared": "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement",
+        "declaredScope": "repository-root",
+        "commercialUse": false,
+        "redistributable": true,
+        "declaredFrom": "SubmittingModels.md",
+        "covers": "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published.",
+        "underlying": [
+          {
+            "declared": "LicenseRef-CRYENGINE-Agreement",
+            "declaredFrom": "Models/Sponza/LICENSE.md",
+            "note": "CRYENGINE Limited License Agreement s2.4, which forbids distributing CRYENGINE Assets except embedded in a Game in object code form. Khronos's README sources this from the CRYENGINE Marketplace (CEMP-1102) plus a third-party PBR texture pack - the newer marketplace build, not the 2010 Crytek release commonly cited as CC-BY-3.0.",
+            "snapshot": "licenses/gltf-sponza-underlying-0@2bac6f8c57bf.txt"
+          }
+        ]
       },
-      "vendored": false
+      "licenseSnapshot": "licenses/gltf-sponza@2bac6f8c57bf.txt"
     },
     {
       "id": "gltf-virtualcity",
       "kind": "upstream",
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
-      "commit": null,
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
       "license": {
-        "declared": "LicenseRef-3DRT-Testing",
-        "declaredScope": "file-adjacent",
-        "commercialUse": true,
-        "redistributable": false,
-        "declaredFrom": "Models/VirtualCity/LICENSE.md",
-        "covers": "Everything \u2014 3DRT, 2017 (owner: 3DRT).",
-        "prohibition": "Khronos publishes this under a PRIVATE ARRANGEMENT with the rights holder, not under the instrument named above: SubmittingModels.md requires assets to have 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that 'assets with semi-restrictive licenses may be included in the repository provided arrangements are made'. The declared identifier records PROVENANCE - how the material originally reached the contributor - not the grant in force. That arrangement is not published anywhere we can read, so we cannot establish a redistribution right for ourselves. This is UNRESOLVED, not prohibited, and note the policy secures that others may USE the asset publicly, which is not the same as redistributing it. RESOLUTION: ask Khronos what the arrangements permit. Until then this stays unvendored, because we ship what we can establish rather than what we can plausibly assume. Origin instrument, for reference: 3DRT testing licence - 'You are not permitted to: Market, distribute, give, transfer, sell or sublicense the products in any form', with a special exemption allowing USE 'only in testing your glTF tools such as loaders and importers'. That exemption is plausibly the arrangement Khronos relies on, and it is scoped to use."
+        "declared": "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement",
+        "declaredScope": "repository-root",
+        "commercialUse": false,
+        "redistributable": true,
+        "declaredFrom": "SubmittingModels.md",
+        "covers": "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published.",
+        "underlying": [
+          {
+            "declared": "LicenseRef-3DRT-Testing",
+            "declaredFrom": "Models/VirtualCity/LICENSE.md",
+            "note": "3DRT testing licence. Bars marketing/distribution generally, then grants a model-specific exemption: 'It is for use *only* in testing your glTF tools such as loaders and importers.' That exemption is the arrangement, and it scopes use to tool testing - which is exactly what this corpus is for, and is why it must not be deployed in a commercial application.",
+            "snapshot": "licenses/gltf-virtualcity-underlying-0@2bac6f8c57bf.txt"
+          }
+        ]
       },
-      "vendored": false
+      "licenseSnapshot": "licenses/gltf-virtualcity@2bac6f8c57bf.txt"
     }
   ],
   "files": [
@@ -3391,6 +3423,111 @@
       "upstreamPath": "Models/BoxVertexColors/glTF/buffer.bin",
       "sha256": "b508427bea091cc29cbe68d8b08e75db27e33559f72104a37343c7e808e72d26",
       "size": 936
+    },
+    {
+      "path": "BrainStem/glTF-Draco/BrainStem.gltf",
+      "sourceId": "gltf-brainstem",
+      "upstreamPath": "Models/BrainStem/glTF-Draco/BrainStem.gltf",
+      "sha256": "d5f35c011854baa9ba8bc89e076f0a3c5a3b64f7b956c5378bfb0b99041c9c40",
+      "size": 187357,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0",
+        "extensionsUsed": [
+          "KHR_draco_mesh_compression"
+        ],
+        "extensionsRequired": [
+          "KHR_draco_mesh_compression"
+        ]
+      }
+    },
+    {
+      "path": "BrainStem/glTF-Draco/BrainStem0.bin",
+      "sourceId": "gltf-brainstem",
+      "upstreamPath": "Models/BrainStem/glTF-Draco/BrainStem0.bin",
+      "sha256": "39346163441a1d03258052be80befcb17933f6bae4606aab7deb4f95258ba85c",
+      "size": 1802012
+    },
+    {
+      "path": "BrainStem/glTF-Embedded/BrainStem.gltf",
+      "sourceId": "gltf-brainstem",
+      "upstreamPath": "Models/BrainStem/glTF-Embedded/BrainStem.gltf",
+      "sha256": "3fca4632cfd7dbc2ea7a522dbb8fd42ebfcb651d2567b864d30c39770a0cec36",
+      "size": 4372640,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "BrainStem/glTF-Meshopt-EXT/BrainStem.bin",
+      "sourceId": "gltf-brainstem",
+      "upstreamPath": "Models/BrainStem/glTF-Meshopt-EXT/BrainStem.bin",
+      "sha256": "ac004b976aa36cd65e03c485cae40aa85341f6653c9795aef2f223cefe14c8c2",
+      "size": 347840
+    },
+    {
+      "path": "BrainStem/glTF-Meshopt-EXT/BrainStem.gltf",
+      "sourceId": "gltf-brainstem",
+      "upstreamPath": "Models/BrainStem/glTF-Meshopt-EXT/BrainStem.gltf",
+      "sha256": "75901f9abeff5bf01cff350d08843cc2e93eabd9f99dc52e9552462a26bbd6e0",
+      "size": 81504,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0",
+        "extensionsUsed": [
+          "EXT_meshopt_compression",
+          "KHR_mesh_quantization"
+        ],
+        "extensionsRequired": [
+          "EXT_meshopt_compression",
+          "KHR_mesh_quantization"
+        ]
+      }
+    },
+    {
+      "path": "BrainStem/glTF-Meshopt/BrainStem.bin",
+      "sourceId": "gltf-brainstem",
+      "upstreamPath": "Models/BrainStem/glTF-Meshopt/BrainStem.bin",
+      "sha256": "e18cbda514dd7626dcdf36730881a3f9c26def1d84c55b178b932e5c533c44c5",
+      "size": 328492
+    },
+    {
+      "path": "BrainStem/glTF-Meshopt/BrainStem.gltf",
+      "sourceId": "gltf-brainstem",
+      "upstreamPath": "Models/BrainStem/glTF-Meshopt/BrainStem.gltf",
+      "sha256": "a011abbef412e2eb7269dc4f5c3be10dac0145e3c6ef39ff239afacd7d402990",
+      "size": 81499,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0",
+        "extensionsUsed": [
+          "KHR_mesh_quantization",
+          "KHR_meshopt_compression"
+        ],
+        "extensionsRequired": [
+          "KHR_mesh_quantization",
+          "KHR_meshopt_compression"
+        ]
+      }
+    },
+    {
+      "path": "BrainStem/glTF/BrainStem.gltf",
+      "sourceId": "gltf-brainstem",
+      "upstreamPath": "Models/BrainStem/glTF/BrainStem.gltf",
+      "sha256": "8fc99ed74161aa79573236f9a457e238b0649993dfb41234fd7f6eafad696b75",
+      "size": 232477,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "BrainStem/glTF/BrainStem0.bin",
+      "sourceId": "gltf-brainstem",
+      "upstreamPath": "Models/BrainStem/glTF/BrainStem0.bin",
+      "sha256": "1418d04d972655b9b1907d3d51438cd150e19016716e107bb949cd4379ac5cdb",
+      "size": 3105104
     },
     {
       "path": "Cameras/glTF-Embedded/Cameras.gltf",
@@ -4809,6 +4946,45 @@
           "KHR_materials_emissive_strength"
         ]
       }
+    },
+    {
+      "path": "EnvironmentTest/glTF-IBL/EnvironmentTest.gltf",
+      "sourceId": "gltf-environmenttest",
+      "upstreamPath": "Models/EnvironmentTest/glTF-IBL/EnvironmentTest.gltf",
+      "sha256": "43bb563c795f299fd14a2c0f3127f921768a7be1510f41310a6b046fde723679",
+      "size": 19371,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0",
+        "extensionsUsed": [
+          "EXT_lights_image_based"
+        ]
+      }
+    },
+    {
+      "path": "EnvironmentTest/glTF-IBL/EnvironmentTest_binary.bin",
+      "sourceId": "gltf-environmenttest",
+      "upstreamPath": "Models/EnvironmentTest/glTF-IBL/EnvironmentTest_binary.bin",
+      "sha256": "7c7a285d3ebd57900023cd56182a07da7ea52acf2b22b1a6320f747290fdf56e",
+      "size": 1414042
+    },
+    {
+      "path": "EnvironmentTest/glTF/EnvironmentTest.gltf",
+      "sourceId": "gltf-environmenttest",
+      "upstreamPath": "Models/EnvironmentTest/glTF/EnvironmentTest.gltf",
+      "sha256": "c38d83e48ce1714e0dc9683ffbd8928da6bf2f11a7adeea50be5702bf055bfdb",
+      "size": 8256,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "EnvironmentTest/glTF/EnvironmentTest_binary.bin",
+      "sourceId": "gltf-environmenttest",
+      "upstreamPath": "Models/EnvironmentTest/glTF/EnvironmentTest_binary.bin",
+      "sha256": "bc6f6118c3052384623b59c74488c5786975a2723eae3ef7136dffd7b6c42cc4",
+      "size": 340472
     },
     {
       "path": "FlightHelmet/glTF/FlightHelmet.bin",
@@ -6480,6 +6656,24 @@
       }
     },
     {
+      "path": "Sponza/glTF/Sponza.bin",
+      "sourceId": "gltf-sponza",
+      "upstreamPath": "Models/Sponza/glTF/Sponza.bin",
+      "sha256": "fdbdbfb6a76edeb6626f28a1401bc1536bb1c864131a64e90fbc3df2d2d191bd",
+      "size": 9528220
+    },
+    {
+      "path": "Sponza/glTF/Sponza.gltf",
+      "sourceId": "gltf-sponza",
+      "upstreamPath": "Models/Sponza/glTF/Sponza.gltf",
+      "sha256": "646c10cbc8fab990ca29f363e90e2d65155f3a3569506852eb1434a9465b9501",
+      "size": 167176,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
       "path": "StainedGlassLamp/glTF-JPG-PNG/StainedGlassLamp.bin",
       "sourceId": "gltf-stainedglasslamp",
       "upstreamPath": "Models/StainedGlassLamp/glTF-JPG-PNG/StainedGlassLamp.bin",
@@ -7260,6 +7454,59 @@
       }
     },
     {
+      "path": "VirtualCity/glTF-Draco/VC0.bin",
+      "sourceId": "gltf-virtualcity",
+      "upstreamPath": "Models/VirtualCity/glTF-Draco/VC0.bin",
+      "sha256": "44350fd674783bc17d2665ccb41babd37426e4a4e0ece453b91d38308cb0b6dd",
+      "size": 1392204
+    },
+    {
+      "path": "VirtualCity/glTF-Draco/VirtualCity.gltf",
+      "sourceId": "gltf-virtualcity",
+      "upstreamPath": "Models/VirtualCity/glTF-Draco/VirtualCity.gltf",
+      "sha256": "e57bbf038823f3b5ec178ad53f1d4bfedb13ede3672af0da7e2ed430e546112e",
+      "size": 492884,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0",
+        "extensionsUsed": [
+          "KHR_draco_mesh_compression"
+        ],
+        "extensionsRequired": [
+          "KHR_draco_mesh_compression"
+        ]
+      }
+    },
+    {
+      "path": "VirtualCity/glTF-Embedded/VirtualCity.gltf",
+      "sourceId": "gltf-virtualcity",
+      "upstreamPath": "Models/VirtualCity/glTF-Embedded/VirtualCity.gltf",
+      "sha256": "657ecf4a6953e4b61bb900e7096f1df0bb415a10ef1986853d6d3c6c3d88948a",
+      "size": 4389833,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "VirtualCity/glTF/VC0.bin",
+      "sourceId": "gltf-virtualcity",
+      "upstreamPath": "Models/VirtualCity/glTF/VC0.bin",
+      "sha256": "0324ba861a2cb1019b8177b4958b982b2ae3e8b8c1052bdc583c851d581b7e68",
+      "size": 1967226
+    },
+    {
+      "path": "VirtualCity/glTF/VirtualCity.gltf",
+      "sourceId": "gltf-virtualcity",
+      "upstreamPath": "Models/VirtualCity/glTF/VirtualCity.gltf",
+      "sha256": "7173393542a3aa2ece16713cfcc823b20bf88a5dcdaf2f3923b2af903e9735a9",
+      "size": 590960,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
       "path": "WaterBottle/glTF-Draco/WaterBottle.bin",
       "sourceId": "gltf-waterbottle",
       "upstreamPath": "Models/WaterBottle/glTF-Draco/WaterBottle.bin",
@@ -7338,7 +7585,7 @@
     }
   ],
   "totals": {
-    "files": 451,
-    "bytes": 262674656
+    "files": 471,
+    "bytes": 293524225
   }
 }

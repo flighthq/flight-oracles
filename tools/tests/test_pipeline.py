@@ -128,6 +128,21 @@ class TestSpecValidation(unittest.TestCase):
         self.assertIn("DVD player", guidance)
         self.assertIn("PIXEL GOLDENS", guidance)
 
+    def test_underlying_layer_requires_an_identifier(self):
+        with self.assertRaises(ValueError):
+            self._license(underlying=[{"note": "n"}])
+
+    def test_underlying_layer_requires_a_note(self):
+        # Recording a restrictive layer without saying why we may still publish reads as
+        # an unexplained contradiction — worse than not recording it.
+        with self.assertRaises(ValueError):
+            self._license(underlying=[{"declared": "LicenseRef-Adobe-Stock"}])
+        self._license(underlying=[{"declared": "LicenseRef-Adobe-Stock", "note": "why"}])
+
+    def test_underlying_layers_survive_serialisation(self):
+        lic = self._license(underlying=[{"declared": "X", "note": "n", "declaredFrom": "L.md"}])
+        self.assertEqual(lic.to_json()["underlying"][0]["declaredFrom"], "L.md")
+
     def test_recovered_source_cannot_claim_a_declaration(self):
         # A recovered file has no upstream asserting anything; claiming MIT would be
         # inventing a declaration that nobody made.
@@ -322,6 +337,25 @@ class TestBuild(unittest.TestCase):
         with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
             names = set(tar.getnames())
         self.assertLessEqual({"LICENSES/MIT.txt", "LICENSES/Apache-2.0.txt"}, names)
+
+    def test_notice_attributes_the_underlying_instrument_and_ships_its_text(self):
+        # Attribution is the obligation the layered model creates. Naming an instrument
+        # without shipping the document the reader is pointed at would be a weak form of it.
+        (self.root / "licenses" / "ok-underlying-0@c.txt").write_bytes(b"Origin terms\n")
+        lock = self._lockfile()
+        lock["sources"][0]["license"]["underlying"] = [{
+            "declared": "LicenseRef-Adobe-Stock",
+            "declaredFrom": "Models/X/LICENSE.md",
+            "note": "Origin instrument; publication rests on a separate arrangement.",
+            "snapshot": "licenses/ok-underlying-0@c.txt",
+        }]
+        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
+            notice = tar.extractfile("NOTICE.md").read().decode()
+            self.assertIn("LICENSES/ok-underlying-0@c.txt", tar.getnames())
+        self.assertIn("Underlying instrument", notice)
+        self.assertIn("LicenseRef-Adobe-Stock", notice)
+        self.assertIn("separate arrangement", notice)
 
     def test_noncommercial_warning_appears_in_readme(self):
         lock = self._lockfile()

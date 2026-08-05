@@ -238,10 +238,12 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
             _log(f"  pinned at {commit[:12]} (--update to move)")
         if source.fetch == "blobs":
             tree = fetch_tree(source.repo, commit)
+            extra = {source.license.declared_from} | {
+                layer.get("declaredFrom") for layer in source.license.underlying
+            }
             wanted = [
                 e for e in tree
-                if source.selects(e["path"])
-                or e["path"] == source.license.declared_from
+                if source.selects(e["path"]) or e["path"] in extra
             ]
             _log(f"  {len(wanted)} of {len(tree)} blobs selected")
             members = _iter_blobs(source.repo, commit, wanted)
@@ -249,10 +251,17 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
             members = _iter_members(fetch_tarball(source.repo, commit))
 
         license_blob = None
+        # Attribution is the obligation the layered model creates, and naming an instrument
+        # without capturing its text is a weak form of it — especially since these are the
+        # documents most likely to move or disappear.
+        underlying_blobs = {}
         count = 0
         for upstream_path, data in members:
             if source.license.declared_from and upstream_path == source.license.declared_from:
                 license_blob = data
+            for layer in source.license.underlying:
+                if layer.get("declaredFrom") == upstream_path:
+                    underlying_blobs[upstream_path] = data
             if not source.selects(upstream_path):
                 continue
 
@@ -307,6 +316,22 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
                 # exactly where it sat upstream relative to them.
                 adjacent = source.dest_for(source.license.declared_from)
 
+        layers = []
+        for layer in source.license.underlying:
+            entry = dict(layer)
+            blob = underlying_blobs.get(layer.get("declaredFrom"))
+            if blob is not None:
+                name = f"{source.id}-underlying-{len(layers)}@{commit[:12]}.txt"
+                (licenses_root / name).write_bytes(blob)
+                entry["snapshot"] = f"licenses/{name}"
+            elif layer.get("declaredFrom"):
+                raise ValueError(
+                    f"{spec.name}: source {source.id!r} names underlying instrument "
+                    f"{layer['declared']!r} at {layer['declaredFrom']!r}, which is not "
+                    f"present at {source.repo}@{commit[:12]}"
+                )
+            layers.append(entry)
+
         lock_source = {
             "id": source.id,
             "kind": source.kind,
@@ -314,7 +339,8 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
             "ref": source.ref,
             "commit": commit,
             "retrieved": today,
-            "license": source.license.to_json(),
+            "license": {**source.license.to_json(),
+                        **({"underlying": layers} if layers else {})},
         }
         if snapshot_rel:
             lock_source["licenseSnapshot"] = snapshot_rel

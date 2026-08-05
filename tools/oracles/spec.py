@@ -95,6 +95,21 @@ class LicenseSpec:
     prohibition: str | None = None      # verbatim clause, when redistributable is False
     # Acknowledges a DECLARATIONS_NEEDING_REVIEW entry was read and a decision taken.
     hazard_reviewed: bool = False
+    # Layers beneath the operative grant: the instrument(s) the material carried before the
+    # immediate upstream published it.
+    #
+    # A single `declared` field cannot express the common real case where a publisher
+    # redistributes third-party material under terms they negotiated. Khronos admits
+    # "semi-restrictive" assets to glTF-Sample-Assets "provided arrangements are made", and
+    # requires every asset to carry a licence that lets Khronos publish it *and* lets others
+    # use it in public. That arrangement is the grant a downstream consumer actually relies
+    # on; the SPDX id in the model's metadata records where the material came from.
+    #
+    # Flattening the two loses information whichever way you pick: name only the origin and
+    # you understate the rights and misattribute the terms to the publisher; name only the
+    # operative grant and you drop attribution the origin is owed. So both are recorded,
+    # `declared` is the layer relied on, and `underlying` is attributed in NOTICE.md.
+    underlying: list = field(default_factory=list)
 
     def __post_init__(self):
         if self.declared_scope not in SCOPES:
@@ -116,6 +131,18 @@ class LicenseSpec:
                 "license.redistributable = false requires license.prohibition quoting the "
                 "clause, so the reason survives without re-reading the upstream file"
             )
+        for i, layer in enumerate(self.underlying):
+            if not isinstance(layer, dict) or not layer.get("declared"):
+                raise ValueError(
+                    f"license.underlying[{i}] needs at least a `declared` identifier - an "
+                    f"unnamed layer attributes nothing"
+                )
+            if not layer.get("note"):
+                raise ValueError(
+                    f"license.underlying[{i}] ({layer['declared']}) needs a `note` saying "
+                    f"how the operative grant relates to it. Recording a restrictive layer "
+                    f"without explaining why we may still publish is worse than omitting it"
+                )
 
     @property
     def is_file_adjacent(self) -> bool:
@@ -143,6 +170,8 @@ class LicenseSpec:
         ):
             if val is not None:
                 out[key] = val
+        if self.underlying:
+            out["underlying"] = list(self.underlying)
         return out
 
 

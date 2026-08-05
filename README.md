@@ -17,7 +17,7 @@ suite can pin.
 | --- | ---: | ---: | --- |
 | `swf-ruffle-fixtures` | 4810 | 42.9 MB | Ruffle's SWF test corpus — SWF versions 4 through 50 |
 | `spine-fixtures` | 905 | 48.6 MB | 18 Spine example exports (skeleton data, atlases, textures) |
-| `gltf-khronos-fixtures` | 451 | 262.7 MB | 142 Khronos glTF 2.0 models — 28 KHR/EXT extensions exercised |
+| `gltf-khronos-fixtures` | 471 | 293.5 MB | 142 Khronos glTF 2.0 models — 28 KHR/EXT extensions exercised |
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
 | `rive-fixtures-unit` | — | ~139 MB | Rive unit-test assets — declared, not yet ingested |
 | `gltf-khronos-textures` | — | ~455 MB | Raster textures for the glTF models — declared, not ingested |
@@ -28,11 +28,17 @@ Two variants build from each pack: `-full` (everything not excluded) and `-permi
 permitted). `spine-fixtures` produces no `-permissive` archive — every Spine example is
 declared non-commercial.
 
-Six models across these packs are **not vendored at all**, because their declarations grant
-no redistribution right: Spine's `dragon` and `hero` ("may not be redistributed for any
-reason"), and glTF's `VirtualCity` (3DRT), `BrainStem` (Poser EULA), `EnvironmentTest`
-(Adobe Stock) and `Sponza` (CRYENGINE agreement). Each stays in its spec with the reason
-quoted, so the record of having checked survives.
+Two models are **not vendored at all**, because their declarations explicitly forbid
+redistribution: Spine's `dragon` (Thiago Brayner) and `hero` (XDTech), both "may not be
+redistributed for any reason". Each stays in its spec with the clause quoted, so the record
+of having checked survives.
+
+Licences are **layered**. `license.declared` is the grant relied on; `license.underlying`
+records the instrument the material carried before its publisher released it, attributed in
+`NOTICE.md` with its text shipped in `LICENSES/`. Four glTF models use this: Khronos admits
+"semi-restrictive" assets "provided arrangements are made" and requires every asset to permit
+public use, so the arrangement is the operative grant and Adobe Stock / CRYENGINE / Poser /
+3DRT are attributed beneath it.
 
 ## Usage
 

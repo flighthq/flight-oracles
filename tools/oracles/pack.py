@@ -118,6 +118,15 @@ def _notice(lock, entries) -> str:
             out.append("- Commercial use: unknown")
         if lic.get("sourceCode"):
             out.append(f"- Corresponding source: {lic['sourceCode']}")
+        # Attribution is the obligation the layered model creates: the operative grant is
+        # what we rely on, but the origin instrument is still owed a credit, and a reader
+        # deserves to see that the two differ.
+        for layer in lic.get("underlying", []):
+            out.append(f"- Underlying instrument: **{layer['declared']}**"
+                       + (f" (`{layer['declaredFrom']}`)" if layer.get("declaredFrom") else ""))
+            if layer.get("snapshot"):
+                out.append(f"  - Text: `LICENSES/{Path(layer['snapshot']).name}`")
+            out.append(f"  - {layer['note']}")
         out.append("")
 
     flagged = [e for e in entries if e.get("depicts")]
@@ -236,6 +245,12 @@ def _archive_members(lock, variant, entries, root):
         adjacent = sources[sid].get("adjacentPath")
         if adjacent:
             members[adjacent] = blob
+        # Underlying instruments ship their captured text too, so the attribution in
+        # NOTICE.md points at a document the reader actually has.
+        for layer in sources[sid]["license"].get("underlying", []):
+            snap_u = layer.get("snapshot")
+            if snap_u:
+                members[f"LICENSES/{Path(snap_u).name}"] = (root / snap_u).read_bytes()
 
     manifest = {
         "pack": lock["pack"],
