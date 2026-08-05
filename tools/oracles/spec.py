@@ -127,6 +127,11 @@ class SourceSpec:
     commit: str | None = None
     url: str | None = None          # for kind="recovered"
     retrieved: str | None = None
+    # "tarball" (default) is one request and right for most repos. "blobs" lists the git
+    # tree and fetches only the files the globs select — necessary where the repository
+    # dwarfs the slice we want (glTF-Sample-Assets is 1.4 GB), and where many sources share
+    # one repo, since it avoids re-walking a huge archive per source.
+    fetch: str = "tarball"
     strip: str = ""                 # upstream prefix removed from the archive path
     dest: str = ""                  # archive-relative prefix added back on
     exclude_paths: list = field(default_factory=list)
@@ -137,6 +142,11 @@ class SourceSpec:
             raise ValueError(f"source.kind must be one of {SOURCE_KINDS}, got {self.kind!r}")
         if self.kind == "upstream" and not self.repo:
             raise ValueError(f"source {self.id!r}: kind=upstream requires repo")
+        if self.fetch not in ("tarball", "blobs"):
+            raise ValueError(
+                f"source {self.id!r}: fetch must be \"tarball\" or \"blobs\", "
+                f"got {self.fetch!r}"
+            )
         if self.kind == "recovered" and self.license.declared != "UNKNOWN":
             raise ValueError(
                 f"source {self.id!r}: kind=recovered has no upstream declaration to "

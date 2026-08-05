@@ -16,14 +16,17 @@ trusted.
 
 from __future__ import annotations
 
+import concurrent.futures
 import datetime
+import functools
 import hashlib
-import io
 import json
 import os
+import subprocess
 import sys
 import tarfile
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -47,8 +50,29 @@ def _request(url, accept=None):
     return req
 
 
+@functools.lru_cache(maxsize=None)
 def resolve_commit(repo: str, ref: str) -> str:
-    """Resolve a branch/tag to an immutable commit SHA."""
+    """Resolve a branch/tag to an immutable commit SHA.
+
+    Prefers ``git ls-remote`` over the REST API for two reasons: it is not subject to the
+    60-requests-per-hour unauthenticated API limit, and it works wherever git credentials
+    do. Memoised because a pack may hold hundreds of sources against one repository —
+    glTF-Sample-Assets is 146 blocks, which would otherwise be 146 identical lookups and
+    an immediate rate-limit failure.
+    """
+    try:
+        out = subprocess.run(
+            ["git", "ls-remote", f"https://github.com/{repo}.git", ref, f"refs/heads/{ref}",
+             f"refs/tags/{ref}"],
+            capture_output=True, text=True, timeout=120, check=True,
+        ).stdout
+        for line in out.splitlines():
+            sha, _, name = line.partition("\t")
+            if name in (ref, f"refs/heads/{ref}", f"refs/tags/{ref}") and len(sha) == 40:
+                return sha
+    except (subprocess.SubprocessError, OSError):
+        pass  # fall through to the API
+
     url = f"https://api.github.com/repos/{repo}/commits/{ref}"
     with urllib.request.urlopen(_request(url, "application/vnd.github+json")) as resp:
         return json.load(resp)["sha"]
@@ -87,6 +111,58 @@ def _iter_members(tarball: Path):
             if handle is None:
                 continue
             yield parts[1], handle.read()
+
+
+def fetch_tree(repo: str, commit: str) -> list:
+    """List every blob in *repo* at *commit*, cached. One request, no download."""
+    CACHE.mkdir(parents=True, exist_ok=True)
+    dest = CACHE / f"tree-{repo.replace('/', '__')}@{commit[:12]}.json"
+    if dest.exists():
+        return json.loads(dest.read_text())
+    url = f"https://api.github.com/repos/{repo}/git/trees/{commit}?recursive=1"
+    with urllib.request.urlopen(_request(url, "application/vnd.github+json")) as resp:
+        doc = json.load(resp)
+    if doc.get("truncated"):
+        raise ValueError(
+            f"{repo}@{commit[:12]}: git tree response was truncated — blob mode cannot "
+            f"enumerate this repository reliably; use the default tarball mode"
+        )
+    tree = [x for x in doc.get("tree", []) if x.get("type") == "blob"]
+    dest.write_text(json.dumps(tree))
+    return tree
+
+
+def _blob_cached(repo: str, commit: str, path: str, blob_sha: str) -> bytes:
+    """Fetch one file's bytes, cached by its git blob SHA.
+
+    Keying the cache on the blob SHA rather than the path means the same content
+    referenced from several sources is fetched once, and a re-ingest at an unchanged
+    pin is free.
+    """
+    cache_dir = CACHE / "blobs" / blob_sha[:2]
+    cached = cache_dir / blob_sha
+    if cached.exists():
+        return cached.read_bytes()
+    url = f"https://raw.githubusercontent.com/{repo}/{commit}/{urllib.parse.quote(path)}"
+    with urllib.request.urlopen(_request(url)) as resp:
+        data = resp.read()
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    cached.write_bytes(data)
+    return data
+
+
+def _iter_blobs(repo: str, commit: str, wanted: list):
+    """Yield (repo-relative path, bytes) for *wanted* tree entries, fetched in parallel.
+
+    Sparse alternative to downloading a whole repository. glTF-Sample-Assets is 1.4 GB;
+    the slice we actually want is a fraction of that, and no CI run should pay for the
+    rest on every build.
+    """
+    def one(entry):
+        return entry["path"], _blob_cached(repo, commit, entry["path"], entry["sha"])
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+        yield from pool.map(one, wanted)
 
 
 def _sha256(data: bytes) -> str:
@@ -160,11 +236,21 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
             commit = resolved
         else:
             _log(f"  pinned at {commit[:12]} (--update to move)")
-        tarball = fetch_tarball(source.repo, commit)
+        if source.fetch == "blobs":
+            tree = fetch_tree(source.repo, commit)
+            wanted = [
+                e for e in tree
+                if source.selects(e["path"])
+                or e["path"] == source.license.declared_from
+            ]
+            _log(f"  {len(wanted)} of {len(tree)} blobs selected")
+            members = _iter_blobs(source.repo, commit, wanted)
+        else:
+            members = _iter_members(fetch_tarball(source.repo, commit))
 
         license_blob = None
         count = 0
-        for upstream_path, data in _iter_members(tarball):
+        for upstream_path, data in members:
             if source.license.declared_from and upstream_path == source.license.declared_from:
                 license_blob = data
             if not source.selects(upstream_path):

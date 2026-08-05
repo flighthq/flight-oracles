@@ -108,6 +108,45 @@ def _spine_atlas(data: bytes, name: str):
     return FormatInfo(kind="spine-atlas", version=None)
 
 
+def _glb(data: bytes):
+    """glTF binary container: 'glTF' magic, uint32 version, uint32 total length."""
+    if not data.startswith(b"glTF") or len(data) < 12:
+        return None
+    version, length = struct.unpack("<II", data[4:12])
+    return FormatInfo(kind="glb", version=str(version), totalLength=length)
+
+
+def _gltf_json(data: bytes):
+    """glTF JSON: {"asset": {"version": "2.0", ...}, ...}"""
+    if data.lstrip()[:1] != b"{":
+        return None
+    try:
+        doc = json.loads(data)
+    except (ValueError, UnicodeDecodeError):
+        return None
+    if not isinstance(doc, dict):
+        return None
+    asset = doc.get("asset")
+    if not isinstance(asset, dict) or "version" not in asset:
+        return None
+    info = FormatInfo(kind="gltf", version=str(asset["version"]))
+    # Extension coverage is the whole point of this corpus, so record it per file:
+    # it lets a test assert that every extension the decoder claims is exercised.
+    used = doc.get("extensionsUsed")
+    if isinstance(used, list):
+        info["extensionsUsed"] = sorted(str(x) for x in used)
+    required = doc.get("extensionsRequired")
+    if isinstance(required, list):
+        info["extensionsRequired"] = sorted(str(x) for x in required)
+    return info
+
+
+def _ktx2(data: bytes):
+    if not data.startswith(b"\xabKTX 20\xbb\r\n\x1a\n"):
+        return None
+    return FormatInfo(kind="ktx2", version="2.0")
+
+
 def _png(data: bytes):
     if not data.startswith(b"\x89PNG\r\n\x1a\n"):
         return None
@@ -120,7 +159,7 @@ def _png(data: bytes):
 
 def detect(data: bytes, name: str = "") -> FormatInfo | None:
     """Identify *data*, using *name* only where the bytes are ambiguous."""
-    for probe in (_riv, _swf, _png, _spine_json):
+    for probe in (_riv, _swf, _glb, _ktx2, _png, _gltf_json, _spine_json):
         info = probe(data)
         if info is not None:
             return info

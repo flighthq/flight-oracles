@@ -1,0 +1,2362 @@
+# gltf-khronos-binary — the .glb container variant of the Khronos sample models.
+#
+# DECLARED, NOT INGESTED. 455 MB, and largely duplicative: a .glb embeds the same geometry
+# and textures the glTF variant carries separately. Worth adopting when GLB container
+# handling specifically needs coverage beyond the handful of .glb files a smaller sample
+# would give; not worth 455 MB by default.
+[pack]
+name = "gltf-khronos-binary"
+kind = "fixtures"
+summary = "GLB container variant of the Khronos glTF sample models."
+
+[[source]]
+id = "binary-abeautifulgame"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/ABeautifulGame/LICENSE.md"
+commercial_use = true
+covers = "Original model — MaterialX Project, 2020 (owner: ASWF)."
+
+[[source]]
+id = "binary-alphablendmodetest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AlphaBlendModeTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2018 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-animatedcolorscube"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AnimatedColorsCube/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2024 (owner: Public)."
+
+[[source]]
+id = "binary-animatedcube"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AnimatedCube/LICENSE.md"
+commercial_use = true
+covers = "Everything — Norbert Nopper, 2017 (owner: UX3D)."
+
+[[source]]
+id = "binary-animatedmorphcube"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AnimatedMorphCube/LICENSE.md"
+commercial_use = true
+covers = "Everything — Microsoft, 2017 (owner: Public)."
+
+[[source]]
+id = "binary-animatedtriangle"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AnimatedTriangle/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+
+[[source]]
+id = "binary-animationpointeruvs"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AnimationPointerUVs/LICENSE.md"
+commercial_use = true
+covers = "3D asset and textures — Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH)."
+
+[[source]]
+id = "binary-anisotropybarnlamp"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AnisotropyBarnLamp/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2023 (owner: Copyright 2023 Wayfair, LLC)."
+
+[[source]]
+id = "binary-anisotropydisctest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AnisotropyDiscTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2023 (owner: Public)."
+
+[[source]]
+id = "binary-anisotropyrotationtest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AnisotropyRotationTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2023 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-anisotropystrengthtest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AnisotropyStrengthTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2023 (owner: Public)."
+
+[[source]]
+id = "binary-antiquecamera"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AntiqueCamera/LICENSE.md"
+commercial_use = true
+covers = "Everything — Maximillan Kamps, 2018 (owner: UX3D). Supplementary marks: LicenseRef-LegalMark-UX3D."
+
+[[source]]
+id = "binary-attenuationtest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/AttenuationTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2021 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-avocado"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/Avocado/LICENSE.md"
+commercial_use = true
+covers = "Everything — Microsoft, 2017 (owner: Public)."
+
+[[source]]
+id = "binary-barramundifish"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/BarramundiFish/LICENSE.md"
+commercial_use = true
+covers = "Everything — Microsoft, 2017 (owner: Public)."
+
+[[source]]
+id = "binary-boombox"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/BoomBox/LICENSE.md"
+commercial_use = true
+covers = "Everything — Microsoft, 2017 (owner: Public)."
+
+[[source]]
+id = "binary-boomboxwithaxes"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/BoomBoxWithAxes/LICENSE.md"
+commercial_use = true
+covers = "Everything — Microsoft, 2018 (owner: Public)."
+
+[[source]]
+id = "binary-box"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/Box/LICENSE.md"
+commercial_use = true
+covers = "Everything — Cesium, 2017 (owner: Cesium)."
+
+[[source]]
+id = "binary-boxanimated"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/BoxAnimated/LICENSE.md"
+commercial_use = true
+covers = "Everything — Cesium, 2017 (owner: Cesium)."
+
+[[source]]
+id = "binary-boxinterleaved"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/BoxInterleaved/LICENSE.md"
+commercial_use = true
+covers = "Everything — Cesium, 2017 (owner: Cesium)."
+
+[[source]]
+id = "binary-boxtextured"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "LicenseRef-CC-BY-TM"
+declared_scope = "file-adjacent"
+declared_from = "Models/BoxTextured/LICENSE.md"
+commercial_use = true
+covers = "Everything — Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium."
+
+[[source]]
+id = "binary-boxtexturednonpoweroftwo"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "LicenseRef-CC-BY-TM"
+declared_scope = "file-adjacent"
+declared_from = "Models/BoxTexturedNonPowerOfTwo/LICENSE.md"
+commercial_use = true
+covers = "Everything — Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium."
+
+[[source]]
+id = "binary-boxvertexcolors"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/BoxVertexColors/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2023 (owner: Public)."
+
+[[source]]
+id = "binary-cameras"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/Cameras/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+
+[[source]]
+id = "binary-carconcept"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CarConcept/LICENSE.md"
+commercial_use = true
+covers = "Model and textures — Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-carbonfibre"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CarbonFibre/LICENSE.md"
+commercial_use = true
+covers = "Models and Textures — Eric Chadwick, 2023 (owner: Wayfair)."
+
+[[source]]
+id = "binary-cesiumman"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "LicenseRef-CC-BY-TM"
+declared_scope = "file-adjacent"
+declared_from = "Models/CesiumMan/LICENSE.md"
+commercial_use = true
+covers = "Everything — Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium."
+
+[[source]]
+id = "binary-cesiummilktruck"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "LicenseRef-CC-BY-TM"
+declared_scope = "file-adjacent"
+declared_from = "Models/CesiumMilkTruck/LICENSE.md"
+commercial_use = true
+covers = "Everything — Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium."
+
+[[source]]
+id = "binary-chairdamaskpurplegold"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/ChairDamaskPurplegold/LICENSE.md"
+commercial_use = true
+covers = "Models and Textures — Eric Chadwick, 2021 (owner: Wayfair)."
+
+[[source]]
+id = "binary-chronographwatch"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/ChronographWatch/LICENSE.md"
+commercial_use = true
+covers = "Model and textures — Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-DGG, LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-clearcoatcarpaint"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/ClearCoatCarPaint/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2023 (owner: Public)."
+
+[[source]]
+id = "binary-clearcoattest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/ClearCoatTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2020 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-clearcoatwicker"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/ClearcoatWicker/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2023 (owner: Public)."
+
+[[source]]
+id = "binary-commercialrefrigerator"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CommercialRefrigerator/LICENSE.md"
+commercial_use = true
+covers = "Model and textures and all images in the README.md — Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH)."
+
+[[source]]
+id = "binary-comparealphacoverage"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareAlphaCoverage/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-compareambientocclusion"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareAmbientOcclusion/LICENSE.md"
+commercial_use = true
+covers = "Models — Polyhaven, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-compareanisotropy"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareAnisotropy/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-comparebasecolor"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareBaseColor/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-compareclearcoat"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareClearcoat/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-comparedispersion"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareDispersion/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-compareemissivestrength"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareEmissiveStrength/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-compareior"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareIor/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-compareiridescence"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareIridescence/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-comparemetallic"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareMetallic/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-comparenormal"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareNormal/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-compareroughness"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareRoughness/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-comparesheen"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareSheen/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-comparespecular"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareSpecular/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-comparetransmission"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareTransmission/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-comparevolume"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CompareVolume/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-corset"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/Corset/LICENSE.md"
+commercial_use = true
+covers = "Everything — Microsoft, 2017 (owner: UX3D)."
+
+[[source]]
+id = "binary-cube"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/Cube/LICENSE.md"
+commercial_use = true
+covers = "Everything — Norbert Nopper, 2017 (owner: UX3D)."
+
+[[source]]
+id = "binary-cubevisibility"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/CubeVisibility/LICENSE.md"
+commercial_use = true
+covers = "Everything — Aaron Franke, 2025 (owner: Khronos Group)."
+
+[[source]]
+id = "binary-damagedhelmet"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/DamagedHelmet/LICENSE.md"
+commercial_use = true
+covers = "Rebuild and conversion to glTF — ctxwing, 2018 (owner: ctxwing)."
+
+[[source]]
+id = "binary-diffusetransmissionplant"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/DiffuseTransmissionPlant/LICENSE.md"
+commercial_use = true
+covers = "Materials and animation — Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH)."
+
+[[source]]
+id = "binary-diffusetransmissionteacup"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/DiffuseTransmissionTeacup/LICENSE.md"
+commercial_use = true
+covers = "Models and Textures — Polyhaven.com, and Eric Chadwick, 2023 (owner: Public domain)."
+
+[[source]]
+id = "binary-diffusetransmissiontest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/DiffuseTransmissionTest/LICENSE.md"
+commercial_use = true
+covers = "Model and textures — Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-directionallight"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/DirectionalLight/LICENSE.md"
+commercial_use = true
+covers = "Everything — Rickard Sahlin, 2020 (owner: Public)."
+
+[[source]]
+id = "binary-dispersiontest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/DispersionTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2023 (owner: AGI)."
+
+[[source]]
+id = "binary-dragonattenuation"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "LicenseRef-Stanford-Graphics"
+declared_scope = "file-adjacent"
+declared_from = "Models/DragonAttenuation/LICENSE.md"
+commercial_use = false
+covers = "Original dragon model — Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory)."
+
+[[source]]
+id = "binary-dragondispersion"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "LicenseRef-Stanford-Graphics"
+declared_scope = "file-adjacent"
+declared_from = "Models/DragonDispersion/LICENSE.md"
+commercial_use = false
+covers = "Original dragon model — Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory)."
+
+[[source]]
+id = "binary-duck"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "SCEA"
+declared_scope = "file-adjacent"
+declared_from = "Models/Duck/LICENSE.md"
+commercial_use = true
+covers = "Everything — Sony, 2006 (owner: Sony)."
+
+[[source]]
+id = "binary-emissivestrengthtest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/EmissiveStrengthTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2022 (owner: AGI)."
+
+[[source]]
+id = "binary-flighthelmet"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/FlightHelmet/LICENSE.md"
+commercial_use = true
+covers = "Conversion from Maya — Gary Hsu, 2018 (owner: Public)."
+
+[[source]]
+id = "binary-fox"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/Fox/LICENSE.md"
+commercial_use = true
+covers = "Model — PixelMannen, 2014 (owner: Public)."
+
+[[source]]
+id = "binary-glamvelvetsofa"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/GlamVelvetSofa/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2021 (owner: Wayfair, LLC)."
+
+[[source]]
+id = "binary-glassbrokenwindow"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/GlassBrokenWindow/LICENSE.md"
+commercial_use = true
+covers = "Entire asset — Eric Chadwick, 2023 (owner: Wayfair)."
+
+[[source]]
+id = "binary-glasshurricanecandleholder"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/GlassHurricaneCandleHolder/LICENSE.md"
+commercial_use = true
+covers = "Model and textures — Eric Chadwick, 2021 (owner: Wayfair, LLC). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-glassvaseflowers"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/GlassVaseFlowers/LICENSE.md"
+commercial_use = true
+covers = "Glass vase — Eric Chadwick, 2023 (owner: Public)."
+
+[[source]]
+id = "binary-iortestgrid"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/IORTestGrid/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2023 (owner: Public)."
+
+[[source]]
+id = "binary-interpolationtest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/InterpolationTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Khronos, 2017 (owner: Public)."
+
+[[source]]
+id = "binary-iridescenceabalone"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/IridescenceAbalone/LICENSE.md"
+commercial_use = true
+covers = "Everything — Abby Crawford, 2015 (owner: Abby Crawford)."
+
+[[source]]
+id = "binary-iridescencedielectricspheres"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/IridescenceDielectricSpheres/LICENSE.md"
+commercial_use = true
+covers = "Everything — Khronos, 2019 (owner: Public)."
+
+[[source]]
+id = "binary-iridescencelamp"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/IridescenceLamp/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2022 (owner: Wayfair, LLC)."
+
+[[source]]
+id = "binary-iridescencemetallicspheres"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/IridescenceMetallicSpheres/LICENSE.md"
+commercial_use = true
+covers = "Everything — UX3D, 2022 (owner: UX3D)."
+
+[[source]]
+id = "binary-iridescencesuzanne"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/IridescenceSuzanne/LICENSE.md"
+commercial_use = true
+covers = "Initial version — Mathias Kanzler, 2022 (owner: UX3D)."
+
+[[source]]
+id = "binary-iridescentdishwitholives"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/IridescentDishWithOlives/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2020 (owner: Wayfair, LLC)."
+
+[[source]]
+id = "binary-lantern"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/Lantern/LICENSE.md"
+commercial_use = true
+covers = "Initial version — sbtron, 2017 (owner: Microsoft)."
+
+[[source]]
+id = "binary-lightvisibility"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/LightVisibility/LICENSE.md"
+commercial_use = true
+covers = "Everything — Aaron Franke, 2025 (owner: Khronos Group)."
+
+[[source]]
+id = "binary-lightspunctuallamp"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/LightsPunctualLamp/LICENSE.md"
+commercial_use = true
+covers = "Everything — DGG, 2021 (owner: DGG)."
+
+[[source]]
+id = "binary-mandarinorange"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/MandarinOrange/LICENSE.md"
+commercial_use = true
+covers = "Initial creation — zamdreamer, 2015 (owner: zamdreamer)."
+
+[[source]]
+id = "binary-materialsvariantsshoe"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/MaterialsVariantsShoe/LICENSE.md"
+commercial_use = true
+covers = "Everthing — Shopify, 2021 (owner: Shopify)."
+
+[[source]]
+id = "binary-meshprimitivemodes"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/MeshPrimitiveModes/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2023 (owner: Public)."
+
+[[source]]
+id = "binary-meshoptcubetest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/MeshoptCubeTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Arseny Kapoulkine, 2025 (owner: Public)."
+
+[[source]]
+id = "binary-metalroughspheres"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/MetalRoughSpheres/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2017 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-metalroughspheresnotextures"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/MetalRoughSpheresNoTextures/LICENSE.md"
+commercial_use = true
+covers = "Everything — Krill Gavrilov, 2019 (owner: Public)."
+
+[[source]]
+id = "binary-morphprimitivestest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/MorphPrimitivesTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — ft-lab, 2018 (owner: ft-lab)."
+
+[[source]]
+id = "binary-morphstresstest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/MorphStressTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2021 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-mosquitoinamber"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/MosquitoInAmber/LICENSE.md"
+commercial_use = true
+covers = "Model — Loic Norgeot, 2018 (owner: Sketchfab)."
+
+[[source]]
+id = "binary-multiuvtest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/MultiUVTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Hilo 3D, 2017 (owner: Hilo 3D). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-multiplescenes"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/MultipleScenes/LICENSE.md"
+commercial_use = true
+covers = "Everything — Public, 2017 (owner: Public)."
+
+[[source]]
+id = "binary-negativescaletest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/NegativeScaleTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2023 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-nodeperformancetest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/NodePerformanceTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Jon Aspeheim, 2024 (owner: Public)."
+
+[[source]]
+id = "binary-normaltangentmirrortest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/NormalTangentMirrorTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2018 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-normaltangenttest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/NormalTangentTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2018 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-orientationtest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/OrientationTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Khronos, 2017 (owner: Unknown)."
+
+[[source]]
+id = "binary-playsetlighttest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC BY-NC-SA 4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/PlaysetLightTest/LICENSE.md"
+commercial_use = false
+covers = "Everything — Inter IKEA Systems B.V., 2024 (owner: Inter IKEA Systems B.V.)."
+
+[[source]]
+id = "binary-pointlightintensitytest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/PointLightIntensityTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2025 (owner: Public)."
+
+[[source]]
+id = "binary-potofcoals"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/PotOfCoals/LICENSE.md"
+commercial_use = true
+covers = "Model and textures — Eric Chadwick, 2023 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-potofcoalsanimationpointer"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/PotOfCoalsAnimationPointer/LICENSE.md"
+commercial_use = true
+covers = "Model and textures — Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-primitivemodenormalstest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/PrimitiveModeNormalsTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Unknown, 2020 (owner: public)."
+
+[[source]]
+id = "binary-recursiveskeletons"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/RecursiveSkeletons/LICENSE.md"
+commercial_use = true
+covers = "Everything — Cesium, 2017 (owner: Cesium)."
+
+[[source]]
+id = "binary-riggedfigure"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/RiggedFigure/LICENSE.md"
+commercial_use = true
+covers = "Everything — Cesium, 2017 (owner: Cesium)."
+
+[[source]]
+id = "binary-riggedsimple"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/RiggedSimple/LICENSE.md"
+commercial_use = true
+covers = "Everything — Cesium, 2017 (owner: Cesium)."
+
+[[source]]
+id = "binary-scatteringskull"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/ScatteringSkull/LICENSE.md"
+commercial_use = true
+covers = "Everything — Vladimir Petkovic, 2025 (owner: Public)."
+
+[[source]]
+id = "binary-scifihelmet"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SciFiHelmet/LICENSE.md"
+commercial_use = true
+covers = "Everything — Michael Pavlovic, 2017 (owner: Public)."
+
+[[source]]
+id = "binary-sheenchair"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SheenChair/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2020 (owner: Wayfair, LLC)."
+
+[[source]]
+id = "binary-sheencloth"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SheenCloth/LICENSE.md"
+commercial_use = true
+covers = "Everything — Microsoft, 2020 (owner: Microsoft)."
+
+[[source]]
+id = "binary-sheentestgrid"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SheenTestGrid/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2023 (owner: Public)."
+
+[[source]]
+id = "binary-sheenwoodleathersofa"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SheenWoodLeatherSofa/LICENSE.md"
+commercial_use = true
+covers = "Improvements — Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH)."
+
+[[source]]
+id = "binary-simpleinstancing"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SimpleInstancing/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2023 (owner: Public)."
+
+[[source]]
+id = "binary-simplematerial"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SimpleMaterial/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+
+[[source]]
+id = "binary-simplemeshes"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SimpleMeshes/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+
+[[source]]
+id = "binary-simplemorph"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SimpleMorph/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+
+[[source]]
+id = "binary-simpleskin"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SimpleSkin/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+
+[[source]]
+id = "binary-simplesparseaccessor"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SimpleSparseAccessor/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+
+[[source]]
+id = "binary-simpletexture"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SimpleTexture/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+
+[[source]]
+id = "binary-specglossvsmetalrough"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SpecGlossVsMetalRough/LICENSE.md"
+commercial_use = true
+covers = "Everything — Microsoft, 2017 (owner: Microsoft)."
+
+[[source]]
+id = "binary-specularsilkpouf"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SpecularSilkPouf/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2023 (owner: Copyright 2023 Wayfair, LLC)."
+
+[[source]]
+id = "binary-speculartest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SpecularTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2021 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-stainedglasslamp"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/StainedGlassLamp/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2021 (owner: Wayfair)."
+
+[[source]]
+id = "binary-sunglasseskhronos"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/SunglassesKhronos/LICENSE.md"
+commercial_use = true
+covers = "Model and textures and all images in the README.md — Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+[[source]]
+id = "binary-suzanne"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/Suzanne/LICENSE.md"
+commercial_use = true
+covers = "Everything — Norbert Nopper, 2017 (owner: UX3D)."
+
+[[source]]
+id = "binary-texturecoordinatetest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TextureCoordinateTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2017 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-textureencodingtest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TextureEncodingTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — lexaknyazev, 2017 (owner: Public)."
+
+[[source]]
+id = "binary-texturelinearinterpolationtest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TextureLinearInterpolationTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — lexaknyazev, 2017 (owner: Public)."
+
+[[source]]
+id = "binary-texturesettingstest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TextureSettingsTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2017 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-texturetransformmultitest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TextureTransformMultiTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2020 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-texturetransformtest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TextureTransformTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Microsoft, 2018 (owner: Microsoft)."
+
+[[source]]
+id = "binary-toycar"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/ToyCar/LICENSE.md"
+commercial_use = true
+covers = "Initial car model — Guido Odendahl, 2020 (owner: Public)."
+
+[[source]]
+id = "binary-transmissionordertest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TransmissionOrderTest/LICENSE.md"
+commercial_use = true
+covers = "Everything but the cloth backdrop — Ed Mackey, 2025 (owner: Public)."
+
+[[source]]
+id = "binary-transmissionroughnesstest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TransmissionRoughnessTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2021 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-transmissiontest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TransmissionTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Adobe, 2020 (owner: Public)."
+
+[[source]]
+id = "binary-transmissionthinwalltestgrid"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TransmissionThinwallTestGrid/LICENSE.md"
+commercial_use = true
+covers = "Everything — Eric Chadwick, 2023 (owner: Public)."
+
+[[source]]
+id = "binary-triangle"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/Triangle/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+
+[[source]]
+id = "binary-trianglewithoutindices"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TriangleWithoutIndices/LICENSE.md"
+commercial_use = true
+covers = "Everything — Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+
+[[source]]
+id = "binary-twosidedplane"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/TwoSidedPlane/LICENSE.md"
+commercial_use = true
+covers = "Everything — Norbert Nopper, 2017 (owner: UX3D)."
+
+[[source]]
+id = "binary-usdshaderballforgltf"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/USDShaderBallForGltf/LICENSE.md"
+commercial_use = true
+covers = "Model and textures and all images in the README.md — Geometry and textures: Chris Rydalch; original specification and validation: André Mazzone; original scene, inspiration and consultation: Thomas Anagnostou; glTF conversion: Eric Chadwick, 2026 (owner: Eric Chadwick)."
+
+[[source]]
+id = "binary-unlittest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/UnlitTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2019 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-vertexcolortest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/VertexColorTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Ed Mackey, 2018 (owner: Analytical Graphics, Inc.)."
+
+[[source]]
+id = "binary-waterbottle"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/WaterBottle/LICENSE.md"
+commercial_use = true
+covers = "Everything — Microsoft, 2017 (owner: Public)."
+
+[[source]]
+id = "binary-xmpmetadataroundedcube"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/XmpMetadataRoundedCube/LICENSE.md"
+commercial_use = true
+covers = "Everything — Adam Morris, 2021 (owner: Adam Morris)."
+
+# NOT VENDORED — see license.prohibition. Kept so the record of having checked
+# is durable and nobody re-adds it without reading why.
+[[source]]
+id = "binary-brainstem"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "LicenseRef-Poser-EULA"
+declared_scope = "file-adjacent"
+declared_from = "Models/BrainStem/LICENSE.md"
+commercial_use = true
+covers = "Everything — Keith Hunter, 2017 (owner: Smith Micro Software, Inc.)."
+redistributable = false
+prohibition = "Declared under the Poser End User License Agreement (Smith Micro Software). An EULA licenses an end user; it conveys no right to redistribute the content as a standalone asset."
+
+# NOT VENDORED — see license.prohibition. Kept so the record of having checked
+# is durable and nobody re-adds it without reading why.
+[[source]]
+id = "binary-environmenttest"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "LicenseRef-Adobe-Stock"
+declared_scope = "file-adjacent"
+declared_from = "Models/EnvironmentTest/LICENSE.md"
+commercial_use = true
+covers = "Everything — Adobe, 2017 (owner: Adobe)."
+redistributable = false
+prohibition = "Declared under the Adobe Stock License. The bundled LICENSES/LicenseRef-Adobe-Stock.txt is a URL reference only; Adobe Stock terms do not permit redistributing a stock asset as such."
+
+# NOT VENDORED — see license.prohibition. Kept so the record of having checked
+# is durable and nobody re-adds it without reading why.
+[[source]]
+id = "binary-sponza"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "LicenseRef-CRYENGINE-Agreement"
+declared_scope = "file-adjacent"
+declared_from = "Models/Sponza/LICENSE.md"
+commercial_use = true
+covers = "Everything — Crytek, 2016 (owner: Crytek)."
+redistributable = false
+prohibition = "Declared under the CRYENGINE Limited License Agreement. The bundled LICENSES/LicenseRef-CRYENGINE-Agreement.txt is a URL reference only — no grant is captured at the pinned commit, and a proprietary engine agreement is not a redistribution licence."
+
+# NOT VENDORED — see license.prohibition. Kept so the record of having checked
+# is durable and nobody re-adds it without reading why.
+[[source]]
+id = "binary-virtualcity"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["__none__"]
+strip = "Models/"
+
+[source.license]
+declared = "LicenseRef-3DRT-Testing"
+declared_scope = "file-adjacent"
+declared_from = "Models/VirtualCity/LICENSE.md"
+commercial_use = true
+covers = "Everything — 3DRT, 2017 (owner: 3DRT)."
+redistributable = false
+prohibition = "You are not permitted to: Market, distribute, give, transfer, sell or sublicense the products in any form with the exception of a compiled application such as a video game. By special exemption for this model only, 3DRT allows the use of this model 'for use *only* in testing your glTF tools such as loaders and importers.' The exemption covers USE, not redistribution."

@@ -46,6 +46,41 @@ class TestFormats(unittest.TestCase):
         self.assertEqual(info["major"], 128)
         self.assertEqual(info["minor"], 2)
 
+    def test_glb_container(self):
+        import struct
+        info = formats.detect(b"glTF" + struct.pack("<II", 2, 512), "a.glb")
+        self.assertEqual(info["kind"], "glb")
+        self.assertEqual(info["version"], "2")
+        self.assertEqual(info["totalLength"], 512)
+
+    def test_gltf_records_extensions(self):
+        # Extension coverage is the reason this corpus exists, so it has to be queryable
+        # from the manifest rather than only by re-reading every file.
+        blob = json.dumps({
+            "asset": {"version": "2.0"},
+            "extensionsUsed": ["KHR_materials_sheen", "KHR_draco_mesh_compression"],
+            "extensionsRequired": ["KHR_draco_mesh_compression"],
+        }).encode()
+        info = formats.detect(blob, "a.gltf")
+        self.assertEqual(info["kind"], "gltf")
+        self.assertEqual(info["version"], "2.0")
+        self.assertEqual(info["extensionsUsed"],
+                         ["KHR_draco_mesh_compression", "KHR_materials_sheen"])
+        self.assertEqual(info["extensionsRequired"], ["KHR_draco_mesh_compression"])
+
+    def test_gltf_not_confused_with_spine_json(self):
+        # Both are JSON objects; the probes must key off their own marker field.
+        gltf = json.dumps({"asset": {"version": "2.0"}}).encode()
+        spine = json.dumps({"skeleton": {"spine": "4.2.11"}}).encode()
+        self.assertEqual(formats.detect(gltf, "x.gltf")["kind"], "gltf")
+        self.assertEqual(formats.detect(spine, "x.json")["kind"], "spine-json")
+        self.assertIsNone(formats.detect(b'{"unrelated":1}', "x.json"))
+
+    def test_ktx2_container(self):
+        self.assertEqual(
+            formats.detect(b"\xabKTX 20\xbb\r\n\x1a\n" + b"\x00" * 32, "t.ktx2")["kind"],
+            "ktx2")
+
     def test_spine_json_version(self):
         blob = json.dumps({"skeleton": {"spine": "4.2.11"}}).encode()
         self.assertEqual(formats.detect(blob, "x.json")["version"], "4.2.11")
@@ -91,6 +126,15 @@ class TestSpecValidation(unittest.TestCase):
     def test_file_adjacent_flag(self):
         self.assertTrue(self._license(declared_scope="file-adjacent").is_file_adjacent)
         self.assertFalse(self._license(declared_scope="directory").is_file_adjacent)
+
+    def test_fetch_mode_is_validated(self):
+        def source(**kw):
+            return spec.SourceSpec(id="s", kind="upstream", repo="o/r", include=["**"],
+                                   license=self._license(), **kw)
+        self.assertEqual(source().fetch, "tarball")
+        source(fetch="blobs")
+        with self.assertRaises(ValueError):
+            source(fetch="sparse-checkout")
 
 
 class TestGlobs(unittest.TestCase):

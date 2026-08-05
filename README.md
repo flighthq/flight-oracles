@@ -15,15 +15,24 @@ suite can pin.
 
 | Pack | Files | Size | Sources |
 | --- | ---: | ---: | --- |
-| `spine-fixtures` | 905 | 48.6 MB | 18 Spine example exports (skeleton data, atlases, textures) |
 | `swf-ruffle-fixtures` | 4810 | 42.9 MB | Ruffle's SWF test corpus — SWF versions 4 through 50 |
+| `spine-fixtures` | 905 | 48.6 MB | 18 Spine example exports (skeleton data, atlases, textures) |
+| `gltf-khronos-fixtures` | 451 | 262.7 MB | 142 Khronos glTF 2.0 models — 28 KHR/EXT extensions exercised |
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
 | `rive-fixtures-unit` | — | ~139 MB | Rive unit-test assets — declared, not yet ingested |
+| `gltf-khronos-textures` | — | ~455 MB | Raster textures for the glTF models — declared, not ingested |
+| `gltf-khronos-binary` | — | ~455 MB | GLB container variant — declared, not ingested |
 
 Two variants build from each pack: `-full` (everything not excluded) and `-permissive`
 (declared-permissive licence, no unresolved third-party subject matter, commercial use
 permitted). `spine-fixtures` produces no `-permissive` archive — every Spine example is
 declared non-commercial.
+
+Six models across these packs are **not vendored at all**, because their declarations grant
+no redistribution right: Spine's `dragon` and `hero` ("may not be redistributed for any
+reason"), and glTF's `VirtualCity` (3DRT), `BrainStem` (Poser EULA), `EnvironmentTest`
+(Adobe Stock) and `Sponza` (CRYENGINE agreement). Each stays in its spec with the reason
+quoted, so the record of having checked survives.
 
 ## Usage
 
