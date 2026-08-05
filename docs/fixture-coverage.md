@@ -28,13 +28,66 @@ That is precisely the gap this repository closes: making those corpora durable, 
 and citable, so validation is a CI job rather than a one-time manual exercise whose result
 survives only as prose.
 
-## Consumption
+## Fixtures and oracles belong in one repository
 
-flight already has the integration point. `scripts/warm-assets.ts` walks consumers holding an
-`assets.manifest.json` and calls `downloadConsumerAssets` into `.cache/assets/<consumer>`;
-`flighthq/flight-assets` uses the same shape for example media, hosted on GitHub Releases.
-Our per-release `index.json` slots into that directly — a fixture consumer is just another
-manifest, and `npm run assets` warms it.
+Not as a filing preference — the coupling is in the upstream sources themselves:
+
+- Unicode's `BidiTest.txt` puts the input and its required output **on the same line**. There
+  is no fixture to separate from the oracle; they are the same bytes.
+- Khronos `glTF-Asset-Generator` ships assets beside a manifest describing each case's
+  expected result, in one tree.
+- Ruffle stores `test.swf` and its `output.txt` in the same directory.
+- PngSuite's corrupt files are only meaningful alongside their documented expected behaviour.
+
+Splitting these across repositories would mean tearing apart directories that arrive coupled
+and inventing a join key to reassemble them. The provenance chain argues the same way: an
+oracle inherits its fixture's declaration, so the two must move and version together or the
+inheritance silently breaks.
+
+**Pack boundaries should follow how upstream ships it, not a fixture/oracle taxonomy we
+impose.** Where upstream couples them, one pack. Where we later *generate* goldens ourselves
+— rendered output — that becomes a separate pack, because it has different size, churn, and
+regeneration characteristics, not because it is a different category of thing.
+
+(`flighthq/flight-conformance` exists as an empty stub. If it is meant to hold the conformance
+*runner* rather than the data, these stay complementary; worth settling before either grows.)
+
+## Consumption: the flight-assets shape does not fit archives
+
+`flighthq/flight-assets` uses a flat `assets.manifest.json` of `{url, path}` entries — 46 of
+them, one per file, each pointing at an individual release asset. `scripts/warm-assets.ts`
+walks consumers holding such a manifest and calls `downloadConsumerAssets` into
+`.cache/assets/<consumer>`.
+
+That shape is right for loose media that is never archived, and wrong here.
+`swf-ruffle-fixtures` alone is 4,810 files: it would need 4,810 manifest entries, or a single
+entry pointing at a tarball the downloader has no idea how to unpack. It also carries no
+digests, so nothing is verified on arrival.
+
+A fixture consumer should reference a **pack and version**, not files:
+
+```jsonc
+// fixtures.manifest.json
+{
+  "release": "v0.3.0",
+  "packs": [
+    { "pack": "gltf-khronos-fixtures", "variant": "permissive" },
+    { "pack": "swf-ruffle-fixtures",   "variant": "full" }
+  ]
+}
+```
+
+The resolver fetches that release's `index.json`, matches each pack and variant to its
+artifact, verifies the recorded SHA-256, and extracts to `.cache/fixtures/<pack>/`. One entry
+per corpus instead of thousands, integrity checked, and the version pinned by a single string.
+
+The payoff beyond ergonomics: the extracted tree contains the archive's own `manifest.json`,
+so a test can query provenance locally — skip entries carrying `depicts`, assert a decoder
+handles every `format.version` present, or exclude non-commercial sources from a published
+demo — without any of that knowledge being hardcoded in flight.
+
+This can live beside the flight-assets pattern rather than replacing it; the two solve
+different problems and both can be warmed by the same top-level script.
 
 ## Coverage table
 
@@ -53,7 +106,7 @@ Status: ✅ shipped · ◐ declared, not ingested · ○ not started
 | ○ `mesh-legacy-fixtures` | OBJ, MTL, MD2, MD5, 3DS, AWD2 | `scene3d-formats` | flighthq-ports/awayjs-examples (AWD2) + per-format | MIT |
 | ○ `texture-container-fixtures` | KTX2, Basis, DDS, ATF | `texture-formats` | KTX-Software, basis_universal | NOASSERTION / Apache-2.0 |
 | ○ `draco-fixtures` | Draco-compressed meshes | `scene3d-formats` | google/draco | Apache-2.0 |
-| ○ `font-fixtures` | TTF, OTF, WOFF, WOFF2, EOT | `font`, `textshaper` | google/fonts, harfbuzz | OFL-1.1 / NOASSERTION |
+| ○ `font-signature-fixtures` | TTF/OTF/WOFF/WOFF2/TTC signatures | `font` | **synthesized** — see below | n/a |
 | ○ `text-conformance-fixtures` | UAX #9/#14/#29 | `textbidi`, `textsegment` | Unicode UCD | Unicode-3.0 |
 | ○ `text-rendering-fixtures` | shaping cases | `textshaper`, `textlayout` | unicode-org/text-rendering-tests | NOASSERTION |
 | ○ `image-fixtures` | PNG, JPEG, GIF, WebP, AVIF, BMP, TIFF, ICO | `image-codec` | PngSuite, libwebp, av1-avif | varies |
@@ -67,6 +120,28 @@ Status: ✅ shipped · ◐ declared, not ingested · ○ not started
 | ○ `video-fixtures` | MP4, WebM, Ogg, MOV, 3GPP, MKV | `video` | per-codec samples | varies |
 | ○ `swf-generated-fixtures` | targeted SWF tags | `swf` | self-compiled (Apache Flex SDK) | Apache-2.0 |
 | ○ `malformed-fixtures` | truncated/corrupt, all formats | all decoders | derived + PngSuite | derived |
+
+## Fonts need almost nothing — flight does not implement shaping
+
+Worth stating explicitly, because "font formats" reads like a large sourcing job and is not.
+
+`packages/font/src/fontFormat.ts` is the whole font-file obligation, and it is a **four-byte
+magic-number sniff**: `00 01 00 00` → truetype, `OTTO` → opentype, `wOFF` → woff,
+`wOF2` → woff2, `ttcf` → collection, `true` → truetype. Its sibling
+`inferFontFormatFromUrl` is pure string handling on the extension. Neither reads a glyph.
+
+So the fixtures are six files of four bytes each, plus a couple of near-miss cases to prove
+the sniffer rejects rather than guesses. Those are **synthesized, not sourced** — no upstream
+corpus, no licence question, no megabytes. `google/fonts` at 3.2 GB would buy nothing.
+
+The reason is architectural: `textshaper-canvas` delegates glyph shaping to the platform
+(`canvasTextShaper.ts` over canvas text measurement). What flight implements itself is
+*itemization, clustering, bidi, and segmentation* — `textShaperItemize.ts`,
+`textShaperCluster.ts`, `textbidi`, `textsegment`. Those are exercised by **Unicode character
+data, not by font binaries**, which is exactly what `text-conformance-fixtures` supplies.
+
+If a real font is ever needed for an end-to-end path, `flighthq/flight-assets` already ships
+several — that is example media, and it is the right home for it.
 
 ## Three findings worth acting on
 
@@ -123,9 +198,18 @@ that silently mis-parses an unsupported version is the failure mode with no symp
 
 ## Suggested sequencing
 
-1. **`gltf-khronos-fixtures`** — largest coverage win per unit of work. 148 models against a
-   package implementing 17 extensions, and the per-model `LICENSE.md` layout is exactly the
+1. **`gltf-khronos-fixtures`** — largest coverage win per unit of work, and it earns its place
+   twice: 148 models against a package implementing 17 extensions, *and* a ready-made source
+   of demo and example content. The per-model `LICENSE.md` layout is exactly the
    `declaredScope: file-adjacent` case the pipeline already handles.
+
+   Dual use raises the stakes on the licence metadata, in a good way. Most models are
+   CC-BY-4.0 or CC0; CC-BY **requires attribution wherever the work appears**, so a demo
+   shipping one owes credit in the running application, not merely in the archive's
+   `NOTICE.md`. The per-model declarations make that mechanical: the `-permissive` variant
+   separates the no-attribution CC0 models cleanly, and `NOTICE.md` is already generated in a
+   form a demo build can consume for its credits screen. Sourcing them here rather than in
+   `flight-assets` means demo content inherits the same provenance record as test content.
 2. **`text-conformance-fixtures`** — tiny, unambiguous, and delivers working oracles
    immediately for `textbidi`/`textsegment`.
 3. **`malformed-fixtures`** — mostly generated, validates the null-sentinel contract across

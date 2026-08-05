@@ -259,6 +259,15 @@ spine-fixtures          rive-fixtures          swf-ruffle-fixtures
 Each versioned independently, with an `index.json` on the release listing every pack and its
 digest so consumers resolve programmatically rather than hardcoding filenames.
 
+**Follow upstream's coupling, not our taxonomy.** The split above is a default, not a rule to
+enforce against the sources. Where an upstream ships a fixture and its expected output
+together — Unicode's `BidiTest.txt` carries input and required output on one line, Ruffle
+stores `test.swf` beside `output.txt`, glTF-Asset-Generator pairs assets with a
+results manifest — they belong in **one** pack. Separating them would mean dismantling a
+directory that arrives coupled and inventing a join key to put it back. Goldens we generate
+ourselves are the case that genuinely splits, because their size and churn differ, not
+because they are a different kind of thing.
+
 The decisive reason is **cache invalidation downstream**, not the 2 GB per-asset cap.
 Consumers cache by archive digest; in a monolith, changing one SWF fixture invalidates the
 whole cache and every CI job re-downloads everything, goldens included. Split packs make that
