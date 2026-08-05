@@ -18,7 +18,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "LICENSE.md",
-        "covers": "Ruffle LLC and Ruffle contributors' authorship of the test SWFs."
+        "covers": "Ruffle LLC and Ruffle contributors' authorship of the test SWFs.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/ruffle-authored@19039c3adee2.txt"
     },
@@ -36,7 +37,8 @@
         "redistributable": true,
         "declaredFrom": "tests/tests/swfs/from_gnash/README.md",
         "covers": "GNU Gnash project test cases, imported by Ruffle under their originating terms.",
-        "sourceCode": "https://github.com/ruffle-rs/gnash-testsuite \u2014 Ruffle's fork of the Gnash testsuite, named by from_gnash/README.md as the origin of these modified tests. This, not upstream Gnash, is the corresponding source for the SWFs actually distributed here."
+        "sourceCode": "https://github.com/ruffle-rs/gnash-testsuite \u2014 Ruffle's fork of the Gnash testsuite, named by from_gnash/README.md as the origin of these modified tests. This, not upstream Gnash, is the corresponding source for the SWFs actually distributed here.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/ruffle-from-gnash@19039c3adee2.txt"
     },
@@ -53,7 +55,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "tests/tests/swfs/from_avmplus/README.md",
-        "covers": "Adobe avmplus ActionScript VM acceptance tests, imported by Ruffle."
+        "covers": "Adobe avmplus ActionScript VM acceptance tests, imported by Ruffle.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/ruffle-from-avmplus@19039c3adee2.txt"
     },
@@ -70,7 +73,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "tests/tests/swfs/from_shumway/README.md",
-        "covers": "Mozilla Shumway test cases, imported by Ruffle."
+        "covers": "Mozilla Shumway test cases, imported by Ruffle.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/ruffle-from-shumway@19039c3adee2.txt"
     }

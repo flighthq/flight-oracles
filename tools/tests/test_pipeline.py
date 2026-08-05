@@ -128,6 +128,21 @@ class TestSpecValidation(unittest.TestCase):
         self.assertIn("DVD player", guidance)
         self.assertIn("PIXEL GOLDENS", guidance)
 
+    def test_onward_use_is_validated(self):
+        with self.assertRaises(ValueError):
+            self._license(onward_use="wherever")
+
+    def test_unrestricted_cannot_contradict_noncommercial(self):
+        with self.assertRaises(ValueError):
+            self._license(onward_use="unrestricted", commercial_use=False)
+        self._license(onward_use="non-commercial", commercial_use=False)
+
+    def test_onward_use_omitted_when_nothing_may_be_redistributed(self):
+        # "How far may it travel" has no answer for material that never enters the build;
+        # a default value in the lock would be misleading rather than merely unused.
+        lic = self._license(redistributable=False, prohibition="may not be redistributed")
+        self.assertNotIn("onwardUse", lic.to_json())
+
     def test_underlying_layer_requires_an_identifier(self):
         with self.assertRaises(ValueError):
             self._license(underlying=[{"note": "n"}])
@@ -201,6 +216,7 @@ def _lock(**overrides):
                 "license": {
                     "declared": "MIT", "declaredScope": "repository-root",
                     "commercialUse": True, "redistributable": True,
+                    "onwardUse": "unrestricted",
                 },
             }
         ],
@@ -229,6 +245,27 @@ class TestSelection(unittest.TestCase):
         lock["sources"][0]["license"]["redistributable"] = False
         with self.assertRaises(pack.ExclusionBreach):
             pack.select(lock, "full")
+
+    def test_demo_variant_keeps_noncommercial_but_drops_testing_only(self):
+        # The tier that did not exist before: spineboy is redistributable and meant to be
+        # shown; a model licensed only for testing glTF loaders is not. Collapsing both into
+        # "not permissive" lost that distinction.
+        lock = _lock()
+        lock["sources"][0]["license"].update(commercialUse=False, onwardUse="non-commercial")
+        self.assertEqual(len(pack.select(lock, "demo")[0]), 2)
+        lock["sources"][0]["license"]["onwardUse"] = "testing-only"
+        self.assertEqual(pack.select(lock, "demo")[0], [])
+
+    def test_demo_variant_drops_unknown_scope(self):
+        lock = _lock()
+        lock["sources"][0]["license"]["onwardUse"] = "unknown"
+        self.assertEqual(pack.select(lock, "demo")[0], [])
+        self.assertEqual(len(pack.select(lock, "full")[0]), 2)
+
+    def test_permissive_requires_unrestricted_onward_use(self):
+        lock = _lock()
+        lock["sources"][0]["license"]["onwardUse"] = "non-commercial"
+        self.assertEqual(pack.select(lock, "permissive")[0], [])
 
     def test_permissive_drops_noncommercial(self):
         lock = _lock()

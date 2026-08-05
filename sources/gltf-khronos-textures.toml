@@ -2831,6 +2831,7 @@ declared = "LicenseRef-Stanford-Graphics"
 declared_scope = "file-adjacent"
 declared_from = "Models/DragonAttenuation/LICENSE.md"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Original dragon model — Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory)."
 
 [[source]]
@@ -2878,6 +2879,7 @@ declared = "LicenseRef-Stanford-Graphics"
 declared_scope = "file-adjacent"
 declared_from = "Models/DragonDispersion/LICENSE.md"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Original dragon model — Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory)."
 
 [[source]]
@@ -4570,6 +4572,7 @@ declared = "CC BY-NC-SA 4.0"
 declared_scope = "file-adjacent"
 declared_from = "Models/PlaysetLightTest/LICENSE.md"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Everything — Inter IKEA Systems B.V., 2024 (owner: Inter IKEA Systems B.V.)."
 
 [[source]]

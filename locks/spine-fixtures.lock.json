@@ -18,7 +18,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/alien/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-alien@b81e5a58ed38.txt",
       "adjacentPath": "alien/license.txt"
@@ -36,7 +37,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/celestial-circus/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-celestial-circus@b81e5a58ed38.txt",
       "adjacentPath": "celestial-circus/license.txt"
@@ -54,7 +56,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/chibi-stickers/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2022, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2022, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-chibi-stickers@b81e5a58ed38.txt",
       "adjacentPath": "chibi-stickers/license.txt"
@@ -72,7 +75,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/cloud-pot/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-cloud-pot@b81e5a58ed38.txt",
       "adjacentPath": "cloud-pot/license.txt"
@@ -90,7 +94,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/coin/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2018, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2018, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-coin@b81e5a58ed38.txt",
       "adjacentPath": "coin/license.txt"
@@ -108,7 +113,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/goblins/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-goblins@b81e5a58ed38.txt",
       "adjacentPath": "goblins/license.txt"
@@ -126,7 +132,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/mix-and-match/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2019, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2019, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-mix-and-match@b81e5a58ed38.txt",
       "adjacentPath": "mix-and-match/license.txt"
@@ -144,7 +151,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/owl/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2018, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2018, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-owl@b81e5a58ed38.txt",
       "adjacentPath": "owl/license.txt"
@@ -162,7 +170,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/powerup/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-powerup@b81e5a58ed38.txt",
       "adjacentPath": "powerup/license.txt"
@@ -180,7 +189,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/raptor/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-raptor@b81e5a58ed38.txt",
       "adjacentPath": "raptor/license.txt"
@@ -198,7 +208,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/snowglobe/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-snowglobe@b81e5a58ed38.txt",
       "adjacentPath": "snowglobe/license.txt"
@@ -216,7 +227,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/speedy/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-speedy@b81e5a58ed38.txt",
       "adjacentPath": "speedy/license.txt"
@@ -234,7 +246,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/spineboy/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-spineboy@b81e5a58ed38.txt",
       "adjacentPath": "spineboy/license.txt"
@@ -252,7 +265,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/spinosaurus/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-spinosaurus@b81e5a58ed38.txt",
       "adjacentPath": "spinosaurus/license.txt"
@@ -270,7 +284,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/stretchyman/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-stretchyman@b81e5a58ed38.txt",
       "adjacentPath": "stretchyman/license.txt"
@@ -288,7 +303,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/tank/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-tank@b81e5a58ed38.txt",
       "adjacentPath": "tank/license.txt"
@@ -306,7 +322,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/vine/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-vine@b81e5a58ed38.txt",
       "adjacentPath": "vine/license.txt"
@@ -324,7 +341,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "examples/windmill/license.txt",
-        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2017, Esoteric Software LLC."
+        "covers": "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2017, Esoteric Software LLC.",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/spine-windmill@b81e5a58ed38.txt",
       "adjacentPath": "windmill/license.txt"

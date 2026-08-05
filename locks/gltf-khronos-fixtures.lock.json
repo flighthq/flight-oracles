@@ -18,7 +18,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/ABeautifulGame/LICENSE.md",
-        "covers": "Original model \u2014 MaterialX Project, 2020 (owner: ASWF)."
+        "covers": "Original model \u2014 MaterialX Project, 2020 (owner: ASWF).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-abeautifulgame@2bac6f8c57bf.txt",
       "adjacentPath": "ABeautifulGame/LICENSE.md"
@@ -36,7 +37,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AlphaBlendModeTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2018 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2018 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-alphablendmodetest@2bac6f8c57bf.txt",
       "adjacentPath": "AlphaBlendModeTest/LICENSE.md"
@@ -54,7 +56,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AnimatedColorsCube/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2024 (owner: Public)."
+        "covers": "Everything \u2014 Ed Mackey, 2024 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-animatedcolorscube@2bac6f8c57bf.txt",
       "adjacentPath": "AnimatedColorsCube/LICENSE.md"
@@ -72,7 +75,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AnimatedCube/LICENSE.md",
-        "covers": "Everything \u2014 Norbert Nopper, 2017 (owner: UX3D)."
+        "covers": "Everything \u2014 Norbert Nopper, 2017 (owner: UX3D).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-animatedcube@2bac6f8c57bf.txt",
       "adjacentPath": "AnimatedCube/LICENSE.md"
@@ -90,7 +94,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AnimatedMorphCube/LICENSE.md",
-        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public)."
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-animatedmorphcube@2bac6f8c57bf.txt",
       "adjacentPath": "AnimatedMorphCube/LICENSE.md"
@@ -108,7 +113,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AnimatedTriangle/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-animatedtriangle@2bac6f8c57bf.txt",
       "adjacentPath": "AnimatedTriangle/LICENSE.md"
@@ -126,7 +132,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AnimationPointerUVs/LICENSE.md",
-        "covers": "3D asset and textures \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH)."
+        "covers": "3D asset and textures \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-animationpointeruvs@2bac6f8c57bf.txt",
       "adjacentPath": "AnimationPointerUVs/LICENSE.md"
@@ -144,7 +151,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AnisotropyBarnLamp/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Copyright 2023 Wayfair, LLC)."
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Copyright 2023 Wayfair, LLC).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-anisotropybarnlamp@2bac6f8c57bf.txt",
       "adjacentPath": "AnisotropyBarnLamp/LICENSE.md"
@@ -162,7 +170,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AnisotropyDiscTest/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public)."
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-anisotropydisctest@2bac6f8c57bf.txt",
       "adjacentPath": "AnisotropyDiscTest/LICENSE.md"
@@ -180,7 +189,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AnisotropyRotationTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2023 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2023 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-anisotropyrotationtest@2bac6f8c57bf.txt",
       "adjacentPath": "AnisotropyRotationTest/LICENSE.md"
@@ -198,7 +208,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AnisotropyStrengthTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2023 (owner: Public)."
+        "covers": "Everything \u2014 Ed Mackey, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-anisotropystrengthtest@2bac6f8c57bf.txt",
       "adjacentPath": "AnisotropyStrengthTest/LICENSE.md"
@@ -216,7 +227,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AntiqueCamera/LICENSE.md",
-        "covers": "Everything \u2014 Maximillan Kamps, 2018 (owner: UX3D). Supplementary marks: LicenseRef-LegalMark-UX3D."
+        "covers": "Everything \u2014 Maximillan Kamps, 2018 (owner: UX3D). Supplementary marks: LicenseRef-LegalMark-UX3D.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-antiquecamera@2bac6f8c57bf.txt",
       "adjacentPath": "AntiqueCamera/LICENSE.md"
@@ -234,7 +246,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/AttenuationTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2021 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2021 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-attenuationtest@2bac6f8c57bf.txt",
       "adjacentPath": "AttenuationTest/LICENSE.md"
@@ -252,7 +265,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/Avocado/LICENSE.md",
-        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public)."
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-avocado@2bac6f8c57bf.txt",
       "adjacentPath": "Avocado/LICENSE.md"
@@ -270,7 +284,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/BarramundiFish/LICENSE.md",
-        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public)."
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-barramundifish@2bac6f8c57bf.txt",
       "adjacentPath": "BarramundiFish/LICENSE.md"
@@ -288,7 +303,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/BoomBox/LICENSE.md",
-        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public)."
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-boombox@2bac6f8c57bf.txt",
       "adjacentPath": "BoomBox/LICENSE.md"
@@ -306,7 +322,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/BoomBoxWithAxes/LICENSE.md",
-        "covers": "Everything \u2014 Microsoft, 2018 (owner: Public)."
+        "covers": "Everything \u2014 Microsoft, 2018 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-boomboxwithaxes@2bac6f8c57bf.txt",
       "adjacentPath": "BoomBoxWithAxes/LICENSE.md"
@@ -324,7 +341,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/Box/LICENSE.md",
-        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium)."
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-box@2bac6f8c57bf.txt",
       "adjacentPath": "Box/LICENSE.md"
@@ -342,7 +360,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/BoxAnimated/LICENSE.md",
-        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium)."
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-boxanimated@2bac6f8c57bf.txt",
       "adjacentPath": "BoxAnimated/LICENSE.md"
@@ -360,7 +379,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/BoxInterleaved/LICENSE.md",
-        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium)."
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-boxinterleaved@2bac6f8c57bf.txt",
       "adjacentPath": "BoxInterleaved/LICENSE.md"
@@ -378,7 +398,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/BoxTextured/LICENSE.md",
-        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium."
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-boxtextured@2bac6f8c57bf.txt",
       "adjacentPath": "BoxTextured/LICENSE.md"
@@ -396,7 +417,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/BoxTexturedNonPowerOfTwo/LICENSE.md",
-        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium."
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-boxtexturednonpoweroftwo@2bac6f8c57bf.txt",
       "adjacentPath": "BoxTexturedNonPowerOfTwo/LICENSE.md"
@@ -414,7 +436,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/BoxVertexColors/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2023 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-boxvertexcolors@2bac6f8c57bf.txt",
       "adjacentPath": "BoxVertexColors/LICENSE.md"
@@ -432,7 +455,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/Cameras/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-cameras@2bac6f8c57bf.txt",
       "adjacentPath": "Cameras/LICENSE.md"
@@ -450,7 +474,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CarConcept/LICENSE.md",
-        "covers": "Model and textures \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Model and textures \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-carconcept@2bac6f8c57bf.txt",
       "adjacentPath": "CarConcept/LICENSE.md"
@@ -468,7 +493,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CarbonFibre/LICENSE.md",
-        "covers": "Models and Textures \u2014 Eric Chadwick, 2023 (owner: Wayfair)."
+        "covers": "Models and Textures \u2014 Eric Chadwick, 2023 (owner: Wayfair).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-carbonfibre@2bac6f8c57bf.txt",
       "adjacentPath": "CarbonFibre/LICENSE.md"
@@ -486,7 +512,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CesiumMan/LICENSE.md",
-        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium."
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-cesiumman@2bac6f8c57bf.txt",
       "adjacentPath": "CesiumMan/LICENSE.md"
@@ -504,7 +531,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CesiumMilkTruck/LICENSE.md",
-        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium."
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium). Supplementary marks: LicenseRef-LegalMark-Cesium.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-cesiummilktruck@2bac6f8c57bf.txt",
       "adjacentPath": "CesiumMilkTruck/LICENSE.md"
@@ -522,7 +550,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/ChairDamaskPurplegold/LICENSE.md",
-        "covers": "Models and Textures \u2014 Eric Chadwick, 2021 (owner: Wayfair)."
+        "covers": "Models and Textures \u2014 Eric Chadwick, 2021 (owner: Wayfair).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-chairdamaskpurplegold@2bac6f8c57bf.txt",
       "adjacentPath": "ChairDamaskPurplegold/LICENSE.md"
@@ -540,7 +569,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/ChronographWatch/LICENSE.md",
-        "covers": "Model and textures \u2014 Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-DGG, LicenseRef-LegalMark-Khronos."
+        "covers": "Model and textures \u2014 Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-DGG, LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-chronographwatch@2bac6f8c57bf.txt",
       "adjacentPath": "ChronographWatch/LICENSE.md"
@@ -558,7 +588,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/ClearCoatCarPaint/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public)."
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-clearcoatcarpaint@2bac6f8c57bf.txt",
       "adjacentPath": "ClearCoatCarPaint/LICENSE.md"
@@ -576,7 +607,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/ClearCoatTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2020 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2020 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-clearcoattest@2bac6f8c57bf.txt",
       "adjacentPath": "ClearCoatTest/LICENSE.md"
@@ -594,7 +626,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/ClearcoatWicker/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public)."
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-clearcoatwicker@2bac6f8c57bf.txt",
       "adjacentPath": "ClearcoatWicker/LICENSE.md"
@@ -612,7 +645,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CommercialRefrigerator/LICENSE.md",
-        "covers": "Model and textures and all images in the README.md \u2014 Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH)."
+        "covers": "Model and textures and all images in the README.md \u2014 Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-commercialrefrigerator@2bac6f8c57bf.txt",
       "adjacentPath": "CommercialRefrigerator/LICENSE.md"
@@ -630,7 +664,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareAlphaCoverage/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-comparealphacoverage@2bac6f8c57bf.txt",
       "adjacentPath": "CompareAlphaCoverage/LICENSE.md"
@@ -648,7 +683,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareAmbientOcclusion/LICENSE.md",
-        "covers": "Models \u2014 Polyhaven, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Models \u2014 Polyhaven, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-compareambientocclusion@2bac6f8c57bf.txt",
       "adjacentPath": "CompareAmbientOcclusion/LICENSE.md"
@@ -666,7 +702,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareAnisotropy/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-compareanisotropy@2bac6f8c57bf.txt",
       "adjacentPath": "CompareAnisotropy/LICENSE.md"
@@ -684,7 +721,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareBaseColor/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-comparebasecolor@2bac6f8c57bf.txt",
       "adjacentPath": "CompareBaseColor/LICENSE.md"
@@ -702,7 +740,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareClearcoat/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-compareclearcoat@2bac6f8c57bf.txt",
       "adjacentPath": "CompareClearcoat/LICENSE.md"
@@ -720,7 +759,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareDispersion/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-comparedispersion@2bac6f8c57bf.txt",
       "adjacentPath": "CompareDispersion/LICENSE.md"
@@ -738,7 +778,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareEmissiveStrength/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-compareemissivestrength@2bac6f8c57bf.txt",
       "adjacentPath": "CompareEmissiveStrength/LICENSE.md"
@@ -756,7 +797,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareIor/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-compareior@2bac6f8c57bf.txt",
       "adjacentPath": "CompareIor/LICENSE.md"
@@ -774,7 +816,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareIridescence/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-compareiridescence@2bac6f8c57bf.txt",
       "adjacentPath": "CompareIridescence/LICENSE.md"
@@ -792,7 +835,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareMetallic/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-comparemetallic@2bac6f8c57bf.txt",
       "adjacentPath": "CompareMetallic/LICENSE.md"
@@ -810,7 +854,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareNormal/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-comparenormal@2bac6f8c57bf.txt",
       "adjacentPath": "CompareNormal/LICENSE.md"
@@ -828,7 +873,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareRoughness/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-compareroughness@2bac6f8c57bf.txt",
       "adjacentPath": "CompareRoughness/LICENSE.md"
@@ -846,7 +892,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareSheen/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-comparesheen@2bac6f8c57bf.txt",
       "adjacentPath": "CompareSheen/LICENSE.md"
@@ -864,7 +911,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareSpecular/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-comparespecular@2bac6f8c57bf.txt",
       "adjacentPath": "CompareSpecular/LICENSE.md"
@@ -882,7 +930,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareTransmission/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-comparetransmission@2bac6f8c57bf.txt",
       "adjacentPath": "CompareTransmission/LICENSE.md"
@@ -900,7 +949,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CompareVolume/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Eric Chadwick and DGG, 2024 (owner: Public). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-comparevolume@2bac6f8c57bf.txt",
       "adjacentPath": "CompareVolume/LICENSE.md"
@@ -918,7 +968,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/Corset/LICENSE.md",
-        "covers": "Everything \u2014 Microsoft, 2017 (owner: UX3D)."
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: UX3D).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-corset@2bac6f8c57bf.txt",
       "adjacentPath": "Corset/LICENSE.md"
@@ -936,7 +987,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/Cube/LICENSE.md",
-        "covers": "Everything \u2014 Norbert Nopper, 2017 (owner: UX3D)."
+        "covers": "Everything \u2014 Norbert Nopper, 2017 (owner: UX3D).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-cube@2bac6f8c57bf.txt",
       "adjacentPath": "Cube/LICENSE.md"
@@ -954,7 +1006,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/CubeVisibility/LICENSE.md",
-        "covers": "Everything \u2014 Aaron Franke, 2025 (owner: Khronos Group)."
+        "covers": "Everything \u2014 Aaron Franke, 2025 (owner: Khronos Group).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-cubevisibility@2bac6f8c57bf.txt",
       "adjacentPath": "CubeVisibility/LICENSE.md"
@@ -972,7 +1025,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/DamagedHelmet/LICENSE.md",
-        "covers": "Rebuild and conversion to glTF \u2014 ctxwing, 2018 (owner: ctxwing)."
+        "covers": "Rebuild and conversion to glTF \u2014 ctxwing, 2018 (owner: ctxwing).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-damagedhelmet@2bac6f8c57bf.txt",
       "adjacentPath": "DamagedHelmet/LICENSE.md"
@@ -990,7 +1044,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/DiffuseTransmissionPlant/LICENSE.md",
-        "covers": "Materials and animation \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH)."
+        "covers": "Materials and animation \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-diffusetransmissionplant@2bac6f8c57bf.txt",
       "adjacentPath": "DiffuseTransmissionPlant/LICENSE.md"
@@ -1008,7 +1063,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/DiffuseTransmissionTeacup/LICENSE.md",
-        "covers": "Models and Textures \u2014 Polyhaven.com, and Eric Chadwick, 2023 (owner: Public domain)."
+        "covers": "Models and Textures \u2014 Polyhaven.com, and Eric Chadwick, 2023 (owner: Public domain).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-diffusetransmissionteacup@2bac6f8c57bf.txt",
       "adjacentPath": "DiffuseTransmissionTeacup/LICENSE.md"
@@ -1026,7 +1082,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/DiffuseTransmissionTest/LICENSE.md",
-        "covers": "Model and textures \u2014 Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Model and textures \u2014 Eric Chadwick, 2025 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-diffusetransmissiontest@2bac6f8c57bf.txt",
       "adjacentPath": "DiffuseTransmissionTest/LICENSE.md"
@@ -1044,7 +1101,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/DirectionalLight/LICENSE.md",
-        "covers": "Everything \u2014 Rickard Sahlin, 2020 (owner: Public)."
+        "covers": "Everything \u2014 Rickard Sahlin, 2020 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-directionallight@2bac6f8c57bf.txt",
       "adjacentPath": "DirectionalLight/LICENSE.md"
@@ -1062,7 +1120,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/DispersionTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2023 (owner: AGI)."
+        "covers": "Everything \u2014 Ed Mackey, 2023 (owner: AGI).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-dispersiontest@2bac6f8c57bf.txt",
       "adjacentPath": "DispersionTest/LICENSE.md"
@@ -1080,7 +1139,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "Models/DragonAttenuation/LICENSE.md",
-        "covers": "Original dragon model \u2014 Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory)."
+        "covers": "Original dragon model \u2014 Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory).",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/gltf-dragonattenuation@2bac6f8c57bf.txt",
       "adjacentPath": "DragonAttenuation/LICENSE.md"
@@ -1098,7 +1158,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "Models/DragonDispersion/LICENSE.md",
-        "covers": "Original dragon model \u2014 Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory)."
+        "covers": "Original dragon model \u2014 Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory).",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/gltf-dragondispersion@2bac6f8c57bf.txt",
       "adjacentPath": "DragonDispersion/LICENSE.md"
@@ -1116,7 +1177,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/Duck/LICENSE.md",
-        "covers": "Everything \u2014 Sony, 2006 (owner: Sony)."
+        "covers": "Everything \u2014 Sony, 2006 (owner: Sony).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-duck@2bac6f8c57bf.txt",
       "adjacentPath": "Duck/LICENSE.md"
@@ -1134,7 +1196,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/EmissiveStrengthTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2022 (owner: AGI)."
+        "covers": "Everything \u2014 Ed Mackey, 2022 (owner: AGI).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-emissivestrengthtest@2bac6f8c57bf.txt",
       "adjacentPath": "EmissiveStrengthTest/LICENSE.md"
@@ -1152,7 +1215,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/FlightHelmet/LICENSE.md",
-        "covers": "Conversion from Maya \u2014 Gary Hsu, 2018 (owner: Public)."
+        "covers": "Conversion from Maya \u2014 Gary Hsu, 2018 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-flighthelmet@2bac6f8c57bf.txt",
       "adjacentPath": "FlightHelmet/LICENSE.md"
@@ -1170,7 +1234,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/Fox/LICENSE.md",
-        "covers": "Model \u2014 PixelMannen, 2014 (owner: Public)."
+        "covers": "Model \u2014 PixelMannen, 2014 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-fox@2bac6f8c57bf.txt",
       "adjacentPath": "Fox/LICENSE.md"
@@ -1188,7 +1253,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/GlamVelvetSofa/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2021 (owner: Wayfair, LLC)."
+        "covers": "Everything \u2014 Eric Chadwick, 2021 (owner: Wayfair, LLC).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-glamvelvetsofa@2bac6f8c57bf.txt",
       "adjacentPath": "GlamVelvetSofa/LICENSE.md"
@@ -1206,7 +1272,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/GlassBrokenWindow/LICENSE.md",
-        "covers": "Entire asset \u2014 Eric Chadwick, 2023 (owner: Wayfair)."
+        "covers": "Entire asset \u2014 Eric Chadwick, 2023 (owner: Wayfair).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-glassbrokenwindow@2bac6f8c57bf.txt",
       "adjacentPath": "GlassBrokenWindow/LICENSE.md"
@@ -1224,7 +1291,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/GlassHurricaneCandleHolder/LICENSE.md",
-        "covers": "Model and textures \u2014 Eric Chadwick, 2021 (owner: Wayfair, LLC). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Model and textures \u2014 Eric Chadwick, 2021 (owner: Wayfair, LLC). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-glasshurricanecandleholder@2bac6f8c57bf.txt",
       "adjacentPath": "GlassHurricaneCandleHolder/LICENSE.md"
@@ -1242,7 +1310,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/GlassVaseFlowers/LICENSE.md",
-        "covers": "Glass vase \u2014 Eric Chadwick, 2023 (owner: Public)."
+        "covers": "Glass vase \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-glassvaseflowers@2bac6f8c57bf.txt",
       "adjacentPath": "GlassVaseFlowers/LICENSE.md"
@@ -1260,7 +1329,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/IORTestGrid/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public)."
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-iortestgrid@2bac6f8c57bf.txt",
       "adjacentPath": "IORTestGrid/LICENSE.md"
@@ -1278,7 +1348,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/InterpolationTest/LICENSE.md",
-        "covers": "Everything \u2014 Khronos, 2017 (owner: Public)."
+        "covers": "Everything \u2014 Khronos, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-interpolationtest@2bac6f8c57bf.txt",
       "adjacentPath": "InterpolationTest/LICENSE.md"
@@ -1296,7 +1367,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/IridescenceAbalone/LICENSE.md",
-        "covers": "Everything \u2014 Abby Crawford, 2015 (owner: Abby Crawford)."
+        "covers": "Everything \u2014 Abby Crawford, 2015 (owner: Abby Crawford).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-iridescenceabalone@2bac6f8c57bf.txt",
       "adjacentPath": "IridescenceAbalone/LICENSE.md"
@@ -1314,7 +1386,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/IridescenceDielectricSpheres/LICENSE.md",
-        "covers": "Everything \u2014 Khronos, 2019 (owner: Public)."
+        "covers": "Everything \u2014 Khronos, 2019 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-iridescencedielectricspheres@2bac6f8c57bf.txt",
       "adjacentPath": "IridescenceDielectricSpheres/LICENSE.md"
@@ -1332,7 +1405,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/IridescenceLamp/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2022 (owner: Wayfair, LLC)."
+        "covers": "Everything \u2014 Eric Chadwick, 2022 (owner: Wayfair, LLC).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-iridescencelamp@2bac6f8c57bf.txt",
       "adjacentPath": "IridescenceLamp/LICENSE.md"
@@ -1350,7 +1424,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/IridescenceMetallicSpheres/LICENSE.md",
-        "covers": "Everything \u2014 UX3D, 2022 (owner: UX3D)."
+        "covers": "Everything \u2014 UX3D, 2022 (owner: UX3D).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-iridescencemetallicspheres@2bac6f8c57bf.txt",
       "adjacentPath": "IridescenceMetallicSpheres/LICENSE.md"
@@ -1368,7 +1443,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/IridescenceSuzanne/LICENSE.md",
-        "covers": "Initial version \u2014 Mathias Kanzler, 2022 (owner: UX3D)."
+        "covers": "Initial version \u2014 Mathias Kanzler, 2022 (owner: UX3D).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-iridescencesuzanne@2bac6f8c57bf.txt",
       "adjacentPath": "IridescenceSuzanne/LICENSE.md"
@@ -1386,7 +1462,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/IridescentDishWithOlives/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2020 (owner: Wayfair, LLC)."
+        "covers": "Everything \u2014 Eric Chadwick, 2020 (owner: Wayfair, LLC).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-iridescentdishwitholives@2bac6f8c57bf.txt",
       "adjacentPath": "IridescentDishWithOlives/LICENSE.md"
@@ -1404,7 +1481,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/Lantern/LICENSE.md",
-        "covers": "Initial version \u2014 sbtron, 2017 (owner: Microsoft)."
+        "covers": "Initial version \u2014 sbtron, 2017 (owner: Microsoft).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-lantern@2bac6f8c57bf.txt",
       "adjacentPath": "Lantern/LICENSE.md"
@@ -1422,7 +1500,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/LightVisibility/LICENSE.md",
-        "covers": "Everything \u2014 Aaron Franke, 2025 (owner: Khronos Group)."
+        "covers": "Everything \u2014 Aaron Franke, 2025 (owner: Khronos Group).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-lightvisibility@2bac6f8c57bf.txt",
       "adjacentPath": "LightVisibility/LICENSE.md"
@@ -1440,7 +1519,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/LightsPunctualLamp/LICENSE.md",
-        "covers": "Everything \u2014 DGG, 2021 (owner: DGG)."
+        "covers": "Everything \u2014 DGG, 2021 (owner: DGG).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-lightspunctuallamp@2bac6f8c57bf.txt",
       "adjacentPath": "LightsPunctualLamp/LICENSE.md"
@@ -1458,7 +1538,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/MandarinOrange/LICENSE.md",
-        "covers": "Initial creation \u2014 zamdreamer, 2015 (owner: zamdreamer)."
+        "covers": "Initial creation \u2014 zamdreamer, 2015 (owner: zamdreamer).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-mandarinorange@2bac6f8c57bf.txt",
       "adjacentPath": "MandarinOrange/LICENSE.md"
@@ -1476,7 +1557,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/MaterialsVariantsShoe/LICENSE.md",
-        "covers": "Everthing \u2014 Shopify, 2021 (owner: Shopify)."
+        "covers": "Everthing \u2014 Shopify, 2021 (owner: Shopify).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-materialsvariantsshoe@2bac6f8c57bf.txt",
       "adjacentPath": "MaterialsVariantsShoe/LICENSE.md"
@@ -1494,7 +1576,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/MeshPrimitiveModes/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2023 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-meshprimitivemodes@2bac6f8c57bf.txt",
       "adjacentPath": "MeshPrimitiveModes/LICENSE.md"
@@ -1512,7 +1595,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/MeshoptCubeTest/LICENSE.md",
-        "covers": "Everything \u2014 Arseny Kapoulkine, 2025 (owner: Public)."
+        "covers": "Everything \u2014 Arseny Kapoulkine, 2025 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-meshoptcubetest@2bac6f8c57bf.txt",
       "adjacentPath": "MeshoptCubeTest/LICENSE.md"
@@ -1530,7 +1614,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/MetalRoughSpheres/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2017 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2017 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-metalroughspheres@2bac6f8c57bf.txt",
       "adjacentPath": "MetalRoughSpheres/LICENSE.md"
@@ -1548,7 +1633,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/MetalRoughSpheresNoTextures/LICENSE.md",
-        "covers": "Everything \u2014 Krill Gavrilov, 2019 (owner: Public)."
+        "covers": "Everything \u2014 Krill Gavrilov, 2019 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-metalroughspheresnotextures@2bac6f8c57bf.txt",
       "adjacentPath": "MetalRoughSpheresNoTextures/LICENSE.md"
@@ -1566,7 +1652,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/MorphPrimitivesTest/LICENSE.md",
-        "covers": "Everything \u2014 ft-lab, 2018 (owner: ft-lab)."
+        "covers": "Everything \u2014 ft-lab, 2018 (owner: ft-lab).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-morphprimitivestest@2bac6f8c57bf.txt",
       "adjacentPath": "MorphPrimitivesTest/LICENSE.md"
@@ -1584,7 +1671,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/MorphStressTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2021 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2021 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-morphstresstest@2bac6f8c57bf.txt",
       "adjacentPath": "MorphStressTest/LICENSE.md"
@@ -1602,7 +1690,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/MosquitoInAmber/LICENSE.md",
-        "covers": "Model \u2014 Loic Norgeot, 2018 (owner: Sketchfab)."
+        "covers": "Model \u2014 Loic Norgeot, 2018 (owner: Sketchfab).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-mosquitoinamber@2bac6f8c57bf.txt",
       "adjacentPath": "MosquitoInAmber/LICENSE.md"
@@ -1620,7 +1709,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/MultiUVTest/LICENSE.md",
-        "covers": "Everything \u2014 Hilo 3D, 2017 (owner: Hilo 3D). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Everything \u2014 Hilo 3D, 2017 (owner: Hilo 3D). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-multiuvtest@2bac6f8c57bf.txt",
       "adjacentPath": "MultiUVTest/LICENSE.md"
@@ -1638,7 +1728,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/MultipleScenes/LICENSE.md",
-        "covers": "Everything \u2014 Public, 2017 (owner: Public)."
+        "covers": "Everything \u2014 Public, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-multiplescenes@2bac6f8c57bf.txt",
       "adjacentPath": "MultipleScenes/LICENSE.md"
@@ -1656,7 +1747,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/NegativeScaleTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2023 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2023 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-negativescaletest@2bac6f8c57bf.txt",
       "adjacentPath": "NegativeScaleTest/LICENSE.md"
@@ -1674,7 +1766,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/NodePerformanceTest/LICENSE.md",
-        "covers": "Everything \u2014 Jon Aspeheim, 2024 (owner: Public)."
+        "covers": "Everything \u2014 Jon Aspeheim, 2024 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-nodeperformancetest@2bac6f8c57bf.txt",
       "adjacentPath": "NodePerformanceTest/LICENSE.md"
@@ -1692,7 +1785,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/NormalTangentMirrorTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2018 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2018 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-normaltangentmirrortest@2bac6f8c57bf.txt",
       "adjacentPath": "NormalTangentMirrorTest/LICENSE.md"
@@ -1710,7 +1804,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/NormalTangentTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2018 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2018 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-normaltangenttest@2bac6f8c57bf.txt",
       "adjacentPath": "NormalTangentTest/LICENSE.md"
@@ -1728,7 +1823,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/OrientationTest/LICENSE.md",
-        "covers": "Everything \u2014 Khronos, 2017 (owner: Unknown)."
+        "covers": "Everything \u2014 Khronos, 2017 (owner: Unknown).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-orientationtest@2bac6f8c57bf.txt",
       "adjacentPath": "OrientationTest/LICENSE.md"
@@ -1746,7 +1842,8 @@
         "commercialUse": false,
         "redistributable": true,
         "declaredFrom": "Models/PlaysetLightTest/LICENSE.md",
-        "covers": "Everything \u2014 Inter IKEA Systems B.V., 2024 (owner: Inter IKEA Systems B.V.)."
+        "covers": "Everything \u2014 Inter IKEA Systems B.V., 2024 (owner: Inter IKEA Systems B.V.).",
+        "onwardUse": "non-commercial"
       },
       "licenseSnapshot": "licenses/gltf-playsetlighttest@2bac6f8c57bf.txt",
       "adjacentPath": "PlaysetLightTest/LICENSE.md"
@@ -1764,7 +1861,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/PointLightIntensityTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2025 (owner: Public)."
+        "covers": "Everything \u2014 Ed Mackey, 2025 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-pointlightintensitytest@2bac6f8c57bf.txt",
       "adjacentPath": "PointLightIntensityTest/LICENSE.md"
@@ -1782,7 +1880,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/PotOfCoals/LICENSE.md",
-        "covers": "Model and textures \u2014 Eric Chadwick, 2023 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Model and textures \u2014 Eric Chadwick, 2023 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-potofcoals@2bac6f8c57bf.txt",
       "adjacentPath": "PotOfCoals/LICENSE.md"
@@ -1800,7 +1899,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/PotOfCoalsAnimationPointer/LICENSE.md",
-        "covers": "Model and textures \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Model and textures \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-potofcoalsanimationpointer@2bac6f8c57bf.txt",
       "adjacentPath": "PotOfCoalsAnimationPointer/LICENSE.md"
@@ -1818,7 +1918,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/PrimitiveModeNormalsTest/LICENSE.md",
-        "covers": "Everything \u2014 Unknown, 2020 (owner: public)."
+        "covers": "Everything \u2014 Unknown, 2020 (owner: public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-primitivemodenormalstest@2bac6f8c57bf.txt",
       "adjacentPath": "PrimitiveModeNormalsTest/LICENSE.md"
@@ -1836,7 +1937,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/RecursiveSkeletons/LICENSE.md",
-        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium)."
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-recursiveskeletons@2bac6f8c57bf.txt",
       "adjacentPath": "RecursiveSkeletons/LICENSE.md"
@@ -1854,7 +1956,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/RiggedFigure/LICENSE.md",
-        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium)."
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-riggedfigure@2bac6f8c57bf.txt",
       "adjacentPath": "RiggedFigure/LICENSE.md"
@@ -1872,7 +1975,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/RiggedSimple/LICENSE.md",
-        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium)."
+        "covers": "Everything \u2014 Cesium, 2017 (owner: Cesium).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-riggedsimple@2bac6f8c57bf.txt",
       "adjacentPath": "RiggedSimple/LICENSE.md"
@@ -1890,7 +1994,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/ScatteringSkull/LICENSE.md",
-        "covers": "Everything \u2014 Vladimir Petkovic, 2025 (owner: Public)."
+        "covers": "Everything \u2014 Vladimir Petkovic, 2025 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-scatteringskull@2bac6f8c57bf.txt",
       "adjacentPath": "ScatteringSkull/LICENSE.md"
@@ -1908,7 +2013,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SciFiHelmet/LICENSE.md",
-        "covers": "Everything \u2014 Michael Pavlovic, 2017 (owner: Public)."
+        "covers": "Everything \u2014 Michael Pavlovic, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-scifihelmet@2bac6f8c57bf.txt",
       "adjacentPath": "SciFiHelmet/LICENSE.md"
@@ -1926,7 +2032,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SheenChair/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2020 (owner: Wayfair, LLC)."
+        "covers": "Everything \u2014 Eric Chadwick, 2020 (owner: Wayfair, LLC).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-sheenchair@2bac6f8c57bf.txt",
       "adjacentPath": "SheenChair/LICENSE.md"
@@ -1944,7 +2051,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SheenCloth/LICENSE.md",
-        "covers": "Everything \u2014 Microsoft, 2020 (owner: Microsoft)."
+        "covers": "Everything \u2014 Microsoft, 2020 (owner: Microsoft).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-sheencloth@2bac6f8c57bf.txt",
       "adjacentPath": "SheenCloth/LICENSE.md"
@@ -1962,7 +2070,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SheenTestGrid/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public)."
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-sheentestgrid@2bac6f8c57bf.txt",
       "adjacentPath": "SheenTestGrid/LICENSE.md"
@@ -1980,7 +2089,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SheenWoodLeatherSofa/LICENSE.md",
-        "covers": "Improvements \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH)."
+        "covers": "Improvements \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-sheenwoodleathersofa@2bac6f8c57bf.txt",
       "adjacentPath": "SheenWoodLeatherSofa/LICENSE.md"
@@ -1998,7 +2108,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SimpleInstancing/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2023 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-simpleinstancing@2bac6f8c57bf.txt",
       "adjacentPath": "SimpleInstancing/LICENSE.md"
@@ -2016,7 +2127,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SimpleMaterial/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-simplematerial@2bac6f8c57bf.txt",
       "adjacentPath": "SimpleMaterial/LICENSE.md"
@@ -2034,7 +2146,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SimpleMeshes/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-simplemeshes@2bac6f8c57bf.txt",
       "adjacentPath": "SimpleMeshes/LICENSE.md"
@@ -2052,7 +2165,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SimpleMorph/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-simplemorph@2bac6f8c57bf.txt",
       "adjacentPath": "SimpleMorph/LICENSE.md"
@@ -2070,7 +2184,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SimpleSkin/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-simpleskin@2bac6f8c57bf.txt",
       "adjacentPath": "SimpleSkin/LICENSE.md"
@@ -2088,7 +2203,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SimpleSparseAccessor/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-simplesparseaccessor@2bac6f8c57bf.txt",
       "adjacentPath": "SimpleSparseAccessor/LICENSE.md"
@@ -2106,7 +2222,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SimpleTexture/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-simpletexture@2bac6f8c57bf.txt",
       "adjacentPath": "SimpleTexture/LICENSE.md"
@@ -2124,7 +2241,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SpecGlossVsMetalRough/LICENSE.md",
-        "covers": "Everything \u2014 Microsoft, 2017 (owner: Microsoft)."
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: Microsoft).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-specglossvsmetalrough@2bac6f8c57bf.txt",
       "adjacentPath": "SpecGlossVsMetalRough/LICENSE.md"
@@ -2142,7 +2260,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SpecularSilkPouf/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Copyright 2023 Wayfair, LLC)."
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Copyright 2023 Wayfair, LLC).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-specularsilkpouf@2bac6f8c57bf.txt",
       "adjacentPath": "SpecularSilkPouf/LICENSE.md"
@@ -2160,7 +2279,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SpecularTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2021 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2021 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-speculartest@2bac6f8c57bf.txt",
       "adjacentPath": "SpecularTest/LICENSE.md"
@@ -2178,7 +2298,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/StainedGlassLamp/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2021 (owner: Wayfair)."
+        "covers": "Everything \u2014 Eric Chadwick, 2021 (owner: Wayfair).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-stainedglasslamp@2bac6f8c57bf.txt",
       "adjacentPath": "StainedGlassLamp/LICENSE.md"
@@ -2196,7 +2317,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/SunglassesKhronos/LICENSE.md",
-        "covers": "Model and textures and all images in the README.md \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos."
+        "covers": "Model and textures and all images in the README.md \u2014 Eric Chadwick, 2024 (owner: Darmstadt Graphics Group GmbH). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-sunglasseskhronos@2bac6f8c57bf.txt",
       "adjacentPath": "SunglassesKhronos/LICENSE.md"
@@ -2214,7 +2336,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/Suzanne/LICENSE.md",
-        "covers": "Everything \u2014 Norbert Nopper, 2017 (owner: UX3D)."
+        "covers": "Everything \u2014 Norbert Nopper, 2017 (owner: UX3D).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-suzanne@2bac6f8c57bf.txt",
       "adjacentPath": "Suzanne/LICENSE.md"
@@ -2232,7 +2355,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TextureCoordinateTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2017 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2017 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-texturecoordinatetest@2bac6f8c57bf.txt",
       "adjacentPath": "TextureCoordinateTest/LICENSE.md"
@@ -2250,7 +2374,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TextureEncodingTest/LICENSE.md",
-        "covers": "Everything \u2014 lexaknyazev, 2017 (owner: Public)."
+        "covers": "Everything \u2014 lexaknyazev, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-textureencodingtest@2bac6f8c57bf.txt",
       "adjacentPath": "TextureEncodingTest/LICENSE.md"
@@ -2268,7 +2393,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TextureLinearInterpolationTest/LICENSE.md",
-        "covers": "Everything \u2014 lexaknyazev, 2017 (owner: Public)."
+        "covers": "Everything \u2014 lexaknyazev, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-texturelinearinterpolationtest@2bac6f8c57bf.txt",
       "adjacentPath": "TextureLinearInterpolationTest/LICENSE.md"
@@ -2286,7 +2412,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TextureSettingsTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2017 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2017 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-texturesettingstest@2bac6f8c57bf.txt",
       "adjacentPath": "TextureSettingsTest/LICENSE.md"
@@ -2304,7 +2431,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TextureTransformMultiTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2020 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2020 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-texturetransformmultitest@2bac6f8c57bf.txt",
       "adjacentPath": "TextureTransformMultiTest/LICENSE.md"
@@ -2322,7 +2450,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TextureTransformTest/LICENSE.md",
-        "covers": "Everything \u2014 Microsoft, 2018 (owner: Microsoft)."
+        "covers": "Everything \u2014 Microsoft, 2018 (owner: Microsoft).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-texturetransformtest@2bac6f8c57bf.txt",
       "adjacentPath": "TextureTransformTest/LICENSE.md"
@@ -2340,7 +2469,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/ToyCar/LICENSE.md",
-        "covers": "Initial car model \u2014 Guido Odendahl, 2020 (owner: Public)."
+        "covers": "Initial car model \u2014 Guido Odendahl, 2020 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-toycar@2bac6f8c57bf.txt",
       "adjacentPath": "ToyCar/LICENSE.md"
@@ -2358,7 +2488,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TransmissionOrderTest/LICENSE.md",
-        "covers": "Everything but the cloth backdrop \u2014 Ed Mackey, 2025 (owner: Public)."
+        "covers": "Everything but the cloth backdrop \u2014 Ed Mackey, 2025 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-transmissionordertest@2bac6f8c57bf.txt",
       "adjacentPath": "TransmissionOrderTest/LICENSE.md"
@@ -2376,7 +2507,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TransmissionRoughnessTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2021 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2021 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-transmissionroughnesstest@2bac6f8c57bf.txt",
       "adjacentPath": "TransmissionRoughnessTest/LICENSE.md"
@@ -2394,7 +2526,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TransmissionTest/LICENSE.md",
-        "covers": "Everything \u2014 Adobe, 2020 (owner: Public)."
+        "covers": "Everything \u2014 Adobe, 2020 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-transmissiontest@2bac6f8c57bf.txt",
       "adjacentPath": "TransmissionTest/LICENSE.md"
@@ -2412,7 +2545,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TransmissionThinwallTestGrid/LICENSE.md",
-        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public)."
+        "covers": "Everything \u2014 Eric Chadwick, 2023 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-transmissionthinwalltestgrid@2bac6f8c57bf.txt",
       "adjacentPath": "TransmissionThinwallTestGrid/LICENSE.md"
@@ -2430,7 +2564,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/Triangle/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-triangle@2bac6f8c57bf.txt",
       "adjacentPath": "Triangle/LICENSE.md"
@@ -2448,7 +2583,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TriangleWithoutIndices/LICENSE.md",
-        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public)."
+        "covers": "Everything \u2014 Marco Hutter (https://github.com/javagl/), 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-trianglewithoutindices@2bac6f8c57bf.txt",
       "adjacentPath": "TriangleWithoutIndices/LICENSE.md"
@@ -2466,7 +2602,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/TwoSidedPlane/LICENSE.md",
-        "covers": "Everything \u2014 Norbert Nopper, 2017 (owner: UX3D)."
+        "covers": "Everything \u2014 Norbert Nopper, 2017 (owner: UX3D).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-twosidedplane@2bac6f8c57bf.txt",
       "adjacentPath": "TwoSidedPlane/LICENSE.md"
@@ -2484,7 +2621,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/USDShaderBallForGltf/LICENSE.md",
-        "covers": "Model and textures and all images in the README.md \u2014 Geometry and textures: Chris Rydalch; original specification and validation: Andr\u00e9 Mazzone; original scene, inspiration and consultation: Thomas Anagnostou; glTF conversion: Eric Chadwick, 2026 (owner: Eric Chadwick)."
+        "covers": "Model and textures and all images in the README.md \u2014 Geometry and textures: Chris Rydalch; original specification and validation: Andr\u00e9 Mazzone; original scene, inspiration and consultation: Thomas Anagnostou; glTF conversion: Eric Chadwick, 2026 (owner: Eric Chadwick).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-usdshaderballforgltf@2bac6f8c57bf.txt",
       "adjacentPath": "USDShaderBallForGltf/LICENSE.md"
@@ -2502,7 +2640,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/UnlitTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2019 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2019 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-unlittest@2bac6f8c57bf.txt",
       "adjacentPath": "UnlitTest/LICENSE.md"
@@ -2520,7 +2659,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/VertexColorTest/LICENSE.md",
-        "covers": "Everything \u2014 Ed Mackey, 2018 (owner: Analytical Graphics, Inc.)."
+        "covers": "Everything \u2014 Ed Mackey, 2018 (owner: Analytical Graphics, Inc.).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-vertexcolortest@2bac6f8c57bf.txt",
       "adjacentPath": "VertexColorTest/LICENSE.md"
@@ -2538,7 +2678,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/WaterBottle/LICENSE.md",
-        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public)."
+        "covers": "Everything \u2014 Microsoft, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-waterbottle@2bac6f8c57bf.txt",
       "adjacentPath": "WaterBottle/LICENSE.md"
@@ -2556,7 +2697,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "Models/XmpMetadataRoundedCube/LICENSE.md",
-        "covers": "Everything \u2014 Adam Morris, 2021 (owner: Adam Morris)."
+        "covers": "Everything \u2014 Adam Morris, 2021 (owner: Adam Morris).",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/gltf-xmpmetadataroundedcube@2bac6f8c57bf.txt",
       "adjacentPath": "XmpMetadataRoundedCube/LICENSE.md"
@@ -2575,6 +2717,7 @@
         "redistributable": true,
         "declaredFrom": "SubmittingModels.md",
         "covers": "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published.",
+        "onwardUse": "unknown",
         "underlying": [
           {
             "declared": "LicenseRef-Poser-EULA",
@@ -2600,6 +2743,7 @@
         "redistributable": true,
         "declaredFrom": "SubmittingModels.md",
         "covers": "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published.",
+        "onwardUse": "unknown",
         "underlying": [
           {
             "declared": "LicenseRef-Adobe-Stock",
@@ -2625,6 +2769,7 @@
         "redistributable": true,
         "declaredFrom": "SubmittingModels.md",
         "covers": "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published.",
+        "onwardUse": "unknown",
         "underlying": [
           {
             "declared": "LicenseRef-CRYENGINE-Agreement",
@@ -2650,6 +2795,7 @@
         "redistributable": true,
         "declaredFrom": "SubmittingModels.md",
         "covers": "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published.",
+        "onwardUse": "testing-only",
         "underlying": [
           {
             "declared": "LicenseRef-3DRT-Testing",

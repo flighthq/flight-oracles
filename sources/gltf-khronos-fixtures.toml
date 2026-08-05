@@ -3447,6 +3447,7 @@ declared = "LicenseRef-Stanford-Graphics"
 declared_scope = "file-adjacent"
 declared_from = "Models/DragonAttenuation/LICENSE.md"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Original dragon model — Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory)."
 
 [[source]]
@@ -3504,6 +3505,7 @@ declared = "LicenseRef-Stanford-Graphics"
 declared_scope = "file-adjacent"
 declared_from = "Models/DragonDispersion/LICENSE.md"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Original dragon model — Stanford University Computer Graphics Laboratory, 1996 (owner: Stanford University Computer Graphics Laboratory)."
 
 [[source]]
@@ -5556,6 +5558,7 @@ declared = "CC BY-NC-SA 4.0"
 declared_scope = "file-adjacent"
 declared_from = "Models/PlaysetLightTest/LICENSE.md"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Everything — Inter IKEA Systems B.V., 2024 (owner: Inter IKEA Systems B.V.)."
 
 [[source]]
@@ -8180,6 +8183,7 @@ declared = "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement"
 declared_scope = "repository-root"
 declared_from = "SubmittingModels.md"
 commercial_use = false
+onward_use = "unknown"
 covers = "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published."
 
 [[source.license.underlying]]
@@ -8244,6 +8248,7 @@ declared = "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement"
 declared_scope = "repository-root"
 declared_from = "SubmittingModels.md"
 commercial_use = false
+onward_use = "unknown"
 covers = "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published."
 
 [[source.license.underlying]]
@@ -8308,6 +8313,7 @@ declared = "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement"
 declared_scope = "repository-root"
 declared_from = "SubmittingModels.md"
 commercial_use = false
+onward_use = "unknown"
 covers = "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published."
 
 [[source.license.underlying]]
@@ -8372,6 +8378,7 @@ declared = "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement"
 declared_scope = "repository-root"
 declared_from = "SubmittingModels.md"
 commercial_use = false
+onward_use = "testing-only"
 covers = "Published by Khronos under a negotiated arrangement with the rights holder. SubmittingModels.md requires every admitted asset to carry 'a license that allows Khronos to publish the asset and allow others to use the asset in public', and states that assets with semi-restrictive licences are admitted 'provided arrangements are made'. That arrangement is the grant relied on here; the underlying instrument is attributed below. Marked commercial_use = false because the underlying terms are commercially restrictive and the arrangement's scope is not published."
 
 [[source.license.underlying]]

@@ -28,6 +28,9 @@ SCOPES = ("file-adjacent", "directory", "repository-root")
 
 SOURCE_KINDS = ("upstream", "recovered")
 
+# How far material may travel once it leaves the build — see LicenseSpec.onward_use.
+ONWARD_USE = ("unrestricted", "non-commercial", "testing-only", "unknown")
+
 # Declarations carrying a term that must be read before adoption, not merely a restriction
 # on republishing. These are NOT forbidden — the guard exists so they cannot be adopted by
 # accident, since the hazard is invisible to anyone screening on the SPDX identifier alone.
@@ -95,6 +98,19 @@ class LicenseSpec:
     prohibition: str | None = None      # verbatim clause, when redistributable is False
     # Acknowledges a DECLARATIONS_NEEDING_REVIEW entry was read and a decision taken.
     hazard_reviewed: bool = False
+    # How far the material may travel once it leaves the build. Distinct from
+    # `commercial_use`, which asks a different question: this one is about whether it may
+    # be *deployed at all* beyond testing.
+    #
+    #   unrestricted    may appear anywhere, including commercial work
+    #   non-commercial  may be shown publicly, but not commercially (spineboy, Stanford)
+    #   testing-only    may not leave the build (VirtualCity: 3DRT's exemption is scoped to
+    #                   "testing your glTF tools such as loaders and importers")
+    #   unknown         the operative grant does not say (the Khronos arrangements)
+    #
+    # Collapsing testing-only into commercial_use = false would have put a tool-testing-only
+    # model in the same bucket as spineboy, which Esoteric plainly intends to be shown.
+    onward_use: str = "unrestricted"
     # Layers beneath the operative grant: the instrument(s) the material carried before the
     # immediate upstream published it.
     #
@@ -126,6 +142,20 @@ class LicenseSpec:
             )
         if self.commercial_use not in (True, False, "unknown"):
             raise ValueError("license.commercial_use must be true, false, or \"unknown\"")
+        if self.onward_use not in ONWARD_USE:
+            raise ValueError(
+                f"license.onward_use must be one of {ONWARD_USE}, got {self.onward_use!r}"
+            )
+        # Where nothing may be redistributed at all, "how far may it travel" has no answer.
+        # Forcing a value would put a misleading default in the lock, so the field is simply
+        # not applicable and is omitted from the record.
+        if not self.redistributable:
+            pass
+        elif self.onward_use == "unrestricted" and self.commercial_use is False:
+            raise ValueError(
+                "license.onward_use = \"unrestricted\" contradicts commercial_use = false; "
+                "use \"non-commercial\" if the material may be shown but not sold"
+            )
         if not self.redistributable and not self.prohibition:
             raise ValueError(
                 "license.redistributable = false requires license.prohibition quoting the "
@@ -170,6 +200,8 @@ class LicenseSpec:
         ):
             if val is not None:
                 out[key] = val
+        if self.redistributable:
+            out["onwardUse"] = self.onward_use
         if self.underlying:
             out["underlying"] = list(self.underlying)
         return out

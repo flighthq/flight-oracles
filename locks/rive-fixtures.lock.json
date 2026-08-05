@@ -18,7 +18,8 @@
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "LICENSE",
-        "covers": "Rive's authorship of the .riv files (rig, curves, state machines). Copyright (c) 2020 Rive."
+        "covers": "Rive's authorship of the .riv files (rig, curves, state machines). Copyright (c) 2020 Rive.",
+        "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/rive-runtime@d25e6a4b6c1b.txt"
     }

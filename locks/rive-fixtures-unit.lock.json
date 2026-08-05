@@ -1,0 +1,5087 @@
+{
+  "pack": {
+    "name": "rive-fixtures-unit",
+    "kind": "fixtures",
+    "summary": "Rive unit-test asset corpus \u2014 targeted feature fixtures for data binding, layout, text, and scripting."
+  },
+  "sources": [
+    {
+      "id": "rive-runtime-unit",
+      "kind": "upstream",
+      "repo": "rive-app/rive-runtime",
+      "ref": "main",
+      "commit": "e949498e05483a852c10fbbdad2cd1941c15aebc",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "Rive's authorship of the .riv files (rig, curves, state machines). Copyright (c) 2020 Rive.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/rive-runtime-unit@e949498e0548.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "rivs/advance_blend_mode.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/advance_blend_mode.riv",
+      "sha256": "aeb3cd9c3d7fc580d8bdbfca11511162496a1f2041ee94e363f00848f97b74bf",
+      "size": 1035,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/ai_assitant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/ai_assitant.riv",
+      "sha256": "8dfacffae8cfd5da02a924075c8986f510e2d32a86ce39044e87d8486e651abd",
+      "size": 2929,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/align_target.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/align_target.riv",
+      "sha256": "813c851057941da57027e32a323c987f554b485e1760c1ea0d8d4e49004634c9",
+      "size": 806368,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/animated_clipping.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/animated_clipping.riv",
+      "sha256": "b98260ed3fb207d63474d5cfd8b5f2ecd301cc98422911056314acf6612b82d9",
+      "size": 877855,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/animation_reset_cases.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/animation_reset_cases.riv",
+      "sha256": "722af52220a33a635810b1ee3dff28a90b42929cb39fb68586f629c440ea1f5c",
+      "size": 2105,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/artboard_list_map_rules.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/artboard_list_map_rules.riv",
+      "sha256": "dcc67362a94490b2daf62139ffea9253d7a57dcc75b3361652a97e31d28b6640",
+      "size": 1154,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/artboard_list_overrides.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/artboard_list_overrides.riv",
+      "sha256": "945a0cc2da20e7481f4c4f7a0da3d301239953ef86da0640ccf12fa3e797425d",
+      "size": 877957,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/artboard_opacity_and_transform_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/artboard_opacity_and_transform_test.riv",
+      "sha256": "100dbf5c04159ea7e8e6f12ce16daf1ee6f15a74c2d3dc074e2dbde4e877af80",
+      "size": 945,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/artboard_width_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/artboard_width_test.riv",
+      "sha256": "aec1c2184c09d560b91c22946f086bfa74285b116a10213e30bdcf98770df178",
+      "size": 890,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/artboardclipping.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/artboardclipping.riv",
+      "sha256": "c72d306cee2e9540674a85072cc97b45f4921279610a9c6a57ec4b423d354f6f",
+      "size": 195,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/audio_script.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/audio_script.riv",
+      "sha256": "9413ff6eb2d9cb0f080886425b87a167309416c1d96f10a4924c56857ecc40eb",
+      "size": 1289334,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/background_measure.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/background_measure.riv",
+      "sha256": "18bf0882ddd81873e89fd8972dfc89c862f0a0b43e4cb35df461be14c1ca0b27",
+      "size": 1301468,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/bad_skin.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/bad_skin.riv",
+      "sha256": "55f93b3debcbde7473c51ac48bee10eb2673bc79fc4c6594bc26eb7f6537ac9a",
+      "size": 291358,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/ball_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/ball_test.riv",
+      "sha256": "7754e2d48ed666e09324cd4744cd6e27d1d65573feb077e71be1e8b3a3381a69",
+      "size": 995,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/bankcard.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/bankcard.riv",
+      "sha256": "1d7f8000b315c5c0fe1e8f756057be6313ca18b72ae2c7d313a64672c233bc5a",
+      "size": 174403,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/bidirectional_binding_source.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/bidirectional_binding_source.riv",
+      "sha256": "2d94e46d3c89386e39ad6960440e3b23be7404443e76db6cb2886c48c9a2724b",
+      "size": 186648,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/bidirectional_binding_target_1.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/bidirectional_binding_target_1.riv",
+      "sha256": "19adebfed7271deb84584b7f9705433c69842314a6109f9bd99f3b7c34a22ffb",
+      "size": 10370,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/bidirectional_binding_target_2.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/bidirectional_binding_target_2.riv",
+      "sha256": "12383ec4cc1a7265ffc46993d729e711569e5c3738eff47aa366edbf3d246213",
+      "size": 10405,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/bidirectional_precedence.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/bidirectional_precedence.riv",
+      "sha256": "be909347bca03add508102f605165efcc25bf4e7d78229113de446786bf14f1f",
+      "size": 559,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/bidirectional_stateful_property.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/bidirectional_stateful_property.riv",
+      "sha256": "c2813f0ad0f5aedff70ec666f21118b41e611ab87951b5192960599c9be82583",
+      "size": 877860,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/bindable_artboard_child.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/bindable_artboard_child.riv",
+      "sha256": "40f75f9c97ea99cfb5c1c6084abc6bb0e271dad64313e13ba14d4ae54add2bb2",
+      "size": 521,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/bindable_artboard_nesty.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/bindable_artboard_nesty.riv",
+      "sha256": "d51dba4f6c9af16d953801861dad52a60e6851c77e3104635f781a92e3cfceea",
+      "size": 877059,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/bindable_focus_tree_swap.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/bindable_focus_tree_swap.riv",
+      "sha256": "0affaa6394bb0cfef85a56f1d5c2a591ac6c0977c6b1caedeac1e013e8c9fe62",
+      "size": 1524,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/blend_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/blend_test.riv",
+      "sha256": "39af1c742857d32a55cf3a140ebfb78924972681216b8f77ad1ec556e20ac2d5",
+      "size": 503,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/bullet_man.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/bullet_man.riv",
+      "sha256": "a887645e786ba31c67920e76186761aade62b34c2b0a3c3caae1a1a6af390627",
+      "size": 670844,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/car_widgets_v01.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/car_widgets_v01.riv",
+      "sha256": "15dff94e81d940b95b412e65f3122196ecae06e73a1f1c0ab98f4f4b6737ba47",
+      "size": 2875164,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/circle_clips.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/circle_clips.riv",
+      "sha256": "a5adb2a0b2115822239a8dc54a47b8aeae936e43f15a7bb24f92a540890f6866",
+      "size": 595,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/clear_viewmodel_list.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/clear_viewmodel_list.riv",
+      "sha256": "895e63400ed2d554ec3a6f73d981c8c2b0e0801c5bfef5034b25526e12c74f36",
+      "size": 1436,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/click_event.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/click_event.riv",
+      "sha256": "008a40657046e91d03477af42752b42989125eb1b5a147a2608a6e1e3c6283de",
+      "size": 802,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/clip_tests.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/clip_tests.riv",
+      "sha256": "9caf73434bf75797837e18d73cb46b7994676dd49f96a81d8e1d4e06fe6598e9",
+      "size": 814,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/clipping_and_draw_order.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/clipping_and_draw_order.riv",
+      "sha256": "aac75187236fcd528e92cdba9ad5022a7e1346b8475ea2e68dd2dde1023fdc97",
+      "size": 11877,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/coin.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/coin.riv",
+      "sha256": "12b416819d8a1118ecb30392f0d062f641035c187e4c2d199c9a417f7abdee3d",
+      "size": 1674,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/collapsable_data_binding.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/collapsable_data_binding.riv",
+      "sha256": "1ba4332230f15134b8ab2856b26fed194ffbfac221a6410ed771600c03d7d8ad",
+      "size": 382,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/collapse_data_binds.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/collapse_data_binds.riv",
+      "sha256": "1a8a334df9ff7d2af195e2144f87694e4a639068c4b6619f28c8265abfafb3c8",
+      "size": 879850,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/collapsing_elements.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/collapsing_elements.riv",
+      "sha256": "8361fec2f5d038451c495071704fdc2bc46f418132d6c30b6eeac653b9b1d485",
+      "size": 2146,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/complex_ik_dependency.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/complex_ik_dependency.riv",
+      "sha256": "5e8609dc09ea7ca64a7ffd8346b875aa53bbcbbe76124d63d22f0eaa5208e74d",
+      "size": 417,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_based_conditions.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_based_conditions.riv",
+      "sha256": "a5a0e3816af219ed98dc675423a5181549d3a793aefc6d1de3aca6b18ac2d492",
+      "size": 1453,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_list_1.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_list_1.riv",
+      "sha256": "c0d4d858a8ffa4ec923a8bdf8ae2873c144424911ae4b6e5fcbdf7c4f36d5e21",
+      "size": 806848,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_list_2.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_list_2.riv",
+      "sha256": "b1541dfdba9f0a873245838ac560b27c21c181f9745d8052d9133163a530ef6e",
+      "size": 806803,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_list_child_origin.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_list_child_origin.riv",
+      "sha256": "46c44fe8d83edad10b3307b1dc8b657c07d40928fc5c3b919159b7e801a043a2",
+      "size": 877907,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_list_clipped_viewport.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_list_clipped_viewport.riv",
+      "sha256": "a20c9fd4936c2b7f435011e7afddd276797e95d68b574ec2c914331afd092bac",
+      "size": 775,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/component_list_follow_path.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_list_follow_path.riv",
+      "sha256": "7738e33c93bf01ff11c2b1063c3e82e17812a7e0ba0b049fa2529516a34c1b0f",
+      "size": 878293,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_list_follow_path_distance.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_list_follow_path_distance.riv",
+      "sha256": "96bf865509f454b75a9122f35a666aac0aa1a71a7f1f30652a67ee20ad2ce2c3",
+      "size": 801,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_list_grouped.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_list_grouped.riv",
+      "sha256": "7fb08e5e225d40cb53f45596b777ad98a7c09f2d368155588799af88949baf9b",
+      "size": 1131,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_list_hit_order.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_list_hit_order.riv",
+      "sha256": "5d98a4f3cf5f6796009247f4733999a423b4baa36466e80f1b7bb93ec5bfed84",
+      "size": 889,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_list_virtualized.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_list_virtualized.riv",
+      "sha256": "9dac2d1eecbf5642118be39c0eaa98fac096a40a83803ce4cb042017eefb6a78",
+      "size": 808643,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_stateful.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_stateful.riv",
+      "sha256": "9a81829a622a4666c6c565303b8c767d9311cf2b8a6b7c406d5455209ca964dc",
+      "size": 877971,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_stateful_vm_instance.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_stateful_vm_instance.riv",
+      "sha256": "5a057d38bb3638dae8457070b86c9ba55c210fae33850dabd0495124db6c0f7b",
+      "size": 867,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/component_stateful_vm_instance_2.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/component_stateful_vm_instance_2.riv",
+      "sha256": "4b180ad066170cbec70be6b7009824cfabf46fb7869ddd2a95cba1e97c069062",
+      "size": 877761,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/computed_root_transform.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/computed_root_transform.riv",
+      "sha256": "031b8f86e7d34678fe1439aff9d6a586f783cee603a529268d462d4ef6160570",
+      "size": 879518,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/computed_values_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/computed_values_test.riv",
+      "sha256": "20ff0ce152003bfbe863be25e208b68d6b802854ee7c1d0913fbe8ad91171f58",
+      "size": 878914,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/cubic_value_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/cubic_value_test.riv",
+      "sha256": "7e45ccafca023189ace6bb218669b1057d0944a58825041c41a11062577ad60c",
+      "size": 366,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/custom_image_name.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/custom_image_name.riv",
+      "sha256": "1f19f90e0abe6a5ddaa03d24abf1fe92809fc783332a7cfcfa6c80718a792c02",
+      "size": 336,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/custom_property_enum.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/custom_property_enum.riv",
+      "sha256": "792fd665850d7de4b9d33b5c584839c46b480f610acf2a307b4b2b0e6469c025",
+      "size": 713,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/custom_property_trigger.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/custom_property_trigger.riv",
+      "sha256": "bcd7e6cf7fa55280a7e0c7fb9331bc97b3651c9b63b8b4671adf1229e462e463",
+      "size": 724,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_bind_artboard_input.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_bind_artboard_input.riv",
+      "sha256": "5a38337fea41d8694bce3b13712e98b2720c1f3ea36307fcd1223481db02a4df",
+      "size": 1221,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_bind_blob_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_bind_blob_test.riv",
+      "sha256": "46b47578e6dd6e70ecffac35449498275fd2ee8773efbc5cb04d22cad5fb7e58",
+      "size": 896571,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/data_bind_font_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_bind_font_test.riv",
+      "sha256": "8d3bdbfafc41b7a18b6052c69a40b953a0d4b388b806e2fce9ea9db3ade42299",
+      "size": 206536,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/data_bind_keyframes_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_bind_keyframes_test.riv",
+      "sha256": "071e725eee802ff240e1ac1a2949748150d2d82cc19099f8f418257357729f3e",
+      "size": 877814,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/data_bind_solo.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_bind_solo.riv",
+      "sha256": "bfd606ae63ec4b3d4ce04ace57a40cfec8b8b07b2d6fb89e807f43f653f297d1",
+      "size": 878179,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_bind_test_cmdq.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_bind_test_cmdq.riv",
+      "sha256": "054219ac8b15e384c8026c1ba9340385300fd00c649d8b787671d0d6fd7493b8",
+      "size": 1690399,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_binding_artboards_source_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_binding_artboards_source_test.riv",
+      "sha256": "6bd1b8cd803345402466c378030b0514e529a58500b936877504dc60e2f8d860",
+      "size": 806671,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_binding_artboards_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_binding_artboards_test.riv",
+      "sha256": "d32ce8f143fbb4fcda7eb09ef956a808d48e42f50a538f79284a70368a14b3aa",
+      "size": 808052,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_binding_images_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_binding_images_test.riv",
+      "sha256": "ce50de83f12833d307b9f1f32266b2af4d0e76343cdb588a4afffe1ad0bc3960",
+      "size": 270919,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_binding_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_binding_test.riv",
+      "sha256": "c7e61a409945ffc70eb72c35b6efcd9a6115a00de0adc74419360ab88b740308",
+      "size": 833949,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_binding_test_2.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_binding_test_2.riv",
+      "sha256": "4c4046a01547d561db53093b6b0e8615a32728c72215a06c796ac023226e6a86",
+      "size": 1440,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_binding_test_3.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_binding_test_3.riv",
+      "sha256": "7dbd140165e3473a430e7257b684af5de783ceabb9b78dff5aa3b8f7e57f03c6",
+      "size": 810352,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_binding_test_triggers.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_binding_test_triggers.riv",
+      "sha256": "31b1a4e891a6aef86ed1d066c89194efd0f2d6799f0ad8177322461845773b98",
+      "size": 674,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_converter_interpolator_reset.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_converter_interpolator_reset.riv",
+      "sha256": "0a3947f234951526d6e40e501980e1abe70748afe7b74fe200a39f4cf7f43fd3",
+      "size": 371,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_converter_to_number.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_converter_to_number.riv",
+      "sha256": "c9e9a577bb403159c1b648b3203ce53981b8a7562114d107b60369dbe1cd0f95",
+      "size": 878233,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/data_global_repro.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_global_repro.riv",
+      "sha256": "a3d7f2876cb361ee4b739b1cf9083328a9c793889e09434685652b85387983c9",
+      "size": 1804,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/data_viz_demo.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/data_viz_demo.riv",
+      "sha256": "7e50bfe3a47824908d71c5959f7ab6ccc96f78c0c24cb056ed0f772dc3ddae0c",
+      "size": 1652339,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/databind_artboard.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/databind_artboard.riv",
+      "sha256": "659122321319c99cb50d484eda745899c25f994f90eb46ebc4d6e1a091e67ef7",
+      "size": 877804,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/databind_external_artboard_child.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/databind_external_artboard_child.riv",
+      "sha256": "76603628a1b63119b70f9972a61cb8fa9596fe93f8eaad3a1a2c893563409327",
+      "size": 877036,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/databind_external_artboard_main.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/databind_external_artboard_main.riv",
+      "sha256": "e5666c6ae03764f57fc49470975edf7615d6282476f2e65ae59f9f12ff9baae0",
+      "size": 877010,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/databind_null_artboard_swap.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/databind_null_artboard_swap.riv",
+      "sha256": "0160b4572f217271df84072b08476d433a71c5bf78a9917f39fbc03239560a1f",
+      "size": 309,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/databind_solo_to_enum.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/databind_solo_to_enum.riv",
+      "sha256": "b4dced839fa146c042beeba06761ec4ebb4767d49e46e88542e7d0ffae6ab389",
+      "size": 878118,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/databind_viewmodel.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/databind_viewmodel.riv",
+      "sha256": "d4e85adb433e2a21585a4b5c199644fad1b0250eba9a4cbefeae39b8c35125b0",
+      "size": 878328,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/db_health_tracker.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/db_health_tracker.riv",
+      "sha256": "bbd78d53e1402e76460314a1eee3d29e153d1907cbb4cc0c8ee31daa1c48b4cf",
+      "size": 330310,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/death_knight.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/death_knight.riv",
+      "sha256": "9851c4457b0daeaa6dba296d0ea8fa4e796f2dce5ff1501b948c1432904c66e0",
+      "size": 66265,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/dependency_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/dependency_test.riv",
+      "sha256": "1321815e37a5101a9176b2e147cac2b203cc9cd81366e49d46d1f97c28ec784d",
+      "size": 318,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/deterministic_mode.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/deterministic_mode.riv",
+      "sha256": "8779a2b06ff7aa2dc823e4540a0ed73cd1398f34431b4040881c2ebc22e3994c",
+      "size": 777,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/distance_constraint.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/distance_constraint.riv",
+      "sha256": "6d0931ccb9f1b6ac35a2026d0546dfa6ab71ec10a66e490e5dca3d1ef6316943",
+      "size": 196,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/double_library_with_image.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/double_library_with_image.riv",
+      "sha256": "a3f9c75fa4db319712173d0c240aab719e9a57fb943c48ed4efd4867917d645b",
+      "size": 749,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/double_line.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/double_line.riv",
+      "sha256": "59424884e40f2a46093988f66a39d07d6a78e8cbfa9f676bb042ce969be1e66e",
+      "size": 805897,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/drag_event.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/drag_event.riv",
+      "sha256": "4e0a0e128fd5cd54433988d7810377c20995e866f0df814cbfcf457724b302e7",
+      "size": 761,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/draw_index_list.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/draw_index_list.riv",
+      "sha256": "cb2d022af5399c4d763a0d867c994d947a2b0e480523b391e24f15fe3d2835bf",
+      "size": 2264,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/draw_rule_cycle.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/draw_rule_cycle.riv",
+      "sha256": "db0cf30b8df689dc1d29dfbf4316b69c61270743a7eb94bcd3ac27600a00c9c3",
+      "size": 693,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/echo_show_demo.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/echo_show_demo.riv",
+      "sha256": "425ebe1d189a281778d254030624bbf01a10e1e91de59f56849afc34296563c8",
+      "size": 3012517,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/ellipsis.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/ellipsis.riv",
+      "sha256": "998bc5cc21a17460096913268dbd9216e6133c3ab9729fe7153b2f6062283f6f",
+      "size": 805828,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/entry.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/entry.riv",
+      "sha256": "e5512458171a2715a8736c3264475b50cbc2079c3fe2120845f5f45b8c25d60b",
+      "size": 426,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/event_on_listener.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/event_on_listener.riv",
+      "sha256": "011407faa0f4eba9576556c4733e524d8989bc489d75ff35afba31ff88fc3598",
+      "size": 429,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/event_trigger_event.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/event_trigger_event.riv",
+      "sha256": "b39ec0c0ca211f266d4c950fb12e98b17687a7459f69c518a421647d93090007",
+      "size": 890,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/events_on_states.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/events_on_states.riv",
+      "sha256": "6f360a9ba8e224871161a4945d24959c75fba97d9ca81f33be0f73252c31b3c4",
+      "size": 486,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/feather_render_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/feather_render_test.riv",
+      "sha256": "f67b8442685fb11f3aa847e3a39f285f02bd40bee5aee04fe531650946da8c9d",
+      "size": 324460,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/fill_trim_path.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/fill_trim_path.riv",
+      "sha256": "cdedcc7ac63a9627e98ebbd9953b1e9bb0b73045fed7256d5f1e33ac21a54d89",
+      "size": 574,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/fit_font_size_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/fit_font_size_test.riv",
+      "sha256": "aa5f0ad56d49494e267f78848ff01fae7e91dd349c9ac43cafdd25b83f22529b",
+      "size": 878807,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/fix_rectangle.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/fix_rectangle.riv",
+      "sha256": "7914a6b7233e48f1b51e69d94f642aed56da216bbb8b77f28c57de0a7715ef1a",
+      "size": 727,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/focus_collapsing.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/focus_collapsing.riv",
+      "sha256": "5f9b979a23692919cece02ac6121c4c9575ef2e9a302f81cb299a04881ab9d74",
+      "size": 2168,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/focus_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/focus_test.riv",
+      "sha256": "e6113088b57bce3b5cf3bdf9bc959b6fa84e76e46246f8c2edea5c49d2d7bf13",
+      "size": 560,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/focus_traversal.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/focus_traversal.riv",
+      "sha256": "3358e49bdad493aaacedd8840fb3e344c26505c9c68231f543f0814fc7a74e0c",
+      "size": 880107,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/focusable_element.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/focusable_element.riv",
+      "sha256": "c2bb00a5f7114e606b1008c7a51a699144b664d6cf3c4d129baca9fe3e749f5f",
+      "size": 1171,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/follow_path.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/follow_path.riv",
+      "sha256": "0c4104bd8f2681eafb13f5e61fd48f7ebf70b545509bc29b945a9803b07f1e18",
+      "size": 275,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/follow_path_constraint.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/follow_path_constraint.riv",
+      "sha256": "5a0ee96b7101ef3a3e6a8625900f6b7baac31a07a1a9855a02c66c2fb447d53f",
+      "size": 529,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/follow_path_path.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/follow_path_path.riv",
+      "sha256": "54020ef6a20855612b904334a59c4f65649f77215aa062c9d0c5618f3ddca5d6",
+      "size": 818701,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/follow_path_path_0_opacity.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/follow_path_path_0_opacity.riv",
+      "sha256": "13faea29048943891f0f6e3f510e55833632752fdbe55125e784086f0057fe44",
+      "size": 255,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/follow_path_shapes.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/follow_path_shapes.riv",
+      "sha256": "6d2eea5391be368871ba71c5b6cf9b8b8a20fe3ac00f98a473c552e08208493c",
+      "size": 2750,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/follow_path_solos.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/follow_path_solos.riv",
+      "sha256": "89e77e51b507430adb94340455a2b7bd4da40aef55f1ee9568603f50ea09963f",
+      "size": 287,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/follow_path_with_0_opacity.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/follow_path_with_0_opacity.riv",
+      "sha256": "ad7878ede24ce4d13807bafb1e630bc6290bd3d1be80aa98669ea2abc5da6075",
+      "size": 280,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/format_number_with_commas.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/format_number_with_commas.riv",
+      "sha256": "dca8de8b6747353062f6004abaa6a136702abb0b8c73abc19cb486e67b3cd267",
+      "size": 877603,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/formula_random.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/formula_random.riv",
+      "sha256": "e054b405e5cc51b9c92a856ff2e78f5ea5af38631e76a77e46a34910a67bc412",
+      "size": 1028,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/gamepad_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/gamepad_test.riv",
+      "sha256": "b8fe924f342d90fe601a668e3393988714346dfa643e3e1020cc9bbe2f77c330",
+      "size": 893881,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/global_variables_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/global_variables_test.riv",
+      "sha256": "4c0e5946848a65d60202061ad9775f7e7d6ffc81fbf1ba514a6efcecb9c8b97a",
+      "size": 879579,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/global_viewmodels_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/global_viewmodels_test.riv",
+      "sha256": "8d65031445aeb06a4f366186c731700cb1eaf7db23e64e8e0d704c9644cafbec",
+      "size": 877850,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/group_effect.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/group_effect.riv",
+      "sha256": "deb3f3d8bf34a68ec2cfb202d278937fd069e7f2f5f8f4720e2fe794531ed601",
+      "size": 2522,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/hello_world.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/hello_world.riv",
+      "sha256": "e0c04c5eb0cc2b9fba453ff943a150e4b321d3e12de562d4df4589c43f3a78e0",
+      "size": 33413,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/hide_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/hide_test.riv",
+      "sha256": "e603ea5916d932510c731b76315efa0fb819a75a57f29c324347907415c9b54c",
+      "size": 1609,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/hit_test_nested.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/hit_test_nested.riv",
+      "sha256": "2235a9c74ab9cbcc30d1d011fd780e94c04e04a23e042d5296fdea0972ea0f65",
+      "size": 877838,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/hit_test_solos.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/hit_test_solos.riv",
+      "sha256": "2e9e53e4aea361e4d6b5305e5a0fbf3ea6717f829b35f9f1f3bd8b09af975c99",
+      "size": 579,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/hit_test_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/hit_test_test.riv",
+      "sha256": "dd20f5064a20093bc95d9bb8dcd55f451a3dc2802ee74f7a58f9c9275bb1b66f",
+      "size": 883710,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/hittest_collapsed_layouts.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/hittest_collapsed_layouts.riv",
+      "sha256": "a3e925bda8d4583439963279a6a22567f93b6295e25acf04c6208382e1e3c37a",
+      "size": 877324,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/hosted_font_file.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/hosted_font_file.riv",
+      "sha256": "4805f22e51f2429013f98c5df6947d18b2efde50b93b70d33928e6e2c25624c6",
+      "size": 309,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/hosted_image_file.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/hosted_image_file.riv",
+      "sha256": "83d49331ba47368e8688a737dc6d2c15ccb5ee9e4e00c5dd92c7cce79eb18e14",
+      "size": 251,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/hunter_x_demo.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/hunter_x_demo.riv",
+      "sha256": "32dd267ef78ac4375871ec418176e01cbffaf96837150a4d28a1c953174d00b1",
+      "size": 398815,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/ik_anim_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/ik_anim_test.riv",
+      "sha256": "064492b51c369ebf843f16abd4e9915c89b8086d5f3e6bdc60c04e85e4fbce02",
+      "size": 2122,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/image_binding_with_listener.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/image_binding_with_listener.riv",
+      "sha256": "0658242dc084c1260645f393ac86aa854520d71e59fb439ea66f923d4cc54fb8",
+      "size": 35579,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/image_computed_transform_bind.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/image_computed_transform_bind.riv",
+      "sha256": "17a6d1e6e9f9713cf78d522b96957c21c12d60aa40d54285759bee151c9f4730",
+      "size": 15451,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/image_fit_alignment.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/image_fit_alignment.riv",
+      "sha256": "77255e59893cc7efe9661a9a4f9e00146625779a4692d5d883002edbd3085154",
+      "size": 206018,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/image_fit_alignment_2.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/image_fit_alignment_2.riv",
+      "sha256": "303c6af00c36507d5b3fef736d5898ec7e2bda6b628e5ba0ae170dbea66e5363",
+      "size": 206493,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/image_fit_alignment_3.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/image_fit_alignment_3.riv",
+      "sha256": "b65db6514d785a7e65500f84bd8c6e59838b634807bbf00038cc911e325d8c57",
+      "size": 15798,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/image_fit_alignment_updated_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/image_fit_alignment_updated_test.riv",
+      "sha256": "3a92b66d0dec0ad918efc5f2cb7cdf573e8a4d01a1d52bbbfb5777fb026b4f2f",
+      "size": 15688,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/image_scripting_property_value.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/image_scripting_property_value.riv",
+      "sha256": "81184fa4535f677fbae2f5bc35b6044e96b25f3b354cf35a57e557ace1a6d6da",
+      "size": 1617096,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/in_band_asset.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/in_band_asset.riv",
+      "sha256": "465135b6b6ce5c720fc693b7334105af111c048d031b67a200d367eb753c7248",
+      "size": 505,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/interactive_scrolling.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/interactive_scrolling.riv",
+      "sha256": "571f463f0ab64f1b5ca83529d2974741de78d849101b4da2ed8c4f0528cdf65d",
+      "size": 1174,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/interpolate_to_end.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/interpolate_to_end.riv",
+      "sha256": "1a920e3a50d5f3c546f3e97c7c525fbd8cf4c6d59bba819210381eeb47140a20",
+      "size": 877484,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/interpolation_zero_duration.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/interpolation_zero_duration.riv",
+      "sha256": "f15b5388d2cd31f95e5caeda3be17e1e22b56ff4070185e4a66e0dded9ad86d3",
+      "size": 646,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/jellyfish_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/jellyfish_test.riv",
+      "sha256": "b8c694dcd2bedc5b2729e1a8459fa69ef9e46afe8c0c1dd0bbf57497f86c3a71",
+      "size": 3057595,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/joel_signed.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/joel_signed.riv",
+      "sha256": "2998153d486734aed171c1740cc0330f35ba3d1ac099d2adb96150b3e6c20490",
+      "size": 520622,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/joel_v3.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/joel_v3.riv",
+      "sha256": "973083c2edc5f1fcb4137e3c08649a7ef45242eb09ca6357331a5a45aa18a2ae",
+      "size": 451002,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/joystick_flag_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/joystick_flag_test.riv",
+      "sha256": "74b8d53be35399019c09b8f4cf36c0d4447df2c1825f79e9534772424fd07cb8",
+      "size": 488,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/joystick_nested_remap.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/joystick_nested_remap.riv",
+      "sha256": "4b019529a203db82f58a9d66d2b667e728727e805a651f78a4eacf0d18f5da3b",
+      "size": 472,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/juice.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/juice.riv",
+      "sha256": "daaf46c69342acc1483577055fb474a4801c6b9bc5f62a919d9c08454b4f894d",
+      "size": 9394,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/keyboard_event_to_script.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/keyboard_event_to_script.riv",
+      "sha256": "47790ac4442aacb36d11c72e345eb48bd85aedad923b0d39d8d4383c52cd30b2",
+      "size": 1112,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/keyboard_listener.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/keyboard_listener.riv",
+      "sha256": "cf7355e3064fdb87bf979910bab0f340364bc89ca9850795e2add7374898252d",
+      "size": 880592,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/animated_cubic_participant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/animated_cubic_participant.riv",
+      "sha256": "4cbe2e4972ea150a49b389ddd622419de9750c03c213af629a7d1bcb007d3f4f",
+      "size": 225,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/animated_participant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/animated_participant.riv",
+      "sha256": "9f3d43fbef46f3bcc7dd70e8c4a8ed1e1ec21b78d9b20457c582fb3c3bb377be",
+      "size": 192,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/artboard_percent_margin.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/artboard_percent_margin.riv",
+      "sha256": "3b530da1436503bc39cdbf90f3abb9feb31abf64363c20e16dd52210040ffcfb",
+      "size": 736,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/constrained_participant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/constrained_participant.riv",
+      "sha256": "663b706ecfc92ea3b95af2b036480a314dac58ca715e287a60da494b6f6dfc24",
+      "size": 206,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/display_none_participant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/display_none_participant.riv",
+      "sha256": "9542270d8da850126161879131f67d76aed48f934cb2c2130c7e7237d5557aa0",
+      "size": 203,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/fixed_participant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/fixed_participant.riv",
+      "sha256": "c3d80d8fc0eae983abb37a9b5b2e381c487e0991d84e91560b015565193f8df9",
+      "size": 173,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/grid_2x2.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/grid_2x2.riv",
+      "sha256": "c0443d592e6069bd7026f2b95f0a9ac070f7d26d4523becc7b6f149efca241f8",
+      "size": 375,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/grid_auto_rows.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/grid_auto_rows.riv",
+      "sha256": "89b7085af0a98dc331749b39986c86d80e59b3126f09816adecb2bcf78a9cf23",
+      "size": 469,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/grid_participant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/grid_participant.riv",
+      "sha256": "0b7b99ae54589ff1e213ff561fafa20aebff9fc64930db79c5bde9157b21a511",
+      "size": 262,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/grid_track_types.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/grid_track_types.riv",
+      "sha256": "cdb81c441e5c0e7230dfd7adfb6b3aac3df33a8efde7cbae58bd6280618beac4",
+      "size": 387,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/group_participant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/group_participant.riv",
+      "sha256": "6d6855486bd1786857721661d100cfad9268b6cf056bc6d5eb1219f3bf1ef1ba",
+      "size": 188,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/hug_participant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/hug_participant.riv",
+      "sha256": "d7d83d26cc7d64e164d0b8300d1c3851671729879cca321ab67ac3f0e52e0dae",
+      "size": 211,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/layout_alignment.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_alignment.riv",
+      "sha256": "a6c21bfa402e94b34446e19c8d48fbe9d636ad78e43515d0564bb5435a97633e",
+      "size": 622,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_anim_bound.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_anim_bound.riv",
+      "sha256": "58941f17d20ac31ca3418cfe5aaba9c523851150a5cb2ea1c1cd8e252ec04d8f",
+      "size": 916,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_animation_component_list.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_animation_component_list.riv",
+      "sha256": "7623c4c142b0286a8708bd23332127e77d6dd8b60ccd3465c1f3f4cd36500bd9",
+      "size": 714,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_animation_nested.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_animation_nested.riv",
+      "sha256": "b40c236f4be4deb318fe79669958fe58256d5598800977f1200ddd32c942d6d9",
+      "size": 661,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_aspect_ratio.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_aspect_ratio.riv",
+      "sha256": "74e33b9726001d08ec5581fdd260365556621058c319bb25d65785a6f54f0053",
+      "size": 866,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_center.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_center.riv",
+      "sha256": "d382fa5f43c9dc2c2db9cc344c857147a7f88c9b1d477166207e8e72f72c8e61",
+      "size": 289,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_complex1.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_complex1.riv",
+      "sha256": "dba03386adb90dc5c465ade909aecd9d6c7f9fe3220f7a71176280051d447f99",
+      "size": 1223,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_direction.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_direction.riv",
+      "sha256": "084fd7823b9e106b2593a8e1703e01160982355bdb5191c3dd926a2eec5afb71",
+      "size": 806412,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_display.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_display.riv",
+      "sha256": "df92f8b5d82d1185284da4a0dc8fc619e48df03ea737eafe215107982feffd05",
+      "size": 877557,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_fixed_fill.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_fixed_fill.riv",
+      "sha256": "2a5d17d37683f2ca8cad9343e207604680fa4469d30a86b4efbee8cc9009d0fd",
+      "size": 668,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_horizontal.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_horizontal.riv",
+      "sha256": "fd3b11c7263efdac1b33028d97449440ca7a36e1445bf557b414a4f6a9f34d2f",
+      "size": 470,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_horizontal_gaps.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_horizontal_gaps.riv",
+      "sha256": "1444d90c67267634493626650f5aa703ecc08f85c16c041d36cd123513f49445",
+      "size": 482,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_horizontal_wrap.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_horizontal_wrap.riv",
+      "sha256": "df411eef7a35b9157d8e6375001f6d1460ce95431fa2ae244e5c2e82fec2632e",
+      "size": 764,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_hug_artboard.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_hug_artboard.riv",
+      "sha256": "89deca703a24c5472639932c587b1d95c2077beaabd5f208b0f5925e6fa2bef8",
+      "size": 877227,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_paint.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_paint.riv",
+      "sha256": "e0078bfc0be6d1d11ab20c654dea3fd75634596ab11f915a8a266cdec5fd8b9b",
+      "size": 710,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_scroll_drag_multiplier.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_scroll_drag_multiplier.riv",
+      "sha256": "8f54b517f9a743ed29ebe9e66d3d6ec097c42f92a387026e50ba0c58a303a016",
+      "size": 2121,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/layout/layout_scroll_horizontal.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_scroll_horizontal.riv",
+      "sha256": "cd0746ddc52519c1bd9ef40cb8f489e1f80231c0a2af65dd40e8e79168b3a3f4",
+      "size": 1250,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_scroll_list.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_scroll_list.riv",
+      "sha256": "a9d87929b36a8ff4e614e78c451f864c114cf48563dfdb9e72ecec4df1f4fbad",
+      "size": 806904,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_scroll_snap.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_scroll_snap.riv",
+      "sha256": "d5240777a6877611732d4f8ef357be613f251cd1160eba99a7570871cd0b62c6",
+      "size": 897574,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/layout/layout_scroll_snap_padding.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_scroll_snap_padding.riv",
+      "sha256": "c22ba85d5c8428d472fad0b228ffc2a7da8e6825dad50e57a37ab9c7140d5a6c",
+      "size": 2097,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/layout/layout_scroll_vertical.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_scroll_vertical.riv",
+      "sha256": "8b1d5a1a14576cb32f2d1fc7d8bf05ed6000128d9545cf8a6760559a42b5cd20",
+      "size": 1242,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/layout_scroll_visibility.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_scroll_visibility.riv",
+      "sha256": "18a198647a5ba2bdf231d4ae5c2c76391263ea17ec7da1f6bf787a3a5daedfbb",
+      "size": 879512,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/layout/layout_vertical.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/layout_vertical.riv",
+      "sha256": "4cdef1f513e4f5f17b73ce466527e63074137b3196c9a02a32710af4c449e709",
+      "size": 479,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/list_in_group_joins_layout.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/list_in_group_joins_layout.riv",
+      "sha256": "b39815f9b8180aed4f232103f4ebb25664403bbe098c42a3a83ee20196e94357",
+      "size": 160,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/measure_tests.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/measure_tests.riv",
+      "sha256": "cd7c26a53451555a01524d665a74381ac277b58140f5d9b3eae4c4d3e11c7dea",
+      "size": 805981,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/layout/nested_group_participant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/nested_group_participant.riv",
+      "sha256": "ec7210b9fca06c925952918663c7b28d79bfc77e8b8ee92b959af100c4e4d870",
+      "size": 255,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/scroll_velocity.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/scroll_velocity.riv",
+      "sha256": "bb71256c4b3d5b6da60c1a154edc18c511239ce0e1869f8a25e99432039b20e1",
+      "size": 878397,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/layout/solo_participant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/solo_participant.riv",
+      "sha256": "5ca81c977a5feac7ba7fcb9eb116db3b3482905ccfe08f87cdc9721ca411bd5d",
+      "size": 205,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/stack.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/stack.riv",
+      "sha256": "b6e2f1c0cbadb4c4e14d9734bf46f812dc833d71e1be3803f2bc81060907fb78",
+      "size": 256,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/stack_participant.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/stack_participant.riv",
+      "sha256": "4eb82cadc6fcefa1c33f33e68c16fda1ea1ee1b1b3fa6a95acb6a1849e8e8194",
+      "size": 178,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout/styled_flex.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout/styled_flex.riv",
+      "sha256": "cdafcd4b12649afb379b7eccbb6f287723d9ad30c1123347f075a2fd62969671",
+      "size": 265,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout_grid_stack.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout_grid_stack.riv",
+      "sha256": "21275c1cb9946e1c93ba3b5063e003db0b5f3e647f60359c8b14ae2b2ed9d6d3",
+      "size": 899305,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/layout_text_match.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/layout_text_match.riv",
+      "sha256": "1fea1a6102259aacd9b164cfac0b4a2f67d4fa4587b78f5eb25a2f195de7bcdb",
+      "size": 880039,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/library.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/library.riv",
+      "sha256": "12a8faf492106d667330fccfdb4533cf32cea7696c4f3ef3b26a0fce8c021e40",
+      "size": 903077,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/library_data_enum_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/library_data_enum_test.riv",
+      "sha256": "d40544b2d4fa15d72debf43be823ae9acd1aebf72965806a9a25606346669992",
+      "size": 397,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/library_export_animation_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/library_export_animation_test.riv",
+      "sha256": "fcbf528313ff7f7a75ba1022ba12ab8caad9898c801211cf5711de844e1595d6",
+      "size": 132,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/library_export_state_machine_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/library_export_state_machine_test.riv",
+      "sha256": "f3fec2ab9a29564bc4000da46779cbacbcac88a66dd3aa47d50c66ed29423aa5",
+      "size": 127,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/library_export_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/library_export_test.riv",
+      "sha256": "81844b05a78a07aa7f4f596749da2b4eec23c40bc36af4aaca7fbd4f3c611f5e",
+      "size": 112,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/library_scope_edge_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/library_scope_edge_test.riv",
+      "sha256": "b0b882273d3e1bb9735333fcdd869a066f4dd440e17133c43d60fdc010ea1c3f",
+      "size": 87,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/library_view_model_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/library_view_model_test.riv",
+      "sha256": "07ed36fdcc2276fbd77bab4f49d01548dad3c5660935e48944b6754dca6d44f1",
+      "size": 1039,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/library_vmtest_1_host.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/library_vmtest_1_host.riv",
+      "sha256": "cf2ec368ec72be22b12bdc29c70a24f2e9b129ff881d426c1b1e8f25c507d9c8",
+      "size": 479,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/library_with_image.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/library_with_image.riv",
+      "sha256": "c388adec30af340ffb873abba9ddb57cba53f9cf4d6f64a05ce0a68e38c12b05",
+      "size": 387,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/library_with_text_and_image.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/library_with_text_and_image.riv",
+      "sha256": "1e08aa8712f576519e8ee50257e395a0e5ed78dd51ed76a7ee30f448194dcfd4",
+      "size": 903438,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/light_switch.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/light_switch.riv",
+      "sha256": "d1e4227b1c9817d07466bf52255d4aec22cf73654d0d875e48a7e2a0826a62c2",
+      "size": 319,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/list_focus_order.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/list_focus_order.riv",
+      "sha256": "9bf6bff79065027e3cf2cc30bba4e7fab29f08878e3900fd5b2a784b0f59fb30",
+      "size": 879866,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/list_index_script_access.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/list_index_script_access.riv",
+      "sha256": "48f122b40bbe487690efc55057e1e9f42593a1b51fe93e4a2d40eaaa725f0fa0",
+      "size": 879525,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/list_items.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/list_items.riv",
+      "sha256": "85d6af0d340b2fc8868d45162bfa46c17cf3a3ed3fdc164ee9730d7e624ee7da",
+      "size": 877632,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/list_to_length_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/list_to_length_test.riv",
+      "sha256": "07c8a5d4dacbbeeabf9f3db115cdbc980952a492801642f1eeb29f61599f593b",
+      "size": 806717,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/list_to_path.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/list_to_path.riv",
+      "sha256": "46c24313d5c2fecb1d22fd8e0ae14e42f047dd9aa1218284cd31e1ad2d2588a8",
+      "size": 755,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/listener_action_inputs.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/listener_action_inputs.riv",
+      "sha256": "6d75f5b42a69cd30777b2fd0775f896ee8a1c688111d4cd54a732ab89e118a6c",
+      "size": 1347,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/listener_view_model.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/listener_view_model.riv",
+      "sha256": "25131044770bbf2afe60f6c6ee6fe66c9dda97de66b6138814394610989ac55c",
+      "size": 877721,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/local_bounds.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/local_bounds.riv",
+      "sha256": "d2d9b44a033ad77b421d06423e69b9ded78f0470287a0de2505d74245841ee53",
+      "size": 892795,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/lock_icon_demo.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/lock_icon_demo.riv",
+      "sha256": "853209cef8484a9f7c9e29fbc6eb3636877f548a0b18480741ce026d955192ee",
+      "size": 1400,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/long_name.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/long_name.riv",
+      "sha256": "9f4b5f73afdd9223e7351fe853afa587f242868298576320ac6556ae91c54e9f",
+      "size": 8744,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/looping_timeline_events.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/looping_timeline_events.riv",
+      "sha256": "37b66324f8cc85e174da3adbd4cd2ca9ef61f43bf419a4172e941ee4a46f32cd",
+      "size": 169,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/magic_alley_db_reduced_export.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/magic_alley_db_reduced_export.riv",
+      "sha256": "65d02fd33eb6e307015800af187bef27305c93cb24ab8c1110b71553ddf0f359",
+      "size": 8082,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/modifier_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/modifier_test.riv",
+      "sha256": "b27954985f4c4b40f1b353cedabd19e20faa34b0ba2eba76e00c71b604faa11b",
+      "size": 805909,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/modifier_to_run.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/modifier_to_run.riv",
+      "sha256": "8d4b35c0f4fffcfbdfa74135f86ec0f7823484ca2b94fec2266e5a7a140720ef",
+      "size": 806758,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/multi_listeners.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/multi_listeners.riv",
+      "sha256": "d0279479bbbc64ac2f576ca847555f8fabc81ceca7ca4954364768b9f02b2d37",
+      "size": 882454,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/multiple_state_machines.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/multiple_state_machines.riv",
+      "sha256": "62147bdb114ca6c11146209b55aa9a08a9adcb666e373429120ed0b896fc68de",
+      "size": 259,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/multitouch.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/multitouch.riv",
+      "sha256": "aa1ec74ee595ae9613054733652ededee9f12581cc3e32777152f597fd03113a",
+      "size": 1022,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/multitouch_enter.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/multitouch_enter.riv",
+      "sha256": "895cc6bb8bec40a7878f36c46edc145ec96946552c87251117ce7517912ffe8f",
+      "size": 2823,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/n_slice_triangle.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/n_slice_triangle.riv",
+      "sha256": "d99647dbcb6b6408da8926b31856008c1c863d7ac7eab3ec1b2a9300e258d331",
+      "size": 344,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/nested_artboard_opacity.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/nested_artboard_opacity.riv",
+      "sha256": "f25dacc37c30351ee4d7c35e732ac85f5daecbc5b5497ab6b16d676014d2b410",
+      "size": 155,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/nested_artboard_origin_override_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/nested_artboard_origin_override_test.riv",
+      "sha256": "f17d3c0b4c0e7a333cf18d0b797f6b7117a6c12aa215c17c8a25988c2f190a0d",
+      "size": 739,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/nested_artboard_quantize_and_speed.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/nested_artboard_quantize_and_speed.riv",
+      "sha256": "032a3c4a8ba239f4e623d3a12fde8c382501aea6fc468a04690ebda919697034",
+      "size": 835,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/nested_event_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/nested_event_test.riv",
+      "sha256": "abad848f649b68f95797b8d04328254c3351bfc19426e96e9120f7755ea866a2",
+      "size": 626,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/nested_events.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/nested_events.riv",
+      "sha256": "21c31b24b845d95362dfcfa66401427c41536209258fb5455f2da259aeabfe7a",
+      "size": 877813,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/nested_hug.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/nested_hug.riv",
+      "sha256": "e6a50e2db03381c1062372f9454fbfe94e713ef32033d409ac285f49877ca15f",
+      "size": 878548,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/nested_library_scope_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/nested_library_scope_test.riv",
+      "sha256": "ffc5df38c89ca3a6accdaa97df1cb655ce01760836d1604f623ce86b87f6359e",
+      "size": 102,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/nested_needs_advance.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/nested_needs_advance.riv",
+      "sha256": "2b97a6563b67eec2787045b2b1513b09d01a25dc44ffff5c125dde7c316e2e85",
+      "size": 638,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/nested_solo.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/nested_solo.riv",
+      "sha256": "21911504c94e990d34ad51834ed77913ca6f1f4a0f05a4e5b5e2ccf6fe42703e",
+      "size": 581,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/new_text.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/new_text.riv",
+      "sha256": "98fa6ed336edea620ef83f6d7a215fdb2cc1da3d0a8557ff1746f556ef1973ea",
+      "size": 392885,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/number_to_list_nested_children.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/number_to_list_nested_children.riv",
+      "sha256": "185d9e3b931b8e76cd15283366cec3cd68b07986953cdea88e1772e8aab3652b",
+      "size": 807373,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/off_road_car.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/off_road_car.riv",
+      "sha256": "d9291f427a337cc127f36f9c85c9c74f27060565edd48ddd17acaa3046b736f4",
+      "size": 35535,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/oneshotblend.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/oneshotblend.riv",
+      "sha256": "3f04a91767fab4c83ec8014647f8979c8a805b90042c095635408eb25e7678de",
+      "size": 265,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/opaque_hit_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/opaque_hit_test.riv",
+      "sha256": "749b128c23ac23c10181dbc10868eca8b803ea360cf3518d8211dad3870e00ba",
+      "size": 1008,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/out_of_band/walle.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/out_of_band/walle.riv",
+      "sha256": "37adafd045b466dd575e5cd8585d5339d0e5d62e8d8ec93dc42bb056888af30e",
+      "size": 264,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/parity/Halloween_v3.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/parity/Halloween_v3.riv",
+      "sha256": "b786c27b0fc5ede17dca2365dd1830caa2e46654b89ac3f509337b792af48744",
+      "size": 40541,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/parity/Knight_square_2.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/parity/Knight_square_2.riv",
+      "sha256": "cec7ff27afbf9506cd64c37cccf40b0e58a8eacd8a91dc7deb54c040ad9addb8",
+      "size": 50051,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/parity/Tom_Morello.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/parity/Tom_Morello.riv",
+      "sha256": "2c2816f02811d6f349b6d73829d593e120939e554bde7f838b8c10f6c8ea0c82",
+      "size": 40368,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/parity/UI_Swipe_left_to_delete.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/parity/UI_Swipe_left_to_delete.riv",
+      "sha256": "712fdb564fc2cb2f646a0023999f8bb1be3f88558503a3c7da1d5610a03f40e2",
+      "size": 5432,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/parity/falling.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/parity/falling.riv",
+      "sha256": "e130d00fc2317190c45f46f42900eaf7749bf03d89662574cacc8c101ff0f830",
+      "size": 427493,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/parity/popsicle_loader.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/parity/popsicle_loader.riv",
+      "sha256": "b97e2b06df39286470179205e4112bd72617a596fa1dbe21abeeed173631e7b5",
+      "size": 4598,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/path_effect_with_feathers.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/path_effect_with_feathers.riv",
+      "sha256": "8b4f8a3c49d9df9f00d06c90582f2fec00c0c01463be2e19a1e32f3e5e7d2f53",
+      "size": 2005,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/pause_nested_artboard.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/pause_nested_artboard.riv",
+      "sha256": "8e0daeecf211412024b319a3efad39530a3fffe71f241b896554250c055771d2",
+      "size": 873,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/paused_nested_artboard_opacity.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/paused_nested_artboard_opacity.riv",
+      "sha256": "642c9f7fd909b9955a875e0bb745d0998d3ac4b64a11b863b09e3b0ee5682944",
+      "size": 877714,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/pointer_events.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/pointer_events.riv",
+      "sha256": "f221020aebd1c5756adfee21c594b22e5af4d4f3e7cac6bdc6df097815df0c08",
+      "size": 535,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/pointer_events_nested_artboards_in_solos.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/pointer_events_nested_artboards_in_solos.riv",
+      "sha256": "a4a78db90ed683627282ba449588724f38ce1ec717e39c29dac66f179f72f9a9",
+      "size": 577,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/pointer_exit.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/pointer_exit.riv",
+      "sha256": "74c6473e54e1103e4ebf225b8c4067da832be67a8a3be95d60ef2e983dfa3204",
+      "size": 1328,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/quantize_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/quantize_test.riv",
+      "sha256": "f8e0eb98723bedeec5ef225ecd217949b9ff8848dcdcc8681b3b04367b3d78e7",
+      "size": 200,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/rapid_pointer_events.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/rapid_pointer_events.riv",
+      "sha256": "e0584ba73df9bf8a7ac1a4ff1c3e381212967b10025d936e49ddab3d30a13079",
+      "size": 528,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/rebind_with_nested_viewmodel.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/rebind_with_nested_viewmodel.riv",
+      "sha256": "9e12ba4f780ca063606b6b2a88829bdf78e6dd6cff4a202fa50330d377aed095",
+      "size": 877121,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/recursive_data_bind.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/recursive_data_bind.riv",
+      "sha256": "c4aabbc0f301326d303cf5e247af2af798c0369c2028bafbb0be4db85e98f06f",
+      "size": 850,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/relative_data_bind_path.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/relative_data_bind_path.riv",
+      "sha256": "07a988cfa66f9669940c1c42d8478722c31e92b544d56addb7d9c35853022e26",
+      "size": 880125,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/relative_data_binding.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/relative_data_binding.riv",
+      "sha256": "a7b22ba904baacfef8cd2e4def4a8cf00ba591b182ada186761a536df23e5701",
+      "size": 878168,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/remove_from_list.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/remove_from_list.riv",
+      "sha256": "94f64bbfc5cff0c177e8f1b31977dba6b827115dc78b77ae87c7a1c452ffe4ce",
+      "size": 878950,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/replace_view_model.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/replace_view_model.riv",
+      "sha256": "99a04bd4ff5c0a9b333e83c6a3840861fac6a26237329c7eef6993b26b64e4f5",
+      "size": 879060,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/replace_vm_instance.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/replace_vm_instance.riv",
+      "sha256": "4c43836d0f521587a6274781c9ca3b7909c40cf963c0d941a681ef9a1713b0b8",
+      "size": 879515,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/reset_phase.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/reset_phase.riv",
+      "sha256": "6ec986b3eeb13bca54e4b72be038964c455914f558ce2d1242b3e7d416c568d5",
+      "size": 1649,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/reset_shared_viewmodel_instance_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/reset_shared_viewmodel_instance_test.riv",
+      "sha256": "9975d8447afd0b12110f0e308da20bacb2688f0000e56a3ed855311b21f4b8ee",
+      "size": 3376,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/reuse_path_in_effect.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/reuse_path_in_effect.riv",
+      "sha256": "b28d6083ce9ce6ba772e3573296673ddc272cc77b8543109b740a928c66195f3",
+      "size": 1325,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/rewards_demo.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/rewards_demo.riv",
+      "sha256": "90837e16c7f4db014c1b3f9183af68c7fee07f12d2eaeb5c31979fb9bba2449c",
+      "size": 217348,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/rocket.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/rocket.riv",
+      "sha256": "bda563e691213632a98c4cf11ac9833b11841af2c51240cb9a2403928821ce0e",
+      "size": 4598,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/rotation_constraint.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/rotation_constraint.riv",
+      "sha256": "c4dbf3b9a3d569944b89cf0adda8e66c8e34565e4cac0915ac2c1b88370c3960",
+      "size": 132,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/runtime_nested_inputs.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/runtime_nested_inputs.riv",
+      "sha256": "61a14d72c5b9694b675d729e756fd4e3d0a075bf76ed545d07b62c301af962a0",
+      "size": 947,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/runtime_nested_text_runs.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/runtime_nested_text_runs.riv",
+      "sha256": "af8fe4c9ca146ae0fe43f3d43c5cc5bdd1934e2e3bcdce844549c46baca1aee6",
+      "size": 806323,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/saturation.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/saturation.riv",
+      "sha256": "76a3fce345f16c530d015e89651722c0259d2688cdebd955dfcd91b97475f7e9",
+      "size": 877612,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scale_constraint.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scale_constraint.riv",
+      "sha256": "60acd2c71cf471d8dac66c1482d4b517ced106451fbfd815cf1e264333f54ae5",
+      "size": 137,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scope_probe.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scope_probe.riv",
+      "sha256": "fe8c68d337616c0e0f6747012b592298a48a60655d88b28ca7a8fd91e1c02347",
+      "size": 342146,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/script_advance_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_advance_test.riv",
+      "sha256": "8fbea33d7677957b5c792975647aab78731272af50fa492129d58266d924b655",
+      "size": 1199,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/script_affects_has_changed.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_affects_has_changed.riv",
+      "sha256": "dd8a92e6cd08ab575beeb77cb8522b0da468341717014eeade1f5fcdb25d9f8e",
+      "size": 1394,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_artboard_opacity_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_artboard_opacity_test.riv",
+      "sha256": "87717651771b7a6954f30ea8d8af2ab804813650d7427e812922343c93aa7985",
+      "size": 2209,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_artboard_origin_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_artboard_origin_test.riv",
+      "sha256": "a824035caeff801ab7a858119369f2535d3ae23259f62547e7fec9845b696537",
+      "size": 2019,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_artboard_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_artboard_test.riv",
+      "sha256": "176cbfaea9331f1083373deeb836eeb4f616c4e71bd90c5b18647966542c301b",
+      "size": 3931,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_color_data_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_color_data_test.riv",
+      "sha256": "b35752467f57b2548da36ebe2a0b2d2390f8a0e14d96629101f1dd55c2e1f4ac",
+      "size": 964,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/script_create_text_runs.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_create_text_runs.riv",
+      "sha256": "b0be057c70cd9fc0ede6dd5f36f391af47082ddcc9e02f271eed1587606d7877",
+      "size": 881724,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_create_viewmodel_instance.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_create_viewmodel_instance.riv",
+      "sha256": "565c597c1b7656b9ad00e5a0cb059806d0bf72f8219c947fd1defea371635d33",
+      "size": 881671,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_dependency_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_dependency_test.riv",
+      "sha256": "b70be0b94ec838a891309006a75fa80901c822b8483856c87612ed652eac2e9d",
+      "size": 879064,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_dependency_test2.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_dependency_test2.riv",
+      "sha256": "2914e831572a5871efdcc0ff2da8d90f189f0ad552587413a92fe42eab1ac97f",
+      "size": 881012,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_dependency_test_using_library.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_dependency_test_using_library.riv",
+      "sha256": "1755b599cba1c666026e2b310b4949fdf75a670e3213ad146626044716572966",
+      "size": 1755486,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_dependency_test_using_library_v2.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_dependency_test_using_library_v2.riv",
+      "sha256": "3509a104f788dc17752f29f3e83fd9f84475ca9e4112238e26de3aafc8d205e2",
+      "size": 1755498,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_inputs_test_1.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_inputs_test_1.riv",
+      "sha256": "2adc05f62a2d13be14f057d7435f823f2723ea8596965399895531592141c789",
+      "size": 2604,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_layout_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_layout_test.riv",
+      "sha256": "98200f2bf3fb520f210cf010c08defef4be98ced5573bd7112c44afe65ce315a",
+      "size": 3049,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_namespace_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_namespace_test.riv",
+      "sha256": "75dce03051f850ad85a9a777729fdead261ead72b3d4a94d82bdbf9e5547cdb7",
+      "size": 881269,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_path_effects_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_path_effects_test.riv",
+      "sha256": "3790a537b8fec4e583f8f3aaa9df3dc3a8c0726f2ec3e5d3151b31cc86ee7427",
+      "size": 3610,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_paths_opacity_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_paths_opacity_test.riv",
+      "sha256": "75bfb69f0b5a99e36d80469631a1fd8293270835af67072e10839b4a6afb59ea",
+      "size": 6077,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_paths_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_paths_test.riv",
+      "sha256": "dfc22a7bcf27709c59c76e83d0c198450da652204ba97e2cb6bebff80c809ac3",
+      "size": 5828,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/script_string_converter_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/script_string_converter_test.riv",
+      "sha256": "d8f3f300a3538b5a1acdaa9e6bc71b317a57b72be08d48ad6645da3dd868a6e9",
+      "size": 878550,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_as_path.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_as_path.riv",
+      "sha256": "63d26b1e0ad1897aeddb9cc87d2d22af30c6cd5d5589166887cac3847bb8d4fd",
+      "size": 1756,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_boolean.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_boolean.riv",
+      "sha256": "e7906992ccfe0d5a2aeb93d09ba14bc25cd11410df29aba2b4ad4dc9d4f7c052",
+      "size": 264,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_color.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_color.riv",
+      "sha256": "df86ce248b6004c4ee7b669e8677bc49e77d253c4f1a40922faf552c08dbd33f",
+      "size": 280,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_data_context.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_data_context.riv",
+      "sha256": "7422618e3430167f62cd4b1f11df779ea963b6a73f699160f7ba079d9d918c74",
+      "size": 878384,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_data_converter_bound_input.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_data_converter_bound_input.riv",
+      "sha256": "5d065238b92f6864b06e6ba017e8441eddfc581793f2e482c1f3c19e4b864a17",
+      "size": 878255,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_enum.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_enum.riv",
+      "sha256": "3ff73708686283b44d90eeb7c3a649861dabd267de69022ed6120fd0bf76df40",
+      "size": 324,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_graph.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_graph.riv",
+      "sha256": "e29b46ff30c2306ca48e19cc36ffef2a6647868b581dc53b2f7869a4f436499e",
+      "size": 521,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_listener_action.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_listener_action.riv",
+      "sha256": "ae5104f561a3c80e6700ec91e5406286bf6cae63ed9f4db42ca3e9398f2ec141",
+      "size": 880049,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_listener_context.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_listener_context.riv",
+      "sha256": "650440cba93f26976df148778e855d6368fe67b65287b26b25a39f4771bd636f",
+      "size": 3452,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_memory_leak.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_memory_leak.riv",
+      "sha256": "b86531748f60c22fd1eb47566061c5c1a4e45507a883d3a30e793b0e31d7a1e2",
+      "size": 878678,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_path_effect_clip.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_path_effect_clip.riv",
+      "sha256": "6bc76d33f6b3761cfd689a8de7f3dfc9dbc5ae34ae75921c63bde4ab9e7c9583",
+      "size": 878664,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/scripted_property_image.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_property_image.riv",
+      "sha256": "cf3c69e4552cd4d5906286ef44fbdec5e3c7844bfa2aeaaa44317ddb9e7b6ee7",
+      "size": 100177,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_string.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_string.riv",
+      "sha256": "46e85f4ff51258ba2ecca51bbfebd52c615ee330d4fd334a46835d5f420c2023",
+      "size": 253,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_transition_condition.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_transition_condition.riv",
+      "sha256": "6213e109818173b919335405320cb44782b17f06fe0799f53cfbc4f775bec89c",
+      "size": 1241,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripted_viewmodel_cache.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripted_viewmodel_cache.riv",
+      "sha256": "f0aef38c96283eb1fc072cc8725f73428dd258f90835b01988b2c88a54dcd144",
+      "size": 878408,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripting_linear_animation.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripting_linear_animation.riv",
+      "sha256": "e35c3b013cff80896b1846144994861ee9268cbd03b7ad908f1c6cc54a92343c",
+      "size": 2641,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scripting_root_viewmodel.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scripting_root_viewmodel.riv",
+      "sha256": "f3d58bde53e4a56ac4a2dbf952d36dce6ff3a4f9672b0a454fd8dd2a704a8cd5",
+      "size": 1347,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scroll_intent.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scroll_intent.riv",
+      "sha256": "3d1289a28f6a53e484561ed9b0d4b33775deca57cd71d2019235b1e9043dbfda",
+      "size": 878744,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/scroll_snap.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scroll_snap.riv",
+      "sha256": "7ca80fb9edd0eca3a5183bd8821b3d75a15299636366159c74a285cf8c8f709e",
+      "size": 878776,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scroll_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scroll_test.riv",
+      "sha256": "6799e3f6619e63f4f5536713439e79b1d10f2b6755914a03dcfae430f1bbd3a8",
+      "size": 712,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/scroll_threshold.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/scroll_threshold.riv",
+      "sha256": "8192f5f0e699a056cdafa7392289e50dc148e85551ec98faf2b66b69299db58a",
+      "size": 2366,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/semantic/data_binding_lists.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/semantic/data_binding_lists.riv",
+      "sha256": "4c534c4b8033dba6fff83ccb4c1b2a935637a77094d2f6f7dcd91b7c8e641232",
+      "size": 123201,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/semantic/data_binding_lists_items.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/semantic/data_binding_lists_items.riv",
+      "sha256": "6b605affe9222250821effa115ee863593770c3ac91217d8aee2827d42fd345c",
+      "size": 123209,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/semantic/focus_nodes_list_order.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/semantic/focus_nodes_list_order.riv",
+      "sha256": "038a2cb8495ceb7cc7822dd784a2f7d0c37a72164532d740facdb87e8967b4c2",
+      "size": 1347,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/semantic/semantic_list_scroll_focus_fixed.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/semantic/semantic_list_scroll_focus_fixed.riv",
+      "sha256": "38b2bcd006c44ecbe78ce0957d7382c36ea7e07f753aa7755116b654d0691240",
+      "size": 878380,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/semantic/simpsons.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/semantic/simpsons.riv",
+      "sha256": "3e28691c3d3d5f09ba4ca3393f7e8f82dc3fbd72d398a7d239688c2756191c94",
+      "size": 1046047,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/semantic/tabtest.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/semantic/tabtest.riv",
+      "sha256": "529e4deb84fbf89da79730bbd1e3b487c915fe59088f2b2fd6c8b55371bc59fd",
+      "size": 1389,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/settler.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/settler.riv",
+      "sha256": "b642028531bd087bdc9bbf021a0d24ac9eef5a7d3d5a4d0adb59ba531e5eee50",
+      "size": 262,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/shapetest.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/shapetest.riv",
+      "sha256": "0e7904bb815f989120161712458d6725814804e1a21d0eb107a0968a1066d311",
+      "size": 291,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/shared_viewmodel_instance.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/shared_viewmodel_instance.riv",
+      "sha256": "e58c632f456c8b26bb2a4ca95c517fea7b6f4aec5de5ccba4490c1908cffe67a",
+      "size": 806606,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/smi_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/smi_test.riv",
+      "sha256": "51fb2ef2ca7a2014b4f4586df1c0894fef7d92d422a27ac82fef1459407b73f8",
+      "size": 462,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/solar-system.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/solar-system.riv",
+      "sha256": "b94bebeca3f384014ed995a5b7d0d8d113a44d3e20575348163c93f5721f53f4",
+      "size": 1858,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/solid_affects_has_changed.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/solid_affects_has_changed.riv",
+      "sha256": "9288faad2aa26e66f3584a29dd9afca4a1081d95580502c008aeb2250243b1d5",
+      "size": 528,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/solo_index_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/solo_index_test.riv",
+      "sha256": "e857c0d1f76cec0be8d8b9d8308ea9a0f581de29ed752b952940d90b5f6a16f2",
+      "size": 490,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/solo_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/solo_test.riv",
+      "sha256": "6bbdce3d1f843450319dc8d15a5caa90fef756c305aa44d1d9f8357c54bff7fb",
+      "size": 306,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/solos_collapse_tests.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/solos_collapse_tests.riv",
+      "sha256": "951f50463f2138ab806488aa81828682fd83f6236f85a66598333990b6201476",
+      "size": 3687,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/solos_with_nested_artboards.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/solos_with_nested_artboards.riv",
+      "sha256": "3b29fe46e3d7f43b04a0102f33706e44fc2086ae0041ea95afc34f7dac4e0854",
+      "size": 786,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/sorted_listeners.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/sorted_listeners.riv",
+      "sha256": "a51aa3ce9ca8e75f58b3cbec0f70b24c483acd895b478da97f1b720342dea554",
+      "size": 877358,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/sound.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/sound.riv",
+      "sha256": "c913d05bbbf0da3621186de4090d45766d5f843defd881f7b9220bdfe2a42fb8",
+      "size": 388501,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/sound2.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/sound2.riv",
+      "sha256": "1dbc5e55a6e74af72af284ca32591dfc8faa2d0f4db1f1c6f1fb8cc7c80f3042",
+      "size": 318949,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/spotify_kids_app_icon.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/spotify_kids_app_icon.riv",
+      "sha256": "778014de918fb97570ad428e350651ebeaa2816e69b12d86f6edc9319c83ddf6",
+      "size": 812486,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      },
+      "depicts": {
+        "subject": "Spotify Kids app icon",
+        "rightsHolder": "Spotify AB",
+        "status": "unresolved"
+      }
+    },
+    {
+      "path": "rivs/spotify_kids_demo.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/spotify_kids_demo.riv",
+      "sha256": "984e4d34c7a1469f767d7949ddf082c3d54fc76beb27c5424f68ad1d34e4b5b8",
+      "size": 980905,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      },
+      "depicts": {
+        "subject": "Spotify Kids branding",
+        "rightsHolder": "Spotify AB",
+        "status": "unresolved"
+      }
+    },
+    {
+      "path": "rivs/stacked_path_effects.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/stacked_path_effects.riv",
+      "sha256": "bae4a715dfc21b8b0341a33b7af6681341a5a964544c448058193fc06eb5e257",
+      "size": 652,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/state_machine_transition.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/state_machine_transition.riv",
+      "sha256": "65fc100a82b1c2015cdd6267e5b3f3dea0d7a772c1710a7e9c4a09c883e26e3e",
+      "size": 1415,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/state_machine_triggers.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/state_machine_triggers.riv",
+      "sha256": "116b7ba0a27ac13d70a6f3e9771a3b9f3b611edc7ba60bb564b8a10698ec509e",
+      "size": 292,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/state_transition_fire_trigger.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/state_transition_fire_trigger.riv",
+      "sha256": "6ddadcf1849216896a44fa1edaaa7617b21bfaab835e136de27dba61f98d0317",
+      "size": 878756,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/stateful_artboard_swap.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/stateful_artboard_swap.riv",
+      "sha256": "a325e192e6bea8955178ad8a3b97d11f9df63b9c7a210172622dea302bd7962a",
+      "size": 879044,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/stateful_component_image_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/stateful_component_image_test.riv",
+      "sha256": "47dcbcd02cd228f0e4ec71eaac84748f46f95b24737818f61b04d46242b48393",
+      "size": 16659,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/stateful_keyed_trigger.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/stateful_keyed_trigger.riv",
+      "sha256": "4ee16512e426d59cc4124bdf1f8562e4d257649dc61734f70426167c867b515d",
+      "size": 884,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/stateful_list_props.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/stateful_list_props.riv",
+      "sha256": "64c1d613971e6acf8b24370a6b99a57c1e7201629b749d34e115bf51e0827028",
+      "size": 878545,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/stateful_multi_property.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/stateful_multi_property.riv",
+      "sha256": "7c17389ac22a85502039f5d22be9462685c3b5688d7f5e5df86460c1a7e571e5",
+      "size": 878656,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/stateful_nested.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/stateful_nested.riv",
+      "sha256": "0d0840e33632eb7fa7b9e857b4ab1cb137fa6121f897f7d882160f61e7f16198",
+      "size": 879023,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/stateful_source_switch.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/stateful_source_switch.riv",
+      "sha256": "1e29bbb8f15f98f674edd53bba2e7f997cdcfb16fc5275f35d5a1a4ef0bd6343",
+      "size": 878367,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/stroke_name_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/stroke_name_test.riv",
+      "sha256": "312bb55b96de89670264f84880a1aea3a45ed6bd7d3c1424fb91721f8de8bb8c",
+      "size": 285,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/superbowl.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/superbowl.riv",
+      "sha256": "3554b19430dc43ec3e24d023b7ded460f5952aa9647a177d281217631a2c0fe8",
+      "size": 1010408,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/swappable_artboards_focus.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/swappable_artboards_focus.riv",
+      "sha256": "b36ee050fe0dccb447a00893ac7f89599f459eea53c5f4ecddef1a1f5b065fa0",
+      "size": 1228,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/tape.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/tape.riv",
+      "sha256": "5e5e43e962de83e538cee36f7191005d18b149d92206bbabbe0e070e9feb37b2",
+      "size": 116767,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/target_event.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/target_event.riv",
+      "sha256": "48f7ce26cf39d8eacb266d95569fe6e77485744ea26f4def0393bf562d7cc1da",
+      "size": 689,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/test_elastic.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/test_elastic.riv",
+      "sha256": "94fc84e59e952bfbec45cd7b92e2c3777a27188f63d8ec7b2bcfcb12e9034e41",
+      "size": 197,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/test_modifier_run.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/test_modifier_run.riv",
+      "sha256": "92209575938f1c37a628ef020f47c17b28790242eccf55882a98e21ddb73c19c",
+      "size": 805948,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/text_feather_falloff.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/text_feather_falloff.riv",
+      "sha256": "8bd75f10eeb6f2fe17ca8aedac037e8b3b2e3cec6cfa347cd76b736c58601a62",
+      "size": 877433,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/text_follow_path_shape_length.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/text_follow_path_shape_length.riv",
+      "sha256": "188af7be8035f39505c693a035f35dd05755a3dd0db1618e7f6a3321130a0499",
+      "size": 809981,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/text_input.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/text_input.riv",
+      "sha256": "718b80e13fc25f89c34b66fb01732f7ea1eac924ff06ca6b2caa5ed882324a72",
+      "size": 877541,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/text_input_event.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/text_input_event.riv",
+      "sha256": "0d851dc67f9efc6382d400263931fd1be57fad92a9b90e709f174b6b72c20df2",
+      "size": 565,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/text_listener_simpler.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/text_listener_simpler.riv",
+      "sha256": "dd2c073fa431f369411bcecdf3b11b66e19242a46ba60da4c2102c0899340008",
+      "size": 806134,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/text_opacity_modifier.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/text_opacity_modifier.riv",
+      "sha256": "6f38f133d380f5b42c8367d51a44c05435fabb705113d5b6107b2f86cc7f64a3",
+      "size": 806087,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/text_stroke_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/text_stroke_test.riv",
+      "sha256": "2662f8d73a0b180d6223b62b4fbec7602b1df06350b659d056aa7cb6444ed965",
+      "size": 805933,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/text_style_background.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/text_style_background.riv",
+      "sha256": "3209af9b117313f36521dbc3beffd40256168b516e0fc9b5ca6a0c4d10bdc360",
+      "size": 1287851,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/text_vertical_trim_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/text_vertical_trim_test.riv",
+      "sha256": "0d87a0113b0de1f1fcc2c7c0a183eaf91b604ef42fc71f904231a822f2146903",
+      "size": 10467863,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/time_based_interpolation.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/time_based_interpolation.riv",
+      "sha256": "8db824f494612828d5b5676ed4075ae399299817f2766c6fa84baf8da835d4d8",
+      "size": 618,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/timeline_event_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/timeline_event_test.riv",
+      "sha256": "d7153648bcf2d663429b21b6caec26e671c13b1ee8e3b90f0a9eaef7fd38c3fa",
+      "size": 209,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/transform_constraint.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/transform_constraint.riv",
+      "sha256": "6c746ef56c3887388dd010b0d0c95125e866c76e9c54ed0694408c3e2a9cc357",
+      "size": 179,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/transition_actions.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/transition_actions.riv",
+      "sha256": "26334033ca583c77c6a589fc6521daab3fe4803c64c35cfd50daee9af315e5c8",
+      "size": 877446,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/transition_artboard_condition_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/transition_artboard_condition_test.riv",
+      "sha256": "57e128af4cfd9ddd4ce76d5cfa6963d7f363de8ad6b357d6606c51dd0a31e194",
+      "size": 707,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/transition_duration_bind_list.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/transition_duration_bind_list.riv",
+      "sha256": "415396cbc1935c03cb8e42abd959ca54606d305f3b4b9d91c653a8c6cbe0705a",
+      "size": 878767,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/transition_duration_bind_nested.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/transition_duration_bind_nested.riv",
+      "sha256": "3953e9683b8e4e1600fff0bf281a490b5aecf5f91f74f09343386cdcad50c1b2",
+      "size": 879057,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/transition_index_condition.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/transition_index_condition.riv",
+      "sha256": "397a652ebe1bd0afb19abdbcd51ed4b73ccab4e673d3499ad275af3ec2db1892",
+      "size": 878,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/transition_self_comparator_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/transition_self_comparator_test.riv",
+      "sha256": "b8887dd366b49e2edc6e7ca221ad856e19c4d43d06feed6cdbc1acefc85952fd",
+      "size": 2171,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/translation_constraint.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/translation_constraint.riv",
+      "sha256": "d452b32bac4fce6456a6a695d523d0aa88e5d6836681b2eae93bd8c5f9573729",
+      "size": 132,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/trigger_based_listeners.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/trigger_based_listeners.riv",
+      "sha256": "8617363536d0ce796552f647259507304d91203a48575d56859d7a05b0e8babd",
+      "size": 877756,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/trigger_fires_single_change.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/trigger_fires_single_change.riv",
+      "sha256": "34322b53eb886a642d7bf215c76d173aa71333d946ba394697082e5cb659dc71",
+      "size": 877412,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/trim.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/trim.riv",
+      "sha256": "c9f96868800e044f65c9146d1097655e438be718ccd3d90a0de0eb80a71b984a",
+      "size": 184,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/trim_path.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/trim_path.riv",
+      "sha256": "592e42f78e0ded3af322fe578ede0ca1201f6298ef6535f07776ba0eabf1a6f4",
+      "size": 2232,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/trim_path_linear.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/trim_path_linear.riv",
+      "sha256": "ac8ae8e446f40be9fe06651f43b29fe8ec938564c9f64cc6a5ae24240b0b8d1d",
+      "size": 435,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/two_artboards.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/two_artboards.riv",
+      "sha256": "480472d9942711492ce37cdba9aea6266f254633f5a2ac4a9e30f9d0eca70e8c",
+      "size": 400,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/two_bone_ik.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/two_bone_ik.riv",
+      "sha256": "c2ef8563c393c9f375338cd034d8298e72c4f910a449e929ef780348840457a7",
+      "size": 313,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/unbound_stateful_component.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/unbound_stateful_component.riv",
+      "sha256": "5418919addaf0889d0867d4b5d7f5f85bbcb075c5db65b4d885aad0ecaee3ebc",
+      "size": 622,
+      "format": {
+        "kind": "riv",
+        "version": "7.1",
+        "major": 7,
+        "minor": 1
+      }
+    },
+    {
+      "path": "rivs/vertical_align_ellipsis.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/vertical_align_ellipsis.riv",
+      "sha256": "2378867cf6592cabe2a83a05f1ecf9d0c6f56d23ce56b2291c2c20c0ea846dfd",
+      "size": 878084,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/viewmodel_access.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/viewmodel_access.riv",
+      "sha256": "6858fd9b906ad4be31f454dfda4730f1eebf5384ef91e4b15f49f4f4abafe0de",
+      "size": 878554,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/viewmodel_based_condition.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/viewmodel_based_condition.riv",
+      "sha256": "c4216fef61c11971839807eb9b14ee877f7b9d82dfcfe5e215c79662dee30e13",
+      "size": 1633889,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/viewmodel_from_context.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/viewmodel_from_context.riv",
+      "sha256": "e7e88c8077d43067780f33d299a4ae11443566da8bd6fb1d6e1d1fb07f93fe9c",
+      "size": 1324,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/viewmodel_from_instance.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/viewmodel_from_instance.riv",
+      "sha256": "11722ddb6628accfd9675280d804e0678086354fc419c172979f28e6c3a3fbb3",
+      "size": 878463,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/viewmodel_image_reset.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/viewmodel_image_reset.riv",
+      "sha256": "a758d68aaa55de7eeb1fa93a8e27e97db9f97f196be14ba38df6c2fb8d540e10",
+      "size": 56702,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/viewmodel_instance_to_artboard.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/viewmodel_instance_to_artboard.riv",
+      "sha256": "26dc88f1f8572719b52bb48c24af9235caeacfac660794866246f3e57ffaf0c6",
+      "size": 878260,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/viewmodel_list_trigger.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/viewmodel_list_trigger.riv",
+      "sha256": "ff08ab265a49352d049079db3e69c86a131f60d9a89086349e4b774a76495923",
+      "size": 751,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/viewmodel_runtime_file.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/viewmodel_runtime_file.riv",
+      "sha256": "e1bb6c54bd1161038cb2b599a7b6fd5d1673e2476f90230860e29450c2ea8f01",
+      "size": 409,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/virtualize_blendmode.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/virtualize_blendmode.riv",
+      "sha256": "4cc82b3d7bb3502c29f7428168a981ed58184624fdb67b2e57e43ecac5e96d67",
+      "size": 1024,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/virtualized_artboard_databound_children.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/virtualized_artboard_databound_children.riv",
+      "sha256": "b344ae1b376f5b29318cb17232e3505884b074fd2143aec5fc084132acb67943",
+      "size": 878408,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/vm_listener_fire_event.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/vm_listener_fire_event.riv",
+      "sha256": "683a8ed1ad102fa9dd1020d61df301594a9a9fd20b97655c1f0da62e7b994838",
+      "size": 197,
+      "format": {
+        "kind": "riv",
+        "version": "7.2",
+        "major": 7,
+        "minor": 2
+      }
+    },
+    {
+      "path": "rivs/walle.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/walle.riv",
+      "sha256": "1e6d2d5c0ffdfe7fdfca51d963395285b0f7f3f519fc0d29a0c09b093c589ea8",
+      "size": 465978,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/word_joiner_test.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/word_joiner_test.riv",
+      "sha256": "e51bacdbedc3fe0e6d452874c761bd70370ff993542a39fc4a24505d1a063c45",
+      "size": 877751,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/zero_width_space_line_break.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/zero_width_space_line_break.riv",
+      "sha256": "da7b62c3eb964ecec1975ba993d8c56b53d3e215259ce3be56302bf1f0ab049f",
+      "size": 877066,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    },
+    {
+      "path": "rivs/zombie_skins.riv",
+      "sourceId": "rive-runtime-unit",
+      "upstreamPath": "tests/unit_tests/assets/zombie_skins.riv",
+      "sha256": "866fc754186c40272e1a5acf50fa3595120af314a499d26971c48a472a41ee52",
+      "size": 1952536,
+      "format": {
+        "kind": "riv",
+        "version": "7.0",
+        "major": 7,
+        "minor": 0
+      }
+    }
+  ],
+  "totals": {
+    "files": 388,
+    "bytes": 148325333
+  }
+}

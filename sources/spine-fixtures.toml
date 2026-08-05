@@ -24,6 +24,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/alien/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
 
 [[source]]
@@ -39,6 +40,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/celestial-circus/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC."
 
 [[source]]
@@ -54,6 +56,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/chibi-stickers/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2022, Esoteric Software LLC."
 
 [[source]]
@@ -69,6 +72,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/cloud-pot/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC."
 
 [[source]]
@@ -84,6 +88,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/coin/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2018, Esoteric Software LLC."
 
 [[source]]
@@ -99,6 +104,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/goblins/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
 
 [[source]]
@@ -114,6 +120,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/mix-and-match/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2019, Esoteric Software LLC."
 
 [[source]]
@@ -129,6 +136,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/owl/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2018, Esoteric Software LLC."
 
 [[source]]
@@ -144,6 +152,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/powerup/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
 
 [[source]]
@@ -159,6 +168,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/raptor/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
 
 [[source]]
@@ -174,6 +184,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/snowglobe/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2023, Esoteric Software LLC."
 
 [[source]]
@@ -189,6 +200,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/speedy/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
 
 [[source]]
@@ -204,6 +216,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/spineboy/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
 
 [[source]]
@@ -219,6 +232,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/spinosaurus/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2013, Esoteric Software LLC."
 
 [[source]]
@@ -234,6 +248,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/stretchyman/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC."
 
 [[source]]
@@ -249,6 +264,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/tank/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC."
 
 [[source]]
@@ -264,6 +280,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/vine/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2016, Esoteric Software LLC."
 
 [[source]]
@@ -279,6 +296,7 @@ declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
 declared_scope = "file-adjacent"
 declared_from = "examples/windmill/license.txt"
 commercial_use = false
+onward_use = "non-commercial"
 covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Copyright (c) 2017, Esoteric Software LLC."
 
 # NOT VENDORED — declaration explicitly forbids redistribution. Kept here so the record of

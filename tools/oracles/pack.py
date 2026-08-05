@@ -3,9 +3,11 @@
 Two variants come out of one lock, so consumers pick their own posture and there is no
 second policy to drift:
 
-* ``-full``       every entry not explicitly excluded
-* ``-permissive`` entries whose *declared* licence is a recognised permissive SPDX id,
-                  with no unresolved ``depicts`` and ``commercialUse: true``
+* ``-full``       the build input: every entry not explicitly excluded
+* ``-demo``       may be shown publicly — excludes testing-only and unknown-scope material,
+                  but keeps non-commercial assets an author plainly intends to be displayed
+* ``-permissive`` may travel into commercial work: declared-permissive SPDX id, no
+                  unresolved ``depicts``, commercial use permitted
 
 The name says what the filter did, not what it concluded. An earlier draft called it
 ``-clear``, which implies a clearance nobody here is in a position to grant.
@@ -26,7 +28,7 @@ from pathlib import Path
 
 __all__ = ["build_pack", "VARIANTS", "ExclusionBreach"]
 
-VARIANTS = ("full", "permissive")
+VARIANTS = ("full", "demo", "permissive")
 
 # Deliberately conservative. Weak-copyleft (MPL-2.0) and copyleft (GPL-3.0) declarations
 # stay out of -permissive even though they are perfectly fine to redistribute, because
@@ -50,11 +52,29 @@ def _sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def _is_demo_safe(entry, source) -> bool:
+    """May this leave the build and be shown publicly?
+
+    The middle tier. Without it, spineboy — which Esoteric explicitly permits redistributing
+    and which exists to be displayed — sits in the same bucket as a model licensed strictly
+    for testing glTF loaders. Those are not the same restriction.
+    """
+    lic = source["license"]
+    if lic.get("onwardUse", "unrestricted") in ("testing-only", "unknown"):
+        return False
+    depicts = entry.get("depicts")
+    if depicts and depicts.get("status") != "resolved":
+        return False
+    return True
+
+
 def _is_permissive(entry, source) -> bool:
     lic = source["license"]
     if lic["declared"] not in PERMISSIVE_DECLARED:
         return False
     if lic.get("commercialUse") is not True:
+        return False
+    if lic.get("onwardUse", "unrestricted") != "unrestricted":
         return False
     depicts = entry.get("depicts")
     if depicts and depicts.get("status") != "resolved":
@@ -77,6 +97,8 @@ def select(lock, variant):
             )
         if entry.get("exclude"):
             excluded.add(entry["sha256"])
+            continue
+        if variant == "demo" and not _is_demo_safe(entry, source):
             continue
         if variant == "permissive" and not _is_permissive(entry, source):
             continue
