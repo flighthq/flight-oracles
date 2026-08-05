@@ -16,7 +16,7 @@ id = "spine-alien"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/alien/export/**", "examples/alien/images/**"]
+include = ["examples/alien/export/**", "examples/alien/images/**", "examples/alien/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -32,7 +32,7 @@ id = "spine-celestial-circus"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/celestial-circus/export/**", "examples/celestial-circus/images/**"]
+include = ["examples/celestial-circus/export/**", "examples/celestial-circus/images/**", "examples/celestial-circus/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -48,7 +48,7 @@ id = "spine-chibi-stickers"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/chibi-stickers/export/**", "examples/chibi-stickers/images/**"]
+include = ["examples/chibi-stickers/export/**", "examples/chibi-stickers/images/**", "examples/chibi-stickers/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -64,7 +64,7 @@ id = "spine-cloud-pot"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/cloud-pot/export/**", "examples/cloud-pot/images/**"]
+include = ["examples/cloud-pot/export/**", "examples/cloud-pot/images/**", "examples/cloud-pot/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -80,7 +80,7 @@ id = "spine-coin"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/coin/export/**", "examples/coin/images/**"]
+include = ["examples/coin/export/**", "examples/coin/images/**", "examples/coin/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -96,7 +96,7 @@ id = "spine-goblins"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/goblins/export/**", "examples/goblins/images/**"]
+include = ["examples/goblins/export/**", "examples/goblins/images/**", "examples/goblins/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -112,7 +112,7 @@ id = "spine-mix-and-match"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/mix-and-match/export/**", "examples/mix-and-match/images/**"]
+include = ["examples/mix-and-match/export/**", "examples/mix-and-match/images/**", "examples/mix-and-match/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -128,7 +128,7 @@ id = "spine-owl"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/owl/export/**", "examples/owl/images/**"]
+include = ["examples/owl/export/**", "examples/owl/images/**", "examples/owl/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -144,7 +144,7 @@ id = "spine-powerup"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/powerup/export/**", "examples/powerup/images/**"]
+include = ["examples/powerup/export/**", "examples/powerup/images/**", "examples/powerup/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -160,7 +160,7 @@ id = "spine-raptor"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/raptor/export/**", "examples/raptor/images/**"]
+include = ["examples/raptor/export/**", "examples/raptor/images/**", "examples/raptor/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -176,7 +176,7 @@ id = "spine-snowglobe"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/snowglobe/export/**", "examples/snowglobe/images/**"]
+include = ["examples/snowglobe/export/**", "examples/snowglobe/images/**", "examples/snowglobe/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -192,7 +192,7 @@ id = "spine-speedy"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/speedy/export/**", "examples/speedy/images/**"]
+include = ["examples/speedy/export/**", "examples/speedy/images/**", "examples/speedy/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -208,7 +208,7 @@ id = "spine-spineboy"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/spineboy/export/**", "examples/spineboy/images/**"]
+include = ["examples/spineboy/export/**", "examples/spineboy/images/**", "examples/spineboy/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -224,7 +224,7 @@ id = "spine-spinosaurus"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/spinosaurus/export/**", "examples/spinosaurus/images/**"]
+include = ["examples/spinosaurus/export/**", "examples/spinosaurus/images/**", "examples/spinosaurus/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -240,7 +240,7 @@ id = "spine-stretchyman"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/stretchyman/export/**", "examples/stretchyman/images/**"]
+include = ["examples/stretchyman/export/**", "examples/stretchyman/images/**", "examples/stretchyman/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -256,7 +256,7 @@ id = "spine-tank"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/tank/export/**", "examples/tank/images/**"]
+include = ["examples/tank/export/**", "examples/tank/images/**", "examples/tank/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -272,7 +272,7 @@ id = "spine-vine"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/vine/export/**", "examples/vine/images/**"]
+include = ["examples/vine/export/**", "examples/vine/images/**", "examples/vine/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -288,7 +288,7 @@ id = "spine-windmill"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/windmill/export/**", "examples/windmill/images/**"]
+include = ["examples/windmill/export/**", "examples/windmill/images/**", "examples/windmill/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -306,7 +306,7 @@ id = "spine-dragon"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/dragon/export/**", "examples/dragon/images/**"]
+include = ["examples/dragon/export/**", "examples/dragon/images/**", "examples/dragon/manual-maps/**"]
 strip = "examples/"
 
 [source.license]
@@ -324,7 +324,7 @@ id = "spine-hero"
 kind = "upstream"
 repo = "EsotericSoftware/spine-runtimes"
 ref = "4.2"
-include = ["examples/hero/export/**", "examples/hero/images/**"]
+include = ["examples/hero/export/**", "examples/hero/images/**", "examples/hero/manual-maps/**"]
 strip = "examples/"
 
 [source.license]

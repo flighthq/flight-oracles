@@ -310,13 +310,13 @@ class TestBuild(unittest.TestCase):
 
     def test_archive_is_byte_reproducible(self):
         lock = self._lockfile()
-        first = pack.build_pack(lock, self.root, self.root / "d1", "v1", zip_too=False)
-        second = pack.build_pack(lock, self.root, self.root / "d2", "v1", zip_too=False)
+        first = pack.build_pack(lock, self.root, self.root / "d1", "v1")
+        second = pack.build_pack(lock, self.root, self.root / "d2", "v1")
         self.assertEqual(first[0]["sha256"], second[0]["sha256"])
 
     def test_archive_carries_provenance_documents(self):
         lock = self._lockfile()
-        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        pack.build_pack(lock, self.root, self.root / "d", "v1")
         with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
             names = set(tar.getnames())
             manifest = json.loads(tar.extractfile("manifest.json").read())
@@ -333,7 +333,7 @@ class TestBuild(unittest.TestCase):
         lock["sources"][0]["license"]["declaredScope"] = "file-adjacent"
         lock["sources"][0]["license"]["declaredFrom"] = "ex/license.txt"
         lock["sources"][0]["adjacentPath"] = "license.txt"
-        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        pack.build_pack(lock, self.root, self.root / "d", "v1")
         with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
             self.assertIn("license.txt", tar.getnames())
             self.assertEqual(tar.extractfile("license.txt").read(), b"MIT text\n")
@@ -349,7 +349,7 @@ class TestBuild(unittest.TestCase):
             "sha256": lock["files"][1]["sha256"], "size": lock["files"][1]["size"],
         })
         with self.assertRaises(pack.ExclusionBreach):
-            pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+            pack.build_pack(lock, self.root, self.root / "d", "v1")
 
     def test_canonical_spdx_text_accompanies_a_copyleft_declaration(self):
         # An upstream README saying "licensed under GPL 3.0" records the declaration but
@@ -359,7 +359,7 @@ class TestBuild(unittest.TestCase):
         (spdx / "GPL-3.0-or-later.txt").write_bytes(b"GNU GENERAL PUBLIC LICENSE\n")
         lock = self._lockfile()
         lock["sources"][0]["license"]["declared"] = "GPL-3.0-or-later"
-        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        pack.build_pack(lock, self.root, self.root / "d", "v1")
         with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
             self.assertIn("LICENSES/GPL-3.0-or-later.txt", tar.getnames())
 
@@ -370,7 +370,7 @@ class TestBuild(unittest.TestCase):
         (spdx / "Apache-2.0.txt").write_bytes(b"Apache\n")
         lock = self._lockfile()
         lock["sources"][0]["license"]["declared"] = "Apache-2.0 OR MIT"
-        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        pack.build_pack(lock, self.root, self.root / "d", "v1")
         with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
             names = set(tar.getnames())
         self.assertLessEqual({"LICENSES/MIT.txt", "LICENSES/Apache-2.0.txt"}, names)
@@ -386,7 +386,7 @@ class TestBuild(unittest.TestCase):
             "note": "Origin instrument; publication rests on a separate arrangement.",
             "snapshot": "licenses/ok-underlying-0@c.txt",
         }]
-        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        pack.build_pack(lock, self.root, self.root / "d", "v1")
         with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
             notice = tar.extractfile("NOTICE.md").read().decode()
             self.assertIn("LICENSES/ok-underlying-0@c.txt", tar.getnames())
@@ -399,7 +399,7 @@ class TestBuild(unittest.TestCase):
         # publicly fetchable regardless of intent, so that framing has to be documented in
         # the artifact rather than only asserted in the policy doc.
         lock = self._lockfile()
-        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        pack.build_pack(lock, self.root, self.root / "d", "v1")
         with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
             readme = tar.extractfile("README.md").read().decode()
         self.assertIn("build artifact", readme)
@@ -408,7 +408,7 @@ class TestBuild(unittest.TestCase):
 
     def test_variants_state_which_may_travel_onward(self):
         lock = self._lockfile()
-        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        pack.build_pack(lock, self.root, self.root / "d", "v1")
         with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
             full = tar.extractfile("README.md").read().decode()
         with tarfile.open(self.root / "d" / "t-permissive-v1.tar.gz") as tar:
@@ -421,7 +421,7 @@ class TestBuild(unittest.TestCase):
         # Discovering that as a pile of missing textures would be a poor way to learn it.
         lock = self._lockfile()
         lock["pack"]["mergeGroup"] = "gltf-khronos"
-        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        pack.build_pack(lock, self.root, self.root / "d", "v1")
         with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
             readme = tar.extractfile("README.md").read().decode()
         self.assertIn("same directory", readme)
@@ -429,7 +429,7 @@ class TestBuild(unittest.TestCase):
 
     def test_no_merge_note_when_pack_stands_alone(self):
         lock = self._lockfile()
-        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        pack.build_pack(lock, self.root, self.root / "d", "v1")
         with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
             readme = tar.extractfile("README.md").read().decode()
         self.assertNotIn("merge group", readme)
@@ -437,7 +437,7 @@ class TestBuild(unittest.TestCase):
     def test_noncommercial_warning_appears_in_readme(self):
         lock = self._lockfile()
         lock["sources"][0]["license"]["commercialUse"] = False
-        pack.build_pack(lock, self.root, self.root / "d", "v1", zip_too=False)
+        pack.build_pack(lock, self.root, self.root / "d", "v1")
         with tarfile.open(self.root / "d" / "t-full-v1.tar.gz") as tar:
             readme = tar.extractfile("README.md").read().decode()
         self.assertIn("prohibits commercial use", readme)

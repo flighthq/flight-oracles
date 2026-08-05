@@ -10,7 +10,7 @@
       "kind": "upstream",
       "repo": "rive-app/rive-runtime",
       "ref": "main",
-      "commit": "d25e6a4b6c1b8382b588f08371231373780fbcd5",
+      "commit": "e949498e05483a852c10fbbdad2cd1941c15aebc",
       "retrieved": "2026-08-05",
       "license": {
         "declared": "MIT",
@@ -21,7 +21,7 @@
         "covers": "Rive's authorship of the .riv files (rig, curves, state machines). Copyright (c) 2020 Rive.",
         "onwardUse": "unrestricted"
       },
-      "licenseSnapshot": "licenses/rive-runtime@d25e6a4b6c1b.txt"
+      "licenseSnapshot": "licenses/rive-runtime@e949498e0548.txt"
     }
   ],
   "files": [

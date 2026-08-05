@@ -8637,6 +8637,93 @@
       }
     },
     {
+      "path": "raptor/manual-maps/light-sprite.png",
+      "sourceId": "spine-raptor",
+      "upstreamPath": "examples/raptor/manual-maps/light-sprite.png",
+      "sha256": "36d69482ab3b6b2e2dd73e6cc8f51fb4f9b5c04d87c04c2b2a30bf7ee1bdfc1c",
+      "size": 8912,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "raptor/manual-maps/raptor-normals.png",
+      "sourceId": "spine-raptor",
+      "upstreamPath": "examples/raptor/manual-maps/raptor-normals.png",
+      "sha256": "01ab11df1dc7b0e13455c62378934556078344e62aeb41e2cc4a3352056879dd",
+      "size": 530517,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 512
+      }
+    },
+    {
+      "path": "raptor/manual-maps/raptor-pma.atlas",
+      "sourceId": "spine-raptor",
+      "upstreamPath": "examples/raptor/manual-maps/raptor-pma.atlas",
+      "sha256": "7696074c8c8548e13502d70c42cefd28f7c92d8e0ef28d81fe34f0a036b73833",
+      "size": 1808,
+      "format": {
+        "kind": "spine-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "raptor/manual-maps/raptor-pma.png",
+      "sourceId": "spine-raptor",
+      "upstreamPath": "examples/raptor/manual-maps/raptor-pma.png",
+      "sha256": "c9ac31be365bba1af05a9ce8b3003506ba76d6527ca0d06be355c675cb210fe8",
+      "size": 419651,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 512
+      }
+    },
+    {
+      "path": "raptor/manual-maps/raptor-rim-mask.png",
+      "sourceId": "spine-raptor",
+      "upstreamPath": "examples/raptor/manual-maps/raptor-rim-mask.png",
+      "sha256": "5ac02a5fc2a0f9f6bfde8f6e5f8a6df24779f5d7b42ffe802a446290f9d5bf61",
+      "size": 116469,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 512
+      }
+    },
+    {
+      "path": "raptor/manual-maps/raptor.atlas",
+      "sourceId": "spine-raptor",
+      "upstreamPath": "examples/raptor/manual-maps/raptor.atlas",
+      "sha256": "a37947a6bbef404f93df7762c2ba1fca44c6ab13475ac37e616ef7c5ea761c86",
+      "size": 1793,
+      "format": {
+        "kind": "spine-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "raptor/manual-maps/raptor.png",
+      "sourceId": "spine-raptor",
+      "upstreamPath": "examples/raptor/manual-maps/raptor.png",
+      "sha256": "b3af0b605cd157f4d362d68b92373649c58e4d7e2c1e4fa83af030aa5d6238b0",
+      "size": 421849,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 512
+      }
+    },
+    {
       "path": "snowglobe/export/snowglobe-pma.atlas",
       "sourceId": "spine-snowglobe",
       "upstreamPath": "examples/snowglobe/export/snowglobe-pma.atlas",
@@ -11098,6 +11185,93 @@
       }
     },
     {
+      "path": "stretchyman/manual-maps/stretchyman-emission.png",
+      "sourceId": "spine-stretchyman",
+      "upstreamPath": "examples/stretchyman/manual-maps/stretchyman-emission.png",
+      "sha256": "5d3f607f63a3f91439b1ab5ba2af14ba61d2b1aac875a76bb15a98f6eedce560",
+      "size": 1938,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 256
+      }
+    },
+    {
+      "path": "stretchyman/manual-maps/stretchyman-normals.png",
+      "sourceId": "spine-stretchyman",
+      "upstreamPath": "examples/stretchyman/manual-maps/stretchyman-normals.png",
+      "sha256": "a5312cc6ea90b5d637af40ce456abd355dd745b2ea8546840a26d13b5098a923",
+      "size": 76405,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 256
+      }
+    },
+    {
+      "path": "stretchyman/manual-maps/stretchyman-pma.atlas",
+      "sourceId": "spine-stretchyman",
+      "upstreamPath": "examples/stretchyman/manual-maps/stretchyman-pma.atlas",
+      "sha256": "1032412bdcd58965f80c92dde348811ecf143f98c471c89cbc9cf4440258e586",
+      "size": 570,
+      "format": {
+        "kind": "spine-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "stretchyman/manual-maps/stretchyman-pma.png",
+      "sourceId": "spine-stretchyman",
+      "upstreamPath": "examples/stretchyman/manual-maps/stretchyman-pma.png",
+      "sha256": "4ee3785451e1bfca6948e1f40503307c40151d2951488c39de6843b415808475",
+      "size": 92029,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 256
+      }
+    },
+    {
+      "path": "stretchyman/manual-maps/stretchyman-rim-mask.png",
+      "sourceId": "spine-stretchyman",
+      "upstreamPath": "examples/stretchyman/manual-maps/stretchyman-rim-mask.png",
+      "sha256": "e1fa840a6d7dfb0891931e9f53ee2de813451ceed89e717abef753401e90f2ae",
+      "size": 40980,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 256
+      }
+    },
+    {
+      "path": "stretchyman/manual-maps/stretchyman.atlas",
+      "sourceId": "spine-stretchyman",
+      "upstreamPath": "examples/stretchyman/manual-maps/stretchyman.atlas",
+      "sha256": "c3f073bf557a02633dd9ee17a847779209e56ae4172f8f87be8cc4fa4dd66544",
+      "size": 566,
+      "format": {
+        "kind": "spine-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "stretchyman/manual-maps/stretchyman.png",
+      "sourceId": "spine-stretchyman",
+      "upstreamPath": "examples/stretchyman/manual-maps/stretchyman.png",
+      "sha256": "5f8d22c688e1236c59f84283383ce55ad8577acd2d604c7c1788e6c3df4dcd98",
+      "size": 99108,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 256
+      }
+    },
+    {
       "path": "tank/export/tank-pma.atlas",
       "sourceId": "spine-tank",
       "upstreamPath": "examples/tank/export/tank-pma.atlas",
@@ -11972,7 +12146,7 @@
     }
   ],
   "totals": {
-    "files": 905,
-    "bytes": 48549517
+    "files": 919,
+    "bytes": 50362112
   }
 }

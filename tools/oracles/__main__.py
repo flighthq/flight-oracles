@@ -84,6 +84,27 @@ def cmd_verify(args):
         else:
             print(f"{spec.name}: OK ({lock['totals']['files']} files)")
 
+    # Two packs drawn from one repository at different commits describe different snapshots
+    # of it. That is almost never intended — it happens when packs are ingested weeks apart
+    # and the ref moves underneath — and nothing else would surface it, because each pack
+    # verifies perfectly against its own lock.
+    pins = {}
+    for spec in _specs(args):
+        try:
+            lock = ingest_mod.load_lock(spec.name, root)
+        except FileNotFoundError:
+            continue
+        for src in lock["sources"]:
+            if src.get("repo") and src.get("commit"):
+                pins.setdefault(src["repo"], {}).setdefault(src["commit"], set()).add(spec.name)
+    for repo, commits in sorted(pins.items()):
+        if len(commits) > 1:
+            failed = True
+            print(f"{repo}: pinned at {len(commits)} different commits —")
+            for commit, packs in sorted(commits.items()):
+                print(f"  {commit[:12]}  {', '.join(sorted(packs))}")
+            print("  re-ingest the lagging pack(s) with --update to align them")
+
     for name, locks in sorted(groups.items()):
         if len(locks) < 2:
             print(f"merge group {name}: only one pack ingested — resolution unchecked")
@@ -118,7 +139,7 @@ def cmd_pack(args):
                 f"({len(problems)} problem(s)) — run `verify` for detail"
             )
         artifacts = pack_mod.build_pack(
-            lock, root, out_dir, args.version, zip_too=not args.no_zip
+            lock, root, out_dir, args.version
         )
         if lock["pack"].get("mergeGroup"):
             for art in artifacts:
@@ -210,7 +231,6 @@ def main(argv=None):
     p = add("pack", cmd_pack)
     p.add_argument("--version", required=True, help="release version, e.g. v0.1.0")
     p.add_argument("--out", default="dist")
-    p.add_argument("--no-zip", action="store_true")
 
     p = add("drift", cmd_drift)
     p.add_argument("--fail-on-drift", action="store_true")

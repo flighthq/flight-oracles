@@ -23,7 +23,6 @@ import hashlib
 import io
 import json
 import tarfile
-import zipfile
 from pathlib import Path
 
 __all__ = ["build_pack", "VARIANTS", "ExclusionBreach"]
@@ -340,23 +339,8 @@ def _write_tar_gz(members, dest: Path):
             gz.write(raw.getvalue())
 
 
-def _write_zip(members, dest: Path):
-    with zipfile.ZipFile(dest, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as zf:
-        for name, data in members:
-            info = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
-            info.external_attr = 0o644 << 16
-            info.compress_type = zipfile.ZIP_DEFLATED
-            zf.writestr(info, data)
 
-
-# Above this, a .zip is not worth its weight. These payloads are already-compressed PNG,
-# JPEG and binary buffers, so the zip comes out a near-identical copy of the tar.gz rather
-# than a meaningfully different artifact — and doubling half a gigabyte for format
-# convenience is a bad trade. Small packs still get both, where duplication is cheap.
-ZIP_MAX_BYTES = 150 * 1024 * 1024
-
-
-def build_pack(lock, root: Path, out_dir: Path, version: str, *, zip_too: bool = True):
+def build_pack(lock, root: Path, out_dir: Path, version: str):
     """Build every variant of one pack. Returns a list of artifact records."""
     out_dir.mkdir(parents=True, exist_ok=True)
     name = lock["pack"]["name"]
@@ -378,13 +362,13 @@ def build_pack(lock, root: Path, out_dir: Path, version: str, *, zip_too: bool =
             )
 
         stem = f"{name}-{variant}-{version}"
-        tar_dest = out_dir / f"{stem}.tar.gz"
-        _write_tar_gz(members, tar_dest)
-        targets = [tar_dest]
-        if zip_too and tar_dest.stat().st_size <= ZIP_MAX_BYTES:
-            zip_dest = out_dir / f"{stem}.zip"
-            _write_zip(members, zip_dest)
-            targets.append(zip_dest)
+        # tar.gz only. Both formats hold identical content and both use DEFLATE, but gzip
+        # compresses the tar stream *solidly* while zip compresses each entry alone — so
+        # tar.gz is same-or-better everywhere and 10% smaller on the SWF corpus, where
+        # thousands of small similar files give cross-file redundancy to exploit. A second
+        # container bought only format convenience, at roughly double the storage.
+        targets = [out_dir / f"{stem}.tar.gz"]
+        _write_tar_gz(members, targets[0])
         for dest in targets:
             digest = _sha256(dest.read_bytes())
             artifacts.append(
