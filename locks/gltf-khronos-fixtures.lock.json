@@ -2806,6 +2806,44 @@
         ]
       },
       "licenseSnapshot": "licenses/gltf-virtualcity@2bac6f8c57bf.txt"
+    },
+    {
+      "id": "gltf-box-with-spaces",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/Box With Spaces/LICENSE.md",
+        "covers": "Everything - Ed Mackey, 2017 (owner: Analytical Graphics, Inc.). Supplementary marks: LicenseRef-LegalMark-Khronos.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/gltf-box-with-spaces@2bac6f8c57bf.txt",
+      "adjacentPath": "Box With Spaces/LICENSE.md"
+    },
+    {
+      "id": "gltf-unicode-test",
+      "kind": "upstream",
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "ref": "main",
+      "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "file-adjacent",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "Models/Unicode\u2764\u267bTest/LICENSE.md",
+        "covers": "Everything - Viktor Kovacs, 2017 (owner: Public).",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/gltf-unicode-test@2bac6f8c57bf.txt",
+      "adjacentPath": "Unicode\u2764\u267bTest/LICENSE.md"
     }
   ],
   "files": [
@@ -3367,6 +3405,24 @@
       "upstreamPath": "Models/BoomBoxWithAxes/glTF/BoomBoxWithAxes.gltf",
       "sha256": "2f609d1a21a18979d21bee2a0c95602f113f22d4cf76ea256b269089ff46fc2f",
       "size": 9761,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "Box With Spaces/glTF/Box With Spaces.bin",
+      "sourceId": "gltf-box-with-spaces",
+      "upstreamPath": "Models/Box With Spaces/glTF/Box With Spaces.bin",
+      "sha256": "679113188ed21fed63ca4337efde0d2dc2b062b82b8cd9336152e35cd988e532",
+      "size": 840
+    },
+    {
+      "path": "Box With Spaces/glTF/Box With Spaces.gltf",
+      "sourceId": "gltf-box-with-spaces",
+      "upstreamPath": "Models/Box With Spaces/glTF/Box With Spaces.gltf",
+      "sha256": "193aebb6f10813c0f04d809e446ed9b9bf3434366090b504f6fffdd07d528d57",
+      "size": 3395,
       "format": {
         "kind": "gltf",
         "version": "2.0"
@@ -7547,6 +7603,36 @@
       }
     },
     {
+      "path": "Unicode\u2764\u267bTest/glTF-Binary/Unicode\u2764\u267bTest.glb",
+      "sourceId": "gltf-unicode-test",
+      "upstreamPath": "Models/Unicode\u2764\u267bTest/glTF-Binary/Unicode\u2764\u267bTest.glb",
+      "sha256": "845271aea314a15d13c27ce2e5ce5b44c6b329c6b6fb93b9403e770bdfd7fbb7",
+      "size": 5488,
+      "format": {
+        "kind": "glb",
+        "version": "2",
+        "totalLength": 5488
+      }
+    },
+    {
+      "path": "Unicode\u2764\u267bTest/glTF/Unicode\u2764\u267bBinary.bin",
+      "sourceId": "gltf-unicode-test",
+      "upstreamPath": "Models/Unicode\u2764\u267bTest/glTF/Unicode\u2764\u267bBinary.bin",
+      "sha256": "6b85548532b3d27f75b17a830ea4ca82ffea93e33fc3911561809ebe0f2af922",
+      "size": 152
+    },
+    {
+      "path": "Unicode\u2764\u267bTest/glTF/Unicode\u2764\u267bTest.gltf",
+      "sourceId": "gltf-unicode-test",
+      "upstreamPath": "Models/Unicode\u2764\u267bTest/glTF/Unicode\u2764\u267bTest.gltf",
+      "sha256": "4b578d1e97bda3a356a9e722dbe0a9d3f9d033d79d35a54382055d5161ba3cf9",
+      "size": 2711,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
       "path": "UnlitTest/glTF/UnlitTest.bin",
       "sourceId": "gltf-unlittest",
       "upstreamPath": "Models/UnlitTest/glTF/UnlitTest.bin",
@@ -7731,7 +7817,7 @@
     }
   ],
   "totals": {
-    "files": 471,
-    "bytes": 293524225
+    "files": 476,
+    "bytes": 293536811
   }
 }

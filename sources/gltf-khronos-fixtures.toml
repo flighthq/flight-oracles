@@ -8385,3 +8385,43 @@ covers = "Published by Khronos under a negotiated arrangement with the rights ho
 declared = "LicenseRef-3DRT-Testing"
 declaredFrom = "Models/VirtualCity/LICENSE.md"
 note = "3DRT testing licence. Bars marketing/distribution generally, then grants a model-specific exemption: 'It is for use *only* in testing your glTF tools such as loaders and importers.' That exemption is the arrangement, and it scopes use to tool testing - which is exactly what this corpus is for, and is why it must not be deployed in a commercial application."
+
+# EDGE CASE, added deliberately: Resource URIs containing SPACES, in the glTF's own buffer and image references.
+# These two carry no tags in metadata.json, so the tag-based selection that built this file
+# skipped them. That was a selection bug rather than a size decision - a resource resolver
+# that mishandles a space or a non-ASCII byte fails on exactly these and on nothing else here.
+[[source]]
+id = "gltf-box-with-spaces"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["Models/Box With Spaces/glTF/**/*.gltf", "Models/Box With Spaces/glTF/**/*.bin", "Models/Box With Spaces/glTF/**/*.glb", "Models/Box With Spaces/glTF/**/*.ktx2", "Models/Box With Spaces/glTF/**/*.webp", "Models/Box With Spaces/glTF-Binary/**/*.gltf", "Models/Box With Spaces/glTF-Binary/**/*.bin", "Models/Box With Spaces/glTF-Binary/**/*.glb", "Models/Box With Spaces/glTF-Binary/**/*.ktx2", "Models/Box With Spaces/glTF-Binary/**/*.webp"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/Box With Spaces/LICENSE.md"
+commercial_use = true
+covers = "Everything - Ed Mackey, 2017 (owner: Analytical Graphics, Inc.). Supplementary marks: LicenseRef-LegalMark-Khronos."
+
+# EDGE CASE, added deliberately: Resource URIs containing NON-ASCII characters, in the glTF's own buffer and image references.
+# These two carry no tags in metadata.json, so the tag-based selection that built this file
+# skipped them. That was a selection bug rather than a size decision - a resource resolver
+# that mishandles a space or a non-ASCII byte fails on exactly these and on nothing else here.
+[[source]]
+id = "gltf-unicode-test"
+kind = "upstream"
+repo = "KhronosGroup/glTF-Sample-Assets"
+ref = "main"
+fetch = "blobs"
+include = ["Models/Unicode❤♻Test/glTF/**/*.gltf", "Models/Unicode❤♻Test/glTF/**/*.bin", "Models/Unicode❤♻Test/glTF/**/*.glb", "Models/Unicode❤♻Test/glTF/**/*.ktx2", "Models/Unicode❤♻Test/glTF/**/*.webp", "Models/Unicode❤♻Test/glTF-Binary/**/*.gltf", "Models/Unicode❤♻Test/glTF-Binary/**/*.bin", "Models/Unicode❤♻Test/glTF-Binary/**/*.glb", "Models/Unicode❤♻Test/glTF-Binary/**/*.ktx2", "Models/Unicode❤♻Test/glTF-Binary/**/*.webp"]
+strip = "Models/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "file-adjacent"
+declared_from = "Models/Unicode❤♻Test/LICENSE.md"
+commercial_use = true
+covers = "Everything - Viktor Kovacs, 2017 (owner: Public)."
