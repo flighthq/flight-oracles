@@ -155,9 +155,13 @@ The oracle phase does not have to start from scratch, and does not have to start
   `GraphemeBreakTest.txt`, `WordBreakTest.txt`, `LineBreakTest.txt`, `NormalizationTest.txt`.
   Each line *is* an input paired with its required output. For `textbidi` and `textsegment`
   these are complete oracles, textual, deterministic, and unambiguously licensed.
-- **KhronosGroup/glTF-Asset-Generator** (MIT) — procedurally generated conformance assets
-  shipped with manifests describing the expected result of each case. It is a ready-made
-  oracle suite for the 17 KHR/EXT extensions `scene3d-formats` implements.
+- **KhronosGroup/glTF-Asset-Generator** (MIT) — procedurally generated conformance assets.
+  *Correction to an earlier draft of this document:* its `Manifest.json` lists models and
+  camera placement, not per-property expected results. The oracle is coarser and structural
+  — the corpus splits into `Output/Positive` (must parse) and `Output/Negative` (must be
+  rejected), so the directory a file sits in is the expected outcome. That is still a real
+  oracle, just a binary one, and the negative cases are the valuable half: they are the
+  malformations a lenient parser accepts and then renders as garbage.
 - **unicode-org/text-rendering-tests** — shaping cases with expected output, the standard
   conformance suite for text shapers.
 - **PngSuite** — the canonical PNG conformance corpus, including deliberately corrupt files

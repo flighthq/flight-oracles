@@ -21,11 +21,12 @@ suite can pin.
 
 | Pack | Files | Size | Contents |
 | --- | ---: | ---: | --- |
-| `swf-ruffle-fixtures` | 4,810 | 42.9 MB | Ruffle's SWF corpus — versions 4 through 50 |
+| `swf-ruffle-fixtures` | 16,639 | 83.2 MB | SWF v4–v50 **+ 4,291 expected trace outputs** |
 | `spine-fixtures` | 1,126 | 57.4 MB | Spine 4.2 exports, 19 examples + spine-unity |
 | `gltf-khronos-textures` | 765 | 500.1 MB | Raster textures — merges with `gltf-khronos-fixtures` |
 | `malformed-fixtures` | 661 | 7.7 MB | **Derived** — truncation, header damage, bit flips |
 | `spine-fixtures-38` | 510 | 28.1 MB | Spine 3.8 — prior format version, rejection testing |
+| `gltf-generated-fixtures` | 500 | 12.0 MB | **Conformance** — positive/negative split is the expectation |
 | `gltf-khronos-fixtures` | 476 | 293.5 MB | 148 Khronos glTF 2.0 models — 29 KHR/EXT extensions |
 | `rive-fixtures-unit` | 388 | 148.3 MB | Rive unit-test corpus — all 12 feature areas |
 | `tilemap-fixtures` | 188 | 0.5 MB | Tiled TMX/TSX/TMJ/TSJ — map versions 1.0 through 1.11 |
@@ -42,10 +43,9 @@ suite can pin.
 | `text-conformance-fixtures` | 8 | 19.0 MB | **Oracles** — 614,914 Unicode conformance cases |
 | `particle-fixtures` | 3 | 0.0 MB | libgdx `.p` particle effect configs |
 
-20 packs, 9,521 files.
-
-Every parser in `skeleton2d-formats`, `scene3d-formats`, `tilemap-formats`,
-`bitmapfont-formats` and `texture-formats` now has fixtures behind it.
+21 packs, 21,850 files. Three packs carry expectations as well as inputs:
+`text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
+outputs paired in place) and `gltf-generated-fixtures` (positive/negative conformance split).
 
 **Git LFS is resolved, not stored.** `raw.githubusercontent` serves LFS *pointers* rather
 than objects, and a 130-byte text stub where a texture belongs passes every other check —

@@ -7,10 +7,26 @@
 # four. Ruffle already practises exactly this per-source provenance discipline — the split
 # here mirrors theirs.
 
+# ORACLES ARE IN THIS PACK, not a separate one. Ruffle stores each case as a directory:
+# test.swf beside output.txt (the expected trace output), test.toml (the run configuration),
+# the ActionScript source, and for visual cases output.expected.png. Splitting the .swf from
+# its expectation would mean dismantling a directory that arrives coupled and inventing a
+# join key to reassemble it — the exact situation the pack-boundary rule in
+# docs/sourcing-policy.md exists to prevent.
+#
+# 4,291 output.txt files make this the second oracle-bearing pack after text-conformance,
+# and by far the largest for flight's own code: trace output tests AVM semantics directly,
+# which is where SWF compatibility bugs actually live. It is also textual and deterministic,
+# so it avoids the golden-image problem that pixel comparison would bring.
+#
+# output.expected.png (342 files) IS pixel data — but it is Ruffle's reference render rather
+# than something we generated, so a consumer can choose to compare against it, or ignore it,
+# without us having taken a position on renderer determinism.
+
 [pack]
 name = "swf-ruffle-fixtures"
 kind = "fixtures"
-summary = "SWF test fixtures from the Ruffle test suite, split by the declaration covering each subtree."
+summary = "SWF fixtures from the Ruffle test suite, paired with their expected trace output — split by the declaration covering each subtree."
 
 # ---------------------------------------------------------------------------
 # Ruffle's own tests — AVM1/AVM2 semantics, rendering, timeline, text, audio.
@@ -22,16 +38,71 @@ repo = "ruffle-rs/ruffle"
 ref = "master"
 include = [
   "tests/tests/swfs/avm1/**/*.swf",
+  "tests/tests/swfs/avm1/**/output.txt",
+  "tests/tests/swfs/avm1/**/test.toml",
+  "tests/tests/swfs/avm1/**/output.expected.png",
+  "tests/tests/swfs/avm1/**/Test.as",
+  "tests/tests/swfs/avm1/**/test.as",
   "tests/tests/swfs/avm2/**/*.swf",
+  "tests/tests/swfs/avm2/**/output.txt",
+  "tests/tests/swfs/avm2/**/test.toml",
+  "tests/tests/swfs/avm2/**/output.expected.png",
+  "tests/tests/swfs/avm2/**/Test.as",
+  "tests/tests/swfs/avm2/**/test.as",
   "tests/tests/swfs/visual/**/*.swf",
+  "tests/tests/swfs/visual/**/output.txt",
+  "tests/tests/swfs/visual/**/test.toml",
+  "tests/tests/swfs/visual/**/output.expected.png",
+  "tests/tests/swfs/visual/**/Test.as",
+  "tests/tests/swfs/visual/**/test.as",
   "tests/tests/swfs/timeline/**/*.swf",
+  "tests/tests/swfs/timeline/**/output.txt",
+  "tests/tests/swfs/timeline/**/test.toml",
+  "tests/tests/swfs/timeline/**/output.expected.png",
+  "tests/tests/swfs/timeline/**/Test.as",
+  "tests/tests/swfs/timeline/**/test.as",
   "tests/tests/swfs/text/**/*.swf",
+  "tests/tests/swfs/text/**/output.txt",
+  "tests/tests/swfs/text/**/test.toml",
+  "tests/tests/swfs/text/**/output.expected.png",
+  "tests/tests/swfs/text/**/Test.as",
+  "tests/tests/swfs/text/**/test.as",
   "tests/tests/swfs/fonts/**/*.swf",
+  "tests/tests/swfs/fonts/**/output.txt",
+  "tests/tests/swfs/fonts/**/test.toml",
+  "tests/tests/swfs/fonts/**/output.expected.png",
+  "tests/tests/swfs/fonts/**/Test.as",
+  "tests/tests/swfs/fonts/**/test.as",
   "tests/tests/swfs/audio/**/*.swf",
+  "tests/tests/swfs/audio/**/output.txt",
+  "tests/tests/swfs/audio/**/test.toml",
+  "tests/tests/swfs/audio/**/output.expected.png",
+  "tests/tests/swfs/audio/**/Test.as",
+  "tests/tests/swfs/audio/**/test.as",
   "tests/tests/swfs/stage3d/**/*.swf",
+  "tests/tests/swfs/stage3d/**/output.txt",
+  "tests/tests/swfs/stage3d/**/test.toml",
+  "tests/tests/swfs/stage3d/**/output.expected.png",
+  "tests/tests/swfs/stage3d/**/Test.as",
+  "tests/tests/swfs/stage3d/**/test.as",
   "tests/tests/swfs/mixed_avm/**/*.swf",
+  "tests/tests/swfs/mixed_avm/**/output.txt",
+  "tests/tests/swfs/mixed_avm/**/test.toml",
+  "tests/tests/swfs/mixed_avm/**/output.expected.png",
+  "tests/tests/swfs/mixed_avm/**/Test.as",
+  "tests/tests/swfs/mixed_avm/**/test.as",
   "tests/tests/swfs/swf/**/*.swf",
+  "tests/tests/swfs/swf/**/output.txt",
+  "tests/tests/swfs/swf/**/test.toml",
+  "tests/tests/swfs/swf/**/output.expected.png",
+  "tests/tests/swfs/swf/**/Test.as",
+  "tests/tests/swfs/swf/**/test.as",
   "tests/tests/swfs/import_assets/**/*.swf",
+  "tests/tests/swfs/import_assets/**/output.txt",
+  "tests/tests/swfs/import_assets/**/test.toml",
+  "tests/tests/swfs/import_assets/**/output.expected.png",
+  "tests/tests/swfs/import_assets/**/Test.as",
+  "tests/tests/swfs/import_assets/**/test.as",
 ]
 strip = "tests/tests/swfs/"
 
@@ -52,7 +123,14 @@ id = "ruffle-from-gnash"
 kind = "upstream"
 repo = "ruffle-rs/ruffle"
 ref = "master"
-include = ["tests/tests/swfs/from_gnash/**/*.swf"]
+include = [
+  "tests/tests/swfs/from_gnash/**/*.swf",
+  "tests/tests/swfs/from_gnash/**/output.txt",
+  "tests/tests/swfs/from_gnash/**/test.toml",
+  "tests/tests/swfs/from_gnash/**/output.expected.png",
+  "tests/tests/swfs/from_gnash/**/Test.as",
+  "tests/tests/swfs/from_gnash/**/test.as",
+]
 strip = "tests/tests/swfs/"
 
 [source.license]
@@ -72,7 +150,14 @@ id = "ruffle-from-avmplus"
 kind = "upstream"
 repo = "ruffle-rs/ruffle"
 ref = "master"
-include = ["tests/tests/swfs/from_avmplus/**/*.swf"]
+include = [
+  "tests/tests/swfs/from_avmplus/**/*.swf",
+  "tests/tests/swfs/from_avmplus/**/output.txt",
+  "tests/tests/swfs/from_avmplus/**/test.toml",
+  "tests/tests/swfs/from_avmplus/**/output.expected.png",
+  "tests/tests/swfs/from_avmplus/**/Test.as",
+  "tests/tests/swfs/from_avmplus/**/test.as",
+]
 strip = "tests/tests/swfs/"
 
 [source.license]
@@ -90,7 +175,14 @@ id = "ruffle-from-shumway"
 kind = "upstream"
 repo = "ruffle-rs/ruffle"
 ref = "master"
-include = ["tests/tests/swfs/from_shumway/**/*.swf"]
+include = [
+  "tests/tests/swfs/from_shumway/**/*.swf",
+  "tests/tests/swfs/from_shumway/**/output.txt",
+  "tests/tests/swfs/from_shumway/**/test.toml",
+  "tests/tests/swfs/from_shumway/**/output.expected.png",
+  "tests/tests/swfs/from_shumway/**/Test.as",
+  "tests/tests/swfs/from_shumway/**/test.as",
+]
 strip = "tests/tests/swfs/"
 
 [source.license]
