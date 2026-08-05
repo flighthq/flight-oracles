@@ -119,6 +119,40 @@ liability judgment we are obliged to make for every file:
   commercialUse: unknown
 ```
 
+## The one exclusion: declarations that grant no redistribution right
+
+Nothing is excluded on a guess about risk. There is exactly one case where we do not vendor,
+and it is compliance rather than judgement — honouring the declaration and republishing the
+bytes are incompatible. Two shapes:
+
+**Explicit prohibition.** The clause says so. Spine's `dragon` (Thiago Brayner) and `hero`
+(XDTech): *"may not be redistributed for any reason"*. glTF's `VirtualCity` (3DRT): *"You are
+not permitted to: Market, distribute, give, transfer, sell or sublicense the products in any
+form"* — its special exemption covers *use* in glTF tool testing, not redistribution.
+
+**Proprietary instruments that grant nothing.** A EULA licenses an end user; a stock-image
+licence licenses a licensee. Neither conveys a right to redistribute the asset as such.
+glTF's `BrainStem` (Poser EULA, Smith Micro), `EnvironmentTest` (Adobe Stock), and `Sponza`
+(CRYENGINE Limited License Agreement — whose bundled `LICENSES/` entry is a bare URL, so no
+grant is captured at the pinned commit at all). This is not guessing that redistribution
+*might* be disallowed; it is observing that the named instrument is not a redistribution
+licence.
+
+Both carry `redistributable = false` and a `prohibition` recording the clause or the basis.
+Both stay in the spec, so the record of having checked is durable and nobody re-adds them
+without reading why. Ingest refuses to vendor them; `pack` raises if one ever reaches a lock.
+
+The contrast with their neighbours is the point, and it is why this is read one model at a
+time rather than inferred from a repository:
+
+| Model | Declared | Outcome |
+| --- | --- | --- |
+| `Duck` | SCEA Shared Source 1.0 | **ships** — explicitly grants "distribute" |
+| `DragonAttenuation` | Stanford Graphics | **ships**, `commercialUse: false` — "welcome to mirror or redistribute them for free", but "not to be used for commercial purposes" |
+| `DamagedHelmet` | CC-BY-4.0 | **ships** — the CC-BY-NC entry applies to an *earlier version* per its `what` field, not the asset we carry |
+| `PlaysetLightTest` | CC BY-NC-SA 4.0 | **ships**, `commercialUse: false` |
+| `Sponza` | CRYENGINE agreement | **not vendored** |
+
 ## Invalidation
 
 If a file is challenged, the challenge is evidence that an upstream declaration was wrong —

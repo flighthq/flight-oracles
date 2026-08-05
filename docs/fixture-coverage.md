@@ -99,7 +99,9 @@ Status: ✅ shipped · ◐ declared, not ingested · ○ not started
 | ✅ `swf-ruffle-fixtures` | SWF v4–v50 | `swf`, `abc` | ruffle-rs/ruffle | Apache-2.0/MIT + GPL/MPL subtrees |
 | ✅ `rive-fixtures` | .riv | `scene2d-formats` | rive-app/rive-runtime | MIT (repo-root) |
 | ◐ `rive-fixtures-unit` | .riv (380 files) | `scene2d-formats` | rive-app/rive-runtime | MIT (repo-root) |
-| ○ `gltf-khronos-fixtures` | glTF/GLB, 17 KHR/EXT ext. | `scene3d-formats` | KhronosGroup/glTF-Sample-Assets | **per-model LICENSE.md** |
+| ✅ `gltf-khronos-fixtures` | glTF, 28 KHR/EXT ext. | `scene3d-formats` | KhronosGroup/glTF-Sample-Assets | **per-model LICENSE.md** |
+| ◐ `gltf-khronos-textures` | raster textures | demo/render | KhronosGroup/glTF-Sample-Assets | per-model |
+| ◐ `gltf-khronos-binary` | GLB container | `scene3d-formats` | KhronosGroup/glTF-Sample-Assets | per-model |
 | ○ `gltf-generated-fixtures` | glTF conformance matrix | `scene3d-formats` | KhronosGroup/glTF-Asset-Generator | MIT |
 | ○ `lottie-fixtures` | Lottie JSON/.lottie | `scene2d-formats` | LottieFiles/lottie-docs, airbnb/lottie-web | CC-BY-4.0 / MIT |
 | ○ `dragonbones-fixtures` | DragonBones JSON | `skeleton2d-formats` | DragonBones/DragonBonesJS | MIT |
