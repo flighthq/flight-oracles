@@ -1,0 +1,1784 @@
+{
+  "pack": {
+    "name": "dragonbones-fixtures",
+    "kind": "fixtures",
+    "summary": "DragonBones skeletal animation exports \u2014 skeleton JSON, binary .dbbin, atlases and textures."
+  },
+  "sources": [
+    {
+      "id": "dragonbones-cocos-demos",
+      "kind": "upstream",
+      "repo": "DragonBones/DragonBonesJS",
+      "ref": "master",
+      "commit": "64b6c69ae35777c2404be68c9192e2c56906079e",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "DragonBones runtime and its bundled demo assets. Copyright (c) DragonBones.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/dragonbones-cocos-demos@64b6c69ae357.txt"
+    },
+    {
+      "id": "dragonbones-binary",
+      "kind": "upstream",
+      "repo": "DragonBones/DragonBonesJS",
+      "ref": "master",
+      "commit": "64b6c69ae35777c2404be68c9192e2c56906079e",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "Binary .dbbin skeletons from the other host-runtime demo trees \u2014 a distinct parse path from the JSON form, and only nine exist repo-wide.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/dragonbones-binary@64b6c69ae357.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "binary/Egret/Demos/resource/mecha_1002_101d_show/mecha_1002_101d_show_ske.dbbin",
+      "sourceId": "dragonbones-binary",
+      "upstreamPath": "Egret/Demos/resource/mecha_1002_101d_show/mecha_1002_101d_show_ske.dbbin",
+      "sha256": "8774bf2593ef8fc326957d0f081897782738962bf48bdd4e7c78699c54c391cc",
+      "size": 10576,
+      "format": {
+        "kind": "dragonbones-binary",
+        "version": null
+      }
+    },
+    {
+      "path": "binary/Egret/Demos/resource/mecha_1406/mecha_1406_ske.dbbin",
+      "sourceId": "dragonbones-binary",
+      "upstreamPath": "Egret/Demos/resource/mecha_1406/mecha_1406_ske.dbbin",
+      "sha256": "7b26929b124e2a6d100038fc838fce53b12a9688d9258dcc8657060b8349e18f",
+      "size": 24372,
+      "format": {
+        "kind": "dragonbones-binary",
+        "version": null
+      }
+    },
+    {
+      "path": "binary/Hilo/Demos/resource/assets/dragon_boy_ske.dbbin",
+      "sourceId": "dragonbones-binary",
+      "upstreamPath": "Hilo/Demos/resource/assets/dragon_boy_ske.dbbin",
+      "sha256": "30a87600228bafb13915b688ee0f908dc2b6fca4e6231145ef59f08e6d3f9cbf",
+      "size": 17764,
+      "format": {
+        "kind": "dragonbones-binary",
+        "version": null
+      }
+    },
+    {
+      "path": "binary/Phaser/Demos/resource/mecha_1002_101d_show/mecha_1002_101d_show_ske.dbbin",
+      "sourceId": "dragonbones-binary",
+      "upstreamPath": "Phaser/Demos/resource/mecha_1002_101d_show/mecha_1002_101d_show_ske.dbbin",
+      "sha256": "8774bf2593ef8fc326957d0f081897782738962bf48bdd4e7c78699c54c391cc",
+      "size": 10576,
+      "format": {
+        "kind": "dragonbones-binary",
+        "version": null
+      }
+    },
+    {
+      "path": "binary/Phaser/Demos/resource/mecha_1406/mecha_1406_ske.dbbin",
+      "sourceId": "dragonbones-binary",
+      "upstreamPath": "Phaser/Demos/resource/mecha_1406/mecha_1406_ske.dbbin",
+      "sha256": "7b26929b124e2a6d100038fc838fce53b12a9688d9258dcc8657060b8349e18f",
+      "size": 24372,
+      "format": {
+        "kind": "dragonbones-binary",
+        "version": null
+      }
+    },
+    {
+      "path": "demos/bounding_box_tester/bounding_box_tester_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/bounding_box_tester/bounding_box_tester_ske.json",
+      "sha256": "69a6832561f4d9230a51ead259ecac9207c3a6522b4fa443333df6214c90d221",
+      "size": 2940,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 3
+      }
+    },
+    {
+      "path": "demos/bounding_box_tester/bounding_box_tester_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/bounding_box_tester/bounding_box_tester_tex.json",
+      "sha256": "4bf0c50dc22ac4d61bbe8c8482dab9acdf69dc0fd42fdbb28c5219009d1378e9",
+      "size": 221,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/bounding_box_tester/bounding_box_tester_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/bounding_box_tester/bounding_box_tester_tex.png",
+      "sha256": "7feae07052b4e38db6d15ca09e35e4c3d331a2f2489866a0737e4025fb77b85b",
+      "size": 2898,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 128
+      }
+    },
+    {
+      "path": "demos/bullet_01/bullet_01_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/bullet_01/bullet_01_ske.json",
+      "sha256": "baaba9dc3e5973ea9e3329d711c145ab9a6a783c0ab777939331e9565523827c",
+      "size": 959,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/bullet_01/bullet_01_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/bullet_01/bullet_01_tex.json",
+      "sha256": "3a5f21ad857deb401849d28d707191c5a5094b536e44d7683643c3cc6ba981d3",
+      "size": 159,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/bullet_01/bullet_01_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/bullet_01/bullet_01_tex.png",
+      "sha256": "1d96f4435207f258052ecc11e2510a86f7d29e3cccba9bf65c09e7a31a0a5243",
+      "size": 2636,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 32
+      }
+    },
+    {
+      "path": "demos/effect/effect_sd_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/effect/effect_sd_tex.json",
+      "sha256": "99f248b8d10d19cce734e9c13da361b4106ef0bfd1916e1ec678ca7e07992d95",
+      "size": 1552,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/effect/effect_sd_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/effect/effect_sd_tex.png",
+      "sha256": "0b883ed0c4aed19d55a8b9d0ac4578b0f9dc519de12b76a9663e1f3819ce45b1",
+      "size": 114884,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/effect/effect_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/effect/effect_ske.json",
+      "sha256": "b2270d3b7d28b45e3050d1f462fb2a34fbac09ac4daf7e5d3d5d562250664142",
+      "size": 37199,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 2
+      }
+    },
+    {
+      "path": "demos/effect/effect_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/effect/effect_tex.json",
+      "sha256": "024af81d5a36b63419b824d59afe309c551d0333fb480f920a8b4b75ddad005c",
+      "size": 1599,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/effect/effect_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/effect/effect_tex.png",
+      "sha256": "98e1ca715cbda1975376bec2675fa9fa78b51b90a56d77f343c98b8f82cbd3a7",
+      "size": 377416,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/floor_board/floor_board_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/floor_board/floor_board_ske.json",
+      "sha256": "de3cab104de73b5a8ec37b225d1bc616cd8f2629dae1ac1545081e8818a39e77",
+      "size": 2323,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 2
+      }
+    },
+    {
+      "path": "demos/floor_board/floor_board_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/floor_board/floor_board_tex.json",
+      "sha256": "06469d72684b119fa5cb610216a3228109c7c2620f31858f94173bc60efe3f66",
+      "size": 409,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/floor_board/floor_board_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/floor_board/floor_board_tex.png",
+      "sha256": "44a54ee0daa71ffbcd5e44c95251842610c326ce911c8648b6415442177648b6",
+      "size": 98112,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/mecha_1002_101d_show/mecha_1002_101d_show_ske.dbbin",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1002_101d_show/mecha_1002_101d_show_ske.dbbin",
+      "sha256": "8774bf2593ef8fc326957d0f081897782738962bf48bdd4e7c78699c54c391cc",
+      "size": 10576,
+      "format": {
+        "kind": "dragonbones-binary",
+        "version": null
+      }
+    },
+    {
+      "path": "demos/mecha_1002_101d_show/mecha_1002_101d_show_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1002_101d_show/mecha_1002_101d_show_ske.json",
+      "sha256": "119e9d2c0be44875c86e768ba52e0ec8e3d5b05b26ad2e828704e7d6bb5eeb00",
+      "size": 15148,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 2
+      }
+    },
+    {
+      "path": "demos/mecha_1002_101d_show/mecha_1002_101d_show_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1002_101d_show/mecha_1002_101d_show_tex.json",
+      "sha256": "9132c2e7f2012b167e73e30cb31bd65f046a2056f0ac3c0f37e6ec39fcb31bc4",
+      "size": 2247,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/mecha_1002_101d_show/mecha_1002_101d_show_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1002_101d_show/mecha_1002_101d_show_tex.png",
+      "sha256": "b49adc4237025ad6dffdbccc5c034b9ef24dd683aac993b9d642bfd3315994dc",
+      "size": 555608,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/mecha_1004d/mecha_1004d_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1004d/mecha_1004d_ske.json",
+      "sha256": "839eafd1592ba5ec86f37dd03df86405e69b79321fc7646a6033922fdbb2cfb7",
+      "size": 199261,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 4
+      }
+    },
+    {
+      "path": "demos/mecha_1004d/mecha_1004d_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1004d/mecha_1004d_tex.json",
+      "sha256": "06aa1a61f88da1335f63c1d841a3aa519f53c8bb09c55fbe53b9cb5170f2d769",
+      "size": 4296,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/mecha_1004d/mecha_1004d_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1004d/mecha_1004d_tex.png",
+      "sha256": "68afcc9f52fc8cc8a6b4d42a73ca194616195012ad7caa6973c5a0335563bb06",
+      "size": 881887,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/mecha_1004d_show/mecha_1004d_show_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1004d_show/mecha_1004d_show_ske.json",
+      "sha256": "9e26e72de3dce6ab2bc06e88d9ba631221d4550d5d255870cd8aa060894ff79c",
+      "size": 12463,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/mecha_1004d_show/mecha_1004d_show_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1004d_show/mecha_1004d_show_tex.json",
+      "sha256": "73bc516b3f5abaccba97aa37471dfea2b65c57dbc0b7ae302487369e9b60fe90",
+      "size": 1979,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/mecha_1004d_show/mecha_1004d_show_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1004d_show/mecha_1004d_show_tex.png",
+      "sha256": "d5bf47ddfd6c43a4d0f7f7ec8b0daab8c92ca8e1982ad000ce7b77fa826e121a",
+      "size": 1004636,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/mecha_1406/mecha_1406_ske.dbbin",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1406/mecha_1406_ske.dbbin",
+      "sha256": "7b26929b124e2a6d100038fc838fce53b12a9688d9258dcc8657060b8349e18f",
+      "size": 24372,
+      "format": {
+        "kind": "dragonbones-binary",
+        "version": null
+      }
+    },
+    {
+      "path": "demos/mecha_1406/mecha_1406_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1406/mecha_1406_ske.json",
+      "sha256": "3e6f93a76436b57c98b1e2e54e39d2e41037a22a71b072c8b7b1cc33ac2596ee",
+      "size": 50724,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/mecha_1406/mecha_1406_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1406/mecha_1406_tex.json",
+      "sha256": "2b61d795679dcbb1f56a2d13154ce36bdbe9738ffbbc8e0600203d46ac748258",
+      "size": 1105,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/mecha_1406/mecha_1406_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1406/mecha_1406_tex.png",
+      "sha256": "c34fb6dda28420cc588cbd28e8cbf238b4beaa85d40f40ffe71c6c7e23ec3c0f",
+      "size": 117959,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/mecha_1502b/mecha_1502b_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1502b/mecha_1502b_ske.json",
+      "sha256": "58e311cc5f38c3c2f4a30dd183e75109b8e975a3621b0565a238c9d6182774bf",
+      "size": 96780,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 6
+      }
+    },
+    {
+      "path": "demos/mecha_1502b/mecha_1502b_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1502b/mecha_1502b_tex.json",
+      "sha256": "8163604e66bbb93c9ba25cb3eef11334def1042730944feb792ca532ad17da8b",
+      "size": 1834,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/mecha_1502b/mecha_1502b_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_1502b/mecha_1502b_tex.png",
+      "sha256": "96620c269498ad1bc6fa1d15c0d50757898401c825b82dcbf1c9d7a35747f1f3",
+      "size": 190266,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/mecha_2903/mecha_2903_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_2903/mecha_2903_ske.json",
+      "sha256": "3bd1aecb37fb556ed6b0a908d45ce56a97772a3d9f208806d18c78da90f45f96",
+      "size": 328551,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 4
+      }
+    },
+    {
+      "path": "demos/mecha_2903/mecha_2903_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_2903/mecha_2903_tex.json",
+      "sha256": "f151469490c2c66b2cf1ec0fce5a1cf1626a09a1d8d1cbd374857b156d580c55",
+      "size": 11498,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/mecha_2903/mecha_2903_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/mecha_2903/mecha_2903_tex.png",
+      "sha256": "fe7119ffdce5671814b02d62a39d02e610841f498ec74510ee276f8695d582c3",
+      "size": 606286,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/progress_bar/progress_bar_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/progress_bar/progress_bar_ske.json",
+      "sha256": "e52fd537f963892139330d08ed05168ce3163bb50911802f80f6dba45f76d6c7",
+      "size": 6304,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 2
+      }
+    },
+    {
+      "path": "demos/progress_bar/progress_bar_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/progress_bar/progress_bar_tex.json",
+      "sha256": "69e27e4b01288b0915e71673d37f7f582afedf156fdb53aa2618df3da75b645b",
+      "size": 347,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/progress_bar/progress_bar_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/progress_bar/progress_bar_tex.png",
+      "sha256": "160e69bb620879eeb3f2103dba1e2cfd4fa56b9811da8ccaf86583d63bde9d46",
+      "size": 6732,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 64
+      }
+    },
+    {
+      "path": "demos/shizuku/shizuku_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/shizuku/shizuku_ske.json",
+      "sha256": "723db58d0f008f2b1c952541285620b64962abaef9ec369a717a315b80c0e193",
+      "size": 1044554,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.6",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/skin_1502b/skin_1502b_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/skin_1502b/skin_1502b_ske.json",
+      "sha256": "1acd8961877b8f219c6e44e23c0bf9d509a078f31f99b31123b6352a93a9ad6b",
+      "size": 13312,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 3
+      }
+    },
+    {
+      "path": "demos/skin_1502b/skin_1502b_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/skin_1502b/skin_1502b_tex.json",
+      "sha256": "e59c31bd6e88e81ff25edd1a222e6a515880027dcbeec782c5bf156b6e555fab",
+      "size": 2333,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/skin_1502b/skin_1502b_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/skin_1502b/skin_1502b_tex.png",
+      "sha256": "377ae6f0e898d008d951765b700d70770fee3d5a59ad6df5f0ceb02ac30d875e",
+      "size": 257183,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/test/test_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/test/test_ske.json",
+      "sha256": "cdf982400047ff337efb8ff5c17cbd4868a3d049bf1f3c7d1ea6876eee2a8e9c",
+      "size": 883,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/test/test_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/test/test_tex.json",
+      "sha256": "12e44f18382244e1a1bb8b030b294bd33ae9d1fe01219ba10e1c2c9e6d02ab35",
+      "size": 137,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/test/test_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/test/test_tex.png",
+      "sha256": "2569463da553491b9374c1bb8c4f15334015b92ebffdb330a9f83b590171d5e7",
+      "size": 42738,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/weapon_1000/weapon_1000_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/weapon_1000/weapon_1000_ske.json",
+      "sha256": "9752e6286fb8710ff701d579213a43c00c44ba35a0c1a505b048ca446480323f",
+      "size": 8265,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 5
+      }
+    },
+    {
+      "path": "demos/weapon_1000/weapon_1000_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/weapon_1000/weapon_1000_tex.json",
+      "sha256": "0ae3e0b6b5286fc20a23decafa3b7423ab71ea5e44bbcb1820bff9efaeb16c64",
+      "size": 1835,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/weapon_1000/weapon_1000_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/weapon_1000/weapon_1000_tex.png",
+      "sha256": "d59bb81fc76e56f3ce2059e1a4b3678424d2922ef643ee9f26ca7d5960349e92",
+      "size": 283265,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/weapon_1004_show/weapon_1004_show_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/weapon_1004_show/weapon_1004_show_ske.json",
+      "sha256": "445023ae9836e230a3751cb6eddea31ff34075d9a811c9e0195f54b3b537192b",
+      "size": 3598,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 2
+      }
+    },
+    {
+      "path": "demos/weapon_1004_show/weapon_1004_show_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/weapon_1004_show/weapon_1004_show_tex.json",
+      "sha256": "86acfb2cc7709666d9312a7783c68691e409e63f1f210552ec531f068ad35e67",
+      "size": 552,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/weapon_1004_show/weapon_1004_show_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/weapon_1004_show/weapon_1004_show_tex.png",
+      "sha256": "f42855b5392c43a9b1cbe615e4434c27028a8cfa03d6d79fd3582d695f0c2c49",
+      "size": 551758,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/you_xin/body/body_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/body/body_ske.json",
+      "sha256": "3babb835f18b0a7753fd7adf033bd8033799195e6997f7076f356f3797b85846",
+      "size": 128100,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/body/body_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/body/body_tex.json",
+      "sha256": "6b9da85c4f961e6075127c19c001392dccb519f429ddbd3dfa034a07cee375e2",
+      "size": 697,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/body/body_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/body/body_tex.png",
+      "sha256": "84e8bfd47b8dc1a0737f38ae66e73b702c04cc81e0f7e6bfe1e433a01081ec14",
+      "size": 548969,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2010600a/2010600a_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2010600a/2010600a_ske.json",
+      "sha256": "1a746df9fb26de1e7d418e83c243a280b3f06cd09295811643915040945e0cb6",
+      "size": 9333,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2010600a/2010600a_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2010600a/2010600a_tex.json",
+      "sha256": "46e8323b254e5d278ca6fa65b2933c508cfe58bc921ff9120a1cce8ee213c15f",
+      "size": 154,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2010600a/2010600a_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2010600a/2010600a_tex.png",
+      "sha256": "16679552fc57e4a36710f1c8b0558122b2ede2ad095c00d2c99df0d7ec91aaca",
+      "size": 198671,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2010600a_1/2010600a_1_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2010600a_1/2010600a_1_ske.json",
+      "sha256": "40cecb8a2091e326304aec639239e1e6ecb797bfee371e5832a88e171fcdbab1",
+      "size": 6278,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2010600a_1/2010600a_1_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2010600a_1/2010600a_1_tex.json",
+      "sha256": "eaea5f23f354026c3263b7e254ae9b61de9852f1b1e5e211d5ffdd36ff99555b",
+      "size": 159,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2010600a_1/2010600a_1_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2010600a_1/2010600a_1_tex.png",
+      "sha256": "b0b0308d401541b4aa3f2d10d1b4883e716a903c942ecefea7a3b222b516e3e8",
+      "size": 137958,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003/20208003_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003/20208003_ske.json",
+      "sha256": "2fe7e8da7cd03e247f1ae955d73af7494784460c9e0cfa6c744fc68575943f8f",
+      "size": 5598,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003/20208003_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003/20208003_tex.json",
+      "sha256": "854b295eb0b71d3057454a80107af10e258a52976a7597f991ff0ebc1373ea40",
+      "size": 153,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003/20208003_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003/20208003_tex.png",
+      "sha256": "5d9108356343e16ba39081e179e754f1cee224b4177ae0f65aa666132a901439",
+      "size": 98075,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003_1/20208003_1_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003_1/20208003_1_ske.json",
+      "sha256": "ed68f05f21161ee5248dd74febb41c62e156a3dd5d79ffcc1c68506618d3e501",
+      "size": 4084,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003_1/20208003_1_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003_1/20208003_1_tex.json",
+      "sha256": "c43053a8fbd1a2f55e31cb2887b3d13ad553af3ea129a1bf534ef30b361e733d",
+      "size": 159,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003_1/20208003_1_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003_1/20208003_1_tex.png",
+      "sha256": "1ee49461b995df2e0395f7e78b7b6a359a619a81ea1a089420cf61f40b78d94c",
+      "size": 83270,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003_2/20208003_2_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003_2/20208003_2_ske.json",
+      "sha256": "df395ad7e377cd97eb471807d9249f23ac230c4fa2c4621a8f23cef4ec616280",
+      "size": 3576,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003_2/20208003_2_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003_2/20208003_2_tex.json",
+      "sha256": "086936b0a43a0381af951aceae97b12517c9db8b18bafc658b1d5d74280aac90",
+      "size": 159,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003_2/20208003_2_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003_2/20208003_2_tex.png",
+      "sha256": "7b87c93dbe943f021235bb081b6f74acedaba71826c43fa06f54d7e932ac5cb4",
+      "size": 70957,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003_3/20208003_3_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003_3/20208003_3_ske.json",
+      "sha256": "ed52c3cf4e5745fde3184c2ed4ccf77545dcafa1a2c14b01bb0ae8e04bd332a7",
+      "size": 8931,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003_3/20208003_3_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003_3/20208003_3_tex.json",
+      "sha256": "a0b4f06701f6611679062c3f3950fbaa3798a7d68813962a68a8bbb4738c5aee",
+      "size": 162,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20208003_3/20208003_3_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20208003_3/20208003_3_tex.png",
+      "sha256": "2f8ee77e507d9964863b367ba5df8462859c3dbc8049213d7324cec2d4953a79",
+      "size": 538677,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 2048
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20405006/20405006_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20405006/20405006_ske.json",
+      "sha256": "314d2e0d350e5c4cc4b35ba7454d395a1ba4050832c77f1143ae352d64045115",
+      "size": 6527,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20405006/20405006_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20405006/20405006_tex.json",
+      "sha256": "d0d9648dd9bdfcfb7805787ac0391f8d57e22b939f8bfec7c900e18119f00ad8",
+      "size": 153,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20405006/20405006_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20405006/20405006_tex.png",
+      "sha256": "c696482f9bbad7ab7e8d19e7d690c1d91418e9f220cde1facc948ccee4bcd7a8",
+      "size": 126526,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20509005/20509005_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20509005/20509005_ske.json",
+      "sha256": "80b889c2ef6402aebfaca0f736cb3bedf35c151407d7df7f4060d2134a6f1736",
+      "size": 13801,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20509005/20509005_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20509005/20509005_tex.json",
+      "sha256": "deb1fdf10e2fada621dc775423517f11fdf0c9ada151c3837dcf57e33dc8681e",
+      "size": 155,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20509005/20509005_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20509005/20509005_tex.png",
+      "sha256": "8b3f3604571fb3ed040cb7949abf69770d0d6e9b9505477b23fe5dd1ad1bd9e2",
+      "size": 1163405,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20703016/20703016_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20703016/20703016_ske.json",
+      "sha256": "34ec7c4c494922ffc0b5772a9aed8d0a47fefc8208e056639c6009dabe1e9643",
+      "size": 2372,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20703016/20703016_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20703016/20703016_tex.json",
+      "sha256": "e1cf6449f70816214e535fd8844bd29bff3db0246d758d3f33939c4ed7d3e256",
+      "size": 152,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20703016/20703016_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20703016/20703016_tex.png",
+      "sha256": "195655386194cef1178782930a18c679c1d83b184c0a362fef1cbdf713403997",
+      "size": 42215,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20703016_1/20703016_1_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20703016_1/20703016_1_ske.json",
+      "sha256": "b73b89fdae0a7db3d5370a6c8006f14a37f9ed132a01920e84ad8ccff6a05f02",
+      "size": 2451,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20703016_1/20703016_1_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20703016_1/20703016_1_tex.json",
+      "sha256": "17db059481cc21b71f41736a1b51f0b334c6b5a1da6c9515aa84ed29b2cdc867",
+      "size": 158,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20703016_1/20703016_1_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20703016_1/20703016_1_tex.png",
+      "sha256": "4911098c0705dc20ea5df7f03f6a1de325085257dc33b19e68738b00f1d9b9e2",
+      "size": 35880,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080100c/2080100c_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080100c/2080100c_ske.json",
+      "sha256": "f82bedc15ab7cb3522d00e1f30ea891fd4564afe48ff521f66251257b9467800",
+      "size": 1484,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080100c/2080100c_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080100c/2080100c_tex.json",
+      "sha256": "ea41448ff9bb787040e46e4bbdf253ea8b5c0642e8d603fb01cb66db809346db",
+      "size": 151,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080100c/2080100c_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080100c/2080100c_tex.png",
+      "sha256": "03814224eaaa697217dd5ce2ac628e5cb6b85cdba24433cbd4881cacce05cbf8",
+      "size": 75960,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080100e/2080100e_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080100e/2080100e_ske.json",
+      "sha256": "b837f039fba19924a2dadc9217d9750c52919a61c71bdab63c8f7e97a94aff09",
+      "size": 2668,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080100e/2080100e_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080100e/2080100e_tex.json",
+      "sha256": "269355ffa9a3a477f613a411fbb669ff5acd5ef8d6292e3462d8b403acae5ce0",
+      "size": 156,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080100e/2080100e_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080100e/2080100e_tex.png",
+      "sha256": "9b52cb12a861f1547cb8eac2cdd064fdc701adab3d22cd5b81a8c9da73ed07e2",
+      "size": 34046,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080100e_1/2080100e_1_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080100e_1/2080100e_1_ske.json",
+      "sha256": "bade019150b81c67b17b2d98eb86b9244f396c268d91aafc743a453fb53631ca",
+      "size": 2466,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080100e_1/2080100e_1_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080100e_1/2080100e_1_tex.json",
+      "sha256": "ee6c862cc5db44465bd0580c894ff2562bfb67e3b3efcece01f80fc6a2cab301",
+      "size": 162,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080100e_1/2080100e_1_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080100e_1/2080100e_1_tex.png",
+      "sha256": "af17f88ff609a9635653c242f6ef32c4e13d1f1bedc4c32325418c94ea3ec8a1",
+      "size": 25095,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20803005/20803005_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20803005/20803005_ske.json",
+      "sha256": "cc848cc6a941ea7b8aea1df34d6afc8f2295fda31929d9c0440f5cfb0748999b",
+      "size": 1405,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20803005/20803005_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20803005/20803005_tex.json",
+      "sha256": "7ac0e0f74ad9275d2429205fb01b9efe404a5325a48f3ebfad8511a00bf0129e",
+      "size": 151,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/20803005/20803005_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/20803005/20803005_tex.png",
+      "sha256": "3f3b3125cd1f082ce7b24e5d547736885061f19f3f9e03493c62cad6aa83d6d2",
+      "size": 1058,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080500b/2080500b_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080500b/2080500b_ske.json",
+      "sha256": "dce28d2f5d3f5e53bf1dae4bf1efd7ab64361bfd9b265007a4e1c97160302bab",
+      "size": 2931,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080500b/2080500b_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080500b/2080500b_tex.json",
+      "sha256": "ff437251f6eec6660166d3c29226b806c36680fa5118009a24b0514e1e583699",
+      "size": 153,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080500b/2080500b_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080500b/2080500b_tex.png",
+      "sha256": "2aa29094b85f9eee0b837f143f2f57f59cf6a40908ac8b886698b09633172f7d",
+      "size": 37081,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080500b_1/2080500b_1_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080500b_1/2080500b_1_ske.json",
+      "sha256": "152b521e8c55780c00be5f3f711242b539749250f05fc06f419ffffc4e1977c3",
+      "size": 2300,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080500b_1/2080500b_1_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080500b_1/2080500b_1_tex.json",
+      "sha256": "8b04f8279743aa12c4417184ac2bf24ace8564a1a0cea0fbb17bbb0f22fd5644",
+      "size": 159,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit1/2080500b_1/2080500b_1_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit1/2080500b_1/2080500b_1_tex.png",
+      "sha256": "d81105dd88ec8b59e0ba80fb2b984862bc374834a653430c953d02454ac52f69",
+      "size": 28344,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20106010/20106010_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20106010/20106010_ske.json",
+      "sha256": "6d7158132734625144447f0c0e1ea28bdfff4f29da8e7dce4b00541620bf02b4",
+      "size": 15425,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20106010/20106010_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20106010/20106010_tex.json",
+      "sha256": "4d0118a54f534fe05f587cdd75af68a47b84b5559df8ccdb5f732ee31487b97c",
+      "size": 154,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20106010/20106010_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20106010/20106010_tex.png",
+      "sha256": "4c67b966a72d1305c78966e8e23d74c3676fddaa1cb022e80edb14b16faafa86",
+      "size": 219261,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20106010_1/20106010_1_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20106010_1/20106010_1_ske.json",
+      "sha256": "cdd0f3d7a67b0b67a33d899dfb39bca37b1ac661ed85fb038e2f974865e4dfe2",
+      "size": 4214,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20106010_1/20106010_1_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20106010_1/20106010_1_tex.json",
+      "sha256": "935be5dd77a389eb1c3af2a03add636c94b19e637f17a0cd51829fd3657c1887",
+      "size": 158,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20106010_1/20106010_1_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20106010_1/20106010_1_tex.png",
+      "sha256": "3b077ab9c52203a7bf872696388eb62d60fd9fb59dec626a44883f60c6e5db17",
+      "size": 34159,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 512
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006/20208006_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006/20208006_ske.json",
+      "sha256": "4634b967f5e36119872d146bd606a379d1ef4b37dd34124797a00f9f089031b6",
+      "size": 8501,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006/20208006_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006/20208006_tex.json",
+      "sha256": "f61a31b6e58c343a2f59a5286b1b9154137cdda0ae4a5f07c0527a3ed9bb99e2",
+      "size": 155,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006/20208006_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006/20208006_tex.png",
+      "sha256": "f8340bf7240574bac463e8732818d97c965b5ca6b648621f6c9c988bf72bbe9b",
+      "size": 267664,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 2048
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006_1/20208006_1_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006_1/20208006_1_ske.json",
+      "sha256": "d4fcc4403908939ede8363715a40a98161f2904bb8a05c9af9c2502cb1ae532d",
+      "size": 7079,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006_1/20208006_1_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006_1/20208006_1_tex.json",
+      "sha256": "334340824e73b6dfefc0329e4f593929b4fb94c5d9ca42822c5b60bd6b574281",
+      "size": 160,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006_1/20208006_1_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006_1/20208006_1_tex.png",
+      "sha256": "cac9fe73a428b90c7fabd629bd17d9cac4fe940c0fc4ad48e6c4a4d13babbb69",
+      "size": 350548,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006_2/20208006_2_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006_2/20208006_2_ske.json",
+      "sha256": "de0ead89745f6def64f555dbdacd9c84a14f600cdd8e78e3c76db5f4516df019",
+      "size": 6187,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006_2/20208006_2_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006_2/20208006_2_tex.json",
+      "sha256": "af9edee49956ff40696fe772ac0c2cc2c92b7902b8d599acc2fbf5faf3b46a45",
+      "size": 160,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006_2/20208006_2_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006_2/20208006_2_tex.png",
+      "sha256": "8091f72a6d21e981b596d44c83c3107a6e1ac6cef543b8bc829918fe357c75eb",
+      "size": 283294,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006_3/20208006_3_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006_3/20208006_3_ske.json",
+      "sha256": "6c71ed345379531b49216fa7f35455ead330581baf33f32a72c5c4e486799f0b",
+      "size": 5096,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006_3/20208006_3_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006_3/20208006_3_tex.json",
+      "sha256": "cc5a60204eb0c8e33a74d82fd4cd7c794af540b49e1a9cb6dd6739b49d8df5ca",
+      "size": 162,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20208006_3/20208006_3_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20208006_3/20208006_3_tex.png",
+      "sha256": "cb4f156b564d904f9d04a8e479cc7703ba0b64971032214539819e5890d17fec",
+      "size": 132005,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/2040600b/2040600b_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/2040600b/2040600b_ske.json",
+      "sha256": "67fc1f55e70dabbf39048374f489add4e26177b521ac5ecb449cf7081d55de9c",
+      "size": 7450,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/2040600b/2040600b_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/2040600b/2040600b_tex.json",
+      "sha256": "a624f4bc7997cb08eda779a0b5920da41fe862a6d6a305de63e5c19ab722f13a",
+      "size": 153,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/2040600b/2040600b_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/2040600b/2040600b_tex.png",
+      "sha256": "aaaf559a02daf59c72e11b3d5dab80703faf2d52217844f3b7a8ba38b78d72fb",
+      "size": 278336,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/2040600b_1/2040600b_1_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/2040600b_1/2040600b_1_ske.json",
+      "sha256": "f8920932b10ea2c462b0d2475492667cb45b11c4bbe15fac30b16ec4044c050b",
+      "size": 1832,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/2040600b_1/2040600b_1_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/2040600b_1/2040600b_1_tex.json",
+      "sha256": "6ec2bb296da3a50375494f7014550a8a3b70c5b80f77bcd5937622db32d72688",
+      "size": 157,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/2040600b_1/2040600b_1_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/2040600b_1/2040600b_1_tex.png",
+      "sha256": "23512cda38b6de3b4b78030038dbda0615265451762ad6b8a91b03cd7831fe15",
+      "size": 15714,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20509007/20509007_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20509007/20509007_ske.json",
+      "sha256": "f42e73cd4004c9d32b9b703e9575354a211d1a2fc397c183cdf6710b4fed9261",
+      "size": 11890,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20509007/20509007_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20509007/20509007_tex.json",
+      "sha256": "853a399efd08c953b24066fece7f52c1d0fac5cff759542677bf62bf3ee0a3ab",
+      "size": 156,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20509007/20509007_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20509007/20509007_tex.png",
+      "sha256": "305220717c151595ea81c93d93739432a10f5b444c31431a81312a83f5f2cc5e",
+      "size": 1297535,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20703020/20703020_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20703020/20703020_ske.json",
+      "sha256": "0c90c84c47a4e0a85368fe95be61dc8df75708724a2f2600518fb421b9794f4e",
+      "size": 1726,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20703020/20703020_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20703020/20703020_tex.json",
+      "sha256": "c4e3773d21faf968823bbd5f3e73f8619bff042843c4c467d6410523acf7de92",
+      "size": 151,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20703020/20703020_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20703020/20703020_tex.png",
+      "sha256": "519e38798a49feac4ed03b24250b33989d48c9d37f9625fe1f3dd4befecaf882",
+      "size": 21169,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20703020_1/20703020_1_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20703020_1/20703020_1_ske.json",
+      "sha256": "33ea2c181be9cf0b8e329a33e710d75af356875872f49f4b29dffdd39b271ae8",
+      "size": 1695,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20703020_1/20703020_1_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20703020_1/20703020_1_tex.json",
+      "sha256": "f2d5409d8a54a59411adeb80e61b04ff19177d2fa8cb8ded29ac3bb8bc527d39",
+      "size": 157,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20703020_1/20703020_1_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20703020_1/20703020_1_tex.png",
+      "sha256": "5dd1714543a51e6bda3e633dea31107b2dc36671aaa4844561f24f361bc58535",
+      "size": 19338,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20801015/20801015_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20801015/20801015_ske.json",
+      "sha256": "08f7860b1d532ef5cf515818431b3eea2b51942a61e502457aed25d6518901af",
+      "size": 4689,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20801015/20801015_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20801015/20801015_tex.json",
+      "sha256": "f65c1a79ab48e8eb709c09224dc38948dde85422878b8c4bad9ef33c0a2f766b",
+      "size": 156,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/20801015/20801015_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/20801015/20801015_tex.png",
+      "sha256": "66b3a14d12fb295d27885e58b9ff2c9eb704a7ec79842ce9714cda4ffc71254e",
+      "size": 29966,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/2080b003/2080b003_ske.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/2080b003/2080b003_ske.json",
+      "sha256": "2af47786df39750d0cef410b4b3a9a30ebe8fa958ee10aec797cf0b59f05a028",
+      "size": 8615,
+      "format": {
+        "kind": "dragonbones",
+        "version": "5.5",
+        "armatures": 1
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/2080b003/2080b003_tex.json",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/2080b003/2080b003_tex.json",
+      "sha256": "32b772104ecaae1c4c866ee4d2f60d0b117f1c0fb9f67cdd995a7ffc908238e5",
+      "size": 158,
+      "format": {
+        "kind": "dragonbones-atlas",
+        "version": ""
+      }
+    },
+    {
+      "path": "demos/you_xin/suit2/2080b003/2080b003_tex.png",
+      "sourceId": "dragonbones-cocos-demos",
+      "upstreamPath": "Cocos/Demos/assets/resources/you_xin/suit2/2080b003/2080b003_tex.png",
+      "sha256": "c4ebe01b171fd0dea354ff840422dae950595d7ddf599b4eab3def1aebce9def",
+      "size": 596734,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    }
+  ],
+  "totals": {
+    "files": 145,
+    "bytes": 14158083
+  }
+}

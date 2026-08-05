@@ -1,0 +1,274 @@
+# spine-fixtures-38 — Spine 3.8 exports.
+#
+# A DIFFERENT FORMAT VERSION, kept as its own pack rather than mixed into spine-fixtures.
+#
+# flight's spineBinaryParse.ts claims only the 4.x line and REJECTS 3.8 outright: "a
+# mismatched layout desynchronizes the stream and yields plausible-looking garbage". That
+# rejection is a code path with no fixtures behind it — nothing in the 4.2 corpus can prove
+# a 3.8 file is refused rather than silently mis-parsed, which is the failure mode with no
+# symptom. This pack exists to exercise exactly that.
+#
+# So it is a NEGATIVE corpus for the binary importer, and a positive one for anything that
+# does support 3.8. Same per-example licence structure as 4.2, read independently.
+
+[pack]
+name = "spine-fixtures-38"
+kind = "fixtures"
+summary = "Spine 3.8 example exports — prior format version, for compatibility and rejection testing."
+
+[[source]]
+id = "spine38-alien"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/alien/export/**", "examples/alien/images/**", "examples/alien/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/alien/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-coin"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/coin/export/**", "examples/coin/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "On the 3.8 branch this example carries no license.txt, though it gained one by 4.2 and every 3.8 sibling has one. The declaration is absent here, so nothing is established for these bytes; recorded rather than borrowed from the later branch."
+
+[[source]]
+id = "spine38-goblins"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/goblins/export/**", "examples/goblins/images/**", "examples/goblins/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/goblins/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-mix-and-match"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/mix-and-match/export/**", "examples/mix-and-match/images/**", "examples/mix-and-match/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/mix-and-match/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-owl"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/owl/export/**", "examples/owl/images/**", "examples/owl/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/owl/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-powerup"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/powerup/export/**", "examples/powerup/images/**", "examples/powerup/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/powerup/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-raptor"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/raptor/export/**", "examples/raptor/images/**", "examples/raptor/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/raptor/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-speedy"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/speedy/export/**", "examples/speedy/images/**", "examples/speedy/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/speedy/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-spineboy"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/spineboy/export/**", "examples/spineboy/images/**", "examples/spineboy/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/spineboy/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-spinosaurus"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/spinosaurus/export/**", "examples/spinosaurus/images/**", "examples/spinosaurus/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/spinosaurus/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-stretchyman"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/stretchyman/export/**", "examples/stretchyman/images/**", "examples/stretchyman/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/stretchyman/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-tank"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/tank/export/**", "examples/tank/images/**", "examples/tank/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/tank/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-vine"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/vine/export/**", "examples/vine/images/**", "examples/vine/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/vine/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+[[source]]
+id = "spine38-windmill"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/windmill/export/**", "examples/windmill/images/**", "examples/windmill/manual-maps/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-Redistributable-NonCommercial"
+declared_scope = "file-adjacent"
+declared_from = "examples/windmill/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Images redistributable when accompanied by this licence file; the .spine project file is public domain. Esoteric Software LLC."
+
+# NOT VENDORED — same third-party prohibition as on the 4.2 branch.
+[[source]]
+id = "spine38-dragon"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/dragon/export/**", "examples/dragon/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-NoRedistribution"
+declared_scope = "file-adjacent"
+declared_from = "examples/dragon/license.txt"
+commercial_use = false
+redistributable = false
+prohibition = "The project file and images in this \"dragon\" project are provided for demonstration purposes only and may not be redistributed for any reason nor used as the basis for derivative work. Copyright (c) 2013, Thiago Brayner."
+
+# NOT VENDORED — same third-party prohibition as on the 4.2 branch.
+[[source]]
+id = "spine38-hero"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "3.8"
+include = ["examples/hero/export/**", "examples/hero/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "LicenseRef-Spine-Examples-NoRedistribution"
+declared_scope = "file-adjacent"
+declared_from = "examples/hero/license.txt"
+commercial_use = false
+redistributable = false
+prohibition = "The project file and images in this \"hero\" project are provided for demonstration purposes only and may not be redistributed for any reason nor used as the basis for derivative work. Copyright (c) 2014, XDTech."

@@ -334,3 +334,174 @@ declared_from = "examples/hero/license.txt"
 commercial_use = false
 redistributable = false
 prohibition = "The project file and images in this \"hero\" project are provided for demonstration purposes only and may not be redistributed for any reason nor used as the basis for derivative work. Copyright (c) 2014, XDTech."
+
+# ---------------------------------------------------------------------------
+# NO PER-EXAMPLE DECLARATION. Each of the nineteen examples above ships its own license.txt
+# granting redistribution; `sack` and the whole spine-unity subtree ship none, and the
+# repository root carries the Spine Runtimes License, which concerns the runtime SOFTWARE
+# rather than example art. There is no declaration covering these files, and we say so
+# rather than borrowing a sibling's terms.
+#
+# Included because they are genuine Spine runtime exports and the build input is where
+# unestablished material belongs. onward_use = "unknown" keeps them out of -demo and
+# -permissive automatically, so nothing published picks them up by accident.
+# ---------------------------------------------------------------------------
+
+[[source]]
+id = "spine-sack"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/sack/export/**", "examples/sack/images/**"]
+strip = "examples/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "No per-example license.txt exists for this example, unlike its nineteen siblings. Nothing about redistribution is established; the absence is recorded rather than resolved."
+
+[[source]]
+id = "spine-unity-eyes"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/spine-unity/eyes/import/**", "examples/spine-unity/eyes/images/**"]
+strip = "examples/spine-unity/"
+dest = "unity/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them."
+
+[[source]]
+id = "spine-unity-footsoldier"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/spine-unity/footsoldier/import/**", "examples/spine-unity/footsoldier/images/**"]
+strip = "examples/spine-unity/"
+dest = "unity/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them."
+
+[[source]]
+id = "spine-unity-gauge"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/spine-unity/gauge/import/**", "examples/spine-unity/gauge/images/**"]
+strip = "examples/spine-unity/"
+dest = "unity/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them."
+
+[[source]]
+id = "spine-unity-raggedyspineboy"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/spine-unity/raggedyspineboy/import/**", "examples/spine-unity/raggedyspineboy/images/**"]
+strip = "examples/spine-unity/"
+dest = "unity/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them."
+
+[[source]]
+id = "spine-unity-raptor"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/spine-unity/raptor/import/**", "examples/spine-unity/raptor/images/**"]
+strip = "examples/spine-unity/"
+dest = "unity/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them."
+
+[[source]]
+id = "spine-unity-spineboy-pro"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/spine-unity/spineboy-pro/import/**", "examples/spine-unity/spineboy-pro/images/**"]
+strip = "examples/spine-unity/"
+dest = "unity/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them."
+
+[[source]]
+id = "spine-unity-spineboy-unity"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/spine-unity/spineboy-unity/import/**", "examples/spine-unity/spineboy-unity/images/**"]
+strip = "examples/spine-unity/"
+dest = "unity/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them."
+
+[[source]]
+id = "spine-unity-spineunitygirl"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/spine-unity/spineunitygirl/import/**", "examples/spine-unity/spineunitygirl/images/**"]
+strip = "examples/spine-unity/"
+dest = "unity/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them."
+
+[[source]]
+id = "spine-unity-whirlyblendmodes"
+kind = "upstream"
+repo = "EsotericSoftware/spine-runtimes"
+ref = "4.2"
+include = ["examples/spine-unity/whirlyblendmodes/import/**", "examples/spine-unity/whirlyblendmodes/images/**"]
+strip = "examples/spine-unity/"
+dest = "unity/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them."

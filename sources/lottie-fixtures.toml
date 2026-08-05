@@ -1,0 +1,50 @@
+# lottie-fixtures — Lottie / Bodymovin animation documents.
+#
+# Two sources, deliberately, because they cover different things and carry different terms.
+#
+# The schema/*.json files in the docs repositories are JSON Schema definitions describing the
+# format, NOT animations, so they are excluded — feeding a schema to an animation parser
+# tests nothing.
+
+[pack]
+name = "lottie-fixtures"
+kind = "fixtures"
+summary = "Lottie animation documents — real-world animations plus the specification's own example set."
+
+# Real animations exercised by lottie-web's own test suite and demo pages: the closest thing
+# to a reference corpus for what production Lottie files actually look like.
+[[source]]
+id = "lottie-web-animations"
+kind = "upstream"
+repo = "airbnb/lottie-web"
+ref = "master"
+include = ["test/animations/**/*.json", "demo/**/*.json"]
+strip = ""
+dest = "lottie-web/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Airbnb's lottie-web repository and the animation documents bundled with it."
+
+# The documentation project's worked examples — small, feature-targeted, and written to
+# illustrate one construct at a time, which is what makes them good parser fixtures.
+[[source]]
+id = "lottie-docs-examples"
+kind = "upstream"
+repo = "LottieFiles/lottie-docs"
+ref = "main"
+include = ["docs/static/**/*.json"]
+strip = "docs/static/"
+dest = "lottie-docs/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "repository-root"
+declared_from = "README.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "lottie-docs. The declaration lives in README.md (\"License / CC-BY 4.0\") rather than a LICENSE file, so that is the document snapshotted. CC-BY-4.0 requires attribution wherever the work appears, including inside a published demo, not merely in this archive."

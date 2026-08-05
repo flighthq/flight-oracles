@@ -1,0 +1,57 @@
+# dragonbones-fixtures — DragonBones skeletal animation exports.
+#
+# flight's skeleton2d-formats has three parsers: spineParse, spineBinaryParse and
+# dragonBonesParse. Until now the third had NO fixtures at all — the only decoder in the
+# package with nothing behind it.
+#
+# DragonBones ships a demo corpus per host runtime (Cocos, Egret, Phaser, Hilo, Pixi) that is
+# largely the same assets ported. Taking one avoids vendoring four copies of the same
+# skeletons; Cocos is the largest and most complete at 140 files. The .dbbin binary skeletons
+# are pulled from wherever they live, since binary is a distinct parse path from JSON and only
+# nine exist in the whole repository.
+#
+# Format triple: <name>_ske.json (skeleton), <name>_tex.json (atlas), <name>_tex.png (texture).
+
+[pack]
+name = "dragonbones-fixtures"
+kind = "fixtures"
+summary = "DragonBones skeletal animation exports — skeleton JSON, binary .dbbin, atlases and textures."
+
+[[source]]
+id = "dragonbones-cocos-demos"
+kind = "upstream"
+repo = "DragonBones/DragonBonesJS"
+ref = "master"
+include = [
+  "Cocos/Demos/assets/resources/**/*_ske.json",
+  "Cocos/Demos/assets/resources/**/*_tex.json",
+  "Cocos/Demos/assets/resources/**/*_tex.png",
+  "Cocos/Demos/assets/resources/**/*.dbbin",
+]
+strip = "Cocos/Demos/assets/resources/"
+dest = "demos/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "DragonBones runtime and its bundled demo assets. Copyright (c) DragonBones."
+
+[[source]]
+id = "dragonbones-binary"
+kind = "upstream"
+repo = "DragonBones/DragonBonesJS"
+ref = "master"
+include = ["Egret/Demos/resource/**/*.dbbin", "Hilo/Demos/resource/**/*.dbbin", "Phaser/Demos/resource/**/*.dbbin"]
+strip = ""
+dest = "binary/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Binary .dbbin skeletons from the other host-runtime demo trees — a distinct parse path from the JSON form, and only nine exist repo-wide."

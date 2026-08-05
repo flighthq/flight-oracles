@@ -21,13 +21,18 @@ suite can pin.
 
 | Pack | Files | Size | Sources |
 | --- | ---: | ---: | --- |
-| `swf-ruffle-fixtures` | 4810 | 42.9 MB | Ruffle's SWF test corpus — SWF versions 4 through 50 |
-| `spine-fixtures` | 905 | 48.6 MB | 18 Spine example exports (skeleton data, atlases, textures) |
+| `swf-ruffle-fixtures` | 4810 | 42.9 MB | Ruffle's SWF corpus — versions 4 through 50 |
+| `spine-fixtures` | 1126 | 57.4 MB | Spine 4.2 exports, 19 examples + spine-unity |
 | `gltf-khronos-textures` | 765 | 500.1 MB | Raster textures — merges with `gltf-khronos-fixtures` |
-| `gltf-khronos-binary` | 118 | 432.7 MB | GLB: self-contained models, textures embedded |
+| `spine-fixtures-38` | 510 | 28.1 MB | Spine 3.8 — prior format version, rejection testing |
 | `gltf-khronos-fixtures` | 476 | 293.5 MB | 148 Khronos glTF 2.0 models — 29 KHR/EXT extensions |
 | `rive-fixtures-unit` | 388 | 148.3 MB | Rive unit-test corpus — all 12 feature areas |
+| `dragonbones-fixtures` | 145 | 14.2 MB | DragonBones skeletons, JSON + binary `.dbbin` |
+| `gltf-khronos-binary` | 118 | 432.7 MB | GLB: self-contained models, textures embedded |
+| `lottie-fixtures` | 76 | 15.1 MB | Lottie animations — 14 format versions, v3.1.6–v5.12.2 |
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
+
+Ten packs, 8,441 files. Every `skeleton2d-formats` parser now has fixtures behind it.
 
 **Merge groups.** `gltf-khronos-fixtures` and `gltf-khronos-textures` share the merge group
 `gltf-khronos` and must be extracted into the **same directory** — glTF references its

@@ -85,6 +85,32 @@ class TestFormats(unittest.TestCase):
         blob = json.dumps({"skeleton": {"spine": "4.2.11"}}).encode()
         self.assertEqual(formats.detect(blob, "x.json")["version"], "4.2.11")
 
+    def test_lottie_version_and_shape(self):
+        blob = json.dumps({"v": "5.7.4", "fr": 30, "ip": 0, "op": 60,
+                           "layers": [{}, {}]}).encode()
+        info = formats.detect(blob, "a.json")
+        self.assertEqual(info["kind"], "lottie")
+        self.assertEqual(info["version"], "5.7.4")
+        self.assertEqual(info["layerCount"], 2)
+
+    def test_lottie_needs_both_version_and_layers(self):
+        # A JSON Schema describing Lottie is not a Lottie animation; only the pair of
+        # markers separates them.
+        self.assertIsNone(formats.detect(json.dumps({"v": "5.7.4"}).encode(), "s.json"))
+        self.assertIsNone(formats.detect(json.dumps({"layers": []}).encode(), "s.json"))
+
+    def test_dragonbones_json_and_binary(self):
+        blob = json.dumps({"version": "5.5", "armature": [{}]}).encode()
+        info = formats.detect(blob, "x_ske.json")
+        self.assertEqual((info["kind"], info["version"], info["armatures"]),
+                         ("dragonbones", "5.5", 1))
+        self.assertEqual(formats.detect(b"DBDT\x00\x00", "x.dbbin")["kind"],
+                         "dragonbones-binary")
+
+    def test_dragonbones_atlas_sidecar_distinguished(self):
+        blob = json.dumps({"imagePath": "x.png", "SubTexture": []}).encode()
+        self.assertEqual(formats.detect(blob, "x_tex.json")["kind"], "dragonbones-atlas")
+
     def test_unknown_returns_none_rather_than_raising(self):
         # Not knowing a format is a fact to record, never a reason to drop a fixture.
         self.assertIsNone(formats.detect(b"\x00\x01\x02\x03nonsense", "mystery.bin"))

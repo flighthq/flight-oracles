@@ -141,6 +141,45 @@ def _gltf_json(data: bytes):
     return info
 
 
+def _lottie(data: bytes):
+    """Lottie/Bodymovin: {"v": "5.7.4", "fr": 30, "ip": .., "op": .., "layers": [..]}"""
+    if data.lstrip()[:1] != b"{":
+        return None
+    try:
+        doc = json.loads(data)
+    except (ValueError, UnicodeDecodeError):
+        return None
+    if not isinstance(doc, dict) or "layers" not in doc or "v" not in doc:
+        return None
+    info = FormatInfo(kind="lottie", version=str(doc["v"]))
+    for key, field in (("fr", "frameRate"), ("ip", "inPoint"), ("op", "outPoint")):
+        if isinstance(doc.get(key), (int, float)):
+            info[field] = doc[key]
+    info["layerCount"] = len(doc["layers"]) if isinstance(doc["layers"], list) else 0
+    return info
+
+
+def _dragonbones(data: bytes, name: str):
+    """DragonBones skeleton: JSON with a "version" and "armature", or a DBDT binary."""
+    if data.startswith(b"DBDT"):
+        return FormatInfo(kind="dragonbones-binary", version=None)
+    if data.lstrip()[:1] != b"{":
+        return None
+    try:
+        doc = json.loads(data)
+    except (ValueError, UnicodeDecodeError):
+        return None
+    if not isinstance(doc, dict):
+        return None
+    if "armature" in doc and "version" in doc:
+        return FormatInfo(kind="dragonbones", version=str(doc["version"]),
+                          armatures=len(doc["armature"]) if isinstance(doc["armature"], list) else 0)
+    # Atlas sidecar: {"imagePath": .., "SubTexture": [..]}
+    if "imagePath" in doc and "SubTexture" in doc:
+        return FormatInfo(kind="dragonbones-atlas", version=str(doc.get("version") or ""))
+    return None
+
+
 def _ktx2(data: bytes):
     if not data.startswith(b"\xabKTX 20\xbb\r\n\x1a\n"):
         return None
@@ -159,11 +198,11 @@ def _png(data: bytes):
 
 def detect(data: bytes, name: str = "") -> FormatInfo | None:
     """Identify *data*, using *name* only where the bytes are ambiguous."""
-    for probe in (_riv, _swf, _glb, _ktx2, _png, _gltf_json, _spine_json):
+    for probe in (_riv, _swf, _glb, _ktx2, _png, _gltf_json, _spine_json, _lottie):
         info = probe(data)
         if info is not None:
             return info
-    for probe in (_spine_skel, _spine_atlas):
+    for probe in (_dragonbones, _spine_skel, _spine_atlas):
         info = probe(data, name)
         if info is not None:
             return info

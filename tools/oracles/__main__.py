@@ -88,6 +88,12 @@ def cmd_verify(args):
     # of it. That is almost never intended — it happens when packs are ingested weeks apart
     # and the ref moves underneath — and nothing else would surface it, because each pack
     # verifies perfectly against its own lock.
+    # Keyed on (repo, ref), not repo alone: two packs deliberately tracking different
+    # branches of one repository — spine-fixtures on 4.2 and spine-fixtures-38 on 3.8 —
+    # SHOULD sit at different commits. What is almost never intended is one ref resolving
+    # differently across packs, which happens when they are ingested weeks apart while the
+    # branch moves underneath, and which nothing else would surface because each pack
+    # verifies perfectly against its own lock.
     pins = {}
     for spec in _specs(args):
         try:
@@ -96,11 +102,12 @@ def cmd_verify(args):
             continue
         for src in lock["sources"]:
             if src.get("repo") and src.get("commit"):
-                pins.setdefault(src["repo"], {}).setdefault(src["commit"], set()).add(spec.name)
-    for repo, commits in sorted(pins.items()):
+                key = (src["repo"], src.get("ref") or "HEAD")
+                pins.setdefault(key, {}).setdefault(src["commit"], set()).add(spec.name)
+    for (repo, ref), commits in sorted(pins.items()):
         if len(commits) > 1:
             failed = True
-            print(f"{repo}: pinned at {len(commits)} different commits —")
+            print(f"{repo}@{ref}: one ref pinned at {len(commits)} different commits —")
             for commit, packs in sorted(commits.items()):
                 print(f"  {commit[:12]}  {', '.join(sorted(packs))}")
             print("  re-ingest the lagging pack(s) with --update to align them")

@@ -1,0 +1,1151 @@
+{
+  "pack": {
+    "name": "lottie-fixtures",
+    "kind": "fixtures",
+    "summary": "Lottie animation documents \u2014 real-world animations plus the specification's own example set."
+  },
+  "sources": [
+    {
+      "id": "lottie-web-animations",
+      "kind": "upstream",
+      "repo": "airbnb/lottie-web",
+      "ref": "master",
+      "commit": "bede03d25d232826e0c9dca1733d542d8a7754fb",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE.md",
+        "covers": "Airbnb's lottie-web repository and the animation documents bundled with it.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/lottie-web-animations@bede03d25d23.txt"
+    },
+    {
+      "id": "lottie-docs-examples",
+      "kind": "upstream",
+      "repo": "LottieFiles/lottie-docs",
+      "ref": "main",
+      "commit": "960b404c2e1147e1d4024caa417eadddc9145319",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "README.md",
+        "covers": "lottie-docs. The declaration lives in README.md (\"License / CC-BY 4.0\") rather than a LICENSE file, so that is the document snapshotted. CC-BY-4.0 requires attribution wherever the work appears, including inside a published demo, not merely in this archive.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/lottie-docs-examples@960b404c2e11.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "lottie-docs/examples/3d_layers.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/3d_layers.json",
+      "sha256": "00fc5ceba2810aa742871117529a19922eb835ecd4317b8ab5fd0f5ebbd35012",
+      "size": 4741,
+      "format": {
+        "kind": "lottie",
+        "version": "5.9.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 120,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/3d_layers_animation.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/3d_layers_animation.json",
+      "sha256": "115bd39b381fb66a9383c1ef2747d2fb6f1192ac14ca21dd4a81d96fc0bd90f5",
+      "size": 7459,
+      "format": {
+        "kind": "lottie",
+        "version": "5.9.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 120,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/3d_parenting.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/3d_parenting.json",
+      "sha256": "6fcfe00d4151532e8ca7aaf758bf4bd61282edd82037880c0c043c39c85ca88c",
+      "size": 22697,
+      "format": {
+        "kind": "lottie",
+        "version": "5.9.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 120,
+        "layerCount": 10
+      }
+    },
+    {
+      "path": "lottie-docs/examples/auto_orient.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/auto_orient.json",
+      "sha256": "1314735de1a282df2ccf4fe94fbe1b16e6395840e58d5b299ba5a2452eda11b0",
+      "size": 8003,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 120,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/bezier.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/bezier.json",
+      "sha256": "00a56347c944f7e84e091b3c7b3ae6e1266475ba933532bfb00d45406eb7192a",
+      "size": 3594,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/bezier_expression.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/bezier_expression.json",
+      "sha256": "f13f470b21ebaa6d135f11590f6ac45da250ed2c15a66604391aa3168919cc99",
+      "size": 27302
+    },
+    {
+      "path": "lottie-docs/examples/blend_mode.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/blend_mode.json",
+      "sha256": "28c476db16d7a7a961192c32ae095c594e783254153af68e177dceae863389d2",
+      "size": 17002,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/bouncy_ball.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/bouncy_ball.json",
+      "sha256": "31d46f03892a08aee2b6a79dce4a3935a0ad3fdb96ea921fc5bc4336a7a8ae0f",
+      "size": 8696,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 120,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/camera.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/camera.json",
+      "sha256": "78ce60019c40b524779e507d24f7cd037744168758da17a7e6e66badcee7027a",
+      "size": 22472,
+      "format": {
+        "kind": "lottie",
+        "version": "5.9.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 120,
+        "layerCount": 10
+      }
+    },
+    {
+      "path": "lottie-docs/examples/easing.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/easing.json",
+      "sha256": "1a6af4b9b8e312a0dcc29011aabef625ac55d86b0c4580a2cc3878eb501cdc7f",
+      "size": 12629,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/effects-blur.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/effects-blur.json",
+      "sha256": "d1ad3d0f6ba38eac7a73e3789afdc501932afd9304cb4d16a97cc54413152267",
+      "size": 2406,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/effects-bulge.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/effects-bulge.json",
+      "sha256": "cfd63cc8183be533bc3fa82e8108dc560feab724501453d05ce178f4d2884108",
+      "size": 5118,
+      "format": {
+        "kind": "lottie",
+        "version": "5.9.0",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 1800,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/effects-fill.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/effects-fill.json",
+      "sha256": "757624207a180e28fbb666d24c8196f42b2afec49dcde708ff9fa3516441db8f",
+      "size": 4039,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/effects-matte3-image.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/effects-matte3-image.json",
+      "sha256": "59e2691de3cd3091ef300644589f7c0b1136a2ab39da0661b4956437642c7063",
+      "size": 3867,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/effects-matte3.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/effects-matte3.json",
+      "sha256": "80967949de14d546573c4e0746239d40f1dfa088dbbc0e55ab702bfee9540528",
+      "size": 22346,
+      "format": {
+        "kind": "lottie",
+        "version": "5.9.0",
+        "frameRate": 29.9700012207031,
+        "inPoint": 0,
+        "outPoint": 900.000036657751,
+        "layerCount": 3
+      }
+    },
+    {
+      "path": "lottie-docs/examples/effects-prolevels.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/effects-prolevels.json",
+      "sha256": "f8ea5ec819f1dc02b3084a4b56f10c5594ff6d51e3ff1c7a3bef22db08b90ae7",
+      "size": 11801,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/effects-shadow.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/effects-shadow.json",
+      "sha256": "4a9b245df7b872cccfe34fa572eae3b72fd49ece5860fe1bf5a0e8518c752650",
+      "size": 3038,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/effects-stroke.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/effects-stroke.json",
+      "sha256": "badc0725cdb7262f904460a725f3ce8e5ffdfe84f785b327b115c481334a8b75",
+      "size": 4631,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/effects-tint.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/effects-tint.json",
+      "sha256": "1dc00517103db8a2b7685d1ecf44a44d788a84a3c0b87abc1b612347bf52d98e",
+      "size": 2755,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/effects-tritone.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/effects-tritone.json",
+      "sha256": "60d4ababf16fe278bb219e04888e87aeb9960adbc9d42146b05b6c5643b03670",
+      "size": 2950,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/effects-wave.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/effects-wave.json",
+      "sha256": "aa9d8f7bad92fd548c4defc35f6c52080766fdeef9d93e67d178d1a7c2601f7b",
+      "size": 5427,
+      "format": {
+        "kind": "lottie",
+        "version": "5.9.0",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 1800,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/ellipse.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/ellipse.json",
+      "sha256": "3ce7edf1f3e901ad60bdfe4687b043e9788fb8fa4662f0b3027e9c76dc2480f7",
+      "size": 3737,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/fill.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/fill.json",
+      "sha256": "ddb885f0946dd94883b2e90875874503a1fadd145f74e59c7ffc92e4cbdf589a",
+      "size": 6180,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/font-css.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/font-css.json",
+      "sha256": "f5fb367bfe00721e971214691ff199f98f645cf5c8ca93d766fb93808c7fd738",
+      "size": 2827,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 120,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/font-local.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/font-local.json",
+      "sha256": "0c7c3ffa8e6185c5e81ef67c6bfe374eec9b388fd08781308999be2eae44241a",
+      "size": 2720,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 120,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/font-url.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/font-url.json",
+      "sha256": "4e43659b413919c0808f261b2cb0322c43c3013f6937e20602b08ba36e6e2dc2",
+      "size": 2846,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 120,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/fractal.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/fractal.json",
+      "sha256": "54e19e857aa6689eabae842ada8bc75f4477866efecaffce465f57fee2707e06",
+      "size": 46485,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 30,
+        "inPoint": 0,
+        "outPoint": 100,
+        "layerCount": 4
+      }
+    },
+    {
+      "path": "lottie-docs/examples/gradient-stroke.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/gradient-stroke.json",
+      "sha256": "07200c64b4ddafd6ebd4011df260a4e4b1097f8b29de17907c6b185bcc7ac755",
+      "size": 66788,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/gradient.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/gradient.json",
+      "sha256": "0776726c218b796b896a12c086eef251fe7b3c5d0792d04df68df6c46241705c",
+      "size": 67432,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/image.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/image.json",
+      "sha256": "a6ecc93bcdfc0d8df3124839b4c2587fa4d027ed40766236fed2f2dd99d4d419",
+      "size": 1582,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/image_animated.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/image_animated.json",
+      "sha256": "264624e4e5ba0774cf524259133333fa8d1654280c364b5eb5e6f5df2469d0dc",
+      "size": 2181,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/layer_order.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/layer_order.json",
+      "sha256": "4bc704f73e1c008e455d4d5b3f58733689c483606106587633623477a883bbe1",
+      "size": 9156,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/layers-solid.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/layers-solid.json",
+      "sha256": "b25930c1ceb84c3aaaeebd647adfdc1db592e2d18e69c20fe2bdd157900b1b02",
+      "size": 310
+    },
+    {
+      "path": "lottie-docs/examples/mask.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/mask.json",
+      "sha256": "4f3fea107fc874ae5b4df195cdc1aace2b7ed40c579321c3542c5613b798c916",
+      "size": 11332,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/matte.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/matte.json",
+      "sha256": "04f56c15165b805bea1d3fe21ae69bcf13753ecda98cfa9c5f1cb06bdbd374a2",
+      "size": 11404,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/offset-path.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/offset-path.json",
+      "sha256": "4946ed9694437a862954565bb5c331519b64655e8edc8fb137e644d1d0f5ea77",
+      "size": 4999,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/parenting.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/parenting.json",
+      "sha256": "ddac5b3236f4730c9fe58334cf4e2b39dff940d3a76c6720d0bbb7d3435cdb98",
+      "size": 17075,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 4
+      }
+    },
+    {
+      "path": "lottie-docs/examples/precomp/circle.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/precomp/circle.json",
+      "sha256": "c073522f5f8b43d4dba384c568f924ff51a743fecbc6a09389db2fe395ea11db",
+      "size": 6022,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/precomp/star-circle.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/precomp/star-circle.json",
+      "sha256": "abc89a231b205c554e341402d967883deb8eaa1b8a40876e396ba1709c975e87",
+      "size": 22439,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/precomp/star-comp.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/precomp/star-comp.json",
+      "sha256": "581ed93120ea5fbbfaf6103436f26d6905a3ec1ccc5f9b5f55235f52bd31f563",
+      "size": 11325,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/precomp/star-nocomp.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/precomp/star-nocomp.json",
+      "sha256": "5ced24acdeeb021e0f342042fb6710ba1c9864e51b2503e86e433b8897457400",
+      "size": 8842,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/precomp/star-splosion.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/precomp/star-splosion.json",
+      "sha256": "dbac2aef646786ac9ebcee9ab5f10b194d1cf3bbd45bae190ae45669e8925c4e",
+      "size": 13690,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 8
+      }
+    },
+    {
+      "path": "lottie-docs/examples/pucker_bloat.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/pucker_bloat.json",
+      "sha256": "76289ce4717a50246e105ef2187054a4f61a0cca381da9436194d4c0ddcbb673",
+      "size": 5218,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/rectangle.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/rectangle.json",
+      "sha256": "240fde10db2bde94424ed9811ce93cace4b6811d9f9588bfa2147c387319aef6",
+      "size": 3867,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/remapping.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/remapping.json",
+      "sha256": "8138f5985f438d402b109b7ee754a56fce16ba1ddf34c8c4b46558542a970807",
+      "size": 11159,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/repeater.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/repeater.json",
+      "sha256": "4006360fe2588d2ddeff745adeb2d2488eefe083c5971be417db1fa65e6dfcce",
+      "size": 6837,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/rounded_corners.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/rounded_corners.json",
+      "sha256": "9f880ae2a4f09f5ffa03e5b9219867931f54b0c86bd394294e542e25df2a78a7",
+      "size": 5523,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/slots.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/slots.json",
+      "sha256": "cbadf25773e94b1b86e14d112b4d909c19a58a87e6392e16399efedd8175a8dc",
+      "size": 7549,
+      "format": {
+        "kind": "lottie",
+        "version": "5.12.2",
+        "frameRate": 29.9700012207031,
+        "inPoint": 0,
+        "outPoint": 900.000036657751,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/star.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/star.json",
+      "sha256": "13e716b658e18a2e7858cb3926a6512e651d64abebedc941228c1ab711c282b6",
+      "size": 4324,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/stroke.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/stroke.json",
+      "sha256": "a1acf540319e73c90686dae583a51c50f34f1595fb2b7548a7636a0cda186464",
+      "size": 3624,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/text-document.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/text-document.json",
+      "sha256": "9365de0ecd6115bec151e1c09205dfe25fb467bed917dc87b3bff597741390fd",
+      "size": 1790,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 120,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/text-selector.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/text-selector.json",
+      "sha256": "7056c9884d28fd12c99bb3234e2a711ba57feef7d041070177e3d1da3bf435bd",
+      "size": 5412,
+      "format": {
+        "kind": "lottie",
+        "version": "5.9.6",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 60,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-docs/examples/text.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/text.json",
+      "sha256": "28449d66beec40713583f5e09986489c16951533598891127a5d46fc034f3bf5",
+      "size": 3014,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.2",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 120,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/transform.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/transform.json",
+      "sha256": "5841907a6fd2988665bd11f095dad1b350d75704fb8ddf8863a612a230d66660",
+      "size": 6379,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 3
+      }
+    },
+    {
+      "path": "lottie-docs/examples/trim_path.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/trim_path.json",
+      "sha256": "db9df2ad7588e2917e2f836bf42393c9bfeaabbe45581941f53532e6df28f5b2",
+      "size": 5027,
+      "format": {
+        "kind": "lottie",
+        "version": "5.7.1",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/examples/zig-zag.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/examples/zig-zag.json",
+      "sha256": "e83ad4d2eee6821ccc3d1a158bff2fb0f9e2e894db1a4dc2c5c3fed26a45aa58",
+      "size": 5088,
+      "format": {
+        "kind": "lottie",
+        "version": "5.5.7",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 180,
+        "layerCount": 1
+      }
+    },
+    {
+      "path": "lottie-docs/expressions.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/expressions.json",
+      "sha256": "4cb7caeb1bebc084874e07b78b1f482472e5f991a568cf03fb2769d31eb60bf9",
+      "size": 20050
+    },
+    {
+      "path": "lottie-docs/expressions.schema.json",
+      "sourceId": "lottie-docs-examples",
+      "upstreamPath": "docs/static/expressions.schema.json",
+      "sha256": "c719726ef5720a77ffec1c8f8e592c7a626c5f9edec95c5ed8b86765cf5f82c0",
+      "size": 2634
+    },
+    {
+      "path": "lottie-web/demo/adrock/data.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "demo/adrock/data.json",
+      "sha256": "3128162d63a6ee62aa5b5f30d97b09a80c2af55789225cc5fa9cb81e3715e70d",
+      "size": 126899,
+      "format": {
+        "kind": "lottie",
+        "version": "4.0.0",
+        "frameRate": 30,
+        "inPoint": 0,
+        "outPoint": 392,
+        "layerCount": 29
+      }
+    },
+    {
+      "path": "lottie-web/demo/bodymovin/data.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "demo/bodymovin/data.json",
+      "sha256": "c1bee3ea1ac093290891e8bede8ecc6335a3910df9eee684fe8fe5663db8745d",
+      "size": 1959221,
+      "format": {
+        "kind": "lottie",
+        "version": "4.0.0",
+        "frameRate": 30,
+        "inPoint": 0,
+        "outPoint": 103,
+        "layerCount": 10
+      }
+    },
+    {
+      "path": "lottie-web/demo/gatin/data.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "demo/gatin/data.json",
+      "sha256": "48724c6f89fc278bfc182e8b70b7f77fb78e0c19819d6ec6aa79cbde432d1f79",
+      "size": 37620,
+      "format": {
+        "kind": "lottie",
+        "version": "4.0.0",
+        "frameRate": 25,
+        "inPoint": 0,
+        "outPoint": 80,
+        "layerCount": 15
+      }
+    },
+    {
+      "path": "lottie-web/demo/happy2016/data.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "demo/happy2016/data.json",
+      "sha256": "db7dfb269a67e80f222caf180b7f1e35a3862c97e90fb13adb57e7c2cb9cc2ab",
+      "size": 314385,
+      "format": {
+        "kind": "lottie",
+        "version": "4.0.0",
+        "frameRate": 30,
+        "inPoint": 0,
+        "outPoint": 99,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-web/demo/navidad/data.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "demo/navidad/data.json",
+      "sha256": "7dbe521457d89af5eff0c755471003018800b10b6bf6c9b0a0085ca86372bfff",
+      "size": 1733831,
+      "format": {
+        "kind": "lottie",
+        "version": "4.0.0",
+        "frameRate": 25,
+        "inPoint": 0,
+        "outPoint": 125,
+        "layerCount": 15
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/adrock.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/adrock.json",
+      "sha256": "d7aff23a26d05f1005afd636bb8fd55a10d2ed08458cc16adf1ab5e896331693",
+      "size": 126898,
+      "format": {
+        "kind": "lottie",
+        "version": "4.0.0",
+        "frameRate": 30,
+        "inPoint": 0,
+        "outPoint": 20,
+        "layerCount": 29
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/bacon.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/bacon.json",
+      "sha256": "2a2b0c41a827b818fced97425a62f3f366ec0e387328200be6b61b8fcdd88dc2",
+      "size": 397312,
+      "format": {
+        "kind": "lottie",
+        "version": "4.8.0",
+        "frameRate": 30,
+        "inPoint": 0,
+        "outPoint": 140,
+        "layerCount": 5
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/banner.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/banner.json",
+      "sha256": "e18ddce5a70eadacedf3299ae8e9137546b1a1c3dad2fecd8d7c351f2ec9a39d",
+      "size": 195847,
+      "format": {
+        "kind": "lottie",
+        "version": "4.8.0",
+        "frameRate": 25,
+        "inPoint": 0,
+        "outPoint": 603,
+        "layerCount": 7
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/bm_ronda.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/bm_ronda.json",
+      "sha256": "f0e348e107d2ee6914ef7ee2f16dbc1a67475a5bc523ae43b700ed4f8f7a267b",
+      "size": 1841290,
+      "format": {
+        "kind": "lottie",
+        "version": "4.4.11",
+        "frameRate": 29.9700012207031,
+        "inPoint": 0,
+        "outPoint": 371.00001511114,
+        "layerCount": 13
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/bodymovin.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/bodymovin.json",
+      "sha256": "cc18ed3dbe96c632d1ad13cb8828b28ad0fea7bb95d2e8b194e91654724c9ea5",
+      "size": 1102932,
+      "format": {
+        "kind": "lottie",
+        "version": "5.9.6",
+        "frameRate": 30,
+        "inPoint": 0,
+        "outPoint": 103,
+        "layerCount": 10
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/dalek.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/dalek.json",
+      "sha256": "be4236f433e1276d17dfd796381758fa988670c322f4271feb6a262e00187e0d",
+      "size": 88635,
+      "format": {
+        "kind": "lottie",
+        "version": "3.1.6",
+        "frameRate": 30,
+        "inPoint": 0,
+        "outPoint": 290,
+        "layerCount": 46
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/footage/data.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/footage/data.json",
+      "sha256": "25a650998212b0497495d3d4bee00e21ac69c67213e79630e33525a27d1b7421",
+      "size": 25677,
+      "format": {
+        "kind": "lottie",
+        "version": "4.8.0",
+        "frameRate": 30,
+        "inPoint": 0,
+        "outPoint": 360,
+        "layerCount": 8
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/footage/images/footage_0.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/footage/images/footage_0.json",
+      "sha256": "521e4811cc4633479570e1b17df528ecbc2a73b3c0c43ac8b3ca91cb9882cb9a",
+      "size": 2596
+    },
+    {
+      "path": "lottie-web/test/animations/lights.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/lights.json",
+      "sha256": "6a4ac49f8b0b9d2a93bc6ecede15cc5a43088a5e6c5179ff4e7a614ba868dd5d",
+      "size": 22043,
+      "format": {
+        "kind": "lottie",
+        "version": "5.1.6",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 300,
+        "layerCount": 14
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/monster.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/monster.json",
+      "sha256": "d04819241e9d6db3df8fd6977836e3c9a31af3ff6ef272595ee98ca4792f141c",
+      "size": 4713147,
+      "format": {
+        "kind": "lottie",
+        "version": "4.0.3",
+        "frameRate": 30,
+        "inPoint": 0,
+        "outPoint": 292,
+        "layerCount": 96
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/navidad.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/navidad.json",
+      "sha256": "a9de1ec3290fb6998347fd53f62e99f1badeab07e388b45d2115a8e6f3333182",
+      "size": 1733805,
+      "format": {
+        "kind": "lottie",
+        "version": "3.1.6",
+        "frameRate": 25,
+        "inPoint": 0,
+        "outPoint": 125,
+        "layerCount": 15
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/ripple.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/ripple.json",
+      "sha256": "9bae16bf6c26263b37d1330c2fbc49468a83753f6179818badcf4954ca8f11f0",
+      "size": 11458,
+      "format": {
+        "kind": "lottie",
+        "version": "5.0.0",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 361,
+        "layerCount": 2
+      }
+    },
+    {
+      "path": "lottie-web/test/animations/starfish.json",
+      "sourceId": "lottie-web-animations",
+      "upstreamPath": "test/animations/starfish.json",
+      "sha256": "8a87402d48c24b8f3045679505536c8ad4c5dfe26703adb92429a9a13765c3cd",
+      "size": 24780,
+      "format": {
+        "kind": "lottie",
+        "version": "5.1.6",
+        "frameRate": 60,
+        "inPoint": 0,
+        "outPoint": 301,
+        "layerCount": 15
+      }
+    }
+  ],
+  "totals": {
+    "files": 76,
+    "bytes": 15078216
+  }
+}

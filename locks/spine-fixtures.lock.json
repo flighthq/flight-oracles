@@ -378,6 +378,166 @@
         "prohibition": "The project file and images in this \"hero\" project are provided for demonstration purposes only and may not be redistributed for any reason nor used as the basis for derivative work. Copyright (c) 2014, XDTech."
       },
       "vendored": false
+    },
+    {
+      "id": "spine-sack",
+      "kind": "upstream",
+      "repo": "EsotericSoftware/spine-runtimes",
+      "ref": "4.2",
+      "commit": "b81e5a58ed38704aee4f866f0e0ac672623ce914",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "No per-example license.txt exists for this example, unlike its nineteen siblings. Nothing about redistribution is established; the absence is recorded rather than resolved.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "spine-unity-eyes",
+      "kind": "upstream",
+      "repo": "EsotericSoftware/spine-runtimes",
+      "ref": "4.2",
+      "commit": "b81e5a58ed38704aee4f866f0e0ac672623ce914",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "spine-unity-footsoldier",
+      "kind": "upstream",
+      "repo": "EsotericSoftware/spine-runtimes",
+      "ref": "4.2",
+      "commit": "b81e5a58ed38704aee4f866f0e0ac672623ce914",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "spine-unity-gauge",
+      "kind": "upstream",
+      "repo": "EsotericSoftware/spine-runtimes",
+      "ref": "4.2",
+      "commit": "b81e5a58ed38704aee4f866f0e0ac672623ce914",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "spine-unity-raggedyspineboy",
+      "kind": "upstream",
+      "repo": "EsotericSoftware/spine-runtimes",
+      "ref": "4.2",
+      "commit": "b81e5a58ed38704aee4f866f0e0ac672623ce914",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "spine-unity-raptor",
+      "kind": "upstream",
+      "repo": "EsotericSoftware/spine-runtimes",
+      "ref": "4.2",
+      "commit": "b81e5a58ed38704aee4f866f0e0ac672623ce914",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "spine-unity-spineboy-pro",
+      "kind": "upstream",
+      "repo": "EsotericSoftware/spine-runtimes",
+      "ref": "4.2",
+      "commit": "b81e5a58ed38704aee4f866f0e0ac672623ce914",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "spine-unity-spineboy-unity",
+      "kind": "upstream",
+      "repo": "EsotericSoftware/spine-runtimes",
+      "ref": "4.2",
+      "commit": "b81e5a58ed38704aee4f866f0e0ac672623ce914",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "spine-unity-spineunitygirl",
+      "kind": "upstream",
+      "repo": "EsotericSoftware/spine-runtimes",
+      "ref": "4.2",
+      "commit": "b81e5a58ed38704aee4f866f0e0ac672623ce914",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "spine-unity-whirlyblendmodes",
+      "kind": "upstream",
+      "repo": "EsotericSoftware/spine-runtimes",
+      "ref": "4.2",
+      "commit": "b81e5a58ed38704aee4f866f0e0ac672623ce914",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "No per-example license.txt exists anywhere under examples/spine-unity/. Genuine Spine runtime exports (skeleton JSON, atlas, texture) with no declaration covering them.",
+        "onwardUse": "unknown"
+      }
     }
   ],
   "files": [
@@ -8724,6 +8884,115 @@
       }
     },
     {
+      "path": "sack/export/sack-pma.atlas",
+      "sourceId": "spine-sack",
+      "upstreamPath": "examples/sack/export/sack-pma.atlas",
+      "sha256": "4172e7f07ffff17f9997b06648d1f256a13c6700cd3ab99c2990e85feb100855",
+      "size": 181,
+      "format": {
+        "kind": "spine-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "sack/export/sack-pma.png",
+      "sourceId": "spine-sack",
+      "upstreamPath": "examples/sack/export/sack-pma.png",
+      "sha256": "9d8eb05b13b912d23d2a9c65dd4e14d98c0a3d4d1a58b67ab96f4282c33b09cc",
+      "size": 167014,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "sack/export/sack-pro.json",
+      "sourceId": "spine-sack",
+      "upstreamPath": "examples/sack/export/sack-pro.json",
+      "sha256": "09865ef0f10063db3080b7d528769b186b1cad22f0b7c3ba4e830c0918e111cc",
+      "size": 136749,
+      "format": {
+        "kind": "spine-json",
+        "version": "4.2.22"
+      }
+    },
+    {
+      "path": "sack/export/sack-pro.skel",
+      "sourceId": "spine-sack",
+      "upstreamPath": "examples/sack/export/sack-pro.skel",
+      "sha256": "0004418fd6eb095c27bbc72dc2553f10323389fa3ae5a2fc73b75899547ae665",
+      "size": 42777,
+      "format": {
+        "kind": "spine-skel",
+        "version": "4.2.22"
+      }
+    },
+    {
+      "path": "sack/export/sack.atlas",
+      "sourceId": "spine-sack",
+      "upstreamPath": "examples/sack/export/sack.atlas",
+      "sha256": "f25b09f24311ceec48e6015502dee9d612afc58b9af7c201836e1fa09146f6c6",
+      "size": 166,
+      "format": {
+        "kind": "spine-atlas",
+        "version": null
+      }
+    },
+    {
+      "path": "sack/export/sack.png",
+      "sourceId": "spine-sack",
+      "upstreamPath": "examples/sack/export/sack.png",
+      "sha256": "306cc3609100bf0994c815173e336e170d3e8e4ab5937ace3d630c2bda537fd7",
+      "size": 164738,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "sack/images/cape-back.png",
+      "sourceId": "spine-sack",
+      "upstreamPath": "examples/sack/images/cape-back.png",
+      "sha256": "696de0b02a8a45f79c15366c861e56c7090da4326078132b6464a98557398bdb",
+      "size": 162458,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 519,
+        "height": 519
+      }
+    },
+    {
+      "path": "sack/images/cape-front.png",
+      "sourceId": "spine-sack",
+      "upstreamPath": "examples/sack/images/cape-front.png",
+      "sha256": "d9cb5b03130fbbf600604002cb367a8f9387dbe22d0d6bc9321f8741da905e04",
+      "size": 38865,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 400,
+        "height": 207
+      }
+    },
+    {
+      "path": "sack/images/sack.png",
+      "sourceId": "spine-sack",
+      "upstreamPath": "examples/sack/images/sack.png",
+      "sha256": "834332b66d63470018bd584ce0fe01526edea4b3381e79d0a55983a80e2d3292",
+      "size": 331994,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 465,
+        "height": 813
+      }
+    },
+    {
       "path": "snowglobe/export/snowglobe-pma.atlas",
       "sourceId": "spine-snowglobe",
       "upstreamPath": "examples/snowglobe/export/snowglobe-pma.atlas",
@@ -11654,6 +11923,2496 @@
       }
     },
     {
+      "path": "unity/eyes/images/EyeLines.png",
+      "sourceId": "spine-unity-eyes",
+      "upstreamPath": "examples/spine-unity/eyes/images/EyeLines.png",
+      "sha256": "60567212a8b4f5e5edb3605c41bb87e7a1ad2c7417e1d10a36e36a4884b6a30a",
+      "size": 16929,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 868,
+        "height": 322
+      }
+    },
+    {
+      "path": "unity/eyes/images/EyeWhite.png",
+      "sourceId": "spine-unity-eyes",
+      "upstreamPath": "examples/spine-unity/eyes/images/EyeWhite.png",
+      "sha256": "e41a19e1fd1e036d5e6bc9a7180a38c55c12e235d13761aa64c9a27137009e6d",
+      "size": 7964,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 700,
+        "height": 148
+      }
+    },
+    {
+      "path": "unity/eyes/images/L_Eye.png",
+      "sourceId": "spine-unity-eyes",
+      "upstreamPath": "examples/spine-unity/eyes/images/L_Eye.png",
+      "sha256": "cccc5473f54e697f0984f615169b1a27dd141a40bd6905f1827540bd9a4b2e2f",
+      "size": 2494,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 148,
+        "height": 148
+      }
+    },
+    {
+      "path": "unity/eyes/images/R_Eye.png",
+      "sourceId": "spine-unity-eyes",
+      "upstreamPath": "examples/spine-unity/eyes/images/R_Eye.png",
+      "sha256": "cccc5473f54e697f0984f615169b1a27dd141a40bd6905f1827540bd9a4b2e2f",
+      "size": 2494,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 148,
+        "height": 148
+      }
+    },
+    {
+      "path": "unity/eyes/import/eyes.atlas.txt",
+      "sourceId": "spine-unity-eyes",
+      "upstreamPath": "examples/spine-unity/eyes/import/eyes.atlas.txt",
+      "sha256": "ffec3d708f8fe3a1562771685569d9f3d0a4a880d29df118b2ff5831a88f6f7c",
+      "size": 469
+    },
+    {
+      "path": "unity/eyes/import/eyes.json",
+      "sourceId": "spine-unity-eyes",
+      "upstreamPath": "examples/spine-unity/eyes/import/eyes.json",
+      "sha256": "96991f75d56df06e8a04488ccdba33fbc656e59e55a1692f59cb883d0b948134",
+      "size": 925,
+      "format": {
+        "kind": "spine-json",
+        "version": "3.6.07-beta"
+      }
+    },
+    {
+      "path": "unity/eyes/import/eyes.png",
+      "sourceId": "spine-unity-eyes",
+      "upstreamPath": "examples/spine-unity/eyes/import/eyes.png",
+      "sha256": "f1ddef47295b83ea95132a7c89571d496a35c299e6bc23968678e69c5664d79e",
+      "size": 30130,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 512
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/arm 2.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/arm 2.png",
+      "sha256": "4af47b2968d03ffa53dba18679be5460e9e4d4cb3307b2f8295d3d778fff9f07",
+      "size": 5232,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 46,
+        "height": 79
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/arm.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/arm.png",
+      "sha256": "b90939fdb98ad8bd079e11fb1d17d41a0c9002d465d68af9333d8ba13e39f994",
+      "size": 6342,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 111,
+        "height": 98
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/body.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/body.png",
+      "sha256": "6063066b4820d166ae9f3ac669d927fe59c73925ab4064e9ab11c24256dd87e5",
+      "size": 11182,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 91,
+        "height": 103
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/eyes blink.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/eyes blink.png",
+      "sha256": "66d747df4c378edef2bd316875ffb843445abff8525124068b9332b84ef6ca6c",
+      "size": 1052,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 67,
+        "height": 22
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/eyes.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/eyes.png",
+      "sha256": "d74fab8a47c7b845e913e64078363999344183eef3a8d05fa3158fb010d56a98",
+      "size": 2278,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 67,
+        "height": 31
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/feet 2.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/feet 2.png",
+      "sha256": "c110d6c84e4a08dd396255f3fbcd4f11cccf8de9b8d0613f54f80677130b70db",
+      "size": 1990,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 55,
+        "height": 27
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/feet.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/feet.png",
+      "sha256": "7889c624bcfc3501841ecabaa4d5b4262be4e77dd825b3b322da4bee07406e7b",
+      "size": 2230,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 50,
+        "height": 32
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/hand.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/hand.png",
+      "sha256": "01a12457176b40307e354cb088161380303cbdb292bb8dbf259832b63074fdfd",
+      "size": 1515,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 28
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/head 1.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/head 1.png",
+      "sha256": "3f465fd3e7f2c29ebb8d8313d72389ea1a4470289edaa885a0fca845c40781b0",
+      "size": 16009,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 139,
+        "height": 137
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/leg 2.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/leg 2.png",
+      "sha256": "e1ea6fe3dcf2ac82e4388983e12fe9d27d2e4f88e3b5042578c75e312c49826d",
+      "size": 3064,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 50,
+        "height": 58
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/leg.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/leg.png",
+      "sha256": "a44ee5d3fb1c523de37820f81a5aeb6020225c3315ef51ea4b49c6c871e25c7c",
+      "size": 2972,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 48,
+        "height": 55
+      }
+    },
+    {
+      "path": "unity/footsoldier/images/White/mouth.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/images/White/mouth.png",
+      "sha256": "ba1cb47fba40ce87274811be2e80428cb7180b16cb540432a82eaea68e91d037",
+      "size": 391,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 28,
+        "height": 21
+      }
+    },
+    {
+      "path": "unity/footsoldier/import/Equipment/Equipment.atlas.txt",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/import/Equipment/Equipment.atlas.txt",
+      "sha256": "2768b0c4f9454f8611bfba4999cc272ed5fecf822d3a6a02272f4335b709c2ec",
+      "size": 515
+    },
+    {
+      "path": "unity/footsoldier/import/Equipment/Equipment.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/import/Equipment/Equipment.png",
+      "sha256": "bad37f1ef0fb616f5b38239cd74b6c35498ed44a839ab7221bedd832e0cc6902",
+      "size": 40282,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 128
+      }
+    },
+    {
+      "path": "unity/footsoldier/import/FS_White.atlas.txt",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/import/FS_White.atlas.txt",
+      "sha256": "1b2013152f0499b41f4c4b952992817d93c2278b39413b39492e0c6fb88b5dcc",
+      "size": 1267
+    },
+    {
+      "path": "unity/footsoldier/import/FS_White.png",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/import/FS_White.png",
+      "sha256": "066607b7c77dc9ae5462f9dbeb4731fd3797381a55d9f62b966f8d0bfbf85b68",
+      "size": 51830,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "unity/footsoldier/import/FootSoldier.json",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/import/FootSoldier.json",
+      "sha256": "b822a667cfe0ce47efb22964e97115ba7e648a6393112a3fd093a27bf0ac2d71",
+      "size": 37529,
+      "format": {
+        "kind": "spine-json",
+        "version": "3.6.07-beta"
+      }
+    },
+    {
+      "path": "unity/footsoldier/import/license.txt",
+      "sourceId": "spine-unity-footsoldier",
+      "upstreamPath": "examples/spine-unity/footsoldier/import/license.txt",
+      "sha256": "a4ed37617e05c37cc16970c7891542811aba34e9c793b4dc48fa1c5a78000353",
+      "size": 217
+    },
+    {
+      "path": "unity/gauge/images/Background.png",
+      "sourceId": "spine-unity-gauge",
+      "upstreamPath": "examples/spine-unity/gauge/images/Background.png",
+      "sha256": "8fabe2acfe1943194e69e3199d7d9cdae9d53a8cee359c1ca6ee52378728125a",
+      "size": 431,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 224,
+        "height": 32
+      }
+    },
+    {
+      "path": "unity/gauge/images/Bar.png",
+      "sourceId": "spine-unity-gauge",
+      "upstreamPath": "examples/spine-unity/gauge/images/Bar.png",
+      "sha256": "065317ae4dccd9df5d56c7dc64dc9cc3157c249d91ee0ed45a31d8f4c07d968e",
+      "size": 145,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 224,
+        "height": 32
+      }
+    },
+    {
+      "path": "unity/gauge/images/Border.png",
+      "sourceId": "spine-unity-gauge",
+      "upstreamPath": "examples/spine-unity/gauge/images/Border.png",
+      "sha256": "649a2b2dcd2ef78cc77019c3f7fd22b5c133c3d32a63aca18d6167504b4bb2e9",
+      "size": 1043,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 250,
+        "height": 60
+      }
+    },
+    {
+      "path": "unity/gauge/import/Gauge.atlas.txt",
+      "sourceId": "spine-unity-gauge",
+      "upstreamPath": "examples/spine-unity/gauge/import/Gauge.atlas.txt",
+      "sha256": "595cb02a7717ef0d5779949d4dbd20edceeb18047edb7c51926f789f6036b5c9",
+      "size": 363
+    },
+    {
+      "path": "unity/gauge/import/Gauge.json",
+      "sourceId": "spine-unity-gauge",
+      "upstreamPath": "examples/spine-unity/gauge/import/Gauge.json",
+      "sha256": "f18095543f3f125e20530f19ba9371502f49f2b6ffd29a48205db0da80e9c466",
+      "size": 888,
+      "format": {
+        "kind": "spine-json",
+        "version": "3.6.07-beta"
+      }
+    },
+    {
+      "path": "unity/gauge/import/Gauge.png",
+      "sourceId": "spine-unity-gauge",
+      "upstreamPath": "examples/spine-unity/gauge/import/Gauge.png",
+      "sha256": "2b4fc8bb95e15b93b1c6a2edf8c14c8469788e036ba86659284124e638c8c390",
+      "size": 1893,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 64
+      }
+    },
+    {
+      "path": "unity/raggedyspineboy/images/arm.png",
+      "sourceId": "spine-unity-raggedyspineboy",
+      "upstreamPath": "examples/spine-unity/raggedyspineboy/images/arm.png",
+      "sha256": "7d816c78afdfd68122bb237e49befbbed6eddbcc9fa2a41b4d602e1b44704c46",
+      "size": 2565,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 71,
+        "height": 75
+      }
+    },
+    {
+      "path": "unity/raggedyspineboy/images/head.png",
+      "sourceId": "spine-unity-raggedyspineboy",
+      "upstreamPath": "examples/spine-unity/raggedyspineboy/images/head.png",
+      "sha256": "bb1343711d0197204e69f259664604799fb081704f2e687adfbb5350849408e2",
+      "size": 20379,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 136,
+        "height": 187
+      }
+    },
+    {
+      "path": "unity/raggedyspineboy/images/leg.png",
+      "sourceId": "spine-unity-raggedyspineboy",
+      "upstreamPath": "examples/spine-unity/raggedyspineboy/images/leg.png",
+      "sha256": "7ca3443e0b0fbcab1e2327fbd69987704331b29e003ca5111cc9445e20b13251",
+      "size": 2504,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 36,
+        "height": 99
+      }
+    },
+    {
+      "path": "unity/raggedyspineboy/images/torso.png",
+      "sourceId": "spine-unity-raggedyspineboy",
+      "upstreamPath": "examples/spine-unity/raggedyspineboy/images/torso.png",
+      "sha256": "2fa32aa0d234275286606e2bfc19e1343c9c544034d2e002ae903f2998959a11",
+      "size": 4019,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 62,
+        "height": 95
+      }
+    },
+    {
+      "path": "unity/raggedyspineboy/import/Raggedy Spineboy.atlas.txt",
+      "sourceId": "spine-unity-raggedyspineboy",
+      "upstreamPath": "examples/spine-unity/raggedyspineboy/import/Raggedy Spineboy.atlas.txt",
+      "sha256": "186e58a28c26fe2be8ddf8944e396be1523b5a95f95a7b40a49ae8dd8414be4a",
+      "size": 454
+    },
+    {
+      "path": "unity/raggedyspineboy/import/Raggedy Spineboy.png",
+      "sourceId": "spine-unity-raggedyspineboy",
+      "upstreamPath": "examples/spine-unity/raggedyspineboy/import/Raggedy Spineboy.png",
+      "sha256": "43a272989f1c6ee8997575c0a56e01c0f7d2311f8fe25fda83b261f636f6801e",
+      "size": 31903,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "unity/raggedyspineboy/import/raggedy spineboy.json",
+      "sourceId": "spine-unity-raggedyspineboy",
+      "upstreamPath": "examples/spine-unity/raggedyspineboy/import/raggedy spineboy.json",
+      "sha256": "cd57338a5d2c550393d3865701fa705f5e3d505c96aefcdbe8436821ae425d90",
+      "size": 20898,
+      "format": {
+        "kind": "spine-json",
+        "version": "3.6.07-beta"
+      }
+    },
+    {
+      "path": "unity/raptor/images/back_arm.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/back_arm.png",
+      "sha256": "60e988ed062dec8c6a540c02c0c39b28665aeac51265c8b7b24b3eb935601794",
+      "size": 1958,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 46,
+        "height": 29
+      }
+    },
+    {
+      "path": "unity/raptor/images/back_bracer.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/back_bracer.png",
+      "sha256": "0db4a81c22a3bbb1f2c04b0d883589be01cfb912720013b18b3d084bc5890559",
+      "size": 2525,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 39,
+        "height": 28
+      }
+    },
+    {
+      "path": "unity/raptor/images/back_hand.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/back_hand.png",
+      "sha256": "cc1f27221ec2ac2e9dbab90a6b70f13a3f6d2092fe6f69950876c1861f6e93ab",
+      "size": 2491,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 36,
+        "height": 34
+      }
+    },
+    {
+      "path": "unity/raptor/images/back_knee.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/back_knee.png",
+      "sha256": "b26f69e8e00f544869b0a8ca5e30abebb4233d3ae4f33f06a633cd829d722608",
+      "size": 4452,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 49,
+        "height": 67
+      }
+    },
+    {
+      "path": "unity/raptor/images/back_thigh.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/back_thigh.png",
+      "sha256": "fe599181052dfe7cc0529c0854975235494e663aaac9cbfee27f8b73fe51b9e0",
+      "size": 1485,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 39,
+        "height": 24
+      }
+    },
+    {
+      "path": "unity/raptor/images/eyes_open.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/eyes_open.png",
+      "sha256": "09bc9fdc94bfcc5efd9d4220e1f597fb42f431ad6146e03027ac97d179ccaac1",
+      "size": 2544,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 47,
+        "height": 45
+      }
+    },
+    {
+      "path": "unity/raptor/images/front_arm.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/front_arm.png",
+      "sha256": "130165deef945ffd209071fd80a1467176cf92bde0570ff2831c84cfe7bc673d",
+      "size": 2089,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 48,
+        "height": 30
+      }
+    },
+    {
+      "path": "unity/raptor/images/front_bracer.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/front_bracer.png",
+      "sha256": "604fa3a0d29f09049324d6b8aa2278f8f5017991f9cb4f25207274c3548e6527",
+      "size": 2702,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 41,
+        "height": 29
+      }
+    },
+    {
+      "path": "unity/raptor/images/front_hand.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/front_hand.png",
+      "sha256": "1b7353017320f96d874ab056f80f575dd393a62cd00c26e6188103412cf12249",
+      "size": 3462,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 41,
+        "height": 38
+      }
+    },
+    {
+      "path": "unity/raptor/images/front_open_hand.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/front_open_hand.png",
+      "sha256": "573aa1959c53d6704ee92a5a77f1ae3e07778e8a75ecf87fecb745112f6dd484",
+      "size": 4145,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 43,
+        "height": 44
+      }
+    },
+    {
+      "path": "unity/raptor/images/front_thigh.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/front_thigh.png",
+      "sha256": "59eed1222ad43cca4801926827d36e9d2cfe13f2380b3ce5d9e97cce766727e4",
+      "size": 2383,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 57,
+        "height": 29
+      }
+    },
+    {
+      "path": "unity/raptor/images/gun.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/gun.png",
+      "sha256": "237c4d73012673ed18629ac1c33d30f304236db146aad9efe74b39e72f73458d",
+      "size": 10914,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 107,
+        "height": 103
+      }
+    },
+    {
+      "path": "unity/raptor/images/gun_nohand.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/gun_nohand.png",
+      "sha256": "e7dbdf803394a54623659cdc3e6a065100411d90229c12cfcf92547c0cc63537",
+      "size": 9107,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 105,
+        "height": 102
+      }
+    },
+    {
+      "path": "unity/raptor/images/head.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/head.png",
+      "sha256": "4d6c19372fa0c0f5b959b3a2d34426c5d3325054d7228f148256a77429b57332",
+      "size": 18600,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 136,
+        "height": 149
+      }
+    },
+    {
+      "path": "unity/raptor/images/lower_leg.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/lower_leg.png",
+      "sha256": "2067e19717d314fdc828f1d9bb0479f996f5d78abf3665d6253564e6fedc9c08",
+      "size": 7757,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 73,
+        "height": 98
+      }
+    },
+    {
+      "path": "unity/raptor/images/mouth_smile.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/mouth_smile.png",
+      "sha256": "f3c7681bd75c6271a75a5057a0ee7eae4dd78ab6a8417a9191fd25e2d3fadc02",
+      "size": 1585,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 47,
+        "height": 30
+      }
+    },
+    {
+      "path": "unity/raptor/images/neck.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/neck.png",
+      "sha256": "419b3f98aa4a5618f986557c2988bfc4d22738b5b8304014fc4c84c0aed458d9",
+      "size": 770,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 18,
+        "height": 21
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_arm_back.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_arm_back.png",
+      "sha256": "7bb21dc0eddb59621468f353edcb9de88aa1ea90efa7adb0e52ddb2049a317c9",
+      "size": 7632,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 82,
+        "height": 86
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_body.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_body.png",
+      "sha256": "6d280bac1f32f25b3f288b67bb4447a05d4bcc436e46d105bfba04a4bc4998f9",
+      "size": 100637,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 610,
+        "height": 285
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_front_arm.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_front_arm.png",
+      "sha256": "0e86e4974082e856149f572f3f40936832e49732091d54d682165d85721dd6ef",
+      "size": 9100,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 81,
+        "height": 102
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_front_leg.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_front_leg.png",
+      "sha256": "f65d5405d6337ba9e02433e00735e5f924ca626d6bbe7bd774da7e4a80250e82",
+      "size": 39804,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 191,
+        "height": 257
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_hindleg_back.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_hindleg_back.png",
+      "sha256": "e35518b650fe563a250a30359828a74d1301a14abefa0d668f96e4ed0872851e",
+      "size": 26621,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 169,
+        "height": 215
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_horn.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_horn.png",
+      "sha256": "3e689c8d0ce98f3f451d959c5a7c51f65c6cf056e06d000871546dfc9fd29711",
+      "size": 18167,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 182,
+        "height": 80
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_horn_back.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_horn_back.png",
+      "sha256": "5ad030bb42748db0a25598952898b8fe9265dc91d220ebd7c0fa4492b9c035fc",
+      "size": 14791,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 176,
+        "height": 77
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_jaw.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_jaw.png",
+      "sha256": "5f58210ff646408b9ba10dd7083c85f048e41a7bd9a727b265b1201356639c66",
+      "size": 19912,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 153,
+        "height": 143
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_saddle_noshadow.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_saddle_noshadow.png",
+      "sha256": "1c5b6298b784d5bc9fd6326a24ab39e4fd0e4f41f5fb260880dd46c32da2aafb",
+      "size": 31709,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 163,
+        "height": 188
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_saddle_strap_front.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_saddle_strap_front.png",
+      "sha256": "ef26ea5a50ebe71dcdb8a0d33321ae0ca03ba4a1755293f31a80205381832b50",
+      "size": 5998,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 57,
+        "height": 95
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_saddle_strap_rear.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_saddle_strap_rear.png",
+      "sha256": "76b91fbba6983fb96dbd63b74952ee710b1dc580af34e23ccbecd02eac67cd16",
+      "size": 5120,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 54,
+        "height": 74
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_saddle_w_shadow.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_saddle_w_shadow.png",
+      "sha256": "08e44b574178415094be9acbba518418a3a269424328f134f99fd77afe47d537",
+      "size": 31827,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 163,
+        "height": 188
+      }
+    },
+    {
+      "path": "unity/raptor/images/raptor_tongue.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/raptor_tongue.png",
+      "sha256": "a450b7b8f7970174a36f996641cc2807e501384d37f1bf7088459187fc6c25bc",
+      "size": 4881,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 86,
+        "height": 64
+      }
+    },
+    {
+      "path": "unity/raptor/images/stirrup_back.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/stirrup_back.png",
+      "sha256": "7bd4dbd2d8eba357014877cd1fe4438bd9e61dc5026d57e1462c50e9b62b5b7c",
+      "size": 1432,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 44,
+        "height": 35
+      }
+    },
+    {
+      "path": "unity/raptor/images/stirrup_front.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/stirrup_front.png",
+      "sha256": "6d14315a0c185968c994b545b6f8a8fe3a692c7df6d00f83577033a636d26962",
+      "size": 2542,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 45,
+        "height": 50
+      }
+    },
+    {
+      "path": "unity/raptor/images/stirrup_strap.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/stirrup_strap.png",
+      "sha256": "584b3fcd1a7de53239a210a2b2f5e7ada1720dc329659f38b76db61666512c5b",
+      "size": 1615,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 49,
+        "height": 46
+      }
+    },
+    {
+      "path": "unity/raptor/images/torso.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/torso.png",
+      "sha256": "daa5b32568a012bea5d6369bf3546ac65597401a4f45f741fbff40903ac441e1",
+      "size": 7407,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 54,
+        "height": 91
+      }
+    },
+    {
+      "path": "unity/raptor/images/visor.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/images/visor.png",
+      "sha256": "8e0e7c09b65deb23a30e108277e7b1052f19c39fe5a05563dd08431b33e3dd14",
+      "size": 11335,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 131,
+        "height": 84
+      }
+    },
+    {
+      "path": "unity/raptor/import/raptor.atlas.txt",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/import/raptor.atlas.txt",
+      "sha256": "da0af8a508182358a89695eea5df90cc5344a38db2102b962c64649d66c0383d",
+      "size": 3629
+    },
+    {
+      "path": "unity/raptor/import/raptor.json",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/import/raptor.json",
+      "sha256": "255f2117cc843fcbaecc7fffe7f3bc3c4c8ae898b3050df51b1882873f8b64b8",
+      "size": 118870,
+      "format": {
+        "kind": "spine-json",
+        "version": "3.6.07-beta"
+      }
+    },
+    {
+      "path": "unity/raptor/import/raptor.png",
+      "sourceId": "spine-unity-raptor",
+      "upstreamPath": "examples/spine-unity/raptor/import/raptor.png",
+      "sha256": "ffba1fffdc4a836209c062409074767fb6be109391efbd0f34bb93cbe5b66233",
+      "size": 445714,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/crosshair.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/crosshair.png",
+      "sha256": "35eeb9b18316e61e2b24b55ff4bdd3d2aa0ddb1e481a09885dd24edc356c9280",
+      "size": 1806,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 89,
+        "height": 89
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/dust01.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/dust01.png",
+      "sha256": "c0ce49a7f239e96da608e71f9fb5cb92ce7365ad4a2dc3c8ecf66fcaae045c84",
+      "size": 6821,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 73
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/dust02.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/dust02.png",
+      "sha256": "1d163c046c3bae250ad8910f7f03925a296500125f59c997b138eb3b9233340a",
+      "size": 6200,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 86,
+        "height": 88
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/dust03.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/dust03.png",
+      "sha256": "c768a5b2e96d55aa61331e495b986a014974e93e32df0d107867687569cba8d3",
+      "size": 2663,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 62,
+        "height": 52
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/eye-indifferent.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/eye-indifferent.png",
+      "sha256": "282580c984b087f9d435d0c7a70ccf69f8bb66402f8947f6030a05ee0419dee0",
+      "size": 5842,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 93,
+        "height": 89
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/eye-surprised.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/eye-surprised.png",
+      "sha256": "0b8dde0a553e150b5a034d237110b2ade37b6681ddf92caeb617ff1164b98491",
+      "size": 6727,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 93,
+        "height": 89
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/front-bracer.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/front-bracer.png",
+      "sha256": "6277787bcc127e5418a7b83061ab5354006e3fd1fd65265e663aefc02e1b6b19",
+      "size": 8376,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 58,
+        "height": 80
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/front-fist-closed.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/front-fist-closed.png",
+      "sha256": "37c5e7ee2e7a2bba498dc402ee187a4ca56487c18213215b8bbbf84058642a51",
+      "size": 10798,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 75,
+        "height": 82
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/front-fist-open.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/front-fist-open.png",
+      "sha256": "5e3858fdba9c9d95b8021f310efa0d19c5920ce85d260186f24d76257d02e64d",
+      "size": 12226,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 86,
+        "height": 87
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/front-foot.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/front-foot.png",
+      "sha256": "d18acf29f79603acb7c999d4a4520e12c28371be10f51f2dcd4936cf9654d2af",
+      "size": 8364,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 126,
+        "height": 69
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/front-shin.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/front-shin.png",
+      "sha256": "cf4501508aab101a8097ebb4005fb238b312d9354fc96cef908fd73bbadd9307",
+      "size": 19459,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 82,
+        "height": 184
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/front-thigh.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/front-thigh.png",
+      "sha256": "a2e634b1ccda50f74173b2b2722a1a01982ccd6db0ad4f05ebedbec068252496",
+      "size": 6483,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 48,
+        "height": 112
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/front-upper-arm.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/front-upper-arm.png",
+      "sha256": "75e5d92aca2e1f59f6baac8e8948de099108e41552e67b1620fe9cd546e9521e",
+      "size": 6253,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 54,
+        "height": 97
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/goggles.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/goggles.png",
+      "sha256": "3476c344d79d4a480f9b3cc32d0708f37eb9675a2aaea0cf704919bcf6d89056",
+      "size": 32079,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 261,
+        "height": 166
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/gun.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/gun.png",
+      "sha256": "07101d5f66cccd1fee2533bda9226b3cd7fb6ee56298f753d59cec2653d9837b",
+      "size": 34726,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 210,
+        "height": 203
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/head.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/head.png",
+      "sha256": "35a576db9d102a3b44f87638d9c2661eca384b0d5a255efc6b54837175233c9c",
+      "size": 57903,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 271,
+        "height": 298
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/hoverboard-board.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/hoverboard-board.png",
+      "sha256": "2467c5e30ebd4ad67f0c2730e5067b3b3aa442dc68950a6d76edbf0702d4fce1",
+      "size": 38651,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 492,
+        "height": 152
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/hoverboard-thruster.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/hoverboard-thruster.png",
+      "sha256": "c3b002aea6fc27422143f735aa6deb7ab90d5e203758a23fca296bbd7c2174d3",
+      "size": 5423,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 60,
+        "height": 64
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/hoverglow-small.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/hoverglow-small.png",
+      "sha256": "4019f22614889d00fbc27a55daadefe278e797b448f0b5c48c159c215f8378c0",
+      "size": 7144,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 274,
+        "height": 75
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/mouth-grind.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/mouth-grind.png",
+      "sha256": "04227bef114dcd0aabc3769b40533bf7927cc96e1fa668c620b8bfa284db2cee",
+      "size": 5530,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 93,
+        "height": 59
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/mouth-oooo.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/mouth-oooo.png",
+      "sha256": "d6f4a509043428fee9b2d2642436df892c87f94200a8fba8a301a173600c0bc5",
+      "size": 4287,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 93,
+        "height": 59
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/mouth-smile.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/mouth-smile.png",
+      "sha256": "3f81e28b415548078fcbf7847c1a69ed5f9419640eca4b96481bb6dd9a0ec299",
+      "size": 3521,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 93,
+        "height": 59
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/muzzle-glow.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/muzzle-glow.png",
+      "sha256": "b9ef0e7352b8509d80fab0f953c99666acf208ccd89d6ebb13a5f75b6b66be8a",
+      "size": 7125,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 198,
+        "height": 198
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/muzzle-ring.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/muzzle-ring.png",
+      "sha256": "f6455e4f3beb9e39db3e7285e04dff6f7eb42194cee658800084aeb46128a4df",
+      "size": 5752,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 49,
+        "height": 209
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/muzzle01.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/muzzle01.png",
+      "sha256": "59eb201046c1a20ac8955bcd3bb2ce245aefd95221bf2261856b62e294849712",
+      "size": 134775,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 542,
+        "height": 349
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/muzzle02.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/muzzle02.png",
+      "sha256": "0db89170b63219a2b37a2c3cbaddecf17553f1480fbb04d9ab143594e20011cf",
+      "size": 160048,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 540,
+        "height": 337
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/muzzle03.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/muzzle03.png",
+      "sha256": "c12a99a1a3d16ac4ce82eb6d6e93ab03c7d612fd11677d254b86b8b0518906d0",
+      "size": 220317,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 663,
+        "height": 425
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/muzzle04.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/muzzle04.png",
+      "sha256": "fda52af568e7e94652a44fc1b6204387278caae502bb1554890861ec08810c51",
+      "size": 190593,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 596,
+        "height": 358
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/muzzle05.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/muzzle05.png",
+      "sha256": "80d078cf8972c3b4bc1cb010d22f4ad8766e09d4540e806c854cdc4346b3640c",
+      "size": 73430,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 538,
+        "height": 299
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/neck.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/neck.png",
+      "sha256": "b149a01a5655f8bc47bc6caedb6157bbe417de3de034a846b86e4c00c75851c0",
+      "size": 1887,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 36,
+        "height": 41
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/portal-bg.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/portal-bg.png",
+      "sha256": "4ff7406c2de597fabf8fba3dfc5dfcf0bde772dd5fe07fd47d2f6a80dcb4838a",
+      "size": 60845,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 266,
+        "height": 266
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/portal-flare1.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/portal-flare1.png",
+      "sha256": "0da02afe6b8d384714e83dea9ac5dbec1371a9c89ab3dc53402a3da890c3bcc1",
+      "size": 3743,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 111,
+        "height": 60
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/portal-flare2.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/portal-flare2.png",
+      "sha256": "447852d3378441e88462a7d4324016eb6f4ef79147138601d477d281306f814b",
+      "size": 3584,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 114,
+        "height": 61
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/portal-flare3.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/portal-flare3.png",
+      "sha256": "14383a37f9dedb74729ffedfbc8c3d135349b7a8d6d8bbb0de46af33135aeb7c",
+      "size": 3491,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 115,
+        "height": 59
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/portal-shade.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/portal-shade.png",
+      "sha256": "3fd126086bb0f9279b00ca451005f936352001ecf6273edbfe5b38e66e68961c",
+      "size": 31803,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 266,
+        "height": 266
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/portal-streaks1.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/portal-streaks1.png",
+      "sha256": "30063d77f4e81be48b6f56a65cdf08a24487159eb176c86f4309a317eac66069",
+      "size": 90332,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 252,
+        "height": 256
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/portsl-streaks2.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/portsl-streaks2.png",
+      "sha256": "16dbfc48f51b8fb4b2bd33bace4cc94cc66e238cfa82367b1557134de1fb6788",
+      "size": 46745,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 250,
+        "height": 249
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/rear-bracer.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/rear-bracer.png",
+      "sha256": "ac122ac7312c9ef0d73cd7597c3b61ee44fb04cf1649068f313fbc54eb5bbe40",
+      "size": 7552,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 56,
+        "height": 72
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/rear-foot.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/rear-foot.png",
+      "sha256": "f172d067a724d3b2c644e9a3065cbcc5525eca0479077c1f1a094c94a2f0c473",
+      "size": 7278,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 113,
+        "height": 60
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/rear-shin.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/rear-shin.png",
+      "sha256": "226b08176c83949eccb12eb5397a59eb9ab2228f255620cc5941515ae84cd784",
+      "size": 14348,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 75,
+        "height": 178
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/rear-thigh.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/rear-thigh.png",
+      "sha256": "a3e925a749c808fde5f87313c1bf1a2db0d99cb60acf4e4319ac272136ecafc8",
+      "size": 6204,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 65,
+        "height": 104
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/rear-upper-arm.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/rear-upper-arm.png",
+      "sha256": "11033cb827cc0d207b04bbd3f4893fee6dce59b17a43cc70b4976272d664b1cf",
+      "size": 5514,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 47,
+        "height": 87
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/images/torso.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/images/torso.png",
+      "sha256": "d4ae1b793518146f45cd17bd9ec402ae4590c13fafe4060667cb1994b55afdc5",
+      "size": 22834,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 98,
+        "height": 180
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/import/spineboy-pro.atlas.txt",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/import/spineboy-pro.atlas.txt",
+      "sha256": "c7cfe056cfa88546b9dc459852694d349b95880ba13ffe840730eb48003687f0",
+      "size": 4436
+    },
+    {
+      "path": "unity/spineboy-pro/import/spineboy-pro.json",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/import/spineboy-pro.json",
+      "sha256": "f4a45094e1c3ff0b9104161092f14d7afd5f0a5a988bdcdfd67b0b36e029b359",
+      "size": 181419,
+      "format": {
+        "kind": "spine-json",
+        "version": "3.6.50"
+      }
+    },
+    {
+      "path": "unity/spineboy-pro/import/spineboy-pro.png",
+      "sourceId": "spine-unity-spineboy-pro",
+      "upstreamPath": "examples/spine-unity/spineboy-pro/import/spineboy-pro.png",
+      "sha256": "ce4ac3feb22b54005a5e50625466c099b9ed5e55eba025a7c5e58b3c109e3e9d",
+      "size": 1386658,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 1024
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/eye_indifferent.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/eye_indifferent.png",
+      "sha256": "282580c984b087f9d435d0c7a70ccf69f8bb66402f8947f6030a05ee0419dee0",
+      "size": 5842,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 93,
+        "height": 89
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/eye_surprised.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/eye_surprised.png",
+      "sha256": "0b8dde0a553e150b5a034d237110b2ade37b6681ddf92caeb617ff1164b98491",
+      "size": 6727,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 93,
+        "height": 89
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/front_bracer.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/front_bracer.png",
+      "sha256": "6277787bcc127e5418a7b83061ab5354006e3fd1fd65265e663aefc02e1b6b19",
+      "size": 8376,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 58,
+        "height": 80
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/front_fist_closed.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/front_fist_closed.png",
+      "sha256": "37c5e7ee2e7a2bba498dc402ee187a4ca56487c18213215b8bbbf84058642a51",
+      "size": 10798,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 75,
+        "height": 82
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/front_fist_open.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/front_fist_open.png",
+      "sha256": "5e3858fdba9c9d95b8021f310efa0d19c5920ce85d260186f24d76257d02e64d",
+      "size": 12226,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 86,
+        "height": 87
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/front_foot.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/front_foot.png",
+      "sha256": "d18acf29f79603acb7c999d4a4520e12c28371be10f51f2dcd4936cf9654d2af",
+      "size": 8364,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 126,
+        "height": 69
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/front_foot_bend1.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/front_foot_bend1.png",
+      "sha256": "ced0e274fbbac6b73a4dae1891924e81b8e783ba4dbf0ca38c99bc22e035a46f",
+      "size": 8854,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 70
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/front_foot_bend2.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/front_foot_bend2.png",
+      "sha256": "f6cf210ae18f79a335e40e08818a2479c46ae3debb5080dde1e5b3fda17c6e43",
+      "size": 8671,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 108,
+        "height": 93
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/front_shin.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/front_shin.png",
+      "sha256": "96c56c511674034e1df732e691792ea0185b4d5f7d79abf44cfe4297240efecb",
+      "size": 19478,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 82,
+        "height": 184
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/front_thigh.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/front_thigh.png",
+      "sha256": "a2e634b1ccda50f74173b2b2722a1a01982ccd6db0ad4f05ebedbec068252496",
+      "size": 6483,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 48,
+        "height": 112
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/front_upper_arm.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/front_upper_arm.png",
+      "sha256": "75e5d92aca2e1f59f6baac8e8948de099108e41552e67b1620fe9cd546e9521e",
+      "size": 6253,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 54,
+        "height": 97
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/goggles.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/goggles.png",
+      "sha256": "3476c344d79d4a480f9b3cc32d0708f37eb9675a2aaea0cf704919bcf6d89056",
+      "size": 32079,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 261,
+        "height": 166
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/gun.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/gun.png",
+      "sha256": "07101d5f66cccd1fee2533bda9226b3cd7fb6ee56298f753d59cec2653d9837b",
+      "size": 34726,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 210,
+        "height": 203
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/head.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/head.png",
+      "sha256": "35a576db9d102a3b44f87638d9c2661eca384b0d5a255efc6b54837175233c9c",
+      "size": 57903,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 271,
+        "height": 298
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/mouth_grind.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/mouth_grind.png",
+      "sha256": "04227bef114dcd0aabc3769b40533bf7927cc96e1fa668c620b8bfa284db2cee",
+      "size": 5530,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 93,
+        "height": 59
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/mouth_oooo.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/mouth_oooo.png",
+      "sha256": "d6f4a509043428fee9b2d2642436df892c87f94200a8fba8a301a173600c0bc5",
+      "size": 4287,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 93,
+        "height": 59
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/mouth_smile.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/mouth_smile.png",
+      "sha256": "3f81e28b415548078fcbf7847c1a69ed5f9419640eca4b96481bb6dd9a0ec299",
+      "size": 3521,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 93,
+        "height": 59
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/muzzle.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/muzzle.png",
+      "sha256": "e85eb8d981cf039b584d810f7555a857b94c0776ad1fd16b85ea864ad5a6e2ef",
+      "size": 155436,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 462,
+        "height": 400
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/neck.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/neck.png",
+      "sha256": "1d9525d1d87015778f44d08ecf2ce7346d651845e113202e5d1b8a5982afe340",
+      "size": 1889,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 36,
+        "height": 41
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/rear_bracer.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/rear_bracer.png",
+      "sha256": "ac4dc2d7b72c04d6f1f311d38bde9f9b1e31d910b6e2207411251513c805290c",
+      "size": 7557,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 56,
+        "height": 72
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/rear_foot.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/rear_foot.png",
+      "sha256": "f172d067a724d3b2c644e9a3065cbcc5525eca0479077c1f1a094c94a2f0c473",
+      "size": 7278,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 113,
+        "height": 60
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/rear_foot_bend1.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/rear_foot_bend1.png",
+      "sha256": "5cb1fc0bfa1fd8a3e6bcbaaff816f3007b7381edea458c922333c920bec234e2",
+      "size": 8116,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 117,
+        "height": 66
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/rear_foot_bend2.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/rear_foot_bend2.png",
+      "sha256": "74b9caecab4ed95968d3f4bf34e1b811383ad9dfe14a8ca2620e4113e9b78207",
+      "size": 8137,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 103,
+        "height": 83
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/rear_shin.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/rear_shin.png",
+      "sha256": "c26e1f824a0c32492b69b684c3147d7359f330a794a1131638535f228b2fa82c",
+      "size": 14366,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 75,
+        "height": 178
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/rear_thigh.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/rear_thigh.png",
+      "sha256": "52f00bce56820e2ea8c098b90c6f2ef6cfd2b9e1528e8c9b90be925a32187a3d",
+      "size": 6203,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 65,
+        "height": 104
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/rear_upper_arm.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/rear_upper_arm.png",
+      "sha256": "11033cb827cc0d207b04bbd3f4893fee6dce59b17a43cc70b4976272d664b1cf",
+      "size": 5514,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 47,
+        "height": 87
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/images/torso.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/images/torso.png",
+      "sha256": "d4ae1b793518146f45cd17bd9ec402ae4590c13fafe4060667cb1994b55afdc5",
+      "size": 22834,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 98,
+        "height": 180
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/import/spineboy-unity.json",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/import/spineboy-unity.json",
+      "sha256": "83ebfb23dc31bfb9076908d18fe58e46ef51c6f7c2cb13468d4775d978adb4dc",
+      "size": 159760,
+      "format": {
+        "kind": "spine-json",
+        "version": "3.6.52"
+      }
+    },
+    {
+      "path": "unity/spineboy-unity/import/spineboy.atlas.txt",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/import/spineboy.atlas.txt",
+      "sha256": "f86813f1c7f3051f1bad2d4d738b7ec8e86910255f3a10aa3cad1b1f30f617fe",
+      "size": 2794
+    },
+    {
+      "path": "unity/spineboy-unity/import/spineboy.png",
+      "sourceId": "spine-unity-spineboy-unity",
+      "upstreamPath": "examples/spine-unity/spineboy-unity/import/spineboy.png",
+      "sha256": "be2d00457848f17ae13b991ee16f9e40836fe8a2d03bfd8efe65400e999fb49d",
+      "size": 525397,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/armL.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/armL.png",
+      "sha256": "4d4addb3fa50442c961868abad433d6776555bfc7a757220aa52cb8796b2a1ce",
+      "size": 7888,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 163,
+        "height": 133
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/armR.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/armR.png",
+      "sha256": "afc9417725700c3ad608d739a4a449d18327b2e65f8c94df058959469072d3f9",
+      "size": 6071,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 133,
+        "height": 109
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/arrow.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/arrow.png",
+      "sha256": "85d795f08c19837758dcaeb90f1fd75b7b30b4b7306e36c6df56714db249df96",
+      "size": 2864,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 85
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/body.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/body.png",
+      "sha256": "1e2fe0940dd5f691241f3efa8b752750d91b9be64f31f316e2f79ce1f70ccec1",
+      "size": 21855,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 274,
+        "height": 339
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/bootR.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/bootR.png",
+      "sha256": "7f5d973fb3b166a353310cf5d3e5fca9daf206032b96a99b58cd9a7bf94a0011",
+      "size": 4271,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 91,
+        "height": 84
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/browL.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/browL.png",
+      "sha256": "ce0deb68e887c23ee860bdc02e1d6924421f168f5c70e7f862eafd655f3ba91e",
+      "size": 885,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 40,
+        "height": 22
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/browR.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/browR.png",
+      "sha256": "3b5c1644cbd1b7c756aac6a6328a25762638f1578f38c8ff964330bf5b541391",
+      "size": 745,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 25
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/eyelids closed.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/eyelids closed.png",
+      "sha256": "27f3d0a21f418a005867bb97f9a7e4c96c4a5d517604181d37af93be87fff4de",
+      "size": 4759,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 183,
+        "height": 92
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/eyelids open.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/eyelids open.png",
+      "sha256": "ca10fbff48c3472999335a18f1a425715206e16ce6f948f804c055946a697ab5",
+      "size": 8129,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 176,
+        "height": 89
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/hairL.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/hairL.png",
+      "sha256": "babafc5585baeba3e47a1e3bb74683399c62af2e138c6fc5ca77360df27e4e4d",
+      "size": 2349,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 54,
+        "height": 60
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/hairL2.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/hairL2.png",
+      "sha256": "41d49345acec552f8f07d6a43c3cff460f21b2bab6a8b047280ab6747272958b",
+      "size": 2652,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 71,
+        "height": 76
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/hairM blob.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/hairM blob.png",
+      "sha256": "82569d13e494c45b4ef43a83c0ea419827beaa3aadb78729e8d8aef55bcd1702",
+      "size": 560,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 30,
+        "height": 45
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/hairM blobS.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/hairM blobS.png",
+      "sha256": "dbf02fb05c123c21f85b053b91f403335ef7086c5d31bd297baa8bebcddca51a",
+      "size": 259,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 16,
+        "height": 20
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/hairM.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/hairM.png",
+      "sha256": "03beb032f0ecf07e615eb17c54c6380398ca192c68fb6f9c71ca67e848dc6235",
+      "size": 3180,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 77
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/hairR.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/hairR.png",
+      "sha256": "4b03580a2d48b77a9dd082688e364a8dcbd34d06c537dcc68191cb3838522125",
+      "size": 2555,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 41,
+        "height": 83
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/hairR2.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/hairR2.png",
+      "sha256": "c37a6daa05dc6faa27e42314ee53e527314a543603af84c42f7f90a3e2b93f2d",
+      "size": 4053,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 94,
+        "height": 101
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/hairSide.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/hairSide.png",
+      "sha256": "49485eacc1c8bc8135d005d818ad7157351e62a1bc6623beab0eff0d47b4677f",
+      "size": 834,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 48,
+        "height": 24
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/head.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/head.png",
+      "sha256": "a2489e3e638ab3139bdd2f3346b841ce4d6aa47ffc725198d2870da9bbc27e06",
+      "size": 20219,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 222,
+        "height": 225
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/indexL.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/indexL.png",
+      "sha256": "2add8d76766243b49574da7377fdde181e144fd50268428b4519ca71942c0325",
+      "size": 788,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 24,
+        "height": 36
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/indexR.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/indexR.png",
+      "sha256": "afd05013efdd21c7a0e210fb8743a58ca98490e0c497d1759f577aa7916fb821",
+      "size": 769,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 34,
+        "height": 28
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/inmouth.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/inmouth.png",
+      "sha256": "3840db9915fb0cc4a2127a630395cc00bc513b5716c8b44b4bebbdce30356f85",
+      "size": 2061,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 46,
+        "height": 55
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/irisL flatspec.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/irisL flatspec.png",
+      "sha256": "c165ec2ec78982d8c11ab55eb6f608e2fdadfb5958f9bae73d9eb26329d0043f",
+      "size": 157,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 19,
+        "height": 10
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/irisL spec.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/irisL spec.png",
+      "sha256": "7d9da3256f284e8ca1b378b225b2fcd454f3f9babd437b077941e69aaeb4cef6",
+      "size": 212,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 18,
+        "height": 21
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/irisL.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/irisL.png",
+      "sha256": "9120e85a4f01e00717229338376c72f91e2bdd38e17ab18a52ed0be2378c8bf5",
+      "size": 1896,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 34,
+        "height": 47
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/irisR flatspec.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/irisR flatspec.png",
+      "sha256": "549f751fb17333945bba31b9c30b300b5de6b4f05139ea88323827a828319966",
+      "size": 174,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 22,
+        "height": 11
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/irisR spec.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/irisR spec.png",
+      "sha256": "a64819e0edf39f5e7ffe4acd752f64897351dd87e448ff4ee257a7e7a7276531",
+      "size": 182,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 16,
+        "height": 17
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/irisR.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/irisR.png",
+      "sha256": "24a69447d3178ef7d926ad21ccf12e3d3dbe05fad27a71e7909ee8e0a810e0ed",
+      "size": 2004,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 34,
+        "height": 47
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/middleL.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/middleL.png",
+      "sha256": "594ef58cc68a82bca394a9396a0e6a76b6c873b050f38ea8900eff0a3bd033d9",
+      "size": 789,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 26,
+        "height": 36
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/middleR.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/middleR.png",
+      "sha256": "3e5d50e1086c6378cc48fc7f4e99ebf985e5eb31a02ccc6851a08754eec77117",
+      "size": 767,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 34,
+        "height": 26
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/mouth.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/mouth.png",
+      "sha256": "4c819b6abd98a144f6c8a4b52d6310ac7f8a5b83c5673e8ec21cbd241964052f",
+      "size": 2326,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 89,
+        "height": 83
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/nose.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/nose.png",
+      "sha256": "e49bf480767df0bfb86470de8471ca363cdddad153011c0147c9eaa6e01bf4e9",
+      "size": 112,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 11,
+        "height": 10
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/pinkyL.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/pinkyL.png",
+      "sha256": "81bdcb70a4f53ffeec2e461f1991c07cf7c7fdd9f5b524c7bef0ebdabe8323b4",
+      "size": 636,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 24,
+        "height": 27
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/pony1.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/pony1.png",
+      "sha256": "12b137e03e36c5d2adccd9ba8b92c22d6fc923daefdcc0f2d88215a076db8e47",
+      "size": 3700,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 72,
+        "height": 105
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/pony2.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/pony2.png",
+      "sha256": "da8053d4080ee4fc41a5e8aa9d3d56f3ebaeca82bfedac45909de40a03036af8",
+      "size": 2736,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 86,
+        "height": 83
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/ringL.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/ringL.png",
+      "sha256": "cb82a19484977a22aa576240906540e92c60e1d015c7788aace7ef80bbd89c3c",
+      "size": 727,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 26,
+        "height": 30
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/rotate.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/rotate.png",
+      "sha256": "7c5385c366f16fc87dac23301da9384b873c36a21e4ae46606680dce0ea6c9f1",
+      "size": 7194,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 105,
+        "height": 118
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/strap.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/strap.png",
+      "sha256": "046b73efc9d668e01ad962530ff418ca420f70b370fdae30b696b2e89b90f245",
+      "size": 4316,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 62,
+        "height": 168
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/thumbL.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/thumbL.png",
+      "sha256": "de9056eda9932a76d65ba3d3cd3bed8c1bbfa99f58faf4d61a1339663bb9ca80",
+      "size": 830,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 37,
+        "height": 28
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/images/thumbR.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/images/thumbR.png",
+      "sha256": "f1bcb9c3d1a8b7abe509b83cfb07d669e89eb14fd8282c10e5e6567f523ffafc",
+      "size": 783,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 36,
+        "height": 25
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/import/Doi.atlas.txt",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/import/Doi.atlas.txt",
+      "sha256": "08834599f878cabe90f89c14c3dbb8568d867710920bbabd6bc72bea6e505fa8",
+      "size": 3784
+    },
+    {
+      "path": "unity/spineunitygirl/import/Doi.json",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/import/Doi.json",
+      "sha256": "22ac3289625b11f8b45141ba1650c0a7df0ce61d4f2ecd6e0576b60d0fcbc509",
+      "size": 93787,
+      "format": {
+        "kind": "spine-json",
+        "version": "3.6.18-beta"
+      }
+    },
+    {
+      "path": "unity/spineunitygirl/import/Doi.png",
+      "sourceId": "spine-unity-spineunitygirl",
+      "upstreamPath": "examples/spine-unity/spineunitygirl/import/Doi.png",
+      "sha256": "f4248cd3d46d335265141997661745ab2c460c3b0b46ab4dab17fc1c0c3e8ca2",
+      "size": 131867,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 646,
+        "height": 520
+      }
+    },
+    {
+      "path": "unity/whirlyblendmodes/images/whirly.png",
+      "sourceId": "spine-unity-whirlyblendmodes",
+      "upstreamPath": "examples/spine-unity/whirlyblendmodes/images/whirly.png",
+      "sha256": "08f90a36ebbd6e7196d8d846df22a73bc9adcdf8dc142697bc7c6148d925a59e",
+      "size": 81200,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "unity/whirlyblendmodes/import/whirlyblendmodes.atlas.txt",
+      "sourceId": "spine-unity-whirlyblendmodes",
+      "upstreamPath": "examples/spine-unity/whirlyblendmodes/import/whirlyblendmodes.atlas.txt",
+      "sha256": "b3054d6d13ad32a6113e1db0d787ffe5679d5e2ca8868c5bdc70b94bce12c290",
+      "size": 183
+    },
+    {
+      "path": "unity/whirlyblendmodes/import/whirlyblendmodes.json",
+      "sourceId": "spine-unity-whirlyblendmodes",
+      "upstreamPath": "examples/spine-unity/whirlyblendmodes/import/whirlyblendmodes.json",
+      "sha256": "ffd4dc081da5cdd37f49f7ce4c084e3dc3485f3454c3cf65b73cde7897320e2b",
+      "size": 1695,
+      "format": {
+        "kind": "spine-json",
+        "version": "3.7.42-beta"
+      }
+    },
+    {
+      "path": "unity/whirlyblendmodes/import/whirlyblendmodes.png",
+      "sourceId": "spine-unity-whirlyblendmodes",
+      "upstreamPath": "examples/spine-unity/whirlyblendmodes/import/whirlyblendmodes.png",
+      "sha256": "043b8c29a0f53b54ac9018c649095cf4bb66cfd9250feb56aa2a4abdca8b6233",
+      "size": 92778,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
       "path": "vine/export/vine-pma.atlas",
       "sourceId": "spine-vine",
       "upstreamPath": "examples/vine/export/vine-pma.atlas",
@@ -12146,7 +14905,7 @@
     }
   ],
   "totals": {
-    "files": 919,
-    "bytes": 50362112
+    "files": 1126,
+    "bytes": 57389528
   }
 }
