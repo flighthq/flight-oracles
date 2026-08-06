@@ -167,6 +167,37 @@ See [`docs/sourcing-policy.md`](docs/sourcing-policy.md) for the full reasoning,
 [`docs/fixture-coverage.md`](docs/fixture-coverage.md) for the exhaustive fixture target set
 derived from flight's decode surface.
 
+## Releasing
+
+Merging to `main` builds nothing. It runs `check` only — unit tests and spec validation, no
+network, a few seconds. Archives are produced by the `release` workflow, which triggers on a
+tag matching `v*`.
+
+Do it in three steps rather than one, because the first cold reconstruction is the only part
+that has never run:
+
+1. **Merge.** `check` proves the specs parse and the tooling passes.
+
+2. **Dry-run the corpus.** Actions → `ci` → *Run workflow*. This dispatches the `corpus` job:
+   a full reconstruction from pinned commits, then `verify` and `pack`. It uploads only
+   `index.json` and creates **no release**. Roughly 4,700 requests and 2 GB of downloads, so
+   this is where throttling or a vanished upstream will show up — harmlessly, with no tag
+   already in existence to unpick.
+
+3. **Tag.** `git tag v0.1.0 && git push origin v0.1.0`. The tag name becomes the version in
+   every filename, so `v0.1.0` yields `spine-fixtures-full-v0.1.0.tar.gz`. The workflow
+   ingests, verifies, builds all three variants of every pack, attaches build provenance
+   attestation, and publishes the release with `index.json` and `SHA256SUMS`.
+
+`release` also accepts a manual dispatch with an explicit version, which needs no tag at all
+— useful for a trial run you intend to delete.
+
+Expect roughly 3.2 GB across 80 artifacts. The largest single file is about 495 MB, well
+inside GitHub's 2 GB per-asset limit.
+
+The `drift` workflow runs weekly and opens an issue when a pinned upstream moves or
+disappears. An issue from it is information, not a failure.
+
 ## Removal requests
 
 Every file records where it came from and the licence found there, and some are marked
