@@ -1,8 +1,13 @@
 # bitmapfont-fixtures — AngelCode BMFont descriptors.
 #
 # flight's bitmapfont-formats reads three serialisations of the same model: bitmapFontFnt
-# (the original text .fnt), bitmapFontXml and bitmapFontJson. libgdx ships the text form,
-# which is the one the other two were derived from.
+# (the original text .fnt), bitmapFontXml and bitmapFontJson. Both sources here ship the text
+# form; the XML and JSON serialisations still need a corpus.
+#
+# Two producers rather than one on purpose. libgdx and cocos2d-x emit .fnt through different
+# toolchains, and a parser written against a single producer's output tends to absorb its
+# quirks — padding order, kerning presence, page-count assumptions — as if they were the
+# format.
 #
 # Distinct from `font-signature-fixtures` in the coverage plan: those are four-byte magic
 # numbers for TTF/OTF/WOFF container sniffing. These are glyph-atlas descriptors, a
@@ -30,3 +35,31 @@ declared_from = "LICENSE"
 commercial_use = true
 onward_use = "unrestricted"
 covers = "libgdx and its bundled test assets."
+
+
+[[source]]
+id = "cocos2dx-bmfont"
+kind = "upstream"
+repo = "cocos2d/cocos2d-x"
+ref = "v4"
+fetch = "blobs"
+include = [
+  "tests/**/*.fnt",
+  # Charmap plists: a fixed-cell bitmap font described in a property list —
+  # textureFilename, itemWidth, itemHeight, firstChar. Same model as .fnt in a
+  # different serialisation, which is what bitmapfont-formats exists to handle.
+  "tests/**/fonts/**/*.plist",
+]
+# bmfont-rotated-test.plist lives in fonts/ but is a spritesheet describing rotated
+# frames, not a charmap. Content detection caught it; the directory suggested otherwise.
+exclude_paths = ["tests/**/bmfont-rotated-test.plist"]
+strip = "tests/"
+dest = "cocos/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "README.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled PNG artwork separately and more restrictively — grossini*.png is CC BY-NC-SA 2.0, for instance. That does not reach this pack, which takes only the text descriptors, but the descriptors REFERENCE those images by name, so anyone rendering rather than parsing them needs to read that file."

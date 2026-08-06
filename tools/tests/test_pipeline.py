@@ -132,6 +132,18 @@ class TestFormats(unittest.TestCase):
         info = formats.detect(b"info face=\"Arial\" size=32\n", "a.fnt")
         self.assertEqual((info["kind"], info["version"]), ("fnt", "text"))
 
+    def test_plist_dialects_are_distinguished(self):
+        # Both Cocos dialects are property lists; only the payload says which model it
+        # carries, and a parser handed the wrong one should refuse rather than half-succeed.
+        sheet = b'<plist><dict><key>frames</key><dict/></dict></plist>'
+        particle = b'<plist><dict><key>emitterType</key><real>0</real></dict></plist>'
+        self.assertEqual(formats.detect(sheet, "a.plist")["kind"], "plist-spritesheet")
+        self.assertEqual(formats.detect(particle, "a.plist")["kind"], "plist-particle")
+        charmap = b'<plist><dict><key>textureFilename</key><string>f.png</string>' \
+                  b'<key>itemWidth</key><integer>48</integer></dict></plist>'
+        self.assertEqual(formats.detect(charmap, "a.plist")["kind"], "plist-charmap")
+        self.assertEqual(formats.detect(b"<plist><dict/></plist>", "a.plist")["kind"], "plist")
+
     def test_unknown_returns_none_rather_than_raising(self):
         # Not knowing a format is a fact to record, never a reason to drop a fixture.
         self.assertIsNone(formats.detect(b"\x00\x01\x02\x03nonsense", "mystery.bin"))

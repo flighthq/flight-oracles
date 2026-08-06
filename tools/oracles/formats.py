@@ -288,6 +288,27 @@ def _libgdx_atlas(data: bytes, name: str):
     return None
 
 
+def _plist(data: bytes, name: str):
+    """Apple property list, as used by both Cocos dialects.
+
+    Spritesheet and ParticleDesigner plists are the same container carrying different
+    models, so the distinguishing key is reported: a parser handed the wrong one should
+    say so rather than half-succeed.
+    """
+    if not name.lower().endswith(".plist"):
+        return None
+    head = data[:16384]
+    if b"itemWidth" in head and b"textureFilename" in head:
+        # A fixed-cell bitmap font in property-list clothing: same model as .fnt, different
+        # serialisation. Without this it reads as "some plist" and lands in the wrong pack.
+        return FormatInfo(kind="plist-charmap", version=None)
+    if b"<key>frames</key>" in head:
+        return FormatInfo(kind="plist-spritesheet", version=None)
+    if b"emitterType" in head or b"maxParticles" in head:
+        return FormatInfo(kind="plist-particle", version=None)
+    return FormatInfo(kind="plist", version=None)
+
+
 def _obj_mtl(data: bytes, name: str):
     lowered = name.lower()
     if lowered.endswith(".obj"):
@@ -326,7 +347,7 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
         info = probe(data)
         if info is not None:
             return info
-    for probe in (_dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont,
+    for probe in (_dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
                   _libgdx_atlas, _spine_skel, _spine_atlas, _obj_mtl):
         info = probe(data, name)
         if info is not None:

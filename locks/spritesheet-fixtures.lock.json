@@ -22,9 +22,599 @@
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/libgdx-atlas@81cdb9281140.txt"
+    },
+    {
+      "id": "cocos2dx-plist-sheets",
+      "kind": "upstream",
+      "repo": "cocos2d/cocos2d-x",
+      "ref": "v4",
+      "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "README.md",
+        "covers": "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled PNG artwork separately and more restrictively \u2014 grossini*.png is CC BY-NC-SA 2.0, for instance. That does not reach this pack, which takes only the text descriptors, but the descriptors REFERENCE those images by name, so anyone rendering rather than parsing them needs to read that file.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/cocos2dx-plist-sheets@7a5282a301a1.txt"
     }
   ],
   "files": [
+    {
+      "path": "cocos/cpp-tests/Resources/Images/blocks9ss.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/blocks9ss.plist",
+      "sha256": "941c565931984dae285be7bfaa8d68daa2587d80de1585fc97844917974ba2c8",
+      "size": 2764,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/bug12847_spriteframe.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/bug12847_spriteframe.plist",
+      "sha256": "1238228fb57c1025abdab304a6e20363610fe1778a7ecc15da027aa7d7cffcd3",
+      "size": 984,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/bugs/circle.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/bugs/circle.plist",
+      "sha256": "317b20fa1cd23cadd14130c35a516d9dbf443f4426068c703cd93c94313c2358",
+      "size": 987,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/encryptedAtlas.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/encryptedAtlas.plist",
+      "sha256": "3b68a96e2dcdb17262b3749823a5a3525694d04aa716ff07af6cadc75ac27894",
+      "size": 1228,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/issue_17116.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/issue_17116.plist",
+      "sha256": "5d9522f3920270ac87ab37d3ee41db7371f64c90fee470606a73b3b717f2fd61",
+      "size": 15986,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/issue_17119.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/issue_17119.plist",
+      "sha256": "2e3a9a5f48c021b371df78b009b18eb79a6625f81c9475b6bd09ef443844a48a",
+      "size": 1983,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/nonencryptedAtlas.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/nonencryptedAtlas.plist",
+      "sha256": "d238c5dadefdf1c12ddb97c593ad27dceebe9458e448e55c351a80a26083c3e6",
+      "size": 1223,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/poly_test_textures.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/poly_test_textures.plist",
+      "sha256": "c72021e267296a2880116c102c1a2951c3fc22292ac50094a278513ed5b403f0",
+      "size": 3853,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_A8.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_A8.plist",
+      "sha256": "79ccb603fe09bfa2b5b06d47f671165b35f4653729931cc87e0ecd938559c11f",
+      "size": 1045,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_AI88.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_AI88.plist",
+      "sha256": "17f0dee70a0a9930ec740c64fe52eb926189a74e354fec7422f7ef6135a201c4",
+      "size": 1050,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_NoFormat.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_NoFormat.plist",
+      "sha256": "5e0b3399d63c8a233c63427a33cc7517164431ecdb9dff0099850b8099e7ec9a",
+      "size": 1010,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_PVRTC2.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_PVRTC2.plist",
+      "sha256": "b5437f31d1e9c84be88476215fa16bacdd03ff3ee064e6a3305534dacb618be1",
+      "size": 1058,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_PVRTC2_NOALPHA.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_PVRTC2_NOALPHA.plist",
+      "sha256": "ec3d88d9ef5efa95181408cc55af4610aba1c345a60f91f786e26f4eb43bd812",
+      "size": 1082,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_PVRTC4.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_PVRTC4.plist",
+      "sha256": "ded1cada992251a06e507d0b156fb7e4901e88e0211eda05443c474f4c6b8685",
+      "size": 1058,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_RGB565.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_RGB565.plist",
+      "sha256": "325a0849e2af914d514174d8e5d72d482ccd96a0ca262776fb6fc92f44326060",
+      "size": 1061,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_RGB888.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_RGB888.plist",
+      "sha256": "1cb73ce0cfee5fe5ed934bf3a0eebec5bb9bf6718f49d6e8682af68d7706fd1b",
+      "size": 1061,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_RGBA4444.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_RGBA4444.plist",
+      "sha256": "6b22c71c1d25764bde3b641f7227b1d685ac6b62f3bc51e810cc1f208a6a2360",
+      "size": 1063,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_RGBA5551.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_RGBA5551.plist",
+      "sha256": "9a8a755d204568469bd985b0cf18502665b359f043300cc0a59417e18fa0c384",
+      "size": 1063,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_RGBA5555.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_RGBA5555.plist",
+      "sha256": "c7a2ccbd6f9ad0743ee26abc86a3fb0912d117b999363cbef608242739c9f482",
+      "size": 1063,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_RGBA8888.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_RGBA8888.plist",
+      "sha256": "3b3342219608252c43a949f23903320560f2481884c61923c16b7910a283025f",
+      "size": 1063,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/test_polygon.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/test_polygon.plist",
+      "sha256": "ce6192af37f6f2fc5aee5e34d1146f0027841330b57e05b76de2259ae4bed339",
+      "size": 6522,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/ui.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/ui.plist",
+      "sha256": "c042f6a6b6963c289b02590d4093dc2801bef4f92ebe9a8aa9194ac21fc03afd",
+      "size": 4918,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/animations-2.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/animations-2.plist",
+      "sha256": "bbdb9e32cf8bdd49c65cfb4b3abcc159ada8ffffb336026beba10bbd8c5576f4",
+      "size": 3094,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/animations.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/animations.plist",
+      "sha256": "e9215040bd4fe1d00431931c26e3f5c454b01190308ef147e16d94c9e7c72473",
+      "size": 2042,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/crystals.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/crystals.plist",
+      "sha256": "37236b488dc90461b27063368a2aaeb64ef5c0bc26706ac8f10ef90cb946960e",
+      "size": 4212,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/ghosts.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/ghosts.plist",
+      "sha256": "7fb6a09abd62a10a04e44a5a3f2cd73b101ef153ef5631af6a6fb1810f882588",
+      "size": 1979,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/grossini-aliases.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/grossini-aliases.plist",
+      "sha256": "76a133d982dd2bbe800c290717aabd056a809b45e5153258db3008029ec9e132",
+      "size": 6105,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/grossini.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/grossini.plist",
+      "sha256": "abd818f1e11cafcdbb5f371f51cf5e029c02b03576908b0618e90f8f508bc3a4",
+      "size": 6226,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/grossini_anchors.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/grossini_anchors.plist",
+      "sha256": "0b393730ec8667c44ed6bcae8aefdc31d8a24007251aa69374e747dfdbb7c5f2",
+      "size": 9553,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/grossini_blue.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/grossini_blue.plist",
+      "sha256": "53262ea130261367f72307e8feaf4d1673f1a53b97c0abf53b9acead3ed44cf9",
+      "size": 2016,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/grossini_dance_poly.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/grossini_dance_poly.plist",
+      "sha256": "7d4869642746c7de211340c0d7369c67e562155d2adc201dec51cfe2644d12cf",
+      "size": 17683,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/grossini_family.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/grossini_family.plist",
+      "sha256": "891755232c2f1e682d61172ba464c57e5229de9bf23bfe3cf36e301dec03f5cb",
+      "size": 1597,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/grossini_gray.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/grossini_gray.plist",
+      "sha256": "91da954fe269ed886c097a8a056b04ae3a44106c62709771a0dab718c1e1a5f6",
+      "size": 6296,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/grossini_polygon.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/grossini_polygon.plist",
+      "sha256": "2a3af9c9e56dbde2c2aec517208300d4ded4f60c5bb593a1cb2b5c91e7dea5b9",
+      "size": 13142,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/tcc_issue_1.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/tcc_issue_1.plist",
+      "sha256": "c84d01111cb44f8fbae12ce978653d6cb2345a980d4dde83ff637918b05a212a",
+      "size": 2186,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/animations/tcc_issue_2.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/animations/tcc_issue_2.plist",
+      "sha256": "2971ba985a3bd7450d1dd17a944694d1c3ef80a183c6773141883f4611d6ac25",
+      "size": 2188,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/ccb/animated-grossini.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/ccb/animated-grossini.plist",
+      "sha256": "a93b28173f243d396806df83ae3b81bf9b60a613be5d49c0d486f14b26c15650",
+      "size": 4966,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/ccb/grossini-generic.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/ccb/grossini-generic.plist",
+      "sha256": "d09082a850a4f779c18fee6898aeaad8b0e13879689520785c62324736ace139",
+      "size": 7160,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/extensions/CCControlColourPickerSpriteSheet.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/extensions/CCControlColourPickerSpriteSheet.plist",
+      "sha256": "6fc5e5b41e43350082f9e1d584c9ca635701a3f061dabc57479a19ea6626e383",
+      "size": 4137,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/bmfont-rotated-test.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/bmfont-rotated-test.plist",
+      "sha256": "cb1bdff67fd0d4ed677ab7af4d13516225e34f7065ee012b83b69a0f48e177d6",
+      "size": 2065,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/hd/Images/blocks9ss.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/hd/Images/blocks9ss.plist",
+      "sha256": "414f317095c6296c4c6221353e79992658c53b85d299c75c7c40c82c9ff6526e",
+      "size": 2813,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/hd/Images/bugs/circle.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/hd/Images/bugs/circle.plist",
+      "sha256": "234f2ddc8d95b4c01ed1036506b4e0a4225afcb3aebb0d8cfc98d9b6bd01ab36",
+      "size": 716,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/hd/Images/ui.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/hd/Images/ui.plist",
+      "sha256": "fcbd3e39a1bd9ee068052e62bd070d1756ff920a11d6cfec9ea5cf776bff84aa",
+      "size": 3335,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/hd/extensions/CCControlColourPickerSpriteSheet.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/hd/extensions/CCControlColourPickerSpriteSheet.plist",
+      "sha256": "2917a7ed3533f811ce22eb2790b853fae1031acb8065f5a1107886c82d572342",
+      "size": 2860,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/zwoptex/grossini-generic.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/zwoptex/grossini-generic.plist",
+      "sha256": "d09082a850a4f779c18fee6898aeaad8b0e13879689520785c62324736ace139",
+      "size": 7160,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/zwoptex/grossini.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/cpp-tests/Resources/zwoptex/grossini.plist",
+      "sha256": "9184784393684b234a23a1d65179acc9304f4d0ea8f75ec65c110197c6dcf178",
+      "size": 4750,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/lua-tests/res/cocosbuilderRes/ccb/animated-grossini.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/lua-tests/res/cocosbuilderRes/ccb/animated-grossini.plist",
+      "sha256": "a93b28173f243d396806df83ae3b81bf9b60a613be5d49c0d486f14b26c15650",
+      "size": 4966,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/lua-tests/res/cocosbuilderRes/ccb/grossini-generic.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/lua-tests/res/cocosbuilderRes/ccb/grossini-generic.plist",
+      "sha256": "d09082a850a4f779c18fee6898aeaad8b0e13879689520785c62324736ace139",
+      "size": 7160,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Images/grossini_polygon.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/performance-tests/Resources/Images/grossini_polygon.plist",
+      "sha256": "3686ed556d22790ee72d0ee989f91b646f1487aeb066838f068a87bdca2dafae",
+      "size": 4850,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Images/grossini_quad.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/performance-tests/Resources/Images/grossini_quad.plist",
+      "sha256": "7ac9588d477600fe857473b5c92fd5a8bb87316ef59a920af872813419a93bd8",
+      "size": 3024,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Images/grossinis_sister1_sp.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/performance-tests/Resources/Images/grossinis_sister1_sp.plist",
+      "sha256": "b6b2a052e9f59c3aab350aa5735ab5a75f3762c2f292f7b7c374caa60921986b",
+      "size": 1957,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Images/grossinis_sister2_sp.plist",
+      "sourceId": "cocos2dx-plist-sheets",
+      "upstreamPath": "tests/performance-tests/Resources/Images/grossinis_sister2_sp.plist",
+      "sha256": "2e2428d032074f4052cecdf14ca4d315e3f99dc6ce1e9320040ffee106979ee8",
+      "size": 2024,
+      "format": {
+        "kind": "plist-spritesheet",
+        "version": null
+      }
+    },
     {
       "path": "libgdx/extensions/gdx-tools/assets/uiskin.atlas",
       "sourceId": "libgdx-atlas",
@@ -181,7 +771,7 @@
     }
   ],
   "totals": {
-    "files": 14,
-    "bytes": 368933
+    "files": 66,
+    "bytes": 564320
   }
 }

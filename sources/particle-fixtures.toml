@@ -1,8 +1,12 @@
 # particle-fixtures — particle effect configurations.
 #
 # flight's particles-formats reads six dialects: libgdx, ParticleDesigner, Pixi, Spine,
-# Starling PEX and Unity. This pack covers the libgdx dialect; the rest are named in
-# docs/fixture-coverage.md.
+# Starling PEX and Unity. Two are covered here — libgdx .p and the ParticleDesigner
+# property-list form that cocos2d-x ships. Pixi, Spine and Unity remain.
+#
+# ParticleDesigner and Starling PEX are near-relatives: PEX is the same emitter model in a
+# different XML skin, so these plists are the closest thing to PEX coverage until a PEX
+# corpus with a usable declaration turns up.
 #
 # Note that Spine particle configs are a seventh thing again and would come from the Spine
 # corpus rather than here.
@@ -29,3 +33,29 @@ declared_from = "LICENSE"
 commercial_use = true
 onward_use = "unrestricted"
 covers = "libgdx and its bundled test assets."
+
+
+[[source]]
+id = "cocos2dx-particledesigner"
+kind = "upstream"
+repo = "cocos2d/cocos2d-x"
+ref = "v4"
+fetch = "blobs"
+include = [
+  "tests/**/Particles/**/*.plist",
+  "tests/**/*article*.plist",
+  "tests/**/*Particle*.plist",
+  "tests/**/Images/BoilingFoam.plist",   # an emitter filed under Images/
+]
+# SpriteFrame.plist sits in Particles/ but is a spritesheet, not an emitter.
+exclude_paths = ["tests/**/Particles/SpriteFrame.plist"]
+strip = "tests/"
+dest = "cocos/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "README.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled PNG artwork separately and more restrictively — grossini*.png is CC BY-NC-SA 2.0, for instance. That does not reach this pack, which takes only the text descriptors, but the descriptors REFERENCE those images by name, so anyone rendering rather than parsing them needs to read that file."

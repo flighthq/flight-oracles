@@ -22,9 +22,434 @@
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/libgdx-bmfont@81cdb9281140.txt"
+    },
+    {
+      "id": "cocos2dx-bmfont",
+      "kind": "upstream",
+      "repo": "cocos2d/cocos2d-x",
+      "ref": "v4",
+      "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "README.md",
+        "covers": "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled PNG artwork separately and more restrictively \u2014 grossini*.png is CC BY-NC-SA 2.0, for instance. That does not reach this pack, which takes only the text descriptors, but the descriptors REFERENCE those images by name, so anyone rendering rather than parsing them needs to read that file.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/cocos2dx-bmfont@7a5282a301a1.txt"
     }
   ],
   "files": [
+    {
+      "path": "cocos/cpp-tests/Resources/Images/bitmapFontTest3.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/bitmapFontTest3.fnt",
+      "sha256": "cf90bf63ae21623ed76f9ff9aa855e65c3a200a310f580ec1c845a88861bbb7f",
+      "size": 11486,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/ccb/markerfelt24shadow.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/ccb/markerfelt24shadow.fnt",
+      "sha256": "769c234b5bad78c5d003da42ea8631628a4d0c7237eefcb1fb32433a8860e42b",
+      "size": 144009,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/Roboto.bmf.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/Roboto.bmf.fnt",
+      "sha256": "46e8c3b896a0b18003e00187e3243de6cbd29b855b16db4a4226bb248dc5a0b1",
+      "size": 2112,
+      "format": {
+        "kind": "fnt",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/arial-26-en-ru.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/arial-26-en-ru.fnt",
+      "sha256": "c946407f2883aa5dfb1ecaf9701ebc219c3f1a95d60a9941a7c44792cdb3f1ba",
+      "size": 58678,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/arial-unicode-26.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/arial-unicode-26.fnt",
+      "sha256": "23106b3728e7fc3fb1bb2e9a64dcdb4d110b02cd052935bf7f1c86f140a0385d",
+      "size": 20397,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/arial16.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/arial16.fnt",
+      "sha256": "70717ffda0ce92684d96edcca256f9ccec91d0650f26af773d6e280c520db3e4",
+      "size": 22007,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/bitmapFontChinese.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/bitmapFontChinese.fnt",
+      "sha256": "ce16943f37f0af684abd41dcaa84a310db4485bfd2a9349c8f640087a128a3ee",
+      "size": 25103,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/bitmapFontTest.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/bitmapFontTest.fnt",
+      "sha256": "22050e50fefa378e0b1f54ce77aa353f51f98e95fd952f5cd94688ebabf38755",
+      "size": 11438,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/bitmapFontTest2.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/bitmapFontTest2.fnt",
+      "sha256": "26c02fdfc246832279063fdcf8b4a6492a82033e42fc6363c58b8cc779336994",
+      "size": 15085,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/bitmapFontTest3.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/bitmapFontTest3.fnt",
+      "sha256": "ff31f679f5b76b11042a3e535136477593038324976e76c021ffe133077bbecc",
+      "size": 11391,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/bitmapFontTest4.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/bitmapFontTest4.fnt",
+      "sha256": "1927fe21f6a9996006086dbcdf9d24905f8f1e9feebb12f18559dcb1f07d1e2c",
+      "size": 11439,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/bitmapFontTest5.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/bitmapFontTest5.fnt",
+      "sha256": "7d7d01526c8adc85b4013cc46cfc1779fefe9380acaebb9ad48452f1b649d955",
+      "size": 11428,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/boundsTestFont.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/boundsTestFont.fnt",
+      "sha256": "2de590d8b66baf10649b8581a3169a128e3d445808fb51e1362b6320ff47b1e4",
+      "size": 18828,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/enligsh-chinese.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/enligsh-chinese.fnt",
+      "sha256": "6f585738c4d2c8115cf00a6741fbc9ef974e0e40695f27c74d426d557a91718a",
+      "size": 13164,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/font-issue1343-hd.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/font-issue1343-hd.fnt",
+      "sha256": "52c4e593614f22f1750e72ff6b160acbb12f1265e0e8e2b86f522d77ec8deef3",
+      "size": 8715,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/font-issue1343.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/font-issue1343.fnt",
+      "sha256": "278b5375b55d6ba35f802bd14f14cc49201217e63cae8a5810e7413029e243b6",
+      "size": 8701,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/futura-48.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/futura-48.fnt",
+      "sha256": "16202f5f85df724118968e971baadb1b69d2162feb44018b9c672a01088dc816",
+      "size": 12762,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/geneva-32.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/geneva-32.fnt",
+      "sha256": "8335fa2a262db7fb33e9299c3e873a73399f75f29209910b5f4d8f4804281e19",
+      "size": 9556,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/geneva-regular-32.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/geneva-regular-32.fnt",
+      "sha256": "b4facbe59d5513d51b97e365629e4b329b7ef0095fc7e9be19a0475eed024f57",
+      "size": 9556,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/helvetica-32.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/helvetica-32.fnt",
+      "sha256": "8fd67f92ef5a14264d0233d92cb1c735892301ebe9cd317e85df3f1e945477f3",
+      "size": 9620,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/helvetica-regular-32.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/helvetica-regular-32.fnt",
+      "sha256": "10e80c1e70416e046a712ff5d2ce9ddc1a52f6b5b4d78a64e363c20004baf275",
+      "size": 9620,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/konqa32-hd.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/konqa32-hd.fnt",
+      "sha256": "a936be7afa70414f98fe31e7f5a08b8b2f6cdbb11af61dee2e1638a15c9e1a07",
+      "size": 11137,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/konqa32.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/konqa32.fnt",
+      "sha256": "cec1be46055b01aa3cbfb954912da75cf9452066cd21dd88fcb8c677a1aa66ee",
+      "size": 10992,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/larabie-16-hd.plist",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/larabie-16-hd.plist",
+      "sha256": "c31fa3ad26346d78081060607f2aad6b58aa25d8de3376da0056c5394d691f41",
+      "size": 430,
+      "format": {
+        "kind": "plist-charmap",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/larabie-16.plist",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/larabie-16.plist",
+      "sha256": "d9e68dab7ee37567203ccfb0a84d8eeca472147f5a608c5e5a44beb9b53fc24e",
+      "size": 427,
+      "format": {
+        "kind": "plist-charmap",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/markerFelt-hd.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/markerFelt-hd.fnt",
+      "sha256": "8375aa10e8e1e366393c6774b2e6d7569a38024d866c04f2b975ec751a5d33ad",
+      "size": 145460,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/markerFelt.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/markerFelt.fnt",
+      "sha256": "7dcd96b16cda1a18f78b5ed796a7f12f972c3b705fa02edc0c19b534f3003d3d",
+      "size": 145321,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/tuffy_bold_italic-charmap-hd.plist",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/tuffy_bold_italic-charmap-hd.plist",
+      "sha256": "39707c7310b497fb0d454839ac16bd589bde2833289afaf09be00e6d200931ed",
+      "size": 446,
+      "format": {
+        "kind": "plist-charmap",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/tuffy_bold_italic-charmap.plist",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/tuffy_bold_italic-charmap.plist",
+      "sha256": "5f5d14ff7bb9f149c07df0079ccc389b6fac38a28da28fb44220a6cacf7dfc31",
+      "size": 442,
+      "format": {
+        "kind": "plist-charmap",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/west_england-64.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/west_england-64.fnt",
+      "sha256": "8a344a5ec5698ebd02ff813929489d06060031ebce45d334b010bbfed6d06d78",
+      "size": 9635,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/hd/fonts/font-issue1343.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/hd/fonts/font-issue1343.fnt",
+      "sha256": "eb2d8a4c34600058661f7077bfa6b98cb1faf39ca93b6f1813136833e92e3fe3",
+      "size": 8712,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/hd/fonts/konqa32.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/hd/fonts/konqa32.fnt",
+      "sha256": "64a3dad76f571549bf6d6c1bf511c79260cf857ae913311e4f36bf26f749f236",
+      "size": 11134,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/hd/fonts/larabie-16.plist",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/hd/fonts/larabie-16.plist",
+      "sha256": "3960f69b0cb961a927b72da05d90ac5a7d56481bac88227d8e419e4061feb359",
+      "size": 427,
+      "format": {
+        "kind": "plist-charmap",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/hd/fonts/markerFelt.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/hd/fonts/markerFelt.fnt",
+      "sha256": "8375aa10e8e1e366393c6774b2e6d7569a38024d866c04f2b975ec751a5d33ad",
+      "size": 145460,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/hd/fonts/tuffy_bold_italic-charmap.plist",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/cpp-tests/Resources/hd/fonts/tuffy_bold_italic-charmap.plist",
+      "sha256": "8eeff6469230fc101c41bfb39fe6b788b8497d49f8c8b12bf5b4afb05dfdd8fd",
+      "size": 443,
+      "format": {
+        "kind": "plist-charmap",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/lua-tests/res/cocosbuilderRes/ccb/markerfelt24shadow.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/lua-tests/res/cocosbuilderRes/ccb/markerfelt24shadow.fnt",
+      "sha256": "769c234b5bad78c5d003da42ea8631628a4d0c7237eefcb1fb32433a8860e42b",
+      "size": 144009,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/fonts/bitmapFontTest3.fnt",
+      "sourceId": "cocos2dx-bmfont",
+      "upstreamPath": "tests/performance-tests/Resources/fonts/bitmapFontTest3.fnt",
+      "sha256": "ff31f679f5b76b11042a3e535136477593038324976e76c021ffe133077bbecc",
+      "size": 11391,
+      "format": {
+        "kind": "fnt",
+        "version": "text"
+      }
+    },
     {
       "path": "libgdx/extensions/gdx-tools/assets/default.fnt",
       "sourceId": "libgdx-bmfont",
@@ -137,7 +562,7 @@
     }
   ],
   "totals": {
-    "files": 10,
-    "bytes": 168728
+    "files": 47,
+    "bytes": 1259689
   }
 }

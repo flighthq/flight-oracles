@@ -52,10 +52,25 @@ DECLARATIONS_NEEDING_REVIEW = {
 }
 
 
+# Supported glob syntax is exactly ``*``, ``**`` and ``?``. Anything else is rejected rather
+# than escaped, because the failure mode of escaping is silent: a pattern containing a
+# character class was translated to a search for that class as literal text, matched nothing,
+# and excluded nothing — which looked identical to "there was nothing to exclude". That went
+# unnoticed until content-based format detection disagreed with the path-based selection.
+_UNSUPPORTED_GLOB = "[]{}!"
+
+
 def compile_globs(patterns):
     """Translate glob patterns to a regex, supporting ``**`` across separators."""
     alts = []
     for pattern in patterns:
+        bad = sorted({c for c in pattern if c in _UNSUPPORTED_GLOB})
+        if bad:
+            raise ValueError(
+                f"glob {pattern!r} uses unsupported syntax {bad} — only *, ** and ? are "
+                f"understood. These would be matched as literal characters, silently "
+                f"selecting nothing; write separate patterns instead"
+            )
         out, i = [], 0
         while i < len(pattern):
             ch = pattern[i]

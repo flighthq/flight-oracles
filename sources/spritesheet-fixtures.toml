@@ -2,9 +2,13 @@
 #
 # flight reads five atlas dialects across two packages (spritesheet-formats and
 # textureatlas-formats): libgdx, TexturePacker, Starling, Cocos plist and Aseprite.
-# This pack currently covers the libgdx dialect; the others are named in
-# docs/fixture-coverage.md and will be added as sources with usable declarations are found.
-# Each pack here starts as one source and grows — that is the point of the source-block model.
+# Two dialects covered so far: libgdx .atlas and the Cocos property-list form. TexturePacker,
+# Starling and Aseprite remain, named in docs/fixture-coverage.md.
+#
+# Only the DESCRIPTORS are taken, never the artwork they point at. A spritesheet parser is
+# exercised entirely by the descriptor — frame rectangles, rotation flags, trim offsets — and
+# the images would add weight plus, in cocos2d-x's case, a separate and more restrictive
+# artwork licence.
 
 [pack]
 name = "spritesheet-fixtures"
@@ -28,3 +32,42 @@ declared_from = "LICENSE"
 commercial_use = true
 onward_use = "unrestricted"
 covers = "libgdx and its bundled test assets."
+
+
+# ---------------------------------------------------------------------------
+# Cocos property-list spritesheets: a completely different serialisation of the same model,
+# which is exactly the kind of second dialect that catches assumptions baked into the first.
+# ---------------------------------------------------------------------------
+[[source]]
+id = "cocos2dx-plist-sheets"
+kind = "upstream"
+repo = "cocos2d/cocos2d-x"
+ref = "v4"
+fetch = "blobs"
+include = ["tests/**/*.plist"]
+# Excluded: particle emitters (by directory, and three that sit outside it), Xcode project
+# metadata, and colour-lookup tables — none of which are spritesheets. Content detection
+# caught the three strays; the naming convention alone would not have.
+exclude_paths = [
+  "tests/**/Particles/**/*.plist",
+  "tests/**/*article*.plist",
+  "tests/**/*Particle*.plist",
+  "tests/**/Images/BoilingFoam.plist",
+  "tests/**/Info.plist",
+  "tests/**/exportoptions.plist",
+  "tests/**/lookup-*.plist",
+  "tests/**/fonts/**/*charmap*.plist",   # bitmap-font charmaps -> bitmapfont-fixtures
+  "tests/**/fonts/**/larabie*.plist",    # ditto
+  "tests/**/fileLookup.plist",   # cocosbuilder path table, not an atlas
+  "tests/**/configs/*.plist",    # engine config, not an atlas
+]
+strip = "tests/"
+dest = "cocos/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "README.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled PNG artwork separately and more restrictively — grossini*.png is CC BY-NC-SA 2.0, for instance. That does not reach this pack, which takes only the text descriptors, but the descriptors REFERENCE those images by name, so anyone rendering rather than parsing them needs to read that file."

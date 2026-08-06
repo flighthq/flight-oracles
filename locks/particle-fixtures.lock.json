@@ -22,9 +22,390 @@
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/libgdx-particles@81cdb9281140.txt"
+    },
+    {
+      "id": "cocos2dx-particledesigner",
+      "kind": "upstream",
+      "repo": "cocos2d/cocos2d-x",
+      "ref": "v4",
+      "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
+      "retrieved": "2026-08-05",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "README.md",
+        "covers": "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled PNG artwork separately and more restrictively \u2014 grossini*.png is CC BY-NC-SA 2.0, for instance. That does not reach this pack, which takes only the text descriptors, but the descriptors REFERENCE those images by name, so anyone rendering rather than parsing them needs to read that file.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/cocos2dx-particledesigner@7a5282a301a1.txt"
     }
   ],
   "files": [
+    {
+      "path": "cocos/cpp-tests/Resources/ActionTimeline/Default/defaultParticle.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/ActionTimeline/Default/defaultParticle.plist",
+      "sha256": "fb1529cf5bdf0463df377519fd33e1da6b70dfa98b463efef02e8ecc53c6d4bf",
+      "size": 8129,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/ActionTimeline/Particles/Comet.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/ActionTimeline/Particles/Comet.plist",
+      "sha256": "00acdd99db4857304e180c62cb3116626de9788b152c0c92678701680a2f76db",
+      "size": 9423,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Images/BoilingFoam.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Images/BoilingFoam.plist",
+      "sha256": "ed6d404e1f0cf217251dbe6505e4e59c268a5f799e237822b358dc2718909534",
+      "size": 9216,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/BoilingFoam.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/BoilingFoam.plist",
+      "sha256": "0dc77c751357a5435367acc7ec44cf645fdad0197de1fd31a49d422ea8dd7174",
+      "size": 2628,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/BoilingFoamStar.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/BoilingFoamStar.plist",
+      "sha256": "da870e39475326a6f61677de169c1d389a02e497a77234f501d88bbbaaef8735",
+      "size": 4584,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/BurstPipe.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/BurstPipe.plist",
+      "sha256": "8ce55fbd68cd4643c4599631b1b8dcb15a35576d36d214f338d479aec2368f53",
+      "size": 2670,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/ButterFly.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/ButterFly.plist",
+      "sha256": "efcc803cc88e481a735b091008598c9ce9acaf8f74b74be9599ff1f4d896f11f",
+      "size": 2866,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/ButterFlyYFlipped.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/ButterFlyYFlipped.plist",
+      "sha256": "45e93f1c9aabd4a25b0d6315a907aadf3bd3d303b98c9e3783841f6ad5f98869",
+      "size": 2876,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/Comet.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/Comet.plist",
+      "sha256": "b545f397c8a1b67d89ac664b6e8ecba11fd9ad3120dfab1876015e8d9941cceb",
+      "size": 2670,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/ExplodingRing.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/ExplodingRing.plist",
+      "sha256": "5ebe8adc2af0cdc05d0962270590c5c35b88ba77915ea4b0e7cccb5ac95c8955",
+      "size": 2702,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/Flower.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/Flower.plist",
+      "sha256": "7d8ef55b7211a345a29450f2bf074b454af6954fb647032b9eefd29a22f96464",
+      "size": 4167,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/Galaxy.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/Galaxy.plist",
+      "sha256": "c2d7da8ace8119cbee3977f2e429abdb6540458904cbc376a6a9d7b376059f75",
+      "size": 3803,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/LavaFlow.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/LavaFlow.plist",
+      "sha256": "0b72a874814b62a98f0b3c9adfb313578411c21dc522ad9eeba6db9ae626fd4d",
+      "size": 2554,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/Phoenix.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/Phoenix.plist",
+      "sha256": "b60f53f5d8e85f7f37b29b646570da310da1b48b3bf7500f3c7541b8902dbb76",
+      "size": 2779,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/SmallSun.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/SmallSun.plist",
+      "sha256": "f3e5fcdd8b5e8716ed3d1589714fdca3baddf2c3afc565a81687199581d81d95",
+      "size": 2723,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/SpinningPeas.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/SpinningPeas.plist",
+      "sha256": "38406426c38b66e6a5a0638a5b2f1ee3fabc84fc34a40f0df665494dd63cb39d",
+      "size": 2607,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/Spiral.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/Spiral.plist",
+      "sha256": "ea72edb12794fd182012ffd91a915bccfdb9a478872961f5a1cbd748ef3cc0d1",
+      "size": 3764,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/SpookyPeas.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/SpookyPeas.plist",
+      "sha256": "815a1dbf6dd8e975ddb0f3ec95bd3e9b4dc36fcc83a17c50ad99ed49d1ee3cce",
+      "size": 2464,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/TestPremultipliedAlpha.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/TestPremultipliedAlpha.plist",
+      "sha256": "f3299120e802bbd4824c970211be864a147f95963467d56e7194c5e3077da668",
+      "size": 6854,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/Upsidedown.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/Upsidedown.plist",
+      "sha256": "ca25cd5d9af95bd41101b52fa24fae8f13cb0886184d6925eba11276a795108a",
+      "size": 6040,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/debian.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/debian.plist",
+      "sha256": "76487a88f53036cd001f3c6596dfd20e2269a4ee7a60a9664b13769f9a135b4b",
+      "size": 3802,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/Particles/lines.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/Particles/lines.plist",
+      "sha256": "bbbc54315f4079c16caf5bcf970a40eebcd4b78c6edde727d48f6a811c1f7307",
+      "size": 7293,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/hd/ActionTimeline/Default/defaultParticle.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/cpp-tests/Resources/hd/ActionTimeline/Default/defaultParticle.plist",
+      "sha256": "fb1529cf5bdf0463df377519fd33e1da6b70dfa98b463efef02e8ecc53c6d4bf",
+      "size": 8129,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Particles/BoilingFoam.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/performance-tests/Resources/Particles/BoilingFoam.plist",
+      "sha256": "00795f06066936ae21defdc7ad7d8de92bfb5490602f09989d1b00f25e6d5877",
+      "size": 9380,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Particles/Comet.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/performance-tests/Resources/Particles/Comet.plist",
+      "sha256": "00acdd99db4857304e180c62cb3116626de9788b152c0c92678701680a2f76db",
+      "size": 9423,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Particles/Flower.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/performance-tests/Resources/Particles/Flower.plist",
+      "sha256": "7d8ef55b7211a345a29450f2bf074b454af6954fb647032b9eefd29a22f96464",
+      "size": 4167,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Particles/Galaxy.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/performance-tests/Resources/Particles/Galaxy.plist",
+      "sha256": "c2d7da8ace8119cbee3977f2e429abdb6540458904cbc376a6a9d7b376059f75",
+      "size": 3803,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Particles/LavaFlow.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/performance-tests/Resources/Particles/LavaFlow.plist",
+      "sha256": "ba6e4bda22576aa6ce638136a17971adca9563bfd39f2158d6c10d5044447d9b",
+      "size": 9310,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Particles/Phoenix.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/performance-tests/Resources/Particles/Phoenix.plist",
+      "sha256": "0f23b841b0d63e23ea58bfdecca3193b9db349628cc3cfa8f615d3e6284289c9",
+      "size": 9542,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Particles/SmallSun.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/performance-tests/Resources/Particles/SmallSun.plist",
+      "sha256": "156c2a06221d2dc2a233b8f907420b1fc16f8b217ab637c111863f43901e1977",
+      "size": 9486,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Particles/SpinningPeas.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/performance-tests/Resources/Particles/SpinningPeas.plist",
+      "sha256": "1f3549427cdba272de1b57113bcbe40135f248d8ebad79595849356fc1f293da",
+      "size": 6603,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Particles/debian.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/performance-tests/Resources/Particles/debian.plist",
+      "sha256": "76487a88f53036cd001f3c6596dfd20e2269a4ee7a60a9664b13769f9a135b4b",
+      "size": 3802,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
+    {
+      "path": "cocos/performance-tests/Resources/Particles/lines.plist",
+      "sourceId": "cocos2dx-particledesigner",
+      "upstreamPath": "tests/performance-tests/Resources/Particles/lines.plist",
+      "sha256": "bbbc54315f4079c16caf5bcf970a40eebcd4b78c6edde727d48f6a811c1f7307",
+      "size": 7293,
+      "format": {
+        "kind": "plist-particle",
+        "version": null
+      }
+    },
     {
       "path": "libgdx/data/particle-animation.p",
       "sourceId": "libgdx-particles",
@@ -60,7 +441,7 @@
     }
   ],
   "totals": {
-    "files": 3,
-    "bytes": 17727
+    "files": 36,
+    "bytes": 195279
   }
 }
