@@ -39,11 +39,11 @@ suite can pin.
 | `mesh-legacy-fixtures` | 24 | 36.8 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
 | `atf-fixtures` | 14 | 8.1 MB | Adobe Texture Format — undeclared, build input only |
 | `spritesheet-fixtures` | 66 | 0.6 MB | libgdx `.atlas` texture atlas descriptors |
-| `bitmapfont-fixtures` | 47 | 1.3 MB | AngelCode BMFont `.fnt` descriptors |
+| `bitmapfont-fixtures` | 50 | 2.5 MB | AngelCode BMFont `.fnt` descriptors |
 | `text-conformance-fixtures` | 8 | 19.0 MB | **Oracles** — 614,914 Unicode conformance cases |
 | `particle-fixtures` | 36 | 0.2 MB | libgdx `.p` particle effect configs |
 
-21 packs, 21,972 files. Three packs carry expectations as well as inputs:
+21 packs, 21,975 files. Three packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place) and `gltf-generated-fixtures` (positive/negative conformance split).
 

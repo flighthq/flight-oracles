@@ -11,7 +11,7 @@
       "repo": "libgdx/libgdx",
       "ref": "master",
       "commit": "81cdb92811403f148daff195bff1da896877824c",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "Apache-2.0",
         "declaredScope": "repository-root",
@@ -29,17 +29,37 @@
       "repo": "cocos2d/cocos2d-x",
       "ref": "v4",
       "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "README.md",
-        "covers": "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled PNG artwork separately and more restrictively \u2014 grossini*.png is CC BY-NC-SA 2.0, for instance. That does not reach this pack, which takes only the text descriptors, but the descriptors REFERENCE those images by name, so anyone rendering rather than parsing them needs to read that file.",
+        "covers": "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled artwork separately and NON-UNIFORMLY \u2014 six different licences across it: grossini*.png is CC BY-NC-SA 2.0 (redistributable, so -full and -demo eligible), several tile sets are GNU GPL v2, one is Common Public License, one carries a custom Lost Garden licence, Fonts/*.ttf say 'For personal Use', and tuffy_bold_italic-charmap.png is public domain. Critically, Images/spritesheet* carries 'LICENSE: unsure... don't use them in your project' \u2014 upstream declining to vouch for the very assets a spritesheet pack would want. This pack takes only text descriptors, so none of that reaches it; recorded because the descriptors reference those images by name and anyone rendering rather than parsing must read that file first.",
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/cocos2dx-bmfont@7a5282a301a1.txt"
+    },
+    {
+      "id": "cocos2dx-charmap-texture",
+      "kind": "upstream",
+      "repo": "cocos2d/cocos2d-x",
+      "ref": "v4",
+      "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "LicenseRef-Public-Domain",
+        "declaredScope": "directory",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "licenses/LICENSE_artwork.txt",
+        "covers": "Tuffy bold italic charmap texture, from tulrich.com/fonts. licenses/LICENSE_artwork.txt lists it under SpriteSheet fonts with LICENSE: Public Domain.",
+        "concluded": "Read licenses/LICENSE_artwork.txt: this texture is listed under 'SpriteSheet fonts' with 'LICENSE: Public Domain'. Public domain carries no conditions at all, so it belongs in -permissive; there is no SPDX identifier for a third party's public-domain declaration (CC0-1.0 is a dedication, which is a different act), hence the explicit conclusion.",
+        "onwardUse": "unrestricted",
+        "permissive": true
+      },
+      "licenseSnapshot": "licenses/cocos2dx-charmap-texture@7a5282a301a1.txt"
     }
   ],
   "files": [
@@ -352,6 +372,19 @@
       }
     },
     {
+      "path": "cocos/cpp-tests/Resources/fonts/tuffy_bold_italic-charmap-hd.png",
+      "sourceId": "cocos2dx-charmap-texture",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/tuffy_bold_italic-charmap-hd.png",
+      "sha256": "4c274e894d8b47b4a80446babfa45785affbf0dfdbf4d9f7150462263d8d52e0",
+      "size": 614681,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1536,
+        "height": 2048
+      }
+    },
+    {
       "path": "cocos/cpp-tests/Resources/fonts/tuffy_bold_italic-charmap.plist",
       "sourceId": "cocos2dx-bmfont",
       "upstreamPath": "tests/cpp-tests/Resources/fonts/tuffy_bold_italic-charmap.plist",
@@ -360,6 +393,19 @@
       "format": {
         "kind": "plist-charmap",
         "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/fonts/tuffy_bold_italic-charmap.png",
+      "sourceId": "cocos2dx-charmap-texture",
+      "upstreamPath": "tests/cpp-tests/Resources/fonts/tuffy_bold_italic-charmap.png",
+      "sha256": "5e5a15f2fff0ab66e6ce058226319fd09cdfbaaaa56e1e74fe7b3ac3b748f344",
+      "size": 22986,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 768,
+        "height": 1024
       }
     },
     {
@@ -426,6 +472,19 @@
       "format": {
         "kind": "plist-charmap",
         "version": null
+      }
+    },
+    {
+      "path": "cocos/cpp-tests/Resources/hd/fonts/tuffy_bold_italic-charmap.png",
+      "sourceId": "cocos2dx-charmap-texture",
+      "upstreamPath": "tests/cpp-tests/Resources/hd/fonts/tuffy_bold_italic-charmap.png",
+      "sha256": "4c274e894d8b47b4a80446babfa45785affbf0dfdbf4d9f7150462263d8d52e0",
+      "size": 614681,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1536,
+        "height": 2048
       }
     },
     {
@@ -562,7 +621,7 @@
     }
   ],
   "totals": {
-    "files": 47,
-    "bytes": 1259689
+    "files": 50,
+    "bytes": 2512037
   }
 }

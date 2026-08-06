@@ -62,4 +62,34 @@ declared_scope = "repository-root"
 declared_from = "README.md"
 commercial_use = true
 onward_use = "unrestricted"
-covers = "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled PNG artwork separately and more restrictively — grossini*.png is CC BY-NC-SA 2.0, for instance. That does not reach this pack, which takes only the text descriptors, but the descriptors REFERENCE those images by name, so anyone rendering rather than parsing them needs to read that file."
+covers = "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled artwork separately and NON-UNIFORMLY — six different licences across it: grossini*.png is CC BY-NC-SA 2.0 (redistributable, so -full and -demo eligible), several tile sets are GNU GPL v2, one is Common Public License, one carries a custom Lost Garden licence, Fonts/*.ttf say 'For personal Use', and tuffy_bold_italic-charmap.png is public domain. Critically, Images/spritesheet* carries 'LICENSE: unsure... don't use them in your project' — upstream declining to vouch for the very assets a spritesheet pack would want. This pack takes only text descriptors, so none of that reaches it; recorded because the descriptors reference those images by name and anyone rendering rather than parsing must read that file first."
+
+
+# ---------------------------------------------------------------------------
+# The one piece of cocos2d-x artwork with a clean declaration, and the one this pack
+# actually needs: the texture its charmap plists reference by name. Public domain per
+# licenses/LICENSE_artwork.txt ("SpriteSheet fonts ... LICENSE: Public Domain"), from
+# tulrich.com/fonts. Without it the charmap descriptors parse but cannot be rendered.
+#
+# Deliberately NOT accompanied by the rest of that repository's artwork, which spans six
+# licences including one the maintainers explicitly decline to vouch for.
+# ---------------------------------------------------------------------------
+[[source]]
+id = "cocos2dx-charmap-texture"
+kind = "upstream"
+repo = "cocos2d/cocos2d-x"
+ref = "v4"
+fetch = "blobs"
+include = ["tests/**/fonts/tuffy_bold_italic-charmap*.png"]
+strip = "tests/"
+dest = "cocos/"
+
+[source.license]
+declared = "LicenseRef-Public-Domain"
+declared_scope = "directory"
+declared_from = "licenses/LICENSE_artwork.txt"
+commercial_use = true
+onward_use = "unrestricted"
+permissive = true
+concluded = "Read licenses/LICENSE_artwork.txt: this texture is listed under 'SpriteSheet fonts' with 'LICENSE: Public Domain'. Public domain carries no conditions at all, so it belongs in -permissive; there is no SPDX identifier for a third party's public-domain declaration (CC0-1.0 is a dedication, which is a different act), hence the explicit conclusion."
+covers = "Tuffy bold italic charmap texture, from tulrich.com/fonts. licenses/LICENSE_artwork.txt lists it under SpriteSheet fonts with LICENSE: Public Domain."

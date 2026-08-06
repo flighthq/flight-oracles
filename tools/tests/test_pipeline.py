@@ -426,6 +426,28 @@ class TestSelection(unittest.TestCase):
         kept, _ = pack.select(lock, "permissive")
         self.assertEqual([e["path"] for e in kept], ["b.riv"])
 
+    def test_permissive_accepts_an_explicit_conclusion(self):
+        # A hardcoded identifier list cannot recognise PngSuite's grant or a third party's
+        # public-domain declaration. Without this, the most permissive corpora we hold were
+        # silently absent from the permissive variant.
+        lock = _lock()
+        lock["sources"][0]["license"]["declared"] = "LicenseRef-PngSuite-Permissive"
+        self.assertEqual(pack.select(lock, "permissive")[0], [])
+        lock["sources"][0]["license"]["permissive"] = True
+        self.assertEqual(len(pack.select(lock, "permissive")[0]), 2)
+
+    def test_permissive_conclusion_must_be_sourced(self):
+        with self.assertRaises(ValueError):
+            spec.LicenseSpec(declared="LicenseRef-X", declared_scope="directory",
+                             permissive=True)
+        spec.LicenseSpec(declared="LicenseRef-X", declared_scope="directory",
+                         permissive=True, concluded="read the text; unconditional grant")
+
+    def test_unicode_licence_is_recognised_as_permissive(self):
+        # The oracle corpus is the most permissively licensed material here; it was being
+        # dropped from -permissive purely for lacking an entry in the identifier list.
+        self.assertIn("Unicode-3.0", pack.PERMISSIVE_DECLARED)
+
     def test_permissive_drops_copyleft_declarations(self):
         for declared in ("GPL-3.0-or-later", "MPL-2.0"):
             lock = _lock()

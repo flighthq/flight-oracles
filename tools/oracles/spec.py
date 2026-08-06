@@ -113,6 +113,10 @@ class LicenseSpec:
     prohibition: str | None = None      # verbatim clause, when redistributable is False
     # Acknowledges a DECLARATIONS_NEEDING_REVIEW entry was read and a decision taken.
     hazard_reviewed: bool = False
+    # An explicit human conclusion that the declared terms are permissive, for licences with
+    # no recognised SPDX identifier. Set only after reading the text; requires `concluded` to
+    # record what was read, so it is a conclusion on the record rather than an assertion.
+    permissive: bool = False
     # How far the material may travel once it leaves the build. Distinct from
     # `commercial_use`, which asks a different question: this one is about whether it may
     # be *deployed at all* beyond testing.
@@ -176,6 +180,11 @@ class LicenseSpec:
                 "license.redistributable = false requires license.prohibition quoting the "
                 "clause, so the reason survives without re-reading the upstream file"
             )
+        if self.permissive and not self.concluded:
+            raise ValueError(
+                "license.permissive = true requires license.concluded recording what was "
+                "read and what it was concluded to be — otherwise the claim is unsourced"
+            )
         for i, layer in enumerate(self.underlying):
             if not isinstance(layer, dict) or not layer.get("declared"):
                 raise ValueError(
@@ -217,6 +226,8 @@ class LicenseSpec:
                 out[key] = val
         if self.redistributable:
             out["onwardUse"] = self.onward_use
+        if self.permissive:
+            out["permissive"] = True
         if self.underlying:
             out["underlying"] = list(self.underlying)
         return out

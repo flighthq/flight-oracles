@@ -35,8 +35,18 @@ VARIANTS = ("full", "demo", "permissive")
 PERMISSIVE_DECLARED = {
     "MIT", "Apache-2.0", "Apache-2.0 OR MIT", "MIT OR Apache-2.0",
     "BSD-2-Clause", "BSD-3-Clause", "ISC", "Zlib", "CC0-1.0", "Unlicense",
-    "0BSD", "CC-BY-4.0",
+    "0BSD", "CC-BY-4.0", "Unicode-3.0",
 }
+
+# Deliberately NOT in the set above, and worth naming so nobody "fixes" it later:
+#
+#   SCEA                  grants distribution, but it is a bespoke corporate shared-source
+#                         licence rather than a recognised permissive one.
+#   LicenseRef-CC-BY-TM   CC-BY 4.0 *with trademark limitations* — the limitation is exactly
+#                         the kind of extra condition -permissive promises you will not meet.
+#
+# Both remain fully available in -full and -demo. The variant means "nothing here needs a
+# second thought", and each of these needs one.
 
 
 class ExclusionBreach(RuntimeError):
@@ -69,7 +79,13 @@ def _is_demo_safe(entry, source) -> bool:
 
 def _is_permissive(entry, source) -> bool:
     lic = source["license"]
-    if lic["declared"] not in PERMISSIVE_DECLARED:
+    # A hardcoded identifier list cannot recognise a licence that predates SPDX or was
+    # written for one corpus. PngSuite's README grants "permission to use, copy, modify, and
+    # distribute these images for any purpose and without fee" — plainly permissive, and
+    # plainly not mappable onto an existing identifier without inventing a claim. So a
+    # source may carry an explicit `permissive` conclusion, set only where someone read the
+    # text, rather than being silently dropped for lacking a well-known name.
+    if not (lic["declared"] in PERMISSIVE_DECLARED or lic.get("permissive") is True):
         return False
     if lic.get("commercialUse") is not True:
         return False

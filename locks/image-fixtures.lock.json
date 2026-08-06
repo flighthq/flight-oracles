@@ -11,7 +11,7 @@
       "repo": "pnggroup/libpng",
       "ref": "libpng16",
       "commit": "cae474558968f015124d7369556a4b1016276e3a",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-PngSuite-Permissive",
         "declaredScope": "file-adjacent",
@@ -19,7 +19,9 @@
         "redistributable": true,
         "declaredFrom": "contrib/pngsuite/README",
         "covers": "Copyright (c) Willem van Schaik, 1999/2011/2012; two images by Glenn Randers-Pehrson, 2012. The README grants it plainly: 'Permission to use, copy, modify, and distribute these images for any purpose and without fee is hereby granted.'",
-        "onwardUse": "unrestricted"
+        "concluded": "Read contrib/pngsuite/README: 'Permission to use, copy, modify, and distribute these images for any purpose and without fee is hereby granted.' Unconditional \u2014 no attribution requirement, no field-of-use limit, no share-alike. Functionally equivalent to a permissive licence, but not mappable onto an existing SPDX identifier without inventing a claim, so it is concluded explicitly instead.",
+        "onwardUse": "unrestricted",
+        "permissive": true
       },
       "licenseSnapshot": "licenses/pngsuite@cae474558968.txt",
       "adjacentPath": "pngsuite/README"
