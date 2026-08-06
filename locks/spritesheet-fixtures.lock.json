@@ -59,6 +59,24 @@
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/pixi-example-spritesheets@0fffdd9d18ca.txt"
+    },
+    {
+      "id": "starling-atlas-xml",
+      "kind": "upstream",
+      "repo": "Gamua/Starling-Framework",
+      "ref": "master",
+      "commit": "9d68d61b9c672fbe64aae6ec22d0bcb30dda2a86",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "BSD-2-Clause",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE.md",
+        "covers": "Starling Framework, copyright Gamua, under the Simplified BSD License stated in LICENSE.md. Demo texture atlases ship with the samples.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/starling-atlas-xml@9d68d61b9c67.txt"
     }
   ],
   "files": [
@@ -3361,10 +3379,140 @@
         "width": 256,
         "height": 64
       }
+    },
+    {
+      "path": "starling/demo_mobile/assets/textures/1x/atlas.png",
+      "sourceId": "starling-atlas-xml",
+      "upstreamPath": "samples/demo_mobile/assets/textures/1x/atlas.png",
+      "sha256": "cf86bdb70285fa275e67357c212c387eac4f039c2e5613b9fe7759561c0b85bf",
+      "size": 468122,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 788,
+        "height": 788
+      }
+    },
+    {
+      "path": "starling/demo_mobile/assets/textures/1x/atlas.xml",
+      "sourceId": "starling-atlas-xml",
+      "upstreamPath": "samples/demo_mobile/assets/textures/1x/atlas.xml",
+      "sha256": "0b1de332d6ebc8b78741ac70422617b03e0178aa1f6a566e53ad3863e6e9d5e8",
+      "size": 3139,
+      "format": {
+        "kind": "starling-atlas",
+        "version": null,
+        "imagePath": "atlas.png",
+        "regionCount": 23
+      }
+    },
+    {
+      "path": "starling/demo_mobile/assets/textures/2x/atlas.png",
+      "sourceId": "starling-atlas-xml",
+      "upstreamPath": "samples/demo_mobile/assets/textures/2x/atlas.png",
+      "sha256": "e1acba597d31c339711075685b33869d8a03b9037a94a1e1b46bee7bb3947e65",
+      "size": 1300126,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1568,
+        "height": 1568
+      }
+    },
+    {
+      "path": "starling/demo_mobile/assets/textures/2x/atlas.xml",
+      "sourceId": "starling-atlas-xml",
+      "upstreamPath": "samples/demo_mobile/assets/textures/2x/atlas.xml",
+      "sha256": "03b655fa5cc635a48dcbfff77a8ccab01d332b9b4a5a14d7234f910b8f88a32b",
+      "size": 3153,
+      "format": {
+        "kind": "starling-atlas",
+        "version": null,
+        "imagePath": "atlas.png",
+        "regionCount": 23
+      }
+    },
+    {
+      "path": "starling/scaffold_mobile/assets/textures/1x/atlas.png",
+      "sourceId": "starling-atlas-xml",
+      "upstreamPath": "samples/scaffold_mobile/assets/textures/1x/atlas.png",
+      "sha256": "34821df08ed101f294af1c80e14dc2e83b2ce9fabfc3860f2a6fac43d1e77bbc",
+      "size": 34785,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 307,
+        "height": 146
+      }
+    },
+    {
+      "path": "starling/scaffold_mobile/assets/textures/1x/atlas.xml",
+      "sourceId": "starling-atlas-xml",
+      "upstreamPath": "samples/scaffold_mobile/assets/textures/1x/atlas.xml",
+      "sha256": "ddea2cc185460be8c3bb1d7fc794a2f9467424c57209f51dc749051fb50b40f7",
+      "size": 475,
+      "format": {
+        "kind": "starling-atlas",
+        "version": null,
+        "imagePath": "atlas.png",
+        "regionCount": 2
+      }
+    },
+    {
+      "path": "starling/scaffold_mobile/assets/textures/1x/logo.png",
+      "sourceId": "starling-atlas-xml",
+      "upstreamPath": "samples/scaffold_mobile/assets/textures/1x/logo.png",
+      "sha256": "1638c600607658a287d28ee49ee1d087c3a904e8e123d543f212413ea5be6fb2",
+      "size": 3071,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 150,
+        "height": 36
+      }
+    },
+    {
+      "path": "starling/scaffold_mobile/assets/textures/2x/atlas.png",
+      "sourceId": "starling-atlas-xml",
+      "upstreamPath": "samples/scaffold_mobile/assets/textures/2x/atlas.png",
+      "sha256": "b69c3db7a11fec7e37df0375160a35a576b8fd0cccf3e60ab70250dc61408f21",
+      "size": 97183,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 608,
+        "height": 287
+      }
+    },
+    {
+      "path": "starling/scaffold_mobile/assets/textures/2x/atlas.xml",
+      "sourceId": "starling-atlas-xml",
+      "upstreamPath": "samples/scaffold_mobile/assets/textures/2x/atlas.xml",
+      "sha256": "6ad7065c13bfb2ef5f642c466be66617ca7feb76ab6dbadc7b053a6d5f0b7474",
+      "size": 475,
+      "format": {
+        "kind": "starling-atlas",
+        "version": null,
+        "imagePath": "atlas.png",
+        "regionCount": 2
+      }
+    },
+    {
+      "path": "starling/scaffold_mobile/assets/textures/2x/logo.png",
+      "sourceId": "starling-atlas-xml",
+      "upstreamPath": "samples/scaffold_mobile/assets/textures/2x/logo.png",
+      "sha256": "60f2d504813575f5ab77c5bb845ef34819b883e50f43c5a7cafa26fc2f96c15e",
+      "size": 5809,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 300,
+        "height": 72
+      }
     }
   ],
   "totals": {
-    "files": 270,
-    "bytes": 19462455
+    "files": 280,
+    "bytes": 21378793
   }
 }

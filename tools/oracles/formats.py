@@ -291,12 +291,46 @@ def _tiled_json(data: bytes, name: str):
 
 
 def _bmfont(data: bytes, name: str):
-    """AngelCode BMFont, text serialisation: starts with an `info face=...` line."""
-    if not name.lower().endswith(".fnt"):
-        return None
-    if data[:4].lower() != b"info":
+    """AngelCode BMFont in any of its three serialisations.
+
+    All three routinely carry the .fnt extension, so the encoding has to come from the
+    bytes. Reporting them all as "fnt" would hide the one fact that matters here: this
+    corpus holds the SAME font in text and XML form, and the point of having both is
+    proving the two readers agree.
+    """
+    lowered = name.lower()
+    head = data[:64].lstrip()
+    if head.startswith(b"BMF"):
+        return FormatInfo(kind="fnt", version="binary", encoding="binary")
+    # The XML form must be identified by its ROOT ELEMENT, not by looking like XML. An
+    # earlier version keyed off a leading "<?xml" and promptly relabelled 52 Cocos property
+    # lists as bitmap fonts — every XML document starts that way.
+    if b"<font" in data[:512] and (b"<chars" in data[:4096] or b"<pages" in data[:4096]
+                                   or lowered.endswith(".fnt")):
+        return FormatInfo(kind="fnt", version="xml", encoding="xml")
+    if head[:4].lower() == b"info" and lowered.endswith(".fnt"):
+        return FormatInfo(kind="fnt", version="text", encoding="text")
+    if lowered.endswith(".fnt"):
         return FormatInfo(kind="fnt", version=None)
-    return FormatInfo(kind="fnt", version="text")
+    return None
+
+
+def _bmfont_json(data: bytes, name: str):
+    """The JSON serialisation of the same model: chars plus info/common."""
+    if not name.lower().endswith(".json"):
+        return None
+    try:
+        doc = json.loads(data)
+    except (ValueError, UnicodeDecodeError):
+        return None
+    if not isinstance(doc, dict) or "chars" not in doc:
+        return None
+    if not any(k in doc for k in ("info", "common", "pages")):
+        return None
+    info = FormatInfo(kind="fnt", version="json", encoding="json")
+    if isinstance(doc.get("chars"), list):
+        info["glyphCount"] = len(doc["chars"])
+    return info
 
 
 def _libgdx_atlas(data: bytes, name: str):
@@ -400,6 +434,18 @@ def _collada(data: bytes, name: str):
     return FormatInfo(kind="collada", version=match.group(1).decode() if match else None)
 
 
+def _starling_atlas(data: bytes, name: str):
+    """Starling/Sparrow texture atlas: <TextureAtlas imagePath=..><SubTexture ../></>."""
+    if not name.lower().endswith(".xml") or b"<TextureAtlas" not in data[:512]:
+        return None
+    info = FormatInfo(kind="starling-atlas", version=None)
+    image = re.search(rb'<TextureAtlas[^>]*\simagePath="([^"]+)"', data[:1024])
+    if image:
+        info["imagePath"] = image.group(1).decode("utf-8", "replace")
+    info["regionCount"] = data.count(b"<SubTexture")
+    return info
+
+
 def _pex(data: bytes, name: str):
     """Starling/ParticleDesigner PEX: the emitter model serialised as XML."""
     if not name.lower().endswith(".pex") and b"<particleEmitterConfig" not in data[:512]:
@@ -475,7 +521,9 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
         if info is not None:
             return info
     for probe in (_dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
-                  _ldtk, _effekseer, _frames_meta_sheet, _bvh, _stl_ply, _fbx,
+                  _ldtk, _effekseer, _bmfont_json, _frames_meta_sheet, _bvh,
+                  _starling_atlas,
+                  _stl_ply, _fbx,
                   _pex,
                   _collada,
                   _libgdx_atlas, _spine_skel, _spine_atlas, _obj_mtl):

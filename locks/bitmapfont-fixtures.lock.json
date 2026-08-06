@@ -2,7 +2,8 @@
   "pack": {
     "name": "bitmapfont-fixtures",
     "kind": "fixtures",
-    "summary": "AngelCode BMFont descriptors \u2014 the text .fnt serialisation."
+    "summary": "AngelCode BMFont descriptors \u2014 the text .fnt serialisation.",
+    "mergeGroup": "cocos2dx"
   },
   "sources": [
     {
@@ -60,9 +61,112 @@
         "permissive": true
       },
       "licenseSnapshot": "licenses/cocos2dx-charmap-texture@7a5282a301a1.txt"
+    },
+    {
+      "id": "bmfont2json-tests",
+      "kind": "upstream",
+      "repo": "mattdesl/bmfont2json",
+      "ref": "master",
+      "commit": "c9b3ec7016eb96f76c16573639e9bd9d7e38ba41",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "package.json",
+        "covers": "bmfont2json by Matt DesLauriers. Test fixtures for converting BMFont output between serialisations.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/bmfont2json-tests@c9b3ec7016eb.txt"
+    },
+    {
+      "id": "phaser-bmfont-generator",
+      "kind": "upstream",
+      "repo": "stephanvermeire/phaser-bitmapfont-generator",
+      "ref": "master",
+      "commit": "e4946fd315d865b2e9412c3494a13f11e1271a16",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "package.json",
+        "covers": "phaser-bitmapfont-generator by Stephan Vermeire.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/phaser-bmfont-generator@e4946fd315d8.txt"
+    },
+    {
+      "id": "unity-bitmapfont-samples",
+      "kind": "upstream",
+      "repo": "litefeel/Unity-BitmapFontImporter",
+      "ref": "upm",
+      "commit": "e378ac797b64211213d17ae18e94162c6ecc366e",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "package.json",
+        "covers": "Unity-BitmapFontImporter by litefeel. Sample fonts shipped with the importer.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/unity-bitmapfont-samples@e378ac797b64.txt"
     }
   ],
   "files": [
+    {
+      "path": "bmfont2json/multipage/Nexa Light-32.fnt",
+      "sourceId": "bmfont2json-tests",
+      "upstreamPath": "test-files/multipage/Nexa Light-32.fnt",
+      "sha256": "7f26b6f07ff3a0d558d558d430b34399f6c4e7369a4519c8994e0c118bce5080",
+      "size": 28744,
+      "format": {
+        "kind": "fnt",
+        "version": "text",
+        "encoding": "text"
+      }
+    },
+    {
+      "path": "bmfont2json/txt/Nexa Light-32.fnt",
+      "sourceId": "bmfont2json-tests",
+      "upstreamPath": "test-files/txt/Nexa Light-32.fnt",
+      "sha256": "9be4176a08eeab046d26360c748807b4296ecbf4057c6dc9553f0dbbff992852",
+      "size": 28715,
+      "format": {
+        "kind": "fnt",
+        "version": "text",
+        "encoding": "text"
+      }
+    },
+    {
+      "path": "bmfont2json/txt/Test.json",
+      "sourceId": "bmfont2json-tests",
+      "upstreamPath": "test-files/txt/Test.json",
+      "sha256": "93d1442eabaf29e0b8868c11e01f29c26fe38547da3a10d0ba1aa1755c24b675",
+      "size": 28553,
+      "format": {
+        "kind": "fnt",
+        "version": "json",
+        "encoding": "json",
+        "glyphCount": 96
+      }
+    },
+    {
+      "path": "bmfont2json/xml/Nexa Light-32.fnt",
+      "sourceId": "bmfont2json-tests",
+      "upstreamPath": "test-files/xml/Nexa Light-32.fnt",
+      "sha256": "822b525fd4dd8dfa4b392e919cfcdbb52ca09bcc91fae679720ac7a627cf00f0",
+      "size": 35341,
+      "format": {
+        "kind": "fnt",
+        "version": "xml",
+        "encoding": "xml"
+      }
+    },
     {
       "path": "cocos/cpp-tests/Resources/Images/bitmapFontTest3.fnt",
       "sourceId": "cocos2dx-bmfont",
@@ -71,7 +175,8 @@
       "size": 11486,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -82,7 +187,8 @@
       "size": 144009,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -93,7 +199,8 @@
       "size": 2112,
       "format": {
         "kind": "fnt",
-        "version": null
+        "version": "binary",
+        "encoding": "binary"
       }
     },
     {
@@ -104,7 +211,8 @@
       "size": 58678,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -115,7 +223,8 @@
       "size": 20397,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -126,7 +235,8 @@
       "size": 22007,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -137,7 +247,8 @@
       "size": 25103,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -148,7 +259,8 @@
       "size": 11438,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -159,7 +271,8 @@
       "size": 15085,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -170,7 +283,8 @@
       "size": 11391,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -181,7 +295,8 @@
       "size": 11439,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -192,7 +307,8 @@
       "size": 11428,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -203,7 +319,8 @@
       "size": 18828,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -214,7 +331,8 @@
       "size": 13164,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -225,7 +343,8 @@
       "size": 8715,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -236,7 +355,8 @@
       "size": 8701,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -247,7 +367,8 @@
       "size": 12762,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -258,7 +379,8 @@
       "size": 9556,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -269,7 +391,8 @@
       "size": 9556,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -280,7 +403,8 @@
       "size": 9620,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -291,7 +415,8 @@
       "size": 9620,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -302,7 +427,8 @@
       "size": 11137,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -313,7 +439,8 @@
       "size": 10992,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -346,7 +473,8 @@
       "size": 145460,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -357,7 +485,8 @@
       "size": 145321,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -416,7 +545,8 @@
       "size": 9635,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -427,7 +557,8 @@
       "size": 8712,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -438,7 +569,8 @@
       "size": 11134,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -460,7 +592,8 @@
       "size": 145460,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -495,7 +628,8 @@
       "size": 144009,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -506,7 +640,8 @@
       "size": 11391,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -517,7 +652,8 @@
       "size": 11628,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -737,7 +873,8 @@
       "size": 11628,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -787,7 +924,8 @@
       "size": 15633,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -1860,7 +1998,8 @@
       "size": 11292,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -1897,7 +2036,8 @@
       "size": 12655,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -1921,7 +2061,8 @@
       "size": 12290,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -2421,7 +2562,8 @@
       "size": 26069,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -2934,7 +3076,8 @@
       "size": 29269,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -2958,7 +3101,8 @@
       "size": 19269,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -2982,7 +3126,8 @@
       "size": 18995,
       "format": {
         "kind": "fnt",
-        "version": "text"
+        "version": "text",
+        "encoding": "text"
       }
     },
     {
@@ -3010,10 +3155,110 @@
         "width": 256,
         "height": 64
       }
+    },
+    {
+      "path": "phaser/mydir/myBitmapfont.xml",
+      "sourceId": "phaser-bmfont-generator",
+      "upstreamPath": "example/mydir/myBitmapfont.xml",
+      "sha256": "a1f35c6c4f8c63e4422c0cfab73bef59cc715310a30277d9af1d4261e47e35fa",
+      "size": 753,
+      "format": {
+        "kind": "fnt",
+        "version": "xml",
+        "encoding": "xml"
+      }
+    },
+    {
+      "path": "unity/Sample/Font1/font1.fnt",
+      "sourceId": "unity-bitmapfont-samples",
+      "upstreamPath": "Samples~/Sample/Font1/font1.fnt",
+      "sha256": "b2794bd2176484e57c478a5fa664526e328a1f1df7777b229af55b0c0672fd71",
+      "size": 11012,
+      "format": {
+        "kind": "fnt",
+        "version": "xml",
+        "encoding": "xml"
+      }
+    },
+    {
+      "path": "unity/Sample/Font1/font1.png",
+      "sourceId": "unity-bitmapfont-samples",
+      "upstreamPath": "Samples~/Sample/Font1/font1.png",
+      "sha256": "f3a4bb7c2fdea419f8857d67c6e36f24d25d00a6851d43ec222a05c49f53f12f",
+      "size": 69586,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 337,
+        "height": 512
+      }
+    },
+    {
+      "path": "unity/Sample/Font2/font2.fnt",
+      "sourceId": "unity-bitmapfont-samples",
+      "upstreamPath": "Samples~/Sample/Font2/font2.fnt",
+      "sha256": "62110fdd9e5e081eb63f6bb25669ad537b2e89e87f57a6e11b019267b1404780",
+      "size": 8263,
+      "format": {
+        "kind": "fnt",
+        "version": "text",
+        "encoding": "text"
+      }
+    },
+    {
+      "path": "unity/Sample/Font2/font2.png",
+      "sourceId": "unity-bitmapfont-samples",
+      "upstreamPath": "Samples~/Sample/Font2/font2.png",
+      "sha256": "2050c19ff018330a6fba97174189d3ae18a4e691c35c5a1bbcfeebd7d4681a74",
+      "size": 61925,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 337,
+        "height": 512
+      }
+    },
+    {
+      "path": "unity/Sample/Font3/font3.fnt",
+      "sourceId": "unity-bitmapfont-samples",
+      "upstreamPath": "Samples~/Sample/Font3/font3.fnt",
+      "sha256": "1ed53b52672b61d7538c36238b512f7be26630b9c48fab269a233141dea0d961",
+      "size": 16272,
+      "format": {
+        "kind": "fnt",
+        "version": "xml",
+        "encoding": "xml"
+      }
+    },
+    {
+      "path": "unity/Sample/Font3/font3_0.png",
+      "sourceId": "unity-bitmapfont-samples",
+      "upstreamPath": "Samples~/Sample/Font3/font3_0.png",
+      "sha256": "7970c4a5ddbcdaad87b0f7ec41acb4701bb861111bb25163ebb878a125e73782",
+      "size": 20083,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "unity/Sample/Font3/font3_1.png",
+      "sourceId": "unity-bitmapfont-samples",
+      "upstreamPath": "Samples~/Sample/Font3/font3_1.png",
+      "sha256": "b3fd5292af5b62e03074ecc9e76e3b2032072ee1c8636c171a277494f9d9cbfb",
+      "size": 7557,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
     }
   ],
   "totals": {
-    "files": 240,
-    "bytes": 21354985
+    "files": 252,
+    "bytes": 21671789
   }
 }

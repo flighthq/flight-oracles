@@ -73,6 +73,8 @@ def extract(name: str, data: bytes):
             for key in ("image", "source"):
                 if isinstance(tileset, dict) and tileset.get(key):
                     yield tileset[key]
+    elif lowered.endswith(".xml"):
+        yield from re.findall(r'<TextureAtlas[^>]*\simagePath="([^"]+)"', text)
     elif lowered.endswith(".pex"):
         yield from re.findall(r'<texture\s+name="([^"]+)"', text)
     elif lowered.endswith(".obj"):

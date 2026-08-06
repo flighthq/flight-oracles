@@ -2,8 +2,14 @@
 #
 # flight reads five atlas dialects across two packages (spritesheet-formats and
 # textureatlas-formats): libgdx, TexturePacker, Starling, Cocos plist and Aseprite.
-# Two dialects covered so far: libgdx .atlas and the Cocos property-list form. TexturePacker,
-# Starling and Aseprite remain, named in docs/fixture-coverage.md.
+# Four dialects covered: libgdx .atlas, the Cocos property list, the frames+meta JSON that
+# TexturePacker and Aseprite both emit, and Starling's SubTexture XML.
+#
+# Worth recording, because it looked like a gap that was not one: TexturePacker has no
+# "native" output format of its own. It is an exporter that emits whichever framework format
+# you ask for, and texturePackerParse reads the frames+meta JSON — so that dialect was
+# already covered. The CodeAndWeb example repositories ship .tps PROJECT files plus outputs
+# in other frameworks' formats, which is a different thing from a corpus.
 #
 # Only the DESCRIPTORS are taken, never the artwork they point at. A spritesheet parser is
 # exercised entirely by the descriptor — frame rectangles, rotation flags, trim offsets — and
@@ -110,3 +116,26 @@ declared_from = "LICENSE"
 commercial_use = true
 onward_use = "unrestricted"
 covers = "PixiJS particle-emitter example assets."
+
+# ---------------------------------------------------------------------------
+# Starling's SubTexture XML, from the framework's own demo assets — and at two scale
+# factors, 1x and 2x, which is how Starling ships resolution variants. Same atlas, different
+# density, so a reader that hardcodes assumptions about page size has somewhere to fail.
+# ---------------------------------------------------------------------------
+[[source]]
+id = "starling-atlas-xml"
+kind = "upstream"
+repo = "Gamua/Starling-Framework"
+ref = "master"
+fetch = "blobs"
+include = ["samples/**/assets/textures/**/*.xml", "samples/**/assets/textures/**/*.png"]
+strip = "samples/"
+dest = "starling/"
+
+[source.license]
+declared = "BSD-2-Clause"
+declared_scope = "repository-root"
+declared_from = "LICENSE.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Starling Framework, copyright Gamua, under the Simplified BSD License stated in LICENSE.md. Demo texture atlases ship with the samples."

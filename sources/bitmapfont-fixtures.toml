@@ -2,7 +2,7 @@
 #
 # flight's bitmapfont-formats reads three serialisations of the same model: bitmapFontFnt
 # (the original text .fnt), bitmapFontXml and bitmapFontJson. Both sources here ship the text
-# form; the XML and JSON serialisations still need a corpus.
+# form; bmfont2json below supplies the XML and JSON ones, so all three are now covered.
 #
 # Two producers rather than one on purpose. libgdx and cocos2d-x emit .fnt through different
 # toolchains, and a parser written against a single producer's output tends to absorb its
@@ -106,3 +106,72 @@ onward_use = "unrestricted"
 permissive = true
 concluded = "Read licenses/LICENSE_artwork.txt: this texture is listed under 'SpriteSheet fonts' with 'LICENSE: Public Domain'. Public domain carries no conditions at all, so it belongs in -permissive; there is no SPDX identifier for a third party's public-domain declaration (CC0-1.0 is a dedication, which is a different act), hence the explicit conclusion."
 covers = "Tuffy bold italic charmap texture, from tulrich.com/fonts. licenses/LICENSE_artwork.txt lists it under SpriteSheet fonts with LICENSE: Public Domain."
+
+# ---------------------------------------------------------------------------
+# bmfont2json's own test files — the single best source for this package, because it holds
+# THE SAME FONT in the text and XML serialisations side by side, plus a JSON conversion and
+# a multi-page case.
+#
+# That pairing is what makes it valuable: bitmapFontFnt, bitmapFontXml and bitmapFontJson are
+# three readers of one model, and the only way to prove they agree is to feed them the same
+# font in each form and compare. A corpus of unrelated fonts cannot do that.
+#
+# Multi-page matters separately: a font whose glyphs span several texture pages is where
+# page-index handling goes wrong, and single-page fonts never exercise it.
+# ---------------------------------------------------------------------------
+[[source]]
+id = "bmfont2json-tests"
+kind = "upstream"
+repo = "mattdesl/bmfont2json"
+ref = "master"
+fetch = "blobs"
+include = ["test-files/**/*.fnt", "test-files/**/*.json", "test-files/**/*.xml",
+           "test-files/**/*.png"]
+strip = "test-files/"
+dest = "bmfont2json/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "package.json"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "bmfont2json by Matt DesLauriers. Test fixtures for converting BMFont output between serialisations."
+
+# A third producer for the XML serialisation, from a different toolchain.
+[[source]]
+id = "phaser-bmfont-generator"
+kind = "upstream"
+repo = "stephanvermeire/phaser-bitmapfont-generator"
+ref = "master"
+fetch = "blobs"
+include = ["example/**/*.xml", "example/**/*.png", "example/**/*.fnt"]
+strip = "example/"
+dest = "phaser/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "package.json"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "phaser-bitmapfont-generator by Stephan Vermeire."
+
+# A fourth producer, via Unity's importer samples — text .fnt with their texture pages.
+[[source]]
+id = "unity-bitmapfont-samples"
+kind = "upstream"
+repo = "litefeel/Unity-BitmapFontImporter"
+ref = "upm"
+fetch = "blobs"
+include = ["Samples~/**/*.fnt", "Samples~/**/*.png"]
+strip = "Samples~/"
+dest = "unity/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "package.json"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Unity-BitmapFontImporter by litefeel. Sample fonts shipped with the importer."
