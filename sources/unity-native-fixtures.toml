@@ -51,7 +51,6 @@ id = "particleeffect-for-ugui"
 kind = "upstream"
 repo = "mob-sakai/ParticleEffectForUGUI"
 ref = "main"
-fetch = "blobs"
 include = ["**/*.prefab", "**/*.unity"]
 strip = ""
 dest = "ugui/"

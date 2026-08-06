@@ -20,6 +20,10 @@ env:
 jobs:
   release:
     runs-on: ubuntu-latest
+    # A cold reconstruction is thousands of requests and roughly 2 GB of downloads. The
+    # default 6-hour limit is ample, but an explicit bound makes a hung fetch fail visibly
+    # rather than burning the budget.
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -39,7 +43,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .cache
-          key: oracles-tarballs-${{ hashFiles('locks/*.lock.json') }}
+          key: oracles-${{ hashFiles('locks/*.lock.json') }}
+          restore-keys: oracles-
 
       # Reconstruct vendor/ from the locked commits. Reproducible by construction: the
       # lock pins commit and SHA-256 for every file, and `verify` fails if either moved.

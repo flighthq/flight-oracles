@@ -18,7 +18,6 @@ id = "pngsuite"
 kind = "upstream"
 repo = "pnggroup/libpng"
 ref = "libpng16"
-fetch = "blobs"
 include = ["contrib/pngsuite/**/*.png"]
 strip = "contrib/pngsuite/"
 dest = "pngsuite/"

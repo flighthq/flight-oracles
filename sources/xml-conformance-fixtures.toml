@@ -47,7 +47,6 @@ id = "libxml2-tests"
 kind = "upstream"
 repo = "GNOME/libxml2"
 ref = "master"
-fetch = "blobs"
 include = [
   "test/errors/**", "test/valid/**", "test/VC/**", "test/VCM/**",
   "test/recurse/**", "test/XPath/**", "test/XInclude/**", "test/c14n/**",
@@ -73,7 +72,6 @@ id = "libxml2-results"
 kind = "upstream"
 repo = "GNOME/libxml2"
 ref = "master"
-fetch = "blobs"
 include = [
   "result/errors/**", "result/valid/**", "result/VC/**", "result/VCM/**",
   "result/recurse/**", "result/XPath/**", "result/XInclude/**", "result/c14n/**",

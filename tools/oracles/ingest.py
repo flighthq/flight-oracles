@@ -25,6 +25,7 @@ import os
 import subprocess
 import sys
 import tarfile
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -187,6 +188,36 @@ def _lfs_fetch(repo: str, oid: str, size: int) -> bytes:
     return data
 
 
+def _fetch_with_retry(req, attempts: int = 5):
+    """Fetch with backoff, honouring Retry-After.
+
+    A cold run issues thousands of raw.githubusercontent requests. That endpoint throttles,
+    and it is not covered by the REST API's rate-limit headers, so the first sign of trouble
+    is a 429 or 403 mid-run. Without this the whole ingest dies partway and leaves a
+    half-populated vendor tree — which then fails `verify` for a reason that has nothing to
+    do with the corpus.
+    """
+    delay = 2.0
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                return resp.read()
+        except urllib.error.HTTPError as exc:
+            if exc.code not in (403, 429, 500, 502, 503, 504) or attempt == attempts - 1:
+                raise
+            wait = float(exc.headers.get("Retry-After") or 0) or delay
+            _log(f"    {exc.code} — retrying in {wait:.0f}s ({attempt + 1}/{attempts})")
+            time.sleep(min(wait, 60))
+            delay *= 2
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            if attempt == attempts - 1:
+                raise
+            _log(f"    {exc} — retrying in {delay:.0f}s ({attempt + 1}/{attempts})")
+            time.sleep(delay)
+            delay *= 2
+    raise RuntimeError("unreachable")
+
+
 def _blob_cached(repo: str, commit: str, path: str, blob_sha: str) -> bytes:
     """Fetch one file's bytes, cached by its git blob SHA.
 
@@ -199,8 +230,7 @@ def _blob_cached(repo: str, commit: str, path: str, blob_sha: str) -> bytes:
     if cached.exists():
         return cached.read_bytes()
     url = f"https://raw.githubusercontent.com/{repo}/{commit}/{urllib.parse.quote(path)}"
-    with urllib.request.urlopen(_request(url)) as resp:
-        data = resp.read()
+    data = _fetch_with_retry(_request(url))
     pointer = _lfs_pointer(data)
     if pointer is not None:
         data = _lfs_fetch(repo, *pointer)
@@ -219,7 +249,9 @@ def _iter_blobs(repo: str, commit: str, wanted: list):
     def one(entry):
         return entry["path"], _blob_cached(repo, commit, entry["path"], entry["sha"])
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+    # Six rather than twelve: the ceiling here is the host's tolerance, not our CPU,
+    # and halving concurrency costs little while making a throttle far less likely.
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
         yield from pool.map(one, wanted)
 
 

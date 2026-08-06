@@ -4,9 +4,26 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 4 * * 2"   # Tuesdays, offset from the drift check
 
+env:
+  PYTHONPATH: tools
+
+# Two jobs with deliberately different costs.
+#
+# `check` touches no network at all: unit tests plus spec validation. It runs on every push
+# and pull request, finishes in seconds, and cannot fail for reasons outside this repository.
+# Most changes here are to specs and tooling, and that is exactly what it covers.
+#
+# `corpus` reconstructs every pack from its pinned commits. A cold run is thousands of
+# requests and roughly 2 GB of downloads, so running it per-push would be slow, would hammer
+# upstreams that owe us nothing, and would make the build red whenever GitHub throttles.
+# It runs on a schedule and on demand instead, which is the right cadence for catching
+# upstream drift — the thing it actually detects.
 jobs:
-  test:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,8 +34,8 @@ jobs:
       - name: Unit tests
         run: python3 -m unittest discover -s tools/tests -v
 
-      # Every spec must parse and validate even when its corpus has not been ingested.
-      # A malformed declaration should fail here, not at release time.
+      # Every spec must parse and validate even when its corpus is not present. A malformed
+      # declaration should fail here, in seconds, not at release time.
       - name: Validate source specs
         run: |
           python3 - <<'PY'
@@ -27,47 +44,52 @@ jobs:
           sys.path.insert(0, "tools")
           from oracles import spec
           specs = spec.load_all(Path("sources"))
+          blocked = tarball = blobs = 0
           for s in specs:
-              nonredist = [x.id for x in s.sources if not x.license.redistributable]
-              print(f"{s.name}: {len(s.sources)} source(s)"
-                    + (f", {len(nonredist)} non-redistributable: {nonredist}" if nonredist else ""))
-          print(f"OK — {len(specs)} spec(s) valid")
+              for src in s.sources:
+                  if not src.license.redistributable:
+                      blocked += 1
+                  elif src.kind == "upstream":
+                      tarball += src.fetch == "tarball"
+                      blobs += src.fetch == "blobs"
+          print(f"OK — {len(specs)} specs, {tarball} tarball sources, {blobs} blob sources, "
+                f"{blocked} not redistributable")
           PY
 
-  build:
+  corpus:
+    # Never on push: see the note above. Schedule plus manual dispatch.
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Cache upstream tarballs
+      # Keyed on the locks: unchanged pins mean the same bytes, so a hit skips the download
+      # entirely. Restore-keys let a partial cache still save most of the work.
+      - name: Cache upstream downloads
         uses: actions/cache@v4
         with:
           path: .cache
-          key: oracles-tarballs-${{ hashFiles('locks/*.lock.json') }}
+          key: oracles-${{ hashFiles('locks/*.lock.json') }}
+          restore-keys: oracles-
 
-      # Rebuild vendor/ from the pinned commits and prove it matches the lock byte for
-      # byte. If an upstream ever serves different content at a pinned SHA, this is where
-      # it surfaces.
-      - name: Ingest from pinned commits
+      - name: Reconstruct every pack from its pinned commits
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 -m oracles ingest
-        working-directory: .
-        # PYTHONPATH so `oracles` resolves without installation.
-      - name: Verify vendored bytes against locks
+
+      # Hashes, merge groups, cross-pack pin consistency and descriptor references.
+      - name: Verify
         run: python3 -m oracles verify
 
-      - name: Build archives (dry run)
+      - name: Build archives
         run: python3 -m oracles pack --version ci-${{ github.sha }}
 
       - uses: actions/upload-artifact@v4
         with:
           name: archives
-          path: dist/
+          path: dist/index.json
           retention-days: 7
-
-env:
-  PYTHONPATH: tools

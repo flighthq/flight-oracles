@@ -25,7 +25,6 @@ id = "atf-encoder-units"
 kind = "upstream"
 repo = "plepers/ATF-Encoder"
 ref = "master"
-fetch = "blobs"
 include = ["unit/assets/**/*.atf"]
 strip = "unit/assets/"
 dest = "units/"
