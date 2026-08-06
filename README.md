@@ -97,7 +97,7 @@ export PYTHONPATH=tools
 python3 -m oracles ingest [pack…]           # fetch at pinned commits, vendor, write locks
 python3 -m oracles ingest <pack> --update   # re-resolve refs and adopt newer upstream
 python3 -m oracles verify [pack…]           # re-hash vendored bytes against the locks
-python3 -m oracles pack --version v0.1.0    # build dist/ archives + index.json + SHA256SUMS
+python3 -m oracles pack --version 0.1.0     # build dist/ archives + index.json + SHA256SUMS
 python3 -m oracles drift [pack…]            # re-resolve pins, report divergence
 python3 -m oracles show [pack…]             # summarise what is locked
 
@@ -171,7 +171,7 @@ derived from flight's decode surface.
 
 Merging to `main` builds nothing. It runs `check` only — unit tests and spec validation, no
 network, a few seconds. Archives are produced by the `release` workflow, which triggers on a
-tag matching `v*`.
+version tag — this project uses the bare `0.1.0` form.
 
 Do it in three steps rather than one, because the first cold reconstruction is the only part
 that has never run:
@@ -184,8 +184,8 @@ that has never run:
    this is where throttling or a vanished upstream will show up — harmlessly, with no tag
    already in existence to unpick.
 
-3. **Tag.** `git tag v0.1.0 && git push origin v0.1.0`. The tag name becomes the version in
-   every filename, so `v0.1.0` yields `spine-fixtures-full-v0.1.0.tar.gz`. The workflow
+3. **Tag.** `git tag 0.1.0 && git push origin 0.1.0`. The tag name becomes the version in
+   every filename, so `0.1.0` yields `spine-fixtures-full-0.1.0.tar.gz`. The workflow
    ingests, verifies, builds all three variants of every pack, attaches build provenance
    attestation, and publishes the release with `index.json` and `SHA256SUMS`.
 

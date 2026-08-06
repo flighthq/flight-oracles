@@ -2,11 +2,16 @@ name: release
 
 on:
   push:
-    tags: ["v*"]
+    # This project tags as `0.1.0`, not `v0.1.0`. Both patterns are accepted anyway: the
+    # failure mode of a too-narrow filter is a tag that silently builds nothing, which reads
+    # as a broken workflow rather than a mismatched pattern.
+    tags:
+      - "[0-9]*"
+      - "v[0-9]*"
   workflow_dispatch:
     inputs:
       version:
-        description: "Version to build (e.g. v0.1.0)"
+        description: "Version to build (e.g. 0.1.0)"
         required: true
 
 permissions:

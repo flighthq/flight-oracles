@@ -262,7 +262,7 @@ def main(argv=None):
     add("verify", cmd_verify)
 
     p = add("pack", cmd_pack)
-    p.add_argument("--version", required=True, help="release version, e.g. v0.1.0")
+    p.add_argument("--version", required=True, help="release version, e.g. 0.1.0")
     p.add_argument("--out", default="dist")
 
     p = add("drift", cmd_drift)
