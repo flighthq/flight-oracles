@@ -1,0 +1,106 @@
+# unity-native-fixtures — Unity's built-in particle system, in the form Unity actually writes.
+#
+# WHY THIS EXISTS SEPARATELY from particle-fixtures. flight's particles-formats reads
+# `UnityParticleDocument`, a normalised JSON shape flight defined and also writes
+# (unitySerialize.ts) — not a format Unity emits. Unity's built-in particle system
+# ("Shuriken", core engine since 3.5, nothing marketplace about it) serialises to YAML inside
+# .unity scenes and .prefab files, under its own internal field names:
+#
+#     lengthInSec      where the normalised schema says   duration
+#     maxNumParticles                                     maxParticles
+#     startLifetime    same name, but a MinMaxCurve (minMaxState, scalar, minCurve, maxCurve)
+#                      rather than a {mode, constant} pair
+#
+# So this pack is the *ground truth* the normalised shape is supposed to represent. It is the
+# corpus to reach for when adjusting the schema, writing a converter, or deciding whether to
+# read Unity YAML directly — none of which can be done honestly against fixtures authored to
+# our own schema.
+#
+# WHAT MAKES A USABLE SOURCE. Unity projects only serialise to text when the project is set
+# to Force Text asset serialisation; binary projects yield nothing readable. Every source
+# here was checked for actual `ParticleSystem:` blocks rather than assumed from a filename.
+#
+# Deliberately NOT sourced from Unity Technologies' sample repositories generally — most
+# carry the Unity Companion License rather than an open one. The two Unity-authored sources
+# below are the exceptions, both explicitly Apache-2.0.
+#
+# WHAT THE CORPUS ACTUALLY EXPOSES, measured rather than assumed — 25 ParticleSystem
+# components across 14 files, every one carrying `serializedVersion` plus the full module
+# set that the normalised schema flattens away:
+#
+#   InitialModule  ShapeModule  EmissionModule  SizeModule  RotationModule  ColorModule
+#   UVModule  VelocityModule  InheritVelocityModule  ForceModule  ExternalForcesModule
+#   ClampVelocityModule
+#
+# and top-level fields including lengthInSec, simulationSpeed, stopAction, cullingMode,
+# ringBufferMode, looping, prewarm, playOnAwake, useUnscaledTime, autoRandomSeed, startDelay.
+#
+# Note `serializedVersion` in particular: Unity bumps it as the component evolves, so this is
+# the field any converter has to branch on, and no fixture authored to the normalised schema
+# would ever have surfaced it.
+
+[pack]
+name = "unity-native-fixtures"
+kind = "fixtures"
+summary = "Unity Shuriken particle systems in Unity's native YAML serialisation — scenes and prefabs."
+
+# Densest of the three: a UI-particle library whose demo scene alone carries nine
+# ParticleSystem components, plus prefabs exercising the same model at component scale.
+[[source]]
+id = "particleeffect-for-ugui"
+kind = "upstream"
+repo = "mob-sakai/ParticleEffectForUGUI"
+ref = "main"
+fetch = "blobs"
+include = ["**/*.prefab", "**/*.unity"]
+strip = ""
+dest = "ugui/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "ParticleEffectForUGUI by mob-sakai. Demo scenes and prefabs shipped with the library."
+
+# Unity's own open-source game project — Apache-2.0, unlike most Unity sample repositories.
+# Four effect prefabs, each a single ParticleSystem, which is the common real-world shape:
+# one emitter per prefab, instantiated at runtime.
+[[source]]
+id = "unity-open-project-effects"
+kind = "upstream"
+repo = "UnityTechnologies/open-project-1"
+ref = "main"
+fetch = "blobs"
+include = ["UOP1_Project/Assets/Prefabs/Effects/**/*.prefab"]
+strip = "UOP1_Project/Assets/Prefabs/"
+dest = "open-project/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Unity Open Project #1 (Chop Chop) by Unity Technologies, Apache-2.0."
+
+# A scene rather than prefabs — particle systems embedded in a scene hierarchy, which
+# serialises differently from a standalone prefab and is worth having both ways.
+[[source]]
+id = "particle-system-unity-scene"
+kind = "upstream"
+repo = "BharathVishal/Particle-System-Unity"
+ref = "master"
+fetch = "blobs"
+include = ["Source Project/**/Assets/Scenes/**/*.unity"]
+strip = "Source Project/Particle System Unity/Assets/Scenes/"
+dest = "scene/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Particle-System-Unity by Bharath Vishal G, Apache-2.0."

@@ -138,44 +138,6 @@ commercial_use = "unknown"
 onward_use = "unknown"
 covers = "devon-o/Starling-Particle-Editor carries no licence declaration of any kind. Taken for producer variety in the PEX dialect; nothing about its terms is established."
 
-# ---------------------------------------------------------------------------
-# NATIVE UNITY DATA — deliberately NOT the shape unityParse reads.
-#
-# Unity's particle system ("Shuriken") is built into the engine, core since Unity 3.5; there
-# is no marketplace component involved. What it writes to disk is YAML, inside .unity scenes
-# and .prefab files, using Unity's internal serialised field names:
-#
-#     lengthInSec        where flight's schema says   duration
-#     maxNumParticles                                 maxParticles
-#     startLifetime      same name, different shape — Unity stores a MinMaxCurve
-#                        (minMaxState, scalar, minCurve...), flight a {mode, constant} pair
-#
-# flight's UnityParticleDocument is therefore a NORMALISED IMPORT SHAPE that flight defined,
-# not a format Unity emits. Its own header says as much — "as exported by Unity's JsonUtility
-# and common third-party exporters", with curves "simplified to constant or two-keyframe
-# linear values" — and packages/particles-formats/src/unitySerialize.ts WRITES it too, which
-# is the tell: a format you both read and write is one you own.
-#
-# The consequence for this repository is structural: there is no upstream corpus for that
-# schema, by construction, and looking harder will not produce one. What CAN be sourced is
-# real Unity output, which is what this block does — two genuine ParticleSystem blocks with
-# authentic field names, useful whichever way the gap is closed (a YAML reader, a converter,
-# or simply a documented statement of what the JSON shape is and where it comes from).
-# ---------------------------------------------------------------------------
-[[source]]
-id = "unity-native-scene"
-kind = "upstream"
-repo = "BharathVishal/Particle-System-Unity"
-ref = "master"
-fetch = "blobs"
-include = ["Source Project/**/Assets/Scenes/**/*.unity"]
-strip = "Source Project/Particle System Unity/Assets/Scenes/"
-dest = "unity-native/"
-
-[source.license]
-declared = "Apache-2.0"
-declared_scope = "repository-root"
-declared_from = "LICENSE"
-commercial_use = true
-onward_use = "unrestricted"
-covers = "Particle-System-Unity by Bharath Vishal G. A Unity scene containing two ParticleSystem components in Unity's native YAML serialisation."
+# Unity's native YAML lives in its own pack, unity-native-fixtures, because it is NOT one of
+# the dialects particles-formats reads — see that spec, and docs/fixture-coverage.md, for why
+# UnityParticleDocument has no upstream corpus by construction.

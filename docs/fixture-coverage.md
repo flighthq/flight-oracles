@@ -320,9 +320,17 @@ corpus for it by construction**. Three ways to close that, none of which is "sea
    C# rather than a marketplace dependency — but it emits the *internal* names above, so
    something still has to normalise them.
 
-`particle-fixtures` now carries a real Unity scene with two `ParticleSystem` blocks
-(Apache-2.0), recorded as `unity-yaml` rather than as a particle dialect, so the manifest
-states plainly that it is the native form and not the shape `unityParse` reads.
+`unity-native-fixtures` now holds the ground truth: **25 ParticleSystem components across 14
+files**, from three sources (MIT and Apache-2.0), in both the scene-embedded and
+standalone-prefab forms. Every component carries `serializedVersion` and the full twelve-module
+set — `InitialModule`, `ShapeModule`, `EmissionModule`, `SizeModule`, `RotationModule`,
+`ColorModule`, `UVModule`, `VelocityModule`, `InheritVelocityModule`, `ForceModule`,
+`ExternalForcesModule`, `ClampVelocityModule` — all of which the normalised schema flattens
+away. `serializedVersion` matters most: Unity bumps it as the component evolves, so it is what
+any converter must branch on, and no fixture authored to our own schema would have surfaced it.
+
+It is kept out of `particle-fixtures` on purpose. That pack holds dialects `particles-formats`
+actually reads; this one is the reference against which the normalised shape can be judged.
 
 The general lesson: when a format has a *serializer* on our side, check whether the name
 refers to something a third party emits or to a shape we invented. The answer changes where

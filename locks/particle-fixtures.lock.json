@@ -91,24 +91,6 @@
         "covers": "devon-o/Starling-Particle-Editor carries no licence declaration of any kind. Taken for producer variety in the PEX dialect; nothing about its terms is established.",
         "onwardUse": "unknown"
       }
-    },
-    {
-      "id": "unity-native-scene",
-      "kind": "upstream",
-      "repo": "BharathVishal/Particle-System-Unity",
-      "ref": "master",
-      "commit": "edfd72a11b239d376c8ad8738adad0f06c262fc8",
-      "retrieved": "2026-08-06",
-      "license": {
-        "declared": "Apache-2.0",
-        "declaredScope": "repository-root",
-        "commercialUse": true,
-        "redistributable": true,
-        "declaredFrom": "LICENSE",
-        "covers": "Particle-System-Unity by Bharath Vishal G. A Unity scene containing two ParticleSystem components in Unity's native YAML serialisation.",
-        "onwardUse": "unrestricted"
-      },
-      "licenseSnapshot": "licenses/unity-native-scene@edfd72a11b23.txt"
     }
   ],
   "files": [
@@ -3588,22 +3570,10 @@
         "width": 64,
         "height": 64
       }
-    },
-    {
-      "path": "unity-native/Test_Scene.unity",
-      "sourceId": "unity-native-scene",
-      "upstreamPath": "Source Project/Particle System Unity/Assets/Scenes/Test_Scene.unity",
-      "sha256": "9d39786fb826db898a0faae3e2c9ed60d9f970cc32c53a7cd4f65ea18631e228",
-      "size": 141186,
-      "format": {
-        "kind": "unity-yaml",
-        "version": "2011",
-        "particleSystems": 2
-      }
     }
   ],
   "totals": {
-    "files": 280,
-    "bytes": 19812053
+    "files": 279,
+    "bytes": 19670867
   }
 }
