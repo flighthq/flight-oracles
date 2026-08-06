@@ -155,6 +155,11 @@ File-adjacent licences travel beside their assets as well as in `LICENSES/`, bec
 spineboy's terms permit redistribution "as long as they are accompanied by this license
 file" and the safe reading of *accompanied* is adjacent, not merely present.
 
+Not every unfixtured format is a gap: `shapeJson` and `UnityParticleDocument` are shapes
+flight owns rather than foreign formats, so no corpus exists for them by construction, and
+Spine's particle format appears never to have shipped. See
+[`docs/fixture-coverage.md`](docs/fixture-coverage.md) for that classification.
+
 See [`docs/sourcing-policy.md`](docs/sourcing-policy.md) for the full reasoning, and
 [`docs/fixture-coverage.md`](docs/fixture-coverage.md) for the exhaustive fixture target set
 derived from flight's decode surface.

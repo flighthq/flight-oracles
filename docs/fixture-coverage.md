@@ -335,3 +335,53 @@ actually reads; this one is the reference against which the normalised shape can
 The general lesson: when a format has a *serializer* on our side, check whether the name
 refers to something a third party emits or to a shape we invented. The answer changes where
 fixtures can come from.
+
+## Which remaining gaps are real: a classification
+
+Three of the formats still listed as "unfixtured" cannot be fixtured, and the reasons differ.
+Sorting them mattered more than continuing to search.
+
+**A serializer is a hint, not proof.** An earlier note here suggested that a format flight
+both reads and writes is one flight owns. That is too crude: `libgdxSerialize`,
+`starlingPexSerialize`, `cocosPlistSerialize`, `texturePackerSerialize` and
+`bitmapFontFnt` all write *foreign* formats, and every one of those has a corpus here. The
+real test is whether a third party emits it.
+
+### Owned shapes — no corpus exists, by construction
+
+| Format | Evidence |
+| --- | --- |
+| `shape-formats/shapeJson` | Its own header: "Serializes a shape's full drawing-command stream to a **native JSON string** that `parseShapeJson` restores." It is flight's serialisation of flight's in-memory `Shape`. No namesake, no third party, nothing to source. |
+| `particles-formats/unityParse` | `UnityParticleDocument` is a normalised shape (see the section above); Unity writes YAML with different field names. |
+
+Neither is a gap. What they need is round-trip property testing — `format` → `parse` →
+compare — which is a different discipline from fixtures and which `shapeJson.test.ts`
+already does. Worth noting that `shapeJson`'s header documents a deliberate one-way door:
+JSON has no `NaN` or `Infinity` literal, so a non-finite coordinate serialises to `null` and
+then refuses to parse back, chosen over silently restoring different geometry. A corpus could
+not test that better than a property test.
+
+### A cited spec that appears not to exist
+
+`particles-formats/spineParse` reads `SpineParticleDocument`, whose schema cites "the Spine
+4.x particle effect format (`.p` JSON variant) as documented by Esoteric Software" at
+`esotericsoftware.com/spine-particle-effects`.
+
+Three things point the other way. `spine-runtimes` contains **zero** `.p` files across both
+branches we hold — the only particle-named file in it is an Unreal `.uasset`. The cited URL
+does not resolve for us (403, though that may be our own network policy rather than a
+missing page). And Esoteric's forum carries threads from 2018 and 2023 in which users are
+*requesting* a particle system, which is not what a shipped feature looks like.
+
+So this is most likely a parser for a format that was never released. That is worth
+confirming with Esoteric before either sourcing fixtures or keeping the parser — and it is
+emphatically not a fixture-sourcing problem.
+
+### Genuinely open, and findable
+
+| Format | Note |
+| --- | --- |
+| `path-formats/svgPathData` | The SVG path `d` grammar is a real W3C format. A corpus is findable; `w3c/svgwg` holds spec illustrations rather than grammar tests, so it needs a different source. |
+| `xml/xmlParse` | XML is real and W3C publishes a conformance suite. No GitHub mirror with usable provenance surfaced. |
+
+These two are the only remaining entries where "look harder" is the right response.
