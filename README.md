@@ -47,8 +47,9 @@ suite can pin.
 | `effekseer-fixtures` | 80 | 11.1 MB | Effekseer particles — project plus two runtime generations |
 | `ldtk-fixtures` | 69 | 42.9 MB | LDtk 2D levels — 22 format versions, v0.6.0–v1.5.3 |
 | `unity-native-fixtures` | 14 | 3.0 MB | **Unity's own YAML** — 25 ParticleSystem components |
+| `svg-path-fixtures` | 672 | 0.5 MB | **Oracles** — SVG path grammar, 371 expected-output pairs |
 
-26 packs, 24,605 files. Three packs carry expectations as well as inputs:
+27 packs, 25,277 files. Three packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place) and `gltf-generated-fixtures` (positive/negative conformance split).
 

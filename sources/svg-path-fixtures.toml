@@ -1,0 +1,65 @@
+# svg-path-fixtures — the SVG path `d` grammar.
+#
+# flight's path-formats/svgPathData.ts had ZERO fixtures: the corpus contained no .svg file
+# and no path `d=` attribute anywhere across 26 packs. Measured, not assumed.
+#
+# ORACLE-BEARING. svgo's plugin tests are `input @@@ expected` pairs in a single file, so
+# each one carries its own answer — the third such corpus here, after the Unicode conformance
+# data and Ruffle's trace output.
+#
+# WHY svgo RATHER THAN AN ICON SET for the hard part: it is an optimiser, so its tests are
+# chosen to break path parsing. The convertPathData cases alone cover the grammar's genuinely
+# nasty corners, all of which a naive tokeniser gets wrong:
+#
+#     M10-3.05176e-005      scientific notation with no separator before the exponent
+#     M10-50.2.30-2         three numbers, no separators — ".2.30" is two decimals, not one
+#     M10-50l.2.30          implicit command continuation with leading-dot numbers
+#     M 10 , 50             arbitrary whitespace and comma mixing
+#     M-10-50               negative sign doubling as the separator
+#
+# feather supplies the other half: 287 real icons, which is what production path data
+# actually looks like once a tool has written it rather than a test author.
+
+[pack]
+name = "svg-path-fixtures"
+kind = "conformance"
+summary = "SVG path grammar — svgo's input/expected optimiser tests plus a real-world icon set."
+
+# The adversarial half. Every file is `input @@@ expected`, so the pack carries its own
+# oracle for anything that normalises or re-serialises path data.
+[[source]]
+id = "svgo-plugin-tests"
+kind = "upstream"
+repo = "svg/svgo"
+ref = "main"
+fetch = "blobs"
+include = ["test/plugins/**/*.svg.txt", "test/**/*.svg"]
+strip = "test/"
+dest = "svgo/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "SVGO by the SVGO contributors. Plugin test fixtures, each an input document and its expected optimiser output separated by @@@."
+
+# The real-world half: tool-written path data at volume, in a single consistent style.
+[[source]]
+id = "feather-icons"
+kind = "upstream"
+repo = "feathericons/feather"
+ref = "main"
+fetch = "blobs"
+include = ["icons/**/*.svg"]
+strip = "icons/"
+dest = "feather/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Feather icons by Cole Bemis, MIT."

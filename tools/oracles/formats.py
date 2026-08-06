@@ -434,6 +434,34 @@ def _collada(data: bytes, name: str):
     return FormatInfo(kind="collada", version=match.group(1).decode() if match else None)
 
 
+_SVG_D = re.compile(rb'\sd\s*=\s*"\s*([MmZzLlHhVvCcSsQqTtAa][^"]*)"')
+
+
+def _svg(data: bytes, name: str):
+    """An SVG document, and how much path data it carries.
+
+    The `d`-attribute count is the number that matters for this corpus: an SVG with no path
+    element exercises nothing in path-formats, and knowing the count up front is what lets a
+    test suite pick the dense cases.
+    """
+    lowered = name.lower()
+    if not lowered.endswith((".svg", ".svg.txt")):
+        return None
+    if b"<svg" not in data[:2048]:
+        return None
+    info = FormatInfo(kind="svg", version=None)
+    version = re.search(rb'<svg[^>]*\sversion="([^"]+)"', data[:1024])
+    if version:
+        info["version"] = version.group(1).decode("utf-8", "replace")
+    paths = _SVG_D.findall(data)
+    info["pathCount"] = len(paths)
+    # svgo's fixtures are `input @@@ expected` in one file; note when a file is such a pair
+    # so a consumer knows it carries its own answer rather than being a plain document.
+    if b"@@@" in data:
+        info["expectationPairs"] = data.count(b"@@@")
+    return info
+
+
 def _starling_atlas(data: bytes, name: str):
     """Starling/Sparrow texture atlas: <TextureAtlas imagePath=..><SubTexture ../></>."""
     if not name.lower().endswith(".xml") or b"<TextureAtlas" not in data[:512]:
@@ -540,7 +568,7 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
             return info
     for probe in (_dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
                   _ldtk, _effekseer, _bmfont_json, _frames_meta_sheet, _bvh,
-                  _starling_atlas, _unity_yaml,
+                  _starling_atlas, _unity_yaml, _svg,
                   _stl_ply, _fbx,
                   _pex,
                   _collada,

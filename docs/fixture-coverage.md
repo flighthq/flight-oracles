@@ -381,7 +381,23 @@ emphatically not a fixture-sourcing problem.
 
 | Format | Note |
 | --- | --- |
-| `path-formats/svgPathData` | The SVG path `d` grammar is a real W3C format. A corpus is findable; `w3c/svgwg` holds spec illustrations rather than grammar tests, so it needs a different source. |
-| `xml/xmlParse` | XML is real and W3C publishes a conformance suite. No GitHub mirror with usable provenance surfaced. |
+| ~~`path-formats/svgPathData`~~ | **Closed** — see `svg-path-fixtures`. Coverage was measured at exactly zero (no `.svg` file and no path `d=` attribute anywhere across 26 packs) before the pack existed. |
+| `xml/xmlParse` | XML is real and W3C publishes a conformance suite. No GitHub mirror with usable provenance surfaced. The last genuinely open entry. |
 
-These two are the only remaining entries where "look harder" is the right response.
+### `svg-path-fixtures`, and why svgo rather than an icon set
+
+672 files, 1,093 path `d=` attributes, **371 of them carrying their own expected output** —
+the third oracle-bearing corpus here after the Unicode data and Ruffle's traces.
+
+SVGO is an optimiser, so its tests are chosen to break path parsing. The `convertPathData`
+cases cover the grammar's genuinely nasty corners, each of which a naive tokeniser gets
+wrong:
+
+    M10-3.05176e-005      scientific notation, no separator before the exponent
+    M10-50.2.30-2         three numbers, no separators — ".2.30" is two decimals, not one
+    M10-50l.2.30          implicit command continuation with leading-dot numbers
+    M 10 , 50             arbitrary whitespace and comma mixing
+    M-10-50               the negative sign doubling as the separator
+
+Feather's 287 icons supply the other half: tool-written path data at volume, which is what
+production input actually looks like once a program rather than a test author produced it.

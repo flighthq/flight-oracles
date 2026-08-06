@@ -157,6 +157,27 @@ class TestFormats(unittest.TestCase):
         self.assertEqual(formats.detect(charmap, "a.plist")["kind"], "plist-charmap")
         self.assertEqual(formats.detect(b"<plist><dict/></plist>", "a.plist")["kind"], "plist")
 
+    def test_svg_counts_path_data_and_expectation_pairs(self):
+        doc = (b'<svg xmlns="http://www.w3.org/2000/svg" version="1.1">'
+               b'<path d="M10-3.05176e-005"/><path d="M10-50l.2.30"/>'
+               b'<rect x="1"/></svg>')
+        info = formats.detect(doc, "a.svg")
+        self.assertEqual(info["kind"], "svg")
+        self.assertEqual(info["version"], "1.1")
+        self.assertEqual(info["pathCount"], 2)     # the rect is not path data
+        self.assertNotIn("expectationPairs", info)
+
+    def test_svgo_fixture_pair_is_marked(self):
+        # svgo ships input and expected output in one file. Flagging that is what tells a
+        # consumer the file carries its own answer rather than being a plain document.
+        doc = b'<svg><path d="M 10,50"/></svg>\n@@@\n<svg><path d="M10 50"/></svg>'
+        info = formats.detect(doc, "convertPathData.01.svg.txt")
+        self.assertEqual(info["kind"], "svg")
+        self.assertEqual(info["expectationPairs"], 1)
+
+    def test_svg_without_path_data_reports_zero(self):
+        self.assertEqual(formats.detect(b'<svg><rect/></svg>', "a.svg")["pathCount"], 0)
+
     def test_unknown_returns_none_rather_than_raising(self):
         # Not knowing a format is a fact to record, never a reason to drop a fixture.
         self.assertIsNone(formats.detect(b"\x00\x01\x02\x03nonsense", "mystery.bin"))
