@@ -1,0 +1,855 @@
+{
+  "pack": {
+    "name": "ldtk-fixtures",
+    "kind": "fixtures",
+    "summary": "LDtk 2D level projects, including the same project saved across fourteen format versions."
+  },
+  "sources": [
+    {
+      "id": "ldtk-projects",
+      "kind": "upstream",
+      "repo": "deepnight/ldtk",
+      "ref": "master",
+      "commit": "6d69bd1d6be92f01ac30778f6a934f0da8448b16",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "LDtk by Sebastien Benard (deepnight). The editor is MIT; sample projects ship with it.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/ldtk-projects@6d69bd1d6be9.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "ldtk/app/extraFiles/samples/AutoLayers_1_basic.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/AutoLayers_1_basic.ldtk",
+      "sha256": "0a21f2a1b3b45c78a8ccac1b147ea2712d1e85e4d526a5c41f4c912e65f9a62c",
+      "size": 98092,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/AutoLayers_2_stamps.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/AutoLayers_2_stamps.ldtk",
+      "sha256": "3fec9b2c0d877b4b3a2bcd170890e3ec1728267f2cf05f1e76fc093ae6d94fd4",
+      "size": 18038,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/AutoLayers_3_Mosaic.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/AutoLayers_3_Mosaic.ldtk",
+      "sha256": "5816c13cb5270d22e4c673e3fd53a66409cd7d74f239c91b430f1dbf3394b0cd",
+      "size": 97752,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/AutoLayers_4_Assistant.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/AutoLayers_4_Assistant.ldtk",
+      "sha256": "9d54535e108061a1adf0a3e750f89773e88d159ee709478390752a65d7aaf3af",
+      "size": 42014,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/AutoLayers_5_Advanced.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/AutoLayers_5_Advanced.ldtk",
+      "sha256": "34b4439be2b08e205d6b94d25312f22f2e1d51fc5aefaa0e3c8e00ce593287c6",
+      "size": 153129,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/AutoLayers_6_OptionalRules.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/AutoLayers_6_OptionalRules.ldtk",
+      "sha256": "5721120f5ac50263835eb1491916a1b22c8a73315be58aa3df134a493dac1924",
+      "size": 510200,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 4
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/AutoLayers_7_Biomes.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/AutoLayers_7_Biomes.ldtk",
+      "sha256": "93bb4ebe7c716d0f6f0e4268cfcf082a9c2160e880b3e0ba97f6a899330ea265",
+      "size": 359253,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/Entities.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/Entities.ldtk",
+      "sha256": "55be81cf54f51b469dde53f39af64310b7ec4bf553cb2667e609061e51552809",
+      "size": 255561,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/SeparateLevelFiles.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/SeparateLevelFiles.ldtk",
+      "sha256": "8ef50f101165b87fa46958e9b2107e3d3dd96baf82f8cc1a7ed846c5cf8648f0",
+      "size": 4012,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 3
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/SeparateLevelFiles/World_Level_0.ldtkl",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/SeparateLevelFiles/World_Level_0.ldtkl",
+      "sha256": "898e73e920e26979b914114a425adf8e86852548c550219739f8adb0ad55d549",
+      "size": 1764,
+      "format": {
+        "kind": "ldtk-level",
+        "version": null
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/SeparateLevelFiles/World_Level_1.ldtkl",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/SeparateLevelFiles/World_Level_1.ldtkl",
+      "sha256": "cc4f44162f2511fafb0f19aca371b6d52f04fe7192a4fcedaf6ffed2b44ea6d4",
+      "size": 1764,
+      "format": {
+        "kind": "ldtk-level",
+        "version": null
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/SeparateLevelFiles/World_Level_2.ldtkl",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/SeparateLevelFiles/World_Level_2.ldtkl",
+      "sha256": "b7cccc536d008fdd07453c74ed8764499d4453d70454e955cbc21889e0a7dc01",
+      "size": 1764,
+      "format": {
+        "kind": "ldtk-level",
+        "version": null
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/Test_file_for_API_showing_all_features.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/Test_file_for_API_showing_all_features.ldtk",
+      "sha256": "8570b23f4ea12891850c12783fe784f3f83e28cdcf37de93df0e69cf65c7a655",
+      "size": 145943,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 4
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/Typical_2D_platformer_example.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/Typical_2D_platformer_example.ldtk",
+      "sha256": "c044633d64f95165dadf0ee189c42f854baf7f0fd4163e240268c6e29211dd4e",
+      "size": 401053,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 4
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/Typical_TopDown_example.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/Typical_TopDown_example.ldtk",
+      "sha256": "31bdf9ae3edbc0b06a67ee94dda60a076bcdaabf5d4fdb533f8cb473451041fc",
+      "size": 304143,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 3
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/WorldMap_Free_layout.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/WorldMap_Free_layout.ldtk",
+      "sha256": "5d21dd9c2ee252aeab3828dc4a4f800dab15439d86a2c5c7fe224b4868fa50fd",
+      "size": 1110992,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 12
+      }
+    },
+    {
+      "path": "ldtk/app/extraFiles/samples/WorldMap_GridVania_layout.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "app/extraFiles/samples/WorldMap_GridVania_layout.ldtk",
+      "sha256": "7da6c76a175891719be084e8616a085ea56c058b875f17233606c6a5b2f27f4f",
+      "size": 2447956,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 21
+      }
+    },
+    {
+      "path": "ldtk/tests/2.5D.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/2.5D.ldtk",
+      "sha256": "21b360d640a32da53bf89819c0bb73d2aa0ee919801fd849abd214297d9539e5",
+      "size": 32662,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.5",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/_empty.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/_empty.ldtk",
+      "sha256": "f5afdfc86e04bfeee249adcc83078032089beaa9c4dfa10540ead9711f4faa94",
+      "size": 1758,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/bugs/gridVaniaLab.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/bugs/gridVaniaLab.ldtk",
+      "sha256": "8ed0caf70517b54a299bd8728ace5a0c6edd3f6307c0a894dcc3230a138ea2f8",
+      "size": 6422407,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.1",
+        "levelCount": 21
+      }
+    },
+    {
+      "path": "ldtk/tests/bugs/rulesBug.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/bugs/rulesBug.ldtk",
+      "sha256": "be77955b139938e118b3f77b8d038d2e01a7243574974a0df0f613bd5f728a67",
+      "size": 126336,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.2",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/cdbIcons.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/cdbIcons.ldtk",
+      "sha256": "12748b2d6d8d58845f9ccb3e7a106a937f71798c7a0e025b2d7b5df260104a63",
+      "size": 45652,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.0",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/demos/1.1-rules.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/demos/1.1-rules.ldtk",
+      "sha256": "9d3722cd220cff98efac78de29cc2fadd6d942a113a2a2d69589a9e7e6772041",
+      "size": 214682,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.1.1",
+        "levelCount": 2
+      }
+    },
+    {
+      "path": "ldtk/tests/demos/Gridvania.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/demos/Gridvania.ldtk",
+      "sha256": "c56e25ef90cbe261af9dfe227098605e72e3422c3886009f08e7e35169c9b0ea",
+      "size": 1775712,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.1",
+        "levelCount": 20
+      }
+    },
+    {
+      "path": "ldtk/tests/demos/aseprite.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/demos/aseprite.ldtk",
+      "sha256": "7b89f4e7c1d7a2942f3ea4466672d3aed942af685ccad2a10bc5a82d58f637b8",
+      "size": 46494,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/demos/optionalRules.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/demos/optionalRules.ldtk",
+      "sha256": "2bd42125f04d041b13d75addebc7479d32cfb95f6527aed52f16a893874f05a3",
+      "size": 144773,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.0",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/gameMaker/gmsExport.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/gameMaker/gmsExport.ldtk",
+      "sha256": "22c9a33358f4b11aaf22022c55f7bcc28a5db4c665f0f6ada42b6e7185800f1c",
+      "size": 8429,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.0.1",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/grassAndDirt.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/grassAndDirt.ldtk",
+      "sha256": "19587e416423017f54882719ba645b329121113ead6f2da6da0cd06697bda1af",
+      "size": 44801,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/gridSizeChange.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/gridSizeChange.ldtk",
+      "sha256": "440d8a770c57f51071a5a3cccdb60a88c138dee6c300b5136bdc56ebb0f756c7",
+      "size": 37269,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/lab1.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/lab1.ldtk",
+      "sha256": "ed95d4ddef6e4a383512508a8ca723c82c447b57768645412540cd4cfbd3d564",
+      "size": 860125,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.5",
+        "levelCount": 7
+      }
+    },
+    {
+      "path": "ldtk/tests/lab2.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/lab2.ldtk",
+      "sha256": "73af40ffac7b05d868323ce52217a19dd25aaff70dd2591e8ede18f22089efbe",
+      "size": 105452,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.4.2",
+        "levelCount": 2
+      }
+    },
+    {
+      "path": "ldtk/tests/labRefs.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/labRefs.ldtk",
+      "sha256": "027ced4a7483dcd49887b56b2bc91097889df6a0d2e2498739f5c18c1e5dbfb4",
+      "size": 269165,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.0",
+        "levelCount": 0
+      }
+    },
+    {
+      "path": "ldtk/tests/largeGridVania.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/largeGridVania.ldtk",
+      "sha256": "65a4c69c318500fd177597e284f3c3c97d157576810ad0cf73efc0892915100c",
+      "size": 583507,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.0",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/largeLevels/bigroomtest.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/largeLevels/bigroomtest.ldtk",
+      "sha256": "ea4c3b30bae184324cf3fbc33867e1dd5cd7e5622723f296eae2333a871519e1",
+      "size": 297801,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.4.1",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/largeLevels/world1.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/largeLevels/world1.ldtk",
+      "sha256": "e6084ff5a7c24fe380b379affe1d68129b52917bfe460187acff20bc6d1604a8",
+      "size": 13272803,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.0",
+        "levelCount": 5
+      }
+    },
+    {
+      "path": "ldtk/tests/levelBgs.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/levelBgs.ldtk",
+      "sha256": "574834f3bf10c3cb9a4357031cc18172f5f935a3a368489f9c873946186fdb25",
+      "size": 31923,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.2.0",
+        "levelCount": 4
+      }
+    },
+    {
+      "path": "ldtk/tests/lotsOfEntities.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/lotsOfEntities.ldtk",
+      "sha256": "5b8ea8ed95b5770b79d8d9ecf2c3fa66f5f45638b0e698cffd1644ed1a6265f5",
+      "size": 823595,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.2.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/manyRules.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/manyRules.ldtk",
+      "sha256": "5ec7efb80d301c8e4452ff82109bf7b4bccdd0e1fde2a01e4162b7272665bf7f",
+      "size": 1691964,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.4.1",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/multiLinesBug.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/multiLinesBug.ldtk",
+      "sha256": "36753dde58f76c438bbce0dc0a4816667fd0b52dd96e4c934292dcb80de0c837",
+      "size": 4979,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.5.0",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/multiWorldsTest.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/multiWorldsTest.ldtk",
+      "sha256": "468b7c259575ac8d969cfb062b90f3b99b00f6f544890e37862496d00bd4f89d",
+      "size": 52052,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.0",
+        "levelCount": 0
+      }
+    },
+    {
+      "path": "ldtk/tests/offsetDemo.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/offsetDemo.ldtk",
+      "sha256": "1cc89b05fde0382befeae38466a1367145d366337767720fa5deaa1cbe345d70",
+      "size": 71165,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.4",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.5.0 demo.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.5.0 demo.ldtk",
+      "sha256": "59de77fd4b116e51c9712cc5fe136900815c14619b1d0215f2a41483d5193f05",
+      "size": 186251,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.6.0",
+        "levelCount": 3
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.8.0 demo.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.8.0 demo.ldtk",
+      "sha256": "20a9fa82240b162f5d7d1dcdbd233fcbcc87c21e504cb631d7f5d9ef5a8934af",
+      "size": 631261,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.0.0",
+        "levelCount": 8
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/AutoLayers_1_basic.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/AutoLayers_1_basic.ldtk",
+      "sha256": "723dd148efd814c44364494e30f385085f9c0cd6994375db06c199187383aa17",
+      "size": 41595,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/AutoLayers_2_stamps.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/AutoLayers_2_stamps.ldtk",
+      "sha256": "22686af4983f567e5935fd150e700e0736c26c751146c2117680a3f4216d8eb0",
+      "size": 16046,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/AutoLayers_3_Mosaic.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/AutoLayers_3_Mosaic.ldtk",
+      "sha256": "6bff8a4f0f61adfeea7069f4f4e1509955fd3544f734f3197d13c8ff26da7282",
+      "size": 42259,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/AutoLayers_4_Advanced.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/AutoLayers_4_Advanced.ldtk",
+      "sha256": "c4217c4a79f2ad04bd4145acd83426faf2af90b736b200d92cfb98a07556188d",
+      "size": 100592,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/AutoLayers_5_OptionalRules.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/AutoLayers_5_OptionalRules.ldtk",
+      "sha256": "d935db9108672ba1bff1d5701cf7df06e3d56480136d944d3dd17631db810aca",
+      "size": 357906,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 4
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/Entities.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/Entities.ldtk",
+      "sha256": "a05282e7cb456bb9fdf9150dfd31ba55aa98ec7e893eb781647765e857cfd1fe",
+      "size": 160866,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/SeparateLevelFiles.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/SeparateLevelFiles.ldtk",
+      "sha256": "4da5ee49eee1bd0888aedeed30421ff823cbfa875d7088ea979291b06502b1b9",
+      "size": 4813,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 3
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/SeparateLevelFiles/0000-Level_0.ldtkl",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/SeparateLevelFiles/0000-Level_0.ldtkl",
+      "sha256": "f6ae3b74375923af653eeb21b7b9e51eac21df748f8d2e1c74b3293aaa320711",
+      "size": 2170,
+      "format": {
+        "kind": "ldtk-level",
+        "version": null
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/SeparateLevelFiles/0001-Level_1.ldtkl",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/SeparateLevelFiles/0001-Level_1.ldtkl",
+      "sha256": "0239721844d914e47ba3497729fdbd91ca15e23aa17ddfada1ddc438ee82131f",
+      "size": 1898,
+      "format": {
+        "kind": "ldtk-level",
+        "version": null
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/SeparateLevelFiles/0002-Level_2.ldtkl",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/SeparateLevelFiles/0002-Level_2.ldtkl",
+      "sha256": "63891e0d8625e6c3de068136bd48ecdb8ca7724a5cf88038981c73993e7af18a",
+      "size": 1865,
+      "format": {
+        "kind": "ldtk-level",
+        "version": null
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/Test_file_for_API_showing_all_features.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/Test_file_for_API_showing_all_features.ldtk",
+      "sha256": "5318993099b71a7826fd60a381aef51c215ee141ebcfef4f400a2a2eba17abf7",
+      "size": 119583,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 4
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/Typical_2D_platformer_example.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/Typical_2D_platformer_example.ldtk",
+      "sha256": "e73608c8b75b22812f30a85c4ca0787b1b9bfee09d0824c333216ca2d51c841f",
+      "size": 265436,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 3
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/Typical_TopDown_example.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/Typical_TopDown_example.ldtk",
+      "sha256": "dbe14e25fff5c7483b505c4174f51f75bd1d4e24d375a17f1183a65417dc520c",
+      "size": 172483,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 2
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/WorldMap_Free_layout.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/WorldMap_Free_layout.ldtk",
+      "sha256": "07f7d2bb14653854dca611e8db5e2a84c364c84483ed7f870865e4d10b065eef",
+      "size": 313286,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 9
+      }
+    },
+    {
+      "path": "ldtk/tests/oldVersions/0.9.3/WorldMap_GridVania_layout.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/oldVersions/0.9.3/WorldMap_GridVania_layout.ldtk",
+      "sha256": "ce39d25ed8ecda6f444ce097863898eb7cc6a4363deabe26a4538a5866db99c7",
+      "size": 1653746,
+      "format": {
+        "kind": "ldtk",
+        "version": "0.9.3",
+        "levelCount": 20
+      }
+    },
+    {
+      "path": "ldtk/tests/parallax1.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/parallax1.ldtk",
+      "sha256": "6879419f8823ff64c3781cee427d25df2ea8a59b80728d3b74e1f9e60329bec9",
+      "size": 551137,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.0.0",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/parallax2.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/parallax2.ldtk",
+      "sha256": "d66e67f33e814f703af6ed69e5cc7f734155f80757de89e5a7e89f82a3ee3fcf",
+      "size": 1406625,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.0.0",
+        "levelCount": 2
+      }
+    },
+    {
+      "path": "ldtk/tests/ruleRandomOffsets.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/ruleRandomOffsets.ldtk",
+      "sha256": "69cdda8bbf233f4ac5259f2bb47a06e6b5bd029b3daf4b3b3d278cb45a507440",
+      "size": 70246,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.0",
+        "levelCount": 3
+      }
+    },
+    {
+      "path": "ldtk/tests/wasdNav.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/wasdNav.ldtk",
+      "sha256": "cd517cf2b5f6b4e777c0037ab7b551af756d4a48d06a9c9f5d0e77961704f6ed",
+      "size": 65852,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.2.0",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/webAssets/gif-1.3.0.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/webAssets/gif-1.3.0.ldtk",
+      "sha256": "528aaa70ca6751429630d91e3856f1fb86c8e516bb4e1e9382513a1e37457567",
+      "size": 369201,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.0",
+        "levelCount": 2
+      }
+    },
+    {
+      "path": "ldtk/tests/webAssets/websiteVideo1.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/webAssets/websiteVideo1.ldtk",
+      "sha256": "2c3894e27b3149d4605cd0723a9754ddaf1b5b1bb9ebb372ed1aace358622f86",
+      "size": 1537295,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.0",
+        "levelCount": 3
+      }
+    },
+    {
+      "path": "ldtk/tests/webAssets/websiteVideo2.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/webAssets/websiteVideo2.ldtk",
+      "sha256": "c337b43ed64657a101a64d6374f4fca67983570c889d9c50eaeecc68d0d0bcee",
+      "size": 1586895,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.0",
+        "levelCount": 3
+      }
+    },
+    {
+      "path": "ldtk/tests/wizard2.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/wizard2.ldtk",
+      "sha256": "16a354a347dd186a5cc048499ddaa6cc31048e590283819a18209968220dcce6",
+      "size": 42497,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.0",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/wizardGif.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/wizardGif.ldtk",
+      "sha256": "47208fb9f2b4eeb68cb98a4ea7b5b0e0ebeeaa5849f0a877eba8aa74f1d7f883",
+      "size": 41148,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.0",
+        "levelCount": 1
+      }
+    },
+    {
+      "path": "ldtk/tests/worldIidBug.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/worldIidBug.ldtk",
+      "sha256": "6d6dd94aeeb13913d5349a6988d4e487c4a4664cdec013ed740408930d85cab1",
+      "size": 19410,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.2.6",
+        "levelCount": 3
+      }
+    },
+    {
+      "path": "ldtk/tests/worldRenderBug.ldtk",
+      "sourceId": "ldtk-projects",
+      "upstreamPath": "tests/worldRenderBug.ldtk",
+      "sha256": "aa640e18d8f072a08e326390b136c642a1fda8a18bd8d0b476e678a84ead848e",
+      "size": 186362,
+      "format": {
+        "kind": "ldtk",
+        "version": "1.3.1",
+        "levelCount": 2
+      }
+    }
+  ],
+  "totals": {
+    "files": 69,
+    "bytes": 42867660
+  }
+}

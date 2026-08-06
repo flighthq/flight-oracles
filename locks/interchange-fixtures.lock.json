@@ -1,0 +1,2787 @@
+{
+  "pack": {
+    "name": "interchange-fixtures",
+    "kind": "fixtures",
+    "summary": "3D interchange, mesh and skeletal formats not yet parsed by flight \u2014 Collada, FBX, PLY, STL, BVH, IQM, X3D and more."
+  },
+  "sources": [
+    {
+      "id": "assimp-test-models",
+      "kind": "upstream",
+      "repo": "assimp/assimp",
+      "ref": "master",
+      "commit": "3a38cd1e87a7238f48fcfcb955cf10e646c5a343",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "BSD-3-Clause",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "Open Asset Import Library (assimp), copyright (c) 2006-2026 assimp team. Test models maintained as the project's own regression corpus.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/assimp-test-models@3a38cd1e87a7.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "3DS/CWALL02.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/CWALL02.jpg",
+      "sha256": "c8227d3b02acc5ab961ba938433fb3f31d858c4d8bcbc69e526dd05644142b6d",
+      "size": 165342
+    },
+    {
+      "path": "3DS/CameraRollAnim.3ds",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/CameraRollAnim.3ds",
+      "sha256": "07371f9091c366f61518fc381598b1ef87d35fa6c466196b86a97ef982dec2c0",
+      "size": 1310,
+      "format": {
+        "kind": "3ds",
+        "version": null
+      }
+    },
+    {
+      "path": "3DS/CameraRollAnimWithChildObject.3ds",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/CameraRollAnimWithChildObject.3ds",
+      "sha256": "470896dbcb5e0449e5e52e16855b0bcd849bffabee46101cd28e76967c8cc621",
+      "size": 4408,
+      "format": {
+        "kind": "3ds",
+        "version": null
+      }
+    },
+    {
+      "path": "3DS/IMAGE1.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/IMAGE1.jpg",
+      "sha256": "d02820623a71b8b3f6dd1857b133ef1ea4b1a2f016e4de24ecaf24a45fa2f351",
+      "size": 24711
+    },
+    {
+      "path": "3DS/IMAGE2.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/IMAGE2.jpg",
+      "sha256": "fe57f3a7ef10468d02961cac3cbba144834d94033279b614ffdbc7084278cafa",
+      "size": 283212
+    },
+    {
+      "path": "3DS/RotatingCube.3DS",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/RotatingCube.3DS",
+      "sha256": "55d0c540a059029fee276fb5e849aa34ebcfad37b619d87d53b5fee3094ea242",
+      "size": 5009,
+      "format": {
+        "kind": "3ds",
+        "version": null
+      }
+    },
+    {
+      "path": "3DS/TargetCameraAnim.3ds",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/TargetCameraAnim.3ds",
+      "sha256": "33395c5e09c6d7fd27b5679fb905bff46dc307a05a374c4d7bbfe31a11a114ac",
+      "size": 1390,
+      "format": {
+        "kind": "3ds",
+        "version": null
+      }
+    },
+    {
+      "path": "3DS/cube_with_diffuse_texture.3DS",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/cube_with_diffuse_texture.3DS",
+      "sha256": "9cfce93003482aaffa378d1d61eb48d1d393fab24dae4388fcf018b9e416039d",
+      "size": 1423,
+      "format": {
+        "kind": "3ds",
+        "version": null
+      }
+    },
+    {
+      "path": "3DS/cube_with_specular_texture.3DS",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/cube_with_specular_texture.3DS",
+      "sha256": "1083ea83bcd83d9ddabb6a5c9bc428edec74c3a8f3ca3ee2707ce43bdd320ae5",
+      "size": 1423,
+      "format": {
+        "kind": "3ds",
+        "version": null
+      }
+    },
+    {
+      "path": "3DS/cubes_with_alpha.3DS",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/cubes_with_alpha.3DS",
+      "sha256": "1884df02c56909523bba287f230a0ff637fc06d68f62b3cf9f4dee46e0bac77c",
+      "size": 5957,
+      "format": {
+        "kind": "3ds",
+        "version": null
+      }
+    },
+    {
+      "path": "3DS/fels.3ds",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/fels.3ds",
+      "sha256": "9ca9e930b40d04273925d87d6683f766421b94b4bb1ad1934f2d7a0c2e190f04",
+      "size": 13326,
+      "format": {
+        "kind": "3ds",
+        "version": null
+      }
+    },
+    {
+      "path": "3DS/test.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/test.png",
+      "sha256": "70691bbe0f86ef47e9e4d648671a0bd12ca54fbef9474523ce9e0b1c38d75b31",
+      "size": 23700,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "3DS/test1.3ds",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/test1.3ds",
+      "sha256": "9b74f3bdc7b0232a71122171a87f8651287dded70d8f6a3650403b7a2c332c7f",
+      "size": 10654,
+      "format": {
+        "kind": "3ds",
+        "version": null
+      }
+    },
+    {
+      "path": "3DS/testFormatDetection",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/testFormatDetection",
+      "sha256": "8787e76147c332276efcbd26aa51444d07027e02b17bdeaf5185402b77c20ec7",
+      "size": 29025
+    },
+    {
+      "path": "3DS/textures.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/3DS/textures.txt",
+      "sha256": "a6605ee9af166f7b6b22f9e847dc55d50f2e11bf1fde84fd698332fb67446c49",
+      "size": 69
+    },
+    {
+      "path": "AC/SphereWithLight.ac",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/SphereWithLight.ac",
+      "sha256": "334d64402c97d2566d934b2777790ca34e81f032e7454e0bed3a1b74402d214b",
+      "size": 18117
+    },
+    {
+      "path": "AC/SphereWithLight.acc",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/SphereWithLight.acc",
+      "sha256": "a73b391aa28824d99bf0f00ab1fb1eae1927c6c869e84d90f8634aa96bc09e61",
+      "size": 31682
+    },
+    {
+      "path": "AC/SphereWithLightUvScaling4X.ac",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/SphereWithLightUvScaling4X.ac",
+      "sha256": "80cb781e7e2ed67d2c8050d618d0572c721e0545a40fcc21f6f9cf5cbd2f1a0b",
+      "size": 18149
+    },
+    {
+      "path": "AC/SphereWithLight_UTF16LE.ac",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/SphereWithLight_UTF16LE.ac",
+      "sha256": "24c4e27966f398e391ab7dd241efa2bc5586969a5387899f0348df57a3d833cb",
+      "size": 38484
+    },
+    {
+      "path": "AC/SphereWithLight_UTF8BOM.ac",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/SphereWithLight_UTF8BOM.ac",
+      "sha256": "8e826722177c8c279dc6d45e6ebd84ec17dd5d2d3d33380e31964c12a6dcbbf1",
+      "size": 18128
+    },
+    {
+      "path": "AC/TestFormatDetection",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/TestFormatDetection",
+      "sha256": "a5c2902b795b5eeafe5431bc15f12164afebb90d00ba471d977c8539675794e0",
+      "size": 258
+    },
+    {
+      "path": "AC/Wuson.ac",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/Wuson.ac",
+      "sha256": "00522133fb66688d9137ec24dd1092b27bd42d7b8a63ae31faec37e9228bc0f9",
+      "size": 562467
+    },
+    {
+      "path": "AC/Wuson.acc",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/Wuson.acc",
+      "sha256": "171e1faa46b17bf3bb24f236119cdd9bf37fd2d529d291288ae0a7a430bfea60",
+      "size": 300323
+    },
+    {
+      "path": "AC/closedLine.ac",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/closedLine.ac",
+      "sha256": "365115508808657ee0b0690d21e661df8f0127ea72d9c880ad438804f2f221d1",
+      "size": 258
+    },
+    {
+      "path": "AC/doubleSidedFace.ac",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/doubleSidedFace.ac",
+      "sha256": "a5c2902b795b5eeafe5431bc15f12164afebb90d00ba471d977c8539675794e0",
+      "size": 258
+    },
+    {
+      "path": "AC/earthSpherical.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/earthSpherical.jpg",
+      "sha256": "c558d0d7f103eb6ea91f91353fc88c5dda8caed3ee9049e63e282b69b8f5feae",
+      "size": 422120
+    },
+    {
+      "path": "AC/nosurfaces.ac",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/nosurfaces.ac",
+      "sha256": "e5b846244ab172d89d92c640d4d79098854ab91885c9fc944aebdc77f9d20280",
+      "size": 160
+    },
+    {
+      "path": "AC/openLine.ac",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/openLine.ac",
+      "sha256": "a16723bb96b4e63ed6c7a81c09a42e1fd92f0415bd5a9fd2d75fc473be455b9f",
+      "size": 264
+    },
+    {
+      "path": "AC/ref/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/ref/README.md",
+      "sha256": "3bd8f85423fdac71f06c2d2532afb07b8905bccbb860c084b135228ab0253a64",
+      "size": 227
+    },
+    {
+      "path": "AC/ref/screenshots/sample_subdiv_ac_solid.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/ref/screenshots/sample_subdiv_ac_solid.png",
+      "sha256": "00ca23ad6acc22bd27bb5dbdd25e2e954ae16cbd48278605fe0e9223ed5748ba",
+      "size": 268184,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1080,
+        "height": 2400
+      }
+    },
+    {
+      "path": "AC/sample_subdiv.ac",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AC/sample_subdiv.ac",
+      "sha256": "3df663cdd6195eff2efada06ae8ad60ef42362aca131c9c5efb2746cb17160ea",
+      "size": 2770
+    },
+    {
+      "path": "AMF/README",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/README",
+      "sha256": "c2a09d846c7fe04ebd1dbda547487f489e8a24fb901f9394bec7677b1abbda8c",
+      "size": 98
+    },
+    {
+      "path": "AMF/test1.amf",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/test1.amf",
+      "sha256": "1e906ae702d7d034e23f4fc08b6d0ffc5d4f4c138906cb7130816fa0fb7d875e",
+      "size": 924
+    },
+    {
+      "path": "AMF/test2.amf",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/test2.amf",
+      "sha256": "eb7ae079aaa050e7237b081c39fc3fd1436593875f7663362559b53390a5d385",
+      "size": 999
+    },
+    {
+      "path": "AMF/test3.amf",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/test3.amf",
+      "sha256": "a436958c7843168fb43920f6a4bdef29ea4032a1499255f82ad98f2f47848723",
+      "size": 1086
+    },
+    {
+      "path": "AMF/test4.amf",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/test4.amf",
+      "sha256": "cbed72e0be0301cb7dc588c29e666417bc9ce842426567e468c9e35ba332830f",
+      "size": 1177
+    },
+    {
+      "path": "AMF/test5.amf",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/test5.amf",
+      "sha256": "7b4e91400233ae453bdd71aa9cb6cbcaccd0df06bc277e3fc1170fe74f21b6d4",
+      "size": 1456
+    },
+    {
+      "path": "AMF/test5a.amf",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/test5a.amf",
+      "sha256": "5477a28281ae3c28e1767965ddd2fae45dc9f326b56c8ae52527dd6966441d82",
+      "size": 1177
+    },
+    {
+      "path": "AMF/test6.amf",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/test6.amf",
+      "sha256": "d39c05732c88124e428074562557a333808c785119c8c9ad8a248a0aaacfee20",
+      "size": 1268
+    },
+    {
+      "path": "AMF/test7.amf",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/test7.amf",
+      "sha256": "5b84e7eb1c8b0405ef68366fd2f11d191f7ae5df74ba6e1502a6137a3bafd5dd",
+      "size": 1721
+    },
+    {
+      "path": "AMF/test8.amf",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/test8.amf",
+      "sha256": "dee00cabc972ab6452d3bdc9e2f921a9de60241a621d794ab8bdc2f83ae682ef",
+      "size": 2063
+    },
+    {
+      "path": "AMF/test9.amf",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/test9.amf",
+      "sha256": "f1b1ce1419e8679ea2458b73523f92386c4841b3784175376b5fedbb3d7bc530",
+      "size": 3007
+    },
+    {
+      "path": "AMF/test_with_mat.amf",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/AMF/test_with_mat.amf",
+      "sha256": "23e32ed4ad893e6f3ff136719877003e3335825cf898abf8c6673873aba34e8a",
+      "size": 1607
+    },
+    {
+      "path": "ASE/CameraRollAnim.ase",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/CameraRollAnim.ase",
+      "sha256": "86048a4174c3a631ac34f8d14234a3d1f5ad0da7cad81a25aae743eedf8dc946",
+      "size": 13881
+    },
+    {
+      "path": "ASE/CameraRollAnimWithChildObject.ase",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/CameraRollAnimWithChildObject.ase",
+      "sha256": "f009b94ff7094d3beaffdf455bc09f3311deda16f4d1f348be6a1e6efbdf7f1a",
+      "size": 29855
+    },
+    {
+      "path": "ASE/MotionCaptureROM.ase",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/MotionCaptureROM.ase",
+      "sha256": "146ad5142c27127a7d7783169428483be82fc528ddc7152f6b4a6435ab4bb61c",
+      "size": 1104364
+    },
+    {
+      "path": "ASE/MotionCaptureROM.source.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/MotionCaptureROM.source.txt",
+      "sha256": "711cfbc576ac86dffb6c12cd7c0e8c48c3cf5f7e7253862ab3915f071e749a93",
+      "size": 165
+    },
+    {
+      "path": "ASE/RotatingCube.ASE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/RotatingCube.ASE",
+      "sha256": "66d8507065c3780083a8ef150618e7de996d085612b171da4359d069f2faa790",
+      "size": 16307
+    },
+    {
+      "path": "ASE/TargetCameraAnim.ase",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/TargetCameraAnim.ase",
+      "sha256": "64c751068eb1c0ecd17f9ec7615cc314fff770d3750daf36cf79f50151b332b8",
+      "size": 17062
+    },
+    {
+      "path": "ASE/TestFormatDetection",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/TestFormatDetection",
+      "sha256": "6ed6b2fae78d32889fc02eaf5ba38a244ea493420e764d31d271222adebd5a10",
+      "size": 15432
+    },
+    {
+      "path": "ASE/TestUVTransform/UVTransform_Normal.ASE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/TestUVTransform/UVTransform_Normal.ASE",
+      "sha256": "e6bd169d04dfd9a013b1229186c34edb4030379c8e28119c3b2d8c8bc360a1d1",
+      "size": 14713
+    },
+    {
+      "path": "ASE/TestUVTransform/UVTransform_ScaleUV1-2_OffsetUV0-0.9_Rotate-72_mirrorU.ase",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/TestUVTransform/UVTransform_ScaleUV1-2_OffsetUV0-0.9_Rotate-72_mirrorU.ase",
+      "sha256": "8ddf327db8297fad2f2d8676e8a561a8182715de188533af9c6f256de511562e",
+      "size": 14714
+    },
+    {
+      "path": "ASE/TestUVTransform/UVTransform_ScaleUV2x.ASE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/TestUVTransform/UVTransform_ScaleUV2x.ASE",
+      "sha256": "911ce1f44504591de7844fe873a061ee89a332c97cf6962e2993e92f80b7d50f",
+      "size": 14713
+    },
+    {
+      "path": "ASE/TestUVTransform/UVTransform_ScaleUV2x_Rotate45.ASE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/TestUVTransform/UVTransform_ScaleUV2x_Rotate45.ASE",
+      "sha256": "cf02cb0f5904cd8fb34ccf32e3fbaa6169a26fde2e436cd1b5f4cd4d7973062a",
+      "size": 14713
+    },
+    {
+      "path": "ASE/ThreeCubesGreen.ASE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/ThreeCubesGreen.ASE",
+      "sha256": "44624fc9ac196addc5feaf89b4e643654f101ae0a393f6cea7de6eb5f2b12040",
+      "size": 8731
+    },
+    {
+      "path": "ASE/ThreeCubesGreen_UTF16BE.ASE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/ThreeCubesGreen_UTF16BE.ASE",
+      "sha256": "fd340010434ab1bd13e617ec8693af901573eae93b703b14c92c37652dcca2d3",
+      "size": 17840
+    },
+    {
+      "path": "ASE/ThreeCubesGreen_UTF16LE.ASE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/ThreeCubesGreen_UTF16LE.ASE",
+      "sha256": "6e866f028f6513507b96fc10f90400707506090feac0bc583829e8eda068188d",
+      "size": 17900
+    },
+    {
+      "path": "ASE/anim.ASE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/anim.ASE",
+      "sha256": "f67e1ef5a090826c00608daf5dbd9c8fd5f1dcd8bdb2656a2dcfd83e1c438b2a",
+      "size": 13532
+    },
+    {
+      "path": "ASE/anim2.ASE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/anim2.ASE",
+      "sha256": "660d6d7025315fd68ec5db9065267bac855b651a857e4f4d6f7b5d0f501d2e9e",
+      "size": 41904
+    },
+    {
+      "path": "ASE/invalid/InvalidUVIndex.ase",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/invalid/InvalidUVIndex.ase",
+      "sha256": "c8ace87e641c2f0c627003b0b620f2881030e6a32e45fab09f7ff18b58e43013",
+      "size": 856
+    },
+    {
+      "path": "ASE/ref/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/ref/README.md",
+      "sha256": "a8ba3e4cf4d220ecd69f2d11fd50e0d0f23cc72730d1a586911d53da3d0397c5",
+      "size": 818
+    },
+    {
+      "path": "ASE/ref/screenshots/MotionCaptureROM_ase.gif",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/ASE/ref/screenshots/MotionCaptureROM_ase.gif",
+      "sha256": "12b1dc00f8040da21f8d3712231b89c16ac8b203429e549bfbd66c3cf5a75186",
+      "size": 7023262
+    },
+    {
+      "path": "BVH/01_01.bvh",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/BVH/01_01.bvh",
+      "sha256": "1d9ee909452ee62784306545cf1fcd634243db1173e0c90cecbed793e50361a8",
+      "size": 2070355,
+      "format": {
+        "kind": "bvh",
+        "version": null,
+        "frames": 2752
+      }
+    },
+    {
+      "path": "BVH/01_03.bvh",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/BVH/01_03.bvh",
+      "sha256": "72d3f37de5af9adfc228dda72422cadb8cfc58d1cd8336076241ba115715c87c",
+      "size": 3415609,
+      "format": {
+        "kind": "bvh",
+        "version": null,
+        "frames": 4511
+      }
+    },
+    {
+      "path": "BVH/01_nn.bvh.source.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/BVH/01_nn.bvh.source.txt",
+      "sha256": "abbbb1b68ccb5938da48a24671dc0b32d6dfc2fb3c57110385f61638c0fae30e",
+      "size": 1817
+    },
+    {
+      "path": "BVH/Boxing_Toes.bvh",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/BVH/Boxing_Toes.bvh",
+      "sha256": "ad81c1e3bb2349cb8ea5ac5d753b8a199fce9182bf9015bcc45c2f0414bc99af",
+      "size": 2655671,
+      "format": {
+        "kind": "bvh",
+        "version": null,
+        "frames": 3069
+      }
+    },
+    {
+      "path": "BVH/ref/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/BVH/ref/README.md",
+      "sha256": "3cc2ff313397451a71e4b83139c0934aee3502b9fea598476b3613f6bc04f7fa",
+      "size": 503
+    },
+    {
+      "path": "BVH/ref/screenshots/01_01_bvh.gif",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/BVH/ref/screenshots/01_01_bvh.gif",
+      "sha256": "4f9987c1cd791d642b8a996645ee2f951bba3bb6f7a834ea91213c4bb8ee0635",
+      "size": 2507650
+    },
+    {
+      "path": "BVH/ref/screenshots/01_03_bvh.gif",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/BVH/ref/screenshots/01_03_bvh.gif",
+      "sha256": "b69c434ff10e612114b4d4e65c5d02646cbda4915bd05145efcd16ff1b79ebca",
+      "size": 3838515
+    },
+    {
+      "path": "BVH/ref/screenshots/Boxing_Toes_bvh.gif",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/BVH/ref/screenshots/Boxing_Toes_bvh.gif",
+      "sha256": "67e53a6e70bffca933b46f8b68b9fe541856228e66c9f9792d08490cdb54ed43",
+      "size": 4503296
+    },
+    {
+      "path": "COB/axe.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/axe.jpg",
+      "sha256": "d687604fad2c8d79831149d65129ebbfe00674937aaef085bc4aefcf550ebc35",
+      "size": 65191
+    },
+    {
+      "path": "COB/dwarf.cob",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/dwarf.cob",
+      "sha256": "5569c42d4ab6e0dba840245cbc9d5464228d5226b3bce1c87d93298d3b1158f5",
+      "size": 962915
+    },
+    {
+      "path": "COB/dwarf.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/dwarf.jpg",
+      "sha256": "56ac47c8d5b06073d87264362998cc5ffe6c07926281863bd99d4c228c25c983",
+      "size": 84158
+    },
+    {
+      "path": "COB/dwarf2.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/dwarf2.jpg",
+      "sha256": "97da8f6ea00f834d56acca57c333fc6bd15c1c8e86f9558a0468c0f135ae37c9",
+      "size": 83046
+    },
+    {
+      "path": "COB/dwarf_ascii.cob",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/dwarf_ascii.cob",
+      "sha256": "aec0b7094e61fd6d4f5ad008e7d5dcefbdb2359263f717c53752db677e257b19",
+      "size": 2263260
+    },
+    {
+      "path": "COB/molecule.cob",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/molecule.cob",
+      "sha256": "05c46da06eff9d5b7624dc7cecb96c6c6a1785da442a0d875cddbcb11ad2a170",
+      "size": 36394
+    },
+    {
+      "path": "COB/molecule_ascii.cob",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/molecule_ascii.cob",
+      "sha256": "3e1fb340d5db0316bfa975c9c168f356f3a6d59cbff114392148ec1c88798ddc",
+      "size": 78098
+    },
+    {
+      "path": "COB/ref/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/ref/README.md",
+      "sha256": "f94b4767e6553a2d4aea413e292375022a3af5237d53ef32394b353cf9de3c0e",
+      "size": 139
+    },
+    {
+      "path": "COB/ref/screenshots/molecule_ascii_cob.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/ref/screenshots/molecule_ascii_cob.png",
+      "sha256": "4c59560f62b9c2efb4ab085cb06cca7d9e278b76b1cda5fa2b84e84b2549ff86",
+      "size": 248304,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1080,
+        "height": 2400
+      }
+    },
+    {
+      "path": "COB/spider_4_3.cob",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/spider_4_3.cob",
+      "sha256": "7d29ec31c0d869a1ce9bf834227e4022ec4fd6447dccaaf4955ae7ba7b0ddf2a",
+      "size": 180033
+    },
+    {
+      "path": "COB/spider_4_3_ascii.cob",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/spider_4_3_ascii.cob",
+      "sha256": "e1e8d2f89768dc44bf65dd2fc1e33453fd6fd9b8949cf054f5031da33b169fc3",
+      "size": 95734
+    },
+    {
+      "path": "COB/spider_6_6.cob",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/spider_6_6.cob",
+      "sha256": "07502b6d7acf7f87c8aea29b280705d214de5ea8a97cc17ee531cabd2a0291a3",
+      "size": 54453
+    },
+    {
+      "path": "COB/spider_6_6_ascii.cob",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/COB/spider_6_6_ascii.cob",
+      "sha256": "3de8a518c2d718e473fad52919a8df2000403cd14cbb39b04349ca055efbdf5e",
+      "size": 484651
+    },
+    {
+      "path": "Collada/AsXML.xml",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/AsXML.xml",
+      "sha256": "5e06f388baf5a614c63e68a609d0f8782d39108aab8e78943455cf7952ded04e",
+      "size": 9691
+    },
+    {
+      "path": "Collada/COLLADA.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/COLLADA.dae",
+      "sha256": "9697efc60119a491d417e520c0b945b3f424a15861025f352744d661fc2904f7",
+      "size": 725385,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/COLLADA_triangulate.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/COLLADA_triangulate.dae",
+      "sha256": "dd578a980bddad55fc956b76a3e7de18a27a860a71c4ac59f2890f666026643b",
+      "size": 711889,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/Cinema4D.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/Cinema4D.dae",
+      "sha256": "377672d32f3887bff17a27b3309dcdd0ac087c339ce05e310a1adad02752df4c",
+      "size": 76523,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/Collada_Sample.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/Collada_Sample.jpg",
+      "sha256": "ff2cf7c5431657a3d12b244ebb039a79fc38647ab873ef71e84615eb16c629e1",
+      "size": 35624
+    },
+    {
+      "path": "Collada/ConcavePolygon.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/ConcavePolygon.dae",
+      "sha256": "4d39d77708a223ab35000fecd99dfbd97354cf176e1ccd0ce694cb5d2b326caa",
+      "size": 4805,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/anims_with_full_rotations_between_keys.DAE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/anims_with_full_rotations_between_keys.DAE",
+      "sha256": "f6c04667f320ce205e225c77f0e2d48c486fa577effdc22d4a0feffc531bf442",
+      "size": 504895,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/box_nested_animation.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/box_nested_animation.dae",
+      "sha256": "669b797dd5784e4e5dcd9ae9067e0b2f06161a813f8a08b6a7ed78d0d8d1534f",
+      "size": 14167,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/cameras.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/cameras.dae",
+      "sha256": "3f760e762cd5914d4554343f32b6e2fb6ba3123b858fc54b68b34e6d62a72cf2",
+      "size": 3113,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/cube_UTF16LE.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/cube_UTF16LE.dae",
+      "sha256": "38a573ca9e4c609d005d98699ccc94cc78c12474267c0534d0087f56d71a0a32",
+      "size": 19784,
+      "format": {
+        "kind": "collada",
+        "version": null
+      }
+    },
+    {
+      "path": "Collada/cube_UTF8BOM.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/cube_UTF8BOM.dae",
+      "sha256": "69181ad143255a4dfdc99caa4dc237b2f8b9629257f0f2854142283b63a6d90a",
+      "size": 9702,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/cube_emptyTags.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/cube_emptyTags.dae",
+      "sha256": "b1550896e4131a8dc73c5c5a5901a39f1369186d3986903bec947959d7bb7ac9",
+      "size": 4631,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/cube_triangulate.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/cube_triangulate.dae",
+      "sha256": "0ece034d4d3859d56af979b1936267dc07f83a8537c379608911816bbb2920da",
+      "size": 9711,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/cube_tristrips.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/cube_tristrips.dae",
+      "sha256": "105e5565eb2c160e7ddb71e9d1103f5e4932fc97b0e2bd091d460a9a78d970c1",
+      "size": 5431,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/cube_with_2UVs.DAE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/cube_with_2UVs.DAE",
+      "sha256": "d5ec2f0fc1be7103269164d1a03e439fae6869e2b0095e34b203d53430912595",
+      "size": 8486,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/cube_xmlspecialchars.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/cube_xmlspecialchars.dae",
+      "sha256": "284c0560b50619920292fdac946a9bc6a3e2ab97ca94e40e5ee8a05abeb40bad",
+      "size": 10051,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/duck.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/duck.dae",
+      "sha256": "3545f5d7e99ae38a961b615be26bb64f1d5ae2b38f94d522accf48ef6161d815",
+      "size": 284355,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/duck.zae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/duck.zae",
+      "sha256": "4f75c3ed25b3d6d8b632b1900c46360710d619d5e2a80f8b1ec827f0586a7213",
+      "size": 132811
+    },
+    {
+      "path": "Collada/duckCM.tga",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/duckCM.tga",
+      "sha256": "25f5ff38a5db9465c871947c5e805d707d734bf50fb4e52793f03483afa5c22a",
+      "size": 786476
+    },
+    {
+      "path": "Collada/duck_nomanifest.zae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/duck_nomanifest.zae",
+      "sha256": "13bbb6719d268fb1dd1629cb13e363e801c05428f4174eb309e60fccc4dcdc5d",
+      "size": 132634
+    },
+    {
+      "path": "Collada/duck_sample.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/duck_sample.jpg",
+      "sha256": "00def5cf08ab748c1e7236f84b7c6431bc47e8f18edd3674e7ab00ef2bd9c494",
+      "size": 14223
+    },
+    {
+      "path": "Collada/duck_triangulate.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/duck_triangulate.dae",
+      "sha256": "b4af86dc6d86615d5c27d6d51280e57afa81a99dbf8c7720ff276defbff3ec9a",
+      "size": 335626,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/earthCylindrical.DAE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/earthCylindrical.DAE",
+      "sha256": "161530e2fdb0f0baade0ca841cd9f1742600899c738b3fce81381e60248290fc",
+      "size": 322302,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.0"
+      }
+    },
+    {
+      "path": "Collada/human.zae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/human.zae",
+      "sha256": "567a85e7c8023e28626e60ea057da69f83a48364f496854df11901d732ca54c3",
+      "size": 1093924
+    },
+    {
+      "path": "Collada/kwxport_test_vcolors.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/kwxport_test_vcolors.dae",
+      "sha256": "3647a5e50d920466ffda288ab4a102c0c31e062b5fb37aa40bd99d98185c579b",
+      "size": 14908,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/kwxport_test_vcolors.dae.source.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/kwxport_test_vcolors.dae.source.txt",
+      "sha256": "086a3fb3e89221924db9aa219664798b597209a1ddcb176047fdcd2ed3c271a0",
+      "size": 1244
+    },
+    {
+      "path": "Collada/library_animation_clips.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/library_animation_clips.dae",
+      "sha256": "dbbb943015c26c5c0de2032a9914a5230dc54bf3437eaa31ed8e75e78bd3ea33",
+      "size": 84983,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/licence.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/licence.md",
+      "sha256": "d09e0dcff6d3493dca3400e0876293a75328c7caf0218c03085641f387e8e7b5",
+      "size": 6619
+    },
+    {
+      "path": "Collada/lights.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/lights.dae",
+      "sha256": "6ae697ca45b34695329acf5c1dc83257fcd204dd32436dd75a54031f29e84429",
+      "size": 14377,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/ref/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/ref/README.md",
+      "sha256": "c882bb1daa7a354f4537fa2b9d36d0d8d0a2361845456be484cf55b37b08a671",
+      "size": 148
+    },
+    {
+      "path": "Collada/ref/screenshots/human_zae.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/ref/screenshots/human_zae.png",
+      "sha256": "a195eaf7c849b55d7b554166b6d2d8ea0d9abae1b6919dff723ddb5bdbc3d729",
+      "size": 646451,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1080,
+        "height": 2400
+      }
+    },
+    {
+      "path": "Collada/regr01.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/regr01.dae",
+      "sha256": "f51b225f86715bc1b2bbbe5356415a06aba54503d45d782dc5e3f82d39f79dd8",
+      "size": 37609,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.0"
+      }
+    },
+    {
+      "path": "Collada/sphere.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/sphere.dae",
+      "sha256": "1387606aae63b9076c03e1fdae4333192c97c3f89750a716e1bda6d37d5db30e",
+      "size": 42437,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/sphere_sample.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/sphere_sample.jpg",
+      "sha256": "13ee1321b83e2e285cc2918d728c2742045201890fb7f8eaec3c451086d1a28e",
+      "size": 8559
+    },
+    {
+      "path": "Collada/sphere_triangulate.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/sphere_triangulate.dae",
+      "sha256": "b657e008dc41d7da292f5da62d6ac027249cb31bdf3480786e6002800da577a9",
+      "size": 46983,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/teapot_instancenodes.DAE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/teapot_instancenodes.DAE",
+      "sha256": "2e7c6a3f269fbb93b615b5baa9ec4998b03738f49735a781a06bcc6fe7c9166d",
+      "size": 75262,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "Collada/teapots.DAE",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/teapots.DAE",
+      "sha256": "ad7a15ad2b432fa1f1498edb9fef9667754a04604d2185f5bf270c58da2addf7",
+      "size": 489365,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.0"
+      }
+    },
+    {
+      "path": "Collada/teapots_reference.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/Collada/teapots_reference.png",
+      "sha256": "92914d50f675793f843b78d0e213efe19a8a72608260f5ab30dd92f1a20ac1ac",
+      "size": 183476,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "path": "FBX/animation_with_skeleton.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/animation_with_skeleton.fbx",
+      "sha256": "eb4d07ccc536aff6c7f8c1ecae82c171719b32115d4d4c30ed0be32eb7ab89e3",
+      "size": 195420,
+      "format": {
+        "kind": "fbx",
+        "version": "7400",
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "FBX/box.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/box.fbx",
+      "sha256": "ad2d79fe89d4d646bc7930dc952eb28e69976a321b387bf7851ecd3f37e667f8",
+      "size": 17200,
+      "format": {
+        "kind": "fbx",
+        "version": "7400",
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "FBX/boxWithCompressedCTypeArray.FBX",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/boxWithCompressedCTypeArray.FBX",
+      "sha256": "924eb76d8d03b05cb96bdbefbb4f4c4f23e14a3737cde1cd7263e06d8dec444c",
+      "size": 13824,
+      "format": {
+        "kind": "fbx",
+        "version": "7500",
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "FBX/boxWithUncompressedCTypeArray.FBX",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/boxWithUncompressedCTypeArray.FBX",
+      "sha256": "168f431efd75e7ca49d9ba9fd7c0ffad513d8ce5733689263f979253e65214e7",
+      "size": 26021,
+      "format": {
+        "kind": "fbx",
+        "version": "7500",
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "FBX/box_orphant_embedded_texture.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/box_orphant_embedded_texture.fbx",
+      "sha256": "38c555e3c13564a70bdef1e36cf4956636542df70066ed220f57d2ecb5b976b3",
+      "size": 36622,
+      "format": {
+        "kind": "fbx",
+        "version": "7500",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "FBX/close_to_identity_transforms.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/close_to_identity_transforms.fbx",
+      "sha256": "98aca32e26f1c1f35a167f0a6cbb6a04a1af3d6fd3392411bb76ca7d9a532274",
+      "size": 88301,
+      "format": {
+        "kind": "fbx",
+        "version": "7500",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "FBX/cubes_nonames.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/cubes_nonames.fbx",
+      "sha256": "6e042e26c8c2dd3b8155c1786553e78d46df8cbdbfc3521ccfe7e970b096c973",
+      "size": 88009,
+      "format": {
+        "kind": "fbx",
+        "version": "7500",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "FBX/cubes_with_mirroring_and_pivot.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/cubes_with_mirroring_and_pivot.fbx",
+      "sha256": "b0cfc3d7b6e84ae5aa408bf5cd328225b627a3fc0f751a02913e4bb7f313dc1c",
+      "size": 88496,
+      "format": {
+        "kind": "fbx",
+        "version": "7500",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "FBX/cubes_with_names.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/cubes_with_names.fbx",
+      "sha256": "1070eab19a0af80f31a18d49e47ee522cce86acd08daf2a80c63cfb615ed4006",
+      "size": 88127,
+      "format": {
+        "kind": "fbx",
+        "version": "7500",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "FBX/cubes_with_outofrange_float.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/cubes_with_outofrange_float.fbx",
+      "sha256": "4f2910bffaad5268e9d26cf126092f95494504417e00f117eff765c1101de1c1",
+      "size": 88069,
+      "format": {
+        "kind": "fbx",
+        "version": "7500",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "FBX/embedded_ascii/box.FBX",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/embedded_ascii/box.FBX",
+      "sha256": "88ce2946d940ff4d532d2c80cef6af1c0b3d67c527bb854c29e8afa37abdb87c",
+      "size": 602377,
+      "format": {
+        "kind": "fbx",
+        "version": "7400",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "FBX/embedded_ascii/box_embedded_texture_fragmented.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/embedded_ascii/box_embedded_texture_fragmented.fbx",
+      "sha256": "9dabf90a6fbf7ed17941abd7302e8e7d674e2bc97c178892738fb576730561f3",
+      "size": 1314403,
+      "format": {
+        "kind": "fbx",
+        "version": "7500",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "FBX/global_settings.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/global_settings.fbx",
+      "sha256": "4baae0f0f176f6a221749451ec23fd7378ce32906341396ece9d99cc74ecc9c5",
+      "size": 57596,
+      "format": {
+        "kind": "fbx",
+        "version": "7400",
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "FBX/huesitos.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/huesitos.fbx",
+      "sha256": "1f15e2f0e0b637e97ecd37102330f311d04a95389d3cb009a0309cbd5f4f171d",
+      "size": 111564,
+      "format": {
+        "kind": "fbx",
+        "version": "7400",
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "FBX/maxPbrMaterial_metalRough.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/maxPbrMaterial_metalRough.fbx",
+      "sha256": "4b259489329f8dae292faae826f319e26bbd70a9fe91ac95cc6f9691c3b34b2e",
+      "size": 20439,
+      "format": {
+        "kind": "fbx",
+        "version": "7700",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "FBX/maxPbrMaterial_specGloss.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/maxPbrMaterial_specGloss.fbx",
+      "sha256": "3617267c212f6f95340ee42f62a05ee079f38fcd24a0451f02a4deb47d20c7c0",
+      "size": 20439,
+      "format": {
+        "kind": "fbx",
+        "version": "7700",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "FBX/phong_cube.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/phong_cube.fbx",
+      "sha256": "49bb59603b077c726ced3c3250b8ea88caf447442ec4c371288987ab3dc4a0ca",
+      "size": 17084,
+      "format": {
+        "kind": "fbx",
+        "version": "7400",
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "FBX/spider.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/spider.fbx",
+      "sha256": "37ca4979dec31f5fbf41eaac2594918d56459cad3461e4b35425396142d4fe0a",
+      "size": 123292,
+      "format": {
+        "kind": "fbx",
+        "version": "7400",
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "FBX/transparentTest.fbx",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/FBX/transparentTest.fbx",
+      "sha256": "db56b36bec8f3b3899d06a68f748d8dc5097665c0c6ae2b631a1ec161b0b88b9",
+      "size": 389688,
+      "format": {
+        "kind": "fbx",
+        "version": null,
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "IQM/Body.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/IQM/Body.jpg",
+      "sha256": "e0f150bfe70341e96e948e99063e93aecaad1ef6437f1f8b7928127c2eab577a",
+      "size": 369618
+    },
+    {
+      "path": "IQM/Head.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/IQM/Head.jpg",
+      "sha256": "b4e841e4bb34a988f1c42702674b9a6dfa4c57bf94fd654bdf5152f728df82d4",
+      "size": 118263
+    },
+    {
+      "path": "IQM/invalid/InvalidMeshOffset.iqm",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/IQM/invalid/InvalidMeshOffset.iqm",
+      "sha256": "8aac8e35498f8afab11553eab0243ede441d48ff9774d084ce103e133d782d0e",
+      "size": 124,
+      "format": {
+        "kind": "iqm",
+        "version": "2"
+      }
+    },
+    {
+      "path": "IQM/mrfixit.iqm",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/IQM/mrfixit.iqm",
+      "sha256": "e1e9995bf3fd0bd33245786a6bc0c4ed2cfbbe199c0b39ba9fab58ef0bb1138f",
+      "size": 257808,
+      "format": {
+        "kind": "iqm",
+        "version": "2"
+      }
+    },
+    {
+      "path": "IQM/ref/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/IQM/ref/README.md",
+      "sha256": "5bfdffdcfafb1e07b1b38d300f64fcf3a8d804b7a76b135f7972b83432acdfc0",
+      "size": 118
+    },
+    {
+      "path": "IQM/ref/screenshots/mrfixit_iqm.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/IQM/ref/screenshots/mrfixit_iqm.png",
+      "sha256": "13ccc589d6cdd51a9a3c40d6c142af78f4a83403ca8536e71b412c10293cfebc",
+      "size": 1575656,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1080,
+        "height": 2400
+      }
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earthCylindric.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earthCylindric.jpg",
+      "sha256": "9515873d147e872633ee894534e120c328c898563f3fd070444d2df987b8c03f",
+      "size": 624832
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earthCylindric.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earthCylindric.txt",
+      "sha256": "9ce0ac46e018e7742fdc87356123a19a415f6a1f386a45e76d154c4f99042e50",
+      "size": 146
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earthSpherical.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earthSpherical.jpg",
+      "sha256": "c558d0d7f103eb6ea91f91353fc88c5dda8caed3ee9049e63e282b69b8f5feae",
+      "size": 422120
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earthSpherical.source.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earthSpherical.source.txt",
+      "sha256": "61ff9d912f209512ab55ff174351bee455c8747eb81587321d2581b535dbf07c",
+      "size": 180
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_cylindrical_x.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_x.lwo",
+      "sha256": "92a44a99c62ef03db1e20cc42be8ed554d229111d064c6257939c5bfc79ee3d1",
+      "size": 8978
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_cylindrical_x_scale_222_wrap_21.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_x_scale_222_wrap_21.lwo",
+      "sha256": "d3edb33e554309a221f7884adb1f3f527796a2d12a521009439c622ef09f86a2",
+      "size": 8994
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_cylindrical_y.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_y.lwo",
+      "sha256": "851ee2ca3a6c9c90f1f32d451e6bedf11eba6849be8e1b2787f31776a98fb05d",
+      "size": 8994
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_cylindrical_y_scale_111.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_y_scale_111.lwo",
+      "sha256": "06db9bc07f5e21e583867dc361d6f299636950b19d8bcb58197d227cdad9370f",
+      "size": 8994
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_cylindrical_y_scale_111_wrap_21.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_y_scale_111_wrap_21.lwo",
+      "sha256": "1501da854ebd73ac585f47c840e7d244c14c3829aa8a8d9265dfacad02c7e157",
+      "size": 8994
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_cylindrical_z.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_z.lwo",
+      "sha256": "ce95a3096d33f49fee59d35495b1d5eb3f0e7c0b5301d282f38370cefa14137d",
+      "size": 8978
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_planar_x.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_planar_x.lwo",
+      "sha256": "a3e029266b4006f06756082d18e110de98d9376c0570ce2e881f13e00773532c",
+      "size": 8978
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_planar_y.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_planar_y.lwo",
+      "sha256": "c54c6ab0c9a98a55369b2400745f22631cbdb3e5b1ab445100a571baca666089",
+      "size": 8978
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_planar_z.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_planar_z.lwo",
+      "sha256": "723f3c76e2ec9cf568d0051b29ec179b12ab17edfaee3179cee6d898a018a915",
+      "size": 8978
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_planar_z_scale_111.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_planar_z_scale_111.lwo",
+      "sha256": "c08edc685209df166ddb7c45e0555444324ca53a92def235beba4d768eb4d346",
+      "size": 8978
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_spherical_x.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_spherical_x.lwo",
+      "sha256": "334b7d17f2688d0b158248c65478a990dc5cd39b378e52116fe7952dcca8e6a4",
+      "size": 8978
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_spherical_x_scale_222_wrap_22.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_spherical_x_scale_222_wrap_22.lwo",
+      "sha256": "e0ee275783663a62769977ffa641fe5fa042b343e524cbe15014f17eaf50ace1",
+      "size": 8994
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_spherical_y.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_spherical_y.lwo",
+      "sha256": "d7704d85b9ee3063f54abaa0f164968ba8a82ecfe1f902a8ad985ccc3158ea3a",
+      "size": 8978
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_spherical_z.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_spherical_z.lwo",
+      "sha256": "146ad0920907a8b54867414f76aaff6e6c787661430820f8100f386108dfbc92",
+      "size": 8978
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_spherical_z_wrap_22.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_spherical_z_wrap_22.lwo",
+      "sha256": "fa46b97237dd171fd7babde058dafa2a5dd41cd4be7e3893a7786ae727d1543b",
+      "size": 8978
+    },
+    {
+      "path": "LWO/LWO2/MappingModes/earth_uv_cylindrical_y.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_uv_cylindrical_y.lwo",
+      "sha256": "4767f77290b59a9d430cb7fe896c26bad93a25ab604d8786e1a6f05af7ec5858",
+      "size": 12002
+    },
+    {
+      "path": "LWO/LWO2/ModoExport_vertNormals.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/ModoExport_vertNormals.lwo",
+      "sha256": "ed9b58ac24c5d427922eb5fa0f077b0572a09df00d2b0322c110c717da63e3c8",
+      "size": 24626
+    },
+    {
+      "path": "LWO/LWO2/Subdivision.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/Subdivision.lwo",
+      "sha256": "bbebe6cc067f9ff231ed56c2be6420ea04a8545092fefcd1403fe7a38947b4f7",
+      "size": 1332
+    },
+    {
+      "path": "LWO/LWO2/UglyVertexColors.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/UglyVertexColors.lwo",
+      "sha256": "e89b30d2892b17ec97d46036abffa5694b72d50670079d05df44e6e27a503998",
+      "size": 66848
+    },
+    {
+      "path": "LWO/LWO2/box_2uv_1unused.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/box_2uv_1unused.lwo",
+      "sha256": "2a9f4e7749e5f36e56ff80b02d48654ce08ea5b8c93ae46f9a991678d88061c8",
+      "size": 1236
+    },
+    {
+      "path": "LWO/LWO2/box_2vc_1unused.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/box_2vc_1unused.lwo",
+      "sha256": "c94f3c0a86228b1fa68329f5bc5c38ba7f7c483f43b418d4778b8669d2a3bf5c",
+      "size": 22924
+    },
+    {
+      "path": "LWO/LWO2/boxuv.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/boxuv.lwo",
+      "sha256": "a2e2f7aba857df5c88bf0116a0189eb0acac451cd7e72740cb82c16a9c6f184b",
+      "size": 1100
+    },
+    {
+      "path": "LWO/LWO2/boxuv.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/boxuv.png",
+      "sha256": "cdd4480ee6441a2f17f719bb4b1ae0db38ddcfca069e5a6d18a18bcc87542f62",
+      "size": 14080,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "LWO/LWO2/concave_polygon.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/concave_polygon.lwo",
+      "sha256": "5a83af5ab8f07122e8b0b4bb5d07f60642b14c1d5a31da6b3b2439a34e3de398",
+      "size": 2512
+    },
+    {
+      "path": "LWO/LWO2/concave_self_intersecting.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/concave_self_intersecting.lwo",
+      "sha256": "32288b72c4e74e6a4a7cf39235beed0e08b1b85679e738ac6abf0aad53858275",
+      "size": 562
+    },
+    {
+      "path": "LWO/LWO2/concrete.source.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/concrete.source.txt",
+      "sha256": "bdef754f43c5b67f610828dc07f2c8393e377a18c3b60851b88f361f9e615b8d",
+      "size": 153
+    },
+    {
+      "path": "LWO/LWO2/formatDetection",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/formatDetection",
+      "sha256": "ad1d9daf42d3a74c560802c09330a4d1a8dc54e41b03ed3ae63cf8e60caac438",
+      "size": 702
+    },
+    {
+      "path": "LWO/LWO2/hierarchy.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/hierarchy.lwo",
+      "sha256": "aa440a69297b334f9f9d3679d50ef60f697b09421f8fdea321a1da4286aacfa2",
+      "size": 13390
+    },
+    {
+      "path": "LWO/LWO2/hierarchy_smoothed.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/hierarchy_smoothed.lwo",
+      "sha256": "e83459c4f1d9bbd1c7a8712448efc051b12f937c97ba1b6a2ef467df788f7eac",
+      "size": 13400
+    },
+    {
+      "path": "LWO/LWO2/nonplanar_polygon.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/nonplanar_polygon.lwo",
+      "sha256": "e5e637082d13090858e8e7df20b5200e59dcee63a8704c3c6ad9d85b21f6d822",
+      "size": 618
+    },
+    {
+      "path": "LWO/LWO2/shader_test/CellShader.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/shader_test/CellShader.lwo",
+      "sha256": "6f5c00ed5b204bfe9dd4ea98143c80731bdc077730788e31e066fa01ac329be6",
+      "size": 806
+    },
+    {
+      "path": "LWO/LWO2/shader_test/SuperCellShader.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/shader_test/SuperCellShader.lwo",
+      "sha256": "45d8537909bd36f0cb249478a440a5e2ed508d481686f3d1065ce54bf3a57202",
+      "size": 926
+    },
+    {
+      "path": "LWO/LWO2/shader_test/fastFresnel.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/shader_test/fastFresnel.lwo",
+      "sha256": "05cf830e77c2dc37125f22faa8a7e88d979fe1337f3984bae8cbb982f8f7a608",
+      "size": 864
+    },
+    {
+      "path": "LWO/LWO2/shader_test/realFresnel.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/shader_test/realFresnel.lwo",
+      "sha256": "5bd139c03acc3741a3f1d1a702460858f987b9a7e9b48d49bc52159874b80f8e",
+      "size": 820
+    },
+    {
+      "path": "LWO/LWO2/sphere_with_gradient.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/sphere_with_gradient.lwo",
+      "sha256": "c07156e50ce4b0f03aef44413d60018ff30d703193ab151ec6580d60851f1d72",
+      "size": 9614
+    },
+    {
+      "path": "LWO/LWO2/sphere_with_mat_gloss_10pc.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/sphere_with_mat_gloss_10pc.lwo",
+      "sha256": "e42b0facf2699a40df312a40fa9e9d4ad86778ffd964ce6eba0af07413974445",
+      "size": 7584
+    },
+    {
+      "path": "LWO/LWO2/transparency.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/transparency.lwo",
+      "sha256": "fb444cd572e8e7071fc1b5f95fd63c1a8c685a432a9c32a0361f9ec17a8c5fda",
+      "size": 9078
+    },
+    {
+      "path": "LWO/LWO2/uvtest-source.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/uvtest-source.txt",
+      "sha256": "5a21cd6a5fc466a47b8af788b8c9d593b6b573564c4fc6d4ddc86de050680694",
+      "size": 110
+    },
+    {
+      "path": "LWO/LWO2/uvtest.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/uvtest.lwo",
+      "sha256": "e7b6cc7bde320aa04e8b6b00e1cf3321bd5899b8eb6a781d103336019e7da040",
+      "size": 6978
+    },
+    {
+      "path": "LWO/LWO2/uvtest.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/uvtest.png",
+      "sha256": "7896a8c5b37e18d7f87a0fba6147e9027be512167981ba57f06a4b0f6dcd0e95",
+      "size": 16301,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "LWO/LWO2/white.bmp",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWO2/white.bmp",
+      "sha256": "f939a17e586c3feb4be7da7fa3b7e3b1ea15bbd9eaadf6a36a3e907e4dad5873",
+      "size": 58
+    },
+    {
+      "path": "LWO/LWOB/ConcavePolygon.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWOB/ConcavePolygon.lwo",
+      "sha256": "0e61cf23e22187fe0b753a35c9be74bf6e3536f660091f47d9fb395b88c1dd3d",
+      "size": 1134
+    },
+    {
+      "path": "LWO/LWOB/MappingModes/bluewithcylindrictexz.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWOB/MappingModes/bluewithcylindrictexz.lwo",
+      "sha256": "2f686f1bb3ff13c17194dce418d55051a266c2279ba7c7cff047b558cfc438d9",
+      "size": 600
+    },
+    {
+      "path": "LWO/LWOB/formatDetection",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWOB/formatDetection",
+      "sha256": "d3e44cad71c907aaf81852db8dc477c5d23e0875dc01af99196231463cc1df60",
+      "size": 544
+    },
+    {
+      "path": "LWO/LWOB/sphere_with_mat_gloss_10pc.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWOB/sphere_with_mat_gloss_10pc.lwo",
+      "sha256": "34a9d84220e5fd5cd68b7434ab5895e311acb15c7b50f3f45ca36dfc23ad6089",
+      "size": 6766
+    },
+    {
+      "path": "LWO/LWOB/sphere_with_mat_gloss_50pc.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LWOB/sphere_with_mat_gloss_50pc.lwo",
+      "sha256": "df75d60d672e558a50c48e70dad06524a9bb1397428d6db89f77615e63e848d0",
+      "size": 6766
+    },
+    {
+      "path": "LWO/LXOB_Modo/CrazyEngine.lxo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LXOB_Modo/CrazyEngine.lxo",
+      "sha256": "d9c295b7a4608878c72245dc4b698b10dd94e11295e429c8862efffe0fbd4304",
+      "size": 60696
+    },
+    {
+      "path": "LWO/LXOB_Modo/sphereWithVertMap.lxo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWO/LXOB_Modo/sphereWithVertMap.lxo",
+      "sha256": "d905042540a09b2997c398ad00b0e1e61765b6c0d09942814aa4e1e3c48a11e6",
+      "size": 35408
+    },
+    {
+      "path": "LWS/move_x.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_x.lws",
+      "sha256": "34aa54b472dca0212ca883337896f3c8c20adfb17c6137c8d65a65a606bbd6fc",
+      "size": 7246
+    },
+    {
+      "path": "LWS/move_x_oldformat_56.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_x_oldformat_56.lws",
+      "sha256": "983ec6746705f3805f5c5c3c8b5f40797d72837fd8cc78a3513f0bfaf3840bae",
+      "size": 3142
+    },
+    {
+      "path": "LWS/move_x_oldformat_6.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_x_oldformat_6.lws",
+      "sha256": "c5543d8a138f81e02236346bb305713467293ec83a0ca745a2c19424584183af",
+      "size": 6787
+    },
+    {
+      "path": "LWS/move_x_post_constant.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_x_post_constant.lws",
+      "sha256": "03b1b7a3357f2a9ca3835196e66da03abce9fb800be81a0f9eda6fdf7577900c",
+      "size": 7159
+    },
+    {
+      "path": "LWS/move_x_post_linear.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_x_post_linear.lws",
+      "sha256": "4e697dcdfa1cc193137076e8c77bfebf72d8bc91c03b122a727e1bab6aadf11e",
+      "size": 7159
+    },
+    {
+      "path": "LWS/move_x_post_offset_repeat.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_x_post_offset_repeat.lws",
+      "sha256": "dd17ddb7c0c1e3068c669d1255bdfbc215e022cd757f0e7bba49042605c2b36d",
+      "size": 7159
+    },
+    {
+      "path": "LWS/move_x_post_repeat.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_x_post_repeat.lws",
+      "sha256": "5198e0e338211404d36d81c4fa26a8fb71f14736b300afb6ac6f125ceb7407ac",
+      "size": 7161
+    },
+    {
+      "path": "LWS/move_x_post_reset.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_x_post_reset.lws",
+      "sha256": "254ba995c45943d588bd4acfad66d7f14f8827b342594c3da2379112d2afc7b8",
+      "size": 7159
+    },
+    {
+      "path": "LWS/move_xz_bezier.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_xz_bezier.lws",
+      "sha256": "bf26f1e6ac6e39d5f3d8e591e4571d3a4bc5c9084dcf9e31195ddb816bb1ed0f",
+      "size": 7519
+    },
+    {
+      "path": "LWS/move_xz_hermite.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_xz_hermite.lws",
+      "sha256": "7e10348a1d147d86714d94a8c74ccd4ea31c0db1a1fb166cf41330392fd18f44",
+      "size": 7352
+    },
+    {
+      "path": "LWS/move_xz_linear.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_xz_linear.lws",
+      "sha256": "1a7184b36d6e4efe93c2ff94491bcd3aa19e6e393d0a145180fda01e5add1875",
+      "size": 7352
+    },
+    {
+      "path": "LWS/move_xz_spline.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_xz_spline.lws",
+      "sha256": "787b98819df51d4afc52ef0be6d35a75611acad4e1ae58e6318fbbe25b66f1f4",
+      "size": 7352
+    },
+    {
+      "path": "LWS/move_xz_stepped.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_xz_stepped.lws",
+      "sha256": "26444f11a16280faabf2f8a382f5c242fe8c16eb11be87a0ae098124b7154315",
+      "size": 7353
+    },
+    {
+      "path": "LWS/move_y_pre_ofrep_post_osc.lws",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/move_y_pre_ofrep_post_osc.lws",
+      "sha256": "d0cd6c7ffa7bbd21f3b153ebcf82b599d8474e4df783c0229ca0d51b8a6869c6",
+      "size": 7307
+    },
+    {
+      "path": "LWS/simple_cube.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/LWS/simple_cube.lwo",
+      "sha256": "e19be259e868c6943a05d28129b80a052468a37e82a18a4e915a778d53e5e6e3",
+      "size": 560
+    },
+    {
+      "path": "M3D/WusonBlitz0.m3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/M3D/WusonBlitz0.m3d",
+      "sha256": "02594460e3e31981f7c1a8acfbae717dfdcc069660c1a6281856fa35048fc23a",
+      "size": 29223
+    },
+    {
+      "path": "M3D/WusonBlitz1.m3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/M3D/WusonBlitz1.m3d",
+      "sha256": "85229784d5c0b08aee7b67cd9842452fbcae1d3675d781a6cd71faf8b7a3018d",
+      "size": 35058
+    },
+    {
+      "path": "M3D/WusonBlitz2.m3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/M3D/WusonBlitz2.m3d",
+      "sha256": "5c3d90949a8f3e1a4bfd6275b1ea0b73d505707e6ff1acf814e4a337972d3a7d",
+      "size": 42228
+    },
+    {
+      "path": "M3D/cube_normals.m3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/M3D/cube_normals.m3d",
+      "sha256": "bbbaa2a1682ca4e3721eb7906da2a85cd86b45bcfac72400c8b3c64b4e2b5901",
+      "size": 156
+    },
+    {
+      "path": "M3D/cube_usemtl.m3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/M3D/cube_usemtl.m3d",
+      "sha256": "d8f344a482e720917a8567979205e957480b9a9ae083eb5e2e358d60543502af",
+      "size": 249
+    },
+    {
+      "path": "M3D/cube_with_vertexcolors.a3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/M3D/cube_with_vertexcolors.a3d",
+      "sha256": "c103592b184757a0060b38e074dbf2aa44b5828498d0d58fbde676853bf11be0",
+      "size": 458
+    },
+    {
+      "path": "M3D/cube_with_vertexcolors.m3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/M3D/cube_with_vertexcolors.m3d",
+      "sha256": "9308087facea7eefc7591b3e62ee4b89ebf79f25c262ef024d35fe71382ee58a",
+      "size": 228
+    },
+    {
+      "path": "M3D/suzanne.m3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/M3D/suzanne.m3d",
+      "sha256": "6c058c089c7865eacd8bc1d07d2a5611685685bb2d9d8d1a55bbe19b4e46e0b0",
+      "size": 11645
+    },
+    {
+      "path": "MD2/faerie-source.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/MD2/faerie-source.txt",
+      "sha256": "88e5f754f63c2200c75cfb933e25fcaf32b65a3ce3ecd223eac4c33e3eba101d",
+      "size": 973
+    },
+    {
+      "path": "MD2/faerie.md2",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/MD2/faerie.md2",
+      "sha256": "269c88ae49b744d571941ed6065fc8de598954d20fee5d532e8b12790daec779",
+      "size": 320996,
+      "format": {
+        "kind": "md2",
+        "version": "8"
+      }
+    },
+    {
+      "path": "MD2/faerie2.bmp",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/MD2/faerie2.bmp",
+      "sha256": "40a790bd72ca491fec218da04dd17fd12049357f9468f05fc2c258cc29b8c9a0",
+      "size": 43538
+    },
+    {
+      "path": "MD2/malformed_zero_numvertices.md2",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/MD2/malformed_zero_numvertices.md2",
+      "sha256": "bedde3bf0af7fe7088c615850e6f35c852d71a40d16d0388006d49084b698468",
+      "size": 256,
+      "format": {
+        "kind": "md2",
+        "version": "8"
+      }
+    },
+    {
+      "path": "MD2/ref/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/MD2/ref/README.md",
+      "sha256": "f76fc0ea28524b4d2cbf7e739c582d8b85f0c6d5bd26874ebe940f450c4c6af4",
+      "size": 198
+    },
+    {
+      "path": "MD2/ref/screenshots/faerie_md2.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/MD2/ref/screenshots/faerie_md2.png",
+      "sha256": "3e408d0542d116ba76926a8dab316a9870f30f18115001a6fcb542700859d392",
+      "size": 853999,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1080,
+        "height": 2400
+      }
+    },
+    {
+      "path": "MD2/ref/screenshots/sydney_md2.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/MD2/ref/screenshots/sydney_md2.png",
+      "sha256": "527e679c5c9275dc5bdd99b7e5559ba1c862ab492663cf12adf35bd1ce28981a",
+      "size": 591732,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1080,
+        "height": 2400
+      }
+    },
+    {
+      "path": "MD2/sidney-source.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/MD2/sidney-source.txt",
+      "sha256": "88e5f754f63c2200c75cfb933e25fcaf32b65a3ce3ecd223eac4c33e3eba101d",
+      "size": 973
+    },
+    {
+      "path": "MD2/sydney.bmp",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/MD2/sydney.bmp",
+      "sha256": "c8ac91f68cb81543c1626dea02ac1e07e6ae7ce672bd2a3269f2c95bc24ac4e6",
+      "size": 60522
+    },
+    {
+      "path": "MD2/sydney.md2",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/MD2/sydney.md2",
+      "sha256": "3b0f52bc29c73eee7f41bb8475c613897d4cd2129f4a449755225c8606464e1b",
+      "size": 302128,
+      "format": {
+        "kind": "md2",
+        "version": "8"
+      }
+    },
+    {
+      "path": "NFF/ManyEarthsNotJustOne.nff",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/ManyEarthsNotJustOne.nff",
+      "sha256": "2ec7e3682a90aeb096e2ab4094bc7654c38a63fcd1fbfa44586ce74993090e85",
+      "size": 600
+    },
+    {
+      "path": "NFF/WithCamera.nff",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/WithCamera.nff",
+      "sha256": "dc5fb07b249ecb62a4d3ec1ae7c737d0700d8a5c77a2340e454a22932e7a478d",
+      "size": 255
+    },
+    {
+      "path": "NFF/cone.nff",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/cone.nff",
+      "sha256": "5fc7726cae7c6a5d24b507a6d656b32642374331c5462ab4369dd7d71104e9d5",
+      "size": 355
+    },
+    {
+      "path": "NFF/cylinder.nff",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/cylinder.nff",
+      "sha256": "9eb03422d1e4e159b2788062d4069f19d5b6912adee8b4692d29d74f8fdc81cb",
+      "size": 153
+    },
+    {
+      "path": "NFF/dodecahedron.nff",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/dodecahedron.nff",
+      "sha256": "d913b21d42580f0be574c147fd1bbac5305ec1b287c18954b3b37738ec1a3fba",
+      "size": 11
+    },
+    {
+      "path": "NFF/earthCylindric.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/earthCylindric.jpg",
+      "sha256": "9515873d147e872633ee894534e120c328c898563f3fd070444d2df987b8c03f",
+      "size": 624832
+    },
+    {
+      "path": "NFF/earthSpherical.jpg",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/earthSpherical.jpg",
+      "sha256": "c558d0d7f103eb6ea91f91353fc88c5dda8caed3ee9049e63e282b69b8f5feae",
+      "size": 422120
+    },
+    {
+      "path": "NFF/hexahedron.nff",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/hexahedron.nff",
+      "sha256": "909f8f551055b1d92d59792037173178f36b19d8e65991a449ecfdfc4fede804",
+      "size": 25
+    },
+    {
+      "path": "NFF/octahedron.nff",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/octahedron.nff",
+      "sha256": "70bd9e4228714aaa2dde04972cb51548f57232e7a4a4fe38ba39414fcfa1050e",
+      "size": 15
+    },
+    {
+      "path": "NFF/positionTest.nff",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/positionTest.nff",
+      "sha256": "0dc49d47e36011af0bee4142a46c62f0349e4ecc720721ebd72c496dede00066",
+      "size": 351
+    },
+    {
+      "path": "NFF/ref/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/ref/README.md",
+      "sha256": "1c05024dda355440d735b5d4f1f6b3705556188f0854ed6711e5f003a3e2208f",
+      "size": 109
+    },
+    {
+      "path": "NFF/ref/screenshots/cone_nff.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/ref/screenshots/cone_nff.png",
+      "sha256": "1b0feafa9f810e6bf48db0bc79a7ed3fdd42ecd8b5b5712b9bd0898861d8b6d1",
+      "size": 512075,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1080,
+        "height": 2400
+      }
+    },
+    {
+      "path": "NFF/spheres.nff",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/spheres.nff",
+      "sha256": "5a06376f39d59605efe24c53391f1bb6639aa60176a690020be7d733e28b0ee6",
+      "size": 295
+    },
+    {
+      "path": "NFF/tetrahedron.nff",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/NFF/tetrahedron.nff",
+      "sha256": "0bab251b773c25e591dc0d52fd9faa14f6243a2b75afbd7dc1f4e6ab9e8e0d49",
+      "size": 11
+    },
+    {
+      "path": "PLY/Wuson.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/PLY/Wuson.ply",
+      "sha256": "c7911cc2f592eed7096cf3b6ff4fb6d7fb543a74b3d7e1f0d21a9ca507b3cee8",
+      "size": 915754,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "PLY/cube.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/PLY/cube.ply",
+      "sha256": "d180897405e34da1d2feea16c7c6a107896b24305089d21e727a2d8e5a2fc097",
+      "size": 329,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "PLY/cube_binary.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/PLY/cube_binary.ply",
+      "sha256": "ae48564d89bc5fe3ce914605f241ae8898577cd7d09fd2899589e6f3f0c4ce42",
+      "size": 447,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "binary_little_endian"
+      }
+    },
+    {
+      "path": "PLY/cube_binary_header_with_RN_newline.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/PLY/cube_binary_header_with_RN_newline.ply",
+      "sha256": "b4f51ced2c176573b0d811b52d50ba67e40e791ef98f6e8aed66690dfc22f61b",
+      "size": 448,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "binary_little_endian"
+      }
+    },
+    {
+      "path": "PLY/cube_binary_starts_with_nl.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/PLY/cube_binary_starts_with_nl.ply",
+      "sha256": "6b637997ae3a06b8059442949be1da24fe1c3acedf3db820b70fcaf61763d445",
+      "size": 451,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "binary_little_endian"
+      }
+    },
+    {
+      "path": "PLY/cube_uv.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/PLY/cube_uv.ply",
+      "sha256": "f16bdf736cb954971d249c3b6200b1a37a06e15f83033f801766447b71ca570b",
+      "size": 2189,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "PLY/float-color.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/PLY/float-color.ply",
+      "sha256": "e005802a5d8f20800ce00030615e3cbce11a532795d4065cc913b95c8b41b3dd",
+      "size": 334,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "PLY/issue623.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/PLY/issue623.ply",
+      "sha256": "0d961e53938cb4a6f59804e7858b0a6f6291c39e1699035e275bac966c017621",
+      "size": 1677,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "PLY/payload_JVN42386607",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/PLY/payload_JVN42386607",
+      "sha256": "b788461e8b5f12a99f7137defee3c6bb8e53595260b2c85903b914407dd90e08",
+      "size": 29179
+    },
+    {
+      "path": "PLY/points.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/PLY/points.ply",
+      "sha256": "edbfdb0807d4e04904ab1b6e940e3eeee9fae6107c3c46d6d7b6030f659fef18",
+      "size": 352,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "PLY/pond.0.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/PLY/pond.0.ply",
+      "sha256": "fc10ef5db1657d74aeaa1e58f58ee90bb4266c972875c4a3665bb0a76955052f",
+      "size": 2171857,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "binary_little_endian"
+      }
+    },
+    {
+      "path": "STL/3DSMaxExport.STL",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/STL/3DSMaxExport.STL",
+      "sha256": "b80c5ac1898400777ae1b064f53189e27b018dacedecfe625963a0c15517b8c9",
+      "size": 100084,
+      "format": {
+        "kind": "stl",
+        "version": null,
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "STL/Spider_ascii.stl",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/STL/Spider_ascii.stl",
+      "sha256": "58d0b3af7e8a790467bd0c3a7edc2ffa0265ac52ac04b2c4207d21c6c05c5628",
+      "size": 281457,
+      "format": {
+        "kind": "stl",
+        "version": null,
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "STL/Spider_binary.stl",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/STL/Spider_binary.stl",
+      "sha256": "267fdc458d855d70b09f88d3b434ddddeaf3785ea57011ab0b49a5d8581c55bd",
+      "size": 68484,
+      "format": {
+        "kind": "stl",
+        "version": null,
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "STL/Wuson.stl",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/STL/Wuson.stl",
+      "sha256": "32bed7d4aa97a5d7b05a8adf0955e15e7da0685ef676b11a99ab599844b8316e",
+      "size": 186684,
+      "format": {
+        "kind": "stl",
+        "version": null,
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "STL/formatDetection",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/STL/formatDetection",
+      "sha256": "5763c12ca05c451c48bc3967665b91f08ca06ed7033e8c05ea253ab28b1814d9",
+      "size": 176
+    },
+    {
+      "path": "STL/sphereWithHole.stl",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/STL/sphereWithHole.stl",
+      "sha256": "0c499d0d5a87a15119260bc2e094bc6efad9de71b4ff0093b42e17f1d3e14b0d",
+      "size": 51905,
+      "format": {
+        "kind": "stl",
+        "version": null,
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "STL/triangle.stl",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/STL/triangle.stl",
+      "sha256": "5763c12ca05c451c48bc3967665b91f08ca06ed7033e8c05ea253ab28b1814d9",
+      "size": 176,
+      "format": {
+        "kind": "stl",
+        "version": null,
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "STL/triangle_with_empty_solid.stl",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/STL/triangle_with_empty_solid.stl",
+      "sha256": "fac98aa90b6c91b3678f0c9c50b9a850bf2028293af00e8eb0d995de16b5b200",
+      "size": 203,
+      "format": {
+        "kind": "stl",
+        "version": null,
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "STL/triangle_with_two_solids.stl",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/STL/triangle_with_two_solids.stl",
+      "sha256": "f90fa8331023bffb8675a9b66f6c0792bf540239c918a6654ae4ac5b96684891",
+      "size": 356,
+      "format": {
+        "kind": "stl",
+        "version": null,
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "WRL/HelloWorld.wrl",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/WRL/HelloWorld.wrl",
+      "sha256": "098359e50b5e1c5480b3e9eb52a9a562942a3fe4aa41957f4e60c93510121d17",
+      "size": 3442
+    },
+    {
+      "path": "WRL/MotionCaptureROM.WRL",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/WRL/MotionCaptureROM.WRL",
+      "sha256": "03ae0041fb3bbe17e9685f45eee0af11b9377703b77d0b708dec7f94d036b07f",
+      "size": 2314611
+    },
+    {
+      "path": "WRL/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/WRL/README.md",
+      "sha256": "9c2fbdcafa3001173ca292c6a001cbdfee2efb011fff32fc81e12e232c21e5ee",
+      "size": 177
+    },
+    {
+      "path": "WRL/Wuson.wrl",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/WRL/Wuson.wrl",
+      "sha256": "78a8d5c441a488a3c9f93fb0b0b2aa606cd4286906da9928e5875289bbf20fef",
+      "size": 222394
+    },
+    {
+      "path": "WRL/credits.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/WRL/credits.txt",
+      "sha256": "66aca75c4e219a7f45a1f7547f8faf5943dbb0c2c800b14ac5eb525fbbcc5ed5",
+      "size": 84
+    },
+    {
+      "path": "WRL/earth-topo.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/WRL/earth-topo.png",
+      "sha256": "fd2c361a2f1eda1be1cca650cd2e6b968ef9aa221d705246712f31406be64260",
+      "size": 102593,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 720,
+        "height": 360
+      }
+    },
+    {
+      "path": "WRL/ref/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/WRL/ref/README.md",
+      "sha256": "7e11cc94b20eb4891f55e885e2b515e4279396d0aeac08aeb27ce7922f0422ec",
+      "size": 127
+    },
+    {
+      "path": "WRL/ref/screenshots/HelloWorld_wrl.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/WRL/ref/screenshots/HelloWorld_wrl.png",
+      "sha256": "8a1f0722efd28a8cc01f75ca3b7c21586da8e88c348016d0e16f47b28061008c",
+      "size": 820902,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1080,
+        "height": 2400
+      }
+    },
+    {
+      "path": "X/BCN_Epileptic.X",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/BCN_Epileptic.X",
+      "sha256": "f6f8e859702a6975fa23188efd804fe1720cdff65ce601396e17677ea3ff10ea",
+      "size": 697217
+    },
+    {
+      "path": "X/BCN_Epileptic.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/BCN_Epileptic.txt",
+      "sha256": "c3f7a7f0a5ef3b42a8e37a155fbbb17e3e1bde4b5dba17b7821589200df8ccde",
+      "size": 209
+    },
+    {
+      "path": "X/OV_GetNextToken",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/OV_GetNextToken",
+      "sha256": "043d9bd7259c1d9aedc67b86fb663d4917258ad1c7bae8ef2416f240720f872d",
+      "size": 775
+    },
+    {
+      "path": "X/TestFormatDetection",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/TestFormatDetection",
+      "sha256": "e6e2b562d8def8e6a395c3384b9903b93a2df889637bf82c9b461a5ad429e9c9",
+      "size": 7733
+    },
+    {
+      "path": "X/Testwuson.X",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/Testwuson.X",
+      "sha256": "1cab9dc2ed0b378b27e301195f7368aa02ca5a7de2fb23a78fe2b8beecd85ccf",
+      "size": 838658
+    },
+    {
+      "path": "X/anim_test.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/anim_test.txt",
+      "sha256": "25d68bc6a2e0d44034db3220e96a82820efea36243f04eb44466400be06c4efd",
+      "size": 642
+    },
+    {
+      "path": "X/anim_test.x",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/anim_test.x",
+      "sha256": "218380799d54eeb34f4c6ce09eb250ef5fe8ff0b561fc598ee0549b9b6249cd4",
+      "size": 816835
+    },
+    {
+      "path": "X/bottom.tga",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/bottom.tga",
+      "sha256": "6a76e82cd130439ec7c8d91a7e967b0b2ffc301d58d6a10605d916c703808805",
+      "size": 196652
+    },
+    {
+      "path": "X/fromtruespace_bin32.x",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/fromtruespace_bin32.x",
+      "sha256": "808d735db17f47db930382077874fbae3f616f6bb208341120e3de1099a22b75",
+      "size": 372321
+    },
+    {
+      "path": "X/kwxport_test_cubewithvcolors.source.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/kwxport_test_cubewithvcolors.source.txt",
+      "sha256": "086a3fb3e89221924db9aa219664798b597209a1ddcb176047fdcd2ed3c271a0",
+      "size": 1244
+    },
+    {
+      "path": "X/kwxport_test_cubewithvcolors.x",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/kwxport_test_cubewithvcolors.x",
+      "sha256": "712da1f66b8b704dcd28c5fe0da11449fdcc0977809da11a1ce64433ff5d7423",
+      "size": 9077
+    },
+    {
+      "path": "X/malformed_skinweights_oob.x",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/malformed_skinweights_oob.x",
+      "sha256": "804c3670f9691a35a7b116d168f337c6403f2cf87a0512279bd5963b4fcb3bcb",
+      "size": 4990
+    },
+    {
+      "path": "X/ref/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/ref/README.md",
+      "sha256": "b3773901e8840ddbcf412b7045ecbdb532a83f90f2fe35c09784f9c0ecc384d4",
+      "size": 259
+    },
+    {
+      "path": "X/ref/screenshots/BCN_Epileptic_X.gif",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/ref/screenshots/BCN_Epileptic_X.gif",
+      "sha256": "e487c7fd917f5dae1a65111416e0cfed116c3175c22faed288ef7ce465df382d",
+      "size": 1356453
+    },
+    {
+      "path": "X/ref/screenshots/Testwuson_X_anim_Wuson_Run.gif",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/ref/screenshots/Testwuson_X_anim_Wuson_Run.gif",
+      "sha256": "d6e33216bc61151d0b65109083ee79ee8b9d0d0c85a027f7d99189bf5d28d1c8",
+      "size": 2639740
+    },
+    {
+      "path": "X/test.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/test.png",
+      "sha256": "70691bbe0f86ef47e9e4d648671a0bd12ca54fbef9474523ce9e0b1c38d75b31",
+      "size": 23700,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "X/test.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/test.txt",
+      "sha256": "33d6a16d5b92bdc38fb6aeb9fd232288fb84757a2bd4c235c7378d7680b4b15d",
+      "size": 228
+    },
+    {
+      "path": "X/test.x",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/test.x",
+      "sha256": "e6e2b562d8def8e6a395c3384b9903b93a2df889637bf82c9b461a5ad429e9c9",
+      "size": 7733
+    },
+    {
+      "path": "X/test_cube_binary.x",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/test_cube_binary.x",
+      "sha256": "9de2f1315d8f64de4a05ef07f3490fc228a212b179d3fe95ca812e5f8a576d55",
+      "size": 2816
+    },
+    {
+      "path": "X/test_cube_compressed.x",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/test_cube_compressed.x",
+      "sha256": "d043380b5ea86621a015ce78a267e9a52c08f7f6419498091633ff87c4f14541",
+      "size": 775
+    },
+    {
+      "path": "X/test_cube_text.x",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/test_cube_text.x",
+      "sha256": "8b3c3fe7960a709f6894c281c68a1c23a89b86f3cc738f090a13ebc02310d113",
+      "size": 4985
+    },
+    {
+      "path": "X/top.tga",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/top.tga",
+      "sha256": "78331704ebee5325a342fbb79684b47676d62ae66f7bfdd74f3daff651664a60",
+      "size": 196652
+    },
+    {
+      "path": "X/updown.tga",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X/updown.tga",
+      "sha256": "454d16ab381f4622e668d9c2e381e1037500b2cfda2ccd21029f511059075bc0",
+      "size": 196652
+    },
+    {
+      "path": "X3D/ComputerKeyboard.x3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X3D/ComputerKeyboard.x3d",
+      "sha256": "cb80529f99bfa25a9cbd3c3456ddfab9eb9e7e86cbcf10c159ef00527e5757b1",
+      "size": 9682
+    },
+    {
+      "path": "X3D/HelloWorld.x3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X3D/HelloWorld.x3d",
+      "sha256": "12faa2a66b25d0d1c631c29b47b89a2490437494b23f8505d5a34f785f0715a5",
+      "size": 3554
+    },
+    {
+      "path": "X3D/HelloX3dTrademark.x3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X3D/HelloX3dTrademark.x3d",
+      "sha256": "1f30aa9473a27e6d82a058b5107a33436b1f3b2680de29c8cd2f094b5b0f31b5",
+      "size": 3384
+    },
+    {
+      "path": "X3D/IndexedLineSet.x3d",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X3D/IndexedLineSet.x3d",
+      "sha256": "91f9adcf28bc51ed35522a1fb3da00ade0c93f7e506904799fd5af15c3bfba50",
+      "size": 751
+    },
+    {
+      "path": "X3D/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X3D/README.md",
+      "sha256": "9b119fce8d44a8ccf172f5bebb557b0a4b32d55a4d9367c4454af3e154c050a1",
+      "size": 122
+    },
+    {
+      "path": "X3D/earth-topo.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X3D/earth-topo.png",
+      "sha256": "fd2c361a2f1eda1be1cca650cd2e6b968ef9aa221d705246712f31406be64260",
+      "size": 102593,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 720,
+        "height": 360
+      }
+    },
+    {
+      "path": "X3D/ref/README.md",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X3D/ref/README.md",
+      "sha256": "635d66a3235a195917de1f0fe25051e8888042e7d54a5f363b671ad0ef2080d5",
+      "size": 664
+    },
+    {
+      "path": "X3D/ref/screenshots/ComputerKeyboard_x3d_irr_xml.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X3D/ref/screenshots/ComputerKeyboard_x3d_irr_xml.png",
+      "sha256": "d829ea269c1b8e28d1b24a8fac8574cf9606e77ec80ea15b4e4d946f38734d5a",
+      "size": 856840,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2340,
+        "height": 1080
+      }
+    },
+    {
+      "path": "X3D/ref/screenshots/ComputerKeyboard_x3d_pugi_xml.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X3D/ref/screenshots/ComputerKeyboard_x3d_pugi_xml.png",
+      "sha256": "06411776e3687054f723b97fcb5fa7df706644c51ccbe93bf63efeeb8ab4d28f",
+      "size": 180360,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2340,
+        "height": 1080
+      }
+    },
+    {
+      "path": "X3D/ref/screenshots/HelloWorld_x3d.png",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/X3D/ref/screenshots/HelloWorld_x3d.png",
+      "sha256": "55d4dc2e35f08ce015745544cf8f74b62a736e0f4556adff42b2e8e87be766b7",
+      "size": 950873,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1080,
+        "height": 2400
+      }
+    },
+    {
+      "path": "invalid/OutOfMemory.off",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/OutOfMemory.off",
+      "sha256": "4e337750dcd6b28e6c68392126a93d5756ef0f0d4f7d69c3c1c6ec413aefef7d",
+      "size": 309
+    },
+    {
+      "path": "invalid/box_nested_animation_4286.dae",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/box_nested_animation_4286.dae",
+      "sha256": "77a765c806b30a2cb271a12e26a344889c48a44088432e726f4a302c64c2f5b2",
+      "size": 14166,
+      "format": {
+        "kind": "collada",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "path": "invalid/crash-30d6d0f7c529b3b66b4131700b7a4580cd7082df.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/crash-30d6d0f7c529b3b66b4131700b7a4580cd7082df.ply",
+      "sha256": "14ff9e8bb58019c24a0adbe1cc857494a3b155e0c19dfdfd781fb09ea3469402",
+      "size": 159,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "binary_little_endian"
+      }
+    },
+    {
+      "path": "invalid/empty.3ds",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/empty.3ds",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "format": {
+        "kind": "3ds",
+        "version": null
+      }
+    },
+    {
+      "path": "invalid/empty.ase",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/empty.ase",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "invalid/empty.lwo",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/empty.lwo",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "invalid/empty.md5mesh",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/empty.md5mesh",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "format": {
+        "kind": "md5mesh",
+        "version": null
+      }
+    },
+    {
+      "path": "invalid/empty.obj",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/empty.obj",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "invalid/empty.off",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/empty.off",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "invalid/empty.ply",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/empty.ply",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "invalid/empty.raw",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/empty.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "invalid/empty.smd",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/empty.smd",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "invalid/empty.x",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/empty.x",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "invalid/emptyIrrMesh.xml",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/emptyIrrMesh.xml",
+      "sha256": "778b53e811ea602e11886e776800289b97a900a338fa47e644becc9706130180",
+      "size": 10115
+    },
+    {
+      "path": "invalid/malformed.obj",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/malformed.obj",
+      "sha256": "4e284ebd469acc747257119412f23c4b40e6b3d6d767bdf6ef133d5a2bf74e2a",
+      "size": 412,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "invalid/malformed2.obj",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/malformed2.obj",
+      "sha256": "2f9147745478f42a597a435e2aa1e0a87c7466ed9a5ec37d85225292cef3b00d",
+      "size": 415,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "invalid/readme.txt",
+      "sourceId": "assimp-test-models",
+      "upstreamPath": "test/models/invalid/readme.txt",
+      "sha256": "967f3d1fe5231c6a8166deabef7ea86603fafe627a00458c1819feed4871f461",
+      "size": 1116
+    }
+  ],
+  "totals": {
+    "files": 323,
+    "bytes": 69161996
+  }
+}

@@ -1,0 +1,38 @@
+# ldtk-fixtures — LDtk 2D level projects.
+#
+# NOT A FORMAT FLIGHT PARSES YET. Included because it is the closest living peer to Tiled,
+# which flight does parse, and because the corpus has a property almost nothing else here
+# does: tests/oldVersions carries the SAME project saved by fourteen successive LDtk
+# releases. Format migration is the hardest part of supporting an evolving editor format,
+# and this is a ready-made migration test set that nobody has to construct.
+#
+# LDtk is JSON with a published schema, an explicit `jsonVersion` on every file, and a
+# documented upgrade path — which makes it a far gentler target than Tiled's dual XML/JSON
+# lineage. If 2D level support is ever widened beyond Tiled, this is the corpus for it.
+#
+# .ldtkl files are separated-level sidecars: an LDtk project can externalise each level to
+# its own file, so a loader that only handles the monolithic form breaks on real projects.
+
+[pack]
+name = "ldtk-fixtures"
+kind = "fixtures"
+summary = "LDtk 2D level projects, including the same project saved across fourteen format versions."
+
+[[source]]
+id = "ldtk-projects"
+kind = "upstream"
+repo = "deepnight/ldtk"
+ref = "master"
+fetch = "blobs"
+include = ["app/extraFiles/**/*.ldtk", "app/extraFiles/**/*.ldtkl",
+           "tests/**/*.ldtk", "tests/**/*.ldtkl"]
+strip = ""
+dest = "ldtk/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "LDtk by Sebastien Benard (deepnight). The editor is MIT; sample projects ship with it."

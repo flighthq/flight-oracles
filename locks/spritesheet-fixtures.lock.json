@@ -2,7 +2,8 @@
   "pack": {
     "name": "spritesheet-fixtures",
     "kind": "fixtures",
-    "summary": "Texture atlas descriptors \u2014 libgdx .atlas dialect, with page and region metadata."
+    "summary": "Texture atlas descriptors \u2014 libgdx .atlas dialect, with page and region metadata.",
+    "mergeGroup": "cocos2dx"
   },
   "sources": [
     {
@@ -40,6 +41,24 @@
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/cocos2dx-plist-sheets@7a5282a301a1.txt"
+    },
+    {
+      "id": "pixi-example-spritesheets",
+      "kind": "upstream",
+      "repo": "pixijs-userland/particle-emitter",
+      "ref": "master",
+      "commit": "0fffdd9d18cabd99e5ee1d5dc94136613d5fcb04",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "PixiJS particle-emitter example assets.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/pixi-example-spritesheets@0fffdd9d18ca.txt"
     }
   ],
   "files": [
@@ -613,6 +632,188 @@
       "format": {
         "kind": "plist-spritesheet",
         "version": null
+      }
+    },
+    {
+      "path": "framesmeta/Bubbles99.png",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/Bubbles99.png",
+      "sha256": "02d19934787819c24ec0a532a4ee5d157c4ecc65a8489de6872a6895ed35b790",
+      "size": 5340,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 99,
+        "height": 99
+      }
+    },
+    {
+      "path": "framesmeta/CartoonSmoke.png",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/CartoonSmoke.png",
+      "sha256": "d99604c6f0054398a5046636542bbfacd47c3ebd0989ed642f5841c3b159c2fc",
+      "size": 2474,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "path": "framesmeta/Fire.png",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/Fire.png",
+      "sha256": "df051719f721b6073e9e3cfe43ba638587d66382dfdd30f9bb36cd1a5d58aa5c",
+      "size": 466,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 258,
+        "height": 51
+      }
+    },
+    {
+      "path": "framesmeta/HardRain.png",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/HardRain.png",
+      "sha256": "99178bcde779dc94297c2cedd1f2b8c7b5ad037b8465f6ab39baa3c2853713bd",
+      "size": 212,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 205,
+        "height": 61
+      }
+    },
+    {
+      "path": "framesmeta/Snow100.png",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/Snow100.png",
+      "sha256": "8ff02eae554039fb22fd786d241335a7b59f288346e8a81e98ee8fba3df26502",
+      "size": 2468,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "path": "framesmeta/Sparks.png",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/Sparks.png",
+      "sha256": "8c76bf3794bd3ba16d45948581a7693d1d8db263fa295a43b54a2809c06634ce",
+      "size": 121,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 17,
+        "height": 5
+      }
+    },
+    {
+      "path": "framesmeta/gold_anim.json",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/gold_anim.json",
+      "sha256": "289896aecbcedac50c76e6bc977e9ef704da687e4bed4d1fd89d065f66d3d1be",
+      "size": 1646,
+      "format": {
+        "kind": "spritesheet-json",
+        "version": "1.0",
+        "producer": "http://www.codeandweb.com/texturepacker",
+        "frameCount": 6
+      }
+    },
+    {
+      "path": "framesmeta/gold_anim.png",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/gold_anim.png",
+      "sha256": "bf889b9bb004e8aede94c0df6d04db4d60fafa7a2b754b24482ec877d3c2722b",
+      "size": 5177,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 256
+      }
+    },
+    {
+      "path": "framesmeta/particle.png",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/particle.png",
+      "sha256": "5e3688f460089cb33b24344ef5d55a4303c46c42c583084c4e26ba6eae1d5754",
+      "size": 629,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "path": "framesmeta/pop_anim.json",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/pop_anim.json",
+      "sha256": "faa9d81d2d13a3e7c837b2d833fbac38dcd875138615989e899fa44e7fd45fbf",
+      "size": 1212,
+      "format": {
+        "kind": "spritesheet-json",
+        "version": "1.0",
+        "producer": "http://www.codeandweb.com/texturepacker",
+        "frameCount": 4
+      }
+    },
+    {
+      "path": "framesmeta/pop_anim.png",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/pop_anim.png",
+      "sha256": "1b0064dee39e3466194ee86789683767cdb5c3126735f177714d02bde82ea0df",
+      "size": 6183,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 203,
+        "height": 203
+      }
+    },
+    {
+      "path": "framesmeta/smokeparticle.png",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/smokeparticle.png",
+      "sha256": "cc4a980062f2b509bd2d8cb60a97e493662619a077096ae6cca926433928d340",
+      "size": 7352,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "framesmeta/spaceship.json",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/spaceship.json",
+      "sha256": "e8367f4d59086d49bbc25ff8c605afd0fa2abb04677bcea85ee023abf3762d11",
+      "size": 1286,
+      "format": {
+        "kind": "spritesheet-json",
+        "version": "Leshy SpriteSheet Tool v0.8.4",
+        "producer": "https://www.leshylabs.com/apps/sstool/",
+        "frameCount": 7
+      }
+    },
+    {
+      "path": "framesmeta/spaceship.png",
+      "sourceId": "pixi-example-spritesheets",
+      "upstreamPath": "docs/examples/images/spaceship.png",
+      "sha256": "c40116dfba475c9ae1bcf1aa94ce56aa481593ca463edfa161e716344346f713",
+      "size": 20621,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 117,
+        "height": 157
       }
     },
     {
@@ -3163,7 +3364,7 @@
     }
   ],
   "totals": {
-    "files": 256,
-    "bytes": 19407268
+    "files": 270,
+    "bytes": 19462455
   }
 }

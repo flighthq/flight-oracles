@@ -1,0 +1,56 @@
+# interchange-fixtures — 3D interchange, mesh and skeletal-animation formats.
+#
+# FORMATS FLIGHT DOES NOT PARSE YET. This is the forward-looking pack: one BSD-3-Clause
+# corpus that covers nearly every format adjacent to what scene3d-formats already reads.
+#
+# assimp is the Open Asset Import Library, and its test/models tree is the closest thing the
+# ecosystem has to a cross-format conformance corpus — 55 format directories maintained as
+# regression material by a project whose entire job is reading them. Sourcing from an
+# importer's own test suite means the files were chosen to break importers.
+#
+# SELECTED BY ALIGNMENT with the domains flight already works in:
+#
+#   Scene graph   Collada (glTF's predecessor, still exported by most DCC tools), FBX
+#                 (Autodesk, ubiquitous and binary), X3D and WRL (Web3D lineage),
+#                 DirectX .x
+#   Mesh          PLY, STL, AMF, M3D, OBJ, 3DS, LWO, ASE, AC, NFF, COB
+#   Bone          BVH (Biovision motion capture — plain text, and the universal interchange
+#                 for skeletal animation), IQM (Inter-Quake Model, open skeletal mesh),
+#                 LWS (Lightwave scene/animation), MD2
+#   Negative      invalid/ — assimp's own deliberately broken files, authored invalidity to
+#                 sit alongside our mechanically mutated malformed-fixtures
+#
+# DELIBERATELY SKIPPED: glTF and glTF2 (we hold Khronos's own corpora, which are better),
+# BLEND (Blender's internal format — a moving target tied to one application's memory
+# layout), IRR/IRRMesh/MDL (engine-specific rather than interchange).
+
+[pack]
+name = "interchange-fixtures"
+kind = "fixtures"
+summary = "3D interchange, mesh and skeletal formats not yet parsed by flight — Collada, FBX, PLY, STL, BVH, IQM, X3D and more."
+
+[[source]]
+id = "assimp-test-models"
+kind = "upstream"
+repo = "assimp/assimp"
+ref = "master"
+fetch = "blobs"
+include = [
+  "test/models/Collada/**", "test/models/FBX/**", "test/models/X3D/**",
+  "test/models/WRL/**", "test/models/X/**",
+  "test/models/PLY/**", "test/models/STL/**", "test/models/AMF/**",
+  "test/models/M3D/**", "test/models/3DS/**", "test/models/LWO/**",
+  "test/models/ASE/**", "test/models/AC/**", "test/models/NFF/**", "test/models/COB/**",
+  "test/models/BVH/**", "test/models/IQM/**", "test/models/LWS/**", "test/models/MD2/**",
+  "test/models/invalid/**",
+]
+strip = "test/models/"
+dest = ""
+
+[source.license]
+declared = "BSD-3-Clause"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Open Asset Import Library (assimp), copyright (c) 2006-2026 assimp team. Test models maintained as the project's own regression corpus."

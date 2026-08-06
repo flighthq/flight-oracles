@@ -1,0 +1,913 @@
+{
+  "pack": {
+    "name": "effekseer-fixtures",
+    "kind": "fixtures",
+    "summary": "Effekseer particle effects \u2014 editor projects plus both generations of runtime binary."
+  },
+  "sources": [
+    {
+      "id": "effekseer-samples",
+      "kind": "upstream",
+      "repo": "Effekseer/Effekseer",
+      "ref": "master",
+      "commit": "1b43f1e5ee38888db53bfd09a2903ae310027426",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "Effekseer by the Effekseer project. Sample effects ship with the runtime.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/effekseer-samples@1b43f1e5ee38.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "effekseer/Examples/Resources/CullingSprite.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/CullingSprite.efkefc",
+      "sha256": "c519c667499dc73d9a2c0ad04154541661d27b1c632f98faab28c047f2e92cff",
+      "size": 874,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/GpuParticles_emit_line.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/GpuParticles_emit_line.efkefc",
+      "sha256": "d47e3eb9d915911878456466cb378fd754182d8a611d94ed50e7902e02b981b0",
+      "size": 3818,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/GpuParticles_emit_mesh.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/GpuParticles_emit_mesh.efkefc",
+      "sha256": "b893c8dc2e0eb7702c977390c7240d1ae034d51fcf3b79d0a3bd6d75e08534f6",
+      "size": 3667,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/GpuParticles_emit_sphere.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/GpuParticles_emit_sphere.efkefc",
+      "sha256": "f1fd3dd0079378580a515d4977b2223ef3a87c51fe1b6d3caa44795540c256c7",
+      "size": 3777,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/GpuParticles_force_turbulence.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/GpuParticles_force_turbulence.efkefc",
+      "sha256": "f9b9b9f9dd6d491efa589563769580f7e655d1dacef6ebf0d835aaaeca65b5bb",
+      "size": 3325,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/GpuParticles_force_vortex.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/GpuParticles_force_vortex.efkefc",
+      "sha256": "fb07ba7eb7949db7aedb7cd621723753fd99e6547395779496a8da139e0daec8",
+      "size": 3366,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/GpuParticles_mesh_simple.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/GpuParticles_mesh_simple.efkefc",
+      "sha256": "9e2c2b42ffad4c9acf6c3de7f563ca458323f834c7c3da1fbfdbaa84e10d878d",
+      "size": 3447,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/GpuParticles_sprite_directional.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/GpuParticles_sprite_directional.efkefc",
+      "sha256": "9ec2e3be36b8fdf46b2d6511ee9040a0222a02d88dd8769c9c5929f8543e109c",
+      "size": 3498,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/GpuParticles_sprite_gradient.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/GpuParticles_sprite_gradient.efkefc",
+      "sha256": "c920a3689fd66892e7ab349cc839ff2fe6750366953ac4c4b8bab0b5dcd783f1",
+      "size": 3437,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/GpuParticles_sprite_mass.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/GpuParticles_sprite_mass.efkefc",
+      "sha256": "f4e94742a8c1b4dab03f4c427b07cb0a4a5650139b95f4fd6584e300326f79ce",
+      "size": 3505,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/GpuParticles_sprite_simple.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/GpuParticles_sprite_simple.efkefc",
+      "sha256": "e2fad77d3ad8926de38a2f7f5c089905b9f2190189c508655b4fa879dda8cb96",
+      "size": 3363,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/GpuParticles_trails_simple.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/GpuParticles_trails_simple.efkefc",
+      "sha256": "2ccd481abc4e6669fdbfa0995f9dc883607a48b203bcab1ef6bd0bbbf4291387",
+      "size": 3597,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/Laser01.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/Laser01.efkefc",
+      "sha256": "d668a9171e36d8dda8d178f518605d4a116f1a62835d3d01cac37fac2180dcea",
+      "size": 8308,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/Laser01_reload.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/Laser01_reload.efkefc",
+      "sha256": "fdb53f53a8dd090f0a777e121cda9b3aef67ded845c85e35317ee19ccba90e1c",
+      "size": 8348,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/TriggerLaser.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/TriggerLaser.efkefc",
+      "sha256": "346e519eb2dbc3c56186a508a7e2e31d3857ec409b6f58f72de765ac0e53887c",
+      "size": 13245,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/distortion.efk",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/distortion.efk",
+      "sha256": "d02dafdc601c9ec63b00e53ae274a0e9ec0a9d34c09b32b5ffa7e589b9c904a4",
+      "size": 2342,
+      "format": {
+        "kind": "efk",
+        "version": "13"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/square_b.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/square_b.efkefc",
+      "sha256": "369edb66cc8d8231b30d829a8e1239dbed9dd0d66ebd1a7edf978fb7f3757d2a",
+      "size": 1888,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/square_g.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/square_g.efkefc",
+      "sha256": "6dd0f0b797c83b4d94233ff245ddaf01758dde4a618d93e92cb88c23452c2111",
+      "size": 1888,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Examples/Resources/square_r.efkefc",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Examples/Resources/square_r.efkefc",
+      "sha256": "386ccf0483f3da686f0a187d0bdefd9013263e5b65e1cac8e88cbb6cbef96a2d",
+      "size": 1889,
+      "format": {
+        "kind": "efkefc",
+        "version": "0"
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/actionLines_halo.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/actionLines_halo.efkproj",
+      "sha256": "9ca0e5bff3f56a153884e6d54c9f8f4a79b10e6843a751a0fb713c1fa7d14149",
+      "size": 6758,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/actionLines_halo2.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/actionLines_halo2.efkproj",
+      "sha256": "e83ce58985535df101252b0a4ed0289d4ebd6a5591653783bde6be6b3d98dd40",
+      "size": 13340,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/actionLines_radial.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/actionLines_radial.efkproj",
+      "sha256": "be57bd770f006cdd5a7adc3b49c8386ffd97a33d6b9a60bd59726c5a51d53ea5",
+      "size": 4640,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/actionLines_radial2.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/actionLines_radial2.efkproj",
+      "sha256": "8e138f4b10f43fa41139e9c49d66c227a9a7083429299d1082a5bcaf001d8725",
+      "size": 7067,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/actionLines_shockwave.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/actionLines_shockwave.efkproj",
+      "sha256": "ffd81708ad7e18e7449a38d088836e49858ddcdaddc764d513052f7fa9832528",
+      "size": 4265,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/actionLines_strip.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/actionLines_strip.efkproj",
+      "sha256": "b8f2bc31800d54a16df70fae75072f919b2aa1416169ddca9e8cdef28c8143df",
+      "size": 8924,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/blue_laser.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/blue_laser.efkproj",
+      "sha256": "3f9dd9e323c17551b0fefe4fe775b39556b12d521df2b958f5574943648c4a33",
+      "size": 22347,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/boss_death.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/boss_death.efkproj",
+      "sha256": "8a9e21d0e0789bade6862391d245869d7f61e7debce5bb6ed19cebeb59b3bdc2",
+      "size": 16879,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/drill.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/drill.efkproj",
+      "sha256": "7520ee3af78fbbf7cfdf143cb69f15116950ccecb56df32a907392296d7d536f",
+      "size": 21502,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/electric_dust.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/electric_dust.efkproj",
+      "sha256": "f1753b6fdfc7ca73bd868b7eb5edd5d8359f9a979bf0c89eecf338db55f1fa13",
+      "size": 8533,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/fire.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/fire.efkproj",
+      "sha256": "1f074fde2516f0ac621617156f9b4c73a1acda57307dff0ddb669227a2183924",
+      "size": 16671,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/hit_eff.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/hit_eff.efkproj",
+      "sha256": "3b4dca6e58190e93abb430358a7a5dc93c1efcaf76319e6d2fa23250c427f3ae",
+      "size": 19854,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/magic_circle.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/magic_circle.efkproj",
+      "sha256": "ec8f0789e636ae5a897ffd1dcd6e4b255284ea485b3a4883193a6dfe79aece4c",
+      "size": 17588,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/smallTexturesRibbon.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/smallTexturesRibbon.efkproj",
+      "sha256": "ad6c5d8b6352cc2484e93582aa1a8302d9bb3aa4db1b1093450edb0485f8e24b",
+      "size": 18745,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_AndrewFM01/smallTexturesSquareWave_orbital.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_AndrewFM01/smallTexturesSquareWave_orbital.efkproj",
+      "sha256": "14257789a20af792c10dcef3f2ec014942aa91e7d210b0f88a5583ff0466936c",
+      "size": 12808,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/HealPotion1.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/HealPotion1.efkproj",
+      "sha256": "02497a9e0203032d1b8ef4a2344f83017f59dd1ffcff962838d9a3ab3d36c375",
+      "size": 174524,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/HealPotion2.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/HealPotion2.efkproj",
+      "sha256": "b8d181264c293a7f9a9ccd316266fd75cb7c5d09f56f059ce1eae72113161e6a",
+      "size": 203483,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicCold.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicCold.efkproj",
+      "sha256": "591c63514de253eed63d8d870e396e71112048361e29df63e63b47a6cfb113b2",
+      "size": 198120,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicDark.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicDark.efkproj",
+      "sha256": "4b269304e9bbc82992c6c98f4087913af805cd053cf37ecaf9c01de20aba3503",
+      "size": 163963,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicFire1.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicFire1.efkproj",
+      "sha256": "78bac034933d4f95b0a279c74fce29e03d189a4b8fc33ba7c0cf3497346c71df",
+      "size": 77877,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicFire2.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicFire2.efkproj",
+      "sha256": "cba445ec3f447ebdce277f97f146f1055b3e327dcc3d01a5e26cab9a2e2b857a",
+      "size": 43367,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicHeal1.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicHeal1.efkproj",
+      "sha256": "6d4253be4b3128d9ca13ae415262ab6bb40d105f4b2c315bb5dcb1c1471de926",
+      "size": 365575,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicHeal2.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicHeal2.efkproj",
+      "sha256": "f6b97b9291b6caf6b157408f16040b88f9ff6ee55a6b891f32d8f376156b10ab",
+      "size": 253380,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicLight.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicLight.efkproj",
+      "sha256": "f1ad49895d23e9801a3b1e11c51492cd230d4dcbcc75c538794ea3acf3b141c7",
+      "size": 237729,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicMeteo.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicMeteo.efkproj",
+      "sha256": "618da4affa578fbc2d920bbfd4195dd03ea087ff68c2df7a74605699551ecdbf",
+      "size": 139452,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicShield.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicShield.efkproj",
+      "sha256": "8256d5f8fc2ef7cc989a19c0478860918560276e77ef5f7591ea0c09e86115f0",
+      "size": 79766,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicSword.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicSword.efkproj",
+      "sha256": "476676c05a23b0f3f937433c34cbe8c0522579609f97492207f4748006c6da24",
+      "size": 198151,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicThunder.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicThunder.efkproj",
+      "sha256": "9c7d627bbf98248a68995a2938e0176d2cafddde945aa479b9610c7bd48a32cb",
+      "size": 237833,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicTornade.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicTornade.efkproj",
+      "sha256": "688764050507d2a48bb82187135ded6c5b626320b4d7f67603eb8a5d41b4c958",
+      "size": 145031,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/MagicWater.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/MagicWater.efkproj",
+      "sha256": "47e925d9df8e191039b558acd0e92d585184be671efa871cc4e45ba9c0f9165c",
+      "size": 418215,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/PowerUp.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/PowerUp.efkproj",
+      "sha256": "1042d7f8ef4b5c23ab6a09c3445692d9d077ae6a7963a34aec425a4b9f904298",
+      "size": 40359,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/Spear1.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/Spear1.efkproj",
+      "sha256": "3f05e3e6c6c379402fc14c2a744d7937dbdb5066e0d856ce6d4c6b03ad15b767",
+      "size": 119274,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/Spear2.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/Spear2.efkproj",
+      "sha256": "c64186fb44b7b01411cdbc63734b96f90b01c31a0eb6aeb5462d54d12c881249",
+      "size": 79801,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/Sword1.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/Sword1.efkproj",
+      "sha256": "f165c8bbb127ec0516f176e12ddc7daa0149053063f5b913339ebe37f7bdefc7",
+      "size": 119248,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_NextSoft01/Sword2.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_NextSoft01/Sword2.efkproj",
+      "sha256": "d795a78519c41833f1aa7dd47e841ba7d21085519423d3ec014b6c42f3e81236",
+      "size": 253427,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre01/Atmosphere.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre01/Atmosphere.efkproj",
+      "sha256": "dc3e1bb893c5dc95be7a513ad955b2bb750e83bf13d79e6bc74c9bb9361d89fd",
+      "size": 13582,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre01/Background.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre01/Background.efkproj",
+      "sha256": "7fd8cabdbb8c0568f555f3c17959cf27016a97745e6dde955520bbced7bb6318",
+      "size": 28446,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre01/Flame.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre01/Flame.efkproj",
+      "sha256": "98cd346297620e5fbad85c58c1350cf53fdd93dac426747f7217fc200be47950",
+      "size": 204648,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre01/Herald.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre01/Herald.efkproj",
+      "sha256": "67bee4031c426d8594d5ea5146ef7b49b18984bc6c9d17a609fc2a5462bc16bc",
+      "size": 167462,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre01/HolySandstorm.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre01/HolySandstorm.efkproj",
+      "sha256": "db648da16fdf2331c9f80b84d427867a5981e5738e794511a7f2a6846f1ee3b5",
+      "size": 50028,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre01/LightningStrike.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre01/LightningStrike.efkproj",
+      "sha256": "1c866f7f3ebd33f87cff4e00e9ae70efefd94e8ab3799c5092611da7a69154e0",
+      "size": 236461,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre01/MissileBoost.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre01/MissileBoost.efkproj",
+      "sha256": "3a57b93167555bfe618c498ac95d1c9850a94bddb4503c2c7ba0963e34e4fcd7",
+      "size": 32414,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre01/MonsterRoar.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre01/MonsterRoar.efkproj",
+      "sha256": "e8e4218fe5484c7cd2e66577028564b591ab58be350f8c9675559014ce01c941",
+      "size": 44209,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre01/PhantasmMeteor.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre01/PhantasmMeteor.efkproj",
+      "sha256": "4c1f3a8d8f3166aca58f795b746ad384adbc0d279a3129eec4dd56e8636d1031",
+      "size": 145824,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre01/PhantasmMeteor_Single.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre01/PhantasmMeteor_Single.efkproj",
+      "sha256": "60eeb069ab8cd2e7da4ab04afc771bf867322dad6e69ad183f5fe9a1d9b08251",
+      "size": 114256,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre01/SonicBoom.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre01/SonicBoom.efkproj",
+      "sha256": "4d2470483ffe0d869ad9ce71fba46932623250aa6c0dda7ae2aaf565cd478ada",
+      "size": 56802,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/Benediction.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/Benediction.efkproj",
+      "sha256": "5a0fb47752aca60db62145e7a3dc63460c0c3d2fa2d0528b1035d8e8f76680bd",
+      "size": 210073,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/BloodLance.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/BloodLance.efkproj",
+      "sha256": "7d8184f65593184ca7de672ee403bc9ff4e308e55722675afabc81b4519c2fdb",
+      "size": 248546,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/CosmicMist.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/CosmicMist.efkproj",
+      "sha256": "b0246cc6ddedaa6f098691cb0ef31aa83c92f1ea4532851d33ea2f8224e63eac",
+      "size": 230629,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/FeatherBomb.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/FeatherBomb.efkproj",
+      "sha256": "a5dec0b6c762a11bf5be6bf1b2c5c5111915bb2e00cb716eca3a0bade264af50",
+      "size": 153102,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/FireBall.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/FireBall.efkproj",
+      "sha256": "21d7b9cede01b446f6bcbef3411bb5ceb1b7a146fe6894bfe0efbeb11c5801e9",
+      "size": 268230,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/GateOfCalve.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/GateOfCalve.efkproj",
+      "sha256": "a532687573514efbab5652ad92a9f2694f966b3c7e816dfdb0284e4447b48738",
+      "size": 40953,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/LossOfBlood.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/LossOfBlood.efkproj",
+      "sha256": "8e0cfe44aa83b80b3ae8f987bac52cafc47140c071b32bd232354d84ebd70210",
+      "size": 134670,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/Sword_Ember.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/Sword_Ember.efkproj",
+      "sha256": "821cb47b63c016a8d70be5c5a356ef3bdf1f4bfed39bdd5b4ddb7646400d5443",
+      "size": 709302,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/Sword_Lightning.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/Sword_Lightning.efkproj",
+      "sha256": "49d46825c837a8c1d86b9c1576fa3c7df54c418b0d0945da2274547303a87496",
+      "size": 1276248,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/Sword_Moonlight.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/Sword_Moonlight.efkproj",
+      "sha256": "a4e5edd59ce03768cc2a49207c45dffbd95efd3291f566270f97cd149afa8fc9",
+      "size": 1658407,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/Sword_Sacredlight.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/Sword_Sacredlight.efkproj",
+      "sha256": "aea05024b9b3eb5851e2ef0bbf723f5c8bcced20a1e84757c072bc7dbce6d998",
+      "size": 520712,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Pierre02/Sword_Storm.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Pierre02/Sword_Storm.efkproj",
+      "sha256": "8e68ea52b556a156f96627150dce9f5cc8d3e1692d63a64f043f49b3c4582d9c",
+      "size": 519815,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Suzuki01/001_magma_effect/aura.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Suzuki01/001_magma_effect/aura.efkproj",
+      "sha256": "74975fbb6d61023936dd6f45737df84c16b4ca8a492ae7d1b4a20eb1f2d2b272",
+      "size": 31726,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Suzuki01/002_sword_effect/sword.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Suzuki01/002_sword_effect/sword.efkproj",
+      "sha256": "98444524d2a9ae6377d614096edc753c54eb458118b0928f0d501e6f514b8540",
+      "size": 97726,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    },
+    {
+      "path": "effekseer/Release/Sample/01_Suzuki01/003_snowstorm_effect/snowstorm11.efkproj",
+      "sourceId": "effekseer-samples",
+      "upstreamPath": "Release/Sample/01_Suzuki01/003_snowstorm_effect/snowstorm11.efkproj",
+      "sha256": "68c4f10a574021ec15c22804db0bd41e9bd02abc93353866cd9fb528da8165e8",
+      "size": 31477,
+      "format": {
+        "kind": "efkproj",
+        "version": null
+      }
+    }
+  ],
+  "totals": {
+    "files": 80,
+    "bytes": 11051826
+  }
+}

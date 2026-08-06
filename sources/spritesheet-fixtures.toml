@@ -84,3 +84,29 @@ declared_from = "README.md"
 commercial_use = true
 onward_use = "unrestricted"
 covers = "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled artwork separately and NON-UNIFORMLY — six different licences across it: grossini*.png is CC BY-NC-SA 2.0 (redistributable, so -full and -demo eligible), several tile sets are GNU GPL v2, one is Common Public License, one carries a custom Lost Garden licence, Fonts/*.ttf say 'For personal Use', and tuffy_bold_italic-charmap.png is public domain. Critically, Images/spritesheet* carries 'LICENSE: unsure... don't use them in your project' — upstream declining to vouch for the very assets a spritesheet pack would want. This pack takes only text descriptors, so none of that reaches it; recorded because the descriptors reference those images by name and anyone rendering rather than parsing must read that file first."
+
+# ---------------------------------------------------------------------------
+# The frames+meta JSON dialect — what TexturePacker and Aseprite both emit, and what
+# asepriteParse reads. A third serialisation alongside the libgdx text format and the Cocos
+# property list, and the one most likely to appear in a modern toolchain.
+#
+# Found by accident: these were pulled while looking for Pixi emitter configs, and content
+# detection showed they were spritesheets rather than particles.
+# ---------------------------------------------------------------------------
+[[source]]
+id = "pixi-example-spritesheets"
+kind = "upstream"
+repo = "pixijs-userland/particle-emitter"
+ref = "master"
+fetch = "blobs"
+include = ["docs/examples/images/**/*.json", "docs/examples/images/**/*.png"]
+strip = "docs/examples/images/"
+dest = "framesmeta/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "PixiJS particle-emitter example assets."

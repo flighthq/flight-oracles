@@ -2,7 +2,8 @@
   "pack": {
     "name": "particle-fixtures",
     "kind": "fixtures",
-    "summary": "Particle effect configurations \u2014 the libgdx .p dialect."
+    "summary": "Particle effect configurations \u2014 the libgdx .p dialect.",
+    "mergeGroup": "cocos2dx"
   },
   "sources": [
     {

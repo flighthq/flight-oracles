@@ -1,0 +1,35 @@
+# effekseer-fixtures — Effekseer particle effects.
+#
+# NOT A FORMAT FLIGHT PARSES YET. Included because flight already reads six particle
+# dialects and Effekseer is the one serious open format missing from that list — it is the
+# de-facto standard for authored particle effects outside the big engines, with runtimes for
+# Unity, Unreal, Godot, cocos2d-x and DirectX/OpenGL.
+#
+# THREE SERIALISATIONS, which is the interesting part: .efkproj is the editor project (XML),
+# .efk is the older runtime binary, and .efkefc is the current runtime container. A format
+# with a project form and two generations of runtime form is exactly where version handling
+# goes wrong, and all three are here to compare against each other.
+
+[pack]
+name = "effekseer-fixtures"
+kind = "fixtures"
+summary = "Effekseer particle effects — editor projects plus both generations of runtime binary."
+
+[[source]]
+id = "effekseer-samples"
+kind = "upstream"
+repo = "Effekseer/Effekseer"
+ref = "master"
+fetch = "blobs"
+include = ["Examples/**/*.efk", "Examples/**/*.efkefc", "Examples/**/*.efkproj",
+           "Release/Sample/**/*.efkproj", "Release/Sample/**/*.efkefc"]
+strip = ""
+dest = "effekseer/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Effekseer by the Effekseer project. Sample effects ship with the runtime."

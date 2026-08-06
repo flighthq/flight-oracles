@@ -141,6 +141,25 @@ def _gltf_json(data: bytes):
     return info
 
 
+def _frames_meta_sheet(data: bytes, name: str):
+    """The frames+meta spritesheet JSON that TexturePacker and Aseprite both emit."""
+    if not name.lower().endswith(".json"):
+        return None
+    try:
+        doc = json.loads(data)
+    except (ValueError, UnicodeDecodeError):
+        return None
+    if not isinstance(doc, dict) or "frames" not in doc or "meta" not in doc:
+        return None
+    meta = doc.get("meta") if isinstance(doc.get("meta"), dict) else {}
+    info = FormatInfo(kind="spritesheet-json", version=str(meta.get("version") or "") or None)
+    if meta.get("app"):
+        info["producer"] = str(meta["app"])
+    frames = doc["frames"]
+    info["frameCount"] = len(frames) if isinstance(frames, (list, dict)) else 0
+    return info
+
+
 def _lottie(data: bytes):
     """Lottie/Bodymovin: {"v": "5.7.4", "fr": 30, "ip": .., "op": .., "layers": [..]}"""
     if data.lstrip()[:1] != b"{":
@@ -288,6 +307,99 @@ def _libgdx_atlas(data: bytes, name: str):
     return None
 
 
+def _ldtk(data: bytes, name: str):
+    """LDtk project or separated level: JSON carrying an explicit jsonVersion."""
+    if not name.lower().endswith((".ldtk", ".ldtkl")):
+        return None
+    try:
+        doc = json.loads(data)
+    except (ValueError, UnicodeDecodeError):
+        return None
+    if not isinstance(doc, dict):
+        return None
+    kind = "ldtk" if name.lower().endswith(".ldtk") else "ldtk-level"
+    info = FormatInfo(kind=kind, version=str(doc.get("jsonVersion") or "") or None)
+    if isinstance(doc.get("levels"), list):
+        info["levelCount"] = len(doc["levels"])
+    return info
+
+
+def _effekseer(data: bytes, name: str):
+    """Effekseer: 'SKFE' runtime binary, 'EFKEFC' container, or an XML editor project."""
+    if data.startswith(b"SKFE"):
+        version = struct.unpack("<i", data[4:8])[0] if len(data) >= 8 else None
+        return FormatInfo(kind="efk", version=str(version) if version is not None else None)
+    if data.startswith(b"EFKE") and b"INFO" in data[:16]:
+        # EFKE, a version word, then chunked sections beginning with INFO.
+        version = struct.unpack("<i", data[4:8])[0] if len(data) >= 8 else None
+        return FormatInfo(kind="efkefc", version=str(version) if version is not None else None)
+    if name.lower().endswith(".efkproj"):
+        return FormatInfo(kind="efkproj", version=None)
+    return None
+
+
+_BVH_HIERARCHY = re.compile(rb"^\s*HIERARCHY", re.I)
+
+
+def _bvh(data: bytes, name: str):
+    """Biovision Hierarchy: HIERARCHY block, then MOTION with a frame count."""
+    if not name.lower().endswith(".bvh") or not _BVH_HIERARCHY.match(data[:64]):
+        return None
+    info = FormatInfo(kind="bvh", version=None)
+    frames = re.search(rb"Frames:\s*(\d+)", data)
+    if frames:
+        info["frames"] = int(frames.group(1))
+    return info
+
+
+def _iqm(data: bytes):
+    """Inter-Quake Model: 'INTERQUAKEMODEL\0' then a uint32 version."""
+    if not data.startswith(b"INTERQUAKEMODEL\0") or len(data) < 20:
+        return None
+    return FormatInfo(kind="iqm", version=str(struct.unpack("<I", data[16:20])[0]))
+
+
+def _stl_ply(data: bytes, name: str):
+    lowered = name.lower()
+    if lowered.endswith(".ply") and data[:3].lower() == b"ply":
+        fmt = re.search(rb"format\s+(\w+)\s+([\d.]+)", data[:128])
+        info = FormatInfo(kind="ply", version=fmt.group(2).decode() if fmt else None)
+        if fmt:
+            info["encoding"] = fmt.group(1).decode()
+        return info
+    if lowered.endswith(".stl"):
+        # ASCII STL opens with "solid"; anything else is the 80-byte-header binary form.
+        return FormatInfo(kind="stl",
+                          version=None,
+                          encoding="ascii" if data[:5].lower() == b"solid" else "binary")
+    return None
+
+
+def _fbx(data: bytes, name: str):
+    """FBX: binary files open with 'Kaydara FBX Binary'; ASCII ones are text."""
+    if data.startswith(b"Kaydara FBX Binary"):
+        version = struct.unpack("<I", data[23:27])[0] if len(data) >= 27 else None
+        # Real FBX versions run roughly 6000-8000. Anything outside that is the header
+        # padding being read as a number, which is worse than reporting nothing.
+        if version is not None and not 5000 <= version <= 9000:
+            version = None
+        return FormatInfo(kind="fbx", version=str(version) if version else None,
+                          encoding="binary")
+    if name.lower().endswith(".fbx"):
+        match = re.search(rb"FBXVersion:\s*(\d+)", data[:4096])
+        return FormatInfo(kind="fbx",
+                          version=match.group(1).decode() if match else None,
+                          encoding="ascii")
+    return None
+
+
+def _collada(data: bytes, name: str):
+    if not name.lower().endswith(".dae"):
+        return None
+    match = re.search(rb'<COLLADA[^>]*\sversion="([^"]+)"', data[:2048])
+    return FormatInfo(kind="collada", version=match.group(1).decode() if match else None)
+
+
 def _plist(data: bytes, name: str):
     """Apple property list, as used by both Cocos dialects.
 
@@ -343,11 +455,14 @@ def _png(data: bytes):
 def detect(data: bytes, name: str = "") -> FormatInfo | None:
     """Identify *data*, using *name* only where the bytes are ambiguous."""
     for probe in (_riv, _swf, _glb, _ktx2, _ktx1, _basis, _dds, _md2, _awd, _atf,
+                  _iqm,
                   _png, _gltf_json, _spine_json, _lottie):
         info = probe(data)
         if info is not None:
             return info
     for probe in (_dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
+                  _ldtk, _effekseer, _frames_meta_sheet, _bvh, _stl_ply, _fbx,
+                  _collada,
                   _libgdx_atlas, _spine_skel, _spine_atlas, _obj_mtl):
         info = probe(data, name)
         if info is not None:

@@ -231,3 +231,56 @@ Several candidate upstreams are large: glTF-Sample-Assets is 1.6 GB, basis_unive
 av1-avif 546 MB, google/fonts 3.2 GB. None should be adopted wholesale. The per-source
 `include` globs exist for this — select the variants and cases the decoders actually
 exercise, and record what was left out.
+
+## Adjacent formats: the forward-looking sweep
+
+Everything above is scoped to what flight already parses. This section is the opposite —
+formats it does *not* parse, sourced anyway because the corpus is the slow part of adding
+support, not the parser.
+
+Two are ingested, and one source covers most of the rest.
+
+### Ingested
+
+| Pack | Format | Why this one |
+| --- | --- | --- |
+| `ldtk-fixtures` | LDtk | The living peer of Tiled. Its `tests/oldVersions` holds the **same project saved by fourteen successive releases** — 22 distinct `jsonVersion` values from v0.6.0 to v1.5.3. Format migration is the hard part of supporting an editor format, and this is a migration suite nobody has to construct. |
+| `effekseer-fixtures` | Effekseer | The one serious open particle format missing from the six dialects flight already reads. Ships an editor project (`.efkproj`) plus **two generations of runtime binary** (`.efk`, `.efkefc`) — precisely where version handling goes wrong. |
+| `interchange-fixtures` | 20 formats | See below. |
+
+### `assimp/assimp` is the find
+
+Its `test/models` tree is the closest thing the ecosystem has to a cross-format conformance
+corpus: 55 format directories, 933 files, BSD-3-Clause, maintained as regression material by
+a project whose entire job is reading them. Sourcing from an importer's own test suite means
+the files were chosen because they *break* importers.
+
+Twenty formats taken, aligned by domain:
+
+- **Scene graph** — Collada (glTF's predecessor, still the default export from most DCC
+  tools), FBX (Autodesk, ubiquitous, binary), X3D and WRL, DirectX `.x`
+- **Mesh** — PLY, STL, AMF, M3D, 3DS, LWO, ASE, AC, NFF, COB, OBJ
+- **Bone** — **BVH** (Biovision motion capture: plain text, and the universal interchange for
+  skeletal animation), **IQM** (Inter-Quake Model, open skeletal mesh), LWS, MD2
+- **Negative** — `invalid/`, assimp's own deliberately broken files. Authored invalidity to
+  sit beside the mechanical mutations in `malformed-fixtures`.
+
+Skipped: glTF/glTF2 (Khronos's own corpora are better and already here), BLEND (Blender's
+internal memory layout, a moving target tied to one application), IRR/IRRMesh/MDL
+(engine-specific rather than interchange).
+
+Detection now reports Collada 1.4.0/1.4.1, FBX 7400/7500/7700, PLY 1.0 with ASCII/binary
+encoding, STL ASCII/binary, BVH with frame counts, and IQM v2.
+
+### Candidates not taken, and why
+
+| Format | Domain | Status |
+| --- | --- | --- |
+| **USD / USDZ** | scene graph | The strategic 3D format. `OpenUSD` is 282 MB and NOASSERTION at the repo level; a usable slice needs picking, not a blanket glob. |
+| **COLLADA CTS** | scene graph | Khronos's full conformance suite (176 MB) would deepen Collada well past assimp's 40 files. NOASSERTION — worth resolving. |
+| **Spriter** (`.scml`) | 2D bone | A direct peer of Spine and DragonBones, open XML. No maintained corpus surfaced under an obvious name. |
+| **Live2D Cubism** | 2D bone | Very widely used, but the runtime licence is restrictive and sample models are distributed under a separate agreement. Would need the layered treatment at best. |
+| **Ogmo Editor 3** | tilemap | MIT, small. Worth adding next to LDtk if 2D level support widens. |
+| **MSDF atlas** | text | `msdf-atlas-gen` (MIT) emits a JSON atlas that is becoming the default for GPU text. Aligned with `glyphatlas`. |
+| **3MF** | mesh | `3mf-samples` is BSD-2-Clause and clean; manufacturing-oriented, so alignment is weaker. |
+| **Box2D RUBE / physics** | physics | No dominant open serialisation exists. Note that Spine and DragonBones both now carry physics constraints, so physics may reach flight through formats it already reads rather than a new one. |

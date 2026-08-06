@@ -38,13 +38,16 @@ suite can pin.
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
 | `mesh-legacy-fixtures` | 195 | 64.0 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
 | `atf-fixtures` | 14 | 8.1 MB | Adobe Texture Format — undeclared, build input only |
-| `spritesheet-fixtures` | 256 | 19.4 MB | libgdx `.atlas` texture atlas descriptors |
+| `spritesheet-fixtures` | 270 | 19.5 MB | libgdx `.atlas` texture atlas descriptors |
 | `bitmapfont-fixtures` | 240 | 21.4 MB | AngelCode BMFont `.fnt` descriptors |
 | `text-conformance-fixtures` | 8 | 19.0 MB | **Oracles** — 614,914 Unicode conformance cases |
 | `particle-fixtures` | 222 | 19.0 MB | libgdx `.p` particle effect configs |
 | `cocos2dx-textures` | 987 | 34.4 MB | Textures for the Cocos descriptors — merge group `cocos2dx` |
+| `interchange-fixtures` | 323 | 69.2 MB | **Not yet parsed** — Collada, FBX, PLY, STL, BVH, IQM, X3D +13 |
+| `effekseer-fixtures` | 80 | 11.1 MB | Effekseer particles — project plus two runtime generations |
+| `ldtk-fixtures` | 69 | 42.9 MB | LDtk 2D levels — 22 format versions, v0.6.0–v1.5.3 |
 
-22 packs, 24,026 files. Three packs carry expectations as well as inputs:
+25 packs, 24,512 files. Three packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place) and `gltf-generated-fixtures` (positive/negative conformance split).
 
