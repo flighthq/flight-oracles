@@ -446,6 +446,24 @@ def _starling_atlas(data: bytes, name: str):
     return info
 
 
+def _unity_yaml(data: bytes, name: str):
+    """Unity scene or prefab YAML, and whether it carries a ParticleSystem.
+
+    Recorded distinctly from the normalised JSON that unityParse reads, because the two are
+    not the same format and conflating them is how the gap stayed invisible.
+    """
+    if not name.lower().endswith((".unity", ".prefab", ".asset")):
+        return None
+    if not data.startswith(b"%YAML"):
+        return None
+    info = FormatInfo(kind="unity-yaml", version=None)
+    match = re.search(rb"%TAG !u! tag:unity3d.com,(\d+):", data[:128])
+    if match:
+        info["version"] = match.group(1).decode()
+    info["particleSystems"] = data.count(b"ParticleSystem:")
+    return info
+
+
 def _pex(data: bytes, name: str):
     """Starling/ParticleDesigner PEX: the emitter model serialised as XML."""
     if not name.lower().endswith(".pex") and b"<particleEmitterConfig" not in data[:512]:
@@ -522,7 +540,7 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
             return info
     for probe in (_dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
                   _ldtk, _effekseer, _bmfont_json, _frames_meta_sheet, _bvh,
-                  _starling_atlas,
+                  _starling_atlas, _unity_yaml,
                   _stl_ply, _fbx,
                   _pex,
                   _collada,

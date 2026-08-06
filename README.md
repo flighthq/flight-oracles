@@ -41,13 +41,13 @@ suite can pin.
 | `spritesheet-fixtures` | 280 | 21.4 MB | libgdx `.atlas` texture atlas descriptors |
 | `bitmapfont-fixtures` | 252 | 21.7 MB | AngelCode BMFont `.fnt` descriptors |
 | `text-conformance-fixtures` | 8 | 19.0 MB | **Oracles** — 614,914 Unicode conformance cases |
-| `particle-fixtures` | 279 | 19.7 MB | libgdx `.p` particle effect configs |
+| `particle-fixtures` | 280 | 19.8 MB | libgdx `.p` particle effect configs |
 | `cocos2dx-textures` | 987 | 34.4 MB | Textures for the Cocos descriptors — merge group `cocos2dx` |
 | `interchange-fixtures` | 323 | 69.2 MB | **Not yet parsed** — Collada, FBX, PLY, STL, BVH, IQM, X3D +13 |
 | `effekseer-fixtures` | 80 | 11.1 MB | Effekseer particles — project plus two runtime generations |
 | `ldtk-fixtures` | 69 | 42.9 MB | LDtk 2D levels — 22 format versions, v0.6.0–v1.5.3 |
 
-25 packs, 24,591 files. Three packs carry expectations as well as inputs:
+25 packs, 24,592 files. Three packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place) and `gltf-generated-fixtures` (positive/negative conformance split).
 

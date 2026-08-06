@@ -284,3 +284,46 @@ encoding, STL ASCII/binary, BVH with frame counts, and IQM v2.
 | **MSDF atlas** | text | `msdf-atlas-gen` (MIT) emits a JSON atlas that is becoming the default for GPU text. Aligned with `glyphatlas`. |
 | **3MF** | mesh | `3mf-samples` is BSD-2-Clause and clean; manufacturing-oriented, so alignment is weaker. |
 | **Box2D RUBE / physics** | physics | No dominant open serialisation exists. Note that Spine and DragonBones both now carry physics constraints, so physics may reach flight through formats it already reads rather than a new one. |
+
+## A parser named for a format its namesake does not write
+
+Worth recording as a category, because it is the kind of gap that stays invisible: a fixture
+hunt that keeps failing may be failing because the format does not exist upstream.
+
+`particles-formats/unityParse.ts` reads `UnityParticleDocument`. Unity's particle system —
+Shuriken — is **built into the engine** and has been since Unity 3.5; nothing marketplace is
+involved. But what Unity writes to disk is YAML, inside `.unity` scenes and `.prefab` files,
+under its own internal field names. Taken from a real scene:
+
+| Unity writes | flight's schema expects |
+| --- | --- |
+| `lengthInSec` | `duration` |
+| `maxNumParticles` | `maxParticles` |
+| `startLifetime` as a MinMaxCurve (`minMaxState`, `scalar`, `minCurve`…) | `startLifetime` as `{mode, constant \| constantMin/constantMax}` |
+| *(no such field — it is a project setting)* | `physicsGravity` |
+
+`UnitySchema.ts` says so itself: the shape is "based on … field names as exported by Unity's
+JsonUtility and common third-party particle-system exporters", with curves "simplified to
+constant or two-keyframe linear values". And `unitySerialize.ts` **writes** the same shape —
+a format you both read and write is one you own, not one you import.
+
+So `UnityParticleDocument` is a normalised interchange shape, and **there is no upstream
+corpus for it by construction**. Three ways to close that, none of which is "search harder":
+
+1. **Own it explicitly.** Document it as flight's interchange shape and name the converter
+   that produces it. Fixtures are then authored to the schema, and `unitySerialize` →
+   `unityParse` round-trip is the real test. Circular for "does this match Unity", perfectly
+   sound for robustness and round-trip fidelity.
+2. **Read what Unity actually writes.** Add a YAML path for `.unity`/`.prefab`, at which
+   point real Unity projects become a large and freely licensed corpus.
+3. **Take `JsonUtility.ToJson()` output.** That API is built into Unity, so it is one line of
+   C# rather than a marketplace dependency — but it emits the *internal* names above, so
+   something still has to normalise them.
+
+`particle-fixtures` now carries a real Unity scene with two `ParticleSystem` blocks
+(Apache-2.0), recorded as `unity-yaml` rather than as a particle dialect, so the manifest
+states plainly that it is the native form and not the shape `unityParse` reads.
+
+The general lesson: when a format has a *serializer* on our side, check whether the name
+refers to something a third party emits or to a shape we invented. The answer changes where
+fixtures can come from.
