@@ -2,7 +2,8 @@
   "pack": {
     "name": "gltf-khronos-fixtures",
     "kind": "fixtures",
-    "summary": "Khronos glTF 2.0 sample assets \u2014 core, testing and extension models covering the KHR/EXT extension surface."
+    "summary": "Khronos glTF 2.0 sample assets \u2014 core, testing and extension models covering the KHR/EXT extension surface.",
+    "mergeGroup": "gltf-khronos"
   },
   "sources": [
     {
@@ -11,7 +12,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -30,7 +31,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -49,7 +50,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -68,7 +69,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -87,7 +88,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -106,7 +107,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -125,7 +126,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -144,7 +145,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -163,7 +164,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -182,7 +183,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -201,7 +202,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -220,7 +221,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -239,7 +240,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -258,7 +259,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -277,7 +278,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -296,7 +297,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -315,7 +316,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -334,7 +335,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -353,7 +354,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -372,7 +373,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -391,7 +392,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-CC-BY-TM",
         "declaredScope": "file-adjacent",
@@ -410,7 +411,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-CC-BY-TM",
         "declaredScope": "file-adjacent",
@@ -429,7 +430,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -448,7 +449,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -467,7 +468,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -486,7 +487,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -505,7 +506,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-CC-BY-TM",
         "declaredScope": "file-adjacent",
@@ -524,7 +525,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-CC-BY-TM",
         "declaredScope": "file-adjacent",
@@ -543,7 +544,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -562,7 +563,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -581,7 +582,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -600,7 +601,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -619,7 +620,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -638,7 +639,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -657,7 +658,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -676,7 +677,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -695,7 +696,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -714,7 +715,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -733,7 +734,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -752,7 +753,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -771,7 +772,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -790,7 +791,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -809,7 +810,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -828,7 +829,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -847,7 +848,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -866,7 +867,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -885,7 +886,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -904,7 +905,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -923,7 +924,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -942,7 +943,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -961,7 +962,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -980,7 +981,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -999,7 +1000,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1018,7 +1019,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1037,7 +1038,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1056,7 +1057,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1075,7 +1076,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1094,7 +1095,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1113,7 +1114,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1132,7 +1133,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Stanford-Graphics",
         "declaredScope": "file-adjacent",
@@ -1151,7 +1152,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Stanford-Graphics",
         "declaredScope": "file-adjacent",
@@ -1170,7 +1171,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "SCEA",
         "declaredScope": "file-adjacent",
@@ -1189,7 +1190,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1208,7 +1209,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1227,7 +1228,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1246,7 +1247,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1265,7 +1266,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1284,7 +1285,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1303,7 +1304,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1322,7 +1323,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1341,7 +1342,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1360,7 +1361,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1379,7 +1380,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1398,7 +1399,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1417,7 +1418,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1436,7 +1437,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1455,7 +1456,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1474,7 +1475,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1493,7 +1494,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1512,7 +1513,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1531,7 +1532,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1550,7 +1551,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1569,7 +1570,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1588,7 +1589,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1607,7 +1608,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1626,7 +1627,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1645,7 +1646,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1664,7 +1665,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1683,7 +1684,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1702,7 +1703,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1721,7 +1722,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1740,7 +1741,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1759,7 +1760,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1778,7 +1779,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1797,7 +1798,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1816,7 +1817,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1835,7 +1836,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC BY-NC-SA 4.0",
         "declaredScope": "file-adjacent",
@@ -1854,7 +1855,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1873,7 +1874,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1892,7 +1893,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1911,7 +1912,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -1930,7 +1931,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1949,7 +1950,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1968,7 +1969,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -1987,7 +1988,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2006,7 +2007,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2025,7 +2026,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2044,7 +2045,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2063,7 +2064,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2082,7 +2083,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2101,7 +2102,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2120,7 +2121,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2139,7 +2140,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2158,7 +2159,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2177,7 +2178,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2196,7 +2197,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2215,7 +2216,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2234,7 +2235,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2253,7 +2254,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2272,7 +2273,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2291,7 +2292,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2310,7 +2311,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2329,7 +2330,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2348,7 +2349,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2367,7 +2368,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2386,7 +2387,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2405,7 +2406,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2424,7 +2425,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2443,7 +2444,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2462,7 +2463,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2481,7 +2482,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2500,7 +2501,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2519,7 +2520,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2538,7 +2539,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2557,7 +2558,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2576,7 +2577,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2595,7 +2596,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2614,7 +2615,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2633,7 +2634,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2652,7 +2653,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2671,7 +2672,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2690,7 +2691,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "file-adjacent",
@@ -2709,7 +2710,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement",
         "declaredScope": "repository-root",
@@ -2735,7 +2736,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement",
         "declaredScope": "repository-root",
@@ -2761,7 +2762,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement",
         "declaredScope": "repository-root",
@@ -2787,7 +2788,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Khronos-glTF-Sample-Assets-Arrangement",
         "declaredScope": "repository-root",
@@ -2813,7 +2814,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -2832,7 +2833,7 @@
       "repo": "KhronosGroup/glTF-Sample-Assets",
       "ref": "main",
       "commit": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "CC0-1.0",
         "declaredScope": "file-adjacent",
@@ -4270,8 +4271,8 @@
       "path": "ChronographWatch/glTF/ChronographWatch.data.bin",
       "sourceId": "gltf-chronographwatch",
       "upstreamPath": "Models/ChronographWatch/glTF/ChronographWatch.data.bin",
-      "sha256": "518a3ad15cfc08df386bfb75ae6d496a5fd158c49ebcac139c1347e94af5706d",
-      "size": 4114564
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
     },
     {
       "path": "ChronographWatch/glTF/ChronographWatch.gltf",
@@ -7818,6 +7819,6 @@
   ],
   "totals": {
     "files": 476,
-    "bytes": 293536811
+    "bytes": 289422247
   }
 }

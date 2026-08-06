@@ -11,7 +11,7 @@
       "repo": "KhronosGroup/KTX-Software",
       "ref": "main",
       "commit": "02f39de0409046ce722f2efccbcd8dafeb5b56a0",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "Apache-2.0",
         "declaredScope": "repository-root",
@@ -29,7 +29,7 @@
       "repo": "BinomialLLC/basis_universal",
       "ref": "master",
       "commit": "9bebe16726b3a61c8c213eeee3b7cffb462ef34e",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "Apache-2.0",
         "declaredScope": "repository-root",

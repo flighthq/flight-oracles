@@ -680,7 +680,11 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/Collada/AsXML.xml",
       "sha256": "5e06f388baf5a614c63e68a609d0f8782d39108aab8e78943455cf7952ded04e",
-      "size": 9691
+      "size": 9691,
+      "format": {
+        "kind": "xml",
+        "version": "1.0"
+      }
     },
     {
       "path": "Collada/COLLADA.dae",
@@ -2748,7 +2752,11 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/invalid/emptyIrrMesh.xml",
       "sha256": "778b53e811ea602e11886e776800289b97a900a338fa47e644becc9706130180",
-      "size": 10115
+      "size": 10115,
+      "format": {
+        "kind": "xml",
+        "version": "1.0"
+      }
     },
     {
       "path": "invalid/malformed.obj",

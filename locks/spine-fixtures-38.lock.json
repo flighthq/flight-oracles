@@ -11,7 +11,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -30,7 +30,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "UNKNOWN",
         "declaredScope": "repository-root",
@@ -46,7 +46,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -65,7 +65,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -84,7 +84,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -103,7 +103,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -122,7 +122,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -141,7 +141,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -160,7 +160,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -179,7 +179,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -198,7 +198,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -217,7 +217,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -236,7 +236,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -255,7 +255,7 @@
       "repo": "EsotericSoftware/spine-runtimes",
       "ref": "3.8",
       "commit": "8b4844bd4b193ba9e54487ed397a777993cbad56",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "LicenseRef-Spine-Examples-Redistributable-NonCommercial",
         "declaredScope": "file-adjacent",
@@ -331,7 +331,7 @@
       "sha256": "0ff286a804f1f4374c883ab1e00d0036ff3e3063690b5e478e0ab42f39087625",
       "size": 2755,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -377,7 +377,7 @@
       "sha256": "430cc06745f752f3fa8c3759f556d5ed83a39099179d78ff4782c1c82f966236",
       "size": 2751,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -752,7 +752,7 @@
       "sha256": "ecc55d10a503f9bba50c2b3f5bd1ce4947f8d88f609f0210323c54e075d069c8",
       "size": 835,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -798,7 +798,7 @@
       "sha256": "833bc92c2a02695c326080b72f8636206ec53f361010a6b02324565b470f690b",
       "size": 831,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -935,7 +935,7 @@
       "sha256": "c6e7cacbb43cded78f95d9fcd5ac1caf0a215b442d2b9a3dbaa099e50fd312eb",
       "size": 4404,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -981,7 +981,7 @@
       "sha256": "38f8ded833beecf219a2956b00054f39d2efa8aeba915e0d2f77c6dadfc955e5",
       "size": 4400,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -1545,7 +1545,7 @@
       "sha256": "baf7e8f8f0fdeb42a9ed132ad9b57ffb9a9ce2ae3c26d1a4860fa9160faf80d5",
       "size": 16559,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -1591,7 +1591,7 @@
       "sha256": "eb4738bc097f04059dd08ff929c934d26f51366b966ba9c35101f7682e4c3b52",
       "size": 16555,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -3546,7 +3546,7 @@
       "sha256": "175bab5744808162f724fd22c22188e1eccae0aebb214e332137a2fee6f96928",
       "size": 2694,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -3592,7 +3592,7 @@
       "sha256": "3a87efe6362f4d3028f1a321f56e507c91973bf5fd4cbb205b18fc70a03793c0",
       "size": 2690,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -3989,7 +3989,7 @@
       "sha256": "930737a18fd85292ba76d7999d4493a02af4606ded65d4fb36a41ae3a2752b6a",
       "size": 364,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -4035,7 +4035,7 @@
       "sha256": "78fecc3e5a42bdbb70fc404904138cc63762b4b59c87233699de061abfa61973",
       "size": 360,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -4098,7 +4098,7 @@
       "sha256": "e6394368154372ecdd2c032509a40acb1317fafff13e2a71ff92556ae7bee4c8",
       "size": 3942,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -4144,7 +4144,7 @@
       "sha256": "b283f4c5c25f998995e2e86481b14e44ff26ed95eec1802c1e4185a3a51ce19a",
       "size": 3938,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -4684,7 +4684,7 @@
       "sha256": "ce10dbd40e9e7c3cc45abecbd4c80b96510d914e28bf4575b888587941ce6e29",
       "size": 2726,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -4708,7 +4708,7 @@
       "sha256": "6e20903c8951f38bac7a20dda52bb5ac1db766b382dfe5c10c43cf77c0a6d2f4",
       "size": 2722,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -5105,7 +5105,7 @@
       "sha256": "829ee567e7e1652f8b3bb1bc0ac154b2cb4a603567f6cb1793544cdb0121ae66",
       "size": 4065,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -5151,7 +5151,7 @@
       "sha256": "2a504910a91f8541d0fb1f83d80c07236edc80888c95901953009e86e53a8147",
       "size": 4061,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -5789,7 +5789,7 @@
       "sha256": "1032412bdcd58965f80c92dde348811ecf143f98c471c89cbc9cf4440258e586",
       "size": 570,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -5835,7 +5835,7 @@
       "sha256": "c3f073bf557a02633dd9ee17a847779209e56ae4172f8f87be8cc4fa4dd66544",
       "size": 566,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -5924,7 +5924,7 @@
       "sha256": "f527c7765e0a726ef8e8402bf4477be406d0e5dfcb7c5e25bc647b85edc1d04e",
       "size": 2498,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -5970,7 +5970,7 @@
       "sha256": "3879f1981481a4eb66d2c1da68efcfdb349320d0dca038074bb4d1df33ce8315",
       "size": 2494,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -6306,7 +6306,7 @@
       "sha256": "1dc2da51d43b066e0a153e50ae05b8dc2ee92961dfbdb61c5f0cc64de9dc43c7",
       "size": 172,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -6352,7 +6352,7 @@
       "sha256": "67c99bb0fe8ea39820d00a7d0d23f33882c4d09da1c956e9b62e628da8e252cc",
       "size": 168,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -6411,7 +6411,7 @@
       "sha256": "735c99e45e44a922213a6278b3d88165c2c00faedb495f4197999e3b5ff9a59f",
       "size": 2695,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },
@@ -6435,7 +6435,7 @@
       "sha256": "a0daaaed266ed86404be4e2e4cf34502db6dcea14ca6618181b0bf6b6d31dc1d",
       "size": 2691,
       "format": {
-        "kind": "spine-atlas",
+        "kind": "libgdx-atlas",
         "version": null
       }
     },

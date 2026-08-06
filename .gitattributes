@@ -1,0 +1,10 @@
+# Licence snapshots and vendored fixtures are captured VERBATIM and must never be
+# line-ending normalised. The whole point of a snapshot is showing exactly what an upstream
+# said; a CRLF file rewritten to LF is no longer that, and the difference is invisible in a
+# diff viewer. Twenty-four spine licence files silently drifted to LF this way before the
+# guard existed — ingest kept producing the correct bytes and git kept normalising them back.
+licenses/** -text
+vendor/** -text
+
+# Locks are generated JSON; treat them as data rather than merge candidates.
+locks/*.lock.json -text -diff
