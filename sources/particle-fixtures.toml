@@ -67,3 +67,73 @@ declared_from = "README.md"
 commercial_use = true
 onward_use = "unrestricted"
 covers = "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled artwork separately and NON-UNIFORMLY — six different licences across it: grossini*.png is CC BY-NC-SA 2.0 (redistributable, so -full and -demo eligible), several tile sets are GNU GPL v2, one is Common Public License, one carries a custom Lost Garden licence, Fonts/*.ttf say 'For personal Use', and tuffy_bold_italic-charmap.png is public domain. Critically, Images/spritesheet* carries 'LICENSE: unsure... don't use them in your project' — upstream declining to vouch for the very assets a spritesheet pack would want. This pack takes only text descriptors, so none of that reaches it; recorded because the descriptors reference those images by name and anyone rendering rather than parsing must read that file first."
+
+# ---------------------------------------------------------------------------
+# Starling PEX — a fourth dialect, and the XML one starlingPexParse reads.
+#
+# PEX is the ParticleDesigner emitter model in an XML skin, so it is the near-relative of the
+# Cocos property lists above: same fields, different serialisation. Having both is what makes
+# them useful, since a parser written against one tends to absorb its encoding assumptions.
+#
+# Each .pex names its texture in a <texture name="..."/> element, so the images come too or
+# nothing renders.
+# ---------------------------------------------------------------------------
+[[source]]
+id = "starling-pex-demo"
+kind = "upstream"
+repo = "Gamua/Starling-Extension-Particle-System"
+ref = "master"
+fetch = "blobs"
+include = ["demo/media/**/*.pex", "demo/media/**/*.png", "demo/media/**/*.jpg"]
+strip = "demo/media/"
+dest = "pex/starling/"
+
+[source.license]
+declared = "BSD-2-Clause"
+declared_scope = "repository-root"
+declared_from = "LICENSE.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Starling particle-system extension, copyright 2011 Gamua, under the Simplified BSD License stated in LICENSE.md."
+
+# ---------------------------------------------------------------------------
+# Two more PEX producers, from third-party editors. Four emitters from one demo is thin
+# coverage for a dialect, and these come from different tools — which is the point, since
+# encoder quirks are what a second producer exposes.
+#
+# NEITHER CARRIES A DECLARATION: no LICENSE file, no SPDX metadata. Recorded as UNKNOWN with
+# onward_use unknown, so they are build input only.
+# ---------------------------------------------------------------------------
+[[source]]
+id = "particledesigner-pex"
+kind = "upstream"
+repo = "cosmindolha/ParticleDesigner"
+ref = "master"
+fetch = "blobs"
+include = ["bin/assets/**/*.pex", "bin/assets/**/*.png"]
+strip = "bin/assets/"
+dest = "pex/particledesigner/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "cosmindolha/ParticleDesigner carries no licence declaration of any kind. Taken for producer variety in the PEX dialect; nothing about its terms is established."
+
+[[source]]
+id = "starling-particle-editor-pex"
+kind = "upstream"
+repo = "devon-o/Starling-Particle-Editor"
+ref = "master"
+fetch = "blobs"
+include = ["assets/**/*.pex", "assets/**/*.png"]
+strip = "assets/"
+dest = "pex/editor/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "devon-o/Starling-Particle-Editor carries no licence declaration of any kind. Taken for producer variety in the PEX dialect; nothing about its terms is established."

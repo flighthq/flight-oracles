@@ -19,8 +19,8 @@ accident nobody noticed.
 from __future__ import annotations
 
 import json
-import os.path
 import pathlib
+import posixpath
 import re
 from urllib.parse import unquote
 
@@ -73,6 +73,8 @@ def extract(name: str, data: bytes):
             for key in ("image", "source"):
                 if isinstance(tileset, dict) and tileset.get(key):
                     yield tileset[key]
+    elif lowered.endswith(".pex"):
+        yield from re.findall(r'<texture\s+name="([^"]+)"', text)
     elif lowered.endswith(".obj"):
         yield from re.findall(r"^mtllib\s+(.+?)\s*$", text, re.M)
     elif lowered.endswith(".mtl"):
@@ -136,16 +138,16 @@ def unresolved(locks, root: pathlib.Path, max_bytes: int = 4_000_000):
                     # place on disk resolves it, so it is not an omission we can fix.
                     continue
                 # normpath, not PurePosixPath: the latter keeps ".." segments literally, so
-                # a perfectly ordinary "../../tileset.png" never matched a stored path and
-                # every relative-parent reference was reported as missing.
-                target = os.path.normpath(str(base / ref)).replace("\\", "/")
+                # an ordinary "../../tileset.png" never matches a stored path and every
+                # relative-parent reference is reported missing while the file sits right
+                # there. This has regressed once already — the test below is the guard.
+                target = posixpath.normpath(str(base / ref))
                 if target in present or target.lstrip("./") in present:
                     continue
                 # Cocos resolves a texture name through an engine SEARCH PATH rather than
-                # relative to the descriptor that names it, so a plist in one directory
+                # relative to the descriptor naming it, so a plist in one directory
                 # legitimately points at an image in another. Relative resolution is simply
-                # the wrong test for that dialect; falling back to the basename matches how
-                # the engine actually finds the file.
+                # the wrong test for that dialect; the basename is how the engine finds it.
                 if entry["path"].lower().endswith(".plist") and \
                         pathlib.PurePosixPath(ref).name in by_basename:
                     continue

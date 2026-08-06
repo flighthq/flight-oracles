@@ -133,6 +133,18 @@ class TestFormats(unittest.TestCase):
         info = formats.detect(b"info face=\"Arial\" size=32\n", "a.fnt")
         self.assertEqual((info["kind"], info["version"]), ("fnt", "text"))
 
+    def test_pex_is_distinguished_from_the_plist_form(self):
+        # PEX and the ParticleDesigner plist carry the same emitter model in different
+        # serialisations. Reporting both as "some XML"/"some plist" would lose the one fact
+        # a multi-dialect parser needs.
+        pex = (b'<?xml version="1.0"?><particleEmitterConfig>'
+               b'<texture name="fire_particle.png"/><emitterType value="0"/>'
+               b'</particleEmitterConfig>')
+        info = formats.detect(pex, "fire.pex")
+        self.assertEqual(info["kind"], "pex")
+        self.assertEqual(info["texture"], "fire_particle.png")
+        self.assertEqual(info["emitterType"], 0)
+
     def test_plist_dialects_are_distinguished(self):
         # Both Cocos dialects are property lists; only the payload says which model it
         # carries, and a parser handed the wrong one should refuse rather than half-succeed.
@@ -354,6 +366,10 @@ class TestReferences(unittest.TestCase):
                b'<imagelayer><image source="bg.png"/></imagelayer></map>')
         found = set(references.extract("a.tmx", tmx))
         self.assertEqual(found, {"ts.tsx", "bg.png"})
+
+    def test_pex_texture_reference_is_followed(self):
+        pex = b'<particleEmitterConfig><texture name="fire_particle.png"/></particleEmitterConfig>'
+        self.assertEqual(list(references.extract("a.pex", pex)), ["fire_particle.png"])
 
     def test_mtl_options_are_not_mistaken_for_filenames(self):
         # map_Bump lines carry flags before the path; a naive first-token match yields

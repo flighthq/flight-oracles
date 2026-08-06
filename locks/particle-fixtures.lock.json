@@ -41,6 +41,56 @@
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/cocos2dx-particledesigner@7a5282a301a1.txt"
+    },
+    {
+      "id": "starling-pex-demo",
+      "kind": "upstream",
+      "repo": "Gamua/Starling-Extension-Particle-System",
+      "ref": "master",
+      "commit": "0a3cdbfd5059ef6c5a5da7983f47515f88b57017",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "BSD-2-Clause",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE.md",
+        "covers": "Starling particle-system extension, copyright 2011 Gamua, under the Simplified BSD License stated in LICENSE.md.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/starling-pex-demo@0a3cdbfd5059.txt"
+    },
+    {
+      "id": "particledesigner-pex",
+      "kind": "upstream",
+      "repo": "cosmindolha/ParticleDesigner",
+      "ref": "master",
+      "commit": "8955ac6aee9661bfe5c4e2c4290f586166c1db84",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "cosmindolha/ParticleDesigner carries no licence declaration of any kind. Taken for producer variety in the PEX dialect; nothing about its terms is established.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "starling-particle-editor-pex",
+      "kind": "upstream",
+      "repo": "devon-o/Starling-Particle-Editor",
+      "ref": "master",
+      "commit": "22ceb73a7cb7f059f5ebe6819442e2a1433b1f87",
+      "retrieved": "2026-08-06",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "devon-o/Starling-Particle-Editor carries no licence declaration of any kind. Taken for producer variety in the PEX dialect; nothing about its terms is established.",
+        "onwardUse": "unknown"
+      }
     }
   ],
   "files": [
@@ -2779,10 +2829,751 @@
         "width": 256,
         "height": 64
       }
+    },
+    {
+      "path": "pex/editor/blob.png",
+      "sourceId": "starling-particle-editor-pex",
+      "upstreamPath": "assets/blob.png",
+      "sha256": "f431538584697861e6c22be66e6631629415787dc8fa73cd697eabe6617a0fc6",
+      "size": 2729,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "pex/editor/fire.pex",
+      "sourceId": "starling-particle-editor-pex",
+      "upstreamPath": "assets/fire.pex",
+      "sha256": "2161d8e8e3394b1ecf89ec13db02d2191eee0349f8e978f68fcee85c3a392e9a",
+      "size": 1522,
+      "format": {
+        "kind": "pex",
+        "version": null,
+        "texture": "texture.png",
+        "emitterType": 0
+      }
+    },
+    {
+      "path": "pex/editor/fire_particle.png",
+      "sourceId": "starling-particle-editor-pex",
+      "upstreamPath": "assets/fire_particle.png",
+      "sha256": "a940176aac5862c7aa8d348f5b23631788919e7fc4ce97e80df5713612ce447b",
+      "size": 870,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "pex/editor/heart.png",
+      "sourceId": "starling-particle-editor-pex",
+      "upstreamPath": "assets/heart.png",
+      "sha256": "1df37ccb62c73248e1b1716d9f24a0d9cdf0d5427c58f4cababd2049b3b95ef1",
+      "size": 2623,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "pex/editor/star.png",
+      "sourceId": "starling-particle-editor-pex",
+      "upstreamPath": "assets/star.png",
+      "sha256": "8d6e0bce05d873edcbf9a5abbb8c93926901acb3a6852704c0d34ea112eca32a",
+      "size": 2685,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "pex/particledesigner/angulex.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/angulex.png",
+      "sha256": "86296d83f25d0a2b67e6d40279bc202084974c2798029f7cae86566e835709e3",
+      "size": 25094,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 630,
+        "height": 168
+      }
+    },
+    {
+      "path": "pex/particledesigner/bg.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/bg.png",
+      "sha256": "a08b007d8c8518e498003d1bd36b7c739a81a2eb42632b11747434d25266c4ac",
+      "size": 56907,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 768
+      }
+    },
+    {
+      "path": "pex/particledesigner/blendcircle.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/blendcircle.png",
+      "sha256": "b5452947768c377aaefdefa2f7e4aab35df4c62eadb68679cd9156179ac83a67",
+      "size": 7349,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 170,
+        "height": 170
+      }
+    },
+    {
+      "path": "pex/particledesigner/blurb.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/blurb.png",
+      "sha256": "a73bf9fb110127c09fbd4b7aa526622287dbf853ebcadc9a5a41e7995eafe32e",
+      "size": 26889,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 312,
+        "height": 662
+      }
+    },
+    {
+      "path": "pex/particledesigner/bomb.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/bomb.png",
+      "sha256": "e1ac8f848f3de64634a953da0d28f90c5ffcbeba55075f25b0be1a138a5763bb",
+      "size": 2396,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 45,
+        "height": 45
+      }
+    },
+    {
+      "path": "pex/particledesigner/btg.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/btg.png",
+      "sha256": "150848e43ddaf32a71d697d5c0006889979f04e62ddb60a53fd3d9db99ecff94",
+      "size": 299,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 28,
+        "height": 26
+      }
+    },
+    {
+      "path": "pex/particledesigner/butterfly.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/butterfly.png",
+      "sha256": "5bbbcc5a504b5ac55737c4640e2d6dc86b8d83e2ff2f8f37da05247c28b8b20e",
+      "size": 37755,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 211,
+        "height": 148
+      }
+    },
+    {
+      "path": "pex/particledesigner/circle.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/circle.png",
+      "sha256": "92ad6b0c55a91987e6b787e1c0ef3c8d5fb1500f4d3c19fec30b082f3193e33c",
+      "size": 394,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 29,
+        "height": 29
+      }
+    },
+    {
+      "path": "pex/particledesigner/coin.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/coin.png",
+      "sha256": "74e4ecbd6bd6235f48f0e9061bfb62298813d727067990c69bd6384933793ff9",
+      "size": 65562,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 315,
+        "height": 302
+      }
+    },
+    {
+      "path": "pex/particledesigner/colorpicker.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/colorpicker.png",
+      "sha256": "178594717c0ac450d9931e865a66d5b1562e7d90c662b3dfa3147a9c234858d3",
+      "size": 32494,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 241,
+        "height": 241
+      }
+    },
+    {
+      "path": "pex/particledesigner/colorpointer.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/colorpointer.png",
+      "sha256": "42ce00d833d272f3929b440845f9c9c0d207238d1e9f0b6740be7f30a89e0f7f",
+      "size": 907,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 30,
+        "height": 30
+      }
+    },
+    {
+      "path": "pex/particledesigner/eyesmall.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/eyesmall.png",
+      "sha256": "f727d8c1f278dc48510f775b018ed6efc3cef4109ee9f76250c0079f43ad5ec3",
+      "size": 533,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 15,
+        "height": 11
+      }
+    },
+    {
+      "path": "pex/particledesigner/f1.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/f1.png",
+      "sha256": "990a05aa3c043072f5c01cee7f147ed68cc3d45780e6bc8736aa3f6a6111fcc2",
+      "size": 4226,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "pex/particledesigner/f2.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/f2.png",
+      "sha256": "cc67b980e2dfc29e9a47344bcdaf907f9a7e5208abdf70f6625b3ca5d2bb1b23",
+      "size": 5836,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 116,
+        "height": 116
+      }
+    },
+    {
+      "path": "pex/particledesigner/f3.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/f3.png",
+      "sha256": "f5d0a61313ca11d60aa179fd94d5d1f8bf8c98ec6cc343d3e047e3932188818e",
+      "size": 5389,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 122,
+        "height": 138
+      }
+    },
+    {
+      "path": "pex/particledesigner/f4.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/f4.png",
+      "sha256": "18e2caaaa15632d0186df0595f98c82462ce4511972ed35d7eb5965122f2d0a5",
+      "size": 5861,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "path": "pex/particledesigner/f5.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/f5.png",
+      "sha256": "1d9073c89be39aa2947a1928814d3d502c7c600cc3c80cff83093b9dcc192b0c",
+      "size": 3579,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 140,
+        "height": 140
+      }
+    },
+    {
+      "path": "pex/particledesigner/f6.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/f6.png",
+      "sha256": "48e48c68934245527699624ec5d562b82330decd26caca458b04b134a8b6cf53",
+      "size": 6197,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 118,
+        "height": 133
+      }
+    },
+    {
+      "path": "pex/particledesigner/fonts/abel.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/fonts/abel.png",
+      "sha256": "ffc032996f98556963f12777d3b8f80e6bdad2cf5c99f29d16808c834e9c7097",
+      "size": 2836,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 49,
+        "height": 206
+      }
+    },
+    {
+      "path": "pex/particledesigner/fonts/fatcow.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/fonts/fatcow.png",
+      "sha256": "aa392962965574b1bff009254d14db02dc50a3be570a58e01269466d6f694761",
+      "size": 39406,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 208,
+        "height": 509
+      }
+    },
+    {
+      "path": "pex/particledesigner/fonts/fontgt.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/fonts/fontgt.png",
+      "sha256": "4328248edee6a1b2d79efa5a2235910db03e82ea82b530afd39da3ffdc5e7976",
+      "size": 6493,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 135,
+        "height": 320
+      }
+    },
+    {
+      "path": "pex/particledesigner/fonts/small_dot_digital.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/fonts/small_dot_digital.png",
+      "sha256": "c4b1c3a377554008020f146d922095bc195c8de4f67cfa08d9dc00415ef12c0e",
+      "size": 736,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 26,
+        "height": 512
+      }
+    },
+    {
+      "path": "pex/particledesigner/holecolorcircle.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/holecolorcircle.png",
+      "sha256": "2fe327ec0060d604781b9d9ac351ac69fd5300b56effd23fb5c0132ed75de5fc",
+      "size": 5470,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "path": "pex/particledesigner/layerbg.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/layerbg.png",
+      "sha256": "c35a3e850448e050d133fedbe514f928ed5bf78c7b6ae1672fcaa7dce31d3388",
+      "size": 314,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 90,
+        "height": 82
+      }
+    },
+    {
+      "path": "pex/particledesigner/layertopgraphic.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/layertopgraphic.png",
+      "sha256": "f19ffdf403cfd3bb334e733426d8117f377f626928d2df196062593cb1068c94",
+      "size": 1267,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 134,
+        "height": 51
+      }
+    },
+    {
+      "path": "pex/particledesigner/layervisible.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/layervisible.png",
+      "sha256": "0c90c71a3dbdbc7a9cab0804b6c859bfa7b60aaef149ff9565d6d1ba0cc3993c",
+      "size": 1917,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 37,
+        "height": 82
+      }
+    },
+    {
+      "path": "pex/particledesigner/lg.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/lg.png",
+      "sha256": "349af0f8277d17d6bb86f023f67802cb3446712a0c99a8dd93df8128a0d6886b",
+      "size": 36043,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 300,
+        "height": 300
+      }
+    },
+    {
+      "path": "pex/particledesigner/line.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/line.png",
+      "sha256": "2a28497e175d79479d1f53600d33aadd7eae75cd3d6414127b597888bb0267c8",
+      "size": 99,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 37,
+        "height": 2
+      }
+    },
+    {
+      "path": "pex/particledesigner/logo.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/logo.png",
+      "sha256": "bb7950492936bf42a40f60e1f1399bf28f8b51370b97e29bf379f9945ebd2187",
+      "size": 86108,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 663,
+        "height": 663
+      }
+    },
+    {
+      "path": "pex/particledesigner/mathsumrunicon.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/mathsumrunicon.png",
+      "sha256": "fab124df59307f17b8ca26890f75926516e33cb6587c0b3f7164b6e82d409882",
+      "size": 23358,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 192
+      }
+    },
+    {
+      "path": "pex/particledesigner/mathsumrunwriting.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/mathsumrunwriting.png",
+      "sha256": "f18115f43bb88ccfbcc042f28adccac135a5cd325f0b47eee5c11cedca65c098",
+      "size": 13891,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 478,
+        "height": 97
+      }
+    },
+    {
+      "path": "pex/particledesigner/opacitycircle.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/opacitycircle.png",
+      "sha256": "d1814db2498f8720a948bc9a15203a04531463c2fe61aa126bac7f7037d46eef",
+      "size": 6560,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 348,
+        "height": 348
+      }
+    },
+    {
+      "path": "pex/particledesigner/parrot.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/parrot.png",
+      "sha256": "edd68da902539449e384f813162f33fc37da949581745540cdc1b4683f1ed6e1",
+      "size": 10853,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 99
+      }
+    },
+    {
+      "path": "pex/particledesigner/point.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/point.png",
+      "sha256": "83df04966741ba2f92da23a791e3ae032147d2791532723437c55e668eb2732a",
+      "size": 99,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2,
+        "height": 2
+      }
+    },
+    {
+      "path": "pex/particledesigner/potion.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/potion.png",
+      "sha256": "8df6d96e159c3ab046d708490accb99f367dc12559206c3b31ab702465f431ef",
+      "size": 110374,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 434,
+        "height": 674
+      }
+    },
+    {
+      "path": "pex/particledesigner/smallcircle.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/smallcircle.png",
+      "sha256": "a66310850fcbdbcff1a0d9565f359b1c0d0b89c2048406b5036a63a1e2f4cd42",
+      "size": 1031,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 50,
+        "height": 50
+      }
+    },
+    {
+      "path": "pex/particledesigner/smoke1.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/smoke1.png",
+      "sha256": "fd646acb6f1abd3c1a2c0ac7ce53a7b6898144a3630ffac48b88c314678b47d1",
+      "size": 444,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "path": "pex/particledesigner/story.pex",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/story.pex",
+      "sha256": "84c87606dde55d812598d342c3b17a3310e7aae9a0ac0258b403285e37fd08bf",
+      "size": 1481,
+      "format": {
+        "kind": "pex",
+        "version": null,
+        "texture": "blurb.png",
+        "emitterType": 1
+      }
+    },
+    {
+      "path": "pex/particledesigner/txt1.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/txt1.png",
+      "sha256": "6433281f1bdec455633664666f62e04c49811ac4b831988fec16161f94dccacf",
+      "size": 4829,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "path": "pex/particledesigner/txt2.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/txt2.png",
+      "sha256": "688836ac16c9170fe42b78c7952e00dfd63c1d7668f7a54aece9aba307dad82f",
+      "size": 1013,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 117,
+        "height": 119
+      }
+    },
+    {
+      "path": "pex/particledesigner/txt3.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/txt3.png",
+      "sha256": "ee50da6bf3eeb46053e5253f22287aed4fdf4f3105c62e36f76f7cf3c01db006",
+      "size": 3631,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 145,
+        "height": 145
+      }
+    },
+    {
+      "path": "pex/particledesigner/txt4.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/txt4.png",
+      "sha256": "af7387f14de850a24b49861842c30dafa54a1f64bf8c9e8878894ed339df8f36",
+      "size": 2756,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 95,
+        "height": 95
+      }
+    },
+    {
+      "path": "pex/particledesigner/txt5.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/txt5.png",
+      "sha256": "12d44133dca715b528b4ee901a893858ef3170ee43f2f0977b33b05ff9f5ef2d",
+      "size": 2737,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 126,
+        "height": 126
+      }
+    },
+    {
+      "path": "pex/particledesigner/txt6.png",
+      "sourceId": "particledesigner-pex",
+      "upstreamPath": "bin/assets/txt6.png",
+      "sha256": "8cc09245ea9c98f1b7bc8f696327440e5f58adea596b9e065b92ee5b91120708",
+      "size": 450,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 114,
+        "height": 114
+      }
+    },
+    {
+      "path": "pex/starling/drugs.pex",
+      "sourceId": "starling-pex-demo",
+      "upstreamPath": "demo/media/drugs.pex",
+      "sha256": "f8b8fe395e8e142368f04d1186d9cc16463cb9c952d0d8f7afb09099a1743fe6",
+      "size": 1496,
+      "format": {
+        "kind": "pex",
+        "version": null,
+        "texture": "drugs_particle.png",
+        "emitterType": 0
+      }
+    },
+    {
+      "path": "pex/starling/drugs_particle.png",
+      "sourceId": "starling-pex-demo",
+      "upstreamPath": "demo/media/drugs_particle.png",
+      "sha256": "ad213d750573c8b56dd8525f3e31db3eed1149919fe8e47bd8a1def6fc507bbc",
+      "size": 5191,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "pex/starling/fire.pex",
+      "sourceId": "starling-pex-demo",
+      "upstreamPath": "demo/media/fire.pex",
+      "sha256": "51749a25b243ad52a7a609e688b71fb0ec4e6bd5c54a7c67f5cf12c7c3782024",
+      "size": 1494,
+      "format": {
+        "kind": "pex",
+        "version": null,
+        "texture": "fire_particle.png",
+        "emitterType": 0
+      }
+    },
+    {
+      "path": "pex/starling/fire_particle.png",
+      "sourceId": "starling-pex-demo",
+      "upstreamPath": "demo/media/fire_particle.png",
+      "sha256": "a940176aac5862c7aa8d348f5b23631788919e7fc4ce97e80df5713612ce447b",
+      "size": 870,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "pex/starling/jellyfish.pex",
+      "sourceId": "starling-pex-demo",
+      "upstreamPath": "demo/media/jellyfish.pex",
+      "sha256": "2282226876cf0c8378e160c17b50b1535e58af4188a14981e6b60b1b0b08e3a2",
+      "size": 1506,
+      "format": {
+        "kind": "pex",
+        "version": null,
+        "texture": "jellyfish_particle.png",
+        "emitterType": 0
+      }
+    },
+    {
+      "path": "pex/starling/jellyfish_particle.png",
+      "sourceId": "starling-pex-demo",
+      "upstreamPath": "demo/media/jellyfish_particle.png",
+      "sha256": "d0005b6ec2049331923cc6e71eb955ef5b44a043cff1105c1f0d5f4c7993ef1c",
+      "size": 5346,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "pex/starling/sun.pex",
+      "sourceId": "starling-pex-demo",
+      "upstreamPath": "demo/media/sun.pex",
+      "sha256": "f2f906b845086ed155f81bde49b0177ba28f333d663cdc927ef9af96f73be99a",
+      "size": 1498,
+      "format": {
+        "kind": "pex",
+        "version": null,
+        "texture": "sun_particle.png",
+        "emitterType": 0
+      }
+    },
+    {
+      "path": "pex/starling/sun_particle.png",
+      "sourceId": "starling-pex-demo",
+      "upstreamPath": "demo/media/sun_particle.png",
+      "sha256": "ad213d750573c8b56dd8525f3e31db3eed1149919fe8e47bd8a1def6fc507bbc",
+      "size": 5191,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
     }
   ],
   "totals": {
-    "files": 222,
-    "bytes": 18985983
+    "files": 279,
+    "bytes": 19670867
   }
 }

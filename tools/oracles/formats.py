@@ -400,6 +400,20 @@ def _collada(data: bytes, name: str):
     return FormatInfo(kind="collada", version=match.group(1).decode() if match else None)
 
 
+def _pex(data: bytes, name: str):
+    """Starling/ParticleDesigner PEX: the emitter model serialised as XML."""
+    if not name.lower().endswith(".pex") and b"<particleEmitterConfig" not in data[:512]:
+        return None
+    info = FormatInfo(kind="pex", version=None)
+    texture = re.search(rb'<texture\s+name="([^"]*)"', data[:2048])
+    if texture:
+        info["texture"] = texture.group(1).decode("utf-8", "replace")
+    kind = re.search(rb'<emitterType\s+value="(\d+)"', data)
+    if kind:
+        info["emitterType"] = int(kind.group(1))
+    return info
+
+
 def _plist(data: bytes, name: str):
     """Apple property list, as used by both Cocos dialects.
 
@@ -462,6 +476,7 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
             return info
     for probe in (_dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
                   _ldtk, _effekseer, _frames_meta_sheet, _bvh, _stl_ply, _fbx,
+                  _pex,
                   _collada,
                   _libgdx_atlas, _spine_skel, _spine_atlas, _obj_mtl):
         info = probe(data, name)
