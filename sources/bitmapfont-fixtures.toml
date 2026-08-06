@@ -16,6 +16,7 @@
 [pack]
 name = "bitmapfont-fixtures"
 kind = "fixtures"
+merge_group = "cocos2dx"
 summary = "AngelCode BMFont descriptors — the text .fnt serialisation."
 
 [[source]]
@@ -24,7 +25,19 @@ kind = "upstream"
 repo = "libgdx/libgdx"
 ref = "master"
 fetch = "blobs"
-include = ["tests/gdx-tests-android/assets/**/*.fnt", "extensions/gdx-tools/assets/**/*.fnt"]
+include = [
+  "tests/gdx-tests-android/assets/**/*.fnt",
+  "extensions/gdx-tools/assets/**/*.fnt",
+  # Referenced by the descriptors above: without these they parse but cannot render.
+  "tests/gdx-tests-android/assets/**/**/*.png",
+  "tests/gdx-tests-android/assets/**/**/*.jpg",
+  "tests/gdx-tests-android/assets/**/**/*.jpeg",
+  "tests/gdx-tests-android/assets/**/**/*.bmp",
+  "extensions/gdx-tools/assets/**/**/*.png",
+  "extensions/gdx-tools/assets/**/**/*.jpg",
+  "extensions/gdx-tools/assets/**/**/*.jpeg",
+  "extensions/gdx-tools/assets/**/**/*.bmp",
+]
 strip = ""
 dest = "libgdx/"
 

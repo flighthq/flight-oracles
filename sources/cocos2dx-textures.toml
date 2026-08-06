@@ -1,0 +1,78 @@
+# cocos2dx-textures — textures referenced by the Cocos descriptors.
+#
+# ONE pack rather than three. spritesheet-, particle- and bitmapfont-fixtures all draw their
+# Cocos descriptors from the same test tree and reference overlapping images; giving each its
+# own copy triplicated roughly 950 files for no benefit. They share a merge group instead, so
+# co-extracting resolves every reference exactly once.
+#
+# SPLIT BY LICENCE. cocos2d-x declares MIT, but licenses/LICENSE_artwork.txt carves specific
+# assets out of that with six other licences. Those paths are excluded from the MIT block and
+# the CC BY-NC-SA set is carried separately, because a single declaration over this directory
+# would be wrong about most of it.
+
+[pack]
+name = "cocos2dx-textures"
+kind = "fixtures"
+merge_group = "cocos2dx"
+summary = "Textures referenced by the Cocos spritesheet, particle and bitmap-font descriptors."
+
+[[source]]
+id = "cocos2dx-images"
+kind = "upstream"
+repo = "cocos2d/cocos2d-x"
+ref = "v4"
+fetch = "blobs"
+include = [
+  "tests/**/*.png", "tests/**/*.jpg",
+  # Some atlases ship as compressed PVR containers rather than plain images.
+  "tests/**/*.pvr", "tests/**/*.pvr.ccz", "tests/**/*.ccz", "tests/**/*.pvr.gz",
+]
+exclude_paths = [
+  # "LICENSE: unsure... don't use them in your project" — upstream declining to vouch.
+  "tests/**/Images/spritesheet*",
+  # GNU GPL v2: Barbie Seahorse, Pioneers hex tiles, Tiled editor examples.
+  "tests/**/Images/tiles.png",
+  "tests/**/Images/background.png",
+  "tests/**/tilemap/hexa-tiles.png",
+  "tests/**/tilemap/iso_test.png",
+  "tests/**/tilemap/iso_test2.png",
+  "tests/**/tilemap/tmw_desert_spacing.png",
+  # Custom Lost Garden licence.
+  "tests/**/tilemap/ortho-test1.png",
+  # Common Public License (SpriteLib GPL).
+  "tests/**/tilemap/ortho-test2.png",
+  "tests/**/tilemap/fixed-ortho-test2.png",
+  # Carried by their own blocks, with their own declarations.
+  "tests/**/grossini*.png",
+  "tests/**/fonts/tuffy_bold_italic-charmap*.png",
+]
+strip = "tests/"
+dest = "cocos/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "README.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "cocos2d-x test artwork not carved out by licenses/LICENSE_artwork.txt. Every carve-out is excluded above by path."
+
+# Redistributable with attribution, non-commercially, share-alike. Ships in -full and -demo;
+# excluded from -permissive by the non-commercial term rather than by any judgement of ours.
+[[source]]
+id = "cocos2dx-grossini"
+kind = "upstream"
+repo = "cocos2d/cocos2d-x"
+ref = "v4"
+fetch = "blobs"
+include = ["tests/**/grossini*.png"]
+strip = "tests/"
+dest = "cocos/"
+
+[source.license]
+declared = "CC-BY-NC-SA-2.0"
+declared_scope = "directory"
+declared_from = "licenses/LICENSE_artwork.txt"
+commercial_use = false
+onward_use = "non-commercial"
+covers = "Grossini and friends, from stortroopers.com, listed in licenses/LICENSE_artwork.txt as Attribution-NonCommercial-ShareAlike 2.0. Attribution and share-alike both propagate to derivatives, including rendered output."

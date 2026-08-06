@@ -37,6 +37,9 @@ fetch = "blobs"
 include = [
   "Output/**/*.gltf", "Output/**/*.bin",
   "Output/**/Manifest.json", "Output/**/README.md",
+  # The models reference a shared Textures/ directory by relative URI; without it
+  # 232 references dangle and nothing renders.
+  "Output/**/Textures/**/*.png", "Output/**/Textures/**/*.jpg",
 ]
 strip = "Output/"
 dest = ""

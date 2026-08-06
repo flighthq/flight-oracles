@@ -19,6 +19,7 @@ from pathlib import Path
 
 from . import ingest as ingest_mod
 from . import pack as pack_mod
+from . import references as refs_mod
 from . import spec as spec_mod
 
 
@@ -111,6 +112,31 @@ def cmd_verify(args):
             for commit, packs in sorted(commits.items()):
                 print(f"  {commit[:12]}  {', '.join(sorted(packs))}")
             print("  re-ingest the lagging pack(s) with --update to align them")
+
+    # Descriptors that name files nobody shipped. Resolution is checked across every
+    # ingested pack at once, so a deliberate split (geometry here, textures there) resolves
+    # while a genuine omission does not.
+    all_locks = []
+    for spec in _specs(args):
+        try:
+            all_locks.append(ingest_mod.load_lock(spec.name, root))
+        except FileNotFoundError:
+            continue
+    if all_locks:
+        dangling = refs_mod.unresolved(all_locks, root)
+        if dangling:
+            by_pack = {}
+            for pack, src, ref in dangling:
+                by_pack.setdefault(pack, []).append((src, ref))
+            print(f"unresolved references: {len(dangling)} across {len(by_pack)} pack(s)")
+            for pack in sorted(by_pack):
+                items = by_pack[pack]
+                print(f"  {pack}: {len(items)}")
+                for src, ref in items[:3]:
+                    print(f"    {src} -> {ref}")
+            print("  (a descriptor-only pack is a valid choice; an accidental one is not)")
+        else:
+            print("references: OK (every descriptor's external files are present)")
 
     for name, locks in sorted(groups.items()):
         if len(locks) < 2:

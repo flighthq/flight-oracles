@@ -14,6 +14,7 @@
 [pack]
 name = "particle-fixtures"
 kind = "fixtures"
+merge_group = "cocos2dx"
 summary = "Particle effect configurations — the libgdx .p dialect."
 
 [[source]]
@@ -22,7 +23,14 @@ kind = "upstream"
 repo = "libgdx/libgdx"
 ref = "master"
 fetch = "blobs"
-include = ["tests/gdx-tests-android/assets/**/*.p"]
+include = [
+  "tests/gdx-tests-android/assets/**/*.p",
+  # Referenced by the descriptors above: without these they parse but cannot render.
+  "tests/gdx-tests-android/assets/**/**/*.png",
+  "tests/gdx-tests-android/assets/**/**/*.jpg",
+  "tests/gdx-tests-android/assets/**/**/*.jpeg",
+  "tests/gdx-tests-android/assets/**/**/*.bmp",
+]
 strip = "tests/gdx-tests-android/assets/"
 dest = "libgdx/"
 

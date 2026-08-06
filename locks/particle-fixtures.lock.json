@@ -11,7 +11,7 @@
       "repo": "libgdx/libgdx",
       "ref": "master",
       "commit": "81cdb92811403f148daff195bff1da896877824c",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "Apache-2.0",
         "declaredScope": "repository-root",
@@ -29,14 +29,14 @@
       "repo": "cocos2d/cocos2d-x",
       "ref": "v4",
       "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
         "commercialUse": true,
         "redistributable": true,
         "declaredFrom": "README.md",
-        "covers": "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled PNG artwork separately and more restrictively \u2014 grossini*.png is CC BY-NC-SA 2.0, for instance. That does not reach this pack, which takes only the text descriptors, but the descriptors REFERENCE those images by name, so anyone rendering rather than parsing them needs to read that file.",
+        "covers": "cocos2d-x declares MIT in its README (no LICENSE file at the root). NOTE: licenses/LICENSE_artwork.txt covers the bundled artwork separately and NON-UNIFORMLY \u2014 six different licences across it: grossini*.png is CC BY-NC-SA 2.0 (redistributable, so -full and -demo eligible), several tile sets are GNU GPL v2, one is Common Public License, one carries a custom Lost Garden licence, Fonts/*.ttf say 'For personal Use', and tuffy_bold_italic-charmap.png is public domain. Critically, Images/spritesheet* carries 'LICENSE: unsure... don't use them in your project' \u2014 upstream declining to vouch for the very assets a spritesheet pack would want. This pack takes only text descriptors, so none of that reaches it; recorded because the descriptors reference those images by name and anyone rendering rather than parsing must read that file first.",
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/cocos2dx-particledesigner@7a5282a301a1.txt"
@@ -407,6 +407,1831 @@
       }
     },
     {
+      "path": "libgdx/data/Textures1.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/Textures1.png",
+      "sha256": "76ddd029cb6be57d44accf8834eff0c7a77008b50fcbd9ac6a0af529cbdf6c7a",
+      "size": 16981,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/alpha.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/alpha.png",
+      "sha256": "183c76a287f02d140e2fcf0626ab1563626f17989f92011221bdac66d65cda8f",
+      "size": 3966,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 250,
+        "height": 188
+      }
+    },
+    {
+      "path": "libgdx/data/animation.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/animation.png",
+      "sha256": "f6963844b6a35e731e450e96d263670c0d39f009e69a23d9a5d8d04a8f7363d0",
+      "size": 11429,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/animation_gwt_lazy.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/animation_gwt_lazy.png",
+      "sha256": "f6963844b6a35e731e450e96d263670c0d39f009e69a23d9a5d8d04a8f7363d0",
+      "size": 11429,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/atlased-fonts.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/atlased-fonts.png",
+      "sha256": "556c881a1e68410da7de7079ff1c02448fb745b6fc87fe10029126b0ed91bf1d",
+      "size": 22889,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 254,
+        "height": 376
+      }
+    },
+    {
+      "path": "libgdx/data/badlogic-with-whitespace.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/badlogic-with-whitespace.png",
+      "sha256": "614fe925d2914564e3618fa9988da03d19c9826e2e50de715de7ef36b081fcef",
+      "size": 89902,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 300,
+        "height": 300
+      }
+    },
+    {
+      "path": "libgdx/data/badlogic.jpg",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/badlogic.jpg",
+      "sha256": "66d550b8f9a169a4490805efe04e9d02c1aab9828417fc8f29ee7407f8e48652",
+      "size": 68465
+    },
+    {
+      "path": "libgdx/data/badlogicsmall.jpg",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/badlogicsmall.jpg",
+      "sha256": "133f1aac53b0ef6a82a57cef9f8766a445d5f4f66226321cd185f75bdfa77acd",
+      "size": 1787
+    },
+    {
+      "path": "libgdx/data/black_marked_0.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/black_marked_0.png",
+      "sha256": "e58d340be585a04ee959532d5186b11cef888955c4693fa6a29a2adb270fc8d9",
+      "size": 3776,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/bobargb8888-32x32.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/bobargb8888-32x32.png",
+      "sha256": "68e36bd96554aeaae14990c8bf2bba871e075d5b708c35b6845d8a02a37aea3d",
+      "size": 392,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/bobrgb888-32x32.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/bobrgb888-32x32.png",
+      "sha256": "5050b303eead3da85916d134b4cd85184c2e6ce33586354da895bc6546809a96",
+      "size": 399,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/border_corner_a.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/border_corner_a.png",
+      "sha256": "c9972a778d13cb9a7f47e0f87c13b5fd914780ed991f9eea9af9216d22188f68",
+      "size": 402,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 38,
+        "height": 38
+      }
+    },
+    {
+      "path": "libgdx/data/debug.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/debug.png",
+      "sha256": "e7b03f4c49e680306ea00a6821ea7c7fa5081531f237e2654839d9f74d904f1a",
+      "size": 186,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2,
+        "height": 2
+      }
+    },
+    {
+      "path": "libgdx/data/default.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/default.png",
+      "sha256": "ec30ef6ef90771c469050b98fb256f76dd112a2ee2c426a0a4e745bdb16c9fad",
+      "size": 10653,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/default_00.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/default_00.png",
+      "sha256": "6d6b636ab9dca2a2db8ee15af6f7158c579bc60242e081789d12ac8a94b7756f",
+      "size": 4680,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/egg.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/egg.png",
+      "sha256": "83fafcb1d3c216d7841739cf4f65ae7ed96f93fc0f6d276caffc82c13affe3fa",
+      "size": 26053,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/font.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/font.png",
+      "sha256": "e44c05b42b43a1122b31af088650fe91d9ef9c7072e1ece81d274661a933190a",
+      "size": 4324,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g2d/progressive-libgdx.jpg",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g2d/progressive-libgdx.jpg",
+      "sha256": "da0a0109215bacd125ddec07a1a1ffb8ea8eec66f9a8a7e6c320fbba0501c3a8",
+      "size": 87033
+    },
+    {
+      "path": "libgdx/data/g3d/Knight.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/Knight.png",
+      "sha256": "b2137a9dbe2812fbd3f78e478615a11192a0b90118d262f3025a8d8ef0b5fe11",
+      "size": 220292,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/checkboard.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/checkboard.png",
+      "sha256": "211b3c6d9b3e6f4a4a7e6dd26910cdd1e7e7a59dcd4a039563877275b2dcfe08",
+      "size": 50008,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/concrete.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/concrete.png",
+      "sha256": "da7839c018210de1bcbe8cd2abc676268e71f09c65aac184237336b90f7b4bb1",
+      "size": 267528,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_NX.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_NX.png",
+      "sha256": "4a73a9292b3421a244b4425edc9c4be6fe2da58a58d9d90d7b43c1fc41710e49",
+      "size": 8110,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_NY.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_NY.png",
+      "sha256": "1a850a665eeb84fba99decbe7d5fc486b8d46a9b034f83da5937bb4f167d7df7",
+      "size": 7581,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_NZ.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_NZ.png",
+      "sha256": "ed5e4fa6bc905e3db509f79da5c69d85e7b0f65628785fb6a38ba542e8237b65",
+      "size": 7414,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_PX.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_PX.png",
+      "sha256": "ec271eeedfeb69d957879787b3f27e814c74253c43b4c8c7c63e6f0f831a3d1c",
+      "size": 6870,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_PY.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_PY.png",
+      "sha256": "6bd483de49e32bf1331cea1551821484f3e466c8851705bf50181d19b40bffcc",
+      "size": 6602,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_PZ.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_PZ.png",
+      "sha256": "4007b17b38f4e428a9fee8be885c3f1dfcfb38a6ca4df5ec5e1817d68940e7d9",
+      "size": 6760,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_NX.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_NX.png",
+      "sha256": "d97162fe461b4bcc8dc5c404af9ef8b9c9a55de4440e8d877ab4b1ccb209432a",
+      "size": 8009,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_NY.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_NY.png",
+      "sha256": "6096e2e27394bcaf189eab870cf90994d4ef296c68722e2303d4f8efc4698c99",
+      "size": 9849,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_NZ.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_NZ.png",
+      "sha256": "af016909427ad6611db5b8623210bd1c06226497be2624fe8dd8aa6f01693389",
+      "size": 9102,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_PX.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_PX.png",
+      "sha256": "35793293459ef09afda67801548fb81b203ce094c8520d57b25ec482498d6fc5",
+      "size": 8413,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_PY.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_PY.png",
+      "sha256": "3ea2d9b6daa958d17d0d5a8160bd7ab184c7de3958f7cef885f5a504cc1f437a",
+      "size": 5942,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_PZ.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_PZ.png",
+      "sha256": "529477e3a75b004118d5e0b8d6a7421eae08fd62548c7064f19da19937ee8bf0",
+      "size": 8360,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_NX.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_NX.png",
+      "sha256": "6a2dbcfa26a3456964296fbfecc1207fc5333d44b566fa5b3afea6d627d10966",
+      "size": 66899,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_NY.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_NY.png",
+      "sha256": "608a952b4106fb294af0682a5a669a8f6ecda017f93ce97167471583cbcd2c05",
+      "size": 61835,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_NZ.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_NZ.png",
+      "sha256": "21b92af79bb622268b39f11e501a502b2adf37cbfddd832011c7add0b37f3827",
+      "size": 63523,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_PX.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_PX.png",
+      "sha256": "a321add2438f0b6497fc9db7ef009878f3f9f02ef875cd1a366e123437928f6b",
+      "size": 63329,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_PY.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_PY.png",
+      "sha256": "c0fc412ae9b6a7fd24f1683ce8f38f0a542375476683cd39f8a0f4e9b5e5e3b5",
+      "size": 56584,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_PZ.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_PZ.png",
+      "sha256": "c42a4cc55e9386f47c7fd88a43ca0645add71f6d238f6efde73e56d9e8083e08",
+      "size": 61949,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/head_color.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/head_color.png",
+      "sha256": "8efcc93ca050b5fd2c62f4cd9422c4132863fc29a29873f7a668622e0b11e473",
+      "size": 888420,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/heightmap.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/heightmap.png",
+      "sha256": "772d4802af578f11a85b0a1cf158eaacddb82ca2fe25c9fae3280ac9ccf6c7d2",
+      "size": 4894,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/invader.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/invader.png",
+      "sha256": "457326756e0a714cab2cb08baad2c187089cc1f2d7de303546e717197c3a430a",
+      "size": 57659,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Cannon_AO_01a.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Cannon_AO_01a.png",
+      "sha256": "8521600cadeebac947ef87e11b94e6af8131c04f9056704a5585edbd56136920",
+      "size": 1456773,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Cannon_Diffuse_01a.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Cannon_Diffuse_01a.png",
+      "sha256": "8521600cadeebac947ef87e11b94e6af8131c04f9056704a5585edbd56136920",
+      "size": 1456773,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Cannon_Normal_01a.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Cannon_Normal_01a.png",
+      "sha256": "664003adf5f5c2823b9406e67dcc445198d0885d3affa86408c36df1688b4f15",
+      "size": 1162939,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Cannon_Specular_01a.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Cannon_Specular_01a.png",
+      "sha256": "22442c6818e62107c00f7a2f556c7d38da16c55c5210384d3f2338dddeef21bd",
+      "size": 1285100,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Deep Fire.jpg",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Deep Fire.jpg",
+      "sha256": "0ca123f098481973d983d208e798beacc4bcd4395890e729b8f3c035fff8a363",
+      "size": 148255
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Lava Cracks.jpg",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Lava Cracks.jpg",
+      "sha256": "b3490d632829e1f0bace027e574466b990202b989afbf918d45448efcfdb866a",
+      "size": 114251
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Searing Gorge.jpg",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Searing Gorge.jpg",
+      "sha256": "4eb20b4749bf76529166f9639635218b039e7814d018a0efd68fff098deacfca",
+      "size": 119976
+    },
+    {
+      "path": "libgdx/data/g3d/materials/badlogic_normal.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/badlogic_normal.png",
+      "sha256": "b4a4108272ca37d4bd4b7f57103cbefcfb6eb02b6d23899f2f25fa5994c4cf08",
+      "size": 108411,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brickRound_diffuse.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brickRound_diffuse.png",
+      "sha256": "0353277f59ac8c07fe52dd906b40a3ada797f9f1c23b285d1fe8e884f2cde3a1",
+      "size": 1141097,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 700,
+        "height": 700
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brickRound_normal.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brickRound_normal.png",
+      "sha256": "b88847846b819e14fccfb8019c8b033d522d30a02f5e3658838922f819a07108",
+      "size": 1040833,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 700,
+        "height": 700
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brick_diffuse_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brick_diffuse_01.png",
+      "sha256": "86eec4324f62914a97063b790fee4e468b5e39252d01ff333568a443f373bba4",
+      "size": 133968,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brick_diffuse_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brick_diffuse_02.png",
+      "sha256": "b19e450afb35d3a0784584bf262264d14485768d28cd50fadb827929080b94a2",
+      "size": 153419,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brick_normal_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brick_normal_01.png",
+      "sha256": "f9d4c8686d19e1d9b009f5222b3823297ccf103b121761a88c1fa3e183b3540a",
+      "size": 77889,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brick_normal_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brick_normal_02.png",
+      "sha256": "7f0ec50fb72d1a44dcbf94e4e8f485c5ac24af7966387add7b96e0aa81cf1e40",
+      "size": 80377,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/chesterfield_diffuse.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/chesterfield_diffuse.png",
+      "sha256": "f27429a5d572a721a17a812acb7b4858650bcaa39350031be1a3f12214034d88",
+      "size": 97295,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/chesterfield_normal.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/chesterfield_normal.png",
+      "sha256": "36a9aa95f0dd2a26c1688e212a0b98b245886608fe54d80b12ddf422cc503db1",
+      "size": 181697,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/chesterfield_specular.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/chesterfield_specular.png",
+      "sha256": "400f91529d509c3ed927b23eb926f48305b37807f7babc2757b4fd937a431100",
+      "size": 90007,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/cloth_diffuse_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/cloth_diffuse_01.png",
+      "sha256": "9fc7c9f3fcebdf207f8e72a8fa600c1587ce99d942074e8461fb4eb9fd660e89",
+      "size": 83520,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/cloth_diffuse_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/cloth_diffuse_02.png",
+      "sha256": "69e22fa1c348c2dade2f6de39ff6565fab85aaaf9edf7523418c4b1ca51e651b",
+      "size": 71447,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/cloth_normal_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/cloth_normal_01.png",
+      "sha256": "ab237f9f695905e9f20a625f7cbadc58656081c46928a99682cae90810dddc39",
+      "size": 85137,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/cloth_normal_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/cloth_normal_02.png",
+      "sha256": "b18726b99ddc57402ac72f392f0e1b437f6b696c3dd6382154acf960f2213cc7",
+      "size": 58236,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/elephant_diffuse_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/elephant_diffuse_01.png",
+      "sha256": "93e72fddd0d303fe8044b0bc5782641bdad558e1a981fac3b20788941cc4dfc3",
+      "size": 87885,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/elephant_diffuse_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/elephant_diffuse_02.png",
+      "sha256": "bab5438bcfcc791547249aac47de1ff74af99fed0530e1614a1b2e48c388ba24",
+      "size": 115427,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/elephant_normal_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/elephant_normal_01.png",
+      "sha256": "dddfa6b1217f69ed8a9ad0b21b80f490a404b359f05f17b6aafc19f6c5a5b431",
+      "size": 144068,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/elephant_normal_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/elephant_normal_02.png",
+      "sha256": "92e0889da595adb3bf0804559c6d2b8e41efef922004d248469183c1e599c870",
+      "size": 167336,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/fur_diffuse_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/fur_diffuse_01.png",
+      "sha256": "4fda5d0a4486bef2b5502288fdbf4bf3d1ef093c6dd5a45ea8410c1bd1a34ca4",
+      "size": 220823,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/grass_diffuse_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/grass_diffuse_01.png",
+      "sha256": "683f11d065ac2acd389a56ea175f1387d9aaf443cfc4d9184077c25b9ff20f8c",
+      "size": 197940,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/jitter_normal_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/jitter_normal_01.png",
+      "sha256": "c1d5caed85c112df504cbab00c571d732b8095eaebd4b3571fbfaa999ae0c05c",
+      "size": 42977,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/leather_diffuse_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/leather_diffuse_01.png",
+      "sha256": "3db3aa5d6bf38036e44b65922840e357d3517936909b563f5409a42987c743f2",
+      "size": 52137,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/leather_diffuse_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/leather_diffuse_02.png",
+      "sha256": "c480bd596e5801bc799a510bdca1c076cb973f8e1cc4da932fac2cffec6163b7",
+      "size": 40271,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/leather_normal_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/leather_normal_01.png",
+      "sha256": "71a6759fdf0ee4e6ee4a47425934b9063ddea482fc52ddbc7c14138822c82127",
+      "size": 141447,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/metal_diffuse_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/metal_diffuse_01.png",
+      "sha256": "07a0f4c8207d778fe52540021350432a46eafb8d9562f4f78af43a796c5d733d",
+      "size": 18508,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/metal_normal_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/metal_normal_02.png",
+      "sha256": "265368ad5f169357460a5870914fb9b6b9863c49c6e0a6ba722dee34f5a07616",
+      "size": 201627,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/moon_diffuse_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/moon_diffuse_01.png",
+      "sha256": "c262b46c8113dcaa2be43a7cefd89312e85a9f7d6bcd094ddb73592b56307f0d",
+      "size": 94233,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/moon_normal_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/moon_normal_01.png",
+      "sha256": "540c72cbf644401ca718a945fbd3cdc85e66bc8d4ac7869e6e9b7d6b90cee3ed",
+      "size": 78416,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/plastic_normal_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/plastic_normal_01.png",
+      "sha256": "a0424eec6cf68acb607c9a566a473f002d7135f54eae2e24986fe013d3f726ad",
+      "size": 6980,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/skin_diffuse_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/skin_diffuse_01.png",
+      "sha256": "7988de6e3d9cc8cb4dc1dde0c32ba667377b69ea9dd919c1fa7adca2c2d4e215",
+      "size": 90734,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/skin_diffuse_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/skin_diffuse_02.png",
+      "sha256": "c530fb4d5b889191530803d6c09725b9ed4a2154c630bfbfe3f5cb44afd92ef7",
+      "size": 50978,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/stone_diffuse_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/stone_diffuse_01.png",
+      "sha256": "c76b9984f67a851d8f35522c60e815ebe186e10e2edc614bcafe4c851d16adfe",
+      "size": 142002,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/stone_diffuse_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/stone_diffuse_02.png",
+      "sha256": "c8ae6054b9f6525d719e3f54f2166cb1522956399d7086cf968a83f617e174c7",
+      "size": 130852,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/stone_normal_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/stone_normal_01.png",
+      "sha256": "095f8a4ad75ea329b2441ef49341531c87d93fd6ac7ac2de4f29cde82354dedd",
+      "size": 144577,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/stone_normal_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/stone_normal_02.png",
+      "sha256": "1fb89653d400865cfd9c7769abfbe59d8691ddb20839c141d5591aac5b49f48c",
+      "size": 81940,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/wood_diffuse_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/wood_diffuse_01.png",
+      "sha256": "42ad3b8fb5c1e8f268961d2537e8408df132e54a560ccf5465a2754ee86f909c",
+      "size": 133625,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/wood_diffuse_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/wood_diffuse_02.png",
+      "sha256": "eaeb3a912c2b465a3d881ce5048d677c0684ad64db4608c684017041d8512aa2",
+      "size": 97677,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/wood_diffuse_03.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/wood_diffuse_03.png",
+      "sha256": "e8083d6b02ee2452cba7fd87300e10caac8c1bcc0dfdf69944f81e7bbff8ec3c",
+      "size": 110459,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/wood_normal_01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/wood_normal_01.png",
+      "sha256": "418430d92cc776ce243f9660ffc1627157ad568f5123e47b755ad5c84ca7b14e",
+      "size": 124833,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/wood_normal_02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/wood_normal_02.png",
+      "sha256": "6a8972b5bf5eab9d7ff9a15ceb3c63acf8ebb01aec9ca69c0a1e5b5ad8b8a5ec",
+      "size": 78101,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/ship.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/ship.png",
+      "sha256": "3c4100e87a4bd7830aca53e1537bdb555449d50bbcfd0c88e999f7ea9a4f9902",
+      "size": 35161,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/skydome.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/skydome.png",
+      "sha256": "18358fa222ba1d504ced45657509875d7f8fb5ece7dc1af919102252e779ffb1",
+      "size": 665317,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/space.jpg",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/space.jpg",
+      "sha256": "55b19f0752b1a40bf21a92247a519a4c0f7c6c40d3ddbeddbf58e2f34cb35d81",
+      "size": 167005
+    },
+    {
+      "path": "libgdx/data/g3d/tiles.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/tiles.png",
+      "sha256": "17dbc1410324db502599dc5ba2727650bb60a2e81f83aa7b87188a786d61a514",
+      "size": 178936,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/group-debug.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/group-debug.png",
+      "sha256": "6a8a1733d424f2400f1d0dfdc7fbcd62c3a3469c54998da3884394090092a1db",
+      "size": 7523,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/heightmap.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/heightmap.png",
+      "sha256": "6ce69dee8f596a6628f4a91b8ff6210d28ffb9a7e6a5057a3dbf701e2dcc731e",
+      "size": 1175,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 33,
+        "height": 33
+      }
+    },
+    {
+      "path": "libgdx/data/isotile.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/isotile.png",
+      "sha256": "49f0ff82c8e68be3f07f3de917649e778c4ef6be922c0be4be00dd78b594a5a2",
+      "size": 1652,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/issue/bark.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/issue/bark.png",
+      "sha256": "f8a28da38d6c4af067f6efdacde9af5befc32e46995404e9b5915bc4a00cb9f6",
+      "size": 734178,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/issue/leaf.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/issue/leaf.png",
+      "sha256": "18443d31e927e5816f3c36a884ef402645896dae121fd240ab9072278a62d385",
+      "size": 43017,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/jump.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/jump.png",
+      "sha256": "524bea46e4c16c629140f7b387f7fedb05425a5d00a79509bdb7879df2f53af3",
+      "size": 181560,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/layers.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/layers.png",
+      "sha256": "0d017a2919c53a171d0389d9912315fb03d2ac7d708041737d51148382025dbc",
+      "size": 31045,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/lsans-15.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/lsans-15.png",
+      "sha256": "84ccac1d4daea3e9f77fef5217c35f121128163319d221e390627df97b9ee565",
+      "size": 10373,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/lsans-15_00.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/lsans-15_00.png",
+      "sha256": "3cb731f79af36736678d24401801f6b8f8a5907898d652bde752091de43f9256",
+      "size": 7157,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/lsans-32-pad.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/lsans-32-pad.png",
+      "sha256": "fb1df325afe746793fb85427df9fd9a281b8095269b2cbba9b6bd7bc2aa3c15e",
+      "size": 12609,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/lsans-32.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/lsans-32.png",
+      "sha256": "01881de9b543600c36a1e474a3b50d685cb4e2aaedfaee5e1b6f348824e492fb",
+      "size": 9330,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tide/TileSheets/Background01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tide/TileSheets/Background01.png",
+      "sha256": "40fff96597f4402ee75ba3106cb5ae3a56efb5d39bcfa45a8cf770c829c003f1",
+      "size": 43989,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 640,
+        "height": 720
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tide/TileSheets/Background02.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tide/TileSheets/Background02.png",
+      "sha256": "db0bff2050c9deeb670bf024de1053be06331a30de3d396ba8e0fa7106f0a922",
+      "size": 35028,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tide/TileSheets/Background03.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tide/TileSheets/Background03.png",
+      "sha256": "32ffa95258affb90970687ba40bbc3fa5a1cf6eb1c9a5b76ada638f4497e105a",
+      "size": 34592,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tide/TileSheets/TileSheet01.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tide/TileSheets/TileSheet01.png",
+      "sha256": "b43f6a3e8235c80ba6e5d3cb81a8a23dbb69d745f75bead7662a3831c53e7558",
+      "size": 35047,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-animations/Start.bmp",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-animations/Start.bmp",
+      "sha256": "ce512d8720c316b4cf0f59b0d8dd0ae924662628402e8dd0452bd09326e7ecf3",
+      "size": 2102
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/packed.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/packed.png",
+      "sha256": "0ecb880acb6c9aec0294e5e064e1c00faa40551bd1612d1e65836c529e7acf37",
+      "size": 9364,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test.png",
+      "sha256": "35ef3dfe48bf0fcc2964b9aeb6305c693e8fa2de2c901b08774e8948f74a450c",
+      "size": 105292,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test2.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test2.png",
+      "sha256": "35ef3dfe48bf0fcc2964b9aeb6305c693e8fa2de2c901b08774e8948f74a450c",
+      "size": 105292,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_gwt_uncompressed.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_gwt_uncompressed.png",
+      "sha256": "35ef3dfe48bf0fcc2964b9aeb6305c693e8fa2de2c901b08774e8948f74a450c",
+      "size": 105292,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_w_imglayer_props.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayer_props.png",
+      "sha256": "9c73abb99ea3fc0c70962d3f8e7a6eaa9b2b03e54e0d8eca24159b198d0303cf",
+      "size": 61700,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_w_imglayers.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers.png",
+      "sha256": "a926ea0f9bb66b372947ed3ab60902dea8abdc89dd0bb696eddcd4866dcf46f3",
+      "size": 221449,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi.png",
+      "sha256": "3b6291b74dd60893fe386a0ddfe7688a0f68eb8cbebb6502f4aba618c22dda71",
+      "size": 231197,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi_gwt_uncompressed.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi_gwt_uncompressed.png",
+      "sha256": "3b6291b74dd60893fe386a0ddfe7688a0f68eb8cbebb6502f4aba618c22dda71",
+      "size": 231197,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_gwt_uncompressed.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_gwt_uncompressed.png",
+      "sha256": "a926ea0f9bb66b372947ed3ab60902dea8abdc89dd0bb696eddcd4866dcf46f3",
+      "size": 221449,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/tilesets/tileset1.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/tilesets/tileset1.png",
+      "sha256": "df072f68090eeed363deec1341fa3a72104c0a2983739fb22f4430beb25a5f8b",
+      "size": 44185,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/tilesets/tileset2.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/tilesets/tileset2.png",
+      "sha256": "b43f6a3e8235c80ba6e5d3cb81a8a23dbb69d745f75bead7662a3831c53e7558",
+      "size": 35047,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/badlogicsmall.jpg",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/badlogicsmall.jpg",
+      "sha256": "133f1aac53b0ef6a82a57cef9f8766a445d5f4f66226321cd185f75bdfa77acd",
+      "size": 1787
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image.png",
+      "sha256": "aaa06618db5d515b6a79d24f2d734979f889d8155546f301cc57ebb01c13f9ec",
+      "size": 3364,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image2.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image2.png",
+      "sha256": "dd7a152c2568dc4b2910017e67a45d17fafc7493446a71247a83af18a6652215",
+      "size": 3576,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image3.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image3.png",
+      "sha256": "c52bab49f4767f28970e3a5df7d44cb83ff9eb4afe24d30f34f2bfe53aec860d",
+      "size": 3597,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image4.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image4.png",
+      "sha256": "734bf4444db3d7e15371c1c4919e221846a402d9f07cf0354e075d9d9fc7194f",
+      "size": 3496,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image5.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image5.png",
+      "sha256": "8afd0b574a5c771f540b8663586c17e18c6f2b13ea337da88f0f453ead1afb29",
+      "size": 3474,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image6.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image6.png",
+      "sha256": "3e0553c4b6b1ef26abdb241f8cf631c60cae84fddf0e8c51a2519d55bba93ac3",
+      "size": 3694,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image7.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image7.png",
+      "sha256": "eb39ac7f39935ce8bb18852fa057d1c4a54b54c200cc22cce9484e51b74e1443",
+      "size": 3473,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups/tileset/packed.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups/tileset/packed.png",
+      "sha256": "b82da7def2538eac296700f3dfb6b73ee1b147d473a1c67780dff9888d67e580",
+      "size": 280,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/Start.bmp",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/Start.bmp",
+      "sha256": "ce512d8720c316b4cf0f59b0d8dd0ae924662628402e8dd0452bd09326e7ecf3",
+      "size": 2102
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/grass_1.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/grass_1.png",
+      "sha256": "9e5def1a1897b8a6602241a321bdbd930ce4dd3247b17466fc5fa23691ed34ed",
+      "size": 5706,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 48
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-tint-opacity/badlogic-with-whitespace-small.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/badlogic-with-whitespace-small.png",
+      "sha256": "cc4cc2ea53e83e849e22dccb1911a1b27e242f4cd4179ea39353d18bc91cfdf7",
+      "size": 14651,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 75,
+        "height": 75
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-tint-opacity/sky.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/sky.png",
+      "sha256": "cba206c9e35b10b23b1ce218e0a63b4c379b0b66a1f79f92571f262ae8b947e9",
+      "size": 1161,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 240,
+        "height": 320
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/external-tilesets/grass_1.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/grass_1.png",
+      "sha256": "9e5def1a1897b8a6602241a321bdbd930ce4dd3247b17466fc5fa23691ed34ed",
+      "size": 5706,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 48
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/external-tilesets/grass_4.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/grass_4.png",
+      "sha256": "5c7b249ed40af47c6ce3e4a99839bdf3255baca8ed6b873c3bcc71cd1053b7d7",
+      "size": 21513,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 48
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/external-tilesets/water_1.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/water_1.png",
+      "sha256": "b987effff8a7dba354ff119111796f7d91a9f2561f1975e791dadd76e2a48935",
+      "size": 2359,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 48
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/hex/hexes.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/hex/hexes.png",
+      "sha256": "bd870790fce9e1b91fc0a49c9f322c631f9505461588807f908dc62d329e1e5d",
+      "size": 7030,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/isometric_grass_and_water.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/isometric_grass_and_water.png",
+      "sha256": "8b53306d0ee4e7db75630894ad5f0949176b9c841a84d49c61f5183c95095ef8",
+      "size": 104828,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 384
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/super-koalio/koalio-single.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/super-koalio/koalio-single.png",
+      "sha256": "d1f29d183b6540e7f4daf2260bd6ea5d713c7012f6d6363dabcc139be16c61f7",
+      "size": 1150,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 17,
+        "height": 25
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/super-koalio/koalio.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/super-koalio/koalio.png",
+      "sha256": "21fe1219bb4a744b8a7d89eae5a371b37f15eb05927e38619736a7968d649f70",
+      "size": 3378,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/super-koalio/tileSet.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/super-koalio/tileSet.png",
+      "sha256": "df072f68090eeed363deec1341fa3a72104c0a2983739fb22f4430beb25a5f8b",
+      "size": 44185,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/tiles.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/tiles.png",
+      "sha256": "b43f6a3e8235c80ba6e5d3cb81a8a23dbb69d745f75bead7662a3831c53e7558",
+      "size": 35047,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/multipagefont1.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/multipagefont1.png",
+      "sha256": "565340184c31c63eb00f6d49c5ffd7e78bf4e79da34234736fb85148545c2f81",
+      "size": 13224,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/multipagefont2.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/multipagefont2.png",
+      "sha256": "e01d53549a6ccae2ae3859ba6d1d985d9964d9a6cf7d1eb61d79659058982fb0",
+      "size": 4841,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/pack1.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/pack1.png",
+      "sha256": "431fd0ba28a27aabac5e4b629908692eecc15c493370e3dd75546e3a8f162bb7",
+      "size": 32898,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
       "path": "libgdx/data/particle-animation.p",
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/particle-animation.p",
@@ -415,6 +2240,267 @@
       "format": {
         "kind": "libgdx-particle",
         "version": null
+      }
+    },
+    {
+      "path": "libgdx/data/particle-ball1.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-ball1.png",
+      "sha256": "2b0d6a4ee1b0d88882e4de18c825410c558a4b2026b5669a489dd6081f9d7cb9",
+      "size": 2439,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-ball2.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-ball2.png",
+      "sha256": "88c0a28451150df9a5b58ff2ed9f102a2137a86826b4c1ac88e4ba9dcdd74792",
+      "size": 3028,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-ball3.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-ball3.png",
+      "sha256": "f3b2321279304f62c93ac257f8f2d120adfcc5e4d85ff12726f8172fdeeb7201",
+      "size": 1875,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-ball4.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-ball4.png",
+      "sha256": "0d4995bb59a5b21ef39bd44cf808a86beb5994ad74c8c085239f8e5b20adb516",
+      "size": 1348,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-cloud.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-cloud.png",
+      "sha256": "d4f0dc666ff6a9859f23b88c6a31f8a053c23bdd9cad714a97e0736bc3de0c12",
+      "size": 9294,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-fire.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-fire.png",
+      "sha256": "885129340f426ba8d4410fa87cc81a024f62d2a6cb84360f4e902ad887892897",
+      "size": 11952,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-star.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-star.png",
+      "sha256": "97298fbaf493b95589a4f413dfdbf56e64ff565fad1ea1141ad45c43fbcdce94",
+      "size": 3665,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/particle.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle.png",
+      "sha256": "0be3931c3b3c1ea3a7014f652abfd3e86af3fe9054338d205ead1a8532dfdabd",
+      "size": 1821,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/particles.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particles.png",
+      "sha256": "e3facb483fa1cc22074c9538c2cd785f5d81a33e74ed71b124b121b89e466540",
+      "size": 43551,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/planet_earth.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/planet_earth.png",
+      "sha256": "9059210d590d41cc5decac4cb56ba9657d9a6e2f51e1d842176cf5f3dd12e732",
+      "size": 179577,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/planet_heavyclouds.jpg",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/planet_heavyclouds.jpg",
+      "sha256": "a14a63da4b8f265047001922f5038611d2c6d6b4f2b9277ae80ab378835846f8",
+      "size": 20237
+    },
+    {
+      "path": "libgdx/data/player_pause.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/player_pause.png",
+      "sha256": "473b127479537c9b0d43b594f0dbd933f0fed99e98db1149c84eac1285630de3",
+      "size": 479,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "path": "libgdx/data/player_play.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/player_play.png",
+      "sha256": "301b827d58c9c58ab6994f01b0999ac7899590489163227f000d7e9880e8761b",
+      "size": 1292,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "path": "libgdx/data/player_stop.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/player_stop.png",
+      "sha256": "431ae356b83a385a677af043b923cdbadc09e4ecd1ccda64d35af2743722f7d1",
+      "size": 505,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "path": "libgdx/data/pre_particle.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/pre_particle.png",
+      "sha256": "6252ac0f51cd55192f3f89063139949a1bdf66a0fe9d4c280f3c4454456aefe0",
+      "size": 1465,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/premultiplied_alpha_test.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/premultiplied_alpha_test.png",
+      "sha256": "21dbf3691b8a592854c55e14a79ad06f9b0f3b26f9a102089e512fb90031e759",
+      "size": 1609,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "path": "libgdx/data/ps-bobargb8888-32x32.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/ps-bobargb8888-32x32.png",
+      "sha256": "ae201d7ef9af4000cc9fbd65966af81844f61b7384cc317873eedb30cd14d403",
+      "size": 2933,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/ps-bobrgb888-32x32.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/ps-bobrgb888-32x32.png",
+      "sha256": "feb554797449d1022e2931de12590c264b471c16b81a059eafa92a2923ed8100",
+      "size": 2928,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/resource1.jpg",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/resource1.jpg",
+      "sha256": "63595b04029fe2132d85ccfe6f0db4a842d74f8927b9c7551d6bca49a2e204d8",
+      "size": 29054
+    },
+    {
+      "path": "libgdx/data/rgb.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/rgb.png",
+      "sha256": "d202b992090d33e62d27a3bdef68545880929d6c87e0648596e6ff7296671956",
+      "size": 16965,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 250,
+        "height": 188
+      }
+    },
+    {
+      "path": "libgdx/data/shiptexture.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/shiptexture.png",
+      "sha256": "49f72706b2c420be4887f50c962bd8dbd41907a6abf195683a00f2d6220e9994",
+      "size": 4136,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
       }
     },
     {
@@ -429,6 +2515,52 @@
       }
     },
     {
+      "path": "libgdx/data/stone2.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/stone2.png",
+      "sha256": "04e681068cbd396aa4910248dcdf173ab0e41573252e4f3fda135d42f01b6bdd",
+      "size": 39805,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/stones.jpg",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/stones.jpg",
+      "sha256": "1cb34d43f0bbc591975f680e050bc4e7c591707e3b0c311194ed13a49810b538",
+      "size": 21898
+    },
+    {
+      "path": "libgdx/data/sys.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/sys.png",
+      "sha256": "5fb566f4131818b612477976f849cc3f28fc423de9584a5eaa753cabc23eb720",
+      "size": 4013,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/t8890.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/t8890.png",
+      "sha256": "242b3a522277eb330cfbeb7a0cd52cd71dfd2792432df51be2890c203cb722da",
+      "size": 36262,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
       "path": "libgdx/data/test.p",
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/test.p",
@@ -438,10 +2570,218 @@
         "kind": "libgdx-particle",
         "version": null
       }
+    },
+    {
+      "path": "libgdx/data/test.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/test.png",
+      "sha256": "7902edce8c28d73086636660748499c2fd8683321a7d9679228aa61402362f2c",
+      "size": 162,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/test3.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/test3.png",
+      "sha256": "d8c261a863dd769ac6e9ebbb1b8eaa40c9049e610b89bbe7884be43ab0d50db7",
+      "size": 350,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 38,
+        "height": 76
+      }
+    },
+    {
+      "path": "libgdx/data/test4.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/test4.png",
+      "sha256": "bd9e23988f979ecbd3c3280df52e7231e5473b6c1f28c2ed2c6090f1a1778832",
+      "size": 3411,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 38,
+        "height": 76
+      }
+    },
+    {
+      "path": "libgdx/data/testAtlas.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/testAtlas.png",
+      "sha256": "5fca43cb897a2af6b502c40a3733bf4bb2337dae33677517cf81917b03c9814a",
+      "size": 1751,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/testbar.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/testbar.png",
+      "sha256": "a255472faa20ec711c10d3789d11f58548ca4b7486a0d887303e23776c7cebdc",
+      "size": 142,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/testdot.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/testdot.png",
+      "sha256": "db3fff4b9cf03bf49c14759757ff1446c10945f21259af1e7867fd2337fbaa71",
+      "size": 526,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "libgdx/data/textfield.9.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/textfield.9.png",
+      "sha256": "b7cd40c9a9fb27af40593398e0283ffda870ac701342069be630964f307bc302",
+      "size": 252,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "libgdx/data/tile.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/tile.png",
+      "sha256": "da3d3d9610064e5b8e7935d96b4b04b9441e683c45dbd87eb59d85e4680d94f7",
+      "size": 882,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 35,
+        "height": 35
+      }
+    },
+    {
+      "path": "libgdx/data/tiles.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/tiles.png",
+      "sha256": "6f11e39093fc3d6bff223c90dd37d4ccb39661d7248e59b2382c3f584cc16c02",
+      "size": 34192,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/tree.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/tree.png",
+      "sha256": "464b3d612c8cc154693a90ab4df91a2f083f597a9d4154dd98d10ab6b9208f6b",
+      "size": 15111,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/ui.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/ui.png",
+      "sha256": "21ad7de6b2077a47ed8db647ceb70844345c02148f3caf734e3681e08399eea9",
+      "size": 2604,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/uiskin.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/uiskin.png",
+      "sha256": "5291623549ba9b2676d04c079f45078b1465c30c3e998b827c499c7a5617e07b",
+      "size": 28299,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/utf-font.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/utf-font.png",
+      "sha256": "09157e7d3704069cdd9aba382fe56b4e2a02252ef8b8cc3ad98428e86047b447",
+      "size": 21473,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/verdana39.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/verdana39.png",
+      "sha256": "97d8cf1abf26b33eb7dc602f5eec6ea91607d29358c01ca34921a0e28196c6b8",
+      "size": 12451,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/verdana39distancefield.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/verdana39distancefield.png",
+      "sha256": "96a2462ac71b5dd078a10a72e35c76c7889738c8299b2197513b78836f9070b4",
+      "size": 25869,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/walkanim.png",
+      "sourceId": "libgdx-particles",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/walkanim.png",
+      "sha256": "737b74ac7b2265cd239c169f126457bb47493a83eb35eeb046997a73482f8db7",
+      "size": 2387,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 64
+      }
     }
   ],
   "totals": {
-    "files": 36,
-    "bytes": 195279
+    "files": 222,
+    "bytes": 18985983
   }
 }

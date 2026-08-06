@@ -23,27 +23,28 @@ suite can pin.
 | --- | ---: | ---: | --- |
 | `swf-ruffle-fixtures` | 16,639 | 83.2 MB | SWF v4–v50 **+ 4,291 expected trace outputs** |
 | `spine-fixtures` | 1,126 | 57.4 MB | Spine 4.2 exports, 19 examples + spine-unity |
-| `gltf-khronos-textures` | 765 | 500.1 MB | Raster textures — merges with `gltf-khronos-fixtures` |
+| `gltf-khronos-textures` | 767 | 500.7 MB | Raster textures — merges with `gltf-khronos-fixtures` |
 | `malformed-fixtures` | 661 | 7.7 MB | **Derived** — truncation, header damage, bit flips |
 | `spine-fixtures-38` | 510 | 28.1 MB | Spine 3.8 — prior format version, rejection testing |
-| `gltf-generated-fixtures` | 500 | 12.0 MB | **Conformance** — positive/negative split is the expectation |
+| `gltf-generated-fixtures` | 535 | 53.9 MB | **Conformance** — positive/negative split is the expectation |
 | `gltf-khronos-fixtures` | 476 | 293.5 MB | 148 Khronos glTF 2.0 models — 29 KHR/EXT extensions |
 | `rive-fixtures-unit` | 388 | 148.3 MB | Rive unit-test corpus — all 12 feature areas |
-| `tilemap-fixtures` | 188 | 0.5 MB | Tiled TMX/TSX/TMJ/TSJ — map versions 1.0 through 1.11 |
+| `tilemap-fixtures` | 475 | 21.6 MB | Tiled TMX/TSX/TMJ/TSJ — map versions 1.0 through 1.11 |
 | `dragonbones-fixtures` | 145 | 14.2 MB | DragonBones skeletons, JSON + binary `.dbbin` |
 | `gltf-khronos-binary` | 118 | 432.7 MB | GLB: self-contained models, textures embedded |
 | `texture-container-fixtures` | 98 | 36.3 MB | KTX2, KTX1, Basis Universal, DDS |
-| `lottie-fixtures` | 76 | 15.1 MB | Lottie animations — 14 versions, v3.1.6–v5.12.2 |
+| `lottie-fixtures` | 79 | 15.3 MB | Lottie animations — 14 versions, v3.1.6–v5.12.2 |
 | `image-fixtures` | 60 | 0.1 MB | PngSuite — canonical PNG conformance corpus |
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
-| `mesh-legacy-fixtures` | 24 | 36.8 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
+| `mesh-legacy-fixtures` | 195 | 64.0 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
 | `atf-fixtures` | 14 | 8.1 MB | Adobe Texture Format — undeclared, build input only |
-| `spritesheet-fixtures` | 66 | 0.6 MB | libgdx `.atlas` texture atlas descriptors |
-| `bitmapfont-fixtures` | 50 | 2.5 MB | AngelCode BMFont `.fnt` descriptors |
+| `spritesheet-fixtures` | 256 | 19.4 MB | libgdx `.atlas` texture atlas descriptors |
+| `bitmapfont-fixtures` | 240 | 21.4 MB | AngelCode BMFont `.fnt` descriptors |
 | `text-conformance-fixtures` | 8 | 19.0 MB | **Oracles** — 614,914 Unicode conformance cases |
-| `particle-fixtures` | 36 | 0.2 MB | libgdx `.p` particle effect configs |
+| `particle-fixtures` | 222 | 19.0 MB | libgdx `.p` particle effect configs |
+| `cocos2dx-textures` | 987 | 34.4 MB | Textures for the Cocos descriptors — merge group `cocos2dx` |
 
-21 packs, 21,975 files. Three packs carry expectations as well as inputs:
+22 packs, 24,026 files. Three packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place) and `gltf-generated-fixtures` (positive/negative conformance split).
 
@@ -52,8 +53,8 @@ than objects, and a 130-byte text stub where a texture belongs passes every othe
 it hashes consistently and only a decoder would notice. Pointers are detected and resolved
 through the LFS batch API, with the object verified against the `oid` it claims.
 
-**Merge groups.** `gltf-khronos-fixtures` and `gltf-khronos-textures` share the merge group
-`gltf-khronos` and must be extracted into the **same directory** — glTF references its
+**Merge groups.** `gltf-khronos-fixtures`+`gltf-khronos-textures`, and the three Cocos
+descriptor packs + `cocos2dx-textures`, must each be extracted into the **same directory** — glTF references its
 buffers and images by relative URI, so splitting them for size only works if they are
 reunited on disk. `verify` checks that every external URI in the group resolves. For
 self-contained textured models, use `gltf-khronos-binary` instead: one file per model,

@@ -13,6 +13,7 @@
 [pack]
 name = "spritesheet-fixtures"
 kind = "fixtures"
+merge_group = "cocos2dx"
 summary = "Texture atlas descriptors — libgdx .atlas dialect, with page and region metadata."
 
 [[source]]
@@ -21,7 +22,19 @@ kind = "upstream"
 repo = "libgdx/libgdx"
 ref = "master"
 fetch = "blobs"
-include = ["tests/gdx-tests-android/assets/**/*.atlas", "extensions/gdx-tools/assets/**/*.atlas"]
+include = [
+  "tests/gdx-tests-android/assets/**/*.atlas",
+  "extensions/gdx-tools/assets/**/*.atlas",
+  # Referenced by the descriptors above: without these they parse but cannot render.
+  "tests/gdx-tests-android/assets/**/**/*.png",
+  "tests/gdx-tests-android/assets/**/**/*.jpg",
+  "tests/gdx-tests-android/assets/**/**/*.jpeg",
+  "tests/gdx-tests-android/assets/**/**/*.bmp",
+  "extensions/gdx-tools/assets/**/**/*.png",
+  "extensions/gdx-tools/assets/**/**/*.jpg",
+  "extensions/gdx-tools/assets/**/**/*.jpeg",
+  "extensions/gdx-tools/assets/**/**/*.bmp",
+]
 strip = ""
 dest = "libgdx/"
 

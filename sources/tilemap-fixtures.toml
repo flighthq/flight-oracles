@@ -19,9 +19,16 @@ repo = "libgdx/libgdx"
 ref = "master"
 fetch = "blobs"
 include = [
-  "tests/gdx-tests-android/assets/**/*.tmx", "tests/gdx-tests-android/assets/**/*.tmj",
-  "tests/gdx-tests-android/assets/**/*.tsx", "tests/gdx-tests-android/assets/**/*.tsj",
+  "tests/gdx-tests-android/assets/**/*.tmx",
+  "tests/gdx-tests-android/assets/**/*.tmj",
+  "tests/gdx-tests-android/assets/**/*.tsx",
+  "tests/gdx-tests-android/assets/**/*.tsj",
   "tests/gdx-tests-android/assets/**/*.tiled-project",
+  # Referenced by the descriptors above: without these they parse but cannot render.
+  "tests/gdx-tests-android/assets/**/**/*.png",
+  "tests/gdx-tests-android/assets/**/**/*.jpg",
+  "tests/gdx-tests-android/assets/**/**/*.jpeg",
+  "tests/gdx-tests-android/assets/**/**/*.bmp",
 ]
 strip = "tests/gdx-tests-android/assets/"
 dest = "libgdx/"
@@ -42,7 +49,15 @@ kind = "upstream"
 repo = "mapeditor/tiled"
 ref = "master"
 fetch = "blobs"
-include = ["util/java/libtiled-java/**/*.tmx", "util/java/libtiled-java/**/*.tsx"]
+include = [
+  "util/java/libtiled-java/**/*.tmx",
+  "util/java/libtiled-java/**/*.tsx",
+  # Referenced by the descriptors above: without these they parse but cannot render.
+  "util/java/libtiled-java/**/**/*.png",
+  "util/java/libtiled-java/**/**/*.jpg",
+  "util/java/libtiled-java/**/**/*.jpeg",
+  "util/java/libtiled-java/**/**/*.bmp",
+]
 strip = "util/java/libtiled-java/"
 dest = "libtiled-java/"
 
@@ -64,8 +79,22 @@ kind = "upstream"
 repo = "mapeditor/tiled"
 ref = "master"
 fetch = "blobs"
-include = ["tests/**/*.tmx", "tests/**/*.tsx", "examples/**/*.tmx", "examples/**/*.tsx",
-           "examples/**/*.tiled-project"]
+include = [
+  "tests/**/*.tmx",
+  "tests/**/*.tsx",
+  "examples/**/*.tmx",
+  "examples/**/*.tsx",
+  "examples/**/*.tiled-project",
+  # Referenced by the descriptors above: without these they parse but cannot render.
+  "tests/**/**/*.png",
+  "tests/**/**/*.jpg",
+  "tests/**/**/*.jpeg",
+  "tests/**/**/*.bmp",
+  "examples/**/**/*.png",
+  "examples/**/**/*.jpg",
+  "examples/**/**/*.jpeg",
+  "examples/**/**/*.bmp",
+]
 strip = ""
 dest = "tiled/"
 

@@ -11,7 +11,7 @@
       "repo": "libgdx/libgdx",
       "ref": "master",
       "commit": "81cdb92811403f148daff195bff1da896877824c",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "Apache-2.0",
         "declaredScope": "repository-root",
@@ -29,7 +29,7 @@
       "repo": "mapeditor/tiled",
       "ref": "master",
       "commit": "aa069419db754412a2b4d51d8ea03bb048499f0a",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "BSD-2-Clause",
         "declaredScope": "directory",
@@ -47,7 +47,7 @@
       "repo": "mapeditor/tiled",
       "ref": "master",
       "commit": "aa069419db754412a2b4d51d8ea03bb048499f0a",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "UNKNOWN",
         "declaredScope": "repository-root",
@@ -59,6 +59,1375 @@
     }
   ],
   "files": [
+    {
+      "path": "libgdx/data/Textures1.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/Textures1.png",
+      "sha256": "76ddd029cb6be57d44accf8834eff0c7a77008b50fcbd9ac6a0af529cbdf6c7a",
+      "size": 16981,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/alpha.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/alpha.png",
+      "sha256": "183c76a287f02d140e2fcf0626ab1563626f17989f92011221bdac66d65cda8f",
+      "size": 3966,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 250,
+        "height": 188
+      }
+    },
+    {
+      "path": "libgdx/data/animation.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/animation.png",
+      "sha256": "f6963844b6a35e731e450e96d263670c0d39f009e69a23d9a5d8d04a8f7363d0",
+      "size": 11429,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/animation_gwt_lazy.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/animation_gwt_lazy.png",
+      "sha256": "f6963844b6a35e731e450e96d263670c0d39f009e69a23d9a5d8d04a8f7363d0",
+      "size": 11429,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/atlased-fonts.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/atlased-fonts.png",
+      "sha256": "556c881a1e68410da7de7079ff1c02448fb745b6fc87fe10029126b0ed91bf1d",
+      "size": 22889,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 254,
+        "height": 376
+      }
+    },
+    {
+      "path": "libgdx/data/badlogic-with-whitespace.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/badlogic-with-whitespace.png",
+      "sha256": "614fe925d2914564e3618fa9988da03d19c9826e2e50de715de7ef36b081fcef",
+      "size": 89902,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 300,
+        "height": 300
+      }
+    },
+    {
+      "path": "libgdx/data/badlogic.jpg",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/badlogic.jpg",
+      "sha256": "66d550b8f9a169a4490805efe04e9d02c1aab9828417fc8f29ee7407f8e48652",
+      "size": 68465
+    },
+    {
+      "path": "libgdx/data/badlogicsmall.jpg",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/badlogicsmall.jpg",
+      "sha256": "133f1aac53b0ef6a82a57cef9f8766a445d5f4f66226321cd185f75bdfa77acd",
+      "size": 1787
+    },
+    {
+      "path": "libgdx/data/black_marked_0.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/black_marked_0.png",
+      "sha256": "e58d340be585a04ee959532d5186b11cef888955c4693fa6a29a2adb270fc8d9",
+      "size": 3776,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/bobargb8888-32x32.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/bobargb8888-32x32.png",
+      "sha256": "68e36bd96554aeaae14990c8bf2bba871e075d5b708c35b6845d8a02a37aea3d",
+      "size": 392,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/bobrgb888-32x32.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/bobrgb888-32x32.png",
+      "sha256": "5050b303eead3da85916d134b4cd85184c2e6ce33586354da895bc6546809a96",
+      "size": 399,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/border_corner_a.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/border_corner_a.png",
+      "sha256": "c9972a778d13cb9a7f47e0f87c13b5fd914780ed991f9eea9af9216d22188f68",
+      "size": 402,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 38,
+        "height": 38
+      }
+    },
+    {
+      "path": "libgdx/data/debug.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/debug.png",
+      "sha256": "e7b03f4c49e680306ea00a6821ea7c7fa5081531f237e2654839d9f74d904f1a",
+      "size": 186,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2,
+        "height": 2
+      }
+    },
+    {
+      "path": "libgdx/data/default.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/default.png",
+      "sha256": "ec30ef6ef90771c469050b98fb256f76dd112a2ee2c426a0a4e745bdb16c9fad",
+      "size": 10653,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/default_00.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/default_00.png",
+      "sha256": "6d6b636ab9dca2a2db8ee15af6f7158c579bc60242e081789d12ac8a94b7756f",
+      "size": 4680,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/egg.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/egg.png",
+      "sha256": "83fafcb1d3c216d7841739cf4f65ae7ed96f93fc0f6d276caffc82c13affe3fa",
+      "size": 26053,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/font.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/font.png",
+      "sha256": "e44c05b42b43a1122b31af088650fe91d9ef9c7072e1ece81d274661a933190a",
+      "size": 4324,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g2d/progressive-libgdx.jpg",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g2d/progressive-libgdx.jpg",
+      "sha256": "da0a0109215bacd125ddec07a1a1ffb8ea8eec66f9a8a7e6c320fbba0501c3a8",
+      "size": 87033
+    },
+    {
+      "path": "libgdx/data/g3d/Knight.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/Knight.png",
+      "sha256": "b2137a9dbe2812fbd3f78e478615a11192a0b90118d262f3025a8d8ef0b5fe11",
+      "size": 220292,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/checkboard.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/checkboard.png",
+      "sha256": "211b3c6d9b3e6f4a4a7e6dd26910cdd1e7e7a59dcd4a039563877275b2dcfe08",
+      "size": 50008,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/concrete.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/concrete.png",
+      "sha256": "da7839c018210de1bcbe8cd2abc676268e71f09c65aac184237336b90f7b4bb1",
+      "size": 267528,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_NX.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_NX.png",
+      "sha256": "4a73a9292b3421a244b4425edc9c4be6fe2da58a58d9d90d7b43c1fc41710e49",
+      "size": 8110,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_NY.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_NY.png",
+      "sha256": "1a850a665eeb84fba99decbe7d5fc486b8d46a9b034f83da5937bb4f167d7df7",
+      "size": 7581,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_NZ.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_NZ.png",
+      "sha256": "ed5e4fa6bc905e3db509f79da5c69d85e7b0f65628785fb6a38ba542e8237b65",
+      "size": 7414,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_PX.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_PX.png",
+      "sha256": "ec271eeedfeb69d957879787b3f27e814c74253c43b4c8c7c63e6f0f831a3d1c",
+      "size": 6870,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_PY.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_PY.png",
+      "sha256": "6bd483de49e32bf1331cea1551821484f3e466c8851705bf50181d19b40bffcc",
+      "size": 6602,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/debug_PZ.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/debug_PZ.png",
+      "sha256": "4007b17b38f4e428a9fee8be885c3f1dfcfb38a6ca4df5ec5e1817d68940e7d9",
+      "size": 6760,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_NX.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_NX.png",
+      "sha256": "d97162fe461b4bcc8dc5c404af9ef8b9c9a55de4440e8d877ab4b1ccb209432a",
+      "size": 8009,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_NY.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_NY.png",
+      "sha256": "6096e2e27394bcaf189eab870cf90994d4ef296c68722e2303d4f8efc4698c99",
+      "size": 9849,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_NZ.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_NZ.png",
+      "sha256": "af016909427ad6611db5b8623210bd1c06226497be2624fe8dd8aa6f01693389",
+      "size": 9102,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_PX.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_PX.png",
+      "sha256": "35793293459ef09afda67801548fb81b203ce094c8520d57b25ec482498d6fc5",
+      "size": 8413,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_PY.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_PY.png",
+      "sha256": "3ea2d9b6daa958d17d0d5a8160bd7ab184c7de3958f7cef885f5a504cc1f437a",
+      "size": 5942,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_01_PZ.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_01_PZ.png",
+      "sha256": "529477e3a75b004118d5e0b8d6a7421eae08fd62548c7064f19da19937ee8bf0",
+      "size": 8360,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_NX.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_NX.png",
+      "sha256": "6a2dbcfa26a3456964296fbfecc1207fc5333d44b566fa5b3afea6d627d10966",
+      "size": 66899,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_NY.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_NY.png",
+      "sha256": "608a952b4106fb294af0682a5a669a8f6ecda017f93ce97167471583cbcd2c05",
+      "size": 61835,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_NZ.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_NZ.png",
+      "sha256": "21b92af79bb622268b39f11e501a502b2adf37cbfddd832011c7add0b37f3827",
+      "size": 63523,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_PX.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_PX.png",
+      "sha256": "a321add2438f0b6497fc9db7ef009878f3f9f02ef875cd1a366e123437928f6b",
+      "size": 63329,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_PY.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_PY.png",
+      "sha256": "c0fc412ae9b6a7fd24f1683ce8f38f0a542375476683cd39f8a0f4e9b5e5e3b5",
+      "size": 56584,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/environment/environment_02_PZ.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/environment/environment_02_PZ.png",
+      "sha256": "c42a4cc55e9386f47c7fd88a43ca0645add71f6d238f6efde73e56d9e8083e08",
+      "size": 61949,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/head_color.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/head_color.png",
+      "sha256": "8efcc93ca050b5fd2c62f4cd9422c4132863fc29a29873f7a668622e0b11e473",
+      "size": 888420,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/heightmap.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/heightmap.png",
+      "sha256": "772d4802af578f11a85b0a1cf158eaacddb82ca2fe25c9fae3280ac9ccf6c7d2",
+      "size": 4894,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/invader.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/invader.png",
+      "sha256": "457326756e0a714cab2cb08baad2c187089cc1f2d7de303546e717197c3a430a",
+      "size": 57659,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Cannon_AO_01a.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Cannon_AO_01a.png",
+      "sha256": "8521600cadeebac947ef87e11b94e6af8131c04f9056704a5585edbd56136920",
+      "size": 1456773,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Cannon_Diffuse_01a.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Cannon_Diffuse_01a.png",
+      "sha256": "8521600cadeebac947ef87e11b94e6af8131c04f9056704a5585edbd56136920",
+      "size": 1456773,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Cannon_Normal_01a.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Cannon_Normal_01a.png",
+      "sha256": "664003adf5f5c2823b9406e67dcc445198d0885d3affa86408c36df1688b4f15",
+      "size": 1162939,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Cannon_Specular_01a.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Cannon_Specular_01a.png",
+      "sha256": "22442c6818e62107c00f7a2f556c7d38da16c55c5210384d3f2338dddeef21bd",
+      "size": 1285100,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Deep Fire.jpg",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Deep Fire.jpg",
+      "sha256": "0ca123f098481973d983d208e798beacc4bcd4395890e729b8f3c035fff8a363",
+      "size": 148255
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Lava Cracks.jpg",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Lava Cracks.jpg",
+      "sha256": "b3490d632829e1f0bace027e574466b990202b989afbf918d45448efcfdb866a",
+      "size": 114251
+    },
+    {
+      "path": "libgdx/data/g3d/materials/Searing Gorge.jpg",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Searing Gorge.jpg",
+      "sha256": "4eb20b4749bf76529166f9639635218b039e7814d018a0efd68fff098deacfca",
+      "size": 119976
+    },
+    {
+      "path": "libgdx/data/g3d/materials/badlogic_normal.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/badlogic_normal.png",
+      "sha256": "b4a4108272ca37d4bd4b7f57103cbefcfb6eb02b6d23899f2f25fa5994c4cf08",
+      "size": 108411,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brickRound_diffuse.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brickRound_diffuse.png",
+      "sha256": "0353277f59ac8c07fe52dd906b40a3ada797f9f1c23b285d1fe8e884f2cde3a1",
+      "size": 1141097,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 700,
+        "height": 700
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brickRound_normal.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brickRound_normal.png",
+      "sha256": "b88847846b819e14fccfb8019c8b033d522d30a02f5e3658838922f819a07108",
+      "size": 1040833,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 700,
+        "height": 700
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brick_diffuse_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brick_diffuse_01.png",
+      "sha256": "86eec4324f62914a97063b790fee4e468b5e39252d01ff333568a443f373bba4",
+      "size": 133968,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brick_diffuse_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brick_diffuse_02.png",
+      "sha256": "b19e450afb35d3a0784584bf262264d14485768d28cd50fadb827929080b94a2",
+      "size": 153419,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brick_normal_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brick_normal_01.png",
+      "sha256": "f9d4c8686d19e1d9b009f5222b3823297ccf103b121761a88c1fa3e183b3540a",
+      "size": 77889,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/brick_normal_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/brick_normal_02.png",
+      "sha256": "7f0ec50fb72d1a44dcbf94e4e8f485c5ac24af7966387add7b96e0aa81cf1e40",
+      "size": 80377,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/chesterfield_diffuse.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/chesterfield_diffuse.png",
+      "sha256": "f27429a5d572a721a17a812acb7b4858650bcaa39350031be1a3f12214034d88",
+      "size": 97295,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/chesterfield_normal.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/chesterfield_normal.png",
+      "sha256": "36a9aa95f0dd2a26c1688e212a0b98b245886608fe54d80b12ddf422cc503db1",
+      "size": 181697,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/chesterfield_specular.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/chesterfield_specular.png",
+      "sha256": "400f91529d509c3ed927b23eb926f48305b37807f7babc2757b4fd937a431100",
+      "size": 90007,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/cloth_diffuse_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/cloth_diffuse_01.png",
+      "sha256": "9fc7c9f3fcebdf207f8e72a8fa600c1587ce99d942074e8461fb4eb9fd660e89",
+      "size": 83520,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/cloth_diffuse_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/cloth_diffuse_02.png",
+      "sha256": "69e22fa1c348c2dade2f6de39ff6565fab85aaaf9edf7523418c4b1ca51e651b",
+      "size": 71447,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/cloth_normal_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/cloth_normal_01.png",
+      "sha256": "ab237f9f695905e9f20a625f7cbadc58656081c46928a99682cae90810dddc39",
+      "size": 85137,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/cloth_normal_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/cloth_normal_02.png",
+      "sha256": "b18726b99ddc57402ac72f392f0e1b437f6b696c3dd6382154acf960f2213cc7",
+      "size": 58236,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/elephant_diffuse_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/elephant_diffuse_01.png",
+      "sha256": "93e72fddd0d303fe8044b0bc5782641bdad558e1a981fac3b20788941cc4dfc3",
+      "size": 87885,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/elephant_diffuse_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/elephant_diffuse_02.png",
+      "sha256": "bab5438bcfcc791547249aac47de1ff74af99fed0530e1614a1b2e48c388ba24",
+      "size": 115427,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/elephant_normal_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/elephant_normal_01.png",
+      "sha256": "dddfa6b1217f69ed8a9ad0b21b80f490a404b359f05f17b6aafc19f6c5a5b431",
+      "size": 144068,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/elephant_normal_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/elephant_normal_02.png",
+      "sha256": "92e0889da595adb3bf0804559c6d2b8e41efef922004d248469183c1e599c870",
+      "size": 167336,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/fur_diffuse_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/fur_diffuse_01.png",
+      "sha256": "4fda5d0a4486bef2b5502288fdbf4bf3d1ef093c6dd5a45ea8410c1bd1a34ca4",
+      "size": 220823,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/grass_diffuse_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/grass_diffuse_01.png",
+      "sha256": "683f11d065ac2acd389a56ea175f1387d9aaf443cfc4d9184077c25b9ff20f8c",
+      "size": 197940,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/jitter_normal_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/jitter_normal_01.png",
+      "sha256": "c1d5caed85c112df504cbab00c571d732b8095eaebd4b3571fbfaa999ae0c05c",
+      "size": 42977,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/leather_diffuse_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/leather_diffuse_01.png",
+      "sha256": "3db3aa5d6bf38036e44b65922840e357d3517936909b563f5409a42987c743f2",
+      "size": 52137,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/leather_diffuse_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/leather_diffuse_02.png",
+      "sha256": "c480bd596e5801bc799a510bdca1c076cb973f8e1cc4da932fac2cffec6163b7",
+      "size": 40271,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/leather_normal_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/leather_normal_01.png",
+      "sha256": "71a6759fdf0ee4e6ee4a47425934b9063ddea482fc52ddbc7c14138822c82127",
+      "size": 141447,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/metal_diffuse_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/metal_diffuse_01.png",
+      "sha256": "07a0f4c8207d778fe52540021350432a46eafb8d9562f4f78af43a796c5d733d",
+      "size": 18508,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/metal_normal_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/metal_normal_02.png",
+      "sha256": "265368ad5f169357460a5870914fb9b6b9863c49c6e0a6ba722dee34f5a07616",
+      "size": 201627,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/moon_diffuse_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/moon_diffuse_01.png",
+      "sha256": "c262b46c8113dcaa2be43a7cefd89312e85a9f7d6bcd094ddb73592b56307f0d",
+      "size": 94233,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/moon_normal_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/moon_normal_01.png",
+      "sha256": "540c72cbf644401ca718a945fbd3cdc85e66bc8d4ac7869e6e9b7d6b90cee3ed",
+      "size": 78416,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/plastic_normal_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/plastic_normal_01.png",
+      "sha256": "a0424eec6cf68acb607c9a566a473f002d7135f54eae2e24986fe013d3f726ad",
+      "size": 6980,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/skin_diffuse_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/skin_diffuse_01.png",
+      "sha256": "7988de6e3d9cc8cb4dc1dde0c32ba667377b69ea9dd919c1fa7adca2c2d4e215",
+      "size": 90734,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/skin_diffuse_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/skin_diffuse_02.png",
+      "sha256": "c530fb4d5b889191530803d6c09725b9ed4a2154c630bfbfe3f5cb44afd92ef7",
+      "size": 50978,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/stone_diffuse_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/stone_diffuse_01.png",
+      "sha256": "c76b9984f67a851d8f35522c60e815ebe186e10e2edc614bcafe4c851d16adfe",
+      "size": 142002,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/stone_diffuse_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/stone_diffuse_02.png",
+      "sha256": "c8ae6054b9f6525d719e3f54f2166cb1522956399d7086cf968a83f617e174c7",
+      "size": 130852,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/stone_normal_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/stone_normal_01.png",
+      "sha256": "095f8a4ad75ea329b2441ef49341531c87d93fd6ac7ac2de4f29cde82354dedd",
+      "size": 144577,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/stone_normal_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/stone_normal_02.png",
+      "sha256": "1fb89653d400865cfd9c7769abfbe59d8691ddb20839c141d5591aac5b49f48c",
+      "size": 81940,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/wood_diffuse_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/wood_diffuse_01.png",
+      "sha256": "42ad3b8fb5c1e8f268961d2537e8408df132e54a560ccf5465a2754ee86f909c",
+      "size": 133625,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/wood_diffuse_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/wood_diffuse_02.png",
+      "sha256": "eaeb3a912c2b465a3d881ce5048d677c0684ad64db4608c684017041d8512aa2",
+      "size": 97677,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/wood_diffuse_03.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/wood_diffuse_03.png",
+      "sha256": "e8083d6b02ee2452cba7fd87300e10caac8c1bcc0dfdf69944f81e7bbff8ec3c",
+      "size": 110459,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/wood_normal_01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/wood_normal_01.png",
+      "sha256": "418430d92cc776ce243f9660ffc1627157ad568f5123e47b755ad5c84ca7b14e",
+      "size": 124833,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/materials/wood_normal_02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/wood_normal_02.png",
+      "sha256": "6a8972b5bf5eab9d7ff9a15ceb3c63acf8ebb01aec9ca69c0a1e5b5ad8b8a5ec",
+      "size": 78101,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/ship.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/ship.png",
+      "sha256": "3c4100e87a4bd7830aca53e1537bdb555449d50bbcfd0c88e999f7ea9a4f9902",
+      "size": 35161,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/skydome.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/skydome.png",
+      "sha256": "18358fa222ba1d504ced45657509875d7f8fb5ece7dc1af919102252e779ffb1",
+      "size": 665317,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/g3d/space.jpg",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/space.jpg",
+      "sha256": "55b19f0752b1a40bf21a92247a519a4c0f7c6c40d3ddbeddbf58e2f34cb35d81",
+      "size": 167005
+    },
+    {
+      "path": "libgdx/data/g3d/tiles.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/tiles.png",
+      "sha256": "17dbc1410324db502599dc5ba2727650bb60a2e81f83aa7b87188a786d61a514",
+      "size": 178936,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/group-debug.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/group-debug.png",
+      "sha256": "6a8a1733d424f2400f1d0dfdc7fbcd62c3a3469c54998da3884394090092a1db",
+      "size": 7523,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/heightmap.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/heightmap.png",
+      "sha256": "6ce69dee8f596a6628f4a91b8ff6210d28ffb9a7e6a5057a3dbf701e2dcc731e",
+      "size": 1175,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 33,
+        "height": 33
+      }
+    },
+    {
+      "path": "libgdx/data/isotile.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/isotile.png",
+      "sha256": "49f0ff82c8e68be3f07f3de917649e778c4ef6be922c0be4be00dd78b594a5a2",
+      "size": 1652,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/issue/bark.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/issue/bark.png",
+      "sha256": "f8a28da38d6c4af067f6efdacde9af5befc32e46995404e9b5915bc4a00cb9f6",
+      "size": 734178,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/issue/leaf.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/issue/leaf.png",
+      "sha256": "18443d31e927e5816f3c36a884ef402645896dae121fd240ab9072278a62d385",
+      "size": 43017,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/jump.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/jump.png",
+      "sha256": "524bea46e4c16c629140f7b387f7fedb05425a5d00a79509bdb7879df2f53af3",
+      "size": 181560,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/layers.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/layers.png",
+      "sha256": "0d017a2919c53a171d0389d9912315fb03d2ac7d708041737d51148382025dbc",
+      "size": 31045,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/lsans-15.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/lsans-15.png",
+      "sha256": "84ccac1d4daea3e9f77fef5217c35f121128163319d221e390627df97b9ee565",
+      "size": 10373,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/lsans-15_00.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/lsans-15_00.png",
+      "sha256": "3cb731f79af36736678d24401801f6b8f8a5907898d652bde752091de43f9256",
+      "size": 7157,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/lsans-32-pad.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/lsans-32-pad.png",
+      "sha256": "fb1df325afe746793fb85427df9fd9a281b8095269b2cbba9b6bd7bc2aa3c15e",
+      "size": 12609,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/lsans-32.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/lsans-32.png",
+      "sha256": "01881de9b543600c36a1e474a3b50d685cb4e2aaedfaee5e1b6f348824e492fb",
+      "size": 9330,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tide/TileSheets/Background01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tide/TileSheets/Background01.png",
+      "sha256": "40fff96597f4402ee75ba3106cb5ae3a56efb5d39bcfa45a8cf770c829c003f1",
+      "size": 43989,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 640,
+        "height": 720
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tide/TileSheets/Background02.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tide/TileSheets/Background02.png",
+      "sha256": "db0bff2050c9deeb670bf024de1053be06331a30de3d396ba8e0fa7106f0a922",
+      "size": 35028,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tide/TileSheets/Background03.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tide/TileSheets/Background03.png",
+      "sha256": "32ffa95258affb90970687ba40bbc3fa5a1cf6eb1c9a5b76ada638f4497e105a",
+      "size": 34592,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tide/TileSheets/TileSheet01.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tide/TileSheets/TileSheet01.png",
+      "sha256": "b43f6a3e8235c80ba6e5d3cb81a8a23dbb69d745f75bead7662a3831c53e7558",
+      "size": 35047,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-animations/Start.bmp",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-animations/Start.bmp",
+      "sha256": "ce512d8720c316b4cf0f59b0d8dd0ae924662628402e8dd0452bd09326e7ecf3",
+      "size": 2102
+    },
     {
       "path": "libgdx/data/maps/tiled-animations/test-load-animations.tmx",
       "sourceId": "libgdx-tiled",
@@ -179,6 +1548,123 @@
       }
     },
     {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/packed.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/packed.png",
+      "sha256": "0ecb880acb6c9aec0294e5e064e1c00faa40551bd1612d1e65836c529e7acf37",
+      "size": 9364,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test.png",
+      "sha256": "35ef3dfe48bf0fcc2964b9aeb6305c693e8fa2de2c901b08774e8948f74a450c",
+      "size": 105292,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test2.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test2.png",
+      "sha256": "35ef3dfe48bf0fcc2964b9aeb6305c693e8fa2de2c901b08774e8948f74a450c",
+      "size": 105292,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_gwt_uncompressed.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_gwt_uncompressed.png",
+      "sha256": "35ef3dfe48bf0fcc2964b9aeb6305c693e8fa2de2c901b08774e8948f74a450c",
+      "size": 105292,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_w_imglayer_props.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayer_props.png",
+      "sha256": "9c73abb99ea3fc0c70962d3f8e7a6eaa9b2b03e54e0d8eca24159b198d0303cf",
+      "size": 61700,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_w_imglayers.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers.png",
+      "sha256": "a926ea0f9bb66b372947ed3ab60902dea8abdc89dd0bb696eddcd4866dcf46f3",
+      "size": 221449,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi.png",
+      "sha256": "3b6291b74dd60893fe386a0ddfe7688a0f68eb8cbebb6502f4aba618c22dda71",
+      "size": 231197,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi_gwt_uncompressed.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_coi_gwt_uncompressed.png",
+      "sha256": "3b6291b74dd60893fe386a0ddfe7688a0f68eb8cbebb6502f4aba618c22dda71",
+      "size": 231197,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_gwt_uncompressed.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-processed/tileset/test_w_imglayers_gwt_uncompressed.png",
+      "sha256": "a926ea0f9bb66b372947ed3ab60902dea8abdc89dd0bb696eddcd4866dcf46f3",
+      "size": 221449,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 1024
+      }
+    },
+    {
       "path": "libgdx/data/maps/tiled-atlas-src/test.tmj",
       "sourceId": "libgdx-tiled",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/test.tmj",
@@ -286,6 +1772,32 @@
       }
     },
     {
+      "path": "libgdx/data/maps/tiled-atlas-src/tilesets/tileset1.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/tilesets/tileset1.png",
+      "sha256": "df072f68090eeed363deec1341fa3a72104c0a2983739fb22f4430beb25a5f8b",
+      "size": 44185,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-atlas-src/tilesets/tileset2.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-atlas-src/tilesets/tileset2.png",
+      "sha256": "b43f6a3e8235c80ba6e5d3cb81a8a23dbb69d745f75bead7662a3831c53e7558",
+      "size": 35047,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
       "path": "libgdx/data/maps/tiled-groups-imagelayer/groups_test_tileset.tsx",
       "sourceId": "libgdx-tiled",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/groups_test_tileset.tsx",
@@ -309,6 +1821,104 @@
       }
     },
     {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/badlogicsmall.jpg",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/badlogicsmall.jpg",
+      "sha256": "133f1aac53b0ef6a82a57cef9f8766a445d5f4f66226321cd185f75bdfa77acd",
+      "size": 1787
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image.png",
+      "sha256": "aaa06618db5d515b6a79d24f2d734979f889d8155546f301cc57ebb01c13f9ec",
+      "size": 3364,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image2.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image2.png",
+      "sha256": "dd7a152c2568dc4b2910017e67a45d17fafc7493446a71247a83af18a6652215",
+      "size": 3576,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image3.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image3.png",
+      "sha256": "c52bab49f4767f28970e3a5df7d44cb83ff9eb4afe24d30f34f2bfe53aec860d",
+      "size": 3597,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image4.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image4.png",
+      "sha256": "734bf4444db3d7e15371c1c4919e221846a402d9f07cf0354e075d9d9fc7194f",
+      "size": 3496,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image5.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image5.png",
+      "sha256": "8afd0b574a5c771f540b8663586c17e18c6f2b13ea337da88f0f453ead1afb29",
+      "size": 3474,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image6.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image6.png",
+      "sha256": "3e0553c4b6b1ef26abdb241f8cf631c60cae84fddf0e8c51a2519d55bba93ac3",
+      "size": 3694,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image7.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/test_image7.png",
+      "sha256": "eb39ac7f39935ce8bb18852fa057d1c4a54b54c200cc22cce9484e51b74e1443",
+      "size": 3473,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 112,
+        "height": 112
+      }
+    },
+    {
       "path": "libgdx/data/maps/tiled-groups/test.tmx",
       "sourceId": "libgdx-tiled",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups/test.tmx",
@@ -318,6 +1928,19 @@
         "kind": "tmx",
         "version": "1.2",
         "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-groups/tileset/packed.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups/tileset/packed.png",
+      "sha256": "b82da7def2538eac296700f3dfb6b73ee1b147d473a1c67780dff9888d67e580",
+      "size": 280,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 32
       }
     },
     {
@@ -464,6 +2087,13 @@
       }
     },
     {
+      "path": "libgdx/data/maps/tiled-objects/Start.bmp",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/Start.bmp",
+      "sha256": "ce512d8720c316b4cf0f59b0d8dd0ae924662628402e8dd0452bd09326e7ecf3",
+      "size": 2102
+    },
+    {
       "path": "libgdx/data/maps/tiled-objects/grass.tsj",
       "sourceId": "libgdx-tiled",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/grass.tsj",
@@ -483,6 +2113,19 @@
       "format": {
         "kind": "tsx",
         "version": "1.10"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled-objects/grass_1.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/grass_1.png",
+      "sha256": "9e5def1a1897b8a6602241a321bdbd930ce4dd3247b17466fc5fa23691ed34ed",
+      "size": 5706,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 48
       }
     },
     {
@@ -663,6 +2306,19 @@
       }
     },
     {
+      "path": "libgdx/data/maps/tiled-tint-opacity/badlogic-with-whitespace-small.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/badlogic-with-whitespace-small.png",
+      "sha256": "cc4cc2ea53e83e849e22dccb1911a1b27e242f4cd4179ea39353d18bc91cfdf7",
+      "size": 14651,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 75,
+        "height": 75
+      }
+    },
+    {
       "path": "libgdx/data/maps/tiled-tint-opacity/hex.tmx",
       "sourceId": "libgdx-tiled",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/hex.tmx",
@@ -747,6 +2403,19 @@
       }
     },
     {
+      "path": "libgdx/data/maps/tiled-tint-opacity/sky.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-tint-opacity/sky.png",
+      "sha256": "cba206c9e35b10b23b1ce218e0a63b4c379b0b66a1f79f92571f262ae8b947e9",
+      "size": 1161,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 240,
+        "height": 320
+      }
+    },
+    {
       "path": "libgdx/data/maps/tiled/external-tilesets/grass.tsx",
       "sourceId": "libgdx-tiled",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/grass.tsx",
@@ -758,6 +2427,19 @@
       }
     },
     {
+      "path": "libgdx/data/maps/tiled/external-tilesets/grass_1.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/grass_1.png",
+      "sha256": "9e5def1a1897b8a6602241a321bdbd930ce4dd3247b17466fc5fa23691ed34ed",
+      "size": 5706,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 48
+      }
+    },
+    {
       "path": "libgdx/data/maps/tiled/external-tilesets/grass_1.tsx",
       "sourceId": "libgdx-tiled",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/grass_1.tsx",
@@ -766,6 +2448,19 @@
       "format": {
         "kind": "tsx",
         "version": null
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/external-tilesets/grass_4.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/grass_4.png",
+      "sha256": "5c7b249ed40af47c6ce3e4a99839bdf3255baca8ed6b873c3bcc71cd1053b7d7",
+      "size": 21513,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 48
       }
     },
     {
@@ -815,6 +2510,45 @@
       }
     },
     {
+      "path": "libgdx/data/maps/tiled/external-tilesets/water_1.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/external-tilesets/water_1.png",
+      "sha256": "b987effff8a7dba354ff119111796f7d91a9f2561f1975e791dadd76e2a48935",
+      "size": 2359,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 48
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/hex/hexes.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/hex/hexes.png",
+      "sha256": "bd870790fce9e1b91fc0a49c9f322c631f9505461588807f908dc62d329e1e5d",
+      "size": 7030,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/isometric_grass_and_water.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/isometric_grass_and_water.png",
+      "sha256": "8b53306d0ee4e7db75630894ad5f0949176b9c841a84d49c61f5183c95095ef8",
+      "size": 104828,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 384
+      }
+    },
+    {
       "path": "libgdx/data/maps/tiled/isometric_grass_and_water.tmx",
       "sourceId": "libgdx-tiled",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/isometric_grass_and_water.tmx",
@@ -827,6 +2561,32 @@
       }
     },
     {
+      "path": "libgdx/data/maps/tiled/super-koalio/koalio-single.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/super-koalio/koalio-single.png",
+      "sha256": "d1f29d183b6540e7f4daf2260bd6ea5d713c7012f6d6363dabcc139be16c61f7",
+      "size": 1150,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 17,
+        "height": 25
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/super-koalio/koalio.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/super-koalio/koalio.png",
+      "sha256": "21fe1219bb4a744b8a7d89eae5a371b37f15eb05927e38619736a7968d649f70",
+      "size": 3378,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 32
+      }
+    },
+    {
       "path": "libgdx/data/maps/tiled/super-koalio/level1.tmx",
       "sourceId": "libgdx-tiled",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/super-koalio/level1.tmx",
@@ -836,6 +2596,32 @@
         "kind": "tmx",
         "version": "1.0",
         "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/super-koalio/tileSet.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/super-koalio/tileSet.png",
+      "sha256": "df072f68090eeed363deec1341fa3a72104c0a2983739fb22f4430beb25a5f8b",
+      "size": 44185,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/maps/tiled/tiles.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled/tiles.png",
+      "sha256": "b43f6a3e8235c80ba6e5d3cb81a8a23dbb69d745f75bead7662a3831c53e7558",
+      "size": 35047,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
       }
     },
     {
@@ -862,6 +2648,560 @@
       }
     },
     {
+      "path": "libgdx/data/multipagefont1.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/multipagefont1.png",
+      "sha256": "565340184c31c63eb00f6d49c5ffd7e78bf4e79da34234736fb85148545c2f81",
+      "size": 13224,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/multipagefont2.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/multipagefont2.png",
+      "sha256": "e01d53549a6ccae2ae3859ba6d1d985d9964d9a6cf7d1eb61d79659058982fb0",
+      "size": 4841,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/pack1.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/pack1.png",
+      "sha256": "431fd0ba28a27aabac5e4b629908692eecc15c493370e3dd75546e3a8f162bb7",
+      "size": 32898,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/particle-ball1.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-ball1.png",
+      "sha256": "2b0d6a4ee1b0d88882e4de18c825410c558a4b2026b5669a489dd6081f9d7cb9",
+      "size": 2439,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-ball2.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-ball2.png",
+      "sha256": "88c0a28451150df9a5b58ff2ed9f102a2137a86826b4c1ac88e4ba9dcdd74792",
+      "size": 3028,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-ball3.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-ball3.png",
+      "sha256": "f3b2321279304f62c93ac257f8f2d120adfcc5e4d85ff12726f8172fdeeb7201",
+      "size": 1875,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-ball4.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-ball4.png",
+      "sha256": "0d4995bb59a5b21ef39bd44cf808a86beb5994ad74c8c085239f8e5b20adb516",
+      "size": 1348,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-cloud.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-cloud.png",
+      "sha256": "d4f0dc666ff6a9859f23b88c6a31f8a053c23bdd9cad714a97e0736bc3de0c12",
+      "size": 9294,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-fire.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-fire.png",
+      "sha256": "885129340f426ba8d4410fa87cc81a024f62d2a6cb84360f4e902ad887892897",
+      "size": 11952,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/particle-star.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle-star.png",
+      "sha256": "97298fbaf493b95589a4f413dfdbf56e64ff565fad1ea1141ad45c43fbcdce94",
+      "size": 3665,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/particle.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particle.png",
+      "sha256": "0be3931c3b3c1ea3a7014f652abfd3e86af3fe9054338d205ead1a8532dfdabd",
+      "size": 1821,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/particles.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/particles.png",
+      "sha256": "e3facb483fa1cc22074c9538c2cd785f5d81a33e74ed71b124b121b89e466540",
+      "size": 43551,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/planet_earth.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/planet_earth.png",
+      "sha256": "9059210d590d41cc5decac4cb56ba9657d9a6e2f51e1d842176cf5f3dd12e732",
+      "size": 179577,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/planet_heavyclouds.jpg",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/planet_heavyclouds.jpg",
+      "sha256": "a14a63da4b8f265047001922f5038611d2c6d6b4f2b9277ae80ab378835846f8",
+      "size": 20237
+    },
+    {
+      "path": "libgdx/data/player_pause.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/player_pause.png",
+      "sha256": "473b127479537c9b0d43b594f0dbd933f0fed99e98db1149c84eac1285630de3",
+      "size": 479,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "path": "libgdx/data/player_play.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/player_play.png",
+      "sha256": "301b827d58c9c58ab6994f01b0999ac7899590489163227f000d7e9880e8761b",
+      "size": 1292,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "path": "libgdx/data/player_stop.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/player_stop.png",
+      "sha256": "431ae356b83a385a677af043b923cdbadc09e4ecd1ccda64d35af2743722f7d1",
+      "size": 505,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "path": "libgdx/data/pre_particle.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/pre_particle.png",
+      "sha256": "6252ac0f51cd55192f3f89063139949a1bdf66a0fe9d4c280f3c4454456aefe0",
+      "size": 1465,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/premultiplied_alpha_test.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/premultiplied_alpha_test.png",
+      "sha256": "21dbf3691b8a592854c55e14a79ad06f9b0f3b26f9a102089e512fb90031e759",
+      "size": 1609,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "path": "libgdx/data/ps-bobargb8888-32x32.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/ps-bobargb8888-32x32.png",
+      "sha256": "ae201d7ef9af4000cc9fbd65966af81844f61b7384cc317873eedb30cd14d403",
+      "size": 2933,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/ps-bobrgb888-32x32.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/ps-bobrgb888-32x32.png",
+      "sha256": "feb554797449d1022e2931de12590c264b471c16b81a059eafa92a2923ed8100",
+      "size": 2928,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/resource1.jpg",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/resource1.jpg",
+      "sha256": "63595b04029fe2132d85ccfe6f0db4a842d74f8927b9c7551d6bca49a2e204d8",
+      "size": 29054
+    },
+    {
+      "path": "libgdx/data/rgb.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/rgb.png",
+      "sha256": "d202b992090d33e62d27a3bdef68545880929d6c87e0648596e6ff7296671956",
+      "size": 16965,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 250,
+        "height": 188
+      }
+    },
+    {
+      "path": "libgdx/data/shiptexture.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/shiptexture.png",
+      "sha256": "49f72706b2c420be4887f50c962bd8dbd41907a6abf195683a00f2d6220e9994",
+      "size": 4136,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/stone2.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/stone2.png",
+      "sha256": "04e681068cbd396aa4910248dcdf173ab0e41573252e4f3fda135d42f01b6bdd",
+      "size": 39805,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/stones.jpg",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/stones.jpg",
+      "sha256": "1cb34d43f0bbc591975f680e050bc4e7c591707e3b0c311194ed13a49810b538",
+      "size": 21898
+    },
+    {
+      "path": "libgdx/data/sys.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/sys.png",
+      "sha256": "5fb566f4131818b612477976f849cc3f28fc423de9584a5eaa753cabc23eb720",
+      "size": 4013,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/t8890.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/t8890.png",
+      "sha256": "242b3a522277eb330cfbeb7a0cd52cd71dfd2792432df51be2890c203cb722da",
+      "size": 36262,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/test.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/test.png",
+      "sha256": "7902edce8c28d73086636660748499c2fd8683321a7d9679228aa61402362f2c",
+      "size": 162,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/test3.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/test3.png",
+      "sha256": "d8c261a863dd769ac6e9ebbb1b8eaa40c9049e610b89bbe7884be43ab0d50db7",
+      "size": 350,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 38,
+        "height": 76
+      }
+    },
+    {
+      "path": "libgdx/data/test4.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/test4.png",
+      "sha256": "bd9e23988f979ecbd3c3280df52e7231e5473b6c1f28c2ed2c6090f1a1778832",
+      "size": 3411,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 38,
+        "height": 76
+      }
+    },
+    {
+      "path": "libgdx/data/testAtlas.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/testAtlas.png",
+      "sha256": "5fca43cb897a2af6b502c40a3733bf4bb2337dae33677517cf81917b03c9814a",
+      "size": 1751,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 64
+      }
+    },
+    {
+      "path": "libgdx/data/testbar.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/testbar.png",
+      "sha256": "a255472faa20ec711c10d3789d11f58548ca4b7486a0d887303e23776c7cebdc",
+      "size": 142,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 32
+      }
+    },
+    {
+      "path": "libgdx/data/testdot.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/testdot.png",
+      "sha256": "db3fff4b9cf03bf49c14759757ff1446c10945f21259af1e7867fd2337fbaa71",
+      "size": 526,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "libgdx/data/textfield.9.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/textfield.9.png",
+      "sha256": "b7cd40c9a9fb27af40593398e0283ffda870ac701342069be630964f307bc302",
+      "size": 252,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "libgdx/data/tile.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/tile.png",
+      "sha256": "da3d3d9610064e5b8e7935d96b4b04b9441e683c45dbd87eb59d85e4680d94f7",
+      "size": 882,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 35,
+        "height": 35
+      }
+    },
+    {
+      "path": "libgdx/data/tiles.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/tiles.png",
+      "sha256": "6f11e39093fc3d6bff223c90dd37d4ccb39661d7248e59b2382c3f584cc16c02",
+      "size": 34192,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/tree.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/tree.png",
+      "sha256": "464b3d612c8cc154693a90ab4df91a2f083f597a9d4154dd98d10ab6b9208f6b",
+      "size": 15111,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/ui.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/ui.png",
+      "sha256": "21ad7de6b2077a47ed8db647ceb70844345c02148f3caf734e3681e08399eea9",
+      "size": 2604,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/uiskin.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/uiskin.png",
+      "sha256": "5291623549ba9b2676d04c079f45078b1465c30c3e998b827c499c7a5617e07b",
+      "size": 28299,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 128
+      }
+    },
+    {
+      "path": "libgdx/data/utf-font.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/utf-font.png",
+      "sha256": "09157e7d3704069cdd9aba382fe56b4e2a02252ef8b8cc3ad98428e86047b447",
+      "size": 21473,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/verdana39.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/verdana39.png",
+      "sha256": "97d8cf1abf26b33eb7dc602f5eec6ea91607d29358c01ca34921a0e28196c6b8",
+      "size": 12451,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/verdana39distancefield.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/verdana39distancefield.png",
+      "sha256": "96a2462ac71b5dd078a10a72e35c76c7889738c8299b2197513b78836f9070b4",
+      "size": 25869,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 256
+      }
+    },
+    {
+      "path": "libgdx/data/walkanim.png",
+      "sourceId": "libgdx-tiled",
+      "upstreamPath": "tests/gdx-tests-android/assets/data/walkanim.png",
+      "sha256": "737b74ac7b2265cd239c169f126457bb47493a83eb35eeb046997a73482f8db7",
+      "size": 2387,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 64
+      }
+    },
+    {
       "path": "libtiled-java/src/test/resources/csvmap/csvmap.tmx",
       "sourceId": "tiled-libtiled-java",
       "upstreamPath": "util/java/libtiled-java/src/test/resources/csvmap/csvmap.tmx",
@@ -874,6 +3214,19 @@
       }
     },
     {
+      "path": "libtiled-java/src/test/resources/csvmap/cvsmap_tileset.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/csvmap/cvsmap_tileset.png",
+      "sha256": "a6f5c2be51f3b11febaed7c9986830d30ab34031bf90cddc1bb80be04754430b",
+      "size": 265304,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
       "path": "libtiled-java/src/test/resources/csvmap_embedded_image_collection/csvmap_embedded_image_collection.tmx",
       "sourceId": "tiled-libtiled-java",
       "upstreamPath": "util/java/libtiled-java/src/test/resources/csvmap_embedded_image_collection/csvmap_embedded_image_collection.tmx",
@@ -883,6 +3236,32 @@
         "kind": "tmx",
         "version": "1.4",
         "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/csvmap_embedded_image_collection/csvmap_embedded_image_collection_1.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/csvmap_embedded_image_collection/csvmap_embedded_image_collection_1.png",
+      "sha256": "e11857751c22156191e0cd36bd001380042e96d9b0a01f36755f0f6042b5bbae",
+      "size": 4196,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/csvmap_embedded_image_collection/csvmap_embedded_image_collection_2.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/csvmap_embedded_image_collection/csvmap_embedded_image_collection_2.png",
+      "sha256": "aa068394724b8c262d49209aac2dcbc21038042af45530bbbc9d6ff1b4dace87",
+      "size": 4196,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32
       }
     },
     {
@@ -906,6 +3285,19 @@
       "format": {
         "kind": "tsx",
         "version": "1.2"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/desert/tmw_desert_spacing.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/desert/tmw_desert_spacing.png",
+      "sha256": "efdbf909a427238667f3001ebefcd8dd3bba0ff45ac67152a0e30e5334d3377c",
+      "size": 37830,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 265,
+        "height": 199
       }
     },
     {
@@ -968,6 +3360,32 @@
       }
     },
     {
+      "path": "libtiled-java/src/test/resources/hexagonal-mini/hexmini.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/hexagonal-mini/hexmini.png",
+      "sha256": "35a1e4e9feca230571529966f08b8f002541c93fb9563ac3d92f4fd2a4c7d7d0",
+      "size": 5784,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 106,
+        "height": 72
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/isometric_grass_and_water/isometric_grass_and_water.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/isometric_grass_and_water/isometric_grass_and_water.png",
+      "sha256": "8b53306d0ee4e7db75630894ad5f0949176b9c841a84d49c61f5183c95095ef8",
+      "size": 104828,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 384
+      }
+    },
+    {
       "path": "libtiled-java/src/test/resources/isometric_grass_and_water/isometric_grass_and_water.tmx",
       "sourceId": "tiled-libtiled-java",
       "upstreamPath": "util/java/libtiled-java/src/test/resources/isometric_grass_and_water/isometric_grass_and_water.tmx",
@@ -992,6 +3410,19 @@
       }
     },
     {
+      "path": "libtiled-java/src/test/resources/orthogonal-outside/buch-outdoor.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/orthogonal-outside/buch-outdoor.png",
+      "sha256": "975513d4e37e7b22a68c427bf8354dca452b0c313af771cbd1e63d8e176a8c3b",
+      "size": 16549,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 384,
+        "height": 192
+      }
+    },
+    {
       "path": "libtiled-java/src/test/resources/orthogonal-outside/orthogonal-outside.tmx",
       "sourceId": "tiled-libtiled-java",
       "upstreamPath": "util/java/libtiled-java/src/test/resources/orthogonal-outside/orthogonal-outside.tmx",
@@ -1001,6 +3432,19 @@
         "kind": "tmx",
         "version": "1.4",
         "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/perspective_walls/perspective_walls.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/perspective_walls/perspective_walls.png",
+      "sha256": "54dd6f6ae8958ef6868c1d96d0a37acdd717162f39fe8d222cd7b16ebc52dee4",
+      "size": 3700,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
       }
     },
     {
@@ -1147,6 +3591,19 @@
       }
     },
     {
+      "path": "libtiled-java/src/test/resources/sewer_automap/rules_sewers.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/rules_sewers.png",
+      "sha256": "b3445dc941da404b87c503d220d68724dde9a8acb1d66c62358fb00b8a3f173f",
+      "size": 314,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 72,
+        "height": 48
+      }
+    },
+    {
       "path": "libtiled-java/src/test/resources/sewer_automap/sewers.tmx",
       "sourceId": "tiled-libtiled-java",
       "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_automap/sewers.tmx",
@@ -1156,6 +3613,32 @@
         "kind": "tmx",
         "version": "1.4",
         "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewer_tileset.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewer_tileset.png",
+      "sha256": "7064bef48fea848d675adb72e2f624908b49a1a4a2119b59fcfb566fcdba3731",
+      "size": 22249,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 217
+      }
+    },
+    {
+      "path": "libtiled-java/src/test/resources/sewers/sewer_tileset.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/sewers/sewer_tileset.png",
+      "sha256": "7064bef48fea848d675adb72e2f624908b49a1a4a2119b59fcfb566fcdba3731",
+      "size": 22249,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 217
       }
     },
     {
@@ -1183,6 +3666,19 @@
       }
     },
     {
+      "path": "libtiled-java/src/test/resources/test_hexagonal_tile/test_hexagonal_tile_60x60x30.png",
+      "sourceId": "tiled-libtiled-java",
+      "upstreamPath": "util/java/libtiled-java/src/test/resources/test_hexagonal_tile/test_hexagonal_tile_60x60x30.png",
+      "sha256": "7bb2d7e37e1a0bd821e984e87b290b2ae00f8015aa28d66eee1e192d54ade2a1",
+      "size": 2934,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 60,
+        "height": 60
+      }
+    },
+    {
       "path": "libtiled-java/src/test/resources/test_hexagonal_tile/test_hexagonal_tile_60x60x30.tmx",
       "sourceId": "tiled-libtiled-java",
       "upstreamPath": "util/java/libtiled-java/src/test/resources/test_hexagonal_tile/test_hexagonal_tile_60x60x30.tmx",
@@ -1192,6 +3688,19 @@
         "kind": "tmx",
         "version": "1.4",
         "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "tiled/examples/buch-outdoor.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/buch-outdoor.png",
+      "sha256": "975513d4e37e7b22a68c427bf8354dca452b0c313af771cbd1e63d8e176a8c3b",
+      "size": 16549,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 384,
+        "height": 192
       }
     },
     {
@@ -1252,6 +3761,19 @@
       }
     },
     {
+      "path": "tiled/examples/forest/squirrel.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/forest/squirrel.png",
+      "sha256": "c21d615689b9110647889bdbef44a6611df8022e6dffc60741f3b8ea467b6d93",
+      "size": 49871,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
       "path": "tiled/examples/hexagonal-mini.tmx",
       "sourceId": "tiled-test-maps",
       "upstreamPath": "examples/hexagonal-mini.tmx",
@@ -1261,6 +3783,32 @@
         "kind": "tmx",
         "version": "1.0",
         "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "tiled/examples/hexmini.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/hexmini.png",
+      "sha256": "35a1e4e9feca230571529966f08b8f002541c93fb9563ac3d92f4fd2a4c7d7d0",
+      "size": 5784,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 106,
+        "height": 72
+      }
+    },
+    {
+      "path": "tiled/examples/isometric_grass_and_water.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/isometric_grass_and_water.png",
+      "sha256": "8b53306d0ee4e7db75630894ad5f0949176b9c841a84d49c61f5183c95095ef8",
+      "size": 104828,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 384
       }
     },
     {
@@ -1300,6 +3848,19 @@
       }
     },
     {
+      "path": "tiled/examples/perspective_walls.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/perspective_walls.png",
+      "sha256": "54dd6f6ae8958ef6868c1d96d0a37acdd717162f39fe8d222cd7b16ebc52dee4",
+      "size": 3700,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
       "path": "tiled/examples/perspective_walls.tmx",
       "sourceId": "tiled-test-maps",
       "upstreamPath": "examples/perspective_walls.tmx",
@@ -1320,6 +3881,19 @@
       "format": {
         "kind": "tsx",
         "version": null
+      }
+    },
+    {
+      "path": "tiled/examples/rpg/beach_tileset.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/rpg/beach_tileset.png",
+      "sha256": "22ddf125355eaed9a5db036826ba90420096421a115edd88aad4cf0892175393",
+      "size": 36457,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 576,
+        "height": 416
       }
     },
     {
@@ -1454,6 +4028,19 @@
       }
     },
     {
+      "path": "tiled/examples/sewer_automap/rules_sewers.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_automap/rules_sewers.png",
+      "sha256": "b3445dc941da404b87c503d220d68724dde9a8acb1d66c62358fb00b8a3f173f",
+      "size": 314,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 72,
+        "height": 48
+      }
+    },
+    {
       "path": "tiled/examples/sewer_automap/sewers.tmx",
       "sourceId": "tiled-test-maps",
       "upstreamPath": "examples/sewer_automap/sewers.tmx",
@@ -1463,6 +4050,19 @@
         "kind": "tmx",
         "version": "1.0",
         "orientation": "orthogonal"
+      }
+    },
+    {
+      "path": "tiled/examples/sewer_tileset.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sewer_tileset.png",
+      "sha256": "7064bef48fea848d675adb72e2f624908b49a1a4a2119b59fcfb566fcdba3731",
+      "size": 22249,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 217
       }
     },
     {
@@ -1478,6 +4078,396 @@
       }
     },
     {
+      "path": "tiled/examples/sticker-knight/map/alter.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/alter.png",
+      "sha256": "00d86ecc6f7501a084975ceee52a95ed075c73bd206ddadcac139ecf28578fe9",
+      "size": 2230,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 160,
+        "height": 192
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/backgroundArch.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/backgroundArch.png",
+      "sha256": "73f1f81b6525a3c7bca79945c343d9acd580267d7293fc1328685abc0572be84",
+      "size": 797,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 135,
+        "height": 115
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/backgroundMountain.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/backgroundMountain.png",
+      "sha256": "8a39e1b8fbb68f221c96f80c6712d5c574888f6b403dcd733df698eaf3d0c540",
+      "size": 1411,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 380,
+        "height": 140
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/backgroundTower.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/backgroundTower.png",
+      "sha256": "012beda91bf0cfea0a414bf4b64b6ff427459832bc7407e353ace00152cd0666",
+      "size": 1503,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 129,
+        "height": 332
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/backgroundTree.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/backgroundTree.png",
+      "sha256": "d6c012819fb35beff22aea229a726c5627db3c2db16623f63908d186dd8afe22",
+      "size": 1137,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 109,
+        "height": 177
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/blobBlue.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/blobBlue.png",
+      "sha256": "c81044d8f23d6ddb755bfac5de2585eab8510be89b91b17ed523c5f7540be52c",
+      "size": 2915,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/blobGreen.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/blobGreen.png",
+      "sha256": "7533ccdd534fc787f5db8458e0def5f57d078f1f0c2b3918c24a5211a4f46264",
+      "size": 2891,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/blue.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/blue.png",
+      "sha256": "190835b4f47d9c144db4039a4a44fcef9cda3472fe079da41a51046c6882965f",
+      "size": 136,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/bombStroked.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/bombStroked.png",
+      "sha256": "f400ef5670c5e66cd8c5c0eb884ef38c52b3eaf4d49697dfd02995d8f21e07df",
+      "size": 2444,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 128
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/castleWall.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/castleWall.png",
+      "sha256": "5dd86a3882399ad3fd3b6ecd64a4739c9e2b825facef31b96b9493c7cab16a9c",
+      "size": 136,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/cloud.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/cloud.png",
+      "sha256": "906b8b7102baf97ae1ab6865cd6bf13aee788d141cfc0065f7ed6ead60f90667",
+      "size": 1674,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 384,
+        "height": 128
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/column1.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/column1.png",
+      "sha256": "2b4b3adff737486019eca7b7fc56316a9cb9dd7595850d78de7bcc260d7254cb",
+      "size": 2620,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 192
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/column2.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/column2.png",
+      "sha256": "0919fbf32aefbee3daa0fcca921f7ff11ecf3ec12eede0a296c2f1127d7d432a",
+      "size": 2605,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 192
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/doorBlueStroked.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/doorBlueStroked.png",
+      "sha256": "a6c233d4e18a0644f66638488056f312c658dc163808b574a14582d3feda258a",
+      "size": 4528,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 160,
+        "height": 192
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/doorGreenStroke.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/doorGreenStroke.png",
+      "sha256": "37085fe92e3edf20d5c9a4fec8973c1d23154091c89e55914c0882f276ab6574",
+      "size": 4546,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 160,
+        "height": 192
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/doorRedStroked.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/doorRedStroked.png",
+      "sha256": "ea2721b812a1093f269f490f65be0749f4447fe304b498f5862c78d27bbca8eb",
+      "size": 4439,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 160,
+        "height": 192
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/doorStroked.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/doorStroked.png",
+      "sha256": "5132d97681e4995c4ab54069ca5883f01cd8392a397fe6e6b5e975745e00db04",
+      "size": 4292,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 160,
+        "height": 192
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/earthWall.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/earthWall.png",
+      "sha256": "722e8687b6aad30b7de3029b7ac240219a2df91657df53add47abc14928ffdf2",
+      "size": 136,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/earthWall2.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/earthWall2.png",
+      "sha256": "51784c27449905563519f9da1a79e02451e916de01b077e7257c326f5b030baa",
+      "size": 136,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/exit.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/exit.png",
+      "sha256": "d3ae8ed957083bc38db33a813e04b1939d3297990c671d5376e87541697f7330",
+      "size": 1182,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 160,
+        "height": 192
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/flare.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/flare.png",
+      "sha256": "124178384d314d1e3e77a1b75d3d2664145bfb72a044854a1f4a9b7b6ca1f87e",
+      "size": 4248,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 192
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/gemBlueStroked.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/gemBlueStroked.png",
+      "sha256": "4072e3c871a8a6ea0526e50284e7a4a257602b76f5bb6cf5c03d55962a2dc3bd",
+      "size": 1393,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/gemRedStroked.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/gemRedStroked.png",
+      "sha256": "a906259f8b8a7e108ad8664fb1ebee80e3be3e82855534fc9427def5b57bc267",
+      "size": 4235,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/grassLarge.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/grassLarge.png",
+      "sha256": "dfa0cafcffd2c1ce1cd6be82965af4fbcab216df3d2182b6cd19c03e74948e3b",
+      "size": 1505,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 224,
+        "height": 32
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/grassSmall.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/grassSmall.png",
+      "sha256": "66c232ce11fcf2d6d8d59ea827382f33e9c7416ec58a9b6212ecc57849e0b59c",
+      "size": 1180,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 160,
+        "height": 32
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/grey.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/grey.png",
+      "sha256": "043ba5f8495f6d9c70f62f8bc8856be622a12fc5748bcea54d1e2cf629c2c49c",
+      "size": 135,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/hero.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/hero.png",
+      "sha256": "43aa5b7136579c555200d6092d798d4c70f3dce58ee0ea9e19505aa8a26f48cb",
+      "size": 4155,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 160
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/keyGreenStroked.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/keyGreenStroked.png",
+      "sha256": "f18a210eb597404c32d5b1fbeeac61246d57830e9c5d0cee1e33db0d40ea4e31",
+      "size": 909,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/keyRedStroked.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/keyRedStroked.png",
+      "sha256": "804133ba730c4b659cdff07c1798eb0740ef682c2f280bac3eaf91a0c8821666",
+      "size": 5063,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/keyYellowStroked.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/keyYellowStroked.png",
+      "sha256": "0c8e51271829a7e5d581fcb60d8b54e018ddcacf736111c9d5b47b643d31b6f1",
+      "size": 1013,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 64
+      }
+    },
+    {
       "path": "tiled/examples/sticker-knight/map/objs.tsx",
       "sourceId": "tiled-test-maps",
       "upstreamPath": "examples/sticker-knight/map/objs.tsx",
@@ -1486,6 +4476,253 @@
       "format": {
         "kind": "tsx",
         "version": "1.4"
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platform1.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platform1.png",
+      "sha256": "f9a760ce186b3723506d6b8b53e0c2eb6499683005bc56e0fd508cdcc8ab271f",
+      "size": 2101,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platform2.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platform2.png",
+      "sha256": "01f05e747096ce6362f1e9daf198d289472ca2e614fce9ccd3ad4e638214de7f",
+      "size": 2006,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platform3.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platform3.png",
+      "sha256": "856b99c6f6edaa9c37abc8b9dcda26632d82fade1d12631b4bf255f8dde3ec43",
+      "size": 1281,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platform4.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platform4.png",
+      "sha256": "18e435e103b6b63479fb7aef00c9f621023cbc79ae231420ba3c09d9738a7019",
+      "size": 1277,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformBase1.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformBase1.png",
+      "sha256": "82e54ed5b453dd9088dcdfbedd4698bc4214db08795901cd14baf0d8bbfed2b3",
+      "size": 3166,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformBase2.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformBase2.png",
+      "sha256": "61ba5c556545f176ba8ffeff3bb51292a5df9ee007c958e41cb16079c6b52bcc",
+      "size": 3162,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformBase3.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformBase3.png",
+      "sha256": "c7aac02c572557af744be0efba1132c4958127dbaa2ae827ec0a27b56e2c7298",
+      "size": 2445,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformBase4.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformBase4.png",
+      "sha256": "762a5bcf75e67027cde46be0757612e20be32502cdf528716f91f0924a36be5b",
+      "size": 2425,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformBlock1.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformBlock1.png",
+      "sha256": "2fd529e555c26792775311f99966e02c43e4fe6cb7fc8d70f92938a8d0109386",
+      "size": 1139,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformBlock2.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformBlock2.png",
+      "sha256": "0d42efd44f3466176c5de2c8d156683af87aa2061813e9a5f92fd2605353b2a5",
+      "size": 1127,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformBlock3.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformBlock3.png",
+      "sha256": "1b8cdb4452f7ec0d32063d819a0e674b91b6e75688e259cf4becec30e626d8a7",
+      "size": 1115,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformBlock4.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformBlock4.png",
+      "sha256": "b3fd81754de14d322992cc165ad56b53d7234356eca8e994e73d0d090be8083a",
+      "size": 1158,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformConnector1.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformConnector1.png",
+      "sha256": "bfd61309b2a7795386834375e050232e8ba9db029c529a14f520c3eedf49fd4b",
+      "size": 668,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformConnector2.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformConnector2.png",
+      "sha256": "3e61c70e848e26dbc0db9cf2edcbab36447810aa4514db869a2dc3883038a72c",
+      "size": 659,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformConnector3.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformConnector3.png",
+      "sha256": "a22db4bbabbdd86856c2c40899554449930296a861716aeaff0158c829c03a61",
+      "size": 662,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/platformConnector4.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/platformConnector4.png",
+      "sha256": "5aa54a68b57164f7a94b4f7e3f11db2947c01c5266f5980d399c88951f4e14d1",
+      "size": 666,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/pushBlock1.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/pushBlock1.png",
+      "sha256": "c15a0c61247a3ea6579523167ff53ad3ad49f1d5aee758167756fbfa6d0e9c66",
+      "size": 5018,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/pushBlock2.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/pushBlock2.png",
+      "sha256": "015452e8c4eace0c8a26ea7c4f86839d57918ac7c4447bcdd0f7e8eaee834d9b",
+      "size": 4147,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/pushBlock3.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/pushBlock3.png",
+      "sha256": "d409979fd92b757c44aded92610e37a40f529d4ea9ef1f1e08f54312e4e260fc",
+      "size": 4117,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 96
       }
     },
     {
@@ -1513,6 +4750,344 @@
       }
     },
     {
+      "path": "tiled/examples/sticker-knight/map/shadow.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/shadow.png",
+      "sha256": "149d9dfcccd64a081a615eab156d1302cc8da09a8a478bc8d20b011002a78050",
+      "size": 84,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/shieldStroked.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/shieldStroked.png",
+      "sha256": "ef81e14fc32025e878991f55c7e906c84945cdf52b0cf85bd9abffccc60d0253",
+      "size": 2259,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 93,
+        "height": 93
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/sign.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/sign.png",
+      "sha256": "7ff8251dbdf8474b20d4c7eb883fcf333f38761aeed19edbd96dc6860b4d82ab",
+      "size": 1682,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 160,
+        "height": 128
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/skeleton.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/skeleton.png",
+      "sha256": "5cdb9e61ea9aaea63d665bdc0d2255fb5e8ac0936e2bfff66eae26a62f404b40",
+      "size": 5129,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 133,
+        "height": 160
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/swordStroked.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/swordStroked.png",
+      "sha256": "22c846a68e3657c0944280fe975d8cf81b22ef218165c35986ea503757d5a4dd",
+      "size": 1460,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/torch.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/torch.png",
+      "sha256": "9b2e7e5627a35240ba6307ca7d4f7a71c99c84437b3f833a4dfdd00ec58b72d8",
+      "size": 1511,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 96,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/trap.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/trap.png",
+      "sha256": "da9a8ff5e87cbc1114cccce337d65d52473e5a3f2253fdf616468b98eadc26b5",
+      "size": 5467,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 32
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/wallDecor1.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/wallDecor1.png",
+      "sha256": "c66716b982f84449dc4cec8b1c4e9176eb61855c3f24268212c4800e2caacfe9",
+      "size": 1875,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/wallDecor2.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/wallDecor2.png",
+      "sha256": "263a098dd5c9041c25e0d65d7f2293fcf6e623c3fba78317b079c3ac3018a58b",
+      "size": 1869,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 96
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/wallDecor3.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/wallDecor3.png",
+      "sha256": "9ea6c4ca689b6d334f76020b34434439ca3b1eaf9738d278bce51215732ec0f7",
+      "size": 1578,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 160,
+        "height": 128
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/window1.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/window1.png",
+      "sha256": "c89f0455b2ea04f2b99a7f23b88096c8c576f8f1c05cfa055af51acd60628343",
+      "size": 1134,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 65,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/window2.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/window2.png",
+      "sha256": "7f3168edacfb5fa2df517e91875e70f9a033b587b803f9be75957671e72f2456",
+      "size": 1141,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/map/window3.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/map/window3.png",
+      "sha256": "0431b30cef4d3e5e270fc1ba07f4c95cc92d15ef9d6871a533f9989c9f6983c4",
+      "size": 745,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 56,
+        "height": 59
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/preview.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/preview.png",
+      "sha256": "5d644a6f854b2b15d49809be51f6de63fa791c9ec067240f733c60343ec6572b",
+      "size": 898097,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2200,
+        "height": 1700
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/sprites.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/sprites.png",
+      "sha256": "8033f8cbd919c74c523c36ee5324f87e1c22407d416ea539a6181e80f9fc8178",
+      "size": 83899,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1920,
+        "height": 2048
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/ui/backgroundSet.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/ui/backgroundSet.png",
+      "sha256": "3ee54ad4468df94b83e3b21a0735631196ff936b996dcbf2d0b7a86b695a8d28",
+      "size": 9664,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1232,
+        "height": 832
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/ui/block.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/ui/block.png",
+      "sha256": "3a6e2e5a5c7ff1d3d6538055d36f33a019a8713a3a393d3307720fa2efa880b1",
+      "size": 137,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/ui/buttonHelp.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/ui/buttonHelp.png",
+      "sha256": "2446f7de2b3be82d74b6b8512d33f98ec59e6c9c85fa78a9efeeabcbb31d82d6",
+      "size": 2567,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/ui/buttonStart.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/ui/buttonStart.png",
+      "sha256": "099f6fc40faff29d7e08d122a70f23e31e33dbbbfae25523e947e0bacc2467b5",
+      "size": 2668,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 192,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/ui/cloud.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/ui/cloud.png",
+      "sha256": "906b8b7102baf97ae1ab6865cd6bf13aee788d141cfc0065f7ed6ead60f90667",
+      "size": 1674,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 384,
+        "height": 128
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/ui/gem.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/ui/gem.png",
+      "sha256": "3e1092c9e9b733de8bc350e889ff2e839f368aa597a27e6431e3828140656ee2",
+      "size": 1171,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/ui/heart.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/ui/heart.png",
+      "sha256": "1d8c0125b84b4bd3548e915f2570f1450d49abcf60e498a437f62495eb929be0",
+      "size": 1367,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/ui/helpBackground.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/ui/helpBackground.png",
+      "sha256": "2ab7eb9bdfcf42e3fcd4eef79ccfd8a920b7cd3ad23b29b11f4d151c15403e8b",
+      "size": 47994,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 416,
+        "height": 416
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/ui/shield.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/ui/shield.png",
+      "sha256": "1e0fe5ce52406ad6ed85ff9bc893a4ad9d6dbc6f23e531e4693171f052c41325",
+      "size": 1702,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tiled/examples/sticker-knight/ui/title.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/sticker-knight/ui/title.png",
+      "sha256": "efc7a2fcdc2ba7c9b33354fcf79584b20a88faeaafef4bcd14735ae605d974fe",
+      "size": 12428,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 448,
+        "height": 224
+      }
+    },
+    {
+      "path": "tiled/examples/test_hexagonal_tile_60x60x30.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/test_hexagonal_tile_60x60x30.png",
+      "sha256": "7bb2d7e37e1a0bd821e984e87b290b2ae00f8015aa28d66eee1e192d54ade2a1",
+      "size": 2934,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 60,
+        "height": 60
+      }
+    },
+    {
       "path": "tiled/examples/test_hexagonal_tile_60x60x30.tmx",
       "sourceId": "tiled-test-maps",
       "upstreamPath": "examples/test_hexagonal_tile_60x60x30.tmx",
@@ -1522,6 +5097,19 @@
         "kind": "tmx",
         "version": "1.0",
         "orientation": "hexagonal"
+      }
+    },
+    {
+      "path": "tiled/examples/tmw_desert_spacing.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "examples/tmw_desert_spacing.png",
+      "sha256": "efdbf909a427238667f3001ebefcd8dd3bba0ff45ac67152a0e30e5334d3377c",
+      "size": 37830,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 265,
+        "height": 199
       }
     },
     {
@@ -2171,6 +5759,19 @@
       }
     },
     {
+      "path": "tiled/tests/data/yy-export/spr_test_tileset.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/data/yy-export/spr_test_tileset.png",
+      "sha256": "24f22c988ff13c66e3e7c2da4720fd711833d676a88c89d79ec7643149963d52",
+      "size": 941,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
       "path": "tiled/tests/errors/tile_image_not_found_in_tileset.tmx",
       "sourceId": "tiled-test-maps",
       "upstreamPath": "tests/errors/tile_image_not_found_in_tileset.tmx",
@@ -2241,6 +5842,19 @@
       }
     },
     {
+      "path": "tiled/tests/wangtiles/PathAndObjects.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/wangtiles/PathAndObjects.png",
+      "sha256": "f2c2803f15bc1e3e20875627e4dcc91a064a56d5ee581d0c5ee388a43ae657ed",
+      "size": 188670,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
       "path": "tiled/tests/wangtiles/PathAndObjects.tsx",
       "sourceId": "tiled-test-maps",
       "upstreamPath": "tests/wangtiles/PathAndObjects.tsx",
@@ -2263,6 +5877,32 @@
       }
     },
     {
+      "path": "tiled/tests/wangtiles/grass_and_water.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/wangtiles/grass_and_water.png",
+      "sha256": "8b53306d0ee4e7db75630894ad5f0949176b9c841a84d49c61f5183c95095ef8",
+      "size": 104828,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 384
+      }
+    },
+    {
+      "path": "tiled/tests/wangtiles/walkways.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/wangtiles/walkways.png",
+      "sha256": "2763e1ddf277dd3fa77ef546fcc40365d1aeea47999929e392256f081a4e6871",
+      "size": 4579,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 288,
+        "height": 288
+      }
+    },
+    {
       "path": "tiled/tests/wangtiles/walkways.tsx",
       "sourceId": "tiled-test-maps",
       "upstreamPath": "tests/wangtiles/walkways.tsx",
@@ -2271,6 +5911,19 @@
       "format": {
         "kind": "tsx",
         "version": "1.5"
+      }
+    },
+    {
+      "path": "tiled/tests/wangtiles/wangblob.png",
+      "sourceId": "tiled-test-maps",
+      "upstreamPath": "tests/wangtiles/wangblob.png",
+      "sha256": "7b7e436c32eab3a1c8177e8192fe74d320017e4dcc2fc4bd5168c3eae98f737a",
+      "size": 1892,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 224,
+        "height": 224
       }
     },
     {
@@ -2286,7 +5939,7 @@
     }
   ],
   "totals": {
-    "files": 188,
-    "bytes": 540106
+    "files": 475,
+    "bytes": 21595604
   }
 }

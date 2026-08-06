@@ -26,9 +26,18 @@ kind = "upstream"
 repo = "flighthq-ports/awayjs-examples"
 ref = "main"
 include = [
-  "assets/**/*.obj", "assets/**/*.mtl", "assets/**/*.awd",
-  "assets/**/*.md5mesh", "assets/**/*.md5anim",
-  "assets/**/*.md2", "assets/**/*.3ds",
+  "assets/**/*.obj",
+  "assets/**/*.mtl",
+  "assets/**/*.awd",
+  "assets/**/*.md5mesh",
+  "assets/**/*.md5anim",
+  "assets/**/*.md2",
+  "assets/**/*.3ds",
+  # Referenced by the descriptors above: without these they parse but cannot render.
+  "assets/**/**/*.png",
+  "assets/**/**/*.jpg",
+  "assets/**/**/*.jpeg",
+  "assets/**/**/*.bmp",
 ]
 strip = "assets/"
 dest = "meshes/"

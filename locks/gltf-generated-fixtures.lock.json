@@ -11,7 +11,7 @@
       "repo": "KhronosGroup/glTF-Asset-Generator",
       "ref": "main",
       "commit": "3d99767e9a67fbfe109f0d298c1e8d909bcac9db",
-      "retrieved": "2026-08-05",
+      "retrieved": "2026-08-06",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -442,6 +442,32 @@
       "size": 2111
     },
     {
+      "path": "Positive/Accessor_Sparse/Textures/BaseColor_A.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Accessor_Sparse/Textures/BaseColor_A.png",
+      "sha256": "a9008f5fda727d8e2bb467b7675d19c540f425c80429f04b5f95a6a7b09f6df5",
+      "size": 28689,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Accessor_Sparse/Textures/BaseColor_B.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Accessor_Sparse/Textures/BaseColor_B.png",
+      "sha256": "407554e68b8a96c805c96d3fb21ebcd72bf13e676290193e8c058832cf3cad67",
+      "size": 22020,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
       "path": "Positive/Accessor_SparseType/Accessor_SparseType_00.bin",
       "sourceId": "gltf-asset-generator",
       "upstreamPath": "Output/Positive/Accessor_SparseType/Accessor_SparseType_00.bin",
@@ -582,6 +608,32 @@
       "size": 3449
     },
     {
+      "path": "Positive/Accessor_SparseType/Textures/BaseColor_A.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Accessor_SparseType/Textures/BaseColor_A.png",
+      "sha256": "a9008f5fda727d8e2bb467b7675d19c540f425c80429f04b5f95a6a7b09f6df5",
+      "size": 28689,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Accessor_SparseType/Textures/BaseColor_B.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Accessor_SparseType/Textures/BaseColor_B.png",
+      "sha256": "407554e68b8a96c805c96d3fb21ebcd72bf13e676290193e8c058832cf3cad67",
+      "size": 22020,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
       "path": "Positive/Animation_Node/Animation_Node_00.bin",
       "sourceId": "gltf-asset-generator",
       "upstreamPath": "Output/Positive/Animation_Node/Animation_Node_00.bin",
@@ -702,6 +754,19 @@
       "upstreamPath": "Output/Positive/Animation_Node/README.md",
       "sha256": "7bb91e722895e0c9de6b564ca6137bf5549a114e77203bd61fd30f51d68cd454",
       "size": 1801
+    },
+    {
+      "path": "Positive/Animation_Node/Textures/BaseColor_Cube.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Animation_Node/Textures/BaseColor_Cube.png",
+      "sha256": "cd696e9834bfd42beebba5d044681b6f5449534d81535cfe39a466f2942136c9",
+      "size": 21356,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
     },
     {
       "path": "Positive/Animation_NodeMisc/Animation_NodeMisc_00.bin",
@@ -880,6 +945,19 @@
       "size": 4077
     },
     {
+      "path": "Positive/Animation_NodeMisc/Textures/BaseColor_Cube.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Animation_NodeMisc/Textures/BaseColor_Cube.png",
+      "sha256": "cd696e9834bfd42beebba5d044681b6f5449534d81535cfe39a466f2942136c9",
+      "size": 21356,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
       "path": "Positive/Animation_SamplerType/Animation_SamplerType_00.bin",
       "sourceId": "gltf-asset-generator",
       "upstreamPath": "Output/Positive/Animation_SamplerType/Animation_SamplerType_00.bin",
@@ -946,6 +1024,19 @@
       "upstreamPath": "Output/Positive/Animation_SamplerType/README.md",
       "sha256": "760214d6f7f7dbd9e88d14c1a314c160267e6a56b60fd329c9f8d80abe576ae5",
       "size": 1264
+    },
+    {
+      "path": "Positive/Animation_SamplerType/Textures/BaseColor_Cube.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Animation_SamplerType/Textures/BaseColor_Cube.png",
+      "sha256": "cd696e9834bfd42beebba5d044681b6f5449534d81535cfe39a466f2942136c9",
+      "size": 21356,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
     },
     {
       "path": "Positive/Animation_Skin/Animation_Skin_00.bin",
@@ -1366,6 +1457,19 @@
       "upstreamPath": "Output/Positive/Buffer_Interleaved/README.md",
       "sha256": "fef5a5c922c0b150f915dfc5c7e8b7551a513647d6dbb5d9d28f38bed17ca47c",
       "size": 1912
+    },
+    {
+      "path": "Positive/Buffer_Interleaved/Textures/BaseColor_Grey.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Buffer_Interleaved/Textures/BaseColor_Grey.png",
+      "sha256": "9c6a4b152ecf64a288b8713bc17fa30ac7a88f637aed0912c77d59a7512938ef",
+      "size": 906,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256
+      }
     },
     {
       "path": "Positive/Buffer_Misc/Buffer_Misc_00.bin",
@@ -1822,6 +1926,45 @@
       "size": 5126
     },
     {
+      "path": "Positive/Instancing/Textures/BaseColor_A.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Instancing/Textures/BaseColor_A.png",
+      "sha256": "a9008f5fda727d8e2bb467b7675d19c540f425c80429f04b5f95a6a7b09f6df5",
+      "size": 28689,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Instancing/Textures/BaseColor_B.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Instancing/Textures/BaseColor_B.png",
+      "sha256": "407554e68b8a96c805c96d3fb21ebcd72bf13e676290193e8c058832cf3cad67",
+      "size": 22020,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Instancing/Textures/BaseColor_Cube.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Instancing/Textures/BaseColor_Cube.png",
+      "sha256": "cd696e9834bfd42beebba5d044681b6f5449534d81535cfe39a466f2942136c9",
+      "size": 21356,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
       "path": "Positive/Manifest.json",
       "sourceId": "gltf-asset-generator",
       "upstreamPath": "Output/Positive/Manifest.json",
@@ -1987,6 +2130,45 @@
       "size": 3361
     },
     {
+      "path": "Positive/Material/Textures/Emissive_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material/Textures/Emissive_Plane.png",
+      "sha256": "0433f987563cf954751110a2029a05ae26dae8d5bee812e1e433a605362d279a",
+      "size": 68698,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Material/Textures/Normal_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material/Textures/Normal_Plane.png",
+      "sha256": "72964ca6e422eabb4f16d68f9b90c6794cc8d0156f9c69cc4a5d818a41c17e92",
+      "size": 1227257,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Material/Textures/Occlusion_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material/Textures/Occlusion_Plane.png",
+      "sha256": "e1fcaec95867f0ba552f3a15aec03c5a459081a9af70494b10d2ec0bbba3d3b4",
+      "size": 229058,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
       "path": "Positive/Material_AlphaBlend/Manifest.json",
       "sourceId": "gltf-asset-generator",
       "upstreamPath": "Output/Positive/Material_AlphaBlend/Manifest.json",
@@ -2125,6 +2307,19 @@
       "upstreamPath": "Output/Positive/Material_AlphaBlend/README.md",
       "sha256": "fd1f1eed719bbde9be705df73857d02fc01e7ff9c5bcb09d0da2c33dd3122c19",
       "size": 2881
+    },
+    {
+      "path": "Positive/Material_AlphaBlend/Textures/BaseColor_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material_AlphaBlend/Textures/BaseColor_Plane.png",
+      "sha256": "bfabe406bf3e786f4077b1153e810ea7bf6c5ea046684781dfaf57cc7e3f790d",
+      "size": 1635069,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
     },
     {
       "path": "Positive/Material_AlphaMask/Manifest.json",
@@ -2267,6 +2462,19 @@
       "size": 2436
     },
     {
+      "path": "Positive/Material_AlphaMask/Textures/BaseColor_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material_AlphaMask/Textures/BaseColor_Plane.png",
+      "sha256": "bfabe406bf3e786f4077b1153e810ea7bf6c5ea046684781dfaf57cc7e3f790d",
+      "size": 1635069,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
       "path": "Positive/Material_DoubleSided/Manifest.json",
       "sourceId": "gltf-asset-generator",
       "upstreamPath": "Output/Positive/Material_DoubleSided/Manifest.json",
@@ -2369,6 +2577,32 @@
       "upstreamPath": "Output/Positive/Material_DoubleSided/README.md",
       "sha256": "dbc677f798b95fc47930af4eb47ce9aba868a61b81c1fb5259d864a15e3868df",
       "size": 2259
+    },
+    {
+      "path": "Positive/Material_DoubleSided/Textures/BaseColor_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material_DoubleSided/Textures/BaseColor_Plane.png",
+      "sha256": "bfabe406bf3e786f4077b1153e810ea7bf6c5ea046684781dfaf57cc7e3f790d",
+      "size": 1635069,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Material_DoubleSided/Textures/Normal_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material_DoubleSided/Textures/Normal_Plane.png",
+      "sha256": "72964ca6e422eabb4f16d68f9b90c6794cc8d0156f9c69cc4a5d818a41c17e92",
+      "size": 1227257,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
     },
     {
       "path": "Positive/Material_MetallicRoughness/Manifest.json",
@@ -2601,6 +2835,32 @@
       "size": 4931
     },
     {
+      "path": "Positive/Material_MetallicRoughness/Textures/BaseColor_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material_MetallicRoughness/Textures/BaseColor_Plane.png",
+      "sha256": "bfabe406bf3e786f4077b1153e810ea7bf6c5ea046684781dfaf57cc7e3f790d",
+      "size": 1635069,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Material_MetallicRoughness/Textures/MetallicRoughness_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material_MetallicRoughness/Textures/MetallicRoughness_Plane.png",
+      "sha256": "8c5995be18f28692acd990b6ee2663f807c5548e917807f125cd06d207775366",
+      "size": 1184895,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
       "path": "Positive/Material_Mixed/Manifest.json",
       "sourceId": "gltf-asset-generator",
       "upstreamPath": "Output/Positive/Material_Mixed/Manifest.json",
@@ -2676,6 +2936,19 @@
       "upstreamPath": "Output/Positive/Material_Mixed/README.md",
       "sha256": "977120d6d904a6c7b8ccc56bac0466a8a955a8f68104bff519a7c1e103733cb4",
       "size": 1844
+    },
+    {
+      "path": "Positive/Material_Mixed/Textures/BaseColor_X.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material_Mixed/Textures/BaseColor_X.png",
+      "sha256": "2505c4170d6f26a9e54b3a6ba04f73aef52cf99bd79c144951c05f070dc8eb3e",
+      "size": 41923,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
     },
     {
       "path": "Positive/Material_SpecularGlossiness/Manifest.json",
@@ -3028,6 +3301,45 @@
       "size": 6386
     },
     {
+      "path": "Positive/Material_SpecularGlossiness/Textures/BaseColor_X.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material_SpecularGlossiness/Textures/BaseColor_X.png",
+      "sha256": "2505c4170d6f26a9e54b3a6ba04f73aef52cf99bd79c144951c05f070dc8eb3e",
+      "size": 41923,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Material_SpecularGlossiness/Textures/Diffuse_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material_SpecularGlossiness/Textures/Diffuse_Plane.png",
+      "sha256": "84734c4235059825ff38a9356c8f824208e4556f711403eec667bb3fb849bf69",
+      "size": 1532433,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Material_SpecularGlossiness/Textures/SpecularGlossiness_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Material_SpecularGlossiness/Textures/SpecularGlossiness_Plane.png",
+      "sha256": "e7e58cc7623fa77ef2865a63fd0f8e3b137ff156be3b8ef09a47f9b71e60f474",
+      "size": 2000552,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
       "path": "Positive/Mesh_PrimitiveAttribute/Manifest.json",
       "sourceId": "gltf-asset-generator",
       "upstreamPath": "Output/Positive/Mesh_PrimitiveAttribute/Manifest.json",
@@ -3166,6 +3478,32 @@
       "upstreamPath": "Output/Positive/Mesh_PrimitiveAttribute/README.md",
       "sha256": "31bdc96a1ec816237f52d774c1f09cf3d53eea95a18a5639b3b990d0b0e9c176",
       "size": 2922
+    },
+    {
+      "path": "Positive/Mesh_PrimitiveAttribute/Textures/BaseColor_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Mesh_PrimitiveAttribute/Textures/BaseColor_Plane.png",
+      "sha256": "bfabe406bf3e786f4077b1153e810ea7bf6c5ea046684781dfaf57cc7e3f790d",
+      "size": 1635069,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Mesh_PrimitiveAttribute/Textures/Normal_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Mesh_PrimitiveAttribute/Textures/Normal_Plane.png",
+      "sha256": "72964ca6e422eabb4f16d68f9b90c6794cc8d0156f9c69cc4a5d818a41c17e92",
+      "size": 1227257,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
     },
     {
       "path": "Positive/Mesh_PrimitiveMode/Manifest.json",
@@ -3800,6 +4138,32 @@
       "size": 4524
     },
     {
+      "path": "Positive/Mesh_PrimitivesUV/Textures/BaseColor_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Mesh_PrimitivesUV/Textures/BaseColor_Plane.png",
+      "sha256": "bfabe406bf3e786f4077b1153e810ea7bf6c5ea046684781dfaf57cc7e3f790d",
+      "size": 1635069,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "Positive/Mesh_PrimitivesUV/Textures/Normal_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Mesh_PrimitivesUV/Textures/Normal_Plane.png",
+      "sha256": "72964ca6e422eabb4f16d68f9b90c6794cc8d0156f9c69cc4a5d818a41c17e92",
+      "size": 1227257,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
       "path": "Positive/Node_Attribute/Manifest.json",
       "sourceId": "gltf-asset-generator",
       "upstreamPath": "Output/Positive/Node_Attribute/Manifest.json",
@@ -3974,6 +4338,45 @@
       "upstreamPath": "Output/Positive/Node_Attribute/README.md",
       "sha256": "0eec0c5de106c8fbdd5ee533704c044b6f359282f4650aebf582dd05dcdd4d26",
       "size": 3693
+    },
+    {
+      "path": "Positive/Node_Attribute/Textures/BaseColor_Nodes.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Node_Attribute/Textures/BaseColor_Nodes.png",
+      "sha256": "b9267f02a90a04d6a5e55b4f4a7819702dc8196a18d04fb8a0ad2eb9f10cf67c",
+      "size": 2918910,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 2048
+      }
+    },
+    {
+      "path": "Positive/Node_Attribute/Textures/MetallicRoughness_Nodes.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Node_Attribute/Textures/MetallicRoughness_Nodes.png",
+      "sha256": "710b24fd30a8578038d0ad4521fa4a009b63e526cc3f520bca17cf7f3607b46f",
+      "size": 4283964,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 2048
+      }
+    },
+    {
+      "path": "Positive/Node_Attribute/Textures/Normal_Nodes.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Node_Attribute/Textures/Normal_Nodes.png",
+      "sha256": "8579a57ce4939002f95a728aca212178b2beaeb55a92dfd5ea85aed323dfa0ce",
+      "size": 2929492,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 2048
+      }
     },
     {
       "path": "Positive/Node_NegativeScale/Manifest.json",
@@ -4222,6 +4625,45 @@
       "upstreamPath": "Output/Positive/Node_NegativeScale/README.md",
       "sha256": "7c031c3bb92ee8c703261b780782a320174addbd1eb5dcc8585a38a1851c0e31",
       "size": 5321
+    },
+    {
+      "path": "Positive/Node_NegativeScale/Textures/BaseColor_Nodes.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Node_NegativeScale/Textures/BaseColor_Nodes.png",
+      "sha256": "b9267f02a90a04d6a5e55b4f4a7819702dc8196a18d04fb8a0ad2eb9f10cf67c",
+      "size": 2918910,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 2048
+      }
+    },
+    {
+      "path": "Positive/Node_NegativeScale/Textures/MetallicRoughness_Nodes.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Node_NegativeScale/Textures/MetallicRoughness_Nodes.png",
+      "sha256": "710b24fd30a8578038d0ad4521fa4a009b63e526cc3f520bca17cf7f3607b46f",
+      "size": 4283964,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 2048
+      }
+    },
+    {
+      "path": "Positive/Node_NegativeScale/Textures/Normal_Nodes.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Node_NegativeScale/Textures/Normal_Nodes.png",
+      "sha256": "8579a57ce4939002f95a728aca212178b2beaeb55a92dfd5ea85aed323dfa0ce",
+      "size": 2929492,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 2048
+      }
     },
     {
       "path": "Positive/README.md",
@@ -4497,6 +4939,19 @@
       }
     },
     {
+      "path": "Positive/Texture_Sampler/Textures/BaseColor_Plane.png",
+      "sourceId": "gltf-asset-generator",
+      "upstreamPath": "Output/Positive/Texture_Sampler/Textures/BaseColor_Plane.png",
+      "sha256": "bfabe406bf3e786f4077b1153e810ea7bf6c5ea046684781dfaf57cc7e3f790d",
+      "size": 1635069,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
       "path": "README.md",
       "sourceId": "gltf-asset-generator",
       "upstreamPath": "Output/README.md",
@@ -4505,7 +4960,7 @@
     }
   ],
   "totals": {
-    "files": 500,
-    "bytes": 11979172
+    "files": 535,
+    "bytes": 53936354
   }
 }

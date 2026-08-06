@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 import sys
+import pathlib
 import tarfile
 import tempfile
 import unittest
@@ -19,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from oracles import derive, formats, pack, spec  # noqa: E402
+from oracles import derive, formats, pack, references, spec  # noqa: E402
 
 
 class TestFormats(unittest.TestCase):
@@ -330,6 +331,56 @@ class TestDerivedSpec(unittest.TestCase):
     def test_non_derived_still_requires_include(self):
         with self.assertRaises(ValueError):
             spec.SourceSpec(id="u", kind="upstream", repo="o/r", license=self._license())
+
+
+class TestReferences(unittest.TestCase):
+    """Descriptors name external files; shipping one without the other renders nothing.
+
+    Six of nine packs shipped descriptors whose images were simply absent — 843 unresolved
+    references — because each glob was written for the parser in front of me and nothing
+    checked the whole. Every pack verified perfectly against its own lock the entire time.
+    """
+
+    def test_atlas_page_extraction(self):
+        atlas = "pages.png\nsize: 512,512\nformat: RGBA8888\n  region\n  xy: 1, 1\n"
+        self.assertIn("pages.png", list(references.extract("a.atlas", atlas.encode())))
+
+    def test_bmfont_page_extraction(self):
+        fnt = b'info face="Arial"\npage id=0 file="arial_0.png"\n'
+        self.assertEqual(list(references.extract("a.fnt", fnt)), ["arial_0.png"])
+
+    def test_tmx_image_and_external_tileset(self):
+        tmx = (b'<map><tileset source="ts.tsx"/>'
+               b'<imagelayer><image source="bg.png"/></imagelayer></map>')
+        found = set(references.extract("a.tmx", tmx))
+        self.assertEqual(found, {"ts.tsx", "bg.png"})
+
+    def test_mtl_options_are_not_mistaken_for_filenames(self):
+        # map_Bump lines carry flags before the path; a naive first-token match yields
+        # "-bs" or "bump" and then reports a missing file that was never named.
+        mtl = b"map_Kd tex.png\nmap_Bump -bm 0.5 normal.png\n"
+        self.assertEqual(set(references.extract("a.mtl", mtl)), {"tex.png", "normal.png"})
+
+    def test_parent_relative_references_are_normalised(self):
+        # PurePosixPath keeps ".." literally, so "../../x.png" never matched a stored path
+        # and every relative-parent reference was reported missing. This is that regression.
+        lock = {"pack": {"name": "p"},
+                "files": [{"path": "data/x.jpg"}, {"path": "data/maps/m/a.tmx"}]}
+        root = pathlib.Path(tempfile.mkdtemp())
+        target = root / "vendor" / "p" / "data" / "maps" / "m"
+        target.mkdir(parents=True)
+        (target / "a.tmx").write_bytes(b'<map><image source="../../x.jpg"/></map>')
+        (root / "vendor" / "p" / "data" / "x.jpg").write_bytes(b"\xff\xd8")
+        self.assertEqual(references.unresolved([lock], root), [])
+
+    def test_site_absolute_references_are_not_reported(self):
+        # A docs site's own URL space cannot be satisfied by anything we place on disk.
+        lock = {"pack": {"name": "p"}, "files": [{"path": "a.json"}]}
+        root = pathlib.Path(tempfile.mkdtemp())
+        d = root / "vendor" / "p"; d.mkdir(parents=True)
+        (d / "a.json").write_bytes(
+            json.dumps({"assets": [{"p": "/site/static/x.png"}]}).encode())
+        self.assertEqual(references.unresolved([lock], root), [])
 
 
 class TestGlobs(unittest.TestCase):

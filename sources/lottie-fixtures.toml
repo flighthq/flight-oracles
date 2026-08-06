@@ -37,7 +37,14 @@ id = "lottie-docs-examples"
 kind = "upstream"
 repo = "LottieFiles/lottie-docs"
 ref = "main"
-include = ["docs/static/**/*.json"]
+include = [
+  "docs/static/**/*.json",
+  # Referenced by the descriptors above: without these they parse but cannot render.
+  "docs/static/**/**/*.png",
+  "docs/static/**/**/*.jpg",
+  "docs/static/**/**/*.jpeg",
+  "docs/static/**/**/*.bmp",
+]
 strip = "docs/static/"
 dest = "lottie-docs/"
 
