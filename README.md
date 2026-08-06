@@ -48,8 +48,9 @@ suite can pin.
 | `ldtk-fixtures` | 69 | 42.9 MB | LDtk 2D levels — 22 format versions, v0.6.0–v1.5.3 |
 | `unity-native-fixtures` | 14 | 3.0 MB | **Unity's own YAML** — 25 ParticleSystem components |
 | `svg-path-fixtures` | 672 | 0.5 MB | **Oracles** — SVG path grammar, 371 expected-output pairs |
+| `xml-conformance-fixtures` | 1,184 | 2.6 MB | **Oracles** — XML with expected diagnostics |
 
-27 packs, 25,277 files. Three packs carry expectations as well as inputs:
+28 packs, 26,461 files. Three packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place) and `gltf-generated-fixtures` (positive/negative conformance split).
 
@@ -156,7 +157,8 @@ File-adjacent licences travel beside their assets as well as in `LICENSES/`, bec
 spineboy's terms permit redistribution "as long as they are accompanied by this license
 file" and the safe reading of *accompanied* is adjacent, not merely present.
 
-Not every unfixtured format is a gap: `shapeJson` and `UnityParticleDocument` are shapes
+Every format flight parses now has fixtures behind it, except those for which no corpus can
+exist. Not every unfixtured format is a gap: `shapeJson` and `UnityParticleDocument` are shapes
 flight owns rather than foreign formats, so no corpus exists for them by construction, and
 Spine's particle format appears never to have shipped. See
 [`docs/fixture-coverage.md`](docs/fixture-coverage.md) for that classification.

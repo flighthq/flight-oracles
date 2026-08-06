@@ -127,7 +127,10 @@ class TestFormats(unittest.TestCase):
         # a map from a tileset, and a tileset parsed as a map would silently yield nothing.
         xml = b'<tileset version="1.5">'
         self.assertEqual(formats.detect(xml, "x.tsx")["kind"], "tsx")
-        self.assertIsNone(formats.detect(xml, "x.xml"))
+        # The same bytes under a .xml name must NOT be claimed as a tileset. Since the
+        # generic XML fallback was added it is identified as plain xml rather than nothing,
+        # which is the same guarantee stated more usefully.
+        self.assertEqual(formats.detect(xml, "x.xml")["kind"], "xml")
 
     def test_bmfont_text_serialisation(self):
         info = formats.detect(b"info face=\"Arial\" size=32\n", "a.fnt")
@@ -177,6 +180,22 @@ class TestFormats(unittest.TestCase):
 
     def test_svg_without_path_data_reports_zero(self):
         self.assertEqual(formats.detect(b'<svg><rect/></svg>', "a.svg")["pathCount"], 0)
+
+    def test_xml_is_the_fallback_not_the_first_match(self):
+        # SVG, Tiled, Starling atlases, PEX and BMFont XML are all XML. Identifying them as
+        # "xml" would lose the fact that matters, so the generic probe must run last.
+        svg = b'<svg xmlns="http://www.w3.org/2000/svg"><path d="M0 0"/></svg>'
+        tmx = b'<?xml version="1.0"?><map version="1.10"/>'
+        self.assertEqual(formats.detect(svg, "a.svg")["kind"], "svg")
+        self.assertEqual(formats.detect(tmx, "a.tmx")["kind"], "tmx")
+        plain = b'<?xml version="1.0" encoding="UTF-8"?><doc><a/></doc>'
+        info = formats.detect(plain, "a.xml")
+        self.assertEqual((info["kind"], info["version"], info["encoding"]),
+                         ("xml", "1.0", "UTF-8"))
+
+    def test_xml_doctype_is_recorded(self):
+        doc = b'<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN"><html/>'
+        self.assertTrue(formats.detect(doc, "a.html")["hasDoctype"])
 
     def test_unknown_returns_none_rather_than_raising(self):
         # Not knowing a format is a fact to record, never a reason to drop a fixture.

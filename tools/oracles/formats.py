@@ -437,6 +437,30 @@ def _collada(data: bytes, name: str):
 _SVG_D = re.compile(rb'\sd\s*=\s*"\s*([MmZzLlHhVvCcSsQqTtAa][^"]*)"')
 
 
+def _xml(data: bytes, name: str):
+    """A generic XML document, once every more specific XML probe has declined.
+
+    Ordered last among the XML-shaped probes on purpose: SVG, Tiled, Starling atlases, PEX
+    and BMFont XML are all XML too, and reporting them as "xml" would lose the identification
+    that matters. This is the fallback for documents that are only XML.
+    """
+    if not name.lower().endswith((".xml", ".xhtml", ".dtd", ".ent", ".htm", ".html")):
+        return None
+    head = data[:256].lstrip()
+    if not head.startswith((b"<?xml", b"<!DOCTYPE", b"<!--", b"<")):
+        return None
+    info = FormatInfo(kind="xml", version=None)
+    decl = re.search(rb'<\?xml[^>]*\sversion="([^"]+)"', data[:256])
+    if decl:
+        info["version"] = decl.group(1).decode("utf-8", "replace")
+    enc = re.search(rb'<\?xml[^>]*\sencoding="([^"]+)"', data[:256])
+    if enc:
+        info["encoding"] = enc.group(1).decode("utf-8", "replace")
+    if data[:256].lstrip().startswith(b"<!DOCTYPE"):
+        info["hasDoctype"] = True
+    return info
+
+
 def _svg(data: bytes, name: str):
     """An SVG document, and how much path data it carries.
 
@@ -568,7 +592,7 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
             return info
     for probe in (_dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
                   _ldtk, _effekseer, _bmfont_json, _frames_meta_sheet, _bvh,
-                  _starling_atlas, _unity_yaml, _svg,
+                  _starling_atlas, _unity_yaml, _svg, _xml,
                   _stl_ply, _fbx,
                   _pex,
                   _collada,

@@ -382,7 +382,32 @@ emphatically not a fixture-sourcing problem.
 | Format | Note |
 | --- | --- |
 | ~~`path-formats/svgPathData`~~ | **Closed** — see `svg-path-fixtures`. Coverage was measured at exactly zero (no `.svg` file and no path `d=` attribute anywhere across 26 packs) before the pack existed. |
-| `xml/xmlParse` | XML is real and W3C publishes a conformance suite. No GitHub mirror with usable provenance surfaced. The last genuinely open entry. |
+| ~~`xml/xmlParse`~~ | **Closed** — see `xml-conformance-fixtures`. |
+
+With that, every format flight parses has fixtures behind it, or is classified above as one
+for which no corpus can exist.
+
+### `xml-conformance-fixtures`, and why not the W3C suite
+
+The canonical corpus is the W3C XML Conformance Test Suite, but it is published as a tarball
+from w3.org rather than a repository, and no GitHub mirror with capturable provenance
+surfaced. libxml2's own regression corpus is the better practical answer: MIT, in-repo,
+maintained by the most widely deployed XML parser there is — and oracle-bearing.
+
+`test/X` pairs with `result/X`. 1,184 files: **583 inputs, 601 expectations, 239 exact
+pairs**, of which **83 are `.err` files recording the precise diagnostic a malformed document
+should produce**, line numbers included. That makes it the fourth oracle-bearing corpus here,
+and the only one whose expectations are *errors* rather than successful output:
+
+    input     HTML/encoding-error.html
+    expected  ./test/HTML/encoding-error.html:5: HTML parser error :
+              Invalid bytes in character encoding
+
+Selected by alignment: `errors/`, `valid/`, `VC/`, `VCM/`, `recurse/` (the billion-laughs
+family — the one XML failure mode that is a denial of service rather than a parse error),
+`XPath/` for `xmlQuery`, `XInclude/`, `c14n/`, and the `HTML/`+`SVG/` real-world documents.
+Excluded `schemas/`, `relaxng/` and `schematron/` — 691 files testing XSD, RELAX NG and
+Schematron validation, none of which flight implements.
 
 ### `svg-path-fixtures`, and why svgo rather than an icon set
 

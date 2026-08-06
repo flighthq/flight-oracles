@@ -1,0 +1,92 @@
+# xml-conformance-fixtures — XML documents with expected parse results.
+#
+# The last genuinely open format gap. flight's `xml` package (xmlParse, xmlQuery) had no
+# fixtures at all.
+#
+# WHY libxml2 RATHER THAN THE W3C SUITE. The canonical corpus is the W3C XML Conformance Test
+# Suite, but it is published as a tarball from w3.org rather than a repository, and no GitHub
+# mirror with capturable provenance surfaced. libxml2's own regression corpus is the better
+# practical answer: MIT, in-repo, maintained continuously by the most widely deployed XML
+# parser in existence, and — the deciding factor — it is ORACLE-BEARING.
+#
+# `test/X` pairs with `result/X`, and 525 of those results are `.err` files recording the
+# exact diagnostics a malformed document should produce. That is the fourth oracle-bearing
+# corpus here, after the Unicode data, Ruffle's traces and svgo's optimiser pairs — and the
+# only one whose expectations are error messages rather than successful output.
+#
+# SELECTED BY ALIGNMENT with what flight's xml package does:
+#
+#   errors/      malformed documents, paired with the diagnostics they should produce
+#   valid/ VC/   validity constraints, with expected results
+#   VCM/
+#   recurse/     entity-expansion recursion — the billion-laughs family, which is the one
+#                XML failure mode that is a denial-of-service rather than a parse error
+#   XPath/       xmlQuery's territory
+#   XInclude/    inclusion processing, with expected output
+#   c14n/        canonicalisation — beyond basic parsing, but its expected-output pairs are
+#                the strictest possible test of whether a tree round-trips faithfully
+#   HTML/ SVG/   real-world documents rather than constructed ones
+#
+# EXCLUDED: schemas/, relaxng/, schematron/ — 691 files of schema-language material. Those
+# test XSD, RELAX NG and Schematron validation, which flight does not implement; taking them
+# would triple the pack to test something that is not there.
+
+# ONE CAVEAT for anyone wiring these up: the .err files quote libxml2's own invocation
+# paths, e.g. "./test/HTML/doc3.htm:148: HTML parser error : ...". This pack rewrites
+# test/ to input/ and result/ to expected/, so a comparison has to normalise that prefix
+# rather than match the diagnostic byte-for-byte. The line numbers and messages are what
+# carry the meaning.
+
+[pack]
+name = "xml-conformance-fixtures"
+kind = "conformance"
+summary = "XML documents paired with expected parse results and diagnostics, from libxml2's regression corpus."
+
+[[source]]
+id = "libxml2-tests"
+kind = "upstream"
+repo = "GNOME/libxml2"
+ref = "master"
+fetch = "blobs"
+include = [
+  "test/errors/**", "test/valid/**", "test/VC/**", "test/VCM/**",
+  "test/recurse/**", "test/XPath/**", "test/XInclude/**", "test/c14n/**",
+  "test/HTML/**", "test/SVG/**", "test/namespaces/**",
+  "test/*.xml", "test/*.dtd", "test/*.ent",
+]
+strip = "test/"
+dest = "input/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "Copyright"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "libxml2, Copyright (C) 1998-2012 Daniel Veillard and the Libxml2 Contributors. Its Copyright file grants permission free of charge, in MIT terms."
+
+# The expectations, kept as a separate source only because they live under a different
+# upstream prefix — same repository, same declaration, and they must be extracted alongside
+# the inputs for the pairing to mean anything.
+[[source]]
+id = "libxml2-results"
+kind = "upstream"
+repo = "GNOME/libxml2"
+ref = "master"
+fetch = "blobs"
+include = [
+  "result/errors/**", "result/valid/**", "result/VC/**", "result/VCM/**",
+  "result/recurse/**", "result/XPath/**", "result/XInclude/**", "result/c14n/**",
+  "result/HTML/**", "result/SVG/**", "result/namespaces/**",
+  "result/*.xml", "result/*.err",
+]
+strip = "result/"
+dest = "expected/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "Copyright"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "libxml2 expected-output files, same declaration as the inputs they pair with."
