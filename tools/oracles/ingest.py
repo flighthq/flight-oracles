@@ -349,6 +349,18 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
                 # Deterministic sample: sort by hash, take a prefix. Stable across runs and
                 # independent of upstream ordering.
                 originals = sorted(originals, key=lambda e: e["sha256"])[:source.sample]
+            # A mutated fixture is a derivative in the plainest sense, so a parent whose
+            # declaration forbids derivatives cannot be one. Enforced here rather than
+            # trusted to whoever writes the next spec, because the failure is silent: the
+            # bytes vendor cleanly and nothing downstream would ever notice.
+            parent_srcs = {s["id"]: s for s in parent["sources"]}
+            parent_lic = parent_srcs.get(source.from_source, {}).get("license", {})
+            if parent_lic.get("derivatives") is False:
+                raise ValueError(
+                    f"{spec.name}: source {source.id!r} derives from "
+                    f"{source.from_pack}/{source.from_source}, whose declaration forbids "
+                    f"derivative works — {parent_lic.get('prohibition', 'no reason recorded')}"
+                )
             parent_vendor = root / "vendor" / source.from_pack
             count = 0
             missing = [e["path"] for e in originals

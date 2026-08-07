@@ -45,6 +45,7 @@ already exist was not worth declining.
 | `media-container-fixtures` | 53 | 195.7 MB | MP4/WebM/Ogg/WAV/MP3 muxed both ways + the 8 Matroska conformance files |
 | `compression-fixtures` | 98 | 19.4 MB | **Oracles** — brotli/zstd/snappy/zlib, input paired with output |
 | `usd-fixtures` | 798 | 68.7 MB | USD in all three encodings — ASCII, crate, USDZ — plus MaterialX |
+| `avif-fixtures` | 191 | 53.1 MB | AVIF conformance — five contributors, five separate declarations |
 | `3mf-fixtures` | 122 | 17.9 MB | **Conformance** — 3MF MustPass/MustFail across five specification areas |
 | `psd-fixtures` | 320 | 51.3 MB | Photoshop PSD **and PSB** — one document per adjustment layer and blend mode |
 | `draco-fixtures` | 98 | 8.8 MB | Draco geometry — **6 bitstream versions**, both encoders, beside the source meshes |
@@ -64,7 +65,7 @@ already exist was not worth declining.
 | `svg-path-fixtures` | 672 | 0.5 MB | **Oracles** — SVG path grammar, 371 expected-output pairs |
 | `xml-conformance-fixtures` | 1,184 | 2.6 MB | **Oracles** — XML with expected diagnostics |
 
-38 packs, 29,883 files. Several packs carry expectations as well as inputs:
+39 packs, 30,074 files. Several packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place), `gltf-generated-fixtures` (positive/negative conformance split),
 `svg-path-fixtures` and `xml-conformance-fixtures` (expected output and expected
@@ -94,8 +95,9 @@ commercial use permitted.
 Archives are `.tar.gz` only. A parallel `.zip` was dropped: both hold identical content and
 both use DEFLATE, but gzip compresses the tar stream *solidly* while zip compresses each
 entry alone, so `.tar.gz` is same-or-smaller everywhere and 10% smaller on the SWF corpus.
-The second container bought format convenience at roughly double the storage. `spine-fixtures` produces no `-permissive` archive — every Spine example is
-declared non-commercial.
+The second container bought format convenience at roughly double the storage. `spine-fixtures` and `avif-fixtures` produce no `-permissive` archive at all — every
+Spine example is declared non-commercial, and every AVIF contributor declared either
+share-alike or non-commercial. An absent variant is a result, not a build failure.
 
 Two models are **not vendored at all**, because their declarations explicitly forbid
 redistribution: Spine's `dragon` (Thiago Brayner) and `hero` (XDTech), both "may not be

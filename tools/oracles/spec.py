@@ -111,6 +111,18 @@ class LicenseSpec:
     # pipeline refuses to vendor or pack them.
     redistributable: bool = True
     prohibition: str | None = None      # verbatim clause, when redistributable is False
+    # False where the declaration forbids DERIVED works while still permitting the original
+    # to be redistributed. That is a real and separate permission, and this repository has
+    # machinery that would quietly cross it: `kind = "derived"` sources mutate an existing
+    # pack's files — truncation, bit flips, header damage — and a mutated file is a
+    # derivative in the plainest sense.
+    #
+    # Netflix's AVIF contributions to av1-avif are CC-BY-NC-ND-4.0: redistributable
+    # unmodified, with attribution, non-commercially, and NOT modifiable. Without this
+    # field the only way to express that would be `redistributable = false`, which would be
+    # wrong in the other direction — it would refuse to vendor files we are plainly
+    # permitted to carry.
+    derivatives: bool = True
     # Acknowledges a DECLARATIONS_NEEDING_REVIEW entry was read and a decision taken.
     hazard_reviewed: bool = False
     # An explicit human conclusion that the declared terms are permissive, for licences with
@@ -175,6 +187,12 @@ class LicenseSpec:
                 "license.onward_use = \"unrestricted\" contradicts commercial_use = false; "
                 "use \"non-commercial\" if the material may be shown but not sold"
             )
+        if not self.derivatives and not self.prohibition:
+            raise ValueError(
+                "license.derivatives = false requires license.prohibition quoting the "
+                "clause, so a future derived source can be refused with a reason rather "
+                "than a bare flag"
+            )
         if not self.redistributable and not self.prohibition:
             raise ValueError(
                 "license.redistributable = false requires license.prohibition quoting the "
@@ -226,6 +244,8 @@ class LicenseSpec:
                 out[key] = val
         if self.redistributable:
             out["onwardUse"] = self.onward_use
+        if not self.derivatives:
+            out["derivatives"] = False
         if self.permissive:
             out["permissive"] = True
         if self.underlying:

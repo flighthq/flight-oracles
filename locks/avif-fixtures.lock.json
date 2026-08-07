@@ -1,0 +1,3279 @@
+{
+  "pack": {
+    "name": "avif-fixtures",
+    "kind": "conformance",
+    "summary": "The AVIF conformance corpus \u2014 five contributors' test images and sequences, each under its own declaration."
+  },
+  "sources": [
+    {
+      "id": "avif-link-u",
+      "kind": "upstream",
+      "repo": "AOMediaCodec/av1-avif",
+      "ref": "main",
+      "commit": "bf4c18d1f3971069b75e87d6ee469790589f4f09",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "CC-BY-SA-4.0",
+        "declaredScope": "directory",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "testFiles/Link-U/LICENSE.txt",
+        "covers": "Creative Commons Attribution-ShareAlike 4.0 International, contributed by Link-U. Commercial use is permitted; the share-alike condition means a derivative must carry the same terms, which is why this is not in the -permissive set.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/avif-link-u@bf4c18d1f397.txt"
+    },
+    {
+      "id": "avif-apple",
+      "kind": "upstream",
+      "repo": "AOMediaCodec/av1-avif",
+      "ref": "main",
+      "commit": "bf4c18d1f3971069b75e87d6ee469790589f4f09",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "CC-BY-SA-4.0",
+        "declaredScope": "directory",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "testFiles/Apple/license.txt",
+        "covers": "Quoting the file: 'Content is subject to CC-BY-SA-4.0 license, subject to Copyright \u00a9 2021 Apple Inc. All rights reserved.' Note the declaration names CC-BY-SA-4.0 but links to the CC-BY-4.0 legalcode \u2014 the named identifier is taken as the operative one, being the more restrictive reading of an internally inconsistent document.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/avif-apple@bf4c18d1f397.txt"
+    },
+    {
+      "id": "avif-xiph",
+      "kind": "upstream",
+      "repo": "AOMediaCodec/av1-avif",
+      "ref": "main",
+      "commit": "bf4c18d1f3971069b75e87d6ee469790589f4f09",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "CC-BY-SA-3.0",
+        "declaredScope": "directory",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "testFiles/Xiph/COPYING",
+        "covers": "CC BY-SA 3.0. The COPYING file lists each image against the Wikimedia Commons original it was encoded from, including the tiger photograph used for the layered examples.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/avif-xiph@bf4c18d1f397.txt"
+    },
+    {
+      "id": "avif-netflix",
+      "kind": "upstream",
+      "repo": "AOMediaCodec/av1-avif",
+      "ref": "main",
+      "commit": "bf4c18d1f3971069b75e87d6ee469790589f4f09",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "CC-BY-NC-ND-4.0",
+        "declaredScope": "directory",
+        "commercialUse": false,
+        "redistributable": true,
+        "declaredFrom": "testFiles/Netflix/license.txt",
+        "covers": "CC-BY-NC-ND-4.0, Netflix Inc., September 2019. Redistributable unmodified with attribution, non-commercially. The NoDerivatives term is recorded as `derivatives = false`, which the derive machinery honours.",
+        "prohibition": "The AVIF images and sequences in this folder and all intellectual property rights therein remain the property of Netflix Inc. The images and sequences are licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.",
+        "onwardUse": "non-commercial",
+        "derivatives": false
+      },
+      "licenseSnapshot": "licenses/avif-netflix@bf4c18d1f397.txt"
+    },
+    {
+      "id": "avif-microsoft",
+      "kind": "upstream",
+      "repo": "AOMediaCodec/av1-avif",
+      "ref": "main",
+      "commit": "bf4c18d1f3971069b75e87d6ee469790589f4f09",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "directory",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "declaredFrom": "testFiles/Microsoft/ReadMe.md",
+        "covers": "The directory's ReadMe states that all files carry Exif metadata and are tagged MIAF- and AVIF-Baseline-compatible, and that a 'Copyright statement, if any, is included in the Exif metadata'. It grants nothing, so nothing is claimed.",
+        "onwardUse": "unknown"
+      },
+      "licenseSnapshot": "licenses/avif-microsoft@bf4c18d1f397.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "Apple/ReadMe.md",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/ReadMe.md",
+      "sha256": "71e2463494419430a4693c649d6544b0d081b6a5aad0c4577a2cea91fd9a7e2c",
+      "size": 173
+    },
+    {
+      "path": "Apple/edge_case_testing/non_compliant/truncated_elementary_stream.avif",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/edge_case_testing/non_compliant/truncated_elementary_stream.avif",
+      "sha256": "831a1ca95606085d28fe226d953f3ec2d59cdbe1ae83a7da682a960f0a189355",
+      "size": 1999894,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Apple/edge_case_testing/non_compliant/truncated_elementary_stream.avif.txt",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/edge_case_testing/non_compliant/truncated_elementary_stream.avif.txt",
+      "sha256": "5fdd562a394c35809609dc1e49d2a8b43c65630a26635c735877809db7246280",
+      "size": 1516
+    },
+    {
+      "path": "Apple/edge_case_testing/unknown_properties/free_property.avif",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/edge_case_testing/unknown_properties/free_property.avif",
+      "sha256": "6637b906aecc85228b61b6da3899370fdd46abe44cb91cc752ec2b7fbd9dc698",
+      "size": 2064027,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Apple/edge_case_testing/unknown_properties/free_property.avif.txt",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/edge_case_testing/unknown_properties/free_property.avif.txt",
+      "sha256": "4ba6e09e24640524278816627d49138e397226b6103b090c0da54e65b45b66a4",
+      "size": 701
+    },
+    {
+      "path": "Apple/edge_case_testing/unknown_properties/unknown_nonessential_property.avif",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/edge_case_testing/unknown_properties/unknown_nonessential_property.avif",
+      "sha256": "5de42614c3142e1be4a14c0856d6db6e26cdf216f832398ea47167479e3ed8e7",
+      "size": 2064028,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Apple/edge_case_testing/unknown_properties/unknown_nonessential_property.avif.txt",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/edge_case_testing/unknown_properties/unknown_nonessential_property.avif.txt",
+      "sha256": "cacf0c0736618968e44ddd35fb5bcde50690ad7bb20d9d5005a5145ad4480939",
+      "size": 606
+    },
+    {
+      "path": "Apple/license.txt",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/license.txt",
+      "sha256": "b99a59b6a22eb747c72b2713b63b7f03a15d562aed0aff8e7697d6ad8c74f44b",
+      "size": 159
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_a1lx.avif",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_a1lx.avif",
+      "sha256": "62edad3dffbdd094d91c729cf3c599efe60a15274d283a8604affb0e3b6abcc4",
+      "size": 1999854,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_a1lx.avif.txt",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_a1lx.avif.txt",
+      "sha256": "20d799cfec644a04d93c39722261a2c1bd7e638846939511b903ecbb7dc14a4f",
+      "size": 1298
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_a1op.avif",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_a1op.avif",
+      "sha256": "5b150c2e9bdf8bde459a81d74827c1ae07dacc2684054fcac78e4a8676021743",
+      "size": 1999923,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_a1op.avif.txt",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_a1op.avif.txt",
+      "sha256": "8fb7463a642598b6244640a7caff199af53aea02eee5d86603d3799578cedb98",
+      "size": 1520
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_a1op_lsel.avif",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_a1op_lsel.avif",
+      "sha256": "8c58289820b0ab4a1345e997fbc7d697860ab1488b6f84891a414f32edef5fe4",
+      "size": 1999985,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_a1op_lsel.avif.txt",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_a1op_lsel.avif.txt",
+      "sha256": "234fc7ee343d6ab022c6f603a6308212e72b8ed8621b7b6b9f4ea7763ca171e1",
+      "size": 1553
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_grid_a1lx.avif",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_grid_a1lx.avif",
+      "sha256": "b65d38bf37acad4d91ef6b9c6a7b8e785a344db37ef248afd91cd583d54111d1",
+      "size": 2306847,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_grid_a1lx.avif.txt",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_grid_a1lx.avif.txt",
+      "sha256": "0d92855abbc08bd15370e477b05fc03c5b78f594cebf804597669b25e0692738",
+      "size": 1526
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_grid_lsel.avif",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_grid_lsel.avif",
+      "sha256": "5260c251d9f0161be51d134cbe39642357cd4d36826599d408ae5c3c88b902a1",
+      "size": 2307078,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_grid_lsel.avif.txt",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_grid_lsel.avif.txt",
+      "sha256": "23bf978bc846e1b7d69f2c6cbe724155c8cb470aedba048d3cc56a9e9a53c92c",
+      "size": 1539
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_lsel.avif",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_lsel.avif",
+      "sha256": "eae84e3e812db46af7953da1ce208e11541a362fbcfc91417bbe60b93341d588",
+      "size": 1999913,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_multilayer_lsel.avif.txt",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_multilayer_lsel.avif.txt",
+      "sha256": "02adcdedffe03826c17e41769293f1a2cbb7f6599b348b59c19b142d3fa3b4bf",
+      "size": 1336
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_singlelayer.avif",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_singlelayer.avif",
+      "sha256": "0fe539e86b5eadaf64d9049ebb195c49af6bc3f3e0e5f959f91ac296bc701f6e",
+      "size": 2064011,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Apple/multilayer_examples/animals_00_singlelayer.avif.txt",
+      "sourceId": "avif-apple",
+      "upstreamPath": "testFiles/Apple/multilayer_examples/animals_00_singlelayer.avif.txt",
+      "sha256": "2adee7c3386b93bed02efcafa301677f34a23446ba90f5a3260a85f32669202a",
+      "size": 462
+    },
+    {
+      "path": "Link-U/LICENSE.txt",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/LICENSE.txt",
+      "sha256": "da89f9867822be4b8adb1e601d9e9226c195016c6508015eb7593e68ead0c98a",
+      "size": 20130
+    },
+    {
+      "path": "Link-U/README.md",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/README.md",
+      "sha256": "49a1f779087cd2bf6d0493b649868169f265fa09243aed5153d0c0cbc7a09a5d",
+      "size": 16901
+    },
+    {
+      "path": "Link-U/fox.profile0.10bpc.yuv420.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.10bpc.yuv420.avif",
+      "sha256": "3f64c834081df61854d514fab050998cae2d236952c3f4d8c9fc18d99965c820",
+      "size": 64431,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.10bpc.yuv420.monochrome.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.10bpc.yuv420.monochrome.avif",
+      "sha256": "c711b4a89cee3b8e9094176e6aa0dbd2329922cb102f056caa73feab0c1568b2",
+      "size": 56447,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.10bpc.yuv420.monochrome.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.10bpc.yuv420.monochrome.odd-height.avif",
+      "sha256": "e38fce82ae5cdf5690b5108448c7f67ead90e433cf2ff1c4e222982b53151a3b",
+      "size": 55505,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.10bpc.yuv420.monochrome.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.10bpc.yuv420.monochrome.odd-width.avif",
+      "sha256": "b5f8946dd92df3cb4b43cc311f480958b4435fbe4a85e9e90b14f19e6c5be77e",
+      "size": 55585,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.10bpc.yuv420.monochrome.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.10bpc.yuv420.monochrome.odd-width.odd-height.avif",
+      "sha256": "6dc4376dc3bd3b39edd704af545846078783251c8a6e42fd72c42db69323dcd7",
+      "size": 54920,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.10bpc.yuv420.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.10bpc.yuv420.odd-height.avif",
+      "sha256": "1ac9799548d74f927cd167fb968f420bfc4d7a977b0914f340b336dedb48aa41",
+      "size": 63595,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.10bpc.yuv420.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.10bpc.yuv420.odd-width.avif",
+      "sha256": "eacad5269bb62bc36b10bb289902cd1d407f7aa4df0c718b2a735c25819da8ec",
+      "size": 63775,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.10bpc.yuv420.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.10bpc.yuv420.odd-width.odd-height.avif",
+      "sha256": "3f26a6ba47cb7d69e7387d182e16a663740490ae3279ee8309e77bb04e6d435e",
+      "size": 62952,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.8bpc.yuv420.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.8bpc.yuv420.avif",
+      "sha256": "d0ca9be129d6d06a65f7e852388c9d017b23bf5349af166634a6dacd567dd5e9",
+      "size": 63490,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.8bpc.yuv420.monochrome.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.8bpc.yuv420.monochrome.avif",
+      "sha256": "f13aa066c84980708bf560a19768982c4e02a2f6c3f602f5dbf5193aab80fd4c",
+      "size": 55660,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.8bpc.yuv420.monochrome.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.8bpc.yuv420.monochrome.odd-height.avif",
+      "sha256": "54798f726a12b36abaccd53b5f82c703e61bfdbbef71bee50e8ac8f0a343e0cb",
+      "size": 54707,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.8bpc.yuv420.monochrome.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.8bpc.yuv420.monochrome.odd-width.avif",
+      "sha256": "2e9726ecf6f224f65df17dc550c396c4899179baaacf67cf0f9f8bc05f8ca746",
+      "size": 54791,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.8bpc.yuv420.monochrome.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.8bpc.yuv420.monochrome.odd-width.odd-height.avif",
+      "sha256": "6e314d838380536db3fac9ba7d25a8c2f51740b47ae44e55d362e14b09e300e9",
+      "size": 54167,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.8bpc.yuv420.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.8bpc.yuv420.odd-height.avif",
+      "sha256": "b9024492e343dbc7365791f7abf20bd244d9cd040063440d5b31b54ebd6ad0bf",
+      "size": 62784,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.8bpc.yuv420.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.8bpc.yuv420.odd-width.avif",
+      "sha256": "c121b768baa0c7042bb6919f0d757d2563d89426f570e2a33601fe6fe27b5b17",
+      "size": 62868,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile0.8bpc.yuv420.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile0.8bpc.yuv420.odd-width.odd-height.avif",
+      "sha256": "707a6a17554f0d3c89af3b39df00bfacc2b38dde2e9b2ac4900c886e50f0cfc6",
+      "size": 62283,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile1.10bpc.yuv444.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile1.10bpc.yuv444.avif",
+      "sha256": "18f9c9c15c1d80401f061be7227756b63ba824f2a3b0e7fe483100faee15656e",
+      "size": 75078,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile1.10bpc.yuv444.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile1.10bpc.yuv444.odd-height.avif",
+      "sha256": "b558251d59be7c14c2bf9d83de804814cbde83a19f3ba0c84a0bddc5c59d6fb5",
+      "size": 73545,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile1.10bpc.yuv444.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile1.10bpc.yuv444.odd-width.avif",
+      "sha256": "39df79045e1ba8a6a34a2f68ac177ae4f735dd207ee70fff6ef54a37beed12d4",
+      "size": 73599,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile1.10bpc.yuv444.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile1.10bpc.yuv444.odd-width.odd-height.avif",
+      "sha256": "2d4cc284245eb17bfa2f417e062c7e52247d07b0cf857a529d5e664e1ec6a473",
+      "size": 72712,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile1.8bpc.yuv444.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile1.8bpc.yuv444.avif",
+      "sha256": "a3927fd56a620eb45bc2b563afcf6d6f413344d12c0ef9fa90020c29b390a439",
+      "size": 74235,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile1.8bpc.yuv444.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile1.8bpc.yuv444.odd-height.avif",
+      "sha256": "d467d112eba54120bc6ea59a409b34f96b23de789b3ca6a7bbb3c98982f9aa08",
+      "size": 72811,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile1.8bpc.yuv444.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile1.8bpc.yuv444.odd-width.avif",
+      "sha256": "cad06e614a7bfc105ec91832563fdd5289cd02c652d407a6049c147b43f152b5",
+      "size": 73102,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile1.8bpc.yuv444.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile1.8bpc.yuv444.odd-width.odd-height.avif",
+      "sha256": "8f466c807a2215a66d8c03786eef6bf1778bf64dabf75917d7ab62dac2aabde7",
+      "size": 72128,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.10bpc.yuv422.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.10bpc.yuv422.avif",
+      "sha256": "fc4995d5ad3ffcb36e97fcd75b4c7c0d0baf5e223016c9b8411b5680fd994357",
+      "size": 68853,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.10bpc.yuv422.monochrome.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.10bpc.yuv422.monochrome.avif",
+      "sha256": "bc49856996ed456febf3b8184b92326c77ad106159c7b65cb116d09383f8045c",
+      "size": 56443,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.10bpc.yuv422.monochrome.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.10bpc.yuv422.monochrome.odd-height.avif",
+      "sha256": "45d1461309fde3bfbea3b6d28a11680dc1bbc842ca6725aa5a4995652af4dfad",
+      "size": 55501,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.10bpc.yuv422.monochrome.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.10bpc.yuv422.monochrome.odd-width.avif",
+      "sha256": "62eb2af2954ccf58abb2d8b407d79f4cfb9a81e69575056d7c16a420ec9d760b",
+      "size": 55581,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.10bpc.yuv422.monochrome.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.10bpc.yuv422.monochrome.odd-width.odd-height.avif",
+      "sha256": "8a9e5eee8c516aee6d8e4a5eccc922291895b75d9c01dd60e9d12538c47d26d8",
+      "size": 54916,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.10bpc.yuv422.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.10bpc.yuv422.odd-height.avif",
+      "sha256": "431ab9a58a58d53744b09db2838ba68a521cfba1b7e15bbe318d93a6c5ec1cce",
+      "size": 67931,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.10bpc.yuv422.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.10bpc.yuv422.odd-width.avif",
+      "sha256": "33fde6eb75282e484c6dd77121740788e4332e08f2ae46937f3f6019f0444cc6",
+      "size": 68132,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.10bpc.yuv422.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.10bpc.yuv422.odd-width.odd-height.avif",
+      "sha256": "d4e8579baa77c3206a90ab7b68cb60eb9e3f94539e6b5cfa955d772832d3ebb5",
+      "size": 67123,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv420.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv420.avif",
+      "sha256": "a324988b58d5e2a0865aa6d9161c6a10bd73a4098e67c57db986a4adc3de41e5",
+      "size": 65017,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv420.monochrome.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv420.monochrome.avif",
+      "sha256": "498743247f72e8a50d0050faf34d030065c56ba1d93a3e42a059bd703b29309c",
+      "size": 56978,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv420.monochrome.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv420.monochrome.odd-height.avif",
+      "sha256": "b19a44f611dfc013b40ea7a4c9e92ff7d4d7cffd4aceb3b4aa9ffcaf40467cb4",
+      "size": 55888,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv420.monochrome.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv420.monochrome.odd-width.avif",
+      "sha256": "6d704062208042fe951a904c755015a4f1bb45e850116144082d04c22f87eb4f",
+      "size": 56006,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv420.monochrome.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv420.monochrome.odd-width.odd-height.avif",
+      "sha256": "05dd5aa3df65b4ad612ec8911a68eb5fbb651379dda9fce12407f4a368f1e426",
+      "size": 55263,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv420.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv420.odd-height.avif",
+      "sha256": "dca60b18a1de049e4c59591e5fd8f4a08a85cd6bf03e56c98ea6c93ce66cf890",
+      "size": 64043,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv420.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv420.odd-width.avif",
+      "sha256": "3e59eef0c08c6728e7565ee9665e274a4c6b2ba6cf048bb3db9b2995ab3072a7",
+      "size": 64120,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv420.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv420.odd-width.odd-height.avif",
+      "sha256": "cc88567c95e799a8fe1487bf4dae604228beda8eb42a76de2d93bc7a70756823",
+      "size": 63474,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv422.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv422.avif",
+      "sha256": "3e698431c62ff4018114059a07b3fd29c2eda8abdbc6143be366dcc8064ef692",
+      "size": 69383,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv422.monochrome.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv422.monochrome.avif",
+      "sha256": "498743247f72e8a50d0050faf34d030065c56ba1d93a3e42a059bd703b29309c",
+      "size": 56978,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv422.monochrome.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv422.monochrome.odd-height.avif",
+      "sha256": "b19a44f611dfc013b40ea7a4c9e92ff7d4d7cffd4aceb3b4aa9ffcaf40467cb4",
+      "size": 55888,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv422.monochrome.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv422.monochrome.odd-width.avif",
+      "sha256": "6d704062208042fe951a904c755015a4f1bb45e850116144082d04c22f87eb4f",
+      "size": 56006,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv422.monochrome.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv422.monochrome.odd-width.odd-height.avif",
+      "sha256": "05dd5aa3df65b4ad612ec8911a68eb5fbb651379dda9fce12407f4a368f1e426",
+      "size": 55263,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv422.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv422.odd-height.avif",
+      "sha256": "4a152d6b1dc66fc6951b9a77ffcb414a60d2b866e48c722de0afb534f4c3576d",
+      "size": 68121,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv422.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv422.odd-width.avif",
+      "sha256": "6e424f8d60243c0629e075ec3351914b7392363295e8ae382333a454b4fe4279",
+      "size": 68380,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv422.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv422.odd-width.odd-height.avif",
+      "sha256": "006343d1cdd7652c26514f407c57febaacc934db051aff7fd8cc088c03387911",
+      "size": 67657,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv444.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv444.avif",
+      "sha256": "f3e7adaa9d16c74837a83ee2981a95321fc375e9478183f5841d1de43b261f4c",
+      "size": 75333,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv444.monochrome.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv444.monochrome.avif",
+      "sha256": "498743247f72e8a50d0050faf34d030065c56ba1d93a3e42a059bd703b29309c",
+      "size": 56978,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv444.monochrome.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv444.monochrome.odd-height.avif",
+      "sha256": "b19a44f611dfc013b40ea7a4c9e92ff7d4d7cffd4aceb3b4aa9ffcaf40467cb4",
+      "size": 55888,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv444.monochrome.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv444.monochrome.odd-width.avif",
+      "sha256": "6d704062208042fe951a904c755015a4f1bb45e850116144082d04c22f87eb4f",
+      "size": 56006,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv444.monochrome.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv444.monochrome.odd-width.odd-height.avif",
+      "sha256": "05dd5aa3df65b4ad612ec8911a68eb5fbb651379dda9fce12407f4a368f1e426",
+      "size": 55263,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv444.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv444.odd-height.avif",
+      "sha256": "1023c39eb41dcf8b9f78786a14d5fec4157e506f670a8656f7d220566898a265",
+      "size": 74023,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv444.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv444.odd-width.avif",
+      "sha256": "20798f4b14aec4035acae34eb784a01f6b92688a6d3d4eeda920755f1fe6d539",
+      "size": 74049,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.12bpc.yuv444.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.12bpc.yuv444.odd-width.odd-height.avif",
+      "sha256": "c6825b07169a638a5e4321ad88913e64588196edc1248ad87cb62cbd3267cedb",
+      "size": 73054,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.8bpc.yuv422.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.8bpc.yuv422.avif",
+      "sha256": "80c40defdba0f04d315a8e3f4a2ddbc7f7b4ce141f77a344685b8e087f17f799",
+      "size": 67867,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.8bpc.yuv422.monochrome.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.8bpc.yuv422.monochrome.avif",
+      "sha256": "f8e2d303ad609313f57aaa23654417c58d9108f5ee0ca9a42d102117aa52434c",
+      "size": 55656,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.8bpc.yuv422.monochrome.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.8bpc.yuv422.monochrome.odd-height.avif",
+      "sha256": "2102df3333a57e65a025c97d77c90e32d708de163dec63760e1c3062d546e2bb",
+      "size": 54703,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.8bpc.yuv422.monochrome.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.8bpc.yuv422.monochrome.odd-width.avif",
+      "sha256": "535e34593fe8e21557f8aea674d78ead866cfcad82768d603589a370a24b73be",
+      "size": 54787,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.8bpc.yuv422.monochrome.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.8bpc.yuv422.monochrome.odd-width.odd-height.avif",
+      "sha256": "52f176603db5b01bb3cdbd3a5c484ee2f66b6916c1897c571e6aa44142462312",
+      "size": 54163,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.8bpc.yuv422.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.8bpc.yuv422.odd-height.avif",
+      "sha256": "cee6739403acb53c531d2ba7de858b68df3d1155f5b2770dc322cf37594bfbff",
+      "size": 67143,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.8bpc.yuv422.odd-width.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.8bpc.yuv422.odd-width.avif",
+      "sha256": "1791d2e2e4e29eba6489fd30fe776bb68da03a49d80aedaccc10851575c9a5b3",
+      "size": 67303,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/fox.profile2.8bpc.yuv422.odd-width.odd-height.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/fox.profile2.8bpc.yuv422.odd-width.odd-height.avif",
+      "sha256": "712212b75e655186fffcf54f34fb00aa0117ae1a206831a7a0c5c12d83b67047",
+      "size": 66483,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/hato.profile0.10bpc.yuv420.monochrome.no-cdef.no-restoration.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/hato.profile0.10bpc.yuv420.monochrome.no-cdef.no-restoration.avif",
+      "sha256": "60dd48e6b47c4c0f3dc69c2176da99c1f586ea103bcc3a356940e534db3bf6e4",
+      "size": 179214,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/hato.profile0.10bpc.yuv420.no-cdef.no-restoration.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/hato.profile0.10bpc.yuv420.no-cdef.no-restoration.avif",
+      "sha256": "61a93a5feb38fce45cca677e0cef08b323a548c5c1653fb267f73c448e921fb4",
+      "size": 208604,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/hato.profile0.8bpc.yuv420.monochrome.no-cdef.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/hato.profile0.8bpc.yuv420.monochrome.no-cdef.avif",
+      "sha256": "2f580de11a6a60563672372ff9fc8f6f9ed710b3b7caf83b3160291575bb6dd6",
+      "size": 177805,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/hato.profile0.8bpc.yuv420.no-cdef.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/hato.profile0.8bpc.yuv420.no-cdef.avif",
+      "sha256": "ff29cb155d2cff9667ad6d944ebd53345c782d44e57e10217d9fb2fabb3b0a2c",
+      "size": 207747,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/hato.profile2.10bpc.yuv422.monochrome.no-cdef.no-restoration.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/hato.profile2.10bpc.yuv422.monochrome.no-cdef.no-restoration.avif",
+      "sha256": "4bf8f5ed54e7e453cf07d41944df93decdbf4bee1cecf21ef9da42678750fa80",
+      "size": 179210,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/hato.profile2.10bpc.yuv422.no-cdef.no-restoration.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/hato.profile2.10bpc.yuv422.no-cdef.no-restoration.avif",
+      "sha256": "1c2225537f2307559985cebe190039fba53ce300dac6f47b324233fc8dd9876a",
+      "size": 226223,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/hato.profile2.12bpc.yuv422.monochrome.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/hato.profile2.12bpc.yuv422.monochrome.avif",
+      "sha256": "6ce8e3772935c90779d41fab456b486982ed256851064b93db47a00fe3682692",
+      "size": 231858,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/hato.profile2.12bpc.yuv422.monochrome.no-cdef.no-restoration.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/hato.profile2.12bpc.yuv422.monochrome.no-cdef.no-restoration.avif",
+      "sha256": "9e7c888308bd9cf01c312a5ff7aaa16c91b766c49e9a911aacf72f07bfb3db86",
+      "size": 227060,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/hato.profile2.12bpc.yuv422.no-cdef.no-restoration.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/hato.profile2.12bpc.yuv422.no-cdef.no-restoration.avif",
+      "sha256": "9e7c888308bd9cf01c312a5ff7aaa16c91b766c49e9a911aacf72f07bfb3db86",
+      "size": 227060,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/hato.profile2.8bpc.yuv422.monochrome.no-cdef.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/hato.profile2.8bpc.yuv422.monochrome.no-cdef.avif",
+      "sha256": "88fae92b792b67f8d14d21cbca5282df8b5f79e9a6aa30c32dbbadad1c94a575",
+      "size": 177801,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/hato.profile2.8bpc.yuv422.no-cdef.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/hato.profile2.8bpc.yuv422.no-cdef.avif",
+      "sha256": "873ac47c92dda0b5d3f967aa2963a8a15d2d9f08f8457e5e6c425ae82bfedfae",
+      "size": 226210,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/kimono.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/kimono.avif",
+      "sha256": "c2da5892f6a72b509c702b1e42d89946708f1cbc60d9bd392edfebfb58612e9f",
+      "size": 85453,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/kimono.crop.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/kimono.crop.avif",
+      "sha256": "4133f67c39a87a7dee5dbf598d480429003564c09bbbdea0b0e92a84a5bb3fa1",
+      "size": 85494,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/kimono.mirror-horizontal.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/kimono.mirror-horizontal.avif",
+      "sha256": "f52f5e886848e1eb188c883c34bb63ed54555d4273de713de430c736db28f5ca",
+      "size": 85004,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/kimono.mirror-vertical.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/kimono.mirror-vertical.avif",
+      "sha256": "e12c59acf309c33f5455f6f0c9af5f7d147d5265a3ee189a819308b7d185c7a8",
+      "size": 84640,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/kimono.mirror-vertical.rotate270.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/kimono.mirror-vertical.rotate270.avif",
+      "sha256": "b48d960e16698adbeef4950e1ab2745bdc5c688f9e2b72d549797e7e8112456b",
+      "size": 85537,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/kimono.mirror-vertical.rotate270.crop.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/kimono.mirror-vertical.rotate270.crop.avif",
+      "sha256": "daa55f4a4bcf2f64e1efdf43c50a4ffa9aa341b0941d3ad5c3765d9c488a5ad9",
+      "size": 85578,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/kimono.rotate270.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/kimono.rotate270.avif",
+      "sha256": "0a2f9b50eb374126b56dfb39912bf218d6ff760753230eae6a680de647668c83",
+      "size": 84894,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Link-U/kimono.rotate90.avif",
+      "sourceId": "avif-link-u",
+      "upstreamPath": "testFiles/Link-U/kimono.rotate90.avif",
+      "sha256": "e609c14b5915c0bcfd8f041e2bc6e5df755c8a83c9ad2f95ca0b576625d730e9",
+      "size": 84845,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/Chimera_10bit_cropped_to_1920x1008.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/Chimera_10bit_cropped_to_1920x1008.avif",
+      "sha256": "7eb3cac7667b6089e91ee6f585e6d3aed8f22038bbcef3170a6537c3307beea5",
+      "size": 95953,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/Chimera_10bit_cropped_to_1920x1008_with_HDR_metadata.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/Chimera_10bit_cropped_to_1920x1008_with_HDR_metadata.avif",
+      "sha256": "b52996d7dc8bde2145770fc1977ccd45e7faf78c561599f325b48669d5ff6aee",
+      "size": 95999,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/Chimera_8bit_cropped_480x256.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/Chimera_8bit_cropped_480x256.avif",
+      "sha256": "d86d67a6c37e61dfa34e071116daa467afe6304b9ca110ab87ba898631f262fc",
+      "size": 38534,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/Irvine_CA.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/Irvine_CA.avif",
+      "sha256": "ee9b8544668ba71e584311be8eb590d0a92464aa24aa75ab05af92ab4c9ccf4c",
+      "size": 28133,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/Mexico.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/Mexico.avif",
+      "sha256": "96bf0656417dca608ea9de0314b6e526fa8910d112ed01054d8842be1947e91f",
+      "size": 219216,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/Mexico_YUV444.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/Mexico_YUV444.avif",
+      "sha256": "0b19224abea8055ee82295bd1d1171ef18d713dff7782c70b943fbdd837c8af7",
+      "size": 158840,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/Monochrome.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/Monochrome.avif",
+      "sha256": "deeb37c2cf321d3ccacff085a6fed50cc774dd38d7ed271c15517ccd01bd7a4f",
+      "size": 7436,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/ReadMe.md",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/ReadMe.md",
+      "sha256": "0cbcdc56471ba590035a538f2ae811069a196396cd4ffda0f5d4506d99457f8d",
+      "size": 4534
+    },
+    {
+      "path": "Microsoft/Ronda_rotate90.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/Ronda_rotate90.avif",
+      "sha256": "3909699e338935e7934591c0bc20da5e698e5d968d29c29cc37c02de4576996b",
+      "size": 96412,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/Summer_Nature_4k.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/Summer_Nature_4k.avif",
+      "sha256": "bae6a3b420018fc725e862593d1c78c8261c9f734f4ce41a69c1a9906296e302",
+      "size": 280380,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/Summer_in_Tomsk_720p_5x4_grid.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/Summer_in_Tomsk_720p_5x4_grid.avif",
+      "sha256": "c9148149b108f5fbce7300903bd59937bfc4c677f2ce359668ad664adb18ec2f",
+      "size": 1964802,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/Tomsk_with_thumbnails.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/Tomsk_with_thumbnails.avif",
+      "sha256": "e1635d66a6ba59c59893a0a2f17dc4fbda89183d8f2e78919bc472091a9de6e8",
+      "size": 10864,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/bbb_4k.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/bbb_4k.avif",
+      "sha256": "5ba24612f2a7a8a6eae122e8422a723413b969bca4253ab2ce19eb65e3e15abf",
+      "size": 31605,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/bbb_alpha_inverted.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/bbb_alpha_inverted.avif",
+      "sha256": "83d68084a93f043a89d10373f0ca26dafc988eec811b8076cabb2ff1580c1817",
+      "size": 8468,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/kids_720p.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/kids_720p.avif",
+      "sha256": "a68913ccfff7194f0de62de88e09b2d0b65df463aa98d00df068e17436759c98",
+      "size": 57637,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/reduced_still_picture_header.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/reduced_still_picture_header.avif",
+      "sha256": "89e803ae15fa438bcce2b955c36b174b836daf93a1fff9187bb9ee0ec1b2f5a7",
+      "size": 8077,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Microsoft/still_picture.avif",
+      "sourceId": "avif-microsoft",
+      "upstreamPath": "testFiles/Microsoft/still_picture.avif",
+      "sha256": "6f06c9fb62908bff0165dcbd3e51b143cc80619f46b41b382f8cf6e634b009bd",
+      "size": 8087,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/ReadMe.txt",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/ReadMe.txt",
+      "sha256": "0b713790b0e37098bb954eb3c1d18a873da0ceb44c54dc57729f85551fa4d359",
+      "size": 913
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01000_cicp9-16-0_lossless.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01000_cicp9-16-0_lossless.avif",
+      "sha256": "efe30713c631bab92b3cdfee9e20a655af239e9bf77a3a900e619e314e792ee1",
+      "size": 2030588,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv420_limited_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv420_limited_qp10.avif",
+      "sha256": "7795531dda81d609b47c2172ad543750bda1bf576c5da9f040bd81127a2040fc",
+      "size": 92521,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv420_limited_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv420_limited_qp20.avif",
+      "sha256": "f19e45e9ca910f88ecb8688b146acf4c7cd8508d763b271b8b98b2ba39808f99",
+      "size": 33221,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv420_limited_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv420_limited_qp40.avif",
+      "sha256": "f5a675c7bc8751a6aef568ab6104ef2095216c49f18ad847cf3433f4c92ace7a",
+      "size": 9829,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv444_full_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv444_full_qp10.avif",
+      "sha256": "d44f67cb7f486cc28b40c9d53e9c32bff682ce4112686e2afbb3b98518e3d8d1",
+      "size": 129753,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv444_full_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv444_full_qp20.avif",
+      "sha256": "0ff73370168218ed8f9e4dfa55ee76bbbe41fed108bd5b4755b81f8a942ec5b2",
+      "size": 45928,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv444_full_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01000_cicp9-16-9_yuv444_full_qp40.avif",
+      "sha256": "81e166029297a08a8567d9c2ba101370fac8beadfc1bcd9e9a63c93c0330a2c1",
+      "size": 12877,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01650_cicp9-16-0_lossless.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01650_cicp9-16-0_lossless.avif",
+      "sha256": "2277a25e7bb885025d1961ebfcc8a76a307dbf6880b14ad6c2f6f3186994908b",
+      "size": 2865365,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv420_limited_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv420_limited_qp10.avif",
+      "sha256": "0443f241d7ad943a375bfb8526320e7a1862069dbcacb94ff8605678f77b9190",
+      "size": 260971,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv420_limited_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv420_limited_qp20.avif",
+      "sha256": "f4fc726a65a98fc287302e5978bedca18c9afbacd2ef065c216beb39aac8efd5",
+      "size": 130675,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv420_limited_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv420_limited_qp40.avif",
+      "sha256": "9614281cac5ddccc71203d56676bbc1e00c5bcf86b761b5f96e337a0252c2ae3",
+      "size": 29861,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv444_full_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv444_full_qp10.avif",
+      "sha256": "bd4d2a48236476efb42e6b9720901fd8882b19037f7b303e4560ec8cc58722b7",
+      "size": 372351,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv444_full_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv444_full_qp20.avif",
+      "sha256": "4f27ee3801f9d493643272aa27d57e6d4ff756ba384d71efd4c7e0fbd217c2c7",
+      "size": 174218,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv444_full_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos01650_cicp9-16-9_yuv444_full_qp40.avif",
+      "sha256": "1e2be80543dbdc8c0224f8ee7c7a5bc7da335ae2703293f78dcdae7976934779",
+      "size": 39817,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos07296_cicp9-16-0_lossless.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos07296_cicp9-16-0_lossless.avif",
+      "sha256": "f230919fc4d05c2b89578439c8c07ea8c068478a1136576ccb465973bcf9bdec",
+      "size": 2164578,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv420_limited_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv420_limited_qp10.avif",
+      "sha256": "09040b7716af83969860d6b1fe65e152750179e6a4468a2e4527b5c4f6c65540",
+      "size": 124511,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv420_limited_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv420_limited_qp20.avif",
+      "sha256": "5ca3f9ed072a82ce7add0b3b7929d9e18b5531e1d86e2faf734564727aa4926d",
+      "size": 40641,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv420_limited_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv420_limited_qp40.avif",
+      "sha256": "fd2fdb813d8a0754b12ee098664c0c5dd414dad95b31ee407b7eb79d3cecda78",
+      "size": 8156,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv444_full_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv444_full_qp10.avif",
+      "sha256": "1210244c1775151112c6f4855f0b85f630f4bb4fcbf1ec3b1ec6d4df83baf3c0",
+      "size": 204675,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv444_full_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv444_full_qp20.avif",
+      "sha256": "f078053d4dbd1660ff2fa3c0910e72eb3cbca503ca4ec8ce5041536f600b554c",
+      "size": 62255,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv444_full_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos07296_cicp9-16-9_yuv444_full_qp40.avif",
+      "sha256": "5f26fe74b98fc68664f84baeb7da7cb7e6238ae536985055bbd5f4179c2b5227",
+      "size": 11506,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos12920_cicp9-16-0_lossless.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos12920_cicp9-16-0_lossless.avif",
+      "sha256": "32c6a29af2929c82342026596ad7b3c20487bc74cede6daa0ed7a2f0626d5342",
+      "size": 3055393,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv420_limited_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv420_limited_qp10.avif",
+      "sha256": "579cb4d0dc4de40b3ba9b1034ddec780c85936e0185fef3e9101f5efb7948922",
+      "size": 96215,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv420_limited_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv420_limited_qp20.avif",
+      "sha256": "3ea2f5bcd71221baeeca6ad54416b9b94200ce9dec269ca1af967f856d9a3e30",
+      "size": 47401,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv420_limited_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv420_limited_qp40.avif",
+      "sha256": "24e388fe9d67bcbfc7d9626b4b3e8a91fdd0bbc64064a11046137f2afdae5790",
+      "size": 16811,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv444_full_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv444_full_qp10.avif",
+      "sha256": "10250dbe9786b992cd54b6e7120131004feab0a7241e1d285b190b8c9c410d10",
+      "size": 143932,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv444_full_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv444_full_qp20.avif",
+      "sha256": "49f23c3e75019995dc463af6c6844727a110343afc3b85fb56427195abd32e68",
+      "size": 66522,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv444_full_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/hdr_cosmos12920_cicp9-16-9_yuv444_full_qp40.avif",
+      "sha256": "c5481c9026d58059f65355f85d886dc1bddca4f937c5c537552ea61bb300b405",
+      "size": 23737,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01000_cicp1-13-0_lossless.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01000_cicp1-13-0_lossless.avif",
+      "sha256": "755c22689781eaa5492847c5fee9553247826c0f22aa36d3a05a8373857c4b24",
+      "size": 1323664,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv420_limited_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv420_limited_qp10.avif",
+      "sha256": "8b5ca69bbbe56cbe048a0dc6b400cdfa00e5cccef4ac106db475d9b0c22a1678",
+      "size": 92169,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv420_limited_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv420_limited_qp20.avif",
+      "sha256": "863674b20b1eda54bf69d077be088f605a00e280757be707be8e4910ca6d3c50",
+      "size": 44620,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv420_limited_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv420_limited_qp40.avif",
+      "sha256": "a8b8a5707bf0c09701a49802772a9b2a645baa212f329429dd9f9c5275796a69",
+      "size": 12486,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv444_full_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv444_full_qp10.avif",
+      "sha256": "104d3b1764d74405964b09ec368718ff18cdb32cb184ced2ad46dced6def2997",
+      "size": 129970,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv444_full_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv444_full_qp20.avif",
+      "sha256": "5a7693c7626e839635939a6e9c250a23d1c869bdfb3a83e5404350477ebf6cf5",
+      "size": 62208,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv444_full_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01000_cicp1-13-6_yuv444_full_qp40.avif",
+      "sha256": "87bdf7f8956811f68dc3fc425b87a28fefd86ee1cccb4e44ebb8c3888cddfff2",
+      "size": 17026,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01650_cicp1-13-0_lossless.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01650_cicp1-13-0_lossless.avif",
+      "sha256": "70362627728e557484956e8371df8e2044bbd314de5f6de2ac366ba244d5ef0d",
+      "size": 1734703,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv420_limited_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv420_limited_qp10.avif",
+      "sha256": "fa823ece333eb45964bac04bea6edc014ac298391149f8aba9fe7d050fe522b8",
+      "size": 246807,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv420_limited_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv420_limited_qp20.avif",
+      "sha256": "887d042a8809e7e5ffc6a4c88fd49780ef21f65a43ea4592b5283e606e2ebe2d",
+      "size": 129204,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv420_limited_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv420_limited_qp40.avif",
+      "sha256": "6c769830d96c1f6da53abe7317b2a7ad026dec0b4a6802bc4fa2a453fd054d72",
+      "size": 39491,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv444_full_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv444_full_qp10.avif",
+      "sha256": "2bf9e265007d72fd5090ab2e685f21649fac9396c8885de6daee4a817c3a332d",
+      "size": 371091,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv444_full_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv444_full_qp20.avif",
+      "sha256": "64f1bfad9e3f4202621945b808e044d8f9d3a4a5e9d1b109ff4f4c85bc1d40c7",
+      "size": 188194,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv444_full_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos01650_cicp1-13-6_yuv444_full_qp40.avif",
+      "sha256": "709d49975147e187c348299ee289da9ed86166081950e70835a100c9fd537a62",
+      "size": 53323,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos07296_cicp1-13-0_lossless.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos07296_cicp1-13-0_lossless.avif",
+      "sha256": "ac8f2dd37d71e190e9e6b865357fa2093ab87658c9f615770c03d9dff8bb1413",
+      "size": 1389530,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv420_limited_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv420_limited_qp10.avif",
+      "sha256": "6cff593a02620a4e97f529f30811e42932b6879ecdfc4c33125dd9f8538e01a3",
+      "size": 131785,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv420_limited_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv420_limited_qp20.avif",
+      "sha256": "daaaf3fb8dbd06c9fdb97a3e606a367802e9df69a7b602dfbfa795347fb36b13",
+      "size": 62620,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv420_limited_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv420_limited_qp40.avif",
+      "sha256": "54fe6bc2d3ce22f7c117d46ea86bb561f9e7973b6c90816c844c078b062ef3f0",
+      "size": 15309,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv444_full_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv444_full_qp10.avif",
+      "sha256": "0a21080e9fd3a7b2afaff58961eab14eeb2d3f24cb80a751ec0bd42fb9ede1bb",
+      "size": 282720,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv444_full_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv444_full_qp20.avif",
+      "sha256": "802a25286d483b2b01f4ac8a8f52326d5bb5b2c5de919437f8e88219a2a1aa21",
+      "size": 134576,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv444_full_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos07296_cicp1-13-6_yuv444_full_qp40.avif",
+      "sha256": "21ee2b347aad5bb62d926a388929f01f42ddb3072ec29a4694eb94b1995b7a5f",
+      "size": 24852,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos12920_cicp1-13-0_lossless.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos12920_cicp1-13-0_lossless.avif",
+      "sha256": "ba8b86be139f9c3a26612bdc1c0481e5ad122af6841c5dd187705d63b59676f2",
+      "size": 2062135,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv420_limited_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv420_limited_qp10.avif",
+      "sha256": "c7b2d21c31cbac71f20e0b8e27956ec27245d74ee0a981705b1be5fae471ca4f",
+      "size": 153857,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv420_limited_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv420_limited_qp20.avif",
+      "sha256": "ddc1e051f4c9ceda84f6819c92b518b9d3d7de29ac75fa605b963fadc63a1043",
+      "size": 75516,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv420_limited_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv420_limited_qp40.avif",
+      "sha256": "21728e6f55329f1bd84bf8c257d66ac05b1db0bef4a35fd0103e1b9e9cf28260",
+      "size": 27700,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1B"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv444_full_qp10.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv444_full_qp10.avif",
+      "sha256": "f6b6be6163f131dd7e3450db12ef3cb9e48d66acca3b79ef06b79954e8769b43",
+      "size": 285949,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv444_full_qp20.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv444_full_qp20.avif",
+      "sha256": "f555968debcfaaef324249a5db2f28bcc7fd86a46317321d37fe9f17e5c68b8a",
+      "size": 120160,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv444_full_qp40.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avif/sdr_cosmos12920_cicp1-13-6_yuv444_full_qp40.avif",
+      "sha256": "48f69d80128090d4445821fd92cadbc85e21a31e53a544371752e167242bfa2e",
+      "size": 42188,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "avif",
+          "mif1",
+          "miaf",
+          "MA1A"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avis/Chimera-AV1-10bit-480x270.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avis/Chimera-AV1-10bit-480x270.avif",
+      "sha256": "513349266e01f49a78b74842f20b7b3fffbe04b2ae052daebdd88ea35719624a",
+      "size": 164551,
+      "format": {
+        "kind": "avif-sequence",
+        "version": null,
+        "majorBrand": "avis",
+        "compatibleBrands": [
+          "avis",
+          "msf1",
+          "miaf",
+          "MA1B",
+          "iso8"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/avis/alpha_video.avif",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/avis/alpha_video.avif",
+      "sha256": "493d6325d1981f7c98074266f91c5119599271396f6e9a0670c16904ead9113d",
+      "size": 10743,
+      "format": {
+        "kind": "avif-sequence",
+        "version": null,
+        "majorBrand": "avis",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "av01",
+          "avis",
+          "msf1",
+          "miaf",
+          "MA1B",
+          "iso8"
+        ]
+      }
+    },
+    {
+      "path": "Netflix/license.txt",
+      "sourceId": "avif-netflix",
+      "upstreamPath": "testFiles/Netflix/license.txt",
+      "sha256": "0a8fd815c667eb7e186e08c2717a088bbc7de8d9642ab01bb2f306fa466f76e2",
+      "size": 474
+    },
+    {
+      "path": "Xiph/COPYING",
+      "sourceId": "avif-xiph",
+      "upstreamPath": "testFiles/Xiph/COPYING",
+      "sha256": "020bcef61e1829f4ed8b2e1ac34b8850d9266296fc695f45577f46ca1da03d02",
+      "size": 578
+    },
+    {
+      "path": "Xiph/README.md",
+      "sourceId": "avif-xiph",
+      "upstreamPath": "testFiles/Xiph/README.md",
+      "sha256": "ebf36a0489ac6495c6d11645aa6cfdc102d0d2911995f89165011fce384919a2",
+      "size": 2463
+    },
+    {
+      "path": "Xiph/abandoned_filmgrain.avif",
+      "sourceId": "avif-xiph",
+      "upstreamPath": "testFiles/Xiph/abandoned_filmgrain.avif",
+      "sha256": "d7c35d24ec249c2c8ed5361995b0dad11dbda9a0f565a574154fc7cbc5e5bcb2",
+      "size": 141549,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Xiph/fruits_2layer_thumbsize.avif",
+      "sourceId": "avif-xiph",
+      "upstreamPath": "testFiles/Xiph/fruits_2layer_thumbsize.avif",
+      "sha256": "50946ccc489beec9e649f8f6bb63a18582043218afd1c1ee0df4c2cdf72b7e22",
+      "size": 35527,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Xiph/quebec_3layer_op2.avif",
+      "sourceId": "avif-xiph",
+      "upstreamPath": "testFiles/Xiph/quebec_3layer_op2.avif",
+      "sha256": "d7baadb0f75d230dabeb9b376bbb75ab15dbe1e05ad92b7487937815f21daa25",
+      "size": 86653,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Xiph/tiger_3layer_1res.avif",
+      "sourceId": "avif-xiph",
+      "upstreamPath": "testFiles/Xiph/tiger_3layer_1res.avif",
+      "sha256": "46cb55301f5d4a36a72c8c00f1d7e10c6c9ae0297811dc0f38a26a0285daa316",
+      "size": 70975,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    },
+    {
+      "path": "Xiph/tiger_3layer_3res.avif",
+      "sourceId": "avif-xiph",
+      "upstreamPath": "testFiles/Xiph/tiger_3layer_3res.avif",
+      "sha256": "ffe6d8f7f1d027c49425068ab4acddab99e5fd1fdacfd61a74b25a47e9849fad",
+      "size": 65012,
+      "format": {
+        "kind": "avif",
+        "version": null,
+        "majorBrand": "avif",
+        "compatibleBrands": [
+          "mif1",
+          "avif",
+          "miaf"
+        ]
+      }
+    }
+  ],
+  "totals": {
+    "files": 191,
+    "bytes": 53064607
+  }
+}

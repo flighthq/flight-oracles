@@ -671,6 +671,24 @@ class TestSpecValidation(unittest.TestCase):
         lic = self._license(underlying=[{"declared": "X", "note": "n", "declaredFrom": "L.md"}])
         self.assertEqual(lic.to_json()["underlying"][0]["declaredFrom"], "L.md")
 
+    def test_no_derivatives_is_distinct_from_no_redistribution(self):
+        # Netflix's AVIF contributions are CC-BY-NC-ND: carry the file, do not modify it.
+        # Collapsing that into `redistributable = false` would refuse material we are
+        # plainly permitted to vendor, so it is its own field.
+        lic = self._license(declared="CC-BY-NC-ND-4.0", commercial_use=False,
+                            onward_use="non-commercial", derivatives=False,
+                            prohibition="licensed under CC BY-NC-ND 4.0")
+        self.assertTrue(lic.redistributable)
+        self.assertIs(lic.to_json()["derivatives"], False)
+        # And a permissive source does not carry the key at all, so the absence means
+        # "unrestricted" rather than "unspecified".
+        self.assertNotIn("derivatives", self._license(declared="MIT").to_json())
+
+    def test_no_derivatives_requires_the_clause_that_says_so(self):
+        with self.assertRaises(ValueError) as caught:
+            self._license(declared="CC-BY-NC-ND-4.0", derivatives=False)
+        self.assertIn("prohibition", str(caught.exception))
+
     def test_recovered_source_cannot_claim_a_declaration(self):
         # A recovered file has no upstream asserting anything; claiming MIT would be
         # inventing a declaration that nobody made.

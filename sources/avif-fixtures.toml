@@ -1,0 +1,148 @@
+# avif-fixtures — AV1 still images and image sequences.
+#
+# `image-codec-fixtures` holds two AVIF files. AVIF is the format browsers spent five years
+# adopting and the one most likely to be met by anything decoding images today, so two is
+# not coverage — it is a smoke test.
+#
+# FIVE CONTRIBUTORS, FIVE DECLARATIONS, and this is the sharpest example in the repository
+# of why the `[[source]]` block is the unit of licence rather than the pack. The repository
+# is BSD-2-Clause. Almost none of the images are:
+#
+#   Apple      CC-BY-SA-4.0
+#   Link-U     CC-BY-SA-4.0
+#   Xiph       CC-BY-SA-3.0, per file, traced back to Wikimedia originals
+#   Netflix    CC-BY-NC-ND-4.0  <- non-commercial AND no-derivatives
+#   Microsoft  nothing at all; the ReadMe says copyright sits in each file's Exif metadata
+#
+# A single pack-level declaration would have had to be either the repository's BSD — which
+# no contributor granted for their images — or the most restrictive one, which would
+# understate four of the five. Neither is what anyone said.
+#
+# NETFLIX'S ND CLAUSE ADDED A FIELD TO THIS PIPELINE. CC-BY-NC-ND permits redistribution of
+# the file unmodified but forbids derivative works, and `malformed-fixtures` exists to make
+# derivative works — truncations, bit flips, header damage. `redistributable = false` would
+# have been wrong (we may plainly carry these), and saying nothing would have left a
+# machine-readable gap that the derive machinery would eventually walk into silently. So
+# `license.derivatives = false` now exists, ingest refuses to derive from a source carrying
+# it, and the clause is quoted in `prohibition` so the refusal comes with a reason.
+#
+# REFERENCE PNGs ARE NOT TAKEN: 301 MB of them against 52 MB of AVIF, and Netflix's alone
+# are 246 MB. They are genuine per-file oracles and the one-line `include` that brings them
+# back is left obvious — but a pack that is 85% expected-output PNG for a format whose whole
+# point is that it is smaller than PNG is the wrong trade by default.
+
+[pack]
+name = "avif-fixtures"
+kind = "conformance"
+summary = "The AVIF conformance corpus — five contributors' test images and sequences, each under its own declaration."
+
+# Depth: 83 files systematically covering bit depths, chroma subsampling, alpha, and the
+# grid/derived-image constructions that are AVIF's most-misread feature.
+[[source]]
+id = "avif-link-u"
+kind = "upstream"
+repo = "AOMediaCodec/av1-avif"
+ref = "main"
+fetch = "blobs"
+subtree = "testFiles"
+include = ["testFiles/Link-U/**/*.avif", "testFiles/Link-U/LICENSE.txt",
+           "testFiles/Link-U/README.md"]
+strip = "testFiles/"
+dest = ""
+
+[source.license]
+declared = "CC-BY-SA-4.0"
+declared_scope = "directory"
+declared_from = "testFiles/Link-U/LICENSE.txt"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Creative Commons Attribution-ShareAlike 4.0 International, contributed by Link-U. Commercial use is permitted; the share-alike condition means a derivative must carry the same terms, which is why this is not in the -permissive set."
+
+# Apple's contribution, including the multi-layer examples — AVIF's progressive and
+# layered-image forms, which a decoder written for single-layer files renders as the base
+# layer and reports success.
+[[source]]
+id = "avif-apple"
+kind = "upstream"
+repo = "AOMediaCodec/av1-avif"
+ref = "main"
+fetch = "blobs"
+subtree = "testFiles"
+include = ["testFiles/Apple/**/*.avif", "testFiles/Apple/**/*.txt", "testFiles/Apple/**/*.md"]
+strip = "testFiles/"
+dest = ""
+
+[source.license]
+declared = "CC-BY-SA-4.0"
+declared_scope = "directory"
+declared_from = "testFiles/Apple/license.txt"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Quoting the file: 'Content is subject to CC-BY-SA-4.0 license, subject to Copyright © 2021 Apple Inc. All rights reserved.' Note the declaration names CC-BY-SA-4.0 but links to the CC-BY-4.0 legalcode — the named identifier is taken as the operative one, being the more restrictive reading of an internally inconsistent document."
+
+# Xiph's, whose COPYING traces each image back to its Wikimedia original — the most careful
+# per-file provenance any contributor here supplied.
+[[source]]
+id = "avif-xiph"
+kind = "upstream"
+repo = "AOMediaCodec/av1-avif"
+ref = "main"
+fetch = "blobs"
+subtree = "testFiles"
+include = ["testFiles/Xiph/**/*.avif", "testFiles/Xiph/COPYING", "testFiles/Xiph/README.md"]
+strip = "testFiles/"
+dest = ""
+
+[source.license]
+declared = "CC-BY-SA-3.0"
+declared_scope = "directory"
+declared_from = "testFiles/Xiph/COPYING"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "CC BY-SA 3.0. The COPYING file lists each image against the Wikimedia Commons original it was encoded from, including the tiger photograph used for the layered examples."
+
+# Netflix: the most restrictive declaration in this repository, and the reason
+# `license.derivatives` exists. Includes the `avis` image-sequence brand, which nothing else
+# here carries at volume.
+[[source]]
+id = "avif-netflix"
+kind = "upstream"
+repo = "AOMediaCodec/av1-avif"
+ref = "main"
+fetch = "blobs"
+subtree = "testFiles"
+include = ["testFiles/Netflix/**/*.avif", "testFiles/Netflix/*.txt"]
+strip = "testFiles/"
+dest = ""
+
+[source.license]
+declared = "CC-BY-NC-ND-4.0"
+declared_scope = "directory"
+declared_from = "testFiles/Netflix/license.txt"
+commercial_use = false
+onward_use = "non-commercial"
+derivatives = false
+prohibition = "The AVIF images and sequences in this folder and all intellectual property rights therein remain the property of Netflix Inc. The images and sequences are licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License."
+covers = "CC-BY-NC-ND-4.0, Netflix Inc., September 2019. Redistributable unmodified with attribution, non-commercially. The NoDerivatives term is recorded as `derivatives = false`, which the derive machinery honours."
+
+# Microsoft's, declared UNKNOWN because that is what the directory says: the ReadMe notes
+# only that each file carries its copyright statement in Exif metadata, which is a place to
+# look rather than a grant.
+[[source]]
+id = "avif-microsoft"
+kind = "upstream"
+repo = "AOMediaCodec/av1-avif"
+ref = "main"
+fetch = "blobs"
+subtree = "testFiles"
+include = ["testFiles/Microsoft/**/*.avif", "testFiles/Microsoft/ReadMe.md"]
+strip = "testFiles/"
+dest = ""
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "directory"
+declared_from = "testFiles/Microsoft/ReadMe.md"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "The directory's ReadMe states that all files carry Exif metadata and are tagged MIAF- and AVIF-Baseline-compatible, and that a 'Copyright statement, if any, is included in the Exif metadata'. It grants nothing, so nothing is claimed."
