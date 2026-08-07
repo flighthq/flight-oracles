@@ -271,3 +271,74 @@ declared_from = "fonts/baseline-diagnostic/LICENSE.md"
 commercial_use = true
 onward_use = "unrestricted"
 covers = "SIL Open Font License 1.1, Copyright (c) 2026 Sajid Anwar. A font for validating baseline alignment, whose README documents the metrics each baseline is set to."
+
+# ---------------------------------------------------------------------------------------
+# The outline formats that predate sfnt, and the bitmap formats that never used it.
+#
+# Everything above this line is sfnt or a wrapper around one. That is the modern world and
+# not the whole one: a decoder meeting real input still runs into Type 1 (`.pfa`, `.pfb`),
+# bare CFF, Macintosh resource forks, and — still very much alive on Linux — BDF and PCF.
+#
+# fontTools supplies the PostScript side under a clean MIT grant, including the two Type 1
+# framings that are genuinely different files rather than one format with two extensions:
+# `.pfa` is ASCII-hex PostScript, `.pfb` is the same data in length-prefixed binary
+# segments. A reader that handles one and assumes the other is text has a bug that only
+# shows on half its input.
+[[source]]
+id = "fonttools-postscript"
+kind = "upstream"
+repo = "fonttools/fonttools"
+ref = "main"
+fetch = "blobs"
+subtree = "Tests"
+include = [
+  "Tests/t1Lib/data/*.pfa",
+  "Tests/t1Lib/data/*.pfb",
+  "Tests/cffLib/data/*.cff",
+  "Tests/cffLib/data/*.otf",
+  "Tests/ttx/data/*.dfont",
+  "Tests/ttx/data/*.ttc",
+  "Tests/ttx/data/*.woff",
+  "Tests/ttx/data/*.woff2",
+]
+strip = "Tests/"
+dest = "fonttools/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "MIT, Copyright (c) 2017 Just van Rossum and contributors. These are fontTools' own regression fonts, several of them purpose-built minimal cases."
+
+# Bitmap fonts, from a converter whose whole job is reading all of them. BDF and PCF are
+# the X11 pair still shipped by every Linux distribution; Windows FNT/FON, Mac dfont, DOS
+# CPI codepages and OTB round it out.
+#
+# ONE COLLISION WORTH THE WHOLE BLOCK: `.fnt` here is Windows' bitmap font resource, and
+# `.fnt` in bitmapfont-fixtures is AngelCode BMFont's text descriptor. Same extension, no
+# relationship at all — a third instance of the trap `.ase` and `.abc` already set, and the
+# reason detection in this repository reads content rather than filenames.
+#
+# The `4x6.clt` and `4x6.imageset` directories are excluded: 1,838 single-glyph PNGs
+# expressing one font, which is a real serialisation but not 1,838 files' worth of coverage.
+[[source]]
+id = "monobit-bitmap-fonts"
+kind = "upstream"
+repo = "robhagemans/monobit"
+ref = "master"
+fetch = "blobs"
+subtree = "tests/fonts"
+include = ["tests/fonts/**"]
+exclude_paths = ["tests/fonts/4x6.clt/**", "tests/fonts/4x6.imageset/**"]
+strip = "tests/fonts/"
+dest = "bitmap/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "MIT, Copyright (c) 2019-2024 Rob Hagemans, over monobit and its test corpus. The corpus includes long-circulated bitmap faces (Computer Modern, System Fixed, Hershey vectors) gathered as conversion regression material and not separately declared."

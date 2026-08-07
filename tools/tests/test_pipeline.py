@@ -557,6 +557,43 @@ class TestFormats(unittest.TestCase):
         self.assertEqual(formats.detect(b"\x3b", "empty.compressed.07")["kind"], "brotli")
         self.assertIsNone(formats.detect(b"\x1b\x3f\x01\x00", "mystery.bin"))
 
+    def test_astc_records_the_block_footprint_and_the_declared_size(self):
+        def astc(bx, by, w, h, d=1):
+            return (b"\x13\xab\xa1\x5c" + bytes([bx, by, 1])
+                    + w.to_bytes(3, "little") + h.to_bytes(3, "little")
+                    + d.to_bytes(3, "little"))
+        info = formats.detect(astc(6, 6, 64, 32), "t.astc")
+        self.assertEqual((info["kind"], info["blockFootprint"]), ("astc", "6x6"))
+        self.assertEqual((info["width"], info["height"]), (64, 32))
+        # ARM's `negative_overflow.astc` is 32 bytes declaring 16777215 in every dimension.
+        # Recording the header is what makes an allocation bomb visible in the lock rather
+        # than only at decode time.
+        bomb = formats.detect(astc(1, 1, 0xFFFFFF, 0xFFFFFF), "negative_overflow.astc")
+        self.assertEqual(bomb["width"], 16777215)
+        self.assertIsNone(formats.detect(b"\x00\x00\x00\x00" + b"\x00" * 12, "bad.astc"))
+
+    def test_signature_table_covers_the_bitmap_font_tail(self):
+        cases = [
+            (b"STARTFONT 2.1\nFONT -misc", "a.bdf", "bdf", "2.1"),
+            (b"\x01fcp" + struct.pack("<I", 9), "a.pcf", "pcf", None),
+            (b"\x72\xb5\x4a\x86" + b"\x00" * 8, "a.psf", "psf", "2"),
+            (b"\x36\x04" + b"\x00" * 8, "a.psf", "psf", "1"),
+        ]
+        for blob, name, kind, version in cases:
+            info = formats.detect(blob, name)
+            self.assertEqual(info["kind"], kind, name)
+            if version:
+                self.assertEqual(info["version"], version)
+
+    def test_type1_framings_are_different_files_not_one_format(self):
+        # .pfa is ASCII-hex PostScript; .pfb is the same data in length-prefixed binary
+        # segments. A reader that handles one and assumes the other is text is wrong on
+        # half its input, so the framing is recorded.
+        pfa = formats.detect(b"%!FontType1-1.1: Test\n", "a.pfa")
+        self.assertEqual((pfa["kind"], pfa["framing"]), ("type1", "pfa"))
+        pfb = formats.detect(b"\x80\x01\xe6\x02\x00\x00%!FontType1-1.1", "a.pfb")
+        self.assertEqual((pfb["kind"], pfb["framing"]), ("type1", "pfb"))
+
     def test_ttx_is_identified_as_more_than_generic_xml(self):
         doc = (b'<?xml version="1.0" encoding="UTF-8"?>\n'
                b'<ttFont sfntVersion="\\x00\\x01\\x00\\x00" ttLibVersion="4.41">\n'

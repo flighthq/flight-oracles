@@ -1350,6 +1350,81 @@ def _gzip(data: bytes):
     return info
 
 
+def _astc(data: bytes):
+    """ARM ASTC: a magic, the block footprint, then the dimensions as 24-bit integers.
+
+    The block footprint is the whole point of the format — the same image at 4x4 and 12x12
+    is a different compression ratio and a different decoder path — so it is recorded
+    rather than the file merely being called "astc".
+    """
+    if not data.startswith(b"\x13\xab\xa1\x5c") or len(data) < 16:
+        return None
+    bx, by, bz = data[4], data[5], data[6]
+    dims = [int.from_bytes(data[i:i + 3], "little") for i in (7, 10, 13)]
+    info = FormatInfo(kind="astc", version=None,
+                      blockFootprint=f"{bx}x{by}" if bz == 1 else f"{bx}x{by}x{bz}",
+                      width=dims[0], height=dims[1])
+    if dims[2] > 1:
+        info["depth"] = dims[2]
+    return info
+
+
+# Formats whose identification is a magic number and nothing more. Kept as a table because
+# twenty near-identical functions is twenty places to make the same mistake, and because the
+# bitmap-font corpus alone contributes a dozen of them.
+#
+# Order matters only where one signature prefixes another; none of these do.
+_SIGNATURES = (
+    # bitmap and vector fonts
+    (b"STARTFONT ", "bdf"),
+    (b"\x01fcp", "pcf"),
+    (b"\x72\xb5\x4a\x86", "psf"),           # PSF2
+    (b"\x36\x04", "psf"),                   # PSF1
+    (b"HBF_START_FONT", "hbf"),
+    (b"flf2a", "figlet"),
+    (b"PILfont\n", "pilfont"),
+    (b"XBIN\x1a", "xbin"),
+    (b"\x7fDRFONT ", "cpi"),
+    (b"\xffFONT   ", "cpi"),
+    (b"\xffFONT.NT", "cpi"),
+    (b"%!PS-AdobeFont", "type1"),
+    (b"%!FontType1", "type1"),
+    (b"%!PS-Adobe", "postscript"),
+    (b"\x80\x01", "type1"),                 # PFB: a segment header, not a text file
+    # TeX
+    (b"\xf7\x83", "gf"),                    # METAFONT generic font
+    (b"\xf7\x59", "pk"),                    # packed font
+    # archives, which several corpora use as containers for fonts
+    (b"7z\xbc\xaf\x27\x1c", "7z"),
+    (b"Rar!\x1a\x07", "rar"),
+    (b"MSCF", "cab"),
+    (b"MZ", "dos-executable"),              # .fon is a bitmap font inside one
+    (b"!<arch>\n", "ar"),
+    (b"07070", "cpio"),
+    # misc
+    (b"AH\xdf", "drhalo"),
+    (b"ZapFont\r\n", "zapfont"),
+)
+
+
+def _by_signature(data: bytes):
+    for magic, kind in _SIGNATURES:
+        if data.startswith(magic):
+            info = FormatInfo(kind=kind, version=None)
+            if kind == "bdf":
+                # "STARTFONT 2.1" — the version is the rest of the first line.
+                info["version"] = data[10:20].split(b"\n")[0].strip().decode(
+                    "latin-1", "replace") or None
+            elif kind == "pcf" and len(data) >= 8:
+                info["tableCount"] = struct.unpack("<I", data[4:8])[0]
+            elif kind == "psf":
+                info["version"] = "2" if data.startswith(b"\x72") else "1"
+            elif kind == "type1":
+                info["framing"] = "pfb" if data.startswith(b"\x80") else "pfa"
+            return info
+    return None
+
+
 def _zstd(data: bytes):
     """Zstandard: a frame magic, and a header byte that says what follows.
 
@@ -1749,11 +1824,11 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
                   _png, _jpeg, _gif, _bmp, _riff, _isobmff, _qoi, _farbfeld,
                   _radiance, _openexr, _jxl, _xcf, _ico, _pnm, _tiff,
                   _ebml, _ogg, _flac,
-                  _gzip, _zstd, _xz_bzip2_lz4, _zip, _ccz, _pvr,
+                  _gzip, _zstd, _xz_bzip2_lz4, _zip, _ccz, _pvr, _astc,
                   _iff, _lws, _directx_x, _ac3d, _cob, _m3d, _vrml, _off, _a3d,
                   _ase_3dsmax,
                   _gltf_json, _spine_json, _lottie,
-                  _zlib_stream):
+                  _by_signature, _zlib_stream):
         info = probe(data)
         if info is not None:
             return info

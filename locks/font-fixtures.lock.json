@@ -166,9 +166,1577 @@
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/wpt-fonts-baseline@5cf01e01ad9e.txt"
+    },
+    {
+      "id": "fonttools-postscript",
+      "kind": "upstream",
+      "repo": "fonttools/fonttools",
+      "ref": "main",
+      "commit": "6b407ba72a81af6f41830c096b777646d635364d",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "MIT, Copyright (c) 2017 Just van Rossum and contributors. These are fontTools' own regression fonts, several of them purpose-built minimal cases.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/fonttools-postscript@6b407ba72a81.txt"
+    },
+    {
+      "id": "monobit-bitmap-fonts",
+      "kind": "upstream",
+      "repo": "robhagemans/monobit",
+      "ref": "master",
+      "commit": "32d230c945bb2658946064506a17d8037c4eb203",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "MIT, Copyright (c) 2019-2024 Rob Hagemans, over monobit and its test corpus. The corpus includes long-circulated bitmap faces (Computer Modern, System Fixed, Hershey vectors) gathered as conversion regression material and not separately declared.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/monobit-bitmap-fonts@32d230c945bb.txt"
     }
   ],
   "files": [
+    {
+      "path": "bitmap/09x18.0,1bd",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/09x18.0,1bd",
+      "sha256": "62a463235954d1e70d64ed9dcc4e1db11609b20249ea71f41ef14b98afb5c561",
+      "size": 180304
+    },
+    {
+      "path": "bitmap/10x20(X),1bd",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/10x20(X),1bd",
+      "sha256": "1fa949180d47916bab5e606c253fdc48cd7341d4da9a87e6ff954a8b182a08be",
+      "size": 10272,
+      "format": {
+        "kind": "zapfont",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/4x6-0x7f.tbl",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6-0x7f.tbl",
+      "sha256": "6b34ddbcea78a7d7facdf0d666dacb6d5ce66c292b538c668fb3a6cafd928f9f",
+      "size": 15
+    },
+    {
+      "path": "bitmap/4x6-ams.com",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6-ams.com",
+      "sha256": "b57d01fbb39d5bed11f5f5ff8f49266ec2fcb123379ce34ff8639adef5b176ad",
+      "size": 2560
+    },
+    {
+      "path": "bitmap/4x6-bitaligned.raw",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6-bitaligned.raw",
+      "sha256": "86f401d02001af6c4b51aec1b0212601e9ce4080b31ce4152e3743abb77d2366",
+      "size": 2757
+    },
+    {
+      "path": "bitmap/4x6-inverted.raw",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6-inverted.raw",
+      "sha256": "6bf707cc4a703ddb1f10f53ddb5b7f6e8a6ef40fbf0230361ee7f5495e977fe2",
+      "size": 5514
+    },
+    {
+      "path": "bitmap/4x6-msb-right.raw",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6-msb-right.raw",
+      "sha256": "01df9209fb0cb07c597d9d94a7249f59517f6fe65e0b9ce13a38b37b84c468c8",
+      "size": 5514
+    },
+    {
+      "path": "bitmap/4x6.bas",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.bas",
+      "sha256": "31740d6e1109007cfd135af6bf79253ce2aeeb739ceefedfdecff9b243534982",
+      "size": 39294
+    },
+    {
+      "path": "bitmap/4x6.bdf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.bdf",
+      "sha256": "14677cf206c468d5cd13e57a7479da635058b3abaa50900249a2b4d88ea97c76",
+      "size": 94333,
+      "format": {
+        "kind": "bdf",
+        "version": "2.1"
+      }
+    },
+    {
+      "path": "bitmap/4x6.bin",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.bin",
+      "sha256": "cd269ae3018b571fbefb1d370b927cf8e457dba032c20b91d6787d365cf55b74",
+      "size": 2816
+    },
+    {
+      "path": "bitmap/4x6.c",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.c",
+      "sha256": "717978710f8ff851e5051c07006d946114501f7f9b72b503569ba9d121d2cde9",
+      "size": 35933
+    },
+    {
+      "path": "bitmap/4x6.dfont",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.dfont",
+      "sha256": "c5d4942ca1bb8ff567d354f2622d7fe9096c1db2b026d5b75cc20afb70e2ea5b",
+      "size": 2584
+    },
+    {
+      "path": "bitmap/4x6.dfont.as",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.dfont.as",
+      "sha256": "3dc6276059bf9e6f216443935e7f07d8e84427a1fec49715fa5b2e7dbda2776b",
+      "size": 2691
+    },
+    {
+      "path": "bitmap/4x6.drhalo",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.drhalo",
+      "sha256": "92cc1d53ab2b309d4d4a1341dfebae0533a6378b935e732d2cac7acf1bc9e1c9",
+      "size": 596,
+      "format": {
+        "kind": "drhalo",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/4x6.edwin.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.edwin.fnt",
+      "sha256": "0971aa7ac45a634b21c86b992dcb3d04e2c360f4ca65ad8f8658c71dd1b91950",
+      "size": 2813,
+      "format": {
+        "kind": "fnt",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/4x6.ffms.ttf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.ffms.ttf",
+      "sha256": "bc55508119fe039d9d4bce77b5a4c139e0803462e50e9f141ecd615d733ff0b8",
+      "size": 16244,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf",
+        "color": [
+          "ebdt"
+        ]
+      }
+    },
+    {
+      "path": "bitmap/4x6.flf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.flf",
+      "sha256": "5b53e457a178ab7b6b4c41d45abaf1d165496af3a8208632d788cf4358614b50",
+      "size": 46523,
+      "format": {
+        "kind": "figlet",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/4x6.fzx",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.fzx",
+      "sha256": "73b6249360d41c13e7285563a7ebb08c98bdcc7b98f128851b270fec18208208",
+      "size": 1823
+    },
+    {
+      "path": "bitmap/4x6.hqx",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.hqx",
+      "sha256": "a929ef0734a0a9a4ebcd2c9e17de96d5c57296d74fb409668dd92de52e9b62f9",
+      "size": 2857
+    },
+    {
+      "path": "bitmap/4x6.ihex",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.ihex",
+      "sha256": "64f6dbe587105af08cec3168bd17077a37dacd409937269c8fded3d2016414db",
+      "size": 13132
+    },
+    {
+      "path": "bitmap/4x6.iigs",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.iigs",
+      "sha256": "ba3b2576af08c711d73ee957c5e98393aecc4d9251a948425b9bd120742c0aa1",
+      "size": 1568
+    },
+    {
+      "path": "bitmap/4x6.mgtk",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.mgtk",
+      "sha256": "d9d45caa023387ceabf6951fcfdf655f2f8176093c2b5e215ddc14f19faa9693",
+      "size": 899
+    },
+    {
+      "path": "bitmap/4x6.otb",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.otb",
+      "sha256": "fb8900fa46c29239badffca742038a66f7806fa26534423d4ba56b334c73f589",
+      "size": 15540,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf",
+        "color": [
+          "ebdt"
+        ]
+      }
+    },
+    {
+      "path": "bitmap/4x6.pbm",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.pbm",
+      "sha256": "31f7eafb23719cf3715db1415df100435bcd7cfb5789269d5174e1a7d48e932b",
+      "size": 569,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 768,
+        "height": 6,
+        "bitDepth": 1,
+        "colorType": 0
+      }
+    },
+    {
+      "path": "bitmap/4x6.pil",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.pil",
+      "sha256": "1974a883b801f3a038525cb883c0a84571e1db584e66334b196545d81975be00",
+      "size": 5142,
+      "format": {
+        "kind": "pilfont",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/4x6.png",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.png",
+      "sha256": "0bbb7f1092e1092b0368885470136e83d00a92f38b0bb49d53fc3ee783526d88",
+      "size": 4816,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 174,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "bitmap/4x6.psf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.psf",
+      "sha256": "cfd83a4ae81ed49ba3b657c4d0043a53bc890568c5d9f55a01d9678449972e86",
+      "size": 5732,
+      "format": {
+        "kind": "psf",
+        "version": "2"
+      }
+    },
+    {
+      "path": "bitmap/4x6.psfu",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.psfu",
+      "sha256": "39401e471b3dcebfda3e9aa4a319bb7cc92bbcc5a90cc2881ecfad3c22b443bc",
+      "size": 8839,
+      "format": {
+        "kind": "psf",
+        "version": "2"
+      }
+    },
+    {
+      "path": "bitmap/4x6.raw",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.raw",
+      "sha256": "9fd002fcc32ef1450319e719dfa95bb9747a51d924f0c13bda231150ac12b45f",
+      "size": 5514
+    },
+    {
+      "path": "bitmap/4x6.sfnt.dfont",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.sfnt.dfont",
+      "sha256": "683c973311a3c7de6bce498382b7eb6009e6b82b83a9bb9e6fddd6301bcb16ab",
+      "size": 15057
+    },
+    {
+      "path": "bitmap/4x6.sfp",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.sfp",
+      "sha256": "b497a576720e6aaf468fd5bcb97605fa884cecf96a40626311eed381a27da351",
+      "size": 6721
+    },
+    {
+      "path": "bitmap/4x6.ttf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.ttf",
+      "sha256": "dd69f3273027362229cf736859def66237e9ba865937b0fe601b4c1b57b2ccf2",
+      "size": 13060,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 13,
+        "outlines": "glyf",
+        "color": [
+          "ebdt"
+        ]
+      }
+    },
+    {
+      "path": "bitmap/4x6.txt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.txt",
+      "sha256": "b2793c9ed015b46c872547bb5001549ec0fff39737ffc385f67cb003ef2bdcde",
+      "size": 121547
+    },
+    {
+      "path": "bitmap/4x6.vfontbe",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.vfontbe",
+      "sha256": "eac2723fec5a0e349e0971373d58befabb6ef61c2b1ea568cd61a535cdaf68d2",
+      "size": 8270
+    },
+    {
+      "path": "bitmap/4x6.vfontle",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.vfontle",
+      "sha256": "a91d633f7b5639df6976308f048794b863935741e73129d7ff59899c068685dc",
+      "size": 8270
+    },
+    {
+      "path": "bitmap/4x6.wof",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.wof",
+      "sha256": "2fe93e616ab6b799eab01a132f44846fbd83e002c81c5dda1e9ca42bb2bea527",
+      "size": 5722
+    },
+    {
+      "path": "bitmap/4x6.wyse",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.wyse",
+      "sha256": "1caab9c6fba0b24b68f3f99c14d888fd404a075c7c7b4a1b4b42acdf2aa3fad6",
+      "size": 24064
+    },
+    {
+      "path": "bitmap/4x6.yaff",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.yaff",
+      "sha256": "8c8d8caddcc5caa836749c052e98fa3dc9bce9bbda1948160fd6e0b766db8001",
+      "size": 67142
+    },
+    {
+      "path": "bitmap/4x6.yaff.offset",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/4x6.yaff.offset",
+      "sha256": "4a42cc7bf22474f98ad9dc72f320fe7cfcf24f3610f95d2717bf7dbb88a26db2",
+      "size": 67242
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-32bit-nonpacked.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-32bit-nonpacked.fnt",
+      "sha256": "a1633093847b0d5565ef8a2bcf750f270f90b649c39cdcaa2b9664e3a3c3f5a2",
+      "size": 21861,
+      "format": {
+        "kind": "fnt",
+        "version": "text",
+        "encoding": "text"
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-32bit-nonpacked_0.png",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-32bit-nonpacked_0.png",
+      "sha256": "15bdc5ea59e47163df48390e5d52a2e664082aaa9beecc403cb3b0449f65325e",
+      "size": 2365,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-32bit-packed.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-32bit-packed.fnt",
+      "sha256": "3a8e61f40bffabcdce0c54e44771bd519b948c8f69a3e3015894bd0868cc5f00",
+      "size": 21856,
+      "format": {
+        "kind": "fnt",
+        "version": "text",
+        "encoding": "text"
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-32bit-packed_0.png",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-32bit-packed_0.png",
+      "sha256": "f44da205f46727ecd38faf534d92c34a05e5537d25a13fc14085a41785283514",
+      "size": 2084,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-8bit.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-8bit.fnt",
+      "sha256": "fd8b50de3555660942a0cc2d34c742d40a8eece4cf8d138cbb0bf8b7d5f16d5c",
+      "size": 21916,
+      "format": {
+        "kind": "fnt",
+        "version": "text",
+        "encoding": "text"
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-8bit_0.png",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-8bit_0.png",
+      "sha256": "5ccecedce2bdab6100f5b2183292d0811d27a232ef8fabe8f5c81f8a28855ca2",
+      "size": 728,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 0
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-8bit_1.png",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-8bit_1.png",
+      "sha256": "3c9290f05b47d5755cb9462fe42941b761bd7c20ad04acb61f9902fb37b38225",
+      "size": 729,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 0
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-8bit_2.png",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-8bit_2.png",
+      "sha256": "24ef24888e25dc1637ba51665d2d4609b9f45bc8a35687dcd895d5363c33e82c",
+      "size": 394,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 0
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-binary.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-binary.fnt",
+      "sha256": "ba187995e3b06599594b2de315c93a29754e63973d8eaf6ab1733e0fdcf9abd5",
+      "size": 3866,
+      "format": {
+        "kind": "fnt",
+        "version": "binary",
+        "encoding": "binary"
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-binary_0.png",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-binary_0.png",
+      "sha256": "41dee9978aaa89280a1b4addc78c32579484ba53082cd82eb9c7af10cd46f128",
+      "size": 1631,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 128,
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 0
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-json.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-json.fnt",
+      "sha256": "e4986c4dde2425ddd9de3b497661f3d782465088e0cc5bd5a58d84e9d62b1163",
+      "size": 53885,
+      "format": {
+        "kind": "fnt",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-text.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-text.fnt",
+      "sha256": "736c64616a29b09ff6a14f4b7cbe5c39359fc73bfd43544c95e5b18b353f93da",
+      "size": 21852,
+      "format": {
+        "kind": "fnt",
+        "version": "text",
+        "encoding": "text"
+      }
+    },
+    {
+      "path": "bitmap/6x13.bmf/6x13-xml.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.bmf/6x13-xml.fnt",
+      "sha256": "85d095b2cbb0683eb4214a7673501e62b6a1f0e8abb4b60a4dec985d958b1c8f",
+      "size": 21972,
+      "format": {
+        "kind": "fnt",
+        "version": "xml",
+        "encoding": "xml"
+      }
+    },
+    {
+      "path": "bitmap/6x13.dec",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.dec",
+      "sha256": "0db1bf495c9433f29cbb8a251e83ae458948bfb501f5b2b30749bdf19842c9f0",
+      "size": 2096
+    },
+    {
+      "path": "bitmap/6x13.fd",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.fd",
+      "sha256": "5a8b30b9e862d440fc336c20b2d1c32f2ef2d397ab9791ab32e39bb24384a544",
+      "size": 27903
+    },
+    {
+      "path": "bitmap/6x13.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.fnt",
+      "sha256": "a0878f176dc33883cc09a211db2567f56e891ac85a521d6cb91995f9948f584e",
+      "size": 8384,
+      "format": {
+        "kind": "fnt",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/6x13.fon",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/6x13.fon",
+      "sha256": "cdea1ebedcf635b70a4a1f051eb74c6efdce35e95446e0ec2396817d0387f2d6",
+      "size": 8832,
+      "format": {
+        "kind": "dos-executable",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/8X16-FE.COM",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8X16-FE.COM",
+      "sha256": "60b06e432479525e214ad538b32660e5adaa18ce8ec93e6e6744ec21e8d0d63e",
+      "size": 8291
+    },
+    {
+      "path": "bitmap/8X16-FRA.COM",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8X16-FRA.COM",
+      "sha256": "70be0d178890dc6692195f005d2bc13203c1be5b5a9837e7d698df32ce8e8019",
+      "size": 4121
+    },
+    {
+      "path": "bitmap/8X16-REX.COM",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8X16-REX.COM",
+      "sha256": "3732b6edad7069d0bd8dfff6b74aea026fce2c7e1c6012ce0b347ec3860cc1a6",
+      "size": 5539
+    },
+    {
+      "path": "bitmap/8X16-TSR.COM",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8X16-TSR.COM",
+      "sha256": "3f574cd7569e08fabb66dc45220f44f4d1b8ffd5a8d7091131e237d3a7afac37",
+      "size": 4376
+    },
+    {
+      "path": "bitmap/8X16.XB",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8X16.XB",
+      "sha256": "09bce20d64a27f8cecd2a3a28d016dd256c0d2941d0b32cb97f0932fe94addf2",
+      "size": 6667,
+      "format": {
+        "kind": "xbin",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/8x16-drfont.cpi",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x16-drfont.cpi",
+      "sha256": "025400ca667ccef7eef1f41baa014b5a25a87dadddc0f09a5b83ae5d7b018dbf",
+      "size": 5599,
+      "format": {
+        "kind": "cpi",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/8x16-font.cpi",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x16-font.cpi",
+      "sha256": "653c96916aaea2f981685a20f4175dde5d83c0f46f5e36336cc8356024376c49",
+      "size": 8297,
+      "format": {
+        "kind": "cpi",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/8x16-fontnt.cpi",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x16-fontnt.cpi",
+      "sha256": "c71ee3d7362559c196129dd7c852760702e861d4475806bc3b2198de77e454d4",
+      "size": 8297,
+      "format": {
+        "kind": "cpi",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/8x16-fontx-sbcs.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x16-fontx-sbcs.fnt",
+      "sha256": "1ce31a9db5d191f3a1826f49d2d82603c10d068cfec457de41ad6ea9412054f1",
+      "size": 4113,
+      "format": {
+        "kind": "fnt",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/8x16-fontx.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x16-fontx.fnt",
+      "sha256": "3d476709287f9e2dda324a7357d5f480995de53204b7f5e30fa9ded31c4bdd4d",
+      "size": 30782,
+      "format": {
+        "kind": "fnt",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/8x16.cp",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x16.cp",
+      "sha256": "e276855e63460088fd7d9da6bd79f5fa7bc53988139e563b742ba2736b800447",
+      "size": 8257
+    },
+    {
+      "path": "bitmap/8x16.draw",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x16.draw",
+      "sha256": "ffc2e6741ed8c036517f46fefe44a864524f9de1ede32dca972df7a1d380ba71",
+      "size": 152554
+    },
+    {
+      "path": "bitmap/8x16.f16",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x16.f16",
+      "sha256": "5d7dae15385dcba8add318cef9e6aaf4032adcaec70bff3c7789cdafbe1057ec",
+      "size": 4096
+    },
+    {
+      "path": "bitmap/8x16.hbf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x16.hbf",
+      "sha256": "0f5f90f031673adfc116e7336cf1aa8e29cb881a57f91c90f4161c803319c03d",
+      "size": 3445,
+      "format": {
+        "kind": "hbf",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/8x16.hbf.bin",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x16.hbf.bin",
+      "sha256": "1c4817b7114916040ce95b155c616dedfc34108cb4593a5e3761d96429a15bbe",
+      "size": 11632
+    },
+    {
+      "path": "bitmap/8x16.hex",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x16.hex",
+      "sha256": "6616c37ea253abd523a417a3df7e6858940fe345b75d189c68e00283932cc8d1",
+      "size": 34922
+    },
+    {
+      "path": "bitmap/8x8-letafont.com",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x8-letafont.com",
+      "sha256": "690d61734ef43702a53bb89f672a886b48c2c74012b1002484b175ac340fed40",
+      "size": 2176
+    },
+    {
+      "path": "bitmap/8x8.bbc",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/8x8.bbc",
+      "sha256": "2b92e318f9c56f8f755fd57bc43d914d211725d454803bcf4eba31217deaae8e",
+      "size": 2240
+    },
+    {
+      "path": "bitmap/Alpha-2B.pdb",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/Alpha-2B.pdb",
+      "sha256": "a881b843d0b9d776e4cf0a8652d32b9fb35ec6048f3261b596248680b7589b1c",
+      "size": 3870
+    },
+    {
+      "path": "bitmap/FreeSans9pt7b.h",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/FreeSans9pt7b.h",
+      "sha256": "feacaaf7df57be67d483ed35a7aeb59402ad8c9736e456e3f044e62eaf3a9314",
+      "size": 11733
+    },
+    {
+      "path": "bitmap/Konatu/Konatu_10",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/Konatu/Konatu_10",
+      "sha256": "76839718461f9e9bdf96621c6d257fb6ab10b3035d138f508ca44049ccdf9c82",
+      "size": 872590
+    },
+    {
+      "path": "bitmap/Konatu/README.txt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/Konatu/README.txt",
+      "sha256": "dcd8481c52b3d44657ca3f3eb61542989fb66febb8b1a40d400ad2c4fecac1a8",
+      "size": 788
+    },
+    {
+      "path": "bitmap/Oberon10.Scn.Fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/Oberon10.Scn.Fnt",
+      "sha256": "a3d7bba26c27d2a68a2f763ce1fd29968b15def744b1c62e4de9fd557fb49fd8",
+      "size": 2284,
+      "format": {
+        "kind": "fnt",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/README.md",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/README.md",
+      "sha256": "8c419ad8b1038fd477b5e2212ded7e3d050abcbf8c85cb6c9a28c770851d2e1c",
+      "size": 8622
+    },
+    {
+      "path": "bitmap/SHILLING.cvt.gz",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/SHILLING.cvt.gz",
+      "sha256": "a755d9877e423bb54d2119457305eb0b760fe48eafd297ab88d29101108bdf25",
+      "size": 4217,
+      "format": {
+        "kind": "gzip",
+        "version": null,
+        "originalName": "SHILLING.cvt"
+      }
+    },
+    {
+      "path": "bitmap/System.Fixed/IntMetrics",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/System.Fixed/IntMetrics",
+      "sha256": "b4b0c2167c8489ef7c59447e3f6f509a43f764ae45f7c6eccabb793b1dd0a323",
+      "size": 992
+    },
+    {
+      "path": "bitmap/System.Fixed/LICENSE",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/System.Fixed/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "bitmap/System.Fixed/f240x120",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/System.Fixed/f240x120",
+      "sha256": "41c6ea5af1f198f0b1f8e647409e136bdd09b2b0b54fe9705e52dc60320966de",
+      "size": 3572
+    },
+    {
+      "path": "bitmap/System.Fixed/f240x240",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/System.Fixed/f240x240",
+      "sha256": "8c94192979e0319f8e119d5349bb2dc543d073bbf3c16b0b015720b92d8bea39",
+      "size": 4068
+    },
+    {
+      "path": "bitmap/WARPSANS.FON",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/WARPSANS.FON",
+      "sha256": "a0c38fe9a6d6fd91c95d97f18d8103537a0020776f1d410b407c815627f526ad",
+      "size": 62039
+    },
+    {
+      "path": "bitmap/alpha.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/alpha.fnt",
+      "sha256": "12613eaa147348af9b0f1aa96b6d03c63e5260822bce853fecdd55998d483a5a",
+      "size": 1538,
+      "format": {
+        "kind": "fnt",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/blocks.txt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/blocks.txt",
+      "sha256": "a387c5f23d0814b57f9c3e065c1eb308b03315071260eb99f0b88b718424b38b",
+      "size": 73612
+    },
+    {
+      "path": "bitmap/chart.txt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/chart.txt",
+      "sha256": "71af900bb42b2a15e8d6ea88f4e6d130147fbc6d98de9d797b255d2c1d96b431",
+      "size": 34528
+    },
+    {
+      "path": "bitmap/cmr10/cmr10.96gf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/cmr10/cmr10.96gf",
+      "sha256": "7c904318d1b216b30340561c5124c872d64dbf329b272a890eb227182c4be351",
+      "size": 4988,
+      "format": {
+        "kind": "gf",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/cmr10/cmr10.96pk",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/cmr10/cmr10.96pk",
+      "sha256": "e1550b23db3c6033d18042a38736b68249694576d4b6fb169b6ac03d4df770c0",
+      "size": 2108,
+      "format": {
+        "kind": "pk",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/cmr10/cmr10.96pxl",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/cmr10/cmr10.96pxl",
+      "sha256": "2af9b00823daed3e9556b1a8e30466a4223f35f243339f8bfcd09c9ad4cf0de1",
+      "size": 5492
+    },
+    {
+      "path": "bitmap/cmr10/cmr10.tfm",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/cmr10/cmr10.tfm",
+      "sha256": "3c4119fe8111b3bd7627b1b7bacb737ad8e7b380ee60e70c1ed1267e8d35efbe",
+      "size": 1232
+    },
+    {
+      "path": "bitmap/daisy/big1.nl2",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/daisy/big1.nl2",
+      "sha256": "79b0e466c1160cab5831ed165615eab935229a636f05d22f3f37476a635dce75",
+      "size": 621
+    },
+    {
+      "path": "bitmap/daisy/big1.nlq",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/daisy/big1.nlq",
+      "sha256": "f1211f49e373bebbc6aabf3d60a961fdbf47194b039c2e4d4eb53506ffd6318f",
+      "size": 621
+    },
+    {
+      "path": "bitmap/daisy/swiss.nlq",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/daisy/swiss.nlq",
+      "sha256": "ad75e14cc2f4fb191098ac748116d8f8ae7ecd9d390669ef433b26f6d7cf8ac1",
+      "size": 3457
+    },
+    {
+      "path": "bitmap/daisy/times.nlq",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/daisy/times.nlq",
+      "sha256": "a59ed29c04e0e1e313cab13a8ad9f42c41ad1a4aba3c184840aebd61e6f487f8",
+      "size": 1739
+    },
+    {
+      "path": "bitmap/double.yaff.bz2",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/double.yaff.bz2",
+      "sha256": "87a4ae39da75190069464c9c8ae5b835f4fe23b852af358570b85ee3637d8d92",
+      "size": 7980,
+      "format": {
+        "kind": "bzip2",
+        "version": null,
+        "blockSize100k": 9
+      }
+    },
+    {
+      "path": "bitmap/double.yaff.gz",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/double.yaff.gz",
+      "sha256": "48bcd3df376db369f498fb55d2622bf49bb7a9fc112744028767312db97aff86",
+      "size": 10188,
+      "format": {
+        "kind": "gzip",
+        "version": null,
+        "originalName": "double.yaff"
+      }
+    },
+    {
+      "path": "bitmap/double.yaff.xz",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/double.yaff.xz",
+      "sha256": "7e6af19fda54ab851567d2761a0ad3a78c8dcbdea622df16e40ef73bebbe0d4b",
+      "size": 7424,
+      "format": {
+        "kind": "xz",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/empty.zip",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/empty.zip",
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+      "size": 22
+    },
+    {
+      "path": "bitmap/fontdir.7z",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/fontdir.7z",
+      "sha256": "54ecae8eb0f6eab2b56e5664b2ee2a1637de6958176288ccc0879db1cd124241",
+      "size": 8711,
+      "format": {
+        "kind": "7z",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/fontdir.ace",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/fontdir.ace",
+      "sha256": "59640e5698bd3cf35227c068da9593de08462fe0d5c8d01f0fec9da2e118b601",
+      "size": 8787
+    },
+    {
+      "path": "bitmap/fontdir.cab",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/fontdir.cab",
+      "sha256": "0b9e3caa0a24634a01f18cefd964e7e8ac916c8e22cb3b8c91d83a62d61b9448",
+      "size": 8641,
+      "format": {
+        "kind": "cab",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/fontdir.cpio",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/fontdir.cpio",
+      "sha256": "9727987a03eccb87822339ab1f8e87d4073d7b12103233c0270f756dfd472004",
+      "size": 9216,
+      "format": {
+        "kind": "cpio",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/fontdir.iso",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/fontdir.iso",
+      "sha256": "b3ea2ed294c2c66e72095471202b8f97d418a9c635d5ac576d5f852798ffee5f",
+      "size": 372736
+    },
+    {
+      "path": "bitmap/fontdir.rar",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/fontdir.rar",
+      "sha256": "a1872734171af26b09b6e972b311cbeec4e7ded81ef0e182561a022dd42b24b6",
+      "size": 8762,
+      "format": {
+        "kind": "rar",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/fontdir.tar.gz",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/fontdir.tar.gz",
+      "sha256": "3ad9e33a7c5cc9100ca40219c4441325e9341e4b1a9e892db53f6a97682e1eb3",
+      "size": 8802,
+      "format": {
+        "kind": "gzip",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/fontdir.zip",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/fontdir.zip",
+      "sha256": "ed373a35b1d54a69b32ae7e7019ff7e657b2fc81a02fa1973f19ad740505048d",
+      "size": 9310,
+      "format": {
+        "kind": "zip",
+        "version": null,
+        "firstEntry": "fontdir/"
+      }
+    },
+    {
+      "path": "bitmap/fontdir/4x6.raw.gz",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/fontdir/4x6.raw.gz",
+      "sha256": "3a4445b0c420572d1bfbc1d68ee2d478f35ebc7ef66c9ea8ecfce2eafd653b08",
+      "size": 2201,
+      "format": {
+        "kind": "gzip",
+        "version": null,
+        "originalName": "4x6.raw"
+      }
+    },
+    {
+      "path": "bitmap/fontdir/8x16.hex.xz",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/fontdir/8x16.hex.xz",
+      "sha256": "949f20ea84c4c708658863a3a85a9f19f9b29e0e04e3f880c51e27534a2f4fa6",
+      "size": 4060,
+      "format": {
+        "kind": "xz",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/fontdir/subdir/6x13.fon.bz2",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/fontdir/subdir/6x13.fon.bz2",
+      "sha256": "89be6cc1de6f56f3c659c4d91a93b450d22327497b5feadb49bc5f7d5f625619",
+      "size": 2213,
+      "format": {
+        "kind": "bzip2",
+        "version": null,
+        "blockSize100k": 9
+      }
+    },
+    {
+      "path": "bitmap/gallant12x22.h",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/gallant12x22.h",
+      "sha256": "8fd73eda8a698c9157f7e56da461c9cb0e74db3554fc58562dff28c322ccbb46",
+      "size": 191555
+    },
+    {
+      "path": "bitmap/gdos/AI360GVP.VGA",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/gdos/AI360GVP.VGA",
+      "sha256": "8643b74805e3bb23a59b4ae97dfd5e426c7ffba40ebe330a37fa54cef731f205",
+      "size": 11530
+    },
+    {
+      "path": "bitmap/gdos/L2UNVB18.FNT",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/gdos/L2UNVB18.FNT",
+      "sha256": "99431a54ef133a0077596f34a51d60a5284808c7d49fec64cf6e6f08ea55a0ba",
+      "size": 49520,
+      "format": {
+        "kind": "fnt",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/gdos/UNIVRSTY.TXT",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/gdos/UNIVRSTY.TXT",
+      "sha256": "59b33379a4e7f882300832a7e922d28a168ab75e944cdddfd82f1cc94c51383b",
+      "size": 1028
+    },
+    {
+      "path": "bitmap/gdos/UNIV_RMN.TXT",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/gdos/UNIV_RMN.TXT",
+      "sha256": "b4d46d446842c98c823926f370a7b870f6ad0d6f2728e25f4d7cbf6523bbb44c",
+      "size": 2630
+    },
+    {
+      "path": "bitmap/hershey/README",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/hershey/README",
+      "sha256": "1094c9742c2998efebeac840dbfa7573419d44c152804f1344c6a2092a8fd9e6",
+      "size": 998
+    },
+    {
+      "path": "bitmap/hershey/hershey-az.jhf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/hershey/hershey-az.jhf",
+      "sha256": "78978b1b4d4c716b2aebc0e3116bfc1eeea37ff31110dfdae03d657e19f7026c",
+      "size": 756
+    },
+    {
+      "path": "bitmap/hershey/hershey.chr",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/hershey/hershey.chr",
+      "sha256": "d47324c9aff3824afa3b86218fc76c24fd3dcfa09cc205e8f1cc085d151fc4d0",
+      "size": 728
+    },
+    {
+      "path": "bitmap/hershey/hershey.fon",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/hershey/hershey.fon",
+      "sha256": "2aca35a2d585bae755a75bb8528977770bdc42f3e6dec453269ad80623308e50",
+      "size": 1232,
+      "format": {
+        "kind": "dos-executable",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/hershey/hershey.svg",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/hershey/hershey.svg",
+      "sha256": "9ef36f7b849bb350a32a658d2daa302f52e77a07e450eaf6e121d81144d1886f",
+      "size": 4916,
+      "format": {
+        "kind": "svg",
+        "version": null,
+        "pathCount": 26
+      }
+    },
+    {
+      "path": "bitmap/hershey/hershey.yaff",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/hershey/hershey.yaff",
+      "sha256": "1fbd07335ffbed62351eb52ddf7ac16723b5f4cf12cd3b6e3f33827b35431668",
+      "size": 8606
+    },
+    {
+      "path": "bitmap/konatu-ascii.yaff",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/konatu-ascii.yaff",
+      "sha256": "972042eb791aac19db538892782a29bd12648ceb773eec6f9bcbcc005a71810b",
+      "size": 11894
+    },
+    {
+      "path": "bitmap/pcf/4x6_Bbu1p1.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Bbu1p1.pcf",
+      "sha256": "83d8620d6d43b08b6cf147d58e43e76ace6d7072240a9241f65cae1fc2428d91",
+      "size": 165544,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Bbu2p2.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Bbu2p2.pcf",
+      "sha256": "e8ce43b0e7ec35ac8d98788bd2a906ac10bae7b041a25b3d4cee181dba517dd2",
+      "size": 171056,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Bbu4p4.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Bbu4p4.pcf",
+      "sha256": "0a11d359c04b82e61836028d91247b04612ab9a8575db08c498beed011c59861",
+      "size": 182084,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Blu1p1.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Blu1p1.pcf",
+      "sha256": "f23ac6e50dc5503cfeb9d5bbc88b08cb0b64480f2c7c16f1463631f9a3d3acaa",
+      "size": 165544,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Blu1p2.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Blu1p2.pcf",
+      "sha256": "92d208a4f00b43802e93c7d674029f3a365d715bc90599c0635a933de3fde51a",
+      "size": 171056,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Blu1p4.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Blu1p4.pcf",
+      "sha256": "a3262a03525e14ca3fdb899d811c023395ba78df037788adae5af3ce79536691",
+      "size": 182084,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Blu2p2.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Blu2p2.pcf",
+      "sha256": "66b541b0c768a540d6d460e2a071052561359e516b707845a60c00f7700c6954",
+      "size": 171028,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Blu4p2.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Blu4p2.pcf",
+      "sha256": "4ef6ad7539122305c33b474816e7c9566b6725057a0012c5c5f2479a2fff9f3a",
+      "size": 171056,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Blu4p4.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Blu4p4.pcf",
+      "sha256": "52a0119d75773e7775267e07d77e29ecb7980e7349ad9504c9bc3731c92e6acf",
+      "size": 182056,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Lbu1p1.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Lbu1p1.pcf",
+      "sha256": "8421dcdc79468ab4d32fe67632dde14d44fcca2855b4a480d0c5d445d9b6ac8c",
+      "size": 165544,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Lbu1p2.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Lbu1p2.pcf",
+      "sha256": "eb24bd746a8d15df05072ba5f81ea690019580b6408188f707d0a8a9ef0c2d03",
+      "size": 171056,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Lbu1p4.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Lbu1p4.pcf",
+      "sha256": "803915a5fc8efed12ffae7e492368e649c8f6c82ab0065e29d5a8cc1f98c6340",
+      "size": 182084,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Lbu2p1.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Lbu2p1.pcf",
+      "sha256": "eaecd6c7b3cfcd18132838c486727c85398468b1423b5d007f87e3f21b0589a2",
+      "size": 165544,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Lbu2p2.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Lbu2p2.pcf",
+      "sha256": "85d911423f09e0a3d875e297bf4d1d32c0d725ca21c882501998e911db8f00cc",
+      "size": 171028,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Lbu4p2.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Lbu4p2.pcf",
+      "sha256": "81c1a29d3edff0ef5eb8ce0db42e9fb5b9d35e238a010599b9fdcc9a188b86a5",
+      "size": 171028,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Lbu4p4.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Lbu4p4.pcf",
+      "sha256": "70ea43d5126d76f05ad947b705957ac1ea4dad1ffb761b09cbcd37661332afcf",
+      "size": 182056,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Llu1p1.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Llu1p1.pcf",
+      "sha256": "43185d66eb47ceda34cb3299c6c7041f26188c81f175b41d2780cab5d438ef43",
+      "size": 165544,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Llu2p2.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Llu2p2.pcf",
+      "sha256": "69456b3cb9df0170bd9ac32b81249b90d5a0a4f0e9922f2dd14820fbdfe9856b",
+      "size": 171056,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/pcf/4x6_Llu4p4.pcf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/pcf/4x6_Llu4p4.pcf",
+      "sha256": "a48e09a61dede0383f96e8724f6c11b3ec7e7270439d23ff54f0130cb2bb9eca",
+      "size": 182084,
+      "format": {
+        "kind": "pcf",
+        "version": null,
+        "tableCount": 9
+      }
+    },
+    {
+      "path": "bitmap/positioning.yaff",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/positioning.yaff",
+      "sha256": "2a8ac9fb5786d091fbb40776166bf2dbb8f37c5c39d8a76f3b67de679eb99795",
+      "size": 693
+    },
+    {
+      "path": "bitmap/shades.txt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/shades.txt",
+      "sha256": "e8ec6ef146e18eedb13b96e0cbf819246d17ac9094b14faeafe2773489d8e613",
+      "size": 403718
+    },
+    {
+      "path": "bitmap/sixels.txt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/sixels.txt",
+      "sha256": "c82068ab6a0caa8eeb0cd116d1ca4a5d9e3e88e02e36762d5bfd638a91702a69",
+      "size": 9693
+    },
+    {
+      "path": "bitmap/spleen5x8.h",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/spleen5x8.h",
+      "sha256": "8ac9133b8ba0e83a524651b38eac8a94d51a623673f3b55199e947d9ba69ebd5",
+      "size": 19645
+    },
+    {
+      "path": "bitmap/ter-i12n.wsf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/ter-i12n.wsf",
+      "sha256": "e35e4ff0cd5daff4b890b76d6b834e7c58f8a1f062ba4cadf852a909b56eaf8d",
+      "size": 3172
+    },
+    {
+      "path": "bitmap/ter-u28.fnt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/ter-u28.fnt",
+      "sha256": "8b78bfe63aeaef1443f34895a4ad3d7b4f0e45e8c93ac916de97920512b500df",
+      "size": 114032,
+      "format": {
+        "kind": "fnt",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/twofonts.ar",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/twofonts.ar",
+      "sha256": "817d7b8aa0c465a1897df9d539225cfcd619175ee8d05e2a32a6283c99283462",
+      "size": 6390,
+      "format": {
+        "kind": "ar",
+        "version": null
+      }
+    },
+    {
+      "path": "bitmap/vertical-and-4x6.ttc",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/vertical-and-4x6.ttc",
+      "sha256": "ae8903e1c61c2aec03fcb942d79087e331510a56742f924481b7bb3d480210d9",
+      "size": 19480,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 2,
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bitmap/vertical.bdf",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/vertical.bdf",
+      "sha256": "1007c5aeb93d09eae85a24640ee21116618dfeb8c94739c9835a568bdc8faaa5",
+      "size": 484,
+      "format": {
+        "kind": "bdf",
+        "version": "2.1"
+      }
+    },
+    {
+      "path": "bitmap/vertical.otb",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/vertical.otb",
+      "sha256": "e902d87e7162c35d52e758edb237d7bc2ed8fdfd37a9c44512ce34ee79d62a57",
+      "size": 1268,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf",
+        "color": [
+          "ebdt"
+        ]
+      }
+    },
+    {
+      "path": "bitmap/vertical.yaff",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/vertical.yaff",
+      "sha256": "6ed27eca959a0ef73b4e87e670309ab3e6966cad1ddc1cf662c1eae2de1549de",
+      "size": 525
+    },
+    {
+      "path": "bitmap/wbfont.amiga/readme.txt",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/wbfont.amiga/readme.txt",
+      "sha256": "6875bcc5b8e6d971cc8d17cfbb664414a4cc56bc2f2163ae18fbea37f7f67016",
+      "size": 891
+    },
+    {
+      "path": "bitmap/wbfont.amiga/wbfont_prop.font",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/wbfont.amiga/wbfont_prop.font",
+      "sha256": "3315b9812cad673355f88874a881e116e596aed4e3683f4991cc356f7be884ad",
+      "size": 264
+    },
+    {
+      "path": "bitmap/wbfont.amiga/wbfont_prop/8",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/wbfont.amiga/wbfont_prop/8",
+      "sha256": "cf6b96076c2f61094e4c9dd5ae878d2005a5083b1478a1afde0d9ab95b9fefac",
+      "size": 3460
+    },
+    {
+      "path": "bitmap/wbfont.lha",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/wbfont.lha",
+      "sha256": "4355ff6f4f7522ab970c4899c1964e8bf9bf44f3e8c0e06bb167103e2a8001a3",
+      "size": 2437
+    },
+    {
+      "path": "bitmap/webby-small-kerned.yaff",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/webby-small-kerned.yaff",
+      "sha256": "224edc779f9a7c0bc045df3e06fc4686336c8ffeda55f6a806fefeac318269b9",
+      "size": 17820
+    },
+    {
+      "path": "bitmap/zipinzip.zip",
+      "sourceId": "monobit-bitmap-fonts",
+      "upstreamPath": "tests/fonts/zipinzip.zip",
+      "sha256": "ace45a312b91590e1400c27362de1e5514eeac03879ec0cb17fb04def224de86",
+      "size": 10860,
+      "format": {
+        "kind": "zip",
+        "version": null,
+        "firstEntry": "zipinzip/"
+      }
+    },
     {
       "path": "fontations/ttc/README.md",
       "sourceId": "fontations-test-data",
@@ -1828,6 +3396,159 @@
         "ttLibVersion": "4.41",
         "sfntVersion": "cff",
         "numTables": 14
+      }
+    },
+    {
+      "path": "fonttools/cffLib/data/CFFToCFF2-1.otf",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/cffLib/data/CFFToCFF2-1.otf",
+      "sha256": "da3aaf0b81c3403ddee3f8150d187aa50fda210b7c6adf16cd5d22d9f6cb124d",
+      "size": 1788,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 12,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fonttools/cffLib/data/LinLibertine_RBI.otf",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/cffLib/data/LinLibertine_RBI.otf",
+      "sha256": "f4d85b3177802f23e13e14a0b477b1f7fd34db6f9b897679b55f8f0d81c152ed",
+      "size": 363740,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 13,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fonttools/cffLib/data/TestSupplementEncoding.cff",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/cffLib/data/TestSupplementEncoding.cff",
+      "sha256": "eea32aeacf5a9592ebf67a4211d95d88b3723b7ed06e87d0c13909ad1fcd2bc5",
+      "size": 1930
+    },
+    {
+      "path": "fonttools/t1Lib/data/TestT1-Regular.pfa",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/t1Lib/data/TestT1-Regular.pfa",
+      "sha256": "4231be15444404469e74678c0c3746325c521a2878686f970ea215e54f1982dc",
+      "size": 3229,
+      "format": {
+        "kind": "type1",
+        "version": null,
+        "framing": "pfa"
+      }
+    },
+    {
+      "path": "fonttools/t1Lib/data/TestT1-Regular.pfb",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/t1Lib/data/TestT1-Regular.pfb",
+      "sha256": "ccc479c812b34808de53db44c4dc080461d006e5a51e87a8b0662a57aa802410",
+      "size": 2263,
+      "format": {
+        "kind": "type1",
+        "version": null,
+        "framing": "pfb"
+      }
+    },
+    {
+      "path": "fonttools/t1Lib/data/TestT1-ellipsis-hinted.pfa",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/t1Lib/data/TestT1-ellipsis-hinted.pfa",
+      "sha256": "2b4c43681b5f813d739bfd2d13d0fe5a8ee30b6a1a6d1a27d67040eadac3281b",
+      "size": 3667,
+      "format": {
+        "kind": "type1",
+        "version": null,
+        "framing": "pfa"
+      }
+    },
+    {
+      "path": "fonttools/t1Lib/data/TestT1-weird-zeros.pfa",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/t1Lib/data/TestT1-weird-zeros.pfa",
+      "sha256": "60d638ec57358627992dacbb3a24ae15aff1cbc33e4f97e2783212fe2e3d481f",
+      "size": 3237,
+      "format": {
+        "kind": "type1",
+        "version": null,
+        "framing": "pfa"
+      }
+    },
+    {
+      "path": "fonttools/ttx/data/TestDFONT.dfont",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/ttx/data/TestDFONT.dfont",
+      "sha256": "acacaa44936ec33623ced5210365a584e103afd0a37f72b0b0e9b30ea7f7b97c",
+      "size": 3505
+    },
+    {
+      "path": "fonttools/ttx/data/TestTTC.ttc",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/ttx/data/TestTTC.ttc",
+      "sha256": "a8521588045ed5f1f8b07eecaac06ed3186c644655bfac00dd4507cd316fbdc5",
+      "size": 2608,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 2,
+        "numTables": 15,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fonttools/ttx/data/TestTTCv2.ttc",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/ttx/data/TestTTCv2.ttc",
+      "sha256": "0b2f45464ed3e94c255e829d6ffc40e0c5b63f6410dc996698482de422d254fb",
+      "size": 2628,
+      "format": {
+        "kind": "ttc",
+        "version": "2.0",
+        "numFonts": 2,
+        "numTables": 15,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fonttools/ttx/data/TestWOFF.woff",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/ttx/data/TestWOFF.woff",
+      "sha256": "d61259880ec1f7226de94ddd8e08a097ddf0b0b313049890708abce5e22fea0a",
+      "size": 1328,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 10,
+        "totalSfntSize": 2308,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fonttools/ttx/data/TestWOFF2.woff2",
+      "sourceId": "fonttools-postscript",
+      "upstreamPath": "Tests/ttx/data/TestWOFF2.woff2",
+      "sha256": "d4d6a624b2a1ce317702dd2be6742b05244087984d5b30fd0a8917b1be616a8a",
+      "size": 808,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2316,
+        "totalCompressedSize": 728,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
       }
     },
     {
@@ -7063,7 +8784,7 @@
     }
   ],
   "totals": {
-    "files": 470,
-    "bytes": 38448656
+    "files": 642,
+    "bytes": 45995313
   }
 }

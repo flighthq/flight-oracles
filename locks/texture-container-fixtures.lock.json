@@ -40,9 +40,808 @@
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/basis-universal-tests@9bebe16726b3.txt"
+    },
+    {
+      "id": "astc-encoder-tests",
+      "kind": "upstream",
+      "repo": "ARM-software/astc-encoder",
+      "ref": "main",
+      "commit": "4316299fb0bf26c6ada2a3b2e7a1b747ac22d98d",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "Apache-2.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE.txt",
+        "covers": "Apache License 2.0, Copyright 2011-2024 Arm Limited. The image set is the encoder's own regression material.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/astc-encoder-tests@4316299fb0bf.txt"
     }
   ],
   "files": [
+    {
+      "path": "astc/Data/HDR-A-1x1.astc",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Data/HDR-A-1x1.astc",
+      "sha256": "677e500aebe8cb2ea7cab79dae3b66c8eb549718d3c66660092d618b6828a116",
+      "size": 32,
+      "format": {
+        "kind": "astc",
+        "version": null,
+        "blockFootprint": "6x6",
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "path": "astc/Data/LDR-A-1x1.astc",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Data/LDR-A-1x1.astc",
+      "sha256": "e414d79e31dd49bb3e3ef0cdc4c6d918c24d9f1583307c0ee14e97e4032c5eb3",
+      "size": 32,
+      "format": {
+        "kind": "astc",
+        "version": null,
+        "blockFootprint": "6x6",
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "path": "astc/Data/LDRS-A-1x1.astc",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Data/LDRS-A-1x1.astc",
+      "sha256": "1392ab23a64db8ef468458fcd8b5ca969354cc908ae8e80e4c6abb8d0d2b62a7",
+      "size": 32,
+      "format": {
+        "kind": "astc",
+        "version": null,
+        "blockFootprint": "6x6",
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "path": "astc/Data/Tiles/hdr.astc",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Data/Tiles/hdr.astc",
+      "sha256": "66b60ac14cecd6e8bc895c16333470d50be57de6f594fc801a65df22008792ec",
+      "size": 80,
+      "format": {
+        "kind": "astc",
+        "version": null,
+        "blockFootprint": "4x4",
+        "width": 8,
+        "height": 8
+      }
+    },
+    {
+      "path": "astc/Data/Tiles/ldr.astc",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Data/Tiles/ldr.astc",
+      "sha256": "f8512766071566cc8612da34bae7d44c9f9161f7b292290bd6f52e2f5cc5ee80",
+      "size": 80,
+      "format": {
+        "kind": "astc",
+        "version": null,
+        "blockFootprint": "4x4",
+        "width": 8,
+        "height": 8
+      }
+    },
+    {
+      "path": "astc/Data/negative_block_size.astc",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Data/negative_block_size.astc",
+      "sha256": "670120992e290c30d59e7805a1a88cff2b516b12fb09df6d67438654c601f25f",
+      "size": 32,
+      "format": {
+        "kind": "astc",
+        "version": null,
+        "blockFootprint": "5x6",
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "path": "astc/Data/negative_huge.astc",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Data/negative_huge.astc",
+      "sha256": "35f587f1cf88490888b68b2034417e0810df7bf61ef6e3389fff67c452851320",
+      "size": 32,
+      "format": {
+        "kind": "astc",
+        "version": null,
+        "blockFootprint": "6x6",
+        "width": 16777215,
+        "height": 16777215
+      }
+    },
+    {
+      "path": "astc/Data/negative_magic.astc",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Data/negative_magic.astc",
+      "sha256": "225faced3c256d925424354eac371dfada396842e97ead4a9dcd2ac3c8f88975",
+      "size": 32
+    },
+    {
+      "path": "astc/Data/negative_overflow.astc",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Data/negative_overflow.astc",
+      "sha256": "cf52cc56e9872152d63d07dc7d595b97a547ba8dd949a415aca26bcf2b613d18",
+      "size": 32,
+      "format": {
+        "kind": "astc",
+        "version": null,
+        "blockFootprint": "1x1",
+        "width": 16777215,
+        "height": 16777215,
+        "depth": 16777215
+      }
+    },
+    {
+      "path": "astc/Data/negative_short.astc",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Data/negative_short.astc",
+      "sha256": "30e7d3bba9a7b1c76af2bcc75e61ef35d5cc302073ae05be7015cf18f24ed764",
+      "size": 31,
+      "format": {
+        "kind": "astc",
+        "version": null,
+        "blockFootprint": "6x6",
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "path": "astc/Images/HDRIHaven/HDR-RGB/hdr-rgb-arboretum.exr",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/HDRIHaven/HDR-RGB/hdr-rgb-arboretum.exr",
+      "sha256": "5ec66e09668e2fa74daa0636e737eae3b9d8516c4de35538a7fa35b30739dd41",
+      "size": 1792874,
+      "format": {
+        "kind": "exr",
+        "version": "2"
+      }
+    },
+    {
+      "path": "astc/Images/HDRIHaven/HDR-RGB/hdr-rgb-arboretum.hdr",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/HDRIHaven/HDR-RGB/hdr-rgb-arboretum.hdr",
+      "sha256": "41d2b0e294077600a7590fd1407aa14f48616657dd4d51bb8c2358d5965f8b33",
+      "size": 2115626,
+      "format": {
+        "kind": "hdr",
+        "version": null,
+        "encoding": "32-bit_rle_rgbe"
+      }
+    },
+    {
+      "path": "astc/Images/HDRIHaven/HDR-RGB/hdr-rgb-bellparkpier.hdr",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/HDRIHaven/HDR-RGB/hdr-rgb-bellparkpier.hdr",
+      "sha256": "c612f5817cd7bf802a3fc6c2e0c51d26966b0f89eaaa0a3a6de181d079325c4d",
+      "size": 1735220,
+      "format": {
+        "kind": "hdr",
+        "version": null,
+        "encoding": "32-bit_rle_rgbe"
+      }
+    },
+    {
+      "path": "astc/Images/HDRIHaven/HDR-RGB/hdr-rgb-canarywharf.hdr",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/HDRIHaven/HDR-RGB/hdr-rgb-canarywharf.hdr",
+      "sha256": "c4bde23d37a20540788f3bc5cc38d6099fff79fee62fa2ee26e179223477e479",
+      "size": 1895076,
+      "format": {
+        "kind": "hdr",
+        "version": null,
+        "encoding": "32-bit_rle_rgbe"
+      }
+    },
+    {
+      "path": "astc/Images/HDRIHaven/HDR-RGB/hdr-rgb-eveningroad.hdr",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/HDRIHaven/HDR-RGB/hdr-rgb-eveningroad.hdr",
+      "sha256": "49627ecb64a77e12567c8c3853cb63248a14013fd7553ebffb904f8fd428ffec",
+      "size": 1814489,
+      "format": {
+        "kind": "hdr",
+        "version": null,
+        "encoding": "32-bit_rle_rgbe"
+      }
+    },
+    {
+      "path": "astc/Images/HDRIHaven/HDR-RGB/hdr-rgb-riverwalk.hdr",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/HDRIHaven/HDR-RGB/hdr-rgb-riverwalk.hdr",
+      "sha256": "baf1a97c65cc64c486cf6e7519a69049622e799bcaaa7aef320a3aa29364f6a0",
+      "size": 2249839,
+      "format": {
+        "kind": "hdr",
+        "version": null,
+        "encoding": "32-bit_rle_rgbe"
+      }
+    },
+    {
+      "path": "astc/Images/Khronos/LDR-L/ldr-l-occlusion.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Khronos/LDR-L/ldr-l-occlusion.png",
+      "sha256": "e1fcaec95867f0ba552f3a15aec03c5a459081a9af70494b10d2ec0bbba3d3b4",
+      "size": 229058,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 0
+      }
+    },
+    {
+      "path": "astc/Images/Khronos/LDR-RGB/ldr-rgb-diffuse.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Khronos/LDR-RGB/ldr-rgb-diffuse.png",
+      "sha256": "b9267f02a90a04d6a5e55b4f4a7819702dc8196a18d04fb8a0ad2eb9f10cf67c",
+      "size": 2918910,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 2048,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Khronos/LDR-RGB/ldr-rgb-emissive.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Khronos/LDR-RGB/ldr-rgb-emissive.png",
+      "sha256": "0433f987563cf954751110a2029a05ae26dae8d5bee812e1e433a605362d279a",
+      "size": 68698,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Khronos/LDR-RGB/ldr-rgb-metalrough.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Khronos/LDR-RGB/ldr-rgb-metalrough.png",
+      "sha256": "8c5995be18f28692acd990b6ee2663f807c5548e917807f125cd06d207775366",
+      "size": 1184895,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Khronos/LDR-RGB/ldr-rgb-metalrough2.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Khronos/LDR-RGB/ldr-rgb-metalrough2.png",
+      "sha256": "710b24fd30a8578038d0ad4521fa4a009b63e526cc3f520bca17cf7f3607b46f",
+      "size": 4283964,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 2048,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Khronos/LDR-RGBA/ldr-rgba-base.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Khronos/LDR-RGBA/ldr-rgba-base.png",
+      "sha256": "bfabe406bf3e786f4077b1153e810ea7bf6c5ea046684781dfaf57cc7e3f790d",
+      "size": 1635069,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Khronos/LDR-RGBA/ldr-rgba-diffuse.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Khronos/LDR-RGBA/ldr-rgba-diffuse.png",
+      "sha256": "84734c4235059825ff38a9356c8f824208e4556f711403eec667bb3fb849bf69",
+      "size": 1532433,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Khronos/LDR-RGBA/ldr-rgba-specgloss.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Khronos/LDR-RGBA/ldr-rgba-specgloss.png",
+      "sha256": "e7e58cc7623fa77ef2865a63fd0f8e3b137ff156be3b8ef09a47f9b71e60f474",
+      "size": 2000552,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Khronos/LDR-XY/ldr-xy-normal1.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Khronos/LDR-XY/ldr-xy-normal1.png",
+      "sha256": "9dae5b0fe6b55903c8850ef69eacc77cbd0cdaa2916d121fcd4af54402744aed",
+      "size": 2057482,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Khronos/LDR-XY/ldr-xy-normal2.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Khronos/LDR-XY/ldr-xy-normal2.png",
+      "sha256": "e88539e257bc15a37510f5adb71d6ef2376d8ba42433bdf6287fff8f15adcc36",
+      "size": 4882079,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 2048,
+        "height": 2048,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Small/HDR-RGB/hdr-rgb-00.hdr",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/HDR-RGB/hdr-rgb-00.hdr",
+      "sha256": "b767971bb82576c141785d17fdc2c958f23a838a5dea66a4c223bdeb60a6dc7c",
+      "size": 218146,
+      "format": {
+        "kind": "hdr",
+        "version": null,
+        "encoding": "32-bit_rle_rgbe"
+      }
+    },
+    {
+      "path": "astc/Images/Small/HDR-RGB/hdr-rgb-r16.ktx",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/HDR-RGB/hdr-rgb-r16.ktx",
+      "sha256": "673dc70925fd38014cafcb442ec9f47fc472b1b5a98f58cdb91179b373e5c337",
+      "size": 612,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "astc/Images/Small/HDR-RGB/hdr-rgb-r32.ktx",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/HDR-RGB/hdr-rgb-r32.ktx",
+      "sha256": "838af51c0be998e9dba70ac6ae108a23bb59999bec690bc8514cc8e0722705e8",
+      "size": 1124,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "astc/Images/Small/HDR-RGB/hdr-rgb-rg16.ktx",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/HDR-RGB/hdr-rgb-rg16.ktx",
+      "sha256": "5b25e42621da7ed4534a3e7d9554fc673dcdac713e6bd87b50f62f4a325c605f",
+      "size": 1124,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "astc/Images/Small/HDR-RGB/hdr-rgb-rg32.ktx",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/HDR-RGB/hdr-rgb-rg32.ktx",
+      "sha256": "9270e24b52b55281d59c40b569a6d0961e22bbdbfef7505094ff312965701fe6",
+      "size": 2148,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "astc/Images/Small/HDR-RGB/hdr-rgb-rgb16.ktx",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/HDR-RGB/hdr-rgb-rgb16.ktx",
+      "sha256": "40ecfe7e3a2c7c35752c2af0da5680ea24050c9f67f3a91616fea459b28ab1f8",
+      "size": 1636,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "astc/Images/Small/HDR-RGB/hdr-rgb-rgb32.ktx",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/HDR-RGB/hdr-rgb-rgb32.ktx",
+      "sha256": "ad5d531706a35c64016356fb1225735e4f50e85a4927a9bc03dd539b6c84326e",
+      "size": 3172,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "astc/Images/Small/HDR-RGBA/hdr-rgba-rgba16.ktx",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/HDR-RGBA/hdr-rgba-rgba16.ktx",
+      "sha256": "7dce9c3758e195c02a896cd2f06d099c58d9ef120c562ed31a808c7916de7742",
+      "size": 2148,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "astc/Images/Small/HDR-RGBA/hdr-rgba-rgba32.ktx",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/HDR-RGBA/hdr-rgba-rgba32.ktx",
+      "sha256": "c9e69c9253210520a9858257489df4963e35699b277d7d06fd561f831e47a069",
+      "size": 4196,
+      "format": {
+        "kind": "ktx",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-L/ldr-l-00-3.dds",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-L/ldr-l-00-3.dds",
+      "sha256": "d27944533174971756c6edbd658583875e0172c4a5dd5bd4334866c9ce0adb46",
+      "size": 262272,
+      "format": {
+        "kind": "dds",
+        "version": null,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-L/ldr-l-01-3.dds",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-L/ldr-l-01-3.dds",
+      "sha256": "00f26460a4bbe6437ffe5e11e5205044d02bdf9f048ee9106da722c6287077b6",
+      "size": 69049,
+      "format": {
+        "kind": "dds",
+        "version": null,
+        "width": 41,
+        "height": 41
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGB/ldr-rgb-00.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGB/ldr-rgb-00.png",
+      "sha256": "72bf89c439781bb8e9bf582589fec9e2dcfd3581472d1d8182b445a1099b5879",
+      "size": 164227,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGB/ldr-rgb-01.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGB/ldr-rgb-01.png",
+      "sha256": "ded5ea7732d0fcdc2a95a7c8def83bc5c465749dcea889f331812865148e16a8",
+      "size": 149685,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGB/ldr-rgb-02.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGB/ldr-rgb-02.png",
+      "sha256": "27c1d72940f5cccc6ed449f112fd478ae9e8207ee7ef60b2637cd87259b4469a",
+      "size": 179764,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGB/ldr-rgb-03.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGB/ldr-rgb-03.png",
+      "sha256": "0cd06612faf0d62ff70649ef26a257de5f8b1eab3d51642cc070641cd467d39a",
+      "size": 83249,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGB/ldr-rgb-04.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGB/ldr-rgb-04.png",
+      "sha256": "0df1d060951a9aaeaa262041da466ca9531d551e51ecee808ea2acc3d45b4a56",
+      "size": 149357,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGB/ldr-rgb-05.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGB/ldr-rgb-05.png",
+      "sha256": "369bb91f4c7777948a68ea3776731d0417ac4edd1c78755a4d8a062f8542b48a",
+      "size": 170880,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGB/ldr-rgb-06.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGB/ldr-rgb-06.png",
+      "sha256": "59bd89057faa565819ab7cc7650fea30c29400addd06db731f3ab60edb76580a",
+      "size": 181096,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGB/ldr-rgb-07.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGB/ldr-rgb-07.png",
+      "sha256": "df6ffaf504432be67eaa79f2cee2eda13ab3183f4f8834ee405e5babe08b47d9",
+      "size": 127756,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGB/ldr-rgb-08.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGB/ldr-rgb-08.png",
+      "sha256": "292d7bf35aee483fcc4051cc4d324387cdab62913d57492613feaf3596d95337",
+      "size": 89515,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGB/ldr-rgb-09.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGB/ldr-rgb-09.png",
+      "sha256": "787cec51553a53d5db4f8d87885090aa0d031cc17744f77bac0be66e639220b0",
+      "size": 141666,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGB/ldr-rgb-10.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGB/ldr-rgb-10.png",
+      "sha256": "93476aaafd7586fd75194a46d8b7d4a8d30d0e970a7ed1197e97ff69bfd1cfa5",
+      "size": 21955,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 127,
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGBA/ldr-rgba-00.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGBA/ldr-rgba-00.png",
+      "sha256": "7f7515a18ded55b551e659453e81491419aa7927d98b45a121800739e0ffa326",
+      "size": 157580,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGBA/ldr-rgba-01.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGBA/ldr-rgba-01.png",
+      "sha256": "495250c68c1676e3bd1d89bdb707fd24609cdd9e810e46d9ddcccb752d6ae7f9",
+      "size": 196069,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-RGBA/ldr-rgba-02.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-RGBA/ldr-rgba-02.png",
+      "sha256": "93c788987a98617d3656201f48f69363217f61d6fc569468f54fbb27c298d376",
+      "size": 211398,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-XY/ldr-xy-00.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-XY/ldr-xy-00.png",
+      "sha256": "4562800f9a0c6d889c8a42da7ea7c8dc559bc4699c8f25de0f22f7ae9626fcf8",
+      "size": 113120,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-XY/ldr-xy-01.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-XY/ldr-xy-01.png",
+      "sha256": "e4f8ccb990eb61e59dab1b28d8381c95b6ecbd98ba4d2cdb20d497ad11640ec9",
+      "size": 118660,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDR-XY/ldr-xy-02.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDR-XY/ldr-xy-02.png",
+      "sha256": "fa194e26a275101c3d858d47e8f363a800704f0292e42a8fb3c2668ef59affb9",
+      "size": 126089,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDRS-RGBA/ldrs-rgba-00.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDRS-RGBA/ldrs-rgba-00.png",
+      "sha256": "7f7515a18ded55b551e659453e81491419aa7927d98b45a121800739e0ffa326",
+      "size": 157580,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDRS-RGBA/ldrs-rgba-01.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDRS-RGBA/ldrs-rgba-01.png",
+      "sha256": "495250c68c1676e3bd1d89bdb707fd24609cdd9e810e46d9ddcccb752d6ae7f9",
+      "size": 196069,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "astc/Images/Small/LDRS-RGBA/ldrs-rgba-02.png",
+      "sourceId": "astc-encoder-tests",
+      "upstreamPath": "Test/Images/Small/LDRS-RGBA/ldrs-rgba-02.png",
+      "sha256": "93c788987a98617d3656201f48f69363217f61d6fc569468f54fbb27c298d376",
+      "size": 211398,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
     {
       "path": "basis/test_files/base_xuastc_arith.ktx2",
       "sourceId": "basis-universal-tests",
@@ -1127,7 +1926,7 @@
     }
   ],
   "totals": {
-    "files": 98,
-    "bytes": 36262515
+    "files": 155,
+    "bytes": 72171934
   }
 }

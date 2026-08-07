@@ -55,3 +55,45 @@ declared_from = "LICENSE"
 commercial_use = true
 onward_use = "unrestricted"
 covers = "Basis Universal, Binomial LLC. Test textures published with the encoder."
+
+# ASTC — the block format modern mobile and desktop GPUs actually sample, and the one
+# container this pack was missing. ARM's encoder ships its own `.astc` files alongside the
+# PNG/HDR/EXR sources they were encoded from, so the pack gains a source-and-result pairing
+# it did not have for KTX or Basis: what a block-compressed texture is *supposed* to look
+# like is present, not merely asserted.
+#
+# The `.ktx` and `.dds` files here are the same images in other containers, which makes them
+# a cross-container check rather than duplication.
+#
+# FIVE OF THE TEN `.astc` FILES ARE NEGATIVE CASES, and they were nearly missed: the encoded
+# textures sit in `Test/Data/` while the sources sit in `Test/Images/`, so a glob written
+# against the obvious directory selects the inputs and none of the outputs.
+# `negative_magic`, `negative_short`, `negative_block_size`, `negative_overflow` and
+# `negative_huge` name exactly the four ways a block-format header goes wrong — a bad magic,
+# a truncated file, an impossible footprint, and dimensions whose product overflows the
+# allocation computed from them. That last pair is the one with a security shape.
+[[source]]
+id = "astc-encoder-tests"
+kind = "upstream"
+repo = "ARM-software/astc-encoder"
+ref = "main"
+fetch = "blobs"
+subtree = "Test"
+include = [
+  "Test/Data/**/*.astc",
+  "Test/Images/**/*.ktx",
+  "Test/Images/**/*.dds",
+  "Test/Images/**/*.png",
+  "Test/Images/**/*.hdr",
+  "Test/Images/**/*.exr",
+]
+strip = "Test/"
+dest = "astc/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE.txt"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Apache License 2.0, Copyright 2011-2024 Arm Limited. The image set is the encoder's own regression material."

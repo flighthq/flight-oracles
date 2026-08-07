@@ -36,7 +36,7 @@ already exist was not worth declining.
 | `tilemap-fixtures` | 475 | 21.6 MB | Tiled TMX/TSX/TMJ/TSJ — map versions 1.0 through 1.11 |
 | `dragonbones-fixtures` | 145 | 14.2 MB | DragonBones skeletons, JSON + binary `.dbbin` |
 | `gltf-khronos-binary` | 118 | 432.7 MB | GLB: self-contained models, textures embedded |
-| `texture-container-fixtures` | 98 | 36.3 MB | KTX2, KTX1, Basis Universal, DDS |
+| `texture-container-fixtures` | 155 | 72.2 MB | KTX2, KTX1, Basis, DDS, ASTC + 5 malformed ASTC |
 | `lottie-fixtures` | 79 | 15.3 MB | Lottie animations — 14 versions, v3.1.6–v5.12.2 |
 | `image-fixtures` | 60 | 0.1 MB | PngSuite — canonical PNG conformance corpus (PNG only) |
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
@@ -47,7 +47,7 @@ already exist was not worth declining.
 | `image-codec-fixtures` | 670 | 33.2 MB | **Oracles** — 12 codecs, each input paired with its decoded rendering |
 | `font-malformed-fixtures` | 312 | 25.1 MB | **Negative** — malformed and fuzzed fonts, every wrapper |
 | `spritesheet-fixtures` | 280 | 21.4 MB | libgdx `.atlas` texture atlas descriptors |
-| `font-fixtures` | 470 | 38.4 MB | TTF/OTF/TTC/WOFF/WOFF2 — every wrapper, plus W3C's diagnostic fonts |
+| `font-fixtures` | 642 | 46.0 MB | TTF/OTF/TTC/WOFF/WOFF2, W3C diagnostics, Type 1 and 70 bitmap formats |
 | `bitmapfont-fixtures` | 252 | 21.7 MB | AngelCode BMFont `.fnt` descriptors |
 | `text-conformance-fixtures` | 8 | 19.0 MB | **Oracles** — 614,914 Unicode conformance cases |
 | `particle-fixtures` | 279 | 19.7 MB | libgdx `.p` particle effect configs |
@@ -59,7 +59,7 @@ already exist was not worth declining.
 | `svg-path-fixtures` | 672 | 0.5 MB | **Oracles** — SVG path grammar, 371 expected-output pairs |
 | `xml-conformance-fixtures` | 1,184 | 2.6 MB | **Oracles** — XML with expected diagnostics |
 
-33 packs, 28,048 files. Several packs carry expectations as well as inputs:
+33 packs, 28,277 files. Several packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place), `gltf-generated-fixtures` (positive/negative conformance split),
 `svg-path-fixtures` and `xml-conformance-fixtures` (expected output and expected

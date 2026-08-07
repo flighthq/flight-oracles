@@ -130,7 +130,7 @@ Status: ✅ shipped · ◐ declared, not ingested · ○ not started
 | ✅ `lottie-fixtures` | Lottie JSON/.lottie | `scene2d-formats` | LottieFiles/lottie-docs, airbnb/lottie-web | CC-BY-4.0 / MIT |
 | ✅ `dragonbones-fixtures` | DragonBones JSON | `skeleton2d-formats` | DragonBones/DragonBonesJS | MIT |
 | ✅ `mesh-legacy-fixtures` | OBJ, MTL, MD2, MD5, 3DS, AWD2 | `scene3d-formats` | flighthq-ports/awayjs-examples (AWD2) + per-format | MIT |
-| ✅ `texture-container-fixtures` | KTX2, Basis, DDS, ATF | `texture-formats` | KTX-Software, basis_universal | NOASSERTION / Apache-2.0 |
+| ✅ `texture-container-fixtures` | KTX2, KTX1, Basis, DDS, ASTC, PVR* | `texture-formats` | KTX-Software, basis_universal, ARM-software/astc-encoder | NOASSERTION / Apache-2.0 |
 | ○ `draco-fixtures` | Draco-compressed meshes | `scene3d-formats` | google/draco | Apache-2.0 |
 | ✅ `font-fixtures` | TTF, OTF, TTC, WOFF, WOFF2, variable, MATH | `font` | adobe-fonts/source-sans, JetBrains/JetBrainsMono, googlefonts/fontations, web-platform-tests/wpt | OFL-1.1, Apache-2.0, BSD-3-Clause |
 | ✅ `font-malformed-fixtures` | malformed/fuzzed fonts, all wrappers | `font` | khaledhosny/ots | **undeclared** |
