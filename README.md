@@ -46,7 +46,7 @@ already exist was not worth declining.
 | `image-codec-fixtures` | 670 | 33.2 MB | **Oracles** — 12 codecs, each input paired with its decoded rendering |
 | `font-malformed-fixtures` | 312 | 25.1 MB | **Negative** — malformed and fuzzed fonts, every wrapper |
 | `spritesheet-fixtures` | 280 | 21.4 MB | libgdx `.atlas` texture atlas descriptors |
-| `font-fixtures` | 261 | 33.4 MB | TTF/OTF/TTC/WOFF/WOFF2 — the same faces in every wrapper |
+| `font-fixtures` | 470 | 38.4 MB | TTF/OTF/TTC/WOFF/WOFF2 — every wrapper, plus W3C's diagnostic fonts |
 | `bitmapfont-fixtures` | 252 | 21.7 MB | AngelCode BMFont `.fnt` descriptors |
 | `text-conformance-fixtures` | 8 | 19.0 MB | **Oracles** — 614,914 Unicode conformance cases |
 | `particle-fixtures` | 279 | 19.7 MB | libgdx `.p` particle effect configs |
@@ -58,7 +58,7 @@ already exist was not worth declining.
 | `svg-path-fixtures` | 672 | 0.5 MB | **Oracles** — SVG path grammar, 371 expected-output pairs |
 | `xml-conformance-fixtures` | 1,184 | 2.6 MB | **Oracles** — XML with expected diagnostics |
 
-32 packs, 27,741 files. Several packs carry expectations as well as inputs:
+32 packs, 27,950 files. Several packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place), `gltf-generated-fixtures` (positive/negative conformance split),
 `svg-path-fixtures` and `xml-conformance-fixtures` (expected output and expected

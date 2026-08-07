@@ -132,7 +132,7 @@ Status: ✅ shipped · ◐ declared, not ingested · ○ not started
 | ✅ `mesh-legacy-fixtures` | OBJ, MTL, MD2, MD5, 3DS, AWD2 | `scene3d-formats` | flighthq-ports/awayjs-examples (AWD2) + per-format | MIT |
 | ✅ `texture-container-fixtures` | KTX2, Basis, DDS, ATF | `texture-formats` | KTX-Software, basis_universal | NOASSERTION / Apache-2.0 |
 | ○ `draco-fixtures` | Draco-compressed meshes | `scene3d-formats` | google/draco | Apache-2.0 |
-| ✅ `font-fixtures` | TTF, OTF, TTC, WOFF, WOFF2, variable | `font` | adobe-fonts/source-sans, JetBrains/JetBrainsMono, googlefonts/fontations | OFL-1.1, Apache-2.0 |
+| ✅ `font-fixtures` | TTF, OTF, TTC, WOFF, WOFF2, variable, MATH | `font` | adobe-fonts/source-sans, JetBrains/JetBrainsMono, googlefonts/fontations, web-platform-tests/wpt | OFL-1.1, Apache-2.0, BSD-3-Clause |
 | ✅ `font-malformed-fixtures` | malformed/fuzzed fonts, all wrappers | `font` | khaledhosny/ots | **undeclared** |
 | ✅ `text-conformance-fixtures` | UAX #9/#14/#29 | `textbidi`, `textsegment` | Unicode UCD | Unicode-3.0 |
 | ○ `text-rendering-fixtures` | shaping cases | `textshaper`, `textlayout` | unicode-org/text-rendering-tests | NOASSERTION |
@@ -208,6 +208,38 @@ flight and which no well-formed corpus can establish.
 Its `good/` directory is deliberately left behind: 57 MB of real-world fonts named by content
 hash with no declaration of any kind, where the positive half is already better served by
 fonts that arrive with licences attached.
+
+### Diagnostic fonts, and a hypothesis that did not survive checking
+
+A reasonable guess about where W3C fonts would matter here: that SVG fixtures name specific
+W3C fonts, making those fonts a dependency of rendering the SVGs correctly. **Checked, and
+it is not the case.** Across all 302 vendored SVG files and every XHTML/HTML document in the
+corpus, exactly four files reference `font-family` at all, and they name `monospace` and
+`Helvetica` — generic and system families, nothing W3C-specific. Only two vendored SVGs
+contain a `<text>` element, so almost none of this corpus needs a font to render at all.
+
+The instinct was right about the destination and wrong about the route. W3C fonts belong
+here, just not because an SVG asked for them: **web-platform-tests ships a `fonts/`
+directory of 203 test fonts**, and it is a category none of the three sources above cover —
+fonts whose output is a *measurement* rather than a rendering:
+
+| | What it is for |
+| --- | --- |
+| `Ahem.ttf` | Every glyph is a solid block on a known em square, so rendered output is arithmetic. It is the font behind a large share of CSS and SVG layout tests. |
+| `pass.woff` / `fail.woff` | The W3C WebFonts Working Group's WOFF test pair — name tables "WOFF Test TTF" and "WOFF Test TTF Fallback". Load one as the webfont and the other as the fallback, and which one rendered answers "did the WOFF decode" with no inspection. The same construction is what a WOFF2 support claim wants. |
+| `CanvasTest-*.ttf` | Deliberately odd vertical metrics — ascent 256, descent 0, no space glyph — so a metrics reader is checked against numbers. |
+| `math/*.woff` (81) | MATH-table fonts, one per construction. Nothing else here carries a MATH table. |
+| `baseline-diagnostic` | Baseline alignment, with the metrics documented in its README. |
+| `CSSTest` (52) | Modified Gentium Basic differing mostly in name table and cmap — built to test font *matching* rather than rendering. |
+
+Six source blocks, because the declarations genuinely differ: web-platform-tests' BSD-3-Clause
+over the fonts it built, and separate OFL-1.1 declarations from SIL (CSSTest), Adobe (the
+orientation-test fonts), Google (five Noto subsets), Eli Heuer (a monospace Arabic face for
+bidi-against-line-breaking) and Sajid Anwar (baseline-diagnostic). Each ships beside its own
+licence text.
+
+This is also the first source to use `subtree` — see the media section — since reaching 4.9 MB
+of fonts inside a 2.6 GB repository is not possible any other way.
 
 ### Detection now reads font containers properly
 

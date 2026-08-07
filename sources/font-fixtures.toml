@@ -123,3 +123,151 @@ declared_from = "LICENSE-APACHE"
 commercial_use = true
 onward_use = "unrestricted"
 covers = "googlefonts/fontations is offered under Apache-2.0 or MIT at the reader's choice; the Apache grant is the one relied on here and the one snapshotted. Its test data mixes fonts the project built with subsets of third-party families carrying OFL-1.1 or Apache-2.0 upstream, none of it separately declared."
+
+# ---------------------------------------------------------------------------------------
+# web-platform-tests/fonts — the fonts the web platform is actually tested with.
+#
+# These are DIAGNOSTIC fonts, which is a category the three sources above do not cover and
+# which no font shipped to users ever will. The point of one of these is not that it renders
+# well; it is that its output is a measurement:
+#
+#   Ahem.ttf              Every glyph is a solid block on a known em square, so rendered
+#                         output is arithmetic rather than judgement. It is the font behind
+#                         a very large share of CSS and SVG layout tests.
+#   pass.woff / fail.woff The W3C WebFonts Working Group's own WOFF test pair — checked
+#                         here rather than assumed: their name tables read "WOFF Test TTF"
+#                         and "WOFF Test TTF Fallback". One is loaded as the webfont and
+#                         the other as the fallback, so which one rendered answers "did the
+#                         WOFF decode" without inspecting anything. The same construction
+#                         works for WOFF2 and is the shape a WOFF2 support claim wants.
+#   CanvasTest-*.ttf      Built with deliberately odd vertical metrics — ascent 256,
+#                         descent 0, no space glyph — so a metrics reader can be checked
+#                         against numbers rather than eyeballed.
+#   math/*.woff (81)      MATH-table fonts, one per construction being tested. Nothing else
+#                         here carries a MATH table at all.
+#   baseline-diagnostic   Alignment baselines, with the metrics documented in its README.
+#
+# The subdirectories carrying their own OFL declarations are split out below, because the
+# repository's BSD grant is a statement about web-platform-tests and SIL's, Adobe's and
+# Google's are statements about their fonts.
+#
+# Fetched with `subtree`, which is what makes reaching into a 2.6 GB repository for 4.9 MB
+# of fonts possible at all.
+[[source]]
+id = "wpt-fonts"
+kind = "upstream"
+repo = "web-platform-tests/wpt"
+ref = "master"
+fetch = "blobs"
+subtree = "fonts"
+include = [
+  "fonts/*.ttf", "fonts/*.otf", "fonts/*.woff", "fonts/*.woff2",
+  "fonts/*.css", "fonts/README.md",
+  "fonts/ahem-extra/**",
+  "fonts/math/**",
+]
+strip = "fonts/"
+dest = "wpt/"
+
+[source.license]
+declared = "BSD-3-Clause"
+declared_scope = "repository-root"
+declared_from = "LICENSE.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "web-platform-tests is dual-licensed under the 3-Clause BSD License and the W3C 3-clause BSD License at the recipient's option; the BSD grant is the one relied on. Ahem, the CanvasTest metric fonts, the pass/fail pair and the MATH set were built for the suite. The root directory also holds vendored copies of Lato, Gentium Plus, Scheherazade, M+ 1p and others whose own upstreams are OFL-1.1 and which wpt does not separately declare — the repository-wide scope recorded here is the honest description of that."
+
+[[source]]
+id = "wpt-fonts-csstest"
+kind = "upstream"
+repo = "web-platform-tests/wpt"
+ref = "master"
+fetch = "blobs"
+subtree = "fonts"
+include = ["fonts/CSSTest/**"]
+strip = "fonts/"
+dest = "wpt/"
+
+[source.license]
+declared = "OFL-1.1"
+declared_scope = "directory"
+declared_from = "fonts/CSSTest/LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "SIL Open Font License 1.1, Copyright (c) 2003-2008 SIL International, with Reserved Font Names 'Gentium' and 'SIL'. Per the directory's README these are modified Gentium Basic: a four-face family for bold/italic selection and an ASCII-subsetted variant, differing mostly in name table and character map — which is what makes them useful for testing font matching rather than rendering."
+
+[[source]]
+id = "wpt-fonts-adobe"
+kind = "upstream"
+repo = "web-platform-tests/wpt"
+ref = "master"
+fetch = "blobs"
+subtree = "fonts"
+include = ["fonts/adobe-fonts/**"]
+strip = "fonts/"
+dest = "wpt/"
+
+[source.license]
+declared = "OFL-1.1"
+declared_scope = "directory"
+declared_from = "fonts/adobe-fonts/LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "SIL Open Font License 1.1, Copyright (c) 2013 Adobe Systems Incorporated, with Reserved Font Names 'CSS Half-Width Orientation Test' and 'CSS Full-Width Orientation Test'. Purpose-built OpenType fonts for testing vertical-writing orientation."
+
+[[source]]
+id = "wpt-fonts-noto"
+kind = "upstream"
+repo = "web-platform-tests/wpt"
+ref = "master"
+fetch = "blobs"
+subtree = "fonts"
+include = ["fonts/noto/**"]
+strip = "fonts/"
+dest = "wpt/"
+
+[source.license]
+declared = "OFL-1.1"
+declared_scope = "directory"
+declared_from = "fonts/noto/cjk/LICENSE.txt"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "SIL Open Font License 1.1 over Noto subsets: CJK with and without `chws` spacing tables, Korean, Adlam, Cypriot, and a colour-emoji subset. Five subdirectories each carry their own copy of the OFL text and each is included in place beside its fonts; the snapshot in LICENSES/ is the CJK one, and they are identical in terms."
+
+[[source]]
+id = "wpt-fonts-hasubi"
+kind = "upstream"
+repo = "web-platform-tests/wpt"
+ref = "master"
+fetch = "blobs"
+subtree = "fonts"
+include = ["fonts/hasubi-mono/**"]
+strip = "fonts/"
+dest = "wpt/"
+
+[source.license]
+declared = "OFL-1.1"
+declared_scope = "directory"
+declared_from = "fonts/hasubi-mono/LICENSE.txt"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "SIL Open Font License 1.1. A monospace Arabic webfont, present because it exercises bidi against line breaking and not every platform ships one — which makes it the font counterpart to what text-conformance-fixtures tests as character data."
+
+[[source]]
+id = "wpt-fonts-baseline"
+kind = "upstream"
+repo = "web-platform-tests/wpt"
+ref = "master"
+fetch = "blobs"
+subtree = "fonts"
+include = ["fonts/baseline-diagnostic/**"]
+strip = "fonts/"
+dest = "wpt/"
+
+[source.license]
+declared = "OFL-1.1"
+declared_scope = "directory"
+declared_from = "fonts/baseline-diagnostic/LICENSE.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "SIL Open Font License 1.1, Copyright (c) 2026 Sajid Anwar. A font for validating baseline alignment, whose README documents the metrics each baseline is set to."
