@@ -92,9 +92,650 @@
         "covers": "webmproject/libwebp-test-data carries no licence file. The sibling libwebp repository is BSD-3-Clause, but that declaration is about the library and was not carried into this repository; nothing here establishes terms for the data.",
         "onwardUse": "unknown"
       }
+    },
+    {
+      "id": "compact-icc-profiles",
+      "kind": "upstream",
+      "repo": "saucecontrol/Compact-ICC-Profiles",
+      "ref": "master",
+      "commit": "bdd84663061bc4ae95ca70decff54f581e27f702",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "CC0-1.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "license",
+        "covers": "CC0 1.0 Universal \u2014 dedicated to the public domain by Clinton Ingram, with no attribution requirement.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/compact-icc-profiles@bdd84663061b.txt"
     }
   ],
   "files": [
+    {
+      "path": "icc/profiles/AdobeCompat-v2.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/AdobeCompat-v2.icc",
+      "sha256": "60fb2adecacf82132db0b1c09b303316f3bbd9e2823e7ba096d01627d12d57c9",
+      "size": 374,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/AdobeCompat-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/AdobeCompat-v4.icc",
+      "sha256": "1e35b53d118eba6835a7bac06137ea87cd5ad6eee97b20a88b29ab6356b00e43",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/AppleCompat-v2.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/AppleCompat-v2.icc",
+      "sha256": "5109111a394a7c4dd6fde725718d88af47e8d7336ff3adda67307825c561cb7b",
+      "size": 374,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/AppleCompat-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/AppleCompat-v4.icc",
+      "sha256": "d7b8fa8fa9c1a804fdc62ff166adfa49fa714b219463f11b3486190a8ad7b137",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/CGATS001Compat-v2-micro.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/CGATS001Compat-v2-micro.icc",
+      "sha256": "73e1ba37d2bad5bab2a964f40a9eed96209666efc067c3322626214bbef234a0",
+      "size": 8464,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "scnr",
+        "colorSpace": "CMYK",
+        "connectionSpace": "Lab"
+      }
+    },
+    {
+      "path": "icc/profiles/ColorMatchCompat-v2.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/ColorMatchCompat-v2.icc",
+      "sha256": "26281f1e1afca151a4fcd0731e83a9d139f8bf5ae17f5a34f0dab49daa6c8e35",
+      "size": 374,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/ColorMatchCompat-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/ColorMatchCompat-v4.icc",
+      "sha256": "f65c9a6e2ec5595f9961570b7f6f779e88150d3a308353fc04b2e3889a45b200",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/DCI-P3-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/DCI-P3-v4.icc",
+      "sha256": "58ac463ea778e9b70692971dd4ba9071363a03aba77043894162b1ad6c051da7",
+      "size": 464,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/DisplayP3-v2-magic.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/DisplayP3-v2-magic.icc",
+      "sha256": "fa7905dea9d49e775f4e367966e6fc3411e843b44ea91fd7908104b7943a1446",
+      "size": 736,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/DisplayP3-v2-micro.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/DisplayP3-v2-micro.icc",
+      "sha256": "cdb9ed06df5cc3be0c24f097407a490daee8ffce764fa8ff1dd66c8b5a591eb7",
+      "size": 456,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/DisplayP3-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/DisplayP3-v4.icc",
+      "sha256": "cb51de38e482ee974c0c76b9689e16aad04bad16e226fed2f30c842d15ff3a3d",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/DisplayP3Compat-v2-magic.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/DisplayP3Compat-v2-magic.icc",
+      "sha256": "4564e3575b10133dfe34097696ce54eb0c4bb7ad5278d999f7ef68938ba8d372",
+      "size": 736,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/DisplayP3Compat-v2-micro.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/DisplayP3Compat-v2-micro.icc",
+      "sha256": "a917f04df365b7331e614a32ea309975006e851b5a39ecb9ace8f07172e9ef6e",
+      "size": 456,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/DisplayP3Compat-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/DisplayP3Compat-v4.icc",
+      "sha256": "231752984cd4a5278e1b8d2390fe496767d4511fc81f54e1a5c69ae9ab4c42b5",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/ProPhoto-v2-magic.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/ProPhoto-v2-magic.icc",
+      "sha256": "59d1ef4f6b882d0d923bdaed86268f55dd30a8d102f4882aad9c2bbe9fb340c9",
+      "size": 756,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/ProPhoto-v2-micro.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/ProPhoto-v2-micro.icc",
+      "sha256": "00b0ac58f99189b071bfca63b5434fd9f48ad08c92b17e6ce525e54b9d1a8319",
+      "size": 496,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/ProPhoto-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/ProPhoto-v4.icc",
+      "sha256": "090daf740c136b4a63bf979d64f034b4a65aa5abbb04a0917729222afe2bb5c2",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec2020-g24-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec2020-g24-v4.icc",
+      "sha256": "b03c9218e82ab12fc4fcac7f5a0fb10ff53ebc7ad8387ae68a6d8cf5d4dfbaa3",
+      "size": 464,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec2020-v2-magic.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec2020-v2-magic.icc",
+      "sha256": "aefd0745fc9267d7387e6f10c6e739a354664b179194b02effc880c63f74ec8c",
+      "size": 790,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec2020-v2-micro.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec2020-v2-micro.icc",
+      "sha256": "5fa064e6456b9b719e445f07038442fac6e9c5153e187f36e1ba4bcf23fb975b",
+      "size": 460,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec2020-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec2020-v4.icc",
+      "sha256": "135ebd418b668c0ca56a8dea6d262c4deccae8166e0ca8264b7d7f35863ccb4b",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec2020Compat-v2-magic.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec2020Compat-v2-magic.icc",
+      "sha256": "9b4e2cbd2bcd0b55b30cf660e6ee79775f714565bf055f1545081ce17a7d592a",
+      "size": 790,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec2020Compat-v2-micro.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec2020Compat-v2-micro.icc",
+      "sha256": "9e8ca28a47dc1b00d0ce54ee603fe1972bdfdf1ca10a9a3a329cd2f69de52296",
+      "size": 460,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec2020Compat-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec2020Compat-v4.icc",
+      "sha256": "a141684281e5c90a3d49e1eb415ae105b1f68144d32828281d77bf782a625600",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec601NTSC-v2-magic.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec601NTSC-v2-magic.icc",
+      "sha256": "04a6d6e440afca339b07f3299e5bba5e287f5a50e86be8cc24913715d4482d5c",
+      "size": 738,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec601NTSC-v2-micro.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec601NTSC-v2-micro.icc",
+      "sha256": "ef7effc339d96ea821281d29e384eecf712228508d14181a91aedbcb6c811d79",
+      "size": 460,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec601NTSC-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec601NTSC-v4.icc",
+      "sha256": "b6b9331eb72e6f4e4d0409b84097ffac73956e335ac204f9431e89e7b9f5a28a",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec601PAL-v2-magic.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec601PAL-v2-magic.icc",
+      "sha256": "7d8958f9d5c20e6638f576e5e765bc6d84e50d74e0ad9e5a7df8ccef05b481db",
+      "size": 738,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec601PAL-v2-micro.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec601PAL-v2-micro.icc",
+      "sha256": "b73d6b86c9eb2db0a7ae0c8610d2b7dedd7dea87a1ce416e31c5add1ac771aac",
+      "size": 460,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec601PAL-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec601PAL-v4.icc",
+      "sha256": "08b294eb3cac434e7bd2e5e36e5eca383674a29c096d0cbd85f849e127b0f2ce",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec709-v2-magic.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec709-v2-magic.icc",
+      "sha256": "e56de34050a2e31a76688a85381e834bfbdb486d2a972cbfd9eeee600f9a2e7b",
+      "size": 738,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec709-v2-micro.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec709-v2-micro.icc",
+      "sha256": "c7e7388df3307495b97ba9985cd285b4c09426a0c365427176ae45e709ef49ec",
+      "size": 460,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/Rec709-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/Rec709-v4.icc",
+      "sha256": "cf2a17aedc5fab20b207ee7bc42cea1d0bbf6f9f089a93973e370b2d45f7e700",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/WideGamutCompat-v2.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/WideGamutCompat-v2.icc",
+      "sha256": "61ab00ecf840cd97125df967d598b7870d1fe47ffcd4e9b90ba0d597df091e36",
+      "size": 374,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/WideGamutCompat-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/WideGamutCompat-v4.icc",
+      "sha256": "518f6ef4d919c6f812ab84738c59afa4edb3e96de7cabc40d02006fa83d33f92",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/sGrey-v2-magic.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/sGrey-v2-magic.icc",
+      "sha256": "4110169287e5f1b5149ca9f1da1814d32943905bba8030e849d1a3b729a19481",
+      "size": 616,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "GRAY",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/sGrey-v2-micro.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/sGrey-v2-micro.icc",
+      "sha256": "010676406dbfc641776154fd3603adef7bace317a26027a33066891975621820",
+      "size": 336,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "GRAY",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/sGrey-v2-nano.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/sGrey-v2-nano.icc",
+      "sha256": "ac2805b9e07b6fa3ba7406aa48e84d87041097da66220cc2a385e17bb2893cc1",
+      "size": 290,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "GRAY",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/sGrey-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/sGrey-v4.icc",
+      "sha256": "00c0f94e09127520a17dc0e1d9264b5702081d96dbdb1549ee88e3631ce42a9d",
+      "size": 360,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "GRAY",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/sRGB-v2-magic.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/sRGB-v2-magic.icc",
+      "sha256": "af4efe28f6d311799865f325ba39184a2e978b113ca74124d60af7de22b105f4",
+      "size": 736,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/sRGB-v2-micro.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/sRGB-v2-micro.icc",
+      "sha256": "0a8a33aea66a6f154a5642ebe168ef287e73265d9f7b51c42a45e6eedbacda7a",
+      "size": 456,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/sRGB-v2-nano.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/sRGB-v2-nano.icc",
+      "sha256": "72c1355ac9fa7c7e626e1faa30bd4ef89e57a3d039df249f9ca3f0aed98b3c58",
+      "size": 410,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/sRGB-v4.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/sRGB-v4.icc",
+      "sha256": "c56e1685d888f5edb92fe07f2750f387f8fe8e91b32ff8fb0b56bfbbb9458353",
+      "size": 480,
+      "format": {
+        "kind": "icc",
+        "version": "4.2",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/profiles/scRGB-v2.icc",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "profiles/scRGB-v2.icc",
+      "sha256": "8ae25bd986ea0dc396540762a6aa8c7fbeab7ac777cfdf242fa7c35874f4b383",
+      "size": 372,
+      "format": {
+        "kind": "icc",
+        "version": "2.1",
+        "deviceClass": "mntr",
+        "colorSpace": "RGB",
+        "connectionSpace": "XYZ"
+      }
+    },
+    {
+      "path": "icc/readme.md",
+      "sourceId": "compact-icc-profiles",
+      "upstreamPath": "readme.md",
+      "sha256": "1a844dff76783493d3b1b81e4ec8b43b79a3f17ff52e162c393df17fda554949",
+      "size": 16066
+    },
     {
       "path": "image-rs/assets/README.md",
       "sourceId": "image-rs",
@@ -9732,7 +10373,7 @@
     }
   ],
   "totals": {
-    "files": 670,
-    "bytes": 33164881
+    "files": 715,
+    "bytes": 33211381
   }
 }

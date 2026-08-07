@@ -1,0 +1,1184 @@
+{
+  "pack": {
+    "name": "draco-fixtures",
+    "kind": "fixtures",
+    "summary": "Draco-compressed geometry \u2014 both encoding methods at several compression levels, each beside the uncompressed mesh it came from."
+  },
+  "sources": [
+    {
+      "id": "draco-testdata",
+      "kind": "upstream",
+      "repo": "google/draco",
+      "ref": "main",
+      "commit": "47238930f698250f474163e1a29d77858aa5c158",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "Apache-2.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "Apache License 2.0, Copyright 2016 The Draco Authors. The test data is the project's own regression corpus; the Stanford bunny appears among it, as it does in most geometry test sets.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/draco-testdata@47238930f698.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "draco/Box.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/Box.ply",
+      "sha256": "d54c9bb3fe075cf955caa1464674a2efa595a7c2e56ccf91a0a70c8e6684f736",
+      "size": 1661,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "binary_little_endian"
+      }
+    },
+    {
+      "path": "draco/bun_zipper.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/bun_zipper.ply",
+      "sha256": "b1acc63bece78444aa2e15bdcc72371a201279b98c6f5d4b74c993d02f0566fe",
+      "size": 3033195,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "draco/bunny_gltf.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/bunny_gltf.drc",
+      "sha256": "c1bf564f279849f311c4b4205dd16d729557c208fd9502ab124b784d146add80",
+      "size": 120867,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/bunny_norm.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/bunny_norm.obj",
+      "sha256": "f25a319da30d27ffa51b4c990fb828235f79c455c3589ea86799427728725d0d",
+      "size": 4930097,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/car.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/car.drc",
+      "sha256": "8c712644d842606223329ae3c8ce69d9d4ec9338a8e179b08486507bfa0f4101",
+      "size": 69892,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "sequential"
+      }
+    },
+    {
+      "path": "draco/cube_att.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_att.drc",
+      "sha256": "327d95888f62a45f9579a9020701afc29d0d6c74e69406ed8b5154ba4a307f70",
+      "size": 301,
+      "format": {
+        "kind": "drc",
+        "version": "1.1",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/cube_att.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_att.obj",
+      "sha256": "72194f6d1e948c898dfa9056d473af012a3705c15015ac8282e33405aab9a738",
+      "size": 567,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/cube_att.obj.edgebreaker.cl10.2.2.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_att.obj.edgebreaker.cl10.2.2.drc",
+      "sha256": "6509b7600bfe3bb395881ac536a787f32d079eca652c7ac05e61938c86641088",
+      "size": 224,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/cube_att.obj.edgebreaker.cl4.2.2.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_att.obj.edgebreaker.cl4.2.2.drc",
+      "sha256": "f90c73777a7d0b2d74c4128364428014527f2fce54998d220be360a466ff7caa",
+      "size": 199,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/cube_att.obj.sequential.cl3.2.2.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_att.obj.sequential.cl3.2.2.drc",
+      "sha256": "a97cf55c8d41e3401564d47ffc636dbeb37d6859c59b16e55e71e6111657a433",
+      "size": 220,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "sequential"
+      }
+    },
+    {
+      "path": "draco/cube_att.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_att.ply",
+      "sha256": "b80adba5aab46e13d3d43e8b52783dfe99ad8ad2e0f86986da1fc44e868f4396",
+      "size": 853,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "draco/cube_att_partial.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_att_partial.obj",
+      "sha256": "5b6431215145de84542a65f16b7d6d07b0db9cfae94f66776c1b9d23078649cd",
+      "size": 582,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/cube_att_sub_o.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_att_sub_o.obj",
+      "sha256": "deb0ab61df7d59ebbe16c2a2bd1f612e32cb02353ff54a1b18ac6c5e993dbc10",
+      "size": 588,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/cube_att_sub_o_2.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_att_sub_o_2.drc",
+      "sha256": "756a4973691d4b4debfd1b2c2d6f702b96a252de07e8308261305541f1a3ea76",
+      "size": 277,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/cube_att_sub_o_2.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_att_sub_o_2.obj",
+      "sha256": "a33966dbd6fdf017b56a74cd1736eda63ef332d4eedff4b933a60051ce652c6f",
+      "size": 589,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/cube_att_sub_o_no_metadata.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_att_sub_o_no_metadata.drc",
+      "sha256": "965441b245fcbe8c777635e8d0ebb142381cee50815b3b201d393ad5fa26e8a8",
+      "size": 227,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/cube_pc.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_pc.drc",
+      "sha256": "9c9f4810bf12d3bbc35f72d8d351b2d2b1393bcc5bf102423fe85cb14d1c95cb",
+      "size": 224,
+      "format": {
+        "kind": "drc",
+        "version": "1.1",
+        "encoderType": "point-cloud",
+        "encodingMethod": "sequential"
+      }
+    },
+    {
+      "path": "draco/cube_quads.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_quads.obj",
+      "sha256": "0f694b987dddffd6c3d0bbd76765f220aee65cb0a00f3cae063306460cc80a88",
+      "size": 465,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/cube_quads.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_quads.ply",
+      "sha256": "f984d7f586ee248547dc4aa35c03c82e77c1f3fb3d341dda446bf77c70f82769",
+      "size": 267,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "draco/cube_subd.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/cube_subd.obj",
+      "sha256": "e1926f726851af429d7edbfd8f6042bcd1e1d62031ed2a6d7807f56c22212b8e",
+      "size": 90411,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/deg_faces.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/deg_faces.obj",
+      "sha256": "a0412fa275326381b393d4a1cbe23a56ac64f4b72237ea435c982dd48745a1d3",
+      "size": 255,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/degenerate_mesh.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/degenerate_mesh.obj",
+      "sha256": "d001df9b20d5577da21d65b6c02387054741e78478613ee8e5c9dd3fdc677e0b",
+      "size": 32,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/delim_test.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/delim_test.ply",
+      "sha256": "242802e09ec36f0028b34daf92dc316f35faeb78a6fa53eb534037805fae7c46",
+      "size": 1661,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "binary_little_endian"
+      }
+    },
+    {
+      "path": "draco/empty_name.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/empty_name.obj",
+      "sha256": "af48642132ec487c238bda0b5f500fd93d798753e561680f3be3fd62a986b2f4",
+      "size": 198,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/eof_test.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/eof_test.obj",
+      "sha256": "edae16711a84bb1c3323ba803c7f6118a3462e74560f26df71974610e40a90a7",
+      "size": 58,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/extra_vertex.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/extra_vertex.obj",
+      "sha256": "9b0c6314d6dfde9fb68cc6b1849ef28f7dca862a2e6345de9f6e50e608ef8b16",
+      "size": 828,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/float_inf_point_cloud.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/float_inf_point_cloud.ply",
+      "sha256": "f85e732870127a29182958b96007ec8e1a3a2bc040199f1546fe98b85b196fea",
+      "size": 286,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "draco/float_two_att_point_cloud.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/float_two_att_point_cloud.ply",
+      "sha256": "5e81974e1492ee49f1247492dad13a75ca7870fafb7ea62c10bc12431eb8a779",
+      "size": 208,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "draco/inf_nan.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/inf_nan.obj",
+      "sha256": "c94f6475885f5808a30e1cd4af17df3bb1e0cef2971e995cb1ef0f04265e4b4a",
+      "size": 133,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/int_point_cloud.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/int_point_cloud.ply",
+      "sha256": "f752023dffd02d371ee95a07da01e8466eaf7feb1a509d8ea5c4808ac3624579",
+      "size": 271,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "draco/mat_test.mtl",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/mat_test.mtl",
+      "sha256": "4b2dc61eed5ba04b35d14cf8d787bdafe0898ae95ba396874687908ecb81eaa4",
+      "size": 1657,
+      "format": {
+        "kind": "mtl",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/mat_test.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/mat_test.obj",
+      "sha256": "a298328bc6550bebcfcd5001537115b75b4a9e902893a4569f4911ee161d23a9",
+      "size": 138393,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/multiple_isolated_triangles.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/multiple_isolated_triangles.obj",
+      "sha256": "9eafa6af04a8b54ba545ff004798bd342dffffa2c8b5bf3c95414c426f88e993",
+      "size": 311,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/multiple_tetrahedrons.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/multiple_tetrahedrons.obj",
+      "sha256": "c02ddf9ef4ba8ca1e06d1b9df34c12a7fda82075201815a757b1c74b8ee0872a",
+      "size": 534,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/non_manifold_wrap.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/non_manifold_wrap.obj",
+      "sha256": "2f1fb1cf906165eff855a8aafaa5bbc57bfc2bb6c25df373674a326213548b1b",
+      "size": 212,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/octagon.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/octagon.obj",
+      "sha256": "24f8bc2040f32203cc14ba24b87acb4b8b5f693d6da93713f6a0eb0c661b2cb3",
+      "size": 156,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/octagon_preserved.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/octagon_preserved.drc",
+      "sha256": "76d947305618e28dfeb120c249a9b0e7f476e89b445f2ff05d3ad425e420e4bb",
+      "size": 166,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/octagon_preserved.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/octagon_preserved.obj",
+      "sha256": "564a2ebe8d7edb8dcd787073d67a7c338b8478c5b170caa597330148ae884d66",
+      "size": 250,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/one_face_123.gltf",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/one_face_123.gltf",
+      "sha256": "47fd224c4e665b9dacbefa181f1028cbf50b9183d1fb622d2b247c851fbc4cb9",
+      "size": 1414,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "draco/one_face_123.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/one_face_123.obj",
+      "sha256": "b579a6cfb0bd728fd17b9bc3b7fef825c9c3fea0b2be71d2f45ee7c68015e3f2",
+      "size": 138,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/one_face_123_buffer0.bin",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/one_face_123_buffer0.bin",
+      "sha256": "4f5a9872dcc694fc32281e2b79af81ca93df4422046313ee8aac526a526a0e49",
+      "size": 40
+    },
+    {
+      "path": "draco/one_face_123_cesium_rtc.gltf",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/one_face_123_cesium_rtc.gltf",
+      "sha256": "d03e9413f788891fc31708c9471d434b7397f4db35159383260aa9f24a83ad81",
+      "size": 1549,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0",
+        "extensionsUsed": [
+          "CESIUM_RTC"
+        ]
+      }
+    },
+    {
+      "path": "draco/one_face_123_mirror.gltf",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/one_face_123_mirror.gltf",
+      "sha256": "04a4af65fdffc1c4fa6f21cfbe22e43d6237fe595cd116b5ab1d697a77250cd4",
+      "size": 1443,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "draco/one_face_123_translated.gltf",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/one_face_123_translated.gltf",
+      "sha256": "0b561542e3ee61c8121273d26a8835a2e2ee56dfdedd898fcc9175c1689e7168",
+      "size": 1649,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "draco/one_face_312.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/one_face_312.obj",
+      "sha256": "159146d3cab70754c914188f20d0d271f73c4655aa9e7d66f382c61075e5439e",
+      "size": 139,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/one_face_321.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/one_face_321.obj",
+      "sha256": "51ce53dbf99eeae9255a68655b40ec7ca0971dce541c86882c63bb6b57e4ce32",
+      "size": 139,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/pc_color.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/pc_color.drc",
+      "sha256": "69154c00d5c81796cf919fe89bd7427bf9467d088f21c09bb3b78c7f7593a65a",
+      "size": 54766,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "point-cloud",
+        "encodingMethod": "sequential"
+      }
+    },
+    {
+      "path": "draco/pc_kd_color.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/pc_kd_color.drc",
+      "sha256": "4510aea1076b43498907cb11210938dc984238adced93c6e91ca406081202bad",
+      "size": 37353,
+      "format": {
+        "kind": "drc",
+        "version": "2.3",
+        "encoderType": "point-cloud",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/point_cloud_no_qp.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/point_cloud_no_qp.drc",
+      "sha256": "047d271ed8f3f6f02723e9bd8d4901e021519564ef0d52fb9ecf491723aacc5d",
+      "size": 345,
+      "format": {
+        "kind": "drc",
+        "version": "2.3",
+        "encoderType": "point-cloud",
+        "encodingMethod": "sequential"
+      }
+    },
+    {
+      "path": "draco/point_cloud_test_pos.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/point_cloud_test_pos.obj",
+      "sha256": "0c19e0684d783552b60cfb991abe1e60651e84a5890f26018d5920690e56a2b9",
+      "size": 328,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/point_cloud_test_pos.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/point_cloud_test_pos.ply",
+      "sha256": "2c49267875d6d0fd86fa30f9a1698020c1c78f1ac5821c9b2114b2d6db4c1522",
+      "size": 242,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "binary_little_endian"
+      }
+    },
+    {
+      "path": "draco/point_cloud_test_pos_norm.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/point_cloud_test_pos_norm.obj",
+      "sha256": "306289ef9c38dd2794b72396c1939a3410ad64e2d620287c2dfda29fa66528b7",
+      "size": 477,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/point_cloud_test_pos_norm.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/point_cloud_test_pos_norm.ply",
+      "sha256": "678fba079b2954282b0632b61582a3b115e76e8291fc5137b349a27000a6f6b3",
+      "size": 344,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "binary_little_endian"
+      }
+    },
+    {
+      "path": "draco/simple_skin.gltf",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/simple_skin.gltf",
+      "sha256": "09bd56f372f30045dfca592bf0efaa7d635ff076f17e2215eeadbfbb4a2b5d40",
+      "size": 4120,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "draco/sphere.gltf",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/sphere.gltf",
+      "sha256": "f8fe76c7ea95894743cf9677864bdd560e3e5ecbca25a83093156c6075946110",
+      "size": 2855,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "draco/sphere.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/sphere.obj",
+      "sha256": "64b0f48d512a9a95abe59eca12ccc1d81ff854a215e940780187fe4fc2529b74",
+      "size": 14058,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/sphere_Texture0_Normal.png",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/sphere_Texture0_Normal.png",
+      "sha256": "de8f420bd7b17cc11cdbcdcc283dc7de683211a21e9b6c7d37067e743cf5cdf4",
+      "size": 21452,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "draco/sphere_Texture1_BaseColor.png",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/sphere_Texture1_BaseColor.png",
+      "sha256": "84cd038900d2f05d3eb1392ed3963e36cb983b4c903214ddd542f525667a77a9",
+      "size": 27647,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "draco/sphere_buffer0.bin",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/sphere_buffer0.bin",
+      "sha256": "21bc7373ec29f94e00831180a74f3e5eeba6cdc8a44456025ff86f9afb88f8bf",
+      "size": 11760
+    },
+    {
+      "path": "draco/sphere_lights.gltf",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/sphere_lights.gltf",
+      "sha256": "d65bdc77c45876dea4266c1d464c7f061e1bb6232ba142d446cc3b4966523909",
+      "size": 4618,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0",
+        "extensionsUsed": [
+          "KHR_lights_punctual"
+        ]
+      }
+    },
+    {
+      "path": "draco/sphere_no_tangents.gltf",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/sphere_no_tangents.gltf",
+      "sha256": "7db17d91c28d39ba26b8f497760541596ddab90055bed99ddb0d837e3b89bcb7",
+      "size": 2852,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "draco/sphere_two_tex_coords.gltf",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/sphere_two_tex_coords.gltf",
+      "sha256": "b48621c473f2cb2c3baacfc0b0a51468be51e7c52a15800ed5ab72472c0de8a4",
+      "size": 2884,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "draco/test.png",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test.png",
+      "sha256": "fa2e294e50860dff98f26902da0578ee739f4ea6460a4b01f6c1abe2535bf159",
+      "size": 24217,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "draco/test_extra_whitespace.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_extra_whitespace.ply",
+      "sha256": "e61e0fad896b264da11e09e68e110679a01d3117580ef37ead325c5f295ee94e",
+      "size": 375,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "draco/test_generic.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_generic.ply",
+      "sha256": "48be6564ec71783a37397db35ba213ab85d0ef7889a6939c9146b5bd721e912d",
+      "size": 5015,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "binary_little_endian"
+      }
+    },
+    {
+      "path": "draco/test_generic_golden.bin",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_generic_golden.bin",
+      "sha256": "0d13ecde11b70033c5b4df93e02f5f6d3cc31c0faea8806691520ef85557eb0f",
+      "size": 2952
+    },
+    {
+      "path": "draco/test_lines.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_lines.obj",
+      "sha256": "e2e34e877a68b9731b67bac1fff30dab58f7f30e67387b38e5d9ea45bb494e72",
+      "size": 31953,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/test_more_datatypes.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_more_datatypes.ply",
+      "sha256": "863149bdfd1973404f1a8ab75154fe992ecb34ef81f5567f95d3c554dd080c89",
+      "size": 345,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "draco/test_nm.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj",
+      "sha256": "942a01aff8b56c72577885f4bed1a3034698b8c7fa8efc70125237d9d2003b3c",
+      "size": 11285,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/test_nm.obj.edgebreaker.0.10.0.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj.edgebreaker.0.10.0.drc",
+      "sha256": "fa5056e8ed522f1909c14131a7d752d6663bed3d9c7e7e1c558d228647d134ad",
+      "size": 2529,
+      "format": {
+        "kind": "drc",
+        "version": "1.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/test_nm.obj.edgebreaker.0.9.1.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj.edgebreaker.0.9.1.drc",
+      "sha256": "32886e31ea3b0c759a4ba1b4f401ad23707dcdf7f419d6aebcff9d49b3f90b90",
+      "size": 2546,
+      "format": {
+        "kind": "drc",
+        "version": "1.1",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/test_nm.obj.edgebreaker.1.0.0.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj.edgebreaker.1.0.0.drc",
+      "sha256": "43a7a9eba2d1ef2471ceb30e65c707f93f6dd7754f8d434b6cd32f0eda8c45b1",
+      "size": 2499,
+      "format": {
+        "kind": "drc",
+        "version": "2.0",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/test_nm.obj.edgebreaker.1.1.0.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj.edgebreaker.1.1.0.drc",
+      "sha256": "51f894188e5aac3a640dad7f6f9dfaf7830fb9e5a427daafe8363054780d472d",
+      "size": 2035,
+      "format": {
+        "kind": "drc",
+        "version": "2.1",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/test_nm.obj.edgebreaker.cl10.2.2.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj.edgebreaker.cl10.2.2.drc",
+      "sha256": "e0e0fb2a80227a93748fffdde4b8dc1c99455304b7fe0f16ef323b28810aa172",
+      "size": 1124,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/test_nm.obj.edgebreaker.cl4.2.2.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj.edgebreaker.cl4.2.2.drc",
+      "sha256": "1ba8fc4eeacc513d89b430e39996cb5b863f8c04ed7cc7ecc10be898b482ae05",
+      "size": 1143,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/test_nm.obj.sequential.0.10.0.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj.sequential.0.10.0.drc",
+      "sha256": "46793cb043dced6a8d2f37443caf8a3f09fc0937eb253156b66c5f2d552a20e7",
+      "size": 2877,
+      "format": {
+        "kind": "drc",
+        "version": "1.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "sequential"
+      }
+    },
+    {
+      "path": "draco/test_nm.obj.sequential.0.9.1.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj.sequential.0.9.1.drc",
+      "sha256": "ccb65381f31520396df4a14dc9a831fb1c07666ee73bd6dc6c69fbcded436576",
+      "size": 2877,
+      "format": {
+        "kind": "drc",
+        "version": "1.1",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "sequential"
+      }
+    },
+    {
+      "path": "draco/test_nm.obj.sequential.1.0.0.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj.sequential.1.0.0.drc",
+      "sha256": "edca54a0796f579900566da4b03ec57f0dd9f68f323103e77d041877e2ad9538",
+      "size": 2872,
+      "format": {
+        "kind": "drc",
+        "version": "2.0",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "sequential"
+      }
+    },
+    {
+      "path": "draco/test_nm.obj.sequential.1.1.0.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj.sequential.1.1.0.drc",
+      "sha256": "987b1e6a9bc2f01562344aa57bf5ca90c7a4d4b3489b20fa9c894df4678c36b5",
+      "size": 2464,
+      "format": {
+        "kind": "drc",
+        "version": "2.1",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "sequential"
+      }
+    },
+    {
+      "path": "draco/test_nm.obj.sequential.cl3.2.2.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm.obj.sequential.cl3.2.2.drc",
+      "sha256": "1919b8e5710b7a496693de040db01a0dc0e6bcffcd14548eaeeb88ecde2b3e75",
+      "size": 1613,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "sequential"
+      }
+    },
+    {
+      "path": "draco/test_nm_quant.0.9.0.drc",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm_quant.0.9.0.drc",
+      "sha256": "6297fc409236ce3654f93ba6dc27dc2ebbd09f439161309e513b6bdc3f3bbfc3",
+      "size": 950,
+      "format": {
+        "kind": "drc",
+        "version": "1.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
+    },
+    {
+      "path": "draco/test_nm_trans.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_nm_trans.obj",
+      "sha256": "8ee7b1e49aea890e5ea27e3b55ad4a4aab7d8ccb243df70460714220cf1baa88",
+      "size": 11235,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/test_pos_color.gltf",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_pos_color.gltf",
+      "sha256": "9cb275818506027525fd0eb6a95a69b19ac6e88d00828e4bff282f2bbdb4b4be",
+      "size": 1830,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "draco/test_pos_color.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_pos_color.ply",
+      "sha256": "48be6564ec71783a37397db35ba213ab85d0ef7889a6939c9146b5bd721e912d",
+      "size": 5015,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "binary_little_endian"
+      }
+    },
+    {
+      "path": "draco/test_pos_color_ascii.ply",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_pos_color_ascii.ply",
+      "sha256": "810f36097e64c3b21893a6901ca9413b2b5ac59a8ba69bf815232d6b79582486",
+      "size": 7416,
+      "format": {
+        "kind": "ply",
+        "version": "1.0",
+        "encoding": "ascii"
+      }
+    },
+    {
+      "path": "draco/test_pos_color_buffer0.bin",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_pos_color_buffer0.bin",
+      "sha256": "533d86fb4cae043215deac1d91ddc5f1b7e2d16e3a77bc7c71e7ecb0693ca35c",
+      "size": 2496
+    },
+    {
+      "path": "draco/test_sphere.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_sphere.obj",
+      "sha256": "64b0f48d512a9a95abe59eca12ccc1d81ff854a215e940780187fe4fc2529b74",
+      "size": 14058,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/test_wrong_attribute_mapping.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/test_wrong_attribute_mapping.obj",
+      "sha256": "2409ecd3c4603a8589cbba26b727fd77b760f0124647231be48fc80c0fc9e072",
+      "size": 197,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/this_is_png.jpg",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/this_is_png.jpg",
+      "sha256": "fa2e294e50860dff98f26902da0578ee739f4ea6460a4b01f6c1abe2535bf159",
+      "size": 24217,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 256,
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "draco/three_faces_123.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/three_faces_123.obj",
+      "sha256": "9f80a65972ee33a480f0b2d7813d4a6d889abcb6cadbbd3f263635e433e70a35",
+      "size": 250,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/three_faces_312.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/three_faces_312.obj",
+      "sha256": "66ddcc2affde612636c0852612fcd2c56935f0a8d16a0cac7bc0771d61ebeb2c",
+      "size": 250,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/trailing_zero.jpg",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/trailing_zero.jpg",
+      "sha256": "cc1c6f2693b852b9b155d39936d1a7d112b7e78a35c5309dce6c0f182f167a9f",
+      "size": 5824,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
+    },
+    {
+      "path": "draco/triangle.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/triangle.obj",
+      "sha256": "4c553589f733bff7902784d9f3c3e755f2ac77cb0359d069f594e67e76046ba1",
+      "size": 81,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/triangle_with_degenerate_tex_coords.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/triangle_with_degenerate_tex_coords.obj",
+      "sha256": "3bb2422099da724182537e3b343482df9f7bd1b8084fd5b2f38651144c58b37f",
+      "size": 102,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/two_faces_123.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/two_faces_123.obj",
+      "sha256": "6f626de288d5daccb5ac3e2de3d17602ca03159353e0a3b1dfddf9d56326946f",
+      "size": 240,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/two_faces_312.obj",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/two_faces_312.obj",
+      "sha256": "86b31a79477b8ef31d9bfe64c395ca3f0e4bc225eac7b3683f3623a41a32cf0d",
+      "size": 241,
+      "format": {
+        "kind": "obj",
+        "version": null
+      }
+    },
+    {
+      "path": "draco/two_objects_inverse_materials.bin",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/two_objects_inverse_materials.bin",
+      "sha256": "dc51b201b464ecfd29f0f6a6ebd53b6e38f5611f8fbbbe375c228c2f636d16ea",
+      "size": 9000
+    },
+    {
+      "path": "draco/two_objects_inverse_materials.gltf",
+      "sourceId": "draco-testdata",
+      "upstreamPath": "testdata/two_objects_inverse_materials.gltf",
+      "sha256": "66375aa1f639611d9a70b20d0ae1afd26cbeef87826dcc24e4e8ffca6e156aa6",
+      "size": 5009,
+      "format": {
+        "kind": "gltf",
+        "version": "2.0"
+      }
+    }
+  ],
+  "totals": {
+    "files": 98,
+    "bytes": 8779059
+  }
+}

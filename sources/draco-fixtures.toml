@@ -1,0 +1,65 @@
+# draco-fixtures — compressed mesh geometry.
+#
+# Listed as a target in docs/fixture-coverage.md since the first draft and never started.
+# It is the compression layer of glTF: `KHR_draco_mesh_compression` is one of the extensions
+# gltf-khronos-fixtures already exercises, and until now nothing here held a `.drc` payload
+# to hand the decoder.
+#
+# THE FILENAMES ARE THE TEST MATRIX, which is unusually convenient. `cube_att` ships as:
+#
+#     cube_att.obj                             the uncompressed source
+#     cube_att.obj.edgebreaker.cl10.2.2.drc    edgebreaker, compression level 10
+#     cube_att.obj.edgebreaker.cl4.2.2.drc     edgebreaker, level 4
+#     cube_att.obj.sequential.cl3.2.2.drc      sequential, level 3
+#
+# Both encoding methods and several compression levels over ONE mesh, beside the mesh
+# itself. Decode any of them and compare against the `.obj` — a per-file oracle where the
+# join key is stripping everything after the first extension. Sequential and edgebreaker are
+# genuinely different decoders sharing a container, so a suite that only ever sees the
+# default one has tested half the format.
+#
+# The `.ply` and `.gltf` companions serve the same purpose for point clouds and for the
+# glTF-embedded form.
+#
+# SIX BITSTREAM VERSIONS, which was not the reason for taking this and is the best thing in
+# it: the 25 `.drc` files span 1.1, 1.2, 2.0, 2.1, 2.2 and 2.3. Draco's bitstream changed
+# incompatibly across those, so a decoder written against the current one has five earlier
+# revisions to either support or reject cleanly — and this is the only corpus here that
+# supplies the older ones, because an upstream that keeps regenerating its fixtures would
+# have thrown them away.
+#
+# ONE DANGLING REFERENCE IS UPSTREAM'S. `sphere.obj` and `test_sphere.obj` both name
+# `sphere.mtl`, which does not exist in google/draco at this commit — confirmed against the
+# raw URL, not inferred from our own selection. `verify` reports it, and it should: the
+# honest record is that the corpus arrived that way.
+#
+# ONE LEVEL DEEP, deliberately. `testdata/**` also sweeps in `KhronosSampleModels/`,
+# `Lantern/` and friends — 37 MB of glTF sample models that gltf-khronos-fixtures already
+# holds, with per-model licence declarations this block could not honestly speak for. The
+# Draco corpus is the top level; the subdirectories are someone else's corpus vendored into
+# it, and re-vendoring them here would quadruple the pack to duplicate what is already
+# better recorded elsewhere.
+
+[pack]
+name = "draco-fixtures"
+kind = "fixtures"
+summary = "Draco-compressed geometry — both encoding methods at several compression levels, each beside the uncompressed mesh it came from."
+
+[[source]]
+id = "draco-testdata"
+kind = "upstream"
+repo = "google/draco"
+ref = "main"
+fetch = "blobs"
+subtree = "testdata"
+include = ["testdata/*"]
+strip = "testdata/"
+dest = "draco/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Apache License 2.0, Copyright 2016 The Draco Authors. The test data is the project's own regression corpus; the Stanford bunny appears among it, as it does in most geometry test sets."

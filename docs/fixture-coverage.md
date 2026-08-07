@@ -131,14 +131,15 @@ Status: ✅ shipped · ◐ declared, not ingested · ○ not started
 | ✅ `dragonbones-fixtures` | DragonBones JSON | `skeleton2d-formats` | DragonBones/DragonBonesJS | MIT |
 | ✅ `mesh-legacy-fixtures` | OBJ, MTL, MD2, MD5, 3DS, AWD2 | `scene3d-formats` | flighthq-ports/awayjs-examples (AWD2) + per-format | MIT |
 | ✅ `texture-container-fixtures` | KTX2, KTX1, Basis, DDS, ASTC, PVR* | `texture-formats` | KTX-Software, basis_universal, ARM-software/astc-encoder | NOASSERTION / Apache-2.0 |
-| ○ `draco-fixtures` | Draco-compressed meshes | `scene3d-formats` | google/draco | Apache-2.0 |
+| ✅ `draco-fixtures` | Draco geometry, 6 bitstream versions | `scene3d-formats` | google/draco | Apache-2.0 |
 | ✅ `font-fixtures` | TTF, OTF, TTC, WOFF, WOFF2, variable, MATH | `font` | adobe-fonts/source-sans, JetBrains/JetBrainsMono, googlefonts/fontations, web-platform-tests/wpt | OFL-1.1, Apache-2.0, BSD-3-Clause |
 | ✅ `font-malformed-fixtures` | malformed/fuzzed fonts, all wrappers | `font` | khaledhosny/ots | **undeclared** |
 | ✅ `text-conformance-fixtures` | UAX #9/#14/#29 | `textbidi`, `textsegment` | Unicode UCD | Unicode-3.0 |
-| ○ `text-rendering-fixtures` | shaping cases | `textshaper`, `textlayout` | unicode-org/text-rendering-tests | NOASSERTION |
+| ✅ `text-rendering-fixtures` | shaping, 744 expected outlines | `textshaper`, `textlayout` | unicode-org/text-rendering-tests | Unicode-3.0 |
 | ✅ `image-fixtures` | PNG only — PngSuite | `image-codec` | pnggroup/libpng | LicenseRef-PngSuite-Permissive |
 | ✅ `image-codec-fixtures` | JPEG, GIF, WebP, AVIF, BMP, TIFF, ICO, TGA, QOI, HDR, EXR, farbfeld, JXL, PNM, PCX, XCF | `image-codec` | image-rs/image, libsdl-org/SDL_image, webmproject/libwebp-test-data | MIT, Zlib, BSD-3-Clause, **undeclared** |
-| ✅ `spritesheet-fixtures` | TexturePacker, Starling, cocos plist, libgdx, Aseprite | `spritesheet-formats`, `textureatlas-formats` | per-tool samples | varies |
+| ✅ `spritesheet-fixtures` | TexturePacker, Starling, cocos plist, libgdx, Aseprite | `spritesheet-formats`, `textureatlas-formats` | per-tool samples + aseprite/aseprite | varies, MIT |
+| ✅ `psd-fixtures` | PSD and PSB | (not yet parsed) | psd-tools/psd-tools | MIT |
 | ✅ `tilemap-fixtures` | Tiled TMX/TMJ | `tilemap-formats` | mapeditor/tiled | NOASSERTION |
 | ✅ `particle-fixtures` | libgdx, PEX, pixi, Unity, ParticleDesigner, Spine | `particles-formats` | per-tool samples | varies |
 | ✅ `bitmapfont-fixtures` | BMFont .fnt/XML/JSON | `bitmapfont-formats` | AngelCode BMFont | varies |

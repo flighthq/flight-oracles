@@ -178,3 +178,27 @@ declared_scope = "repository-root"
 commercial_use = "unknown"
 onward_use = "unknown"
 covers = "webmproject/libwebp-test-data carries no licence file. The sibling libwebp repository is BSD-3-Clause, but that declaration is about the library and was not carried into this repository; nothing here establishes terms for the data."
+
+# ICC colour profiles — the one thing every codec in this pack can carry and none of them
+# define. PNG has `iCCP`, JPEG has `APP2`, WebP's VP8X has an ICC flag, and a decoder that
+# ignores the embedded profile renders the wrong colours without ever reporting an error.
+#
+# These are deliberately minimal v2 and v4 profiles, which is what makes them useful here:
+# a few hundred bytes each, so a parser can be tested against a whole matrix of colour
+# spaces and rendering intents without dragging in megabytes of vendor profiles.
+[[source]]
+id = "compact-icc-profiles"
+kind = "upstream"
+repo = "saucecontrol/Compact-ICC-Profiles"
+ref = "master"
+fetch = "blobs"
+include = ["profiles/**", "readme.md"]
+dest = "icc/"
+
+[source.license]
+declared = "CC0-1.0"
+declared_scope = "repository-root"
+declared_from = "license"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "CC0 1.0 Universal — dedicated to the public domain by Clinton Ingram, with no attribution requirement."

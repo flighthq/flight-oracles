@@ -1,0 +1,41 @@
+# psd-fixtures — Photoshop documents.
+#
+# Not on any earlier target list, which is the gap: PSD is among the most widely *imported*
+# formats there is — every sprite pipeline, texture pipeline and UI pipeline meets one — and
+# it was absent because nothing downstream parsed it yet. That is exactly the reasoning the
+# fonts section got wrong.
+#
+# BOTH DOCUMENT FORMATS, which matters more than it sounds. `.psd` and `.psb` are the same
+# format with different integer widths: PSB is "large document format", version 2, where
+# several 32-bit length fields become 64-bit. A reader written against PSD parses a PSB
+# header successfully and then walks off the end of every section. 37 `.psb` files sit
+# beside the 236 `.psd` here, so that divergence is testable rather than theoretical.
+#
+# The directory names are the coverage: `adjustments/` (79 files) is one document per
+# adjustment-layer type, `blend-modes/` (32) one per blend mode, plus `colormodes/`,
+# `layers/`, `effects/` and `path-operations/`. That is a per-feature matrix nobody has to
+# construct, and the `.png` files beside them are the expected composite.
+
+[pack]
+name = "psd-fixtures"
+kind = "fixtures"
+summary = "Photoshop PSD and PSB documents — one per adjustment layer, blend mode and colour mode, with expected composites."
+
+[[source]]
+id = "psd-tools-testdata"
+kind = "upstream"
+repo = "psd-tools/psd-tools"
+ref = "main"
+fetch = "blobs"
+subtree = "tests/psd_files"
+include = ["tests/psd_files/**"]
+strip = "tests/psd_files/"
+dest = "psd/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "MIT, Copyright (c) 2012 Mikhail Korobov and contributors. The documents are the library's own regression corpus, authored to exercise one feature each rather than collected artwork."

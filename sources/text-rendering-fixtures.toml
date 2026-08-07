@@ -1,0 +1,64 @@
+# text-rendering-fixtures — the shaping conformance suite, and the seventh oracle here.
+#
+# WHY IT COULD NOT USEFULLY HAVE COME EARLIER. This suite is fonts plus assertions about
+# what shaping them produces; it is worth nothing without real fonts to shape, and until
+# font-fixtures existed this repository had none. Its own coverage document argued fonts
+# were unnecessary because flight delegates glyph shaping to the platform — which was true
+# of `textshaper-canvas` and never true of the suite's other half.
+#
+# WHAT THE ASSERTIONS ACTUALLY LOOK LIKE — checked in the vendored bytes, because the
+# obvious guess (expected glyph names and positions) is wrong. Each case names its input as
+# attributes and then embeds the correct result as an SVG of the shaped outlines:
+#
+#     class="expected" ft:id="AVAR-1/100" ft:render="⨁" ft:font="TestAVAR.ttf"
+#         ft:var="TEST:100"><svg viewBox="0 -200 960 1200"><symbol …><path d="M480,-100 …
+#
+# 88 of the 93 documents carry these, 744 blocks in total, plus 7 `expected-no-crash` cases
+# where surviving is the whole assertion.
+#
+# So this IS a rendering comparison, unlike every other oracle here — but a comparison of
+# VECTOR OUTLINES rather than pixels, which is the distinction that matters. The suite's own
+# `check.py` compares with `maxDelta=1.0` in font units, so it sidesteps the golden-image
+# stability problem (antialiasing, hinting, gamma, platform rasterisers) while still
+# asserting geometry. That is a meaningfully different and stronger thing than the
+# structural oracles in text-conformance-fixtures, and worth not conflating with them.
+#
+# `reports/` adds seven HTML records of how real shapers score — CoreText, FreeStack,
+# fontkit, Swash, Allsorts, OpenType.js, TehreerStack — which is a calibration nobody has to
+# reconstruct: it shows which cases mature implementations also fail.
+#
+# The fonts are chosen to break shapers rather than to look good: `FDArrayTest257.otf` and
+# `FDArrayTest65535.otf` sit either side of a CFF index-width boundary, Balinese and Kannada
+# exercise reordering and complex cluster formation, and the variable and subsetted faces
+# cover the paths where a shaper and a font disagree about which glyphs exist.
+#
+# Complements rather than duplicates text-conformance-fixtures: that pack is Unicode
+# character data for bidi and segmentation, which is what flight implements itself. This one
+# is what happens after itemization, when a font is finally involved.
+
+[pack]
+name = "text-rendering-fixtures"
+kind = "conformance"
+summary = "The text-rendering conformance suite — 84 fonts chosen to break shapers, with per-case expected glyph sequences."
+
+[[source]]
+id = "text-rendering-tests"
+kind = "upstream"
+repo = "unicode-org/text-rendering-tests"
+ref = "main"
+fetch = "blobs"
+include = [
+  "fonts/**",
+  "testcases/**",
+  "reports/**",
+  "README.md",
+]
+dest = ""
+
+[source.license]
+declared = "Unicode-3.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "UNICODE LICENSE V3, Copyright (c) 2016-2024 Unicode, Inc. Grants use, copy, modify, merge, publish, distribute and sell subject to retaining the notice. Several bundled fonts carry their own upstream terms — Noto under OFL-1.1, Selawik with its own README — and travel with those files in place."

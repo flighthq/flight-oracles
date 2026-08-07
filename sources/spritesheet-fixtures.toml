@@ -137,3 +137,36 @@ declared_from = "LICENSE.md"
 commercial_use = true
 onward_use = "unrestricted"
 covers = "Starling Framework, copyright Gamua, under the Simplified BSD License stated in LICENSE.md. Demo texture atlases ship with the samples."
+
+# Aseprite's own document format, which the coverage table has listed under this pack since
+# the first draft while the pack held none of it.
+#
+# THE LICENCE IS THE INTERESTING PART. Aseprite the application is source-available under a
+# EULA, not an open licence — which is why this looked unreachable. But `tests/LICENSE.txt`
+# is a plain MIT grant covering the test tree specifically, separate from the app's terms.
+# That is precisely the case `declaredScope = "directory"` exists for: the most specific
+# declaration wins, and here it is more permissive than the repository's, not less.
+#
+# 21 documents covering the modes a reader must branch on — indexed, grayscale and RGBA
+# colour depths, tilemap layers at several tile sizes, and multi-frame animations — with a
+# README describing each. `.aseprite` and `.ase` are the same format under two extensions,
+# and `.ase` is the third unrelated thing to claim that extension in this repository, after
+# 3DS MAX ASCII export and Adobe swatch exchange.
+[[source]]
+id = "aseprite-test-sprites"
+kind = "upstream"
+repo = "aseprite/aseprite"
+ref = "main"
+fetch = "blobs"
+subtree = "tests/sprites"
+include = ["tests/sprites/**"]
+strip = "tests/sprites/"
+dest = "aseprite/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "directory"
+declared_from = "tests/LICENSE.txt"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "MIT, Copyright (c) 2018-2023 Igara Studio S.A. and (c) 2018 David Capello, declared at tests/LICENSE.txt over Aseprite's test tree. The application itself is under a separate end-user licence; this grant covers the test sprites and is the one relied on."

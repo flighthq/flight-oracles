@@ -77,9 +77,334 @@
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/starling-atlas-xml@9d68d61b9c67.txt"
+    },
+    {
+      "id": "aseprite-test-sprites",
+      "kind": "upstream",
+      "repo": "aseprite/aseprite",
+      "ref": "main",
+      "commit": "41252a501abf79ed76e94ebccdcd531c6c94d2be",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "directory",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "tests/LICENSE.txt",
+        "covers": "MIT, Copyright (c) 2018-2023 Igara Studio S.A. and (c) 2018 David Capello, declared at tests/LICENSE.txt over Aseprite's test tree. The application itself is under a separate end-user licence; this grant covers the test sprites and is the one relied on.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/aseprite-test-sprites@41252a501abf.txt"
     }
   ],
   "files": [
+    {
+      "path": "aseprite/1empty3.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/1empty3.aseprite",
+      "sha256": "daf8e979ea8fcd4c1fbb7fef01fe6b5f7d2d67bcaf865c66716ad11807822fcf",
+      "size": 1048,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 3,
+        "width": 32,
+        "height": 32,
+        "colorDepth": "rgba"
+      }
+    },
+    {
+      "path": "aseprite/2f-index-3x3.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/2f-index-3x3.aseprite",
+      "sha256": "05cc2706363f7b3a0d0be280b3f3165853c8306232d5bb8129fbdeab9b1d3432",
+      "size": 616,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 2,
+        "width": 3,
+        "height": 3,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/2x2tilemap2x2tile.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/2x2tilemap2x2tile.aseprite",
+      "sha256": "fbd2a4805c9adcc8be0f367332186236e053170571b69cb6c49bf4108ac5996e",
+      "size": 744,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 1,
+        "width": 6,
+        "height": 6,
+        "colorDepth": "rgba"
+      }
+    },
+    {
+      "path": "aseprite/2x3tilemap-indexed.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/2x3tilemap-indexed.aseprite",
+      "sha256": "890124153f1ef51516bf8e4ae00cb7cdc1ef429cfcaa32226742268b48e61018",
+      "size": 588,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 3,
+        "width": 4,
+        "height": 5,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/3x2tilemap-grayscale.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/3x2tilemap-grayscale.aseprite",
+      "sha256": "8789ed762aab045e8466195917590d241942141a8269ede0474e32598eb609d8",
+      "size": 1351,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 4,
+        "width": 6,
+        "height": 6,
+        "colorDepth": "grayscale"
+      }
+    },
+    {
+      "path": "aseprite/4f-index-4x4.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/4f-index-4x4.aseprite",
+      "sha256": "424debfcdfbb68b99ea4a5a4476a8beb9d8e47f6ae62ffa0c9a7baf4b8651338",
+      "size": 471,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 4,
+        "width": 4,
+        "height": 4,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/README.md",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/README.md",
+      "sha256": "d962380166a43866d6f05e2a644902ae5dca4b57689267d82c91790bbdbcb2dd",
+      "size": 2232
+    },
+    {
+      "path": "aseprite/abcd.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/abcd.aseprite",
+      "sha256": "e802c34fd630ca48a4711c6ac951b07ab0fab5fa037d74fe4f5dd2f7d44dd94b",
+      "size": 550,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 1,
+        "width": 32,
+        "height": 32,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/bg-index-3.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/bg-index-3.aseprite",
+      "sha256": "fd0a083aa13b396f6706cdc5d8567030192c829cf050543c4ac9d6d50cb772ac",
+      "size": 367,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 1,
+        "width": 4,
+        "height": 4,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/cut_paste.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/cut_paste.aseprite",
+      "sha256": "6f44171c805b6c593f67c6e3dcfbe29e31a0b6f0fe833c1b0e3b24cadb59889b",
+      "size": 348,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 1,
+        "width": 5,
+        "height": 5,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/file-tests-props.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/file-tests-props.aseprite",
+      "sha256": "657e2549cd74a94137aec6502957d18662f4e4d50f565009d60f9a4189b22087",
+      "size": 2300,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 6,
+        "width": 64,
+        "height": 64,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/groups2.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/groups2.aseprite",
+      "sha256": "55ce0dd4ba59a7a8549ccd272d878a58c69aa3edf65d75e6f68ac205df21ff19",
+      "size": 820,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 1,
+        "width": 8,
+        "height": 8,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/groups3abc.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/groups3abc.aseprite",
+      "sha256": "6111eee8c2e09dc6a1ffb5300767411470c47975ed8bc0e251dccbffe4d0673f",
+      "size": 1202,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 1,
+        "width": 9,
+        "height": 11,
+        "colorDepth": "rgba"
+      }
+    },
+    {
+      "path": "aseprite/link.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/link.aseprite",
+      "sha256": "b97ffaee6943f5f9a895827925dc3bc898c1f13ae284da8aa6ccd24c7c8aa765",
+      "size": 845,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 2,
+        "width": 8,
+        "height": 8,
+        "colorDepth": "rgba"
+      }
+    },
+    {
+      "path": "aseprite/point2frames.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/point2frames.aseprite",
+      "sha256": "f3c4593f386eabdb07e389ca3d6d91b3c28f707b28a24ab7ec08175b955020c7",
+      "size": 358,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 2,
+        "width": 10,
+        "height": 10,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/point4frames.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/point4frames.aseprite",
+      "sha256": "da1d4ca0dc1efb194e8bbefd15fd35d9eaeacc114f50012d56a223453ae35e85",
+      "size": 591,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 4,
+        "width": 16,
+        "height": 16,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/slices-moving.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/slices-moving.aseprite",
+      "sha256": "1ee4025d891b7a943fb0ef98ba30e2c9fe61b7987c8b91d85ff28511da3ebe69",
+      "size": 550,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 4,
+        "width": 4,
+        "height": 4,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/slices.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/slices.aseprite",
+      "sha256": "4215a4967b83533c3bcaad8a23e76f12a6b2049081eda730d0e6d38f78f76582",
+      "size": 415,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 1,
+        "width": 4,
+        "height": 4,
+        "colorDepth": "indexed"
+      }
+    },
+    {
+      "path": "aseprite/tags3.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/tags3.aseprite",
+      "sha256": "d7729944e04e21c764e3791a64d4802a6a8529b5d1354f4b98cc9ad0488d8644",
+      "size": 1648,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 12,
+        "width": 4,
+        "height": 4,
+        "colorDepth": "rgba"
+      }
+    },
+    {
+      "path": "aseprite/tags3x123reps.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/tags3x123reps.aseprite",
+      "sha256": "93c0613b9cbe784368d6ab4e914abbd9deb48599541d7fb78eaded8bb8e51272",
+      "size": 1282,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 9,
+        "width": 4,
+        "height": 4,
+        "colorDepth": "rgba"
+      }
+    },
+    {
+      "path": "aseprite/z-order.aseprite",
+      "sourceId": "aseprite-test-sprites",
+      "upstreamPath": "tests/sprites/z-order.aseprite",
+      "sha256": "c99a296e87d3ed1393926e2fb06a52dccf7cf09054355c4ea22c8c5ab01f0e6e",
+      "size": 863,
+      "format": {
+        "kind": "aseprite",
+        "version": null,
+        "frames": 1,
+        "width": 7,
+        "height": 15,
+        "colorDepth": "rgba"
+      }
+    },
     {
       "path": "cocos/cpp-tests/Resources/Images/blocks9ss.plist",
       "sourceId": "cocos2dx-plist-sheets",
@@ -4030,7 +4355,7 @@
     }
   ],
   "totals": {
-    "files": 280,
-    "bytes": 21378793
+    "files": 301,
+    "bytes": 21397982
   }
 }

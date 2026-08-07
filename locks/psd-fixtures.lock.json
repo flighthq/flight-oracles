@@ -1,0 +1,5106 @@
+{
+  "pack": {
+    "name": "psd-fixtures",
+    "kind": "fixtures",
+    "summary": "Photoshop PSD and PSB documents \u2014 one per adjustment layer, blend mode and colour mode, with expected composites."
+  },
+  "sources": [
+    {
+      "id": "psd-tools-testdata",
+      "kind": "upstream",
+      "repo": "psd-tools/psd-tools",
+      "ref": "main",
+      "commit": "31d5b6b9eda30f9f64fd068a4df52ca639211063",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "MIT, Copyright (c) 2012 Mikhail Korobov and contributors. The documents are the library's own regression corpus, authored to exercise one feature each rather than collected artwork.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/psd-tools-testdata@31d5b6b9eda3.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "psd/0layers.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/0layers.psb",
+      "sha256": "3ae85219dadb3028dab6f4f8f72e6e1a6ca4b5d40aeede8abf87ec24020150fa",
+      "size": 139682,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 1600,
+        "height": 1200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/0layers.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/0layers.psd",
+      "sha256": "0711306e56002f193e33aefe4a1e9ce89ceafaea04da243593bc0c1e697c7d64",
+      "size": 114064,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 1600,
+        "height": 1200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/0layers_tblocks.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/0layers_tblocks.psb",
+      "sha256": "4f40d8f359571c86e485af6c711a52af90c4b8aac2ad84db6655cca75a61ce24",
+      "size": 23906,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 150,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/0layers_tblocks.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/0layers_tblocks.psd",
+      "sha256": "407c1b0659fd6283f2833b9cf95c7ca3538c5cc61d226e63cebf90a4c1c9f665",
+      "size": 21426,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 150,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/16bit5x5.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/16bit5x5.psb",
+      "sha256": "e0c9b37ffb5981aaedbeec2b2dfa3ad561b57e86e5e04758ed859ca819cd427c",
+      "size": 23482,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 5,
+        "height": 5,
+        "channels": 3,
+        "bitDepth": 16,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/16bit5x5.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/16bit5x5.psd",
+      "sha256": "c78689ea7b576f23bbd8b6b4f4993a365266c3ffc9aaa02cc20bef4a36a9d7a0",
+      "size": 22592,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 5,
+        "height": 5,
+        "channels": 3,
+        "bitDepth": 16,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/1layer.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/1layer.psb",
+      "sha256": "85317ccdb7ec11a51f1983ad2055544a490839c01f8b313db8070c1b0f0b83f4",
+      "size": 26636,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 101,
+        "height": 55,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/1layer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/1layer.psd",
+      "sha256": "c2b457581d549f4bea2e5c34a04b68b2917f640bce0e958b6bca9c65be75174b",
+      "size": 6476,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 101,
+        "height": 55,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/1layer2.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/1layer2.psd",
+      "sha256": "ee06e0307b1d5966eccc84768c245183c9ad90dc8e0ab3a8113f75d407615d4d",
+      "size": 25954,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 101,
+        "height": 55,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/2layer_8ele_tblocks.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/2layer_8ele_tblocks.psd",
+      "sha256": "1434880f98b92d60193e6759859bc5ebe589e5deeed22246d0e37c85db58840f",
+      "size": 24645,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 1,
+        "height": 1,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/2layers.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/2layers.psb",
+      "sha256": "863c51eb4d4e72214a3cbdf06a0594c485e4262d899318b1ba914d4c848382ab",
+      "size": 34781,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 101,
+        "height": 55,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/2layers.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/2layers.psd",
+      "sha256": "406ddf7cbf5a1065b992b9c0d2a59be6290a371b90f23b9a04c0e6bbc94beb0c",
+      "size": 14176,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 101,
+        "height": 55,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/300dpi.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/300dpi.psb",
+      "sha256": "a31ee6a32a1e51ef2cae6e4c829ac328c560436306a5e7038c42c562ec241594",
+      "size": 202206,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/300dpi.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/300dpi.psd",
+      "sha256": "613a5c22e0afdaed8fc3e2c11ab0f30267c515cecb27165833b0ed3833d0f51f",
+      "size": 201944,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/32bit.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/32bit.psb",
+      "sha256": "232bde4537492a671d22b7ff7025a786bc8110677ce5add180103f977be4f5ee",
+      "size": 282992,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/32bit.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/32bit.psd",
+      "sha256": "78dd96ec74960a392db0a3bf4193478d62adfa5d93634ab7ce8a40e4468df5e1",
+      "size": 282154,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/32bit5x5.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/32bit5x5.psb",
+      "sha256": "cd506872a4b1dc48bf7f64e10d321b99ea950c557cd3a83e303288e8ef6bf481",
+      "size": 20954,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 5,
+        "height": 5,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/32bit5x5.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/32bit5x5.psd",
+      "sha256": "66a4260e6bb8a60deff94031a66fa502c74870d75a723b4180aef02c35a97d0e",
+      "size": 20012,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 5,
+        "height": 5,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustment-fillers.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustment-fillers.psd",
+      "sha256": "72ab9e417042a9258350326814ebbdeef84442ac3f453b5462f3d339adc29768",
+      "size": 84134,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 512,
+        "height": 512,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustment-mask.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustment-mask.psd",
+      "sha256": "6c866b95c1458b5a639249f379fad009e3dd6f8cfa2d3dfbbb431ee637c30390",
+      "size": 60232,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 512,
+        "height": 512,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_backdrop_test.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_backdrop_test.png",
+      "sha256": "b4170c8172288ae3d978fc3a53d3d9be9887981d86008900ae7be5aab1ae0919",
+      "size": 13252,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_backdrop_test.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_backdrop_test.psd",
+      "sha256": "39f55d8391a80bb768012738a37971a4c02ecffc5519ecab67ec89781e0a0af7",
+      "size": 200028,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_clipping.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_clipping.png",
+      "sha256": "23148fddfbace93de337e368ce3eebdef4bf97afbb9be029d9dd4fbd5d2b3253",
+      "size": 1362,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_clipping.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_clipping.psd",
+      "sha256": "7dc81242cc78a22cf11a9b587e335299235de37e29b869a7bbb37c6ad7bf29d8",
+      "size": 39036,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_nested_composition_1.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_nested_composition_1.png",
+      "sha256": "745a4f6c3e0e8b956599c57ff82c08730e32cda3bd3e9b88338e2364843cf710",
+      "size": 22741,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_nested_composition_1.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_nested_composition_1.psd",
+      "sha256": "55a3b828b486c77e1ba1c6ed5442ba2c1a157e0fc1020c5bf50d82e920221306",
+      "size": 231096,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_nested_composition_2.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_nested_composition_2.png",
+      "sha256": "c1769ff078600ac3e6d366b4eae91c81f598de011f8a24689de12d715fe3eb3a",
+      "size": 34329,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_nested_composition_2.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_nested_composition_2.psd",
+      "sha256": "7e120732f1520095f5a0f112e2995d6da69f824013d10f800b630f13d1ccf018",
+      "size": 166123,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_nested_composition_3.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_nested_composition_3.png",
+      "sha256": "f8876182c7bbb8bb65301dd696fe4bf5a3854beb371b4122d50a004f4955a5de",
+      "size": 27343,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_nested_composition_3.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_nested_composition_3.psd",
+      "sha256": "0e9b3b8f029a9cdcea9e3e974fd45ad9c4eb78fd4617220f806fca72cc05e24c",
+      "size": 311759,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_nested_composition_4.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_nested_composition_4.png",
+      "sha256": "8285ba7cabbd7a129ac9e3bea2a61d7f61633da2b2acf2fb79401537445a778a",
+      "size": 419,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_nested_composition_4.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_nested_composition_4.psd",
+      "sha256": "1577dded7ceed05fb786b775948501571cad06d90b20c61a5a0923067c501000",
+      "size": 35877,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_nested_composition_5.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_nested_composition_5.png",
+      "sha256": "c2454c0db573be03a9332bc7af5d3bcadcc7f0b97b33d2891e34dddaf3195016",
+      "size": 1445,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/adjustment_nested_composition_5.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/adjustment_nested_composition_5.psd",
+      "sha256": "f150b3200c829edd0613e9be83c22c37c2d993a8ee9927be3400ed2c2b14e2aa",
+      "size": 38278,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_cmyk.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_cmyk.png",
+      "sha256": "fab6e95d438ce7215131c876152e1ed354b81ef793de5bcbdd671a7223f6fe2d",
+      "size": 81401,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_cmyk.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_cmyk.psd",
+      "sha256": "12cbc4ca9a18cfae4a01dd207c5f44b135606e55354f162636be796ea0329992",
+      "size": 925252,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_grayscale.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_grayscale.png",
+      "sha256": "69a5a1992d1f84f4efe8b0636cc4760ca99a3168a284ffbd5fc42459dd7cb62c",
+      "size": 35557,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_grayscale.psd",
+      "sha256": "c21289d955a9b24418f26ae423dc69ab1d7431c734510391f99cfa563ddf4167",
+      "size": 132118,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_legacy_cmyk.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_legacy_cmyk.png",
+      "sha256": "92cf9cab7036214c8640c08e263cbae74348cf234b33d8312b36347cb6f21b51",
+      "size": 82263,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_legacy_cmyk.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_legacy_cmyk.psd",
+      "sha256": "b1844e3919ba6858361b696cb1d9232ef3a5b702f00b55c1c973f7f1c5433487",
+      "size": 897102,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_legacy_grayscale.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_legacy_grayscale.png",
+      "sha256": "5086a22d59cc488d3708df0fb5d45478782d5e79b4ecd2e2bddfe3601abb2c4e",
+      "size": 38893,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_legacy_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_legacy_grayscale.psd",
+      "sha256": "d79c5b778d2b6e023c9b17fba58b0efa05d90c071f623d5b52a4bd8ad9d9fa82",
+      "size": 112358,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_legacy_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_legacy_rgb.png",
+      "sha256": "5de2597dce2d3ec3876a9c7399fa8ed61e27911a322f52cf4bee0ede64d0e175",
+      "size": 74210,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_legacy_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_legacy_rgb.psd",
+      "sha256": "6c36993b8429316aeaa3b67af97d9517eec01f09e548bf5770a6d1643548aa68",
+      "size": 258426,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_rgb.png",
+      "sha256": "205faebe080a035c18fe0d7f41035aab73736ab76fcc69e3877e2d2e09ee5c89",
+      "size": 79545,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/brightnesscontrast_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/brightnesscontrast_rgb.psd",
+      "sha256": "bc2e1771b28268b101b6f50fe4f71444f54d170266de4b5bfb0244e47a9a8df2",
+      "size": 299567,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/curves_cmyk.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/curves_cmyk.png",
+      "sha256": "fc138ce5711bfa0dd8e9c4d50821d8931ed64b81cbb6ab1b95d1ef9450578405",
+      "size": 88599,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/curves_cmyk.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/curves_cmyk.psd",
+      "sha256": "3508445b94eddadd1f74245ccb316889cbbc3b37e40b983a3b2b5d53b5f56c4c",
+      "size": 910167,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/adjustments/curves_grayscale.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/curves_grayscale.png",
+      "sha256": "b0ca4ea89d15a4da2b08c4e97c6e7d8705ee5d2dabf395c6944ebfe2452144a7",
+      "size": 35694,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/curves_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/curves_grayscale.psd",
+      "sha256": "f716cdf162c2c49e41aab1393f0b6f15336a8f66e664936b0294dc997ce272d0",
+      "size": 131137,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/adjustments/curves_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/curves_rgb.png",
+      "sha256": "cec2e650dddb8646e723111d5f9f0af0f29dd4c18f94eb5cc213aa89c3e4af40",
+      "size": 83342,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/curves_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/curves_rgb.psd",
+      "sha256": "ca20254c47a9fcc0029caa81f7ac7e197ff3657808332c22b75e23920fd040bb",
+      "size": 291957,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/exposure_grayscale.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/exposure_grayscale.png",
+      "sha256": "e0f1c33b7a7cf6770ebe905d90ede5c81a43ce37409856de052b76c84e640fa3",
+      "size": 29738,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/exposure_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/exposure_grayscale.psd",
+      "sha256": "01147b29385829f34cb5c746d7d779fc82cff89fb92fc47b9652300526271f5a",
+      "size": 124652,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/adjustments/exposure_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/exposure_rgb.png",
+      "sha256": "92cdcf527d5a074307311c203fff2f04b7a74351f4dbc53b1de77fd81d001c58",
+      "size": 66104,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/exposure_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/exposure_rgb.psd",
+      "sha256": "3e188d416aa2608fc22e34ef274787d58dd4172510760dcef3cbc8c470607379",
+      "size": 280352,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/huesaturation_colorize_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/huesaturation_colorize_rgb.png",
+      "sha256": "b522638cee1e6f62aad8ce80add5cd0a8d488de102e40d597d2ae75122ff2ef6",
+      "size": 49543,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/huesaturation_colorize_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/huesaturation_colorize_rgb.psd",
+      "sha256": "8e64b22972a81439c97ea2ec94d535e4c947c276c54ab701d7eee042de02efa0",
+      "size": 278234,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/huesaturation_lightness_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/huesaturation_lightness_rgb.png",
+      "sha256": "1731c27c490ed504a32e4a7abb3d1e32cda98f21400ba113a4f4665b55a830a5",
+      "size": 53555,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/huesaturation_lightness_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/huesaturation_lightness_rgb.psd",
+      "sha256": "bacb269f9b1f75e54bc64f10cf33e5acf947389900b7ee6b6576b7cb332e4cdb",
+      "size": 289283,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/huesaturation_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/huesaturation_rgb.png",
+      "sha256": "b797e78a6f66dd9021df92a06c44301544b76dabf876f3fb141a9ef2b9c91725",
+      "size": 81223,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/huesaturation_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/huesaturation_rgb.psd",
+      "sha256": "2c81966b5f43f48ea0596ee02b41a18eff3db92e3a9a54c83769e561f018f55d",
+      "size": 292084,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/huesaturation_saturation_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/huesaturation_saturation_rgb.png",
+      "sha256": "691206c382038111881c187386448ed9444474bfb1c9125432a02401f9185d42",
+      "size": 84118,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/huesaturation_saturation_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/huesaturation_saturation_rgb.psd",
+      "sha256": "389c6fe7d8dd6f73e4ea4039b8ee4b94cc9c20023ace6727aa76799a7897f409",
+      "size": 296409,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/invert_cmyk.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/invert_cmyk.png",
+      "sha256": "570cfb2801d0322e486f22238c045ac5d93115a70ff4723a9a950fd22b39c42c",
+      "size": 74527,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/invert_cmyk.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/invert_cmyk.psd",
+      "sha256": "cf0b1d08cfc2f6f1c222009df6f15cad0f52fcb7b2bb3f461229a2b4349929b1",
+      "size": 907111,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/adjustments/invert_grayscale.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/invert_grayscale.png",
+      "sha256": "378efd63aee14d2c6b33fabe06c9cad007a7cb04a4f62f7f594c14e5c30bc433",
+      "size": 39798,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/invert_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/invert_grayscale.psd",
+      "sha256": "b4660b0e3af58db0e593232f31c63b46c74557b8bcc4bf7cc8835d9930f1f26c",
+      "size": 112640,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/adjustments/invert_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/invert_rgb.png",
+      "sha256": "8c8d745318dbb650380445e2b2ce1127fa0884c263343c68a6363bbaffeb2c9f",
+      "size": 80706,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/invert_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/invert_rgb.psd",
+      "sha256": "6a48998f4d0c970b973eab4d465997f8fe7183f1d757013089a3144c124152a4",
+      "size": 279000,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/levels_cmyk.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/levels_cmyk.png",
+      "sha256": "3f33174681ab0b11f9a35003f98bbc125d999a64dbb2bb6dccecb2e79d8be58b",
+      "size": 77710,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/levels_cmyk.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/levels_cmyk.psd",
+      "sha256": "b566d8e2db943fe666083d0765f9e31cfbc5cc33ac2793d5b94bf4d37caa944f",
+      "size": 903203,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/adjustments/levels_grayscale.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/levels_grayscale.png",
+      "sha256": "f447087b714675958db77ae325661c9bb55440339c1b40bd1e74610a05b22cd3",
+      "size": 32858,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/levels_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/levels_grayscale.psd",
+      "sha256": "d5fa40edf2973be124d27cc485151d70a8c017d90ddcfd8b87c6d55b0ec17fb5",
+      "size": 128454,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/adjustments/levels_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/levels_rgb.png",
+      "sha256": "c15df448bc2673f50f3dac0cf8bb76522c66010a22478da20696efcff9bad67d",
+      "size": 71229,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/levels_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/levels_rgb.psd",
+      "sha256": "7c6a8e94a97b66d554748ad09be068a6dcbe3cd8d56ea3809eb231a8168905df",
+      "size": 283764,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/passthrough_blendmodes2.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/passthrough_blendmodes2.png",
+      "sha256": "675201eaf57249eac709118f6b0097e3847216726175526e22fdc74cd752a600",
+      "size": 1599,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 32,
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_16bits_cmyk.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_16bits_cmyk.png",
+      "sha256": "c29fd8d07ec3612f540573eab9b2d439be4822519f1dc25ea5dd74d0fd060eaa",
+      "size": 38360,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_16bits_cmyk.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_16bits_cmyk.psd",
+      "sha256": "3f737af36486974475e28cc2fa747dcef9a993b20d357a48e14bb77a3e2d3b60",
+      "size": 1234894,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 4,
+        "bitDepth": 16,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_16bits_grayscale.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_16bits_grayscale.png",
+      "sha256": "0cfa251436b9163c74928a481784f6e40cff7d578a85dcd1a81e2b260e5a7716",
+      "size": 9280,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_16bits_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_16bits_grayscale.psd",
+      "sha256": "05f9af8ead05b0febbaf3286b6d8bf82d2e39a31fa0fdeac2885a22886156a26",
+      "size": 199688,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 1,
+        "bitDepth": 16,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_16bits_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_16bits_rgb.png",
+      "sha256": "655791083410297f5a05a8be48f2f2f80e3e94619e7a37f6163efa46543a45d5",
+      "size": 25400,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_16bits_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_16bits_rgb.psd",
+      "sha256": "f349d0e2e253e1d7b3dcd8645d555a1605b7e2d6bba1b99de164ab7853e4871c",
+      "size": 415176,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 16,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_cmyk.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_cmyk.png",
+      "sha256": "36019912af1f58860310aae15d5b5d0481054aaf7ebdc031ef53778f76864b8e",
+      "size": 52308,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_cmyk.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_cmyk.psd",
+      "sha256": "24846e6fbd76b928cdf6833807345043261e3967ee58331d93e46ca79c1616d6",
+      "size": 838496,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_grayscale.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_grayscale.png",
+      "sha256": "1c042559b9abab1ce773455a8cc8aaf8ae9ad323714dd69898c7422dded64b51",
+      "size": 12249,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_grayscale.psd",
+      "sha256": "5c3219ce794da2c4c5d7dcf3e00f3152c07d0a2064d4104ba05767238889dd8a",
+      "size": 102053,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_rgb.png",
+      "sha256": "3dbb85215ca8667a1b19aa6dbba4497bcbfd2c59989af028b9fd223b869fa51f",
+      "size": 25051,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/posterize_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/posterize_rgb.psd",
+      "sha256": "7e97af29a928e43e0c16baeb3b60483574774e2d7f23667ab07a3affeb83048a",
+      "size": 227583,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/threshold_16bits_grayscale.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/threshold_16bits_grayscale.png",
+      "sha256": "62b5a21093aad3c878a618eff02d424a857cda6c7522c7f3a98b8d86e04619f1",
+      "size": 2429,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/threshold_16bits_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/threshold_16bits_grayscale.psd",
+      "sha256": "b9edb0f14ee579357df5bb887bc10077c99b29febf132feb1897e9dd0a47ce8b",
+      "size": 160368,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 1,
+        "bitDepth": 16,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/adjustments/threshold_16bits_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/threshold_16bits_rgb.png",
+      "sha256": "df0327ddbebb0bb2a037252b9f7dbcb498c7e71caebabddcc4041a8dd15224f5",
+      "size": 2446,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/threshold_16bits_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/threshold_16bits_rgb.psd",
+      "sha256": "db8191826e0ca11fdf0961abd9acfa9fbb31b3edca5fc7492f5c0b6766d13559",
+      "size": 412860,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 16,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/adjustments/threshold_cmyk.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/threshold_cmyk.png",
+      "sha256": "512500fa3f15d5ffd487be1c09f0b2d1fc31f59d453dfe26ae1b561e9fcbb1ec",
+      "size": 2705,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/threshold_cmyk.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/threshold_cmyk.psd",
+      "sha256": "5f0f902f8ca88e9b149d107c7d2099d367965c576e21f329d029553ae4d80ad0",
+      "size": 783780,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/adjustments/threshold_grayscale.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/threshold_grayscale.png",
+      "sha256": "14e054fe562e4f2605a8dedafb0eb7742cdd3c00c0b7f2eb1b07f9bc86150983",
+      "size": 2337,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/threshold_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/threshold_grayscale.psd",
+      "sha256": "ea435249c68711f8f68fe58cf7c7f38d7e4259d0c919638c2eb5034857f55671",
+      "size": 89270,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/adjustments/threshold_rgb.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/threshold_rgb.png",
+      "sha256": "93aaf8bf82b15181a21ca09def25cf20fcdd52a6ba114786e7e41b6e89a04432",
+      "size": 2452,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 200,
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/adjustments/threshold_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/adjustments/threshold_rgb.psd",
+      "sha256": "d61e095b3bf816a39eac075243ca0cadeb1922411b14db13c3fda598b741c5f0",
+      "size": 188772,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/advanced-blending.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/advanced-blending.psd",
+      "sha256": "433b583db7361a0be3dd6be74031288da16f1a01b4573c125e1bdcdc9697acf4",
+      "size": 961076,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 1200,
+        "height": 628,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/artboard-bgcolor.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/artboard-bgcolor.psd",
+      "sha256": "10f0065dde46150f1adbc9acc3594b85f42a0e02323e87ca1a5ec80d908ccb13",
+      "size": 257467,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 750,
+        "height": 550,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/artboard.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/artboard.psd",
+      "sha256": "86d3ccc572cfeec57b271467ba103fb9e32c4f33351276abbf4f962913072b81",
+      "size": 563641,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 1154,
+        "height": 1061,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/background-red-opacity-80.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/background-red-opacity-80.psd",
+      "sha256": "391f4c009b9bd4cc5fdffb3799c3476f7d690874e6ca458463ab7fe3b5739aee",
+      "size": 500483,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 1000,
+        "height": 867,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-and-clipping.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-and-clipping.psd",
+      "sha256": "3bf2015eeb25319fd365711f9b5ea52bf1099f7f767dd1bea47d08283cc0eaa8",
+      "size": 173476,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 512,
+        "height": 512,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/cmyk-blend-modes.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/cmyk-blend-modes.psd",
+      "sha256": "6032d73dd7a02f2a24d748fc74a79848279ccbe113c2fca143e653bfd5da6cc9",
+      "size": 2330703,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 530,
+        "height": 512,
+        "channels": 5,
+        "bitDepth": 8,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/blend-modes/color-burn.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/color-burn.psd",
+      "sha256": "3a234f7b9664c07e2cb554fb92f464987e299d56aca8713519689afc2b7cde60",
+      "size": 31788,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/color-dodge.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/color-dodge.psd",
+      "sha256": "0b320de07d9285ce6d718f1f99d762c96c6216a9f13582f6f2cd5c8a1dae6408",
+      "size": 31807,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/color.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/color.psd",
+      "sha256": "8f9bc703572cadffcb2d0be9b3e54d98c26998008693bde6de42f6da542a00f2",
+      "size": 31843,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/darken.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/darken.psd",
+      "sha256": "83a49ce3fa585ec40dc6a89dc007546eb90a19c934ecb3c4ba4c6a0793f7b495",
+      "size": 31456,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/darker-color.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/darker-color.psd",
+      "sha256": "8a1a674394804c907478f67d6a410e12d4d44833d7804c5cbb78ad6f835f33d5",
+      "size": 31752,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/difference.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/difference.psd",
+      "sha256": "a4c341a91a074b97efb15463c9c1133d6827367b6985ee0c1eefcba8425eca41",
+      "size": 31952,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/dissolve.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/dissolve.psd",
+      "sha256": "d100f77081f28a75678d6b626379d2327e64c2c04b08afe8a763f59f7dda6c1d",
+      "size": 38491,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/divide.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/divide.psd",
+      "sha256": "59cccb4099dea57d63733fd675536f0a85af59986093b625734734e82f86de1f",
+      "size": 31678,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/exclusion.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/exclusion.psd",
+      "sha256": "9f9e7f72b28ea2a1179051e55995485c073a63627d880ef453e5fc7e0ffb9dcc",
+      "size": 31959,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/gray-blend-modes.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/gray-blend-modes.psd",
+      "sha256": "28ac78b43922a11106a058a0c8368576083f4c57016e6e775bea3a9e9d2a046d",
+      "size": 1252775,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 530,
+        "height": 512,
+        "channels": 2,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/blend-modes/group-divider-blend-mode.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/group-divider-blend-mode.psd",
+      "sha256": "272d1f6e12ba9853451cdcec6585440320507ed2a37a1aee8ed37d19662ef103",
+      "size": 1906,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 100,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/hard-light.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/hard-light.psd",
+      "sha256": "b45a66ad68a902a715c0db39eb1754f1c98b091245c50620eae800f3a2030d01",
+      "size": 31797,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/hard-mix.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/hard-mix.psd",
+      "sha256": "574ac1260e30c3f8d6b2975ba98674b5e052f7838c3c0cd880299f8879ef7e74",
+      "size": 31796,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/hue.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/hue.psd",
+      "sha256": "e70d0ae7d708ef3b0bbb62ad03f0c3d00268a0d15c5a4bb0c0c2ccba0a78f924",
+      "size": 31871,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/lighten.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/lighten.psd",
+      "sha256": "4fc0432c1a154cddc0a70f558281cf5034caf561d61b91a0409e6bdc89c613d8",
+      "size": 31959,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/lighter-color.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/lighter-color.psd",
+      "sha256": "5ff8eddc32b369cbe24470727b01560174bc1a31a48cd90da766c29c79533823",
+      "size": 31741,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/linear-burn.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/linear-burn.psd",
+      "sha256": "c9dab0d70793b22dbb73ebbdb71c25f771e483f50a0c55193f9ea6f544342558",
+      "size": 31550,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/linear-dodge.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/linear-dodge.psd",
+      "sha256": "1fd41e7c186f999d736dba2bd2d09624bcf307e15bd6dc03461b2194546ee06b",
+      "size": 31952,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/linear-light.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/linear-light.psd",
+      "sha256": "28ee78b412a63832317bdff2400844ab10a91cb4c4f28d52ef3695428a730b9e",
+      "size": 31723,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/luminosity.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/luminosity.psd",
+      "sha256": "bbb36bfc321189dde7212605681907bc627a38a7fc6a97d7a3bb90004173605a",
+      "size": 31873,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/multiply.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/multiply.psd",
+      "sha256": "f0e16879b2cd78e7fa859ea00a22abfc601cb84347d9f854e055d3ed0ffd59a5",
+      "size": 31452,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/normal.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/normal.psd",
+      "sha256": "ad44357d551d7f59d496843f2260bf0e9645fcf63068d3535432383a0299292d",
+      "size": 30830,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/overlay.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/overlay.psd",
+      "sha256": "21cc256ef3fa5806bfa45c7a69c92e2a2e78a03e9d12025ba8cfa76b07941362",
+      "size": 31673,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/pass-through.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/pass-through.psd",
+      "sha256": "b7b95e85a67d79c46e84757b0ddf84e5f0dd3229fce994507cabe176db6d82f0",
+      "size": 33882,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/pin-light.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/pin-light.psd",
+      "sha256": "c7e2b0aa5b3ca3eaed159b3783a2958053a25b27edf0a06922a826e59e231d9b",
+      "size": 31789,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/rgb-blend-modes.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/rgb-blend-modes.psd",
+      "sha256": "3005b561711e23fb17681e36d49c5200b48a89eed8e87b7fffe6c5fce95d3b0e",
+      "size": 1870147,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 530,
+        "height": 512,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/saturation.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/saturation.psd",
+      "sha256": "b60e973294894556eef9e0bb65798e6ddfee3d71bd0389fef4813692b0e415f2",
+      "size": 31719,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/screen.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/screen.psd",
+      "sha256": "2786c78df04ff6724a112ca3eb2a9ba7468a4dcb3d5e8ab804c8e13711556195",
+      "size": 31869,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/soft-light.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/soft-light.psd",
+      "sha256": "3e68729590ac9e5031bd870301e7df2ada3490297d3d372d97015c09aa114a8c",
+      "size": 31712,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/subtract.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/subtract.psd",
+      "sha256": "863638e0769d2bab51ce97f19184063cde4457bc5a8fa4c9024311f6251d8def",
+      "size": 31692,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/blend-modes/vivid-light.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/blend-modes/vivid-light.psd",
+      "sha256": "e350f2bf3f0b756a3ba61eb6e62f8ff747561da095ca09d54e212835ed23161e",
+      "size": 31730,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/broken-groups.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/broken-groups.psb",
+      "sha256": "463ca1c2f93622285315ff6d69e7c2a38bf7f0143bae4676a89ccb924d596662",
+      "size": 83965,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 621,
+        "height": 514,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/broken-groups.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/broken-groups.psd",
+      "sha256": "c76302640f11dca2a81d7ece60d5e4095bc62a442fc03e8ede78d1c1550a8d07",
+      "size": 1429886,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 621,
+        "height": 514,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/clip-adjustment.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/clip-adjustment.psd",
+      "sha256": "60c2fcfe7245bfa141b565b54cdaa36ee4ad56133a883260c663f857db935f15",
+      "size": 42728,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/clipping-mask.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/clipping-mask.psb",
+      "sha256": "92b54b07d584d65924cb2944bc44b0dac7ede671c3e667202fcf6d067837eccb",
+      "size": 107613,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 360,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/clipping-mask.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/clipping-mask.psd",
+      "sha256": "0a44262635e68fe2c6823eed6cb840ddc43b9d2620c8d6948e1aae81291ac55a",
+      "size": 95259,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 360,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/clipping-mask2.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/clipping-mask2.psd",
+      "sha256": "624fa86083a976f9bce2dcb73d063e8b1144233fff65396c7d79524ab9960772",
+      "size": 254757,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 512,
+        "height": 512,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/clipping-mask3.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/clipping-mask3.psd",
+      "sha256": "27adc3c327ac4fb1cc069bf4dfee8d8ff70784180f3855bb0bf605709a91537a",
+      "size": 26430,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/clipping-mask4.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/clipping-mask4.psd",
+      "sha256": "366f250a766fa5ff7198a6ff292138854666957bb58099bfebba4448fe96126f",
+      "size": 29530,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/clipping-mask5.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/clipping-mask5.psd",
+      "sha256": "a80dd95e43e05ecb1dc2e59189a74ad90d7e4cd44a071e8477eb6b63edfe7c08",
+      "size": 32738,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/cmyk-alpha-spot.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/cmyk-alpha-spot.psd",
+      "sha256": "3f868555748e87a357890f2f20afa150f5820a460d73d3d0c1d2c52b14ebea0b",
+      "size": 2286497,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 3300,
+        "height": 5100,
+        "channels": 6,
+        "bitDepth": 8,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/cmyk-spot.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/cmyk-spot.psd",
+      "sha256": "d5164efc0221f84cd3cc9573db3d8a4805691e04e67b738b4160c042a7b9fb9d",
+      "size": 402214,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 640,
+        "height": 637,
+        "channels": 7,
+        "bitDepth": 8,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_16bit_cmyk.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_16bit_cmyk.psd",
+      "sha256": "4b25f12981dd2d435ba2669e3e771198c76765d3934a6cf57c069e0ad009cf6e",
+      "size": 577422,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 4,
+        "bitDepth": 16,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_16bit_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_16bit_grayscale.psd",
+      "sha256": "5ee15880f77c1a0e2566864d8770a26efe3aa261245e360267973ebdd542a49c",
+      "size": 20734,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 1,
+        "bitDepth": 16,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_16bit_lab.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_16bit_lab.psd",
+      "sha256": "35f1727b45b73eb6191a726937f336c8ef6515992bd4913c80e67f46dbc5f12b",
+      "size": 19170,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 3,
+        "bitDepth": 16,
+        "colorMode": "lab"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_16bit_multichannel.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_16bit_multichannel.psd",
+      "sha256": "36730fdab702fbbde8f8b96451d1099186a4443d02180119542ed50aab34c88d",
+      "size": 18190,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 3,
+        "bitDepth": 16,
+        "colorMode": "multichannel"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_16bit_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_16bit_rgb.psd",
+      "sha256": "5ac6e33ce952a5a6daf86144bedf849d60fd0008513f94c57fc1973960249a9a",
+      "size": 23310,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 3,
+        "bitDepth": 16,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_1bit_bitmap.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_1bit_bitmap.psd",
+      "sha256": "56ec3967706373af835a319aa2ef6698351e07b8b495e5296ba4fe8848c2dd5f",
+      "size": 17900,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 1,
+        "bitDepth": 1,
+        "colorMode": "bitmap"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_32bit_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_32bit_grayscale.psd",
+      "sha256": "f46c66327138fd85986ad514b9002c2cf0f4d654223e2ef6652a907b110ab8cd",
+      "size": 20346,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 1,
+        "bitDepth": 32,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_32bit_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_32bit_rgb.psd",
+      "sha256": "7104010764a3223399c3c1c797d64502be4391d266645edf0e600b75ea77e1f5",
+      "size": 20902,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_8bit_cmyk.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_8bit_cmyk.psd",
+      "sha256": "1b662e547d5edc6e10e9a84a03434988c6133795f8b416a03004afa9dd0334fa",
+      "size": 577446,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "cmyk"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_8bit_duotone.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_8bit_duotone.psd",
+      "sha256": "4169c367a7e4698f55955901849c38b8bd284dd61f8ddcbef8bafa70e54bb19b",
+      "size": 21250,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "duotone"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_8bit_grayscale.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_8bit_grayscale.psd",
+      "sha256": "2811614db8536c363ffd4b9c97baf8965b58fda5c894ffeffe1067d1287edacf",
+      "size": 20688,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_8bit_index_color.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_8bit_index_color.psd",
+      "sha256": "1da88234b4c1d33ef2fed6a3a496f68e3c28c0bce420400917736e9b72f194cc",
+      "size": 22084,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "indexed"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_8bit_lab.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_8bit_lab.psd",
+      "sha256": "48e52730a29cf715f9df9be12d6730af9e8125d27c5293910fedd7d621cf03e9",
+      "size": 20100,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "lab"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_8bit_rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_8bit_rgb.psd",
+      "sha256": "b656bd96b10350fc6911afaabbc2fa6a48cf5c1ae59c1a8e2f952539bd4f1930",
+      "size": 23308,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/colormodes/4x4_8bit_rgba.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colormodes/4x4_8bit_rgba.psd",
+      "sha256": "1f87ed0f6bace7587c0ab3fb48ffe22a7796a42e11743b6a10c42a4d2bd56d0f",
+      "size": 23780,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/colorprofiles/north_america_newspaper.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/colorprofiles/north_america_newspaper.psd",
+      "sha256": "528599e9b1e9456b7e5764da2c75c6cb7ba976774b7d352caa34d34451775f27",
+      "size": 21104,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/descriptors/stroke-color-descriptors-gray.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/descriptors/stroke-color-descriptors-gray.psd",
+      "sha256": "eb0cab1dd8decb1be3c0ceb95eaf555cc4370a011ee25dc76fbb164483c2b55e",
+      "size": 25950,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/descriptors/stroke-color-descriptors-hsb-with-rgb-mode.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/descriptors/stroke-color-descriptors-hsb-with-rgb-mode.psd",
+      "sha256": "2d47b073029143e2224e303fad965973a70e526a8c88234d1fb9be116eaa3aa8",
+      "size": 362429,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 1800,
+        "height": 1350,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/descriptors/stroke-color-descriptors-lab.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/descriptors/stroke-color-descriptors-lab.psd",
+      "sha256": "9f472778a8dca363a3dcac7f8a5aab14d53a8a6c84ed6f7b12381c96b099cf09",
+      "size": 26772,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "lab"
+      }
+    },
+    {
+      "path": "psd/descriptors/stroke-color-descriptors-rgb.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/descriptors/stroke-color-descriptors-rgb.psd",
+      "sha256": "cc95a5bd2bdc6cf2de60ec1741acfa6672c5c4a12d6e750bde2e91fd6e5939a6",
+      "size": 30126,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/effect-stroke-gradient.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/effect-stroke-gradient.psd",
+      "sha256": "0dc6114f10b814368f2fac1708668777cf0ede0159ee0484f3b9f40c165b8691",
+      "size": 92248,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 128,
+        "height": 128,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/effects/double-stroke-effects.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/effects/double-stroke-effects.psd",
+      "sha256": "f7c0631ead3370a97aa445f610665796d14475528acc1184e276dd5d3f47ca3e",
+      "size": 32528,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/effects/effects-enabled.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/effects/effects-enabled.psd",
+      "sha256": "42815f35af3998fd2fa4785bca94bb79124063e228d43c1fd206f71cdc43de87",
+      "size": 43174,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/effects/shape-fx.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/effects/shape-fx.psd",
+      "sha256": "f0c53835a0c5a8279512497f3448f2cfaf6ec31831eaab160c32779ed6a93fd2",
+      "size": 54806,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/effects/shape-fx2.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/effects/shape-fx2.psd",
+      "sha256": "d4db7556433ada2b7530de3e2a826327ec5497d77a2e2ce78dc48ccb980637c6",
+      "size": 39888,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/effects/stroke-composite.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/effects/stroke-composite.psd",
+      "sha256": "f9a513b4192b336b644caf93153f20ac30fef448298a7dd64f06f46728f770f6",
+      "size": 147573,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 256,
+        "height": 256,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/effects/stroke-effect-transparent-shape.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/effects/stroke-effect-transparent-shape.psd",
+      "sha256": "bd6514a680c05740ec8392d7ca624a2a6a90e8bddfdb65a698fc184980344af1",
+      "size": 31776,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/effects/stroke-effects.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/effects/stroke-effects.psd",
+      "sha256": "8481c35a8739c6d3177237194d1da1528bcfa70ed8831394176c6b2b21e11a1c",
+      "size": 211433,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 117,
+        "height": 157,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/effects/stroke-without-vector-mask.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/effects/stroke-without-vector-mask.psd",
+      "sha256": "b6fb31441e7c69d07045549495307864ff0fb2c21518aff0080b5effacd97af3",
+      "size": 24006,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 65,
+        "height": 39,
+        "channels": 5,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/empty-group.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/empty-group.psd",
+      "sha256": "ec878104e88476b0ff3ac05943d88a690eb19b1440c63585cf22ba50f0baccc8",
+      "size": 26312,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/empty-layer.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/empty-layer.psb",
+      "sha256": "e63dd3689546f26113080a86a3ab6ad74c9200b44fa917c19bbaaab906692da5",
+      "size": 30638,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/empty-layer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/empty-layer.psd",
+      "sha256": "f616f4984c6225c57751d8b6303368caaf6212a92070331ccce99f43352af0c0",
+      "size": 27982,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/fill_adjustments.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/fill_adjustments.psd",
+      "sha256": "40fb3984526471ff38b6836c647075802c66d2cded2e88d675898a5486317e4a",
+      "size": 378971,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/gradient-fill.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/gradient-fill.psb",
+      "sha256": "88d1e42e5c70a6f3f99b57e1feb623e0c9460807fbb00cb80223e213415e0a1d",
+      "size": 206998,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/gradient-fill.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/gradient-fill.psd",
+      "sha256": "30d617696f4453b8f4fb6688af152aea30d8e5730f632105d3f8feecc6ecc150",
+      "size": 206060,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/gradient-sizes.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/gradient-sizes.psd",
+      "sha256": "39af0f5d0ef8ca1fb31d2e4ebf75f5bc5d8a9a506ba3829b998575ff3375ba82",
+      "size": 82763,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 105,
+        "height": 105,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/gradient-styles.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/gradient-styles.psd",
+      "sha256": "9c5e709a1659b9d65ebe5bec6719191bf7dedae72b224fbb63414225f812b018",
+      "size": 156939,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 160,
+        "height": 182,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/gray0.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/gray0.psb",
+      "sha256": "99e7b4652b50e4b518e9f071bd630b3e73f3c874b5b0348db44fa911793ed1db",
+      "size": 116124,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 400,
+        "height": 359,
+        "channels": 2,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/gray0.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/gray0.psd",
+      "sha256": "f7160dd9dea521cb05e586dd62cff3f7a2429b070b2aba38cdc71b5522e9217c",
+      "size": 114108,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 400,
+        "height": 359,
+        "channels": 2,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/gray1.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/gray1.psb",
+      "sha256": "daf50e30e718c674f7c6e62ff88a098087ff27da632da6c3de87fcbcafeb45b2",
+      "size": 242920,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 1800,
+        "height": 1200,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/gray1.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/gray1.psd",
+      "sha256": "a8af49b6771e85355195d5e379b80d1e44e21a3ff6a1cb7272949fba68fb0a09",
+      "size": 187624,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 1800,
+        "height": 1200,
+        "channels": 1,
+        "bitDepth": 8,
+        "colorMode": "grayscale"
+      }
+    },
+    {
+      "path": "psd/group-clipping/group-clipping-clip-studio.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/group-clipping/group-clipping-clip-studio.png",
+      "sha256": "37eba6234c5c510808bbc1cf678b99e3b99c5ec9b37bf050d26453ad1e53f79a",
+      "size": 3719,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 627,
+        "height": 510,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/group-clipping/group-clipping-photoshop.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/group-clipping/group-clipping-photoshop.png",
+      "sha256": "ba0190dfa96f17dfa6a4f9ebdc608682c54df222adc01049f66143614fd46cef",
+      "size": 2532,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 627,
+        "height": 510,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/group-clipping/group-clipping.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/group-clipping/group-clipping.psd",
+      "sha256": "b8e346ee1909c793c5d1be36b01dacad7152d3f40757b4271cfb869d4a5ba141",
+      "size": 78020,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 627,
+        "height": 510,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/group.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/group.psb",
+      "sha256": "e5322646c91d54e068293e96580faebc3eae5d82d75ab3b38bd0e5c7cfb14ad2",
+      "size": 36590,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/group.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/group.psd",
+      "sha256": "1aaf572b69f0b0fa7c04b7b3a14c97e310a0c7bbdc06e733c9dd0d0cdcf7df1c",
+      "size": 31480,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/hidden-groups.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/hidden-groups.psb",
+      "sha256": "1dccb23ffa47e59a548d96a893612e48d3f8f876ce3cc81779657ad19ae886a6",
+      "size": 38704,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/hidden-groups.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/hidden-groups.psd",
+      "sha256": "57ebb0195f61309c9c73fddec6a9c44ce931ccb3f165f8a78c73861a1fe3862d",
+      "size": 33178,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/hidden-layer.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/hidden-layer.psb",
+      "sha256": "61504449562ab7e9f72c9182279385df4f7374c002c5443fdaf1db3bf8e738b9",
+      "size": 34171,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/hidden-layer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/hidden-layer.psd",
+      "sha256": "3aaadd20b5ff9d5e778239ee734c9c2bf57fc56bccc82c1b003c3719df46dba0",
+      "size": 29810,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/history.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/history.psb",
+      "sha256": "d4b49e5bc0f514a32727b2067e460ca0b3592645cdff655bcaa4f319338ca384",
+      "size": 50125,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/history.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/history.psd",
+      "sha256": "b93a3fe87dc807596050f0ab696c7b7972171dda27430593ae50f8516141619a",
+      "size": 48981,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/issues/issue397.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/issues/issue397.psd",
+      "sha256": "e554563c160386836cfd186ba7bd657f08c0c57e60fd7f1156fd3d9bf08de4ae",
+      "size": 289800,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 240,
+        "height": 186,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layer-name-emoji.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layer-name-emoji.psd",
+      "sha256": "2ed49149deeffbccb89aebbf8c5a19dee12a864b17641c7bc03a89e957f3eaa8",
+      "size": 20824,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 4,
+        "height": 4,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layer_comps.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layer_comps.psb",
+      "sha256": "4a875e7a01d12346e1ee9a3e0c66e2e08b29c9786c3d966e39296c7488a79647",
+      "size": 212057,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layer_comps.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layer_comps.psd",
+      "sha256": "4179ed664df5e5b3473c62587039f6a373a0f1494f6bc490acec7e57493d1537",
+      "size": 121418,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layer_effects.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layer_effects.psd",
+      "sha256": "6ab41ce6e17b3287c703dc4cf4d898506ffc1bd9babf20d0f1de5ef6df1d2e1e",
+      "size": 735149,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 800,
+        "height": 640,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layer_mask_data.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layer_mask_data.psb",
+      "sha256": "807a1362da4d756f9096a75d9b0fb0ec46c3c5feeafe3ce96ccc66db7ba5a014",
+      "size": 132639,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layer_mask_data.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layer_mask_data.psd",
+      "sha256": "e30f5d2f51ef2dc5790b45b50ff3911ab7991ffdf63230561364a2574c1392aa",
+      "size": 116702,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layer_params.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layer_params.psb",
+      "sha256": "e2d4a3c2162bb022c115ebeb51eeb5b9f22978e12e47f419aeeeac45f9e2be71",
+      "size": 214867,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 600,
+        "height": 600,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layer_params.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layer_params.psd",
+      "sha256": "23c2c5af17b56f682193cd6d1095ab57ea685eeaf4a9061399bf79d6a0a28b19",
+      "size": 197491,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 600,
+        "height": 600,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers-minimal/gradient-fill.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers-minimal/gradient-fill.psd",
+      "sha256": "8d995a89eee1b4b11e0639cb4546e46aff8c9fd168a7b7ddfb4abb9f4b75e806",
+      "size": 23370,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers-minimal/pattern-fill.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers-minimal/pattern-fill.psd",
+      "sha256": "c1f7bb729d8476f328388ed58fd9fadc72819426b23b45f7cbf9ece1b0e36865",
+      "size": 58494,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers-minimal/pixel-layer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers-minimal/pixel-layer.psd",
+      "sha256": "5862b2f0cae962f73468cf32f4f1410fb785010201a074dba7102f83a15dfa00",
+      "size": 24220,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers-minimal/shape-layer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers-minimal/shape-layer.psd",
+      "sha256": "53f4791a888269f835a65e30fd29d2cc775490c35cdefe16987129e00bbd9a18",
+      "size": 24146,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers-minimal/smartobject-layer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers-minimal/smartobject-layer.psd",
+      "sha256": "f451b816bb5292564eaad9a29eb7543c3b2ad6b5dc35d1babc0a4c799502ee01",
+      "size": 26144,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers-minimal/solid-color-fill.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers-minimal/solid-color-fill.psd",
+      "sha256": "e22eebb32a29bf05072882b2de9f15132da70b90417784439798432a69ee6267",
+      "size": 22662,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers-minimal/type-layer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers-minimal/type-layer.psd",
+      "sha256": "b24e6f4c7277dd499ebb20c88ac06698f4563e75bfeb6aa6cb0d2466140fd81f",
+      "size": 43944,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/black-and-white.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/black-and-white.psd",
+      "sha256": "70d843798d732f2a56f3dc8614d7c5e6c575b45328ece7e9fe61a340ef3b48ad",
+      "size": 23086,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/brightness-contrast.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/brightness-contrast.psd",
+      "sha256": "ba069aff12a110616c4d1ba7522f0cda8dc312fa4129f4cb8bdc21e30c805744",
+      "size": 22564,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/channel-mixer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/channel-mixer.psd",
+      "sha256": "974fe05663302be94379d72d08d1d1d6e7025ea7ddad012cd1cd81e0d3cb94d9",
+      "size": 22838,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/color-balance.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/color-balance.psd",
+      "sha256": "cc7fdeb95d6b06790f07d0564b8c5591b19af94839ed453e38517fea14d02cdf",
+      "size": 22814,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/color-lookup.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/color-lookup.psd",
+      "sha256": "10d5b941563e3305c741e2c1725483546634349270ae0fc2bc49b2778c1b181f",
+      "size": 22806,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/curves-with-vectormask.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/curves-with-vectormask.psd",
+      "sha256": "8c343f76e9eb964425c5a6efdcb29829fc21f47ad06ac465a9acf1ed6036c0a9",
+      "size": 24134,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/curves.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/curves.psd",
+      "sha256": "e34d8f3bf915d4e48527efd2c6231d39b0705943208391ec03571015aa37ac54",
+      "size": 22794,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/exposure.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/exposure.psd",
+      "sha256": "1eb4ffdab3c21acf455baf7084cfafefe816d628f4edc7d45206f3e0dffe183b",
+      "size": 22794,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/gradient-fill.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/gradient-fill.psd",
+      "sha256": "2bac8500879484584fae6af3d90c8c2a2b2f566d350971e79dfc5283c993e2ae",
+      "size": 24138,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/gradient-map-v3-classic.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/gradient-map-v3-classic.psd",
+      "sha256": "8980760d269e95954e55c9142aca02fb21d27138b66d1e62f6921ab9bc131968",
+      "size": 22958,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/gradient-map-v3-linear.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/gradient-map-v3-linear.psd",
+      "sha256": "38fdbffa9b6b0144aad4ddcd66333ed698e9091ec318a1516240e9a0b7b85bb2",
+      "size": 22958,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/gradient-map-v3-perceptual.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/gradient-map-v3-perceptual.psd",
+      "sha256": "416a2db01f11356df8f3a0ce24cb66cc977c15124cf820bc9d2729a90987f488",
+      "size": 22958,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/gradient-map.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/gradient-map.psd",
+      "sha256": "a6b436d69b68b76ceb0fc4f8d7f3d080823ce5591d1a71f30aa391a6a19f01bf",
+      "size": 22954,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/group.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/group.psd",
+      "sha256": "83b4847a919359154ed5c01baa39606f5de42abd30eff73bc101f979b3303fb3",
+      "size": 22666,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/hue-saturation.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/hue-saturation.psd",
+      "sha256": "679b1b6468b1c68d65f698d2c4dbdb185232092d78a2f9f6e77c897f400c7111",
+      "size": 22890,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/invert.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/invert.psd",
+      "sha256": "a282a963588bb02022dc09fd1174b2d6afe0df1110953585df3bc046e5fccd5f",
+      "size": 22774,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/levels.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/levels.psd",
+      "sha256": "f15bbf06fbd48fc3ad35a5ec266fe2927c39db2bf591fcad7186a4815e633920",
+      "size": 23406,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/pattern-fill.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/pattern-fill.psb",
+      "sha256": "078fd9ff7469953557201775726afce0b1de85e691bb8bb1d7f797d0dc26c907",
+      "size": 63172,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/pattern-fill.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/pattern-fill.psd",
+      "sha256": "f726a18877069161884ec933c5ea4962918f45de8317a47abe6bb9075baf059f",
+      "size": 62934,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/photo-filter.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/photo-filter.psd",
+      "sha256": "80710c84f302f6fc873da8aeb4da99a08953dbfce0962ae70725542ad25f3fff",
+      "size": 22810,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/pixel-layer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/pixel-layer.psd",
+      "sha256": "480743cc294c702c43c8ef80ac9d4bd9a52c2534a2ccec8708689eeef673964c",
+      "size": 24987,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/posterize.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/posterize.psd",
+      "sha256": "4a0f93719c3c3c755f49c4e8f60b482f42da1085b40428e00c8f61f4e7d5caf7",
+      "size": 22794,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/selective-color.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/selective-color.psd",
+      "sha256": "14f75f6cb941b81e57a64f03346c13beb731227b16fa3494d9b12e796fdcdbd7",
+      "size": 22894,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/shape-layer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/shape-layer.psd",
+      "sha256": "23b3cc8dfcaca161443ab7345e49fdcd5494ceb864c16221b61ad99473a53830",
+      "size": 25391,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/smartobject-layer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/smartobject-layer.psd",
+      "sha256": "a34abf773a64f21b59d5a854f7d394e7ac41e402d0ce546ddd86d19c764a63a2",
+      "size": 26417,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/solid-color-fill.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/solid-color-fill.psd",
+      "sha256": "d8229e39489dd992b1965593603c660353d4444f080f97a5233fdc1b1e14fcf2",
+      "size": 22772,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/threshold.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/threshold.psd",
+      "sha256": "223d49f2caa50399c1525594d4a4da215143d24baac8d8b909e603579473cd22",
+      "size": 22794,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/type-layer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/type-layer.psd",
+      "sha256": "7a61ae63f2518e436320d48c9b6e4cd7b3df64f3d86dac23dd83055f12bc88ba",
+      "size": 43717,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/layers/vibrance.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/layers/vibrance.psd",
+      "sha256": "a18173ed1f3fc01e392b410b0c745f8f7cb4cfcd3d74af80fb426faac015cc1e",
+      "size": 22802,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/linked-layer.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/linked-layer.png",
+      "sha256": "d37cfdbc5d4f5cf908846967ce7c0dea357aad74bae9fdcc580f796bf3062fa1",
+      "size": 17272,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "psd/mask-density-layermask.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/mask-density-layermask.psd",
+      "sha256": "7f4240b160a541a0aded458ffc83aaeb9c8d59306342f6065ec9cc0d41be21ec",
+      "size": 33132,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/mask-density-layervectormask.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/mask-density-layervectormask.psd",
+      "sha256": "185ccf0a483da25af5c3a25942158d849f8bda24ab8be615088fab4f08d01730",
+      "size": 30792,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/mask-density-vectormask.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/mask-density-vectormask.psd",
+      "sha256": "efcce23eeca979a32c9a954b76a9f2948c656b7c48ec1b86606525949796364c",
+      "size": 27768,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/mask-disabled.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/mask-disabled.psd",
+      "sha256": "989e198abd0bc7e7573db1c5240ea713994113f03cb5a785be941679921561c2",
+      "size": 91988,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/mask-index.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/mask-index.psd",
+      "sha256": "0fa601f84afa646472484a21556b6947f89773e9ce9fa172b96b4f37d8846963",
+      "size": 537294,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 1000,
+        "height": 867,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/mask-vector-density.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/mask-vector-density.psd",
+      "sha256": "1e774b247a20457ad8f3aaa36314bab0d487ea88ec96cf8b9d992f5dbf0b8785",
+      "size": 27812,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/mask.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/mask.psb",
+      "sha256": "263ed5883f2af5a1ffb90562d155b2b56a1288b761b7a39d9ec40c3862fc9a9e",
+      "size": 78229,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/mask.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/mask.psd",
+      "sha256": "a6928c0e306022d474876e61f4b1dc5b7c1ed1e1cb422e6e72511da0a6aae90b",
+      "size": 72905,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/mask_parameters.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/mask_parameters.psd",
+      "sha256": "41779602a0840558846ac51197efea4205759c45327233ffa440b653c5e63a38",
+      "size": 36214,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 200,
+        "height": 200,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/masks.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/masks.psb",
+      "sha256": "1eb6407018962be307b9eebd41739e56828bfd0fd7073d2a41fb7dcdd537ed7d",
+      "size": 717102,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 640,
+        "height": 1394,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/masks.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/masks.psd",
+      "sha256": "8cd1a0d53274436e79662a96d0f8d020a73df0626cf7921429047a6fe7bf0d07",
+      "size": 694395,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 640,
+        "height": 1394,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/masks/2-ellipse1.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/masks/2-ellipse1.png",
+      "sha256": "3b5a8248571946b55812b84366a1ad8addcc88e007935a81026a5148c55a07d2",
+      "size": 828,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/masks/2-ellipse2.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/masks/2-ellipse2.png",
+      "sha256": "ac78ed20357ee68fb4216f5cc26b28baf274379954b4d706bc5ecb17e6e227a0",
+      "size": 543,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 48,
+        "height": 48,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/masks/2-ellipse3.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/masks/2-ellipse3.png",
+      "sha256": "aea65a453ac47e705147ae07e50330956c9e93980a95b5b302e8f4352409a0de",
+      "size": 673,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 48,
+        "height": 48,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/masks/2.png",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/masks/2.png",
+      "sha256": "f70305b07baaf62ec0e8e5ce57c16760582511be380fa268204e15ce321d3acf",
+      "size": 1827,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 64,
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "psd/masks/2.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/masks/2.psd",
+      "sha256": "cc6363e24089c2f8910ae44b8067825e2af5e1c43c5d8b3bc6323934fa3cfacd",
+      "size": 25590,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/masks2.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/masks2.psb",
+      "sha256": "2b99f27b5a6b3d1dc6a10baa526f804b642a1c7feaffc47a6014bf950d60d7e0",
+      "size": 820181,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 640,
+        "height": 1136,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/masks2.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/masks2.psd",
+      "sha256": "5f9e03f6f1c8ac04dd1e15f7253b489942c3958c00a0e4876b2f944f8ce31d67",
+      "size": 815749,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 640,
+        "height": 1136,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/masks3.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/masks3.psd",
+      "sha256": "00519ff3184b2f426258163b60437cc722dfdcd596a198f85ddd45c17b22fcd5",
+      "size": 28634,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/metadata.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/metadata.psb",
+      "sha256": "ed428417c175d15d135666b5896c3e280259f6d243515acc71d4f6c276729897",
+      "size": 24242,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 100,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/metadata.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/metadata.psd",
+      "sha256": "d279fb8ea593aa1e06b109eed3427594e536211d639299225ed0fbe3586bba6c",
+      "size": 23476,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 100,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/note.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/note.psb",
+      "sha256": "213f56c58b7b484c0cb7239873854ed2ec7863f350c2283d42c66929cdb54f50",
+      "size": 64165,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 300,
+        "height": 300,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/note.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/note.psd",
+      "sha256": "0b343c50db1a572393ea6a41d48f1aec7fa8d20c862a1716985b73d1a20d8b5f",
+      "size": 61918,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 300,
+        "height": 300,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/opacity-fill.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/opacity-fill.psd",
+      "sha256": "b3568a8c6491d2da4b9e2aa8c6842b443c09b51aca6ffe44bcbfcc2ae17189ef",
+      "size": 23424,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/passthrough_blendmodes1.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/passthrough_blendmodes1.psd",
+      "sha256": "a9297d5920b230136e66b8cdc5b6f23b3780f55e2075010f938c9ca0ee7d0599",
+      "size": 36162,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/passthrough_blendmodes2.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/passthrough_blendmodes2.psd",
+      "sha256": "a13688cc0baab09d96d5d5878f01c00897cfdc6cf87de5cc5fcff24236ee0e52",
+      "size": 37577,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/passthrough_blendmodes3.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/passthrough_blendmodes3.psd",
+      "sha256": "ce32b24f793fd3c64c79c16b71888ce6e7ab0b3c398ba121e97379ca6cd64a87",
+      "size": 38972,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/passthrough_clipping_mask_adjustment.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/passthrough_clipping_mask_adjustment.psd",
+      "sha256": "59e55f9ca8d252980f600998b55ccf81b21d42bc43bf4daeaedd8b296d1a5be7",
+      "size": 31840,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/passthrough_clipping_mask_blendmode.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/passthrough_clipping_mask_blendmode.psd",
+      "sha256": "27b434d10abcf08c7836ae0511437a3928cb9dd208e731c153d2d078508154e3",
+      "size": 31050,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/passthrough_fill_adjustment.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/passthrough_fill_adjustment.psd",
+      "sha256": "f909304768db5243a833dfc270c78a6701ec36f73e7024b7544f026d15c610f7",
+      "size": 31236,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/passthrough_fill_blendmode.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/passthrough_fill_blendmode.psd",
+      "sha256": "eeb3ca39ce23b40ac6e45ece19527f2da33b81597b4549c26a25a8b2e3b85780",
+      "size": 30724,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/passthrough_opacity.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/passthrough_opacity.psd",
+      "sha256": "514910f20d2a2339a386c35299efe1922c8a44a23591834c997329f1409450f3",
+      "size": 30494,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/passthrough_vector_mask.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/passthrough_vector_mask.psd",
+      "sha256": "d6e4db16b3916c26416231d21657bc679a7af3fe8009864bde4b1d177ceb9a01",
+      "size": 30835,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/combine-group.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/combine-group.psd",
+      "sha256": "17200edea3e3e69f7b884111020a506abba897880479e69506f4355a51ce09e4",
+      "size": 34829,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/combine.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/combine.psd",
+      "sha256": "61513fbddb67c94d00f7c8a88191074ea9b259f2fd78a180945c49a1e1aa60e3",
+      "size": 29100,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/exclude-first.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/exclude-first.psd",
+      "sha256": "3ff08258a3b1710729606342cdf0f00e849e76333233b0a5340448f7a23814d7",
+      "size": 26516,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/exclude-group.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/exclude-group.psd",
+      "sha256": "27f0f3899d176f43bd0231118a2f62cae566c593f7b86a75dee251e125b34115",
+      "size": 42890,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/exclude.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/exclude.psd",
+      "sha256": "d50e60b672bfe21ac02ebefb446c12b6d5d5d15530560a785f50e4e8f6f66791",
+      "size": 35268,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/intersect-all.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/intersect-all.psd",
+      "sha256": "79412dda0453661605b724cbcbef417200188ecb9f87e4778151e4b731b952ac",
+      "size": 25284,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/intersect-first.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/intersect-first.psd",
+      "sha256": "787a94b10c127efaab037c40b9c797af8d83e4ef7ab6846f730f5adf7addac5b",
+      "size": 25038,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/intersect-group.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/intersect-group.psd",
+      "sha256": "1f9d38f6cbb3e8bd5648c4acecf5b5a1b1c3f3f0ef94e925bf42d5c0b31d3c2f",
+      "size": 40463,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/subtract-all.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/subtract-all.psd",
+      "sha256": "3237bb98d4c07ea2e9e533795f515d8958158385872be7e2a4e0508ba53374be",
+      "size": 27005,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/subtract-first.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/subtract-first.psd",
+      "sha256": "81a1536a432907a6ab8c8a41d3ff061ecfe5e3686970ba2e3697d8e79f60e9b9",
+      "size": 26772,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/subtract-group.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/subtract-group.psd",
+      "sha256": "126a90c715c831f41c0b1926819d20dcd6fae14625174e45aa72a2f30318dfd1",
+      "size": 42852,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/path-operations/subtract-second.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/path-operations/subtract-second.psd",
+      "sha256": "83fdf32685b4d7c035099be3132bc57b687f44c662ccda5ddcb9efd9e2b8569c",
+      "size": 29164,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 64,
+        "height": 64,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/patterns.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/patterns.psd",
+      "sha256": "8624d62d1d2a94eff2119a08621e02e0d8513db4da0b24e9939e2a9feffb5841",
+      "size": 426771,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/pen-text.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/pen-text.psb",
+      "sha256": "2445db54440058a7a67c807a5e7a0817e2ad9f5f09c300af137a5e0da02515c4",
+      "size": 1149470,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 300,
+        "height": 300,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/pen-text.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/pen-text.psd",
+      "sha256": "83514b47cb106a79bc1d676dfd851be372d315f6ba209a943cb7add03f242aa4",
+      "size": 1258678,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 300,
+        "height": 300,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/placedLayer.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/placedLayer.psb",
+      "sha256": "066eeb1bce9c123ffcb57f380d9a51e0687024fdd264904ed3a44c3d5666490c",
+      "size": 120080,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/placedLayer.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/placedLayer.psd",
+      "sha256": "69ea01bf88cb85c48d3a78c3bb9e06ae141c9c9fc6a88267eae95c315e16180e",
+      "size": 114796,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/semi-transparent-layers.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/semi-transparent-layers.psb",
+      "sha256": "596a8131e4d63f65a0cc2b6a513fadc06f844a25ce8714be397f506d23abc398",
+      "size": 39848,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 100,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/semi-transparent-layers.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/semi-transparent-layers.psd",
+      "sha256": "2d190efddf648408ad0115852f8a029eec44de10bd29f6ff222aaa574cc31bc1",
+      "size": 37746,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 100,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/slices.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/slices.psb",
+      "sha256": "bdac1216edac692b5941cd28d60a6ded9ca7b23b32e903af47066c3f9dce958f",
+      "size": 32318,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 240,
+        "height": 180,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/slices.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/slices.psd",
+      "sha256": "dc7540774270ede4e5d8f76326a495854adb9b69a99c466c1f7d262b2b7f7484",
+      "size": 31212,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 240,
+        "height": 180,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/smart-object-slice.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/smart-object-slice.psb",
+      "sha256": "4dfea68f5d42bd663bb8e9a375a5eb19622fb06b340acc22c6de1536b878f9f3",
+      "size": 1085326,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 100,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/smart-object-slice.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/smart-object-slice.psd",
+      "sha256": "12ef0c357ec24e094390619878fc3476cb7198c8e7690aceb3e18e0b51dc1b28",
+      "size": 1081897,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 100,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/stroke.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/stroke.psd",
+      "sha256": "ab39632f4266a2bc72cfb676f06aa5fc60f1c4951fed2f9fd67165895e61890c",
+      "size": 254031,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/text.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/text.psb",
+      "sha256": "d28350bc188655b1bfb4741877af946f07810f2eaa50c95d33939c210dd79e96",
+      "size": 83187,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 400,
+        "height": 400,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/text.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/text.psd",
+      "sha256": "eb40ec54a5f270913463bcc847be65672ce6fff0d0d56288725f58e299e00f1c",
+      "size": 93949,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 400,
+        "height": 400,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/third-party-psds/cactus_top.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/third-party-psds/cactus_top.psd",
+      "sha256": "405f13bbbcc9001d8771f313d898ba683d79a7e79005650d8c1a017a4fb0ca2a",
+      "size": 6092,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 16,
+        "height": 16,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/transparency/clip-opacity.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/transparency/clip-opacity.psd",
+      "sha256": "01cdafadb5828ac23dd9b5ed4d308c00509f36f64da5760002b7e7f7e3d235d9",
+      "size": 29440,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/transparency/fill-opacity.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/transparency/fill-opacity.psd",
+      "sha256": "3b0273eaa87051c0482fca601ca9ba111595e74a77494771f911402f0c1da1c4",
+      "size": 68130,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/transparency/knockout-isolated-groups.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/transparency/knockout-isolated-groups.psd",
+      "sha256": "4db674ff13022a3b688d0e23fc087f0978fab8f45a581d601ef050d05ae14189",
+      "size": 309908,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/transparency/transparency-group.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/transparency/transparency-group.psd",
+      "sha256": "86d3c7fc67576dc3472a54a9c3478525881875948b5ca81aca0496d4b10fdc78",
+      "size": 140703,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/transparentbg-gimp.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/transparentbg-gimp.psb",
+      "sha256": "6710f99e5b32843cebc7a1a5d252b8d4156735cfe10f971bd76e860541bd7ede",
+      "size": 21428,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 40,
+        "height": 40,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/transparentbg-gimp.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/transparentbg-gimp.psd",
+      "sha256": "9c700d3e7ad0429ac3ea83a40bb02f364a3d4e7713e7d608e23a8e03014d3b9c",
+      "size": 2912,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 40,
+        "height": 40,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/transparentbg.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/transparentbg.psb",
+      "sha256": "f4c14e457a74dcfc979c0ac4e2b25378036cb983dda1ee273a3f5267405f24d1",
+      "size": 260818,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 150,
+        "channels": 4,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/transparentbg.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/transparentbg.psd",
+      "sha256": "d6b3ebbc2928e80d6cb9e53e2bfc935083a2f76def4325547c382c0141fda8bb",
+      "size": 260130,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 4,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/unicode_pathname.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/unicode_pathname.psb",
+      "sha256": "62e9eec973d1ef9c61515ffe6eba7d6285e6943e0e1b1e01b125a6f2b3896346",
+      "size": 128480,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 1024,
+        "height": 1352,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/unicode_pathname.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/unicode_pathname.psd",
+      "sha256": "9ce5876f237020b4a10607d60bef0d4c568d7d330ac91016778196762f429f42",
+      "size": 120304,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 1024,
+        "height": 1352,
+        "channels": 3,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/vector-mask-disabled.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/vector-mask-disabled.psd",
+      "sha256": "4e6a91fd815b5f42aa5f1873979f668747594645a7845b700c01e6c53d03988d",
+      "size": 222814,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/vector-mask.psb",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/vector-mask.psb",
+      "sha256": "0596ec478f78842bdb471cffe0ceadae132904d5062efa3425721b0413122be9",
+      "size": 222014,
+      "format": {
+        "kind": "psb",
+        "version": "2",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/vector-mask.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/vector-mask.psd",
+      "sha256": "e0dd21d3325a42cd81c6abc17a4fdc283101eca0ba306f852fe8bc167926d502",
+      "size": 223718,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 100,
+        "height": 150,
+        "channels": 3,
+        "bitDepth": 32,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/vector-mask2.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/vector-mask2.psd",
+      "sha256": "fc6c32967f6a62641fa02fa314fe24717de49b74da0e1367abdb51a4b55cd49f",
+      "size": 48039,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 32,
+        "height": 32,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    },
+    {
+      "path": "psd/vector-mask3.psd",
+      "sourceId": "psd-tools-testdata",
+      "upstreamPath": "tests/psd_files/vector-mask3.psd",
+      "sha256": "344eb19a6ae1be6d5282eb0483a2db62c58ee5bddff8a3168dada53d391c6dbd",
+      "size": 39864,
+      "format": {
+        "kind": "psd",
+        "version": "1",
+        "width": 256,
+        "height": 256,
+        "channels": 4,
+        "bitDepth": 8,
+        "colorMode": "rgb"
+      }
+    }
+  ],
+  "totals": {
+    "files": 320,
+    "bytes": 51288064
+  }
+}

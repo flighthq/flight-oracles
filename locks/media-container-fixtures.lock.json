@@ -10,7 +10,7 @@
       "kind": "upstream",
       "repo": "web-platform-tests/wpt",
       "ref": "master",
-      "commit": "b47d3bcbff5bbe2ed05253056c244d3dab686c36",
+      "commit": "5cf01e01ad9efc44bd4f53a84f7cb855c8c94f89",
       "retrieved": "2026-08-07",
       "license": {
         "declared": "BSD-3-Clause",
@@ -21,14 +21,14 @@
         "covers": "web-platform-tests is dual-licensed under the 3-Clause BSD License and the W3C 3-clause BSD License, at the recipient's option, per LICENSE.md. The BSD grant is the one relied on here.",
         "onwardUse": "unrestricted"
       },
-      "licenseSnapshot": "licenses/wpt-media@b47d3bcbff5b.txt"
+      "licenseSnapshot": "licenses/wpt-media@5cf01e01ad9e.txt"
     },
     {
       "id": "wpt-webaudio",
       "kind": "upstream",
       "repo": "web-platform-tests/wpt",
       "ref": "master",
-      "commit": "b47d3bcbff5bbe2ed05253056c244d3dab686c36",
+      "commit": "5cf01e01ad9efc44bd4f53a84f7cb855c8c94f89",
       "retrieved": "2026-08-07",
       "license": {
         "declared": "BSD-3-Clause",
@@ -39,7 +39,7 @@
         "covers": "As above \u2014 web-platform-tests' LICENSE.md, 3-Clause BSD.",
         "onwardUse": "unrestricted"
       },
-      "licenseSnapshot": "licenses/wpt-webaudio@b47d3bcbff5b.txt"
+      "licenseSnapshot": "licenses/wpt-webaudio@5cf01e01ad9e.txt"
     }
   ],
   "files": [
