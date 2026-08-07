@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -157,10 +158,41 @@ def cmd_verify(args):
     return 1 if failed else 0
 
 
+def _source_commit(root: Path):
+    """The commit this build came from, if the tree is a git checkout.
+
+    Recorded because a release otherwise says nothing about its own provenance. 0.1.0 was
+    built from a commit main had already moved past — a tag pins a commit, and the fix that
+    landed afterwards was not in it. Diagnosing that meant rebuilding an archive and
+    comparing digests; this makes it a field.
+    """
+    try:
+        out = subprocess.run(["git", "-C", str(root), "rev-parse", "HEAD"],
+                             capture_output=True, text=True, timeout=15, check=True)
+        commit = out.stdout.strip()
+    except (subprocess.SubprocessError, OSError):
+        return None
+    dirty = subprocess.run(["git", "-C", str(root), "status", "--porcelain"],
+                           capture_output=True, text=True, timeout=15).stdout.strip()
+    info = {"commit": commit}
+    if dirty:
+        # A release built from uncommitted changes cannot be reproduced from any commit.
+        info["dirty"] = True
+    return info
+
+
 def cmd_pack(args):
     root = _root(args)
     out_dir = root / args.out
     index = {"version": args.version, "packs": []}
+    source = _source_commit(root)
+    if source:
+        index["builtFrom"] = source
+        note = " (WORKING TREE DIRTY)" if source.get("dirty") else ""
+        print(f"building {args.version} from commit {source['commit'][:12]}{note}", flush=True)
+        if source.get("dirty"):
+            print("  warning: uncommitted changes present — this build is not reproducible "
+                  "from any commit", flush=True)
     for spec in _specs(args):
         lock = _locked(spec, root, args)
         if lock is None:

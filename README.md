@@ -188,10 +188,24 @@ that has never run:
    this is where throttling or a vanished upstream will show up — harmlessly, with no tag
    already in existence to unpick.
 
-3. **Tag.** `git tag 0.1.0 && git push origin 0.1.0`. The tag name becomes the version in
+3. **Tag the merged tip, explicitly.** A tag pins one commit, so tagging before everything
+   has merged releases the older state — `0.1.0` was cut that way, from a commit `main` had
+   already moved past. Note also that `git push` does not push tags.
+
+   ```
+   git fetch origin
+   git tag -a 0.1.0 origin/main -m "0.1.0"
+   git push origin 0.1.0
+   ```
+
+   The tag name becomes the version in
    every filename, so `0.1.0` yields `spine-fixtures-full-0.1.0.tar.gz`. The workflow
    ingests, verifies, builds all three variants of every pack, attaches build provenance
    attestation, and publishes the release with `index.json` and `SHA256SUMS`.
+
+   `index.json` records `builtFrom.commit`, so any published release can be traced to the
+   exact source it came from — and flags `dirty` if the tree had uncommitted changes, which
+   means that build is reproducible from no commit at all.
 
 `release` also accepts a manual dispatch with an explicit version, which needs no tag at all
 — useful for a trial run you intend to delete.
