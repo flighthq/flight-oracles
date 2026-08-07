@@ -373,7 +373,25 @@ class TestDerivedSpec(unittest.TestCase):
             spec.SourceSpec(id="d", kind="derived", license=self._license(),
                             strategies=["truncate"], from_pack="p")
         spec.SourceSpec(id="d", kind="derived", license=self._license(),
-                        strategies=["truncate"], from_pack="p", from_source="s")
+                        strategies=["truncate"], from_pack="p", from_source="s",
+                        from_include=["**/*.swf"])
+
+    def test_derived_requires_a_parent_file_filter(self):
+        # Without from_include a derivative silently widens whenever its parent does:
+        # swf-ruffle-fixtures gained .toml configs and .as sources, and the malformed pack
+        # began corrupting those, which tests nothing about any decoder.
+        with self.assertRaises(ValueError) as caught:
+            spec.SourceSpec(id="d", kind="derived", license=self._license(),
+                            from_pack="p", from_source="s", strategies=["truncate"])
+        self.assertIn("from_include", str(caught.exception))
+
+    def test_derived_filter_selects_only_matching_parents(self):
+        src = spec.SourceSpec(id="d", kind="derived", license=self._license(),
+                              from_pack="p", from_source="s", strategies=["truncate"],
+                              from_include=["**/*.swf"])
+        self.assertTrue(src.selects_parent("avm1/x/test.swf"))
+        self.assertFalse(src.selects_parent("avm1/x/test.toml"))
+        self.assertFalse(src.selects_parent("avm1/x/Test.as"))
 
     def test_derived_requires_strategies(self):
         with self.assertRaises(ValueError):
@@ -437,6 +455,42 @@ class TestReferences(unittest.TestCase):
         (d / "a.json").write_bytes(
             json.dumps({"assets": [{"p": "/site/static/x.png"}]}).encode())
         self.assertEqual(references.unresolved([lock], root), [])
+
+
+class TestPackOrdering(unittest.TestCase):
+    """Derived packs must be ingested after the packs they derive from.
+
+    Alphabetical order is not safe — malformed-fixtures derives from swf-ruffle-fixtures and
+    rive-fixtures, both of which sort after it. A warm vendor/ hid this completely; the first
+    cold run in CI failed on it.
+    """
+
+    def _pack(self, name, parents=()):
+        lic = spec.LicenseSpec(declared="MIT", declared_scope="repository-root")
+        sources = [spec.SourceSpec(id=f"{name}-{p}", kind="derived", license=lic,
+                                   from_pack=p, from_source="s", strategies=["truncate"],
+                                   from_include=["**/*"]) for p in parents]
+        if not sources:
+            sources = [spec.SourceSpec(id=name, kind="upstream", repo="o/r",
+                                       include=["**"], license=lic)]
+        return spec.PackSpec(name=name, kind="fixtures", summary="", sources=sources)
+
+    def test_parents_are_ordered_first(self):
+        packs = [self._pack("malformed", ["swf", "rive"]), self._pack("rive"),
+                 self._pack("swf")]
+        order = [p.name for p in spec.in_dependency_order(packs)]
+        self.assertLess(order.index("swf"), order.index("malformed"))
+        self.assertLess(order.index("rive"), order.index("malformed"))
+
+    def test_cycle_is_reported_not_hung(self):
+        packs = [self._pack("a", ["b"]), self._pack("b", ["a"])]
+        with self.assertRaises(ValueError) as caught:
+            spec.in_dependency_order(packs)
+        self.assertIn("cycle", str(caught.exception))
+
+    def test_every_pack_survives_ordering(self):
+        packs = [self._pack("malformed", ["swf"]), self._pack("swf"), self._pack("other")]
+        self.assertEqual(len(spec.in_dependency_order(packs)), 3)
 
 
 class TestGlobs(unittest.TestCase):

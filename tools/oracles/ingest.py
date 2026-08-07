@@ -303,20 +303,45 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
             continue
 
         if source.kind == "derived":
-            parent = load_lock(source.from_pack, root)
+            try:
+                parent = load_lock(source.from_pack, root)
+            except FileNotFoundError:
+                raise ValueError(
+                    f"{spec.name}: source {source.id!r} derives from pack "
+                    f"{source.from_pack!r}, which has not been ingested. Ingest it first, "
+                    f"or run `ingest` with no arguments — that orders packs so every "
+                    f"parent comes before the packs deriving from it."
+                ) from None
             parent_src = next((x for x in parent["sources"] if x["id"] == source.from_source), None)
             if parent_src is None:
                 raise ValueError(
                     f"{spec.name}: source {source.id!r} derives from "
                     f"{source.from_pack}/{source.from_source}, which is not in that lock"
                 )
-            originals = [e for e in parent["files"] if e["sourceId"] == source.from_source]
+            originals = [e for e in parent["files"]
+                         if e["sourceId"] == source.from_source
+                         and source.selects_parent(e["path"])]
+            if not originals:
+                raise ValueError(
+                    f"{spec.name}: source {source.id!r} matched no files in "
+                    f"{source.from_pack}/{source.from_source} — check from_include"
+                )
             if source.sample:
                 # Deterministic sample: sort by hash, take a prefix. Stable across runs and
                 # independent of upstream ordering.
                 originals = sorted(originals, key=lambda e: e["sha256"])[:source.sample]
             parent_vendor = root / "vendor" / source.from_pack
             count = 0
+            missing = [e["path"] for e in originals
+                       if not (parent_vendor / e["path"]).exists()]
+            if missing:
+                raise ValueError(
+                    f"{spec.name}: source {source.id!r} derives from "
+                    f"{source.from_pack}/{source.from_source}, but {len(missing)} of its "
+                    f"files are absent from vendor/{source.from_pack} — that pack is locked "
+                    f"but not materialised. Re-ingest it first (e.g. "
+                    f"`ingest {source.from_pack}`). First missing: {missing[0]}"
+                )
             for entry in originals:
                 blob = (parent_vendor / entry["path"]).read_bytes()
                 base = entry["path"].split("/")[-1]

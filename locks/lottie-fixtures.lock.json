@@ -11,7 +11,7 @@
       "repo": "airbnb/lottie-web",
       "ref": "master",
       "commit": "bede03d25d232826e0c9dca1733d542d8a7754fb",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -29,7 +29,7 @@
       "repo": "LottieFiles/lottie-docs",
       "ref": "main",
       "commit": "960b404c2e1147e1d4024caa417eadddc9145319",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "CC-BY-4.0",
         "declaredScope": "repository-root",

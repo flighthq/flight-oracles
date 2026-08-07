@@ -11,7 +11,7 @@
       "repo": "GNOME/libxml2",
       "ref": "master",
       "commit": "ddcb79dc9934fd8a26263f6368c4eb7aa43f6d49",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -29,7 +29,7 @@
       "repo": "GNOME/libxml2",
       "ref": "master",
       "commit": "ddcb79dc9934fd8a26263f6368c4eb7aa43f6d49",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",

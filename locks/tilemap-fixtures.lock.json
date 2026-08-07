@@ -11,7 +11,7 @@
       "repo": "libgdx/libgdx",
       "ref": "master",
       "commit": "81cdb92811403f148daff195bff1da896877824c",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "Apache-2.0",
         "declaredScope": "repository-root",
@@ -29,7 +29,7 @@
       "repo": "mapeditor/tiled",
       "ref": "master",
       "commit": "aa069419db754412a2b4d51d8ea03bb048499f0a",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "BSD-2-Clause",
         "declaredScope": "directory",
@@ -47,7 +47,7 @@
       "repo": "mapeditor/tiled",
       "ref": "master",
       "commit": "aa069419db754412a2b4d51d8ea03bb048499f0a",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "UNKNOWN",
         "declaredScope": "repository-root",

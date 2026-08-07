@@ -12,7 +12,7 @@
       "repo": "libgdx/libgdx",
       "ref": "master",
       "commit": "81cdb92811403f148daff195bff1da896877824c",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "Apache-2.0",
         "declaredScope": "repository-root",
@@ -30,7 +30,7 @@
       "repo": "cocos2d/cocos2d-x",
       "ref": "v4",
       "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -48,7 +48,7 @@
       "repo": "Gamua/Starling-Extension-Particle-System",
       "ref": "master",
       "commit": "0a3cdbfd5059ef6c5a5da7983f47515f88b57017",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "BSD-2-Clause",
         "declaredScope": "repository-root",
@@ -66,7 +66,7 @@
       "repo": "cosmindolha/ParticleDesigner",
       "ref": "master",
       "commit": "8955ac6aee9661bfe5c4e2c4290f586166c1db84",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "UNKNOWN",
         "declaredScope": "repository-root",
@@ -82,7 +82,7 @@
       "repo": "devon-o/Starling-Particle-Editor",
       "ref": "master",
       "commit": "22ceb73a7cb7f059f5ebe6819442e2a1433b1f87",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "UNKNOWN",
         "declaredScope": "repository-root",

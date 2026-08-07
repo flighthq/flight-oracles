@@ -11,7 +11,7 @@
       "repo": "pnggroup/libpng",
       "ref": "libpng16",
       "commit": "cae474558968f015124d7369556a4b1016276e3a",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "LicenseRef-PngSuite-Permissive",
         "declaredScope": "file-adjacent",

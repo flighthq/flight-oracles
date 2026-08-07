@@ -254,6 +254,11 @@ class SourceSpec:
     # kind = "derived": generate from an already-ingested pack rather than fetch.
     from_pack: str | None = None
     from_source: str | None = None
+    # Which of the parent's files to derive from. A parent can hold more than one kind of
+    # file — `ruffle-authored` carries .swf alongside the .as sources, .toml configs and
+    # .txt expectations that document each case — and mutating a config tests nothing about
+    # the decoder. Without this the derivative silently widens whenever the parent does.
+    from_include: list = field(default_factory=list)
     strategies: list = field(default_factory=list)
     sample: int = 0                 # 0 = every file in the source
     strip: str = ""                 # upstream prefix removed from the archive path
@@ -282,6 +287,14 @@ class SourceSpec:
                 )
             if not self.strategies:
                 raise ValueError(f"source {self.id!r}: kind=derived requires strategies")
+            if not self.from_include:
+                raise ValueError(
+                    f"source {self.id!r}: kind=derived requires from_include naming which "
+                    f"of the parent's files to mutate. A parent may hold configs, sources "
+                    f"and expectations beside the format itself, and corrupting those tests "
+                    f"nothing"
+                )
+            self._from_matcher = compile_globs(self.from_include)
         if self.kind == "recovered" and self.license.declared != "UNKNOWN":
             raise ValueError(
                 f"source {self.id!r}: kind=recovered has no upstream declaration to "
@@ -289,6 +302,10 @@ class SourceSpec:
             )
         self._matcher = compile_globs(self.include)
         self._excluder = compile_globs(self.exclude_paths) if self.exclude_paths else None
+
+    def selects_parent(self, path: str) -> bool:
+        """Whether a parent pack's file is eligible to be derived from."""
+        return bool(self._from_matcher.match(path))
 
     def selects(self, upstream_path: str) -> bool:
         if self._excluder is not None and self._excluder.match(upstream_path):
@@ -369,5 +386,43 @@ def load_spec(path: Path) -> PackSpec:
     )
 
 
+def dependencies(pack) -> set:
+    """Packs that must be ingested before *pack* — the parents of its derived sources."""
+    return {s.from_pack for s in pack.sources if s.kind == "derived" and s.from_pack}
+
+
+def in_dependency_order(specs):
+    """Order packs so every derived source's parent is ingested first.
+
+    Alphabetical order is not safe: `malformed-fixtures` derives from `swf-ruffle-fixtures`
+    and `rive-fixtures`, both of which sort after it. That went unnoticed for as long as
+    vendor/ happened to be warm from earlier runs — the parents were already on disk, so the
+    order never mattered. The first genuinely cold run failed on it, which is precisely the
+    class of bug a warm working copy hides.
+    """
+    by_name = {s.name: s for s in specs}
+    ordered, visiting, done = [], set(), set()
+
+    def visit(name, trail):
+        if name in done:
+            return
+        if name in visiting:
+            cycle = " -> ".join(trail + [name])
+            raise ValueError(f"derived-pack dependency cycle: {cycle}")
+        pack = by_name.get(name)
+        if pack is None:
+            return          # not in this selection; the caller reports it usefully
+        visiting.add(name)
+        for parent in sorted(dependencies(pack)):
+            visit(parent, trail + [name])
+        visiting.discard(name)
+        done.add(name)
+        ordered.append(pack)
+
+    for pack in specs:
+        visit(pack.name, [])
+    return ordered
+
+
 def load_all(root: Path):
-    return [load_spec(p) for p in sorted(root.glob("*.toml"))]
+    return in_dependency_order([load_spec(p) for p in sorted(root.glob("*.toml"))])

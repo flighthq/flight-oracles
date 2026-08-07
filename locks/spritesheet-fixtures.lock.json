@@ -12,7 +12,7 @@
       "repo": "libgdx/libgdx",
       "ref": "master",
       "commit": "81cdb92811403f148daff195bff1da896877824c",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "Apache-2.0",
         "declaredScope": "repository-root",
@@ -30,7 +30,7 @@
       "repo": "cocos2d/cocos2d-x",
       "ref": "v4",
       "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -48,7 +48,7 @@
       "repo": "pixijs-userland/particle-emitter",
       "ref": "master",
       "commit": "0fffdd9d18cabd99e5ee1d5dc94136613d5fcb04",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -66,7 +66,7 @@
       "repo": "Gamua/Starling-Framework",
       "ref": "master",
       "commit": "9d68d61b9c672fbe64aae6ec22d0bcb30dda2a86",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "BSD-2-Clause",
         "declaredScope": "repository-root",

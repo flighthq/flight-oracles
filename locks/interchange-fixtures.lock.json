@@ -11,7 +11,7 @@
       "repo": "assimp/assimp",
       "ref": "master",
       "commit": "3a38cd1e87a7238f48fcfcb955cf10e646c5a343",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "BSD-3-Clause",
         "declaredScope": "repository-root",

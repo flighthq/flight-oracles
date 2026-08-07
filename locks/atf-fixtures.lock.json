@@ -11,7 +11,7 @@
       "repo": "plepers/ATF-Encoder",
       "ref": "master",
       "commit": "9b18ae60b9bd32349a46e9d289c423e231747a32",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "UNKNOWN",
         "declaredScope": "repository-root",
@@ -27,7 +27,7 @@
       "repo": "away3d/away3d-examples-fp11",
       "ref": "master",
       "commit": "316a728a6beb65df465208d06a98693771854e74",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "UNKNOWN",
         "declaredScope": "repository-root",

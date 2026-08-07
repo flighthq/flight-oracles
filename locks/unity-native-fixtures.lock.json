@@ -11,7 +11,7 @@
       "repo": "mob-sakai/ParticleEffectForUGUI",
       "ref": "main",
       "commit": "5a305705f84549e50223d897bb95495edd78bf1a",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -29,7 +29,7 @@
       "repo": "UnityTechnologies/open-project-1",
       "ref": "main",
       "commit": "608eac98df29cd97821a6115cd52dfb9027345b1",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "Apache-2.0",
         "declaredScope": "repository-root",
@@ -47,7 +47,7 @@
       "repo": "BharathVishal/Particle-System-Unity",
       "ref": "master",
       "commit": "edfd72a11b239d376c8ad8738adad0f06c262fc8",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "Apache-2.0",
         "declaredScope": "repository-root",

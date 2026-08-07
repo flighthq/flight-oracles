@@ -12,7 +12,7 @@
       "repo": "cocos2d/cocos2d-x",
       "ref": "v4",
       "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -30,7 +30,7 @@
       "repo": "cocos2d/cocos2d-x",
       "ref": "v4",
       "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "CC-BY-NC-SA-2.0",
         "declaredScope": "directory",

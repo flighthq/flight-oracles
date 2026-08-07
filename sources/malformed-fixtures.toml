@@ -14,6 +14,11 @@
 # derived source names exactly ONE parent source block and takes its declaration verbatim.
 # That is why this file has several blocks rather than one sweeping over whole packs.
 #
+# `from_include` on each source is what keeps a derivative honest as its parent grows.
+# swf-ruffle-fixtures later gained Ruffle's expectation files — .toml configs, .as sources,
+# .txt trace output — and without the filter this pack quietly began corrupting those too,
+# which tests nothing about any decoder. A derived pack inherits whatever its parent holds.
+#
 # Parents are chosen for clean, permissive declarations — deliberately not the GPL-3.0 or
 # UNKNOWN-declared material, since a negative corpus is not worth complicating anyone's
 # licence story over.
@@ -28,6 +33,7 @@ id = "malformed-swf"
 kind = "derived"
 from_pack = "swf-ruffle-fixtures"
 from_source = "ruffle-authored"
+from_include = ["**/*.swf"]
 strategies = ["truncate", "header", "lengths", "bitflip", "empty"]
 sample = 30
 dest = "swf/"
@@ -44,6 +50,7 @@ id = "malformed-gltf"
 kind = "derived"
 from_pack = "gltf-khronos-binary"
 from_source = "glb-box"
+from_include = ["**/*.glb"]
 strategies = ["truncate", "header", "lengths", "bitflip", "empty"]
 dest = "glb/"
 
@@ -59,6 +66,7 @@ id = "malformed-png"
 kind = "derived"
 from_pack = "image-fixtures"
 from_source = "pngsuite"
+from_include = ["**/*.png"]
 strategies = ["truncate", "header", "bitflip", "empty"]
 sample = 20
 dest = "png/"
@@ -75,6 +83,7 @@ id = "malformed-riv"
 kind = "derived"
 from_pack = "rive-fixtures"
 from_source = "rive-runtime"
+from_include = ["**/*.riv"]
 strategies = ["truncate", "header", "lengths", "bitflip", "empty"]
 sample = 15
 dest = "riv/"

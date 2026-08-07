@@ -11,7 +11,7 @@
       "repo": "unicode-org/unicodetools",
       "ref": "main",
       "commit": "be583d58114e0a5a2db347fd83a4c97b22d5e7d5",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "Unicode-3.0",
         "declaredScope": "repository-root",

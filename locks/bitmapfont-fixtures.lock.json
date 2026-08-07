@@ -12,7 +12,7 @@
       "repo": "libgdx/libgdx",
       "ref": "master",
       "commit": "81cdb92811403f148daff195bff1da896877824c",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "Apache-2.0",
         "declaredScope": "repository-root",
@@ -30,7 +30,7 @@
       "repo": "cocos2d/cocos2d-x",
       "ref": "v4",
       "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -48,7 +48,7 @@
       "repo": "cocos2d/cocos2d-x",
       "ref": "v4",
       "commit": "7a5282a301a13e467bdcc3466d3cd3883862aadf",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "LicenseRef-Public-Domain",
         "declaredScope": "directory",
@@ -68,7 +68,7 @@
       "repo": "mattdesl/bmfont2json",
       "ref": "master",
       "commit": "c9b3ec7016eb96f76c16573639e9bd9d7e38ba41",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -86,7 +86,7 @@
       "repo": "stephanvermeire/phaser-bitmapfont-generator",
       "ref": "master",
       "commit": "e4946fd315d865b2e9412c3494a13f11e1271a16",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -104,7 +104,7 @@
       "repo": "litefeel/Unity-BitmapFontImporter",
       "ref": "upm",
       "commit": "e378ac797b64211213d17ae18e94162c6ecc366e",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",

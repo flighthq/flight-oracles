@@ -11,7 +11,7 @@
       "repo": "KhronosGroup/glTF-Asset-Generator",
       "ref": "main",
       "commit": "3d99767e9a67fbfe109f0d298c1e8d909bcac9db",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",

@@ -11,7 +11,7 @@
       "repo": "svg/svgo",
       "ref": "main",
       "commit": "66d1495a22c01640acc593ca36e25d43e22d807f",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
@@ -29,7 +29,7 @@
       "repo": "feathericons/feather",
       "ref": "main",
       "commit": "3dc050d97405062eba78aa57115c0a15c63abdaa",
-      "retrieved": "2026-08-06",
+      "retrieved": "2026-08-07",
       "license": {
         "declared": "MIT",
         "declaredScope": "repository-root",
