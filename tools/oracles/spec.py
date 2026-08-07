@@ -251,6 +251,12 @@ class SourceSpec:
     # dwarfs the slice we want (glTF-Sample-Assets is 1.4 GB), and where many sources share
     # one repo, since it avoids re-walking a huge archive per source.
     fetch: str = "tarball"
+    # Scope a blob-mode listing to one directory. Needed where the repository is too large
+    # for the tree API to enumerate at all: web-platform-tests has 61,000+ entries, so a
+    # recursive listing comes back truncated and blob mode refuses it, while its tarball is
+    # 2.6 GB for a 14 MB directory. Paths stay repo-relative, so `include`, `strip` and
+    # `exclude_paths` are written exactly as they would be without it.
+    subtree: str | None = None
     # kind = "derived": generate from an already-ingested pack rather than fetch.
     from_pack: str | None = None
     from_source: str | None = None
@@ -278,6 +284,18 @@ class SourceSpec:
                 f"source {self.id!r}: fetch must be \"tarball\" or \"blobs\", "
                 f"got {self.fetch!r}"
             )
+        if self.subtree:
+            if self.fetch != "blobs":
+                raise ValueError(
+                    f"source {self.id!r}: subtree only applies to fetch = \"blobs\" — "
+                    f"tarball mode already streams the whole archive and filters by glob"
+                )
+            if not all(p.startswith(self.subtree.strip("/") + "/") for p in self.include):
+                raise ValueError(
+                    f"source {self.id!r}: every include pattern must sit under "
+                    f"subtree {self.subtree!r}, since nothing outside it is listed. A "
+                    f"pattern that cannot match reads as 'there was nothing there'"
+                )
         if self.kind == "derived":
             if not (self.from_pack and self.from_source):
                 raise ValueError(

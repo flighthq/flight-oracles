@@ -1,0 +1,91 @@
+# media-container-fixtures — audio and video, container-first.
+#
+# `audio` and `video` were the two packages the old decode-surface gate excluded most
+# firmly, on the reasoning that flight does not implement codecs. It does not, and that is
+# beside the point: a decode surface meets a CONTAINER long before it meets a bitstream.
+# Reading an MP4 means walking ISO base media boxes; reading a WebM means walking EBML;
+# reading a WAV means walking RIFF chunks. All three are parseable, testable and entirely
+# independent of whether anything can decode H.264 or Opus afterwards — and all three are
+# where the security-shaped bugs live, because that is the layer that reads lengths and
+# offsets out of the file and trusts them.
+#
+# So this pack is containers and their muxing arrangements, not codec conformance. Codec
+# bitstream suites (av1-avif, the VP8/VP9 vector sets, Xiph's test vectors) are a separate,
+# much larger question and are not attempted here.
+#
+# WHY WEB-PLATFORM-TESTS. It is the corpus browsers are held to, its media directory is
+# deliberately minimal — a few kilobytes per case rather than a clip — and the same content
+# ships as BOTH MP4 and WebM under matching names:
+#
+#     media/test-1s.mp4   media/test-1s.webm
+#     media/white.mp4     media/white.webm
+#     media/counting.mp4  media/counting.webm
+#
+# which is the cross-container pairing the wrapper matrix is for fonts: two containers, one
+# payload, so a demuxer's output can be compared across them rather than only inspected.
+#
+# The named files also state their own coverage, which is rare and worth keeping:
+# `test-a-128k-44100Hz-1ch.webm` is audio-only, `test-v-128k-320x240-24fps-8kfr.webm` is
+# video-only, and `test-av-384k-44100Hz-1ch-320x240-30fps-10kfr.webm` is both muxed
+# together. Audio-only and video-only are the two cases a demuxer written against a muxed
+# file gets wrong.
+#
+# FETCHED BY SUBTREE. wpt is 2.6 GB with over 61,000 tree entries, so the tarball is absurd
+# for 15 MB and a recursive tree listing comes back truncated — which blob mode refuses,
+# correctly, rather than silently selecting a fraction. `subtree` scopes the listing to one
+# directory, which is what makes this source possible at all.
+
+[pack]
+name = "media-container-fixtures"
+kind = "fixtures"
+summary = "MP4, WebM, Ogg, WAV and MP3 containers — the same payload muxed both ways, plus audio-only and video-only cases a demuxer written against muxed files gets wrong."
+
+[[source]]
+id = "wpt-media"
+kind = "upstream"
+repo = "web-platform-tests/wpt"
+ref = "master"
+fetch = "blobs"
+subtree = "media"
+include = [
+  "media/*.mp4",
+  "media/*.webm",
+  "media/*.mov",
+  "media/*.mp3",
+  "media/*.oga",
+  "media/*.ogg",
+  "media/*.wav",
+  "media/*.vtt",
+]
+strip = "media/"
+dest = "wpt/"
+
+[source.license]
+declared = "BSD-3-Clause"
+declared_scope = "repository-root"
+declared_from = "LICENSE.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "web-platform-tests is dual-licensed under the 3-Clause BSD License and the W3C 3-clause BSD License, at the recipient's option, per LICENSE.md. The BSD grant is the one relied on here."
+
+# The Web Audio conformance resources: uncompressed PCM at known sample rates and channel
+# counts, including a four-channel file. Multi-channel WAV is where a reader that assumed
+# stereo stops being right, and nothing in the media directory above covers it.
+[[source]]
+id = "wpt-webaudio"
+kind = "upstream"
+repo = "web-platform-tests/wpt"
+ref = "master"
+fetch = "blobs"
+subtree = "webaudio/resources"
+include = ["webaudio/resources/*.wav"]
+strip = "webaudio/resources/"
+dest = "wpt-webaudio/"
+
+[source.license]
+declared = "BSD-3-Clause"
+declared_scope = "repository-root"
+declared_from = "LICENSE.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "As above — web-platform-tests' LICENSE.md, 3-Clause BSD."

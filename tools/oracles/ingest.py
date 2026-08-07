@@ -114,21 +114,34 @@ def _iter_members(tarball: Path):
             yield parts[1], handle.read()
 
 
-def fetch_tree(repo: str, commit: str) -> list:
-    """List every blob in *repo* at *commit*, cached. One request, no download."""
+def fetch_tree(repo: str, commit: str, subtree: str | None = None) -> list:
+    """List every blob in *repo* at *commit*, cached. One request, no download.
+
+    *subtree* scopes the listing to one directory. That matters for repositories the API
+    will not enumerate at all: web-platform-tests has over 61,000 entries, so a recursive
+    listing comes back truncated and blob mode refuses it — while the tarball is 2.6 GB
+    for a directory of 14 MB. Asking for `<commit>:<path>` returns just that subtree,
+    untruncated, and the paths are re-prefixed here so everything downstream (globs,
+    `strip`, blob fetching by path) is unaffected by how the listing was obtained.
+    """
     CACHE.mkdir(parents=True, exist_ok=True)
-    dest = CACHE / f"tree-{repo.replace('/', '__')}@{commit[:12]}.json"
+    scope = f"-{subtree.strip('/').replace('/', '__')}" if subtree else ""
+    dest = CACHE / f"tree-{repo.replace('/', '__')}{scope}@{commit[:12]}.json"
     if dest.exists():
         return json.loads(dest.read_text())
-    url = f"https://api.github.com/repos/{repo}/git/trees/{commit}?recursive=1"
+    ref = f"{commit}:{urllib.parse.quote(subtree.strip('/'))}" if subtree else commit
+    url = f"https://api.github.com/repos/{repo}/git/trees/{ref}?recursive=1"
     with urllib.request.urlopen(_request(url, "application/vnd.github+json")) as resp:
         doc = json.load(resp)
     if doc.get("truncated"):
         raise ValueError(
-            f"{repo}@{commit[:12]}: git tree response was truncated — blob mode cannot "
-            f"enumerate this repository reliably; use the default tarball mode"
+            f"{repo}@{commit[:12]}{':' + subtree if subtree else ''}: git tree response "
+            f"was truncated — blob mode cannot enumerate this reliably. Narrow it with "
+            f"`subtree`, or use the default tarball mode"
         )
-    tree = [x for x in doc.get("tree", []) if x.get("type") == "blob"]
+    prefix = f"{subtree.strip('/')}/" if subtree else ""
+    tree = [dict(x, path=prefix + x["path"])
+            for x in doc.get("tree", []) if x.get("type") == "blob"]
     dest.write_text(json.dumps(tree))
     return tree
 
@@ -218,13 +231,19 @@ def _fetch_with_retry(req, attempts: int = 5):
     raise RuntimeError("unreachable")
 
 
-def _blob_cached(repo: str, commit: str, path: str, blob_sha: str) -> bytes:
+def _blob_cached(repo: str, commit: str, path: str, blob_sha: str | None) -> bytes:
     """Fetch one file's bytes, cached by its git blob SHA.
 
     Keying the cache on the blob SHA rather than the path means the same content
     referenced from several sources is fetched once, and a re-ingest at an unchanged
     pin is free.
+
+    A file reached outside a `subtree` listing has no blob SHA to key on — the licence at
+    a repository root, when only a subdirectory was enumerated — so it falls back to the
+    pinned path, which is equally immutable and merely less shareable.
     """
+    if not blob_sha:
+        blob_sha = hashlib.sha256(f"{repo}@{commit}/{path}".encode()).hexdigest()
     cache_dir = CACHE / "blobs" / blob_sha[:2]
     cached = cache_dir / blob_sha
     if cached.exists():
@@ -402,7 +421,7 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
         else:
             _log(f"  pinned at {commit[:12]} (--update to move)")
         if source.fetch == "blobs":
-            tree = fetch_tree(source.repo, commit)
+            tree = fetch_tree(source.repo, commit, source.subtree)
             extra = {source.license.declared_from} | {
                 layer.get("declaredFrom") for layer in source.license.underlying
             }
@@ -410,6 +429,12 @@ def ingest_pack(spec, root: Path, *, update: bool = False) -> dict:
                 e for e in tree
                 if source.selects(e["path"]) or e["path"] in extra
             ]
+            # A licence declared at the repository root is outside a scoped listing, so it
+            # would silently go unfetched and ingest would report it missing from the
+            # commit. It is not missing; it was never listed. Ask for it by path.
+            listed = {e["path"] for e in tree}
+            for path in sorted(p for p in extra if p and p not in listed):
+                wanted.append({"path": path, "sha": None})
             _log(f"  {len(wanted)} of {len(tree)} blobs selected")
             members = _iter_blobs(source.repo, commit, wanted)
         else:

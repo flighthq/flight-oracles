@@ -144,8 +144,9 @@ Status: ✅ shipped · ◐ declared, not ingested · ○ not started
 | ✅ `bitmapfont-fixtures` | BMFont .fnt/XML/JSON | `bitmapfont-formats` | AngelCode BMFont | varies |
 | ✅ `svg-path-fixtures` | SVG path `d` grammar, 371 expected-output pairs | `path-formats` | svg/svgo, feathericons/feather | MIT |
 | ✅ `xml-conformance-fixtures` | XML incl. malformed, with expected diagnostics | `xml` | GNOME/libxml2 | MIT |
-| ○ `audio-fixtures` | WAV, MP3, AAC, FLAC, Ogg, WebM, MP4, SWF-ADPCM | `audio` | per-codec samples | varies |
-| ○ `video-fixtures` | MP4, WebM, Ogg, MOV, 3GPP, MKV | `video` | per-codec samples | varies |
+| ✅ `media-container-fixtures` | MP4, WebM, Ogg, WAV, MP3, WebVTT | `audio`, `video` | web-platform-tests/wpt | BSD-3-Clause |
+| ○ `audio-codec-fixtures` | AAC, FLAC, Opus, Vorbis bitstreams, SWF-ADPCM | `audio` | Xiph test vectors, per-codec | varies |
+| ○ `video-codec-fixtures` | H.264, VP8/VP9, AV1 bitstreams, MKV, MOV, 3GPP | `video` | per-codec vector sets | varies |
 | ○ `swf-generated-fixtures` | targeted SWF tags | `swf` | self-compiled (Apache Flex SDK) | Apache-2.0 |
 | ✅ `malformed-fixtures` | truncated/corrupt, all formats | all decoders | derived + PngSuite | derived |
 
@@ -299,6 +300,63 @@ Both are recorded here because the lesson generalises past these two: a two-to-f
 signature is a hypothesis, and the corroboration has to come from a structure that cannot
 line up by chance.
 
+## Audio and video: the container is the decode surface
+
+`audio` and `video` were the two packages the old gate excluded most firmly, on the
+reasoning that flight implements no codecs. It does not — and that is beside the point. A
+decode surface meets a **container** long before it meets a bitstream: reading an MP4 means
+walking ISO base media boxes, a WebM means walking EBML, a WAV means walking RIFF chunks.
+All three are parseable and testable with no codec involved, and all three are where the
+security-shaped bugs live, because that is the layer that reads lengths and offsets out of
+the file and believes them.
+
+`media-container-fixtures` is that layer. Codec *bitstream* conformance — the AV1, VP9,
+H.264 and Opus vector sets — is a separate and much larger question, deliberately not
+attempted here.
+
+web-platform-tests is the source because it is the corpus browsers are held to, its media
+directory is kilobytes per case rather than clips, and the same content ships as **both**
+containers under matching names — `test-1s.mp4` / `test-1s.webm`, `white.mp4` /
+`white.webm`, `counting.mp4` / `counting.webm`. That is the cross-container pairing the
+wrapper matrix is for fonts: two containers, one payload, so a demuxer's output can be
+compared across them rather than merely inspected.
+
+Several files also state their own coverage in their names —
+`test-a-128k-44100Hz-1ch.webm` is audio-only, `test-v-128k-320x240-24fps-8kfr.webm` is
+video-only, `test-av-384k-…` is both muxed together. Audio-only and video-only are the two
+cases a demuxer written against a muxed file gets wrong.
+
+### `subtree`: a pipeline change this source forced
+
+wpt is 2.6 GB with over 61,000 tree entries. The tarball is absurd for 15 MB of media, and
+a recursive tree listing comes back **truncated** — which blob mode refuses outright rather
+than silently selecting a fraction of what the globs asked for. Neither fetch mode could
+reach this repository at all.
+
+`subtree` scopes a blob-mode listing to one directory via the tree API's `<commit>:<path>`
+form, which returns that subtree untruncated. Paths are re-prefixed on the way out, so
+`include`, `strip` and `exclude_paths` are written exactly as they would be otherwise, and
+a licence declared at the repository root — outside the scoped listing — is fetched by path
+rather than reported as missing from the commit.
+
+The spec rejects an `include` pattern that does not sit under the subtree, because a pattern
+that *cannot* match produces the same silence as a pattern that matched nothing, and this
+repository has been bitten by that shape of bug before.
+
+### Detection
+
+EBML with its DocType (WebM is a profile of Matroska, so the magic is identical and only
+DocType separates them — a demuxer keying off magic alone cannot tell it has the wrong
+one), Ogg with the codec named by its first packet, MP3 and ADTS AAC, FLAC, and WebVTT. ISO
+base media and RIFF were already added for the image codecs and cover MP4, MOV, 3GP and WAV
+without further work — which is most of the reason to have written them generically.
+
+Two of these needed the same discipline as the image probes: MP3 has **no signature at
+all**, only an eleven-bit frame sync that occurs freely in binary data, so it is gated on
+the extension unless an ID3v2 tag is present; and Ogg's first packet is not at a fixed
+offset, since the page header is 27 bytes *plus one lacing byte per segment* — assuming
+otherwise found no codec on any real file.
+
 ## Three findings worth acting on
 
 ### 1. Several upstream corpora already carry their expected outputs
@@ -365,10 +423,10 @@ gate was dropped, ordered by coverage per unit of licence work:
 1. ~~**`image-codec-fixtures`**~~ — **done**, see below. It was the largest live gap and it
    was mislabelled: `image-fixtures` is PngSuite and nothing else, while `image-codec`
    claims eight formats.
-2. **`audio-fixtures`** and **`video-fixtures`** — the codecs the old gate excluded outright.
-   Container-first is the right cut: MP4, WebM, Ogg and MKV structure is what a decode surface
-   meets before any codec bitstream, and container fixtures are small where codec corpora are
-   not.
+2. ~~**`audio-fixtures`** and **`video-fixtures`**~~ — **containers done**, see
+   `media-container-fixtures` below. Codec *bitstream* conformance is the remaining half and
+   is a much larger question: the vector sets are per-codec, large, and separately licensed.
+   MKV, MOV and 3GPP containers are also still unsourced — wpt carries almost no MKV.
 3. **`text-rendering-fixtures`** — unicode-org/text-rendering-tests, which carries expected
    output and would be the fifth oracle-bearing pack here. Now that real fonts are held, the
    shaping suite has fonts to shape.

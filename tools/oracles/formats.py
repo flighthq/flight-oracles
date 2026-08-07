@@ -1188,6 +1188,143 @@ def _pcx(data: bytes, name: str):
                       bitsPerPlane=data[3], planes=data[65])
 
 
+# --- media containers ---------------------------------------------------------------
+#
+# What a decode surface meets first is a container, not a bitstream, and the container is
+# where the lengths and offsets it has to trust are written down. MP4 and MOV are handled
+# by `_isobmff` above and WAV by `_riff`; the rest are here.
+
+
+def _ebml_vint(data: bytes, pos: int, keep_marker: bool):
+    """One EBML variable-length integer. Element IDs keep their length marker; sizes drop it."""
+    if pos >= len(data) or data[pos] == 0:
+        return None, pos
+    first = data[pos]
+    length = 8 - first.bit_length() + 1
+    if length > 8 or pos + length > len(data):
+        return None, pos
+    value = int.from_bytes(data[pos:pos + length], "big")
+    if not keep_marker:
+        value &= (1 << (7 * length)) - 1
+    return value, pos + length
+
+
+def _ebml(data: bytes):
+    """Matroska and WebM: an EBML header whose DocType says which of the two it is.
+
+    WebM is a profile of Matroska rather than a separate format, so the file magic is
+    identical and only DocType distinguishes them — a demuxer that keys off the magic
+    alone cannot tell it is being handed the wrong one.
+    """
+    if not data.startswith(b"\x1a\x45\xdf\xa3"):
+        return None
+    info = FormatInfo(kind="ebml", version=None)
+    size, pos = _ebml_vint(data, 4, keep_marker=False)
+    if size is None:
+        return info
+    end = min(pos + size, len(data))
+    fields = {0x4282: "docType", 0x4287: "docTypeVersion", 0x4285: "docTypeReadVersion",
+              0x4286: "ebmlVersion"}
+    while pos < end:
+        element, pos = _ebml_vint(data, pos, keep_marker=True)
+        if element is None:
+            break
+        length, pos = _ebml_vint(data, pos, keep_marker=False)
+        if length is None or pos + length > len(data):
+            break
+        payload = data[pos:pos + length]
+        pos += length
+        name = fields.get(element)
+        if name == "docType":
+            info[name] = payload.rstrip(b"\x00").decode("ascii", "replace")
+        elif name:
+            info[name] = int.from_bytes(payload, "big")
+    doc = info.get("docType")
+    if doc in ("webm", "matroska"):
+        info["kind"] = "webm" if doc == "webm" else "mkv"
+        info["version"] = str(info.get("docTypeVersion", "")) or None
+    return info
+
+
+# Ogg is a transport: what it carries is named by the first bytes of the first packet.
+_OGG_CODECS = (
+    (b"\x01vorbis", "vorbis"), (b"OpusHead", "opus"), (b"\x7fFLAC", "flac"),
+    (b"\x80theora", "theora"), (b"Speex   ", "speex"), (b"fishead", "skeleton"),
+    (b"\x80daala", "daala"),
+)
+
+
+def _ogg(data: bytes):
+    if not data.startswith(b"OggS") or len(data) < 28:
+        return None
+    info = FormatInfo(kind="ogg", version=str(data[4]))
+    # The page header is 27 bytes plus one lacing byte per segment, so the first packet
+    # does not start at a fixed offset — reading it as if it did found no codec on any
+    # real file, because every one of them has a segment table.
+    head = data[27 + data[26]:][:128]
+    for magic, codec in _OGG_CODECS:
+        if head.startswith(magic):
+            info["codec"] = codec
+            break
+    return info
+
+
+def _flac(data: bytes):
+    """Native FLAC. The Ogg-encapsulated form is reported by `_ogg` as codec=flac."""
+    if not data.startswith(b"fLaC"):
+        return None
+    return FormatInfo(kind="flac", version=None)
+
+
+_MPEG_AUDIO_VERSION = {0: "2.5", 2: "2", 3: "1"}
+
+
+def _mpeg_audio(data: bytes, name: str):
+    """MP3 and ADTS AAC: no file magic at all, only a frame sync in the first byte pair.
+
+    Eleven set bits turn up in plenty of binary files, so this needs the extension as
+    corroboration — the same concession `_pcx` makes, and for the same reason. An ID3v2
+    tag is a real signature, so a file carrying one is accepted on content alone.
+    """
+    offset = 0
+    tagged = data.startswith(b"ID3")
+    if tagged and len(data) >= 10:
+        # ID3v2 sizes are synchsafe: seven bits per byte, so a size can never contain a
+        # false frame sync.
+        size = 0
+        for byte in data[6:10]:
+            size = (size << 7) | (byte & 0x7F)
+        offset = 10 + size
+    elif not name.lower().endswith((".mp3", ".aac", ".adts")):
+        return None
+    if offset + 4 > len(data):
+        return None
+    header = data[offset:offset + 4]
+    if header[0] != 0xFF or header[1] & 0xE0 != 0xE0:
+        return None
+    if header[1] & 0x18 == 0x08:          # reserved MPEG version
+        return None
+    layer = (header[1] >> 1) & 0x03
+    if layer == 0:                        # layer 0 does not exist; this is ADTS AAC
+        info = FormatInfo(kind="aac", version=None, container="adts")
+        info["mpegVersion"] = "4" if not header[1] & 0x08 else "2"
+        return info
+    info = FormatInfo(kind="mp3", version=None,
+                      mpegVersion=_MPEG_AUDIO_VERSION.get((header[1] >> 3) & 0x03),
+                      layer=4 - layer)
+    if tagged:
+        info["id3"] = f"2.{data[3]}"
+    return info
+
+
+def _webvtt(data: bytes, name: str):
+    """WebVTT: a text sidecar, and the only text format in the media packs."""
+    head = data[:16].lstrip(b"\xef\xbb\xbf")
+    if not head.startswith(b"WEBVTT"):
+        return None
+    return FormatInfo(kind="webvtt", version=None)
+
+
 def _tga(data: bytes, name: str):
     """TGA: version 2 put a signature in the FOOTER; version 1 has no magic anywhere.
 
@@ -1218,11 +1355,12 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
                   _woff2, _woff, _ttc, _sfnt,
                   _png, _jpeg, _gif, _bmp, _riff, _isobmff, _qoi, _farbfeld,
                   _radiance, _openexr, _jxl, _xcf, _ico, _pnm, _tiff,
+                  _ebml, _ogg, _flac,
                   _gltf_json, _spine_json, _lottie):
         info = probe(data)
         if info is not None:
             return info
-    for probe in (_ttx, _pcx, _tga,
+    for probe in (_ttx, _pcx, _tga, _webvtt, _mpeg_audio,
                   _dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
                   _ldtk, _effekseer, _bmfont_json, _frames_meta_sheet, _bvh,
                   _starling_atlas, _unity_yaml, _svg, _xml,

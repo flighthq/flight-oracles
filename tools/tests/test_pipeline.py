@@ -415,6 +415,41 @@ class TestFormats(unittest.TestCase):
         # buffers matched on containment alone. The payload check is what rules them out.
         self.assertIsNone(formats.detect(ico(b"\x11" * 40), "buffer.bin"))
 
+    def test_webm_is_distinguished_from_matroska_by_doctype(self):
+        # WebM is a profile of Matroska, so the file magic is identical and only DocType
+        # separates them. A demuxer keying off the magic cannot tell it has the wrong one.
+        def ebml(doctype):
+            body = (b"\x42\x82" + bytes([0x80 | len(doctype)]) + doctype
+                    + b"\x42\x87\x81\x04" + b"\x42\x85\x81\x02")
+            return b"\x1a\x45\xdf\xa3" + bytes([0x80 | len(body)]) + body
+        webm = formats.detect(ebml(b"webm"), "a.webm")
+        self.assertEqual((webm["kind"], webm["docType"], webm["version"]),
+                         ("webm", "webm", "4"))
+        self.assertEqual(formats.detect(ebml(b"matroska"), "a.mkv")["kind"], "mkv")
+        # An EBML file that is neither stays generic rather than being forced into one.
+        self.assertEqual(formats.detect(ebml(b"other"), "a.bin")["kind"], "ebml")
+
+    def test_ogg_finds_its_codec_past_the_segment_table(self):
+        # The page header is 27 bytes PLUS one lacing byte per segment, so the first
+        # packet is not at a fixed offset. Assuming it is finds no codec on any real file.
+        page = b"OggS" + bytes([0]) + b"\x02" + b"\x00" * 20 + bytes([2]) + b"\x1e\x00"
+        self.assertEqual(formats.detect(page + b"OpusHead" + b"\x00" * 8, "a.opus")["codec"],
+                         "opus")
+        self.assertEqual(formats.detect(page + b"\x01vorbis" + b"\x00" * 8, "a.ogg")["codec"],
+                         "vorbis")
+
+    def test_mpeg_audio_needs_more_than_a_frame_sync(self):
+        # Eleven set bits are not a signature. Without an ID3 tag the extension has to
+        # corroborate, or every binary file with 0xFF 0xE0 in it becomes an MP3.
+        frame = b"\xff\xfb\x90\x00" + b"\x00" * 32
+        self.assertEqual(formats.detect(frame, "a.mp3")["layer"], 3)
+        self.assertIsNone(formats.detect(frame, "buffer.bin"))
+        # An ID3v2 header is a real signature, and its synchsafe size cannot itself
+        # contain a false sync, so content alone is enough.
+        tagged = b"ID3\x04\x00\x00" + b"\x00\x00\x00\x01" + b"\x00" + frame
+        info = formats.detect(tagged, "unknown")
+        self.assertEqual((info["kind"], info["id3"]), ("mp3", "2.4"))
+
     def test_ttx_is_identified_as_more_than_generic_xml(self):
         doc = (b'<?xml version="1.0" encoding="UTF-8"?>\n'
                b'<ttFont sfntVersion="\\x00\\x01\\x00\\x00" ttLibVersion="4.41">\n'

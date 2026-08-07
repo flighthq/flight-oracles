@@ -1,0 +1,605 @@
+{
+  "pack": {
+    "name": "media-container-fixtures",
+    "kind": "fixtures",
+    "summary": "MP4, WebM, Ogg, WAV and MP3 containers \u2014 the same payload muxed both ways, plus audio-only and video-only cases a demuxer written against muxed files gets wrong."
+  },
+  "sources": [
+    {
+      "id": "wpt-media",
+      "kind": "upstream",
+      "repo": "web-platform-tests/wpt",
+      "ref": "master",
+      "commit": "b47d3bcbff5bbe2ed05253056c244d3dab686c36",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "BSD-3-Clause",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE.md",
+        "covers": "web-platform-tests is dual-licensed under the 3-Clause BSD License and the W3C 3-clause BSD License, at the recipient's option, per LICENSE.md. The BSD grant is the one relied on here.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/wpt-media@b47d3bcbff5b.txt"
+    },
+    {
+      "id": "wpt-webaudio",
+      "kind": "upstream",
+      "repo": "web-platform-tests/wpt",
+      "ref": "master",
+      "commit": "b47d3bcbff5bbe2ed05253056c244d3dab686c36",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "BSD-3-Clause",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE.md",
+        "covers": "As above \u2014 web-platform-tests' LICENSE.md, 3-Clause BSD.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/wpt-webaudio@b47d3bcbff5b.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "wpt-webaudio/4ch-440.wav",
+      "sourceId": "wpt-webaudio",
+      "upstreamPath": "webaudio/resources/4ch-440.wav",
+      "sha256": "a4e0aa91220d668be72ea7b1329a22540673732dbf330508daab9c0fff67036e",
+      "size": 353022,
+      "format": {
+        "kind": "wav",
+        "version": null,
+        "audioFormat": 1,
+        "channels": 4,
+        "sampleRate": 44100,
+        "bitsPerSample": 16
+      }
+    },
+    {
+      "path": "wpt-webaudio/sin_440Hz_-6dBFS_1s.wav",
+      "sourceId": "wpt-webaudio",
+      "upstreamPath": "webaudio/resources/sin_440Hz_-6dBFS_1s.wav",
+      "sha256": "fb49c794b70f9649d2ecb5e8dc56cd224bcde774c0d048f83286644d718ae24f",
+      "size": 88246,
+      "format": {
+        "kind": "wav",
+        "version": null,
+        "audioFormat": 1,
+        "channels": 1,
+        "sampleRate": 44100,
+        "bitsPerSample": 16
+      }
+    },
+    {
+      "path": "wpt/2x2-green.mp4",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/2x2-green.mp4",
+      "sha256": "f2923f95cb1653b6bb1b63a91b50940809d94708d68a2f2065bcad320aed0ff5",
+      "size": 3503,
+      "format": {
+        "kind": "mp4",
+        "version": null,
+        "majorBrand": "isom",
+        "compatibleBrands": [
+          "isom",
+          "iso2",
+          "avc1",
+          "mp41"
+        ]
+      }
+    },
+    {
+      "path": "wpt/2x2-green.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/2x2-green.webm",
+      "sha256": "aff421ce65673c73ebee67c1e4a7bd45843a490d4715717c3ed6760d88776634",
+      "size": 814,
+      "format": {
+        "kind": "webm",
+        "version": "4",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 4,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/400x300-red-resize-200x150-green.mp4",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/400x300-red-resize-200x150-green.mp4",
+      "sha256": "7fa7d6c9754d3314811911e553b8dc75e0d4d50cc3a4731497e493be44554636",
+      "size": 17425,
+      "format": {
+        "kind": "mp4",
+        "version": null,
+        "majorBrand": "isom",
+        "compatibleBrands": [
+          "isom",
+          "iso2",
+          "avc1",
+          "mp41"
+        ]
+      }
+    },
+    {
+      "path": "wpt/400x300-red-resize-200x150-green.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/400x300-red-resize-200x150-green.webm",
+      "sha256": "f50e73e4f14827bebe44764a5d80b7a206faedea392ebfd49df17ef54ae8e7cb",
+      "size": 11901,
+      "format": {
+        "kind": "webm",
+        "version": "4",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 4,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/A4.mp4",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/A4.mp4",
+      "sha256": "d1292c9ce2fc379a524a7604ac54f1bd00dec0c4a82cca52b5a028e6038b4315",
+      "size": 53409,
+      "format": {
+        "kind": "mp4",
+        "version": null,
+        "majorBrand": "isom",
+        "compatibleBrands": [
+          "isom",
+          "avc1"
+        ]
+      }
+    },
+    {
+      "path": "wpt/A4.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/A4.webm",
+      "sha256": "8f26b139119986846659218061af5f868bda282c7b2fa3867479510d8718f060",
+      "size": 96902,
+      "format": {
+        "kind": "webm",
+        "version": "4",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 4,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/counting.mp4",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/counting.mp4",
+      "sha256": "61e30590cc4072bd534161e7972326b570a3d21ab0c223a4a3f20431fb5fa057",
+      "size": 311336,
+      "format": {
+        "kind": "mp4",
+        "version": null,
+        "majorBrand": "mp42",
+        "compatibleBrands": [
+          "mp42",
+          "mp41"
+        ]
+      }
+    },
+    {
+      "path": "wpt/counting.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/counting.webm",
+      "sha256": "4708a0d84bc28ff1ea0a3f995d6b196099d0a0cc3adf55f92bbd8792317d7704",
+      "size": 248314,
+      "format": {
+        "kind": "webm",
+        "version": "2",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/foo-no-cors.vtt",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/foo-no-cors.vtt",
+      "sha256": "d2db3b455e3ee35e5b02b5facdba8fe7d668f140e3a712c45dd8f43c93732575",
+      "size": 42,
+      "format": {
+        "kind": "webvtt",
+        "version": null
+      }
+    },
+    {
+      "path": "wpt/foo.vtt",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/foo.vtt",
+      "sha256": "d2db3b455e3ee35e5b02b5facdba8fe7d668f140e3a712c45dd8f43c93732575",
+      "size": 42,
+      "format": {
+        "kind": "webvtt",
+        "version": null
+      }
+    },
+    {
+      "path": "wpt/green-at-15.mp4",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/green-at-15.mp4",
+      "sha256": "6a13c1415476c5870c20e7c2792544a5932bb5e90779767150af763c73961d59",
+      "size": 299193,
+      "format": {
+        "kind": "mp4",
+        "version": null,
+        "majorBrand": "isom",
+        "compatibleBrands": [
+          "isom",
+          "avc1"
+        ]
+      }
+    },
+    {
+      "path": "wpt/green-at-15.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/green-at-15.webm",
+      "sha256": "b19792cc21217e6d210f7be143ef6d7771b1f5d6dc86bf5d2c529d3ab7adb0ef",
+      "size": 666689,
+      "format": {
+        "kind": "webm",
+        "version": "2",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/iamf_alternating_sine_waves_stereo.mp4",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/iamf_alternating_sine_waves_stereo.mp4",
+      "sha256": "a1ee45e11157f6dad09cde61a7afe9f9e117c3a9bad488fa0d5a6c5b7e489343",
+      "size": 101842,
+      "format": {
+        "kind": "mp4",
+        "version": null,
+        "majorBrand": "iso5",
+        "compatibleBrands": [
+          "iso5",
+          "iso6",
+          "iamf",
+          "mp41"
+        ]
+      }
+    },
+    {
+      "path": "wpt/movie_300.mp4",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/movie_300.mp4",
+      "sha256": "80c548058688a577ce9ca501cf9807311b95cc526cc82d292ec7e138e42257de",
+      "size": 2757913,
+      "format": {
+        "kind": "mp4",
+        "version": null,
+        "majorBrand": "isom",
+        "compatibleBrands": [
+          "isom",
+          "avc1"
+        ]
+      }
+    },
+    {
+      "path": "wpt/movie_300.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/movie_300.webm",
+      "sha256": "bf5a64b589e3afe870ebc7c7d6c517184a6a5731ec51ae336ce2cc5375bbaeb0",
+      "size": 4680284,
+      "format": {
+        "kind": "webm",
+        "version": "4",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 4,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/movie_5.mp4",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/movie_5.mp4",
+      "sha256": "e2e2bd5b7641b88406a8db15410dc1ed55d89547cb29bd133491e4f90229e1e1",
+      "size": 31603,
+      "format": {
+        "kind": "mp4",
+        "version": null,
+        "majorBrand": "isom",
+        "compatibleBrands": [
+          "isom",
+          "avc1"
+        ]
+      }
+    },
+    {
+      "path": "wpt/movie_5.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/movie_5.webm",
+      "sha256": "b1d79ce41de0a9e6d1a083d04767e2025da975c0a769c63edb089dd5172161c7",
+      "size": 44447,
+      "format": {
+        "kind": "webm",
+        "version": "4",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 4,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/recognition_context.mp3",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/recognition_context.mp3",
+      "sha256": "a808aa14904a1d5d365b8a521c8814b66337e0ca235e0031017d76a930c6ac07",
+      "size": 123360,
+      "format": {
+        "kind": "mp3",
+        "version": null,
+        "mpegVersion": "2",
+        "layer": 3
+      }
+    },
+    {
+      "path": "wpt/rgb100.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/rgb100.webm",
+      "sha256": "2cc6dca905292bf298ecb51e0d7095289b8674af711cea5af3638691b219d122",
+      "size": 582,
+      "format": {
+        "kind": "webm",
+        "version": "2",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/sine440.mp3",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/sine440.mp3",
+      "sha256": "d86437635c6877c6fb5a35dcf5d673c4cb0feadf74e3994eb392fd7ffa748e4c",
+      "size": 80666,
+      "format": {
+        "kind": "mp3",
+        "version": null,
+        "mpegVersion": "1",
+        "layer": 3
+      }
+    },
+    {
+      "path": "wpt/sound_0.mp3",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/sound_0.mp3",
+      "sha256": "f08f29eff08121197bdbd836b02778fd7256fb2d812a0800ce0a907e6e663eac",
+      "size": 539,
+      "format": {
+        "kind": "mp3",
+        "version": null,
+        "mpegVersion": "1",
+        "layer": 3,
+        "id3": "2.4"
+      }
+    },
+    {
+      "path": "wpt/sound_0.oga",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/sound_0.oga",
+      "sha256": "b0508595f9de6f6d81c6d00f687e423265877ac5fac8a7649e6d3f7e4ecf7fc8",
+      "size": 4239,
+      "format": {
+        "kind": "ogg",
+        "version": "0",
+        "codec": "vorbis"
+      }
+    },
+    {
+      "path": "wpt/sound_5.mp3",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/sound_5.mp3",
+      "sha256": "89a84d0b19a10c7fa7e898075bf1a3da737df8c0a68b3e5f82259bec8c988085",
+      "size": 23442,
+      "format": {
+        "kind": "mp3",
+        "version": null,
+        "mpegVersion": "2",
+        "layer": 3
+      }
+    },
+    {
+      "path": "wpt/sound_5.oga",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/sound_5.oga",
+      "sha256": "7c3769340ac653a679eb7f48bd725d7f70217537a2816af023f2f8b0223bfcc7",
+      "size": 18541,
+      "format": {
+        "kind": "ogg",
+        "version": "0",
+        "codec": "vorbis"
+      }
+    },
+    {
+      "path": "wpt/speech.wav",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/speech.wav",
+      "sha256": "781f9ab2557797f929bc8782bd2ffb4de8a0af8a6b3fea853faaa88c2299c100",
+      "size": 95310,
+      "format": {
+        "kind": "wav",
+        "version": null,
+        "audioFormat": 1,
+        "channels": 1,
+        "sampleRate": 16000,
+        "bitsPerSample": 16
+      }
+    },
+    {
+      "path": "wpt/test-1s.mp4",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/test-1s.mp4",
+      "sha256": "dc72b1b5591bbc9e2d0d6b511fa6d5134dd78dca6cf357244d656225f62a94b5",
+      "size": 13932,
+      "format": {
+        "kind": "mp4",
+        "version": null,
+        "majorBrand": "isom",
+        "compatibleBrands": [
+          "isom",
+          "iso2",
+          "avc1",
+          "mp41"
+        ]
+      }
+    },
+    {
+      "path": "wpt/test-1s.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/test-1s.webm",
+      "sha256": "220c6fc2feb9f4538bd62273855bc4aaf444da76a295cf937a131b9e7399110c",
+      "size": 23171,
+      "format": {
+        "kind": "webm",
+        "version": "4",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 4,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/test-a-128k-44100Hz-1ch.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/test-a-128k-44100Hz-1ch.webm",
+      "sha256": "24aa4e3864d18da9e9b9d45252b03499c256eed4585ecf74db7379df49b7b71b",
+      "size": 9840,
+      "format": {
+        "kind": "webm",
+        "version": "2",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/test-av-384k-44100Hz-1ch-320x240-30fps-10kfr.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/test-av-384k-44100Hz-1ch-320x240-30fps-10kfr.webm",
+      "sha256": "032d3fd8d1a0301820f5531d58477f9d54c42e2c43d4738fef97035b43ca5df0",
+      "size": 76501,
+      "format": {
+        "kind": "webm",
+        "version": "2",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/test-v-128k-320x240-24fps-8kfr.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/test-v-128k-320x240-24fps-8kfr.webm",
+      "sha256": "daa710c2feb20e976581285db590fb8cb0fdabac2bef947c359787a8eea98eb5",
+      "size": 38195,
+      "format": {
+        "kind": "webm",
+        "version": "2",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/test.mp4",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/test.mp4",
+      "sha256": "90417c4bcffe64860eee7d072867c0618ee9c10d768828f644f52df99663977b",
+      "size": 192844,
+      "format": {
+        "kind": "mp4",
+        "version": null,
+        "majorBrand": "mp42",
+        "compatibleBrands": [
+          "mp42",
+          "avc1"
+        ]
+      }
+    },
+    {
+      "path": "wpt/test.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/test.webm",
+      "sha256": "d658a97ffddac1ac1bd9c524c0dde14edbd4ef91da86ad4ae9ccf9a4f94d633a",
+      "size": 107949,
+      "format": {
+        "kind": "webm",
+        "version": "4",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 4,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/video.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/video.webm",
+      "sha256": "4f2f532fbc0344a500652a738a53c300b5e1be615f6ea1c1a9786476e06dbae4",
+      "size": 43569,
+      "format": {
+        "kind": "webm",
+        "version": "2",
+        "ebmlVersion": 1,
+        "docType": "webm",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "wpt/white.mp4",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/white.mp4",
+      "sha256": "5723edef39d5649116ae76ea0fe3144a7d183658fbe218df567775b2db490bf7",
+      "size": 13713,
+      "format": {
+        "kind": "mp4",
+        "version": null,
+        "majorBrand": "mp42",
+        "compatibleBrands": [
+          "mp42",
+          "mp41",
+          "isom",
+          "iso2"
+        ]
+      }
+    },
+    {
+      "path": "wpt/white.webm",
+      "sourceId": "wpt-media",
+      "upstreamPath": "media/white.webm",
+      "sha256": "e85249085c720836de0ca8d1ae5881529cc37449c0d290473edf2d0b14c199ee",
+      "size": 10880,
+      "format": {
+        "kind": "webm",
+        "version": "2",
+        "docType": "webm",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    }
+  ],
+  "totals": {
+    "files": 37,
+    "bytes": 10644200
+  }
+}

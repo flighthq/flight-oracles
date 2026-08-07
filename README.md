@@ -42,6 +42,7 @@ already exist was not worth declining.
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
 | `mesh-legacy-fixtures` | 195 | 64.0 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
 | `atf-fixtures` | 14 | 8.1 MB | Adobe Texture Format — undeclared, build input only |
+| `media-container-fixtures` | 37 | 10.6 MB | MP4/WebM/Ogg/WAV/MP3 — same payload muxed both ways |
 | `image-codec-fixtures` | 670 | 33.2 MB | **Oracles** — 12 codecs, each input paired with its decoded rendering |
 | `font-malformed-fixtures` | 312 | 25.1 MB | **Negative** — malformed and fuzzed fonts, every wrapper |
 | `spritesheet-fixtures` | 280 | 21.4 MB | libgdx `.atlas` texture atlas descriptors |
@@ -57,7 +58,7 @@ already exist was not worth declining.
 | `svg-path-fixtures` | 672 | 0.5 MB | **Oracles** — SVG path grammar, 371 expected-output pairs |
 | `xml-conformance-fixtures` | 1,184 | 2.6 MB | **Oracles** — XML with expected diagnostics |
 
-31 packs, 27,704 files. Several packs carry expectations as well as inputs:
+32 packs, 27,741 files. Several packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place), `gltf-generated-fixtures` (positive/negative conformance split),
 `svg-path-fixtures` and `xml-conformance-fixtures` (expected output and expected
@@ -132,6 +133,15 @@ size, container format version, and the declaration that covered each file. Hand
 
 The spec carries a ref, the lock carries the commit. A plain `ingest` reuses the locked
 commit and is reproducible; `--update` moves the pin deliberately.
+
+**Three ways to fetch a source**, because upstreams differ by three orders of magnitude in
+size. `fetch = "tarball"` (the default) is one request and right for most repositories.
+`fetch = "blobs"` lists the git tree and downloads only what the globs select — necessary
+where the repository dwarfs the slice, as glTF-Sample-Assets does at 1.4 GB. Adding
+`subtree = "<dir>"` scopes that listing to one directory, which is the only way to reach a
+repository the tree API will not enumerate at all: web-platform-tests has over 61,000
+entries, so a recursive listing comes back truncated — refused rather than silently
+truncating the selection — while its tarball is 2.6 GB for 15 MB of media.
 
 **`licenses/`** holds each upstream's licence text captured *at the pinned commit*. If an
 upstream relicenses or disappears, what we relied on stays verifiable.
