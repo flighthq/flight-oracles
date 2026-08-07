@@ -148,6 +148,7 @@ Status: ✅ shipped · ◐ declared, not ingested · ○ not started
 | ○ `audio-codec-fixtures` | AAC, FLAC, Opus, Vorbis bitstreams, SWF-ADPCM | `audio` | Xiph test vectors, per-codec | varies |
 | ○ `video-codec-fixtures` | H.264, VP8/VP9, AV1 bitstreams, MKV, MOV, 3GPP | `video` | per-codec vector sets | varies |
 | ○ `swf-generated-fixtures` | targeted SWF tags | `swf` | self-compiled (Apache Flex SDK) | Apache-2.0 |
+| ✅ `compression-fixtures` | brotli, zstd, snappy, zlib | `compression` | google/brotli, google/snappy, facebook/zstd, madler/zlib | MIT, BSD-3-Clause, Zlib |
 | ✅ `malformed-fixtures` | truncated/corrupt, all formats | all decoders | derived + PngSuite | derived |
 
 ## Fonts: what the four-byte argument got wrong

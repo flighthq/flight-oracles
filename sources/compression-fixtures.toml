@@ -1,0 +1,138 @@
+# compression-fixtures — the layer under every other pack here.
+#
+# THE GAP THIS DOCUMENT'S OWN METHOD ADMITTED TO. docs/fixture-coverage.md names the decode
+# surface as "the `*-formats` packages, plus `swf`, `abc`, `image-codec`, `font`, `audio`,
+# `video`, `texture-formats`, `compression` and `xml`". Every one of those had a pack except
+# `compression`, which had nothing at all — for as long as the document has existed.
+#
+# It is not a peripheral one. Compression sits underneath formats already shipped here:
+#
+#     SWF     `CWS` is zlib, `ZWS` is LZMA — the version byte is outside the compression,
+#             everything else is inside it
+#     WOFF    per-table zlib
+#     WOFF2   ONE brotli stream over the whole reordered table set. A WOFF2 decoder is a
+#             brotli decoder wearing a hat, which is why this pack matters to the font work
+#     KTX2    zstd or Basis supercompression
+#     Cocos   `.ccz` (zlib) and `.pvr.gz` wrappers around textures
+#
+# ORACLE-BEARING, three different ways, which is unusually good for a corpus this cheap:
+#
+#   brotli   22 inputs ship beside `<name>.compressed`: decompress and compare, a per-file
+#            oracle with nothing to generate. The rest of the directory is better than a
+#            pair — `empty.compressed.00` through `.18` are NINETEEN DIFFERENT VALID
+#            ENCODINGS OF THE EMPTY INPUT, from one byte to 196 KB, every one of which must
+#            decode to zero bytes. A decoder that special-cases "empty" on output length
+#            passes the small ones and hangs or over-reads on the large ones. Four
+#            `x.compressed.NN` do the same for a single byte.
+#   zstd     Split into golden-compression (must round-trip) and golden-decompression
+#            (`.zst` files that must decode), so the directory is the expectation, the same
+#            shape as gltf-generated-fixtures' positive/negative split.
+#   snappy   Three `baddata*.snappy` files that must be rejected, beside the corpus they
+#            were corrupted from.
+#
+# The text inputs are also worth having for their own sake: alice29.txt, asyoulik.txt,
+# lcet10.txt and plrabn12.txt are the Canterbury corpus, which is what compression ratios
+# have been quoted against for thirty years. Shared deliberately across brotli and snappy
+# here — the same input under two algorithms is a comparison neither upstream offers alone.
+
+[pack]
+name = "compression-fixtures"
+kind = "conformance"
+summary = "Brotli, zstd, snappy and zlib streams — inputs paired with their compressed form, decode-only goldens, and corrupt streams that must be rejected."
+
+# Brotli first, because it is the one with a downstream consumer already in the tree: a
+# WOFF2 file is a brotli stream over a transformed table set, and nothing in font-fixtures
+# can test the decompressor independently of the font parser wrapped around it.
+#
+# Worth recording, because it shapes how these can be identified at all: BROTLI HAS NO MAGIC
+# NUMBER. A raw brotli stream begins with the window-size bits of the first meta-block and
+# is not distinguishable from arbitrary data by inspection. That is a deliberate choice by
+# its designers — it is a transport encoding, not a file format — and it is why
+# `.compressed` here is a convention rather than a signature.
+[[source]]
+id = "brotli-testdata"
+kind = "upstream"
+repo = "google/brotli"
+ref = "master"
+fetch = "blobs"
+subtree = "tests/testdata"
+include = ["tests/testdata/**"]
+strip = "tests/testdata/"
+dest = "brotli/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "MIT, Copyright (c) 2009, 2010, 2013-2016 by the Brotli Authors. The test data includes the Canterbury corpus texts, which are themselves long-standing public benchmark material."
+
+# The canonical compression benchmark corpus, and the only negative cases here that were
+# corrupted by hand rather than truncated: baddata1-3.snappy.
+[[source]]
+id = "snappy-testdata"
+kind = "upstream"
+repo = "google/snappy"
+ref = "main"
+fetch = "blobs"
+subtree = "testdata"
+include = ["testdata/**"]
+strip = "testdata/"
+dest = "snappy/"
+
+[source.license]
+declared = "BSD-3-Clause"
+declared_scope = "repository-root"
+declared_from = "COPYING"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "BSD 3-Clause, Copyright 2011 Google Inc. The corpus mixes the Canterbury texts with real-world material chosen for being hard to compress — a JPEG, a PDF, a protobuf dump, a chess tablebase and 10,000 URLs."
+
+# Small and entirely purposeful: every file here exists because it once broke something.
+# `empty-block.zst` is eleven bytes; `rle-first-block.zst` is forty-five. Those are the
+# sizes at which a decoder's assumptions about minimum structure get tested.
+[[source]]
+id = "zstd-golden"
+kind = "upstream"
+repo = "facebook/zstd"
+ref = "dev"
+fetch = "blobs"
+subtree = "tests"
+include = [
+  "tests/golden-compression/**",
+  "tests/golden-decompression/**",
+  "tests/golden-dictionaries/**",
+]
+strip = "tests/"
+dest = "zstd/"
+
+[source.license]
+declared = "BSD-3-Clause"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Zstandard is dual-licensed BSD-3-Clause or GPL-2.0 at the recipient's option, Copyright (c) Meta Platforms, Inc. and affiliates; the BSD grant is the one relied on and the one snapshotted."
+
+# The reference implementation's own regression inputs. Five files and 70 KB, included
+# because zlib is what `CWS` SWFs and every WOFF table actually use, and because a corpus
+# that omits the reference implementation to save 70 KB is being tidy rather than careful.
+[[source]]
+id = "zlib-test"
+kind = "upstream"
+repo = "madler/zlib"
+ref = "develop"
+fetch = "blobs"
+subtree = "test"
+include = ["test/*.in", "test/*.txt"]
+strip = "test/"
+dest = "zlib/"
+
+[source.license]
+declared = "Zlib"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "The zlib licence, Copyright (C) 1995-2026 Jean-loup Gailly and Mark Adler. Permits use for any purpose including commercial, subject only to not misrepresenting the origin of altered source."

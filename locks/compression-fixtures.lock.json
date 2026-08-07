@@ -1,0 +1,1038 @@
+{
+  "pack": {
+    "name": "compression-fixtures",
+    "kind": "conformance",
+    "summary": "Brotli, zstd, snappy and zlib streams \u2014 inputs paired with their compressed form, decode-only goldens, and corrupt streams that must be rejected."
+  },
+  "sources": [
+    {
+      "id": "brotli-testdata",
+      "kind": "upstream",
+      "repo": "google/brotli",
+      "ref": "master",
+      "commit": "8e10eeb3378f6c459dbaf033ca6727e9816afccb",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "MIT",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "MIT, Copyright (c) 2009, 2010, 2013-2016 by the Brotli Authors. The test data includes the Canterbury corpus texts, which are themselves long-standing public benchmark material.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/brotli-testdata@8e10eeb3378f.txt"
+    },
+    {
+      "id": "snappy-testdata",
+      "kind": "upstream",
+      "repo": "google/snappy",
+      "ref": "main",
+      "commit": "747488a9f3d0daf9b639b6704d7188fba48af179",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "BSD-3-Clause",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "COPYING",
+        "covers": "BSD 3-Clause, Copyright 2011 Google Inc. The corpus mixes the Canterbury texts with real-world material chosen for being hard to compress \u2014 a JPEG, a PDF, a protobuf dump, a chess tablebase and 10,000 URLs.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/snappy-testdata@747488a9f3d0.txt"
+    },
+    {
+      "id": "zstd-golden",
+      "kind": "upstream",
+      "repo": "facebook/zstd",
+      "ref": "dev",
+      "commit": "82d322c4973d9e2968d94047a40892bc6d9a9bdf",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "BSD-3-Clause",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "Zstandard is dual-licensed BSD-3-Clause or GPL-2.0 at the recipient's option, Copyright (c) Meta Platforms, Inc. and affiliates; the BSD grant is the one relied on and the one snapshotted.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/zstd-golden@82d322c4973d.txt"
+    },
+    {
+      "id": "zlib-test",
+      "kind": "upstream",
+      "repo": "madler/zlib",
+      "ref": "develop",
+      "commit": "e3dc0a85b7032e98380dec011bc8f2c2ee0d8fca",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "Zlib",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "The zlib licence, Copyright (C) 1995-2026 Jean-loup Gailly and Mark Adler. Permits use for any purpose including commercial, subject only to not misrepresenting the origin of altered source.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/zlib-test@e3dc0a85b703.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "brotli/10x10y",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/10x10y",
+      "sha256": "41bd4c895e9fb36d74bc97db5092872a24267e3b0455ff6152b0d262faa00d49",
+      "size": 20
+    },
+    {
+      "path": "brotli/10x10y.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/10x10y.compressed",
+      "sha256": "d666afc0f6c35d8d7796175aa9a68f16ba59afedee946d4bce9167f6c86e0b84",
+      "size": 12,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/64x",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/64x",
+      "sha256": "be4d3ed1fc5f5cfa00735b28605a975f3293fa235d23abb1d9dea380fba0fb87",
+      "size": 64
+    },
+    {
+      "path": "brotli/64x.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/64x.compressed",
+      "sha256": "f0273c38c6a55c1d9ccb047da04bacdc4bb07acc44ff83871e6b3490dfc2c313",
+      "size": 10,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/alice29.txt",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/alice29.txt",
+      "sha256": "7467306ee0feed4971260f3c87421154a05be571d944e9cb021a5713700c38f0",
+      "size": 152089
+    },
+    {
+      "path": "brotli/alice29.txt.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/alice29.txt.compressed",
+      "sha256": "69e902ef5cd9247302e4f66c313271bcff32eeb38e5eec7ca7744cf98106d5c2",
+      "size": 50096,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/asyoulik.txt",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/asyoulik.txt",
+      "sha256": "eaa3526fe53859f34ecdf255712f9ecf0b2c903451d4755b2edaa2e2599cb0fc",
+      "size": 125179
+    },
+    {
+      "path": "brotli/asyoulik.txt.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/asyoulik.txt.compressed",
+      "sha256": "605f6bdf129de59fb490f55180f3183e44ff7e2eab88ee931bd51a3757434404",
+      "size": 45687,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/backward65536",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/backward65536",
+      "sha256": "a6dbac2165542001c574fe1d5ed6ca646203660c228cac57b47a9fec68c20217",
+      "size": 65792
+    },
+    {
+      "path": "brotli/backward65536.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/backward65536.compressed",
+      "sha256": "757a524ce5fb43ea5e150b919ff635fd494142508d779f39e48e29ba1f61fb86",
+      "size": 19,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/bb.binast",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/bb.binast",
+      "sha256": "c92136b47bd8a113d4c6b740ea5e44fe146650821ba7f74b2cde4c990a8f8db5",
+      "size": 12356697
+    },
+    {
+      "path": "brotli/compressed_file",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/compressed_file",
+      "sha256": "69e902ef5cd9247302e4f66c313271bcff32eeb38e5eec7ca7744cf98106d5c2",
+      "size": 50096
+    },
+    {
+      "path": "brotli/compressed_file.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/compressed_file.compressed",
+      "sha256": "ee6a6e2c37f742596f6fd5a11f186c70687b60b46f4998795d4e8f33d14eccb0",
+      "size": 50100,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/compressed_repeated",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/compressed_repeated",
+      "sha256": "9538e078cb2d9493befede2c004dafcfcbf5a3caf0329285e7d4d49b48da0734",
+      "size": 144224
+    },
+    {
+      "path": "brotli/compressed_repeated.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/compressed_repeated.compressed",
+      "sha256": "5839e626bc601d2d7e121408a0af76676369de5dc5102329ffc05ef16f0b16b7",
+      "size": 50299,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/cp1251-utf16le",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/cp1251-utf16le",
+      "sha256": "0817dfe4fe7b6e29e63bbb048a785f7cbe67dc3188f96df5b5bc69826ca2a6e6",
+      "size": 1554
+    },
+    {
+      "path": "brotli/cp1251-utf16le.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/cp1251-utf16le.compressed",
+      "sha256": "d69e14971ccd758e47ba4e6bb13df1b23fcfd3d9586674bd4b46130accffeca5",
+      "size": 632,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/cp852-utf8",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/cp852-utf8",
+      "sha256": "37465d3004d504c3d4320de2f821fa42f79a10917421cf1872ace46cfb152c42",
+      "size": 706
+    },
+    {
+      "path": "brotli/cp852-utf8.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/cp852-utf8.compressed",
+      "sha256": "38f328ac5b0228a304ce18a7a81bd69dfbfd8d28baa7106e0d107e9eef4e6cee",
+      "size": 362,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "brotli/empty.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed",
+      "sha256": "67586e98fad27da0b9968bc039a1ef34c939b9b8e523a8bef89d478608c5ecf6",
+      "size": 1,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.00",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.00",
+      "sha256": "67586e98fad27da0b9968bc039a1ef34c939b9b8e523a8bef89d478608c5ecf6",
+      "size": 1,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.01",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.01",
+      "sha256": "ac38783f6a3b2fe3b579718d6ba8493a456d800665b4433a0e7c823cff90a603",
+      "size": 2,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.02",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.02",
+      "sha256": "ef1534d0c6cfe8a961a19e64689dc8ba07d92b0498121852cc77c7fab995e9e2",
+      "size": 2,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.03",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.03",
+      "sha256": "433a0fdd4ca1453e5a512cfbbea0a51b8fd138de3198e064f8ed8f23f6b83572",
+      "size": 2,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.04",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.04",
+      "sha256": "e25be31e89368225296188140d8db9b7c6aef9060329a255bae3ac60b12cc2b1",
+      "size": 2,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.05",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.05",
+      "sha256": "89e451d0952dc7cef33e71a58cbf816825c210cfb5e9a61e0aa5f98d14b46302",
+      "size": 2,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.06",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.06",
+      "sha256": "83d9749292117a7555982bfdbec3c4bd6eebc4ccd972e62d55f08e74217a1adb",
+      "size": 2,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.07",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.07",
+      "sha256": "f8acfa9c2f5dc317a07919235f2c987d7632516e035bd75a41f0e5da8752cf6e",
+      "size": 2,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.08",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.08",
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+      "size": 1,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.09",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.09",
+      "sha256": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+      "size": 1,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.10",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.10",
+      "sha256": "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451",
+      "size": 1,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.11",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.11",
+      "sha256": "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7",
+      "size": 1,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.12",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.12",
+      "sha256": "41b805ea7ac014e23556e98bb374702a08344268f92489a02f0880849394a1e4",
+      "size": 1,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.13",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.13",
+      "sha256": "380918b946a526640a40df5dced6516794f3d97bbd9e6bb553d037c4439f31c3",
+      "size": 1,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.14",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.14",
+      "sha256": "8a8de823d5ed3e12746a62ef169bcf372be0ca44f0a1236abc35df05d96928e1",
+      "size": 1,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.15",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.15",
+      "sha256": "58f7b0780592032e4d8602a3e8690fb2c701b2e1dd546e703445aabd6469734d",
+      "size": 1,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.16",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.16",
+      "sha256": "592b1bea772c8f6478bbf8ee7965c9697887d68fbbe07224c5d1680056cbe6de",
+      "size": 4,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.17",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.17",
+      "sha256": "95a77d2d0275fa7d30042c567a78025d5b79ed96967873de8d57e1d152b890c4",
+      "size": 65538,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/empty.compressed.18",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/empty.compressed.18",
+      "sha256": "1f3710654b87dc9a31778bfb09d476dca2dc96ac63f0d0ef9f6de17f363a1b2b",
+      "size": 196610,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/lcet10.txt",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/lcet10.txt",
+      "sha256": "5314ba1dbb03f471df88bec6cd120a938ef60d0fd3511c5c1dce61bf7463245f",
+      "size": 426754
+    },
+    {
+      "path": "brotli/lcet10.txt.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/lcet10.txt.compressed",
+      "sha256": "0b35d0fdd8513ccceee08d5a4a0e771aa0ed6b8647ffeba75ac956b1b6e9fd44",
+      "size": 124719,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/mapsdatazrh",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/mapsdatazrh",
+      "sha256": "bf076e57b5e6a8b648f1f0f1d7815cafcdf36c636ec08a547380b56685458101",
+      "size": 285886
+    },
+    {
+      "path": "brotli/mapsdatazrh.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/mapsdatazrh.compressed",
+      "sha256": "a01fb86df686ca38d90aeead4a7c49392937ac05367bed390fb0d878dd5b626b",
+      "size": 161743,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/monkey",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/monkey",
+      "sha256": "937ad127fe0e373e0e267d11905f2bca154f40fe6fd438b6ddcce40de2ddcd99",
+      "size": 843
+    },
+    {
+      "path": "brotli/monkey.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/monkey.compressed",
+      "sha256": "37bcdd7a42a6c5b119926d5af0f0d4e9162304592a2ded12c8fe9b06bf3908d9",
+      "size": 425,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/plrabn12.txt",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/plrabn12.txt",
+      "sha256": "07e2e0b461af78c7c647cb53dab39de560198e16f799b4516eccf0fbd69f764c",
+      "size": 481861
+    },
+    {
+      "path": "brotli/plrabn12.txt.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/plrabn12.txt.compressed",
+      "sha256": "9470506129c6e067e36e3c85cd72fc83ee1ec88b01276a89e714ec9b5b47daa4",
+      "size": 174771,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/quickfox",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/quickfox",
+      "sha256": "d7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592",
+      "size": 43
+    },
+    {
+      "path": "brotli/quickfox.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/quickfox.compressed",
+      "sha256": "319f52f063ba1fd6b50414d4f7f4ef77694bece4fa41f63968d96a375a8cfb02",
+      "size": 47,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/quickfox_repeated",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/quickfox_repeated",
+      "sha256": "254fdc641d1a65d0b1e427e4b0a1e16a96a5242adb98af71833782ba99c3dd82",
+      "size": 176128
+    },
+    {
+      "path": "brotli/quickfox_repeated.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/quickfox_repeated.compressed",
+      "sha256": "f732c7cfd6e33481e99352ed901b90647a6177dc3e34f5d1de1658c24e2d6e5a",
+      "size": 58,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/random_chunks",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/random_chunks",
+      "sha256": "e6b4d849e895842c08539eb2ace3a55ffee2f51128c5d3800ded75c2eeb163f7",
+      "size": 2704
+    },
+    {
+      "path": "brotli/random_org_10k.bin",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/random_org_10k.bin",
+      "sha256": "3035553aebbac63be49232495f41022bd9de43c6818917f3865e12ce8808b39e",
+      "size": 10000
+    },
+    {
+      "path": "brotli/random_org_10k.bin.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/random_org_10k.bin.compressed",
+      "sha256": "b20da1957453441b81ecfed5dea559fe00eb1cc89c6647c1c3348dc645830497",
+      "size": 10004,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/ukkonooa",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/ukkonooa",
+      "sha256": "1fb2529b0c6fbf80a60d2bb4c20efba2fff6cecb0c52d42693d404501064f407",
+      "size": 119
+    },
+    {
+      "path": "brotli/ukkonooa.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/ukkonooa.compressed",
+      "sha256": "92f59fc5a282056ef34c9521920baf3bf609ca57c8abd5a286fb4833aede421e",
+      "size": 69,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/x",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/x",
+      "sha256": "4b68ab3847feda7d6c62c1fbcbeebfa35eab7351ed5e78f4ddadea5df64b8015",
+      "size": 1
+    },
+    {
+      "path": "brotli/x.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/x.compressed",
+      "sha256": "cd094a625b695542a1d37b3a11ea849d8db9584a2f9df4e60cf6158bb39bbf61",
+      "size": 5,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/x.compressed.00",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/x.compressed.00",
+      "sha256": "69619f0d475e644c35ffeab36b4868a16a7382518d848c3a9a2c91db722c83ae",
+      "size": 5,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/x.compressed.01",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/x.compressed.01",
+      "sha256": "7ff671e6adc5e24be8269e7345ebcf16d94766ffcd95323e137e848c972efe47",
+      "size": 8,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/x.compressed.02",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/x.compressed.02",
+      "sha256": "c8d419e71a8bded7281954eda0a0f3cbe5aeeae31920fd5075b993089ce7cb0a",
+      "size": 5,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/x.compressed.03",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/x.compressed.03",
+      "sha256": "42db916a1a0954936cdb099292d10851228037eba679af5bbe402106ef209aa5",
+      "size": 10,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/xyzzy",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/xyzzy",
+      "sha256": "7609128715518308672067aab169e24944ead24e3d732aab8a8f0b7013a65564",
+      "size": 5
+    },
+    {
+      "path": "brotli/xyzzy.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/xyzzy.compressed",
+      "sha256": "c3f042a6be42887f842324d0e39dabd0d873e1676cd3dd2d7e2824242b318f14",
+      "size": 9,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/zeros",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/zeros",
+      "sha256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+      "size": 262144
+    },
+    {
+      "path": "brotli/zeros.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/zeros.compressed",
+      "sha256": "d1236d7fdab24209a747aa471f1bf33765b27adfd676355d4b4b310195dca49f",
+      "size": 13,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "brotli/zerosukkanooa",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/zerosukkanooa",
+      "sha256": "3f54e9caa8aa46d5eafde978d92ab5ebff42bac1396327320430c3b02fdcb77a",
+      "size": 262263
+    },
+    {
+      "path": "brotli/zerosukkanooa.compressed",
+      "sourceId": "brotli-testdata",
+      "upstreamPath": "tests/testdata/zerosukkanooa.compressed",
+      "sha256": "be9e662a29166105aa011613bbc1209e584c4e45d738334e69c4eb8626ecfe92",
+      "size": 107,
+      "format": {
+        "kind": "brotli",
+        "version": null,
+        "identifiedBy": "filename"
+      }
+    },
+    {
+      "path": "snappy/alice29.txt",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/alice29.txt",
+      "sha256": "7467306ee0feed4971260f3c87421154a05be571d944e9cb021a5713700c38f0",
+      "size": 152089
+    },
+    {
+      "path": "snappy/asyoulik.txt",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/asyoulik.txt",
+      "sha256": "eaa3526fe53859f34ecdf255712f9ecf0b2c903451d4755b2edaa2e2599cb0fc",
+      "size": 125179
+    },
+    {
+      "path": "snappy/baddata1.snappy",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/baddata1.snappy",
+      "sha256": "ca84adbcd5b4b784c3405fcdd4fa88f88a6614f2d5e5d4a527838785f1806623",
+      "size": 27512
+    },
+    {
+      "path": "snappy/baddata2.snappy",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/baddata2.snappy",
+      "sha256": "06f0ca34f0de885d6a849e1c8df95391d4494bf430d3784ea2167113d6ca8947",
+      "size": 27483
+    },
+    {
+      "path": "snappy/baddata3.snappy",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/baddata3.snappy",
+      "sha256": "2f60f8c9b5f3b9b0e3b4ff9aef983946552cdd1fdecdfad122292882894163bd",
+      "size": 28384
+    },
+    {
+      "path": "snappy/fireworks.jpeg",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/fireworks.jpeg",
+      "sha256": "93b986ce7d7e361f0d3840f9d531b5f40fb6ca8c14d6d74364150e255f126512",
+      "size": 123093,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 960,
+        "height": 639,
+        "components": 3
+      }
+    },
+    {
+      "path": "snappy/geo.protodata",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/geo.protodata",
+      "sha256": "7c2875cd6d06c954240ba644618d1e1f2a167e4541731f019de5b4c1f8080f24",
+      "size": 118588
+    },
+    {
+      "path": "snappy/html",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/html",
+      "sha256": "5912445a6d50df1079f022d7e01fa615f5d128d53bad88acbf4f49e62a7ea759",
+      "size": 102400
+    },
+    {
+      "path": "snappy/html_x_4",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/html_x_4",
+      "sha256": "ce3b0ceece9a0c0f66a352fd65b87a8e06357b136e99a2a85fcb3b0689ff6671",
+      "size": 409600
+    },
+    {
+      "path": "snappy/kppkn.gtb",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/kppkn.gtb",
+      "sha256": "1df7e44e4ec9bad952e7716fbdba0a2208665091866ded43407d03ed9ce23c24",
+      "size": 184320
+    },
+    {
+      "path": "snappy/lcet10.txt",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/lcet10.txt",
+      "sha256": "5314ba1dbb03f471df88bec6cd120a938ef60d0fd3511c5c1dce61bf7463245f",
+      "size": 426754
+    },
+    {
+      "path": "snappy/paper-100k.pdf",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/paper-100k.pdf",
+      "sha256": "60f73a051b7ca35bfec44734b2eed7736cb5c0b7f728beb7b97ade6c5e44849b",
+      "size": 102400
+    },
+    {
+      "path": "snappy/plrabn12.txt",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/plrabn12.txt",
+      "sha256": "07e2e0b461af78c7c647cb53dab39de560198e16f799b4516eccf0fbd69f764c",
+      "size": 481861
+    },
+    {
+      "path": "snappy/urls.10K",
+      "sourceId": "snappy-testdata",
+      "upstreamPath": "testdata/urls.10K",
+      "sha256": "0319ce7fe1f51b14eace3de879fe7da15418d1525d3176c2b26c5985943a3cad",
+      "size": 702087
+    },
+    {
+      "path": "zlib/CMakeLists.txt",
+      "sourceId": "zlib-test",
+      "upstreamPath": "test/CMakeLists.txt",
+      "sha256": "51b305de79671a8f2b75e83d93a37a28ceeaa3fc69f23f86e9de6f9b0b424345",
+      "size": 11592
+    },
+    {
+      "path": "zlib/add_subdirectory_exclude_test.cmake.in",
+      "sourceId": "zlib-test",
+      "upstreamPath": "test/add_subdirectory_exclude_test.cmake.in",
+      "sha256": "65e8cb60e88a985296928aabe92d27498c60197582ef8aba790dae8ecd6242f0",
+      "size": 975
+    },
+    {
+      "path": "zlib/add_subdirectory_test.cmake.in",
+      "sourceId": "zlib-test",
+      "upstreamPath": "test/add_subdirectory_test.cmake.in",
+      "sha256": "78630ce2066ffa83daba62fe5ff52ff76f99d0d3d04004dd033ed8f513ebdcf4",
+      "size": 942
+    },
+    {
+      "path": "zlib/find_package_no_components_test.cmake.in",
+      "sourceId": "zlib-test",
+      "upstreamPath": "test/find_package_no_components_test.cmake.in",
+      "sha256": "1f1f932d46c04688ca05b8fba2c55e458eac9404e6ce6f78e1c6a18f198052d0",
+      "size": 888
+    },
+    {
+      "path": "zlib/find_package_test.cmake.in",
+      "sourceId": "zlib-test",
+      "upstreamPath": "test/find_package_test.cmake.in",
+      "sha256": "1ab576b2f5ba55419589ca56e11350054c853cb1e77b632a30924e38d0b4a72a",
+      "size": 981
+    },
+    {
+      "path": "zlib/find_package_wrong_components_test.cmake.in",
+      "sourceId": "zlib-test",
+      "upstreamPath": "test/find_package_wrong_components_test.cmake.in",
+      "sha256": "443f29260bffcc0ea6c4bd6a8317d140ed3e68dde932e51641f1dc87f5f86f78",
+      "size": 905
+    },
+    {
+      "path": "zstd/golden-compression/PR-3517-block-splitter-corruption-test",
+      "sourceId": "zstd-golden",
+      "upstreamPath": "tests/golden-compression/PR-3517-block-splitter-corruption-test",
+      "sha256": "1ca04564ed658653f314ac6847c511a259d3b58d6315a7f7daf0f697a1514942",
+      "size": 262144
+    },
+    {
+      "path": "zstd/golden-compression/http",
+      "sourceId": "zstd-golden",
+      "upstreamPath": "tests/golden-compression/http",
+      "sha256": "ff02112301c842932531648f21911d6a47896df1c7bf484e8e2e5fec34fa91be",
+      "size": 1189
+    },
+    {
+      "path": "zstd/golden-compression/huffman-compressed-larger",
+      "sourceId": "zstd-golden",
+      "upstreamPath": "tests/golden-compression/huffman-compressed-larger",
+      "sha256": "46f9f62efa91681b9bcb5cdd390bbe540fb565c0ed0ab2c65a86eb575116d3fc",
+      "size": 143,
+      "format": {
+        "kind": "zstd",
+        "version": null,
+        "contentChecksum": true,
+        "singleSegment": false
+      }
+    },
+    {
+      "path": "zstd/golden-compression/large-literal-and-match-lengths",
+      "sourceId": "zstd-golden",
+      "upstreamPath": "tests/golden-compression/large-literal-and-match-lengths",
+      "sha256": "abadcf3096be26e7df4e6dd18c818606092b5493948050c409bc7104abd02415",
+      "size": 199998
+    },
+    {
+      "path": "zstd/golden-decompression/block-128k.zst",
+      "sourceId": "zstd-golden",
+      "upstreamPath": "tests/golden-decompression/block-128k.zst",
+      "sha256": "6a226ab40e6abcfc4a36baa04bf48f7ee56f166b8a26fbe2adb8fe771dceccba",
+      "size": 131081,
+      "format": {
+        "kind": "zstd",
+        "version": null,
+        "contentChecksum": false,
+        "singleSegment": false
+      }
+    },
+    {
+      "path": "zstd/golden-decompression/empty-block.zst",
+      "sourceId": "zstd-golden",
+      "upstreamPath": "tests/golden-decompression/empty-block.zst",
+      "sha256": "ab5463fa31429bf81ced9f05e99b96b2fe88b1da37235a233f6bc96242332fbc",
+      "size": 11,
+      "format": {
+        "kind": "zstd",
+        "version": null,
+        "contentChecksum": false,
+        "singleSegment": false
+      }
+    },
+    {
+      "path": "zstd/golden-decompression/rle-first-block.zst",
+      "sourceId": "zstd-golden",
+      "upstreamPath": "tests/golden-decompression/rle-first-block.zst",
+      "sha256": "dd31b3fa6bb8601710cbde2c625660763bf38adc5255501e3d3a681cc0e4e1a4",
+      "size": 45,
+      "format": {
+        "kind": "zstd",
+        "version": null,
+        "contentChecksum": true,
+        "singleSegment": true
+      }
+    },
+    {
+      "path": "zstd/golden-decompression/zeroSeq_2B.zst",
+      "sourceId": "zstd-golden",
+      "upstreamPath": "tests/golden-decompression/zeroSeq_2B.zst",
+      "sha256": "8505867ac00fb49eb455da1b1e44e7cba5126f03114a72fb195170f7c95f2ca7",
+      "size": 25,
+      "format": {
+        "kind": "zstd",
+        "version": null,
+        "contentChecksum": false,
+        "singleSegment": false
+      }
+    },
+    {
+      "path": "zstd/golden-dictionaries/http-dict-missing-symbols",
+      "sourceId": "zstd-golden",
+      "upstreamPath": "tests/golden-dictionaries/http-dict-missing-symbols",
+      "sha256": "f4c25620fc0fb4fd60b2a9e4834e822772bf795ce5dcaa99b8985315ac24ad8b",
+      "size": 1000
+    }
+  ],
+  "totals": {
+    "files": 98,
+    "bytes": 19360232
+  }
+}

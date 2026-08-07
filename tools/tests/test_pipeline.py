@@ -17,6 +17,7 @@ import pathlib
 import tarfile
 import tempfile
 import unittest
+import zlib
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -519,6 +520,42 @@ class TestFormats(unittest.TestCase):
         self.assertEqual((plain["version"], plain["compression"]), ("2", "zlib"))
         self.assertNotIn("encrypted", plain)
         self.assertTrue(formats.detect(b"CCZp" + head, "a.ccz")["encrypted"])
+
+    def test_zlib_header_is_a_filter_not_a_signature(self):
+        # THE regression case: seven of Ruffle's `output.txt` trace expectations begin
+        # "x " — 0x78 0x20 — which is a valid CMF byte for 32K-window deflate whose pair
+        # is divisible by 31. Plain text was being recorded as a compressed stream, so the
+        # probe now has to actually inflate something.
+        self.assertIsNone(formats.detect(b'x = "hi" PASSED!\nx = "hi" PASSED!\n', "output.txt"))
+        real = zlib.compress(b"the quick brown fox jumps over the lazy dog" * 8)
+        info = formats.detect(real, "blob.bin")
+        self.assertEqual((info["kind"], info["windowSize"]), ("zlib", 32768))
+
+    def test_compression_streams_with_real_magics(self):
+        self.assertEqual(formats.detect(b"\xfd7zXZ\x00" + b"\x00" * 16, "a.xz")["kind"], "xz")
+        bz = formats.detect(b"BZh9" + b"1AY&SY" + b"\x00" * 16, "a.bz2")
+        self.assertEqual((bz["kind"], bz["blockSize100k"]), ("bzip2", 9))
+        self.assertEqual(formats.detect(b"\x04\x22\x4d\x18" + b"\x00" * 16, "a.lz4")["kind"],
+                         "lz4")
+        framed = formats.detect(b"\xff\x06\x00\x00sNaPpY" + b"\x00" * 8, "a.sz")
+        self.assertEqual(framed["framing"], "framed")
+
+    def test_zstd_skippable_frames_are_named_as_such(self):
+        # A skippable frame carries application metadata a decoder must step over. Treating
+        # one as a data frame yields nothing and reports no error.
+        data = formats.detect(struct.pack("<I", 0xFD2FB528) + b"\x64" + b"\x00" * 8, "a.zst")
+        self.assertEqual((data["kind"], data["contentChecksum"]), ("zstd", True))
+        skip = formats.detect(struct.pack("<I", 0x184D2A50) + b"\x00" * 8, "a.zst")
+        self.assertEqual(skip["frame"], "skippable")
+
+    def test_brotli_admits_it_is_identified_by_name(self):
+        # Brotli has no magic number at all — a raw stream starts with the window-size bits
+        # of its first meta-block. The probe must not pretend otherwise.
+        info = formats.detect(b"\x1b\x3f\x01\x00", "alice29.txt.compressed")
+        self.assertEqual((info["kind"], info["identifiedBy"]), ("brotli", "filename"))
+        # google/brotli numbers alternative encodings, so `.compressed` is a component.
+        self.assertEqual(formats.detect(b"\x3b", "empty.compressed.07")["kind"], "brotli")
+        self.assertIsNone(formats.detect(b"\x1b\x3f\x01\x00", "mystery.bin"))
 
     def test_ttx_is_identified_as_more_than_generic_xml(self):
         doc = (b'<?xml version="1.0" encoding="UTF-8"?>\n'

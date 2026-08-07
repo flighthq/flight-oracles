@@ -43,6 +43,7 @@ already exist was not worth declining.
 | `mesh-legacy-fixtures` | 195 | 64.0 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
 | `atf-fixtures` | 14 | 8.1 MB | Adobe Texture Format — undeclared, build input only |
 | `media-container-fixtures` | 37 | 10.6 MB | MP4/WebM/Ogg/WAV/MP3 — same payload muxed both ways |
+| `compression-fixtures` | 98 | 19.4 MB | **Oracles** — brotli/zstd/snappy/zlib, input paired with output |
 | `image-codec-fixtures` | 670 | 33.2 MB | **Oracles** — 12 codecs, each input paired with its decoded rendering |
 | `font-malformed-fixtures` | 312 | 25.1 MB | **Negative** — malformed and fuzzed fonts, every wrapper |
 | `spritesheet-fixtures` | 280 | 21.4 MB | libgdx `.atlas` texture atlas descriptors |
@@ -58,7 +59,7 @@ already exist was not worth declining.
 | `svg-path-fixtures` | 672 | 0.5 MB | **Oracles** — SVG path grammar, 371 expected-output pairs |
 | `xml-conformance-fixtures` | 1,184 | 2.6 MB | **Oracles** — XML with expected diagnostics |
 
-32 packs, 27,950 files. Several packs carry expectations as well as inputs:
+33 packs, 28,048 files. Several packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place), `gltf-generated-fixtures` (positive/negative conformance split),
 `svg-path-fixtures` and `xml-conformance-fixtures` (expected output and expected

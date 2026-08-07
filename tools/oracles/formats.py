@@ -15,6 +15,7 @@ from __future__ import annotations
 import json
 import re
 import struct
+import zlib
 
 __all__ = ["detect", "FormatInfo"]
 
@@ -1349,6 +1350,99 @@ def _gzip(data: bytes):
     return info
 
 
+def _zstd(data: bytes):
+    """Zstandard: a frame magic, and a header byte that says what follows.
+
+    Skippable frames (0x184D2A5x) are a distinct thing worth naming — they carry
+    application metadata a decoder is required to step over, and a reader that treats one
+    as a data frame produces nothing and reports no error.
+    """
+    if len(data) < 5:
+        return None
+    magic = struct.unpack("<I", data[:4])[0]
+    if magic == 0xFD2FB528:
+        descriptor = data[4]
+        info = FormatInfo(kind="zstd", version=None,
+                          contentChecksum=bool(descriptor & 0x04),
+                          singleSegment=bool(descriptor & 0x20))
+        if descriptor & 0x03:
+            info["dictionaryId"] = True
+        return info
+    if 0x184D2A50 <= magic <= 0x184D2A5F:
+        return FormatInfo(kind="zstd", version=None, frame="skippable")
+    return None
+
+
+def _xz_bzip2_lz4(data: bytes):
+    """The three remaining stream formats with real signatures."""
+    if data.startswith(b"\xfd7zXZ\x00"):
+        return FormatInfo(kind="xz", version=None)
+    if data.startswith(b"BZh") and len(data) > 3 and data[3:4].isdigit():
+        # The digit is the block size in hundreds of kilobytes, and it is the one
+        # parameter a decoder must honour to allocate correctly.
+        return FormatInfo(kind="bzip2", version=None, blockSize100k=int(data[3:4]))
+    if data.startswith(b"\x04\x22\x4d\x18"):
+        return FormatInfo(kind="lz4", version=None)
+    if data.startswith(b"\xff\x06\x00\x00sNaPpY"):
+        return FormatInfo(kind="snappy", version=None, framing="framed")
+    if data.startswith(b"\x5d\x00\x00"):
+        return FormatInfo(kind="lzma", version=None, variant="alone")
+    return None
+
+
+def _zlib_stream(data: bytes):
+    """A raw zlib stream: no magic, only a two-byte header that has to check out.
+
+    CM must be 8 (deflate) and the two bytes together must be a multiple of 31. That is a
+    1-in-31 accident rather than a signature, so this probe runs last among the binary
+    ones and yields to anything with a real magic number — including gzip, whose own
+    header would otherwise never be reached.
+
+    Recorded anyway because it is what `CWS` SWFs and every WOFF table are made of, and a
+    lock entry saying "zlib, window 32K" is more useful than a blank.
+
+    The header check alone is NOT enough, and the corpus proved it: seven of Ruffle's
+    `output.txt` trace expectations begin with the two characters `x` and a space, which is
+    0x78 0x20 — a valid CMF byte for 32K-window deflate whose pair happens to be divisible
+    by 31. Text files were being recorded as compressed streams. So the header is treated
+    as a filter and the answer comes from actually starting to decompress: if the first
+    kilobyte does not inflate, this is not zlib, whatever the first two bytes say.
+    """
+    if len(data) < 16 or data[0] & 0x0F != 8:
+        return None
+    if (data[0] << 8 | data[1]) % 31 != 0:
+        return None
+    window = 1 << ((data[0] >> 4) + 8)
+    if window > 32768:
+        return None
+    try:
+        if not zlib.decompressobj().decompress(data[:4096], 1024):
+            return None
+    except zlib.error:
+        return None
+    level = {0: "fastest", 1: "fast", 2: "default", 3: "maximum"}[(data[1] >> 6) & 0x03]
+    return FormatInfo(kind="zlib", version=None, windowSize=window, compressionLevel=level,
+                      hasDictionary=bool(data[1] & 0x20))
+
+
+def _brotli(data: bytes, name: str):
+    """Brotli, which has no magic number at all.
+
+    Worth stating rather than quietly name-gating: a raw brotli stream starts with the
+    window-size bits of its first meta-block and is not distinguishable from arbitrary
+    data by inspection. That is deliberate — brotli is a transport encoding, not a file
+    format — so `.br` and google/brotli's `.compressed` convention are all there is to go
+    on, and this probe claims nothing a filename did not already claim.
+    """
+    lowered = name.lower()
+    # google/brotli also numbers alternative encodings of the same input —
+    # `empty.compressed.00` through `.18` — so the convention is a `.compressed` component,
+    # not necessarily a final suffix.
+    if not (lowered.endswith(".br") or ".compressed" in lowered):
+        return None
+    return FormatInfo(kind="brotli", version=None, identifiedBy="filename")
+
+
 def _zip(data: bytes):
     """A zip archive, and the name of its first entry.
 
@@ -1655,14 +1749,16 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
                   _png, _jpeg, _gif, _bmp, _riff, _isobmff, _qoi, _farbfeld,
                   _radiance, _openexr, _jxl, _xcf, _ico, _pnm, _tiff,
                   _ebml, _ogg, _flac,
-                  _gzip, _zip, _ccz, _pvr,
+                  _gzip, _zstd, _xz_bzip2_lz4, _zip, _ccz, _pvr,
                   _iff, _lws, _directx_x, _ac3d, _cob, _m3d, _vrml, _off, _a3d,
                   _ase_3dsmax,
-                  _gltf_json, _spine_json, _lottie):
+                  _gltf_json, _spine_json, _lottie,
+                  _zlib_stream):
         info = probe(data)
         if info is not None:
             return info
     for probe in (_ttx, _pcx, _tga, _webvtt, _mpeg_audio, _bom_text, _xml_dialect, _nff,
+                  _brotli,
                   _dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
                   _ldtk, _effekseer, _bmfont_json, _frames_meta_sheet, _bvh,
                   _starling_atlas, _unity_yaml, _svg, _xml,
