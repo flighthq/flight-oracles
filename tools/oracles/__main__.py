@@ -165,6 +165,8 @@ def cmd_pack(args):
         lock = _locked(spec, root, args)
         if lock is None:
             continue
+        print(f"{spec.name}: verifying {lock['totals']['files']} files "
+              f"({lock['totals']['bytes'] / 1e6:.0f} MB)...", flush=True)
         problems = ingest_mod.verify_pack(lock, root)
         if problems:
             sys.exit(
@@ -172,7 +174,8 @@ def cmd_pack(args):
                 f"({len(problems)} problem(s)) — run `verify` for detail"
             )
         artifacts = pack_mod.build_pack(
-            lock, root, out_dir, args.version
+            lock, root, out_dir, args.version,
+            progress=lambda msg: print(msg, flush=True),
         )
         if lock["pack"].get("mergeGroup"):
             for art in artifacts:

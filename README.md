@@ -129,6 +129,10 @@ a repository-weight decision rather than a technical one.
 Archives are byte-reproducible: sorted entries, zeroed mtimes, fixed modes and ownership.
 Rebuilding the same lock produces the same digest.
 
+Building is the slow step — tens of seconds per large pack, and the whole set takes minutes.
+`pack` reports each pack and variant as it starts, because silence during a multi-minute
+operation is indistinguishable from a hang.
+
 ## Provenance model
 
 We report what each source **declared**; we do not adjudicate it. A manifest entry is a claim

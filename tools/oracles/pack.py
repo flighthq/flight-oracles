@@ -339,24 +339,41 @@ def _archive_members(lock, variant, entries, root):
     return sorted(members.items())
 
 
+# Level 6, not 9. Measured on the heaviest pack, every level produces 495.7 MB — these
+# payloads are already-compressed PNG, JPEG and binary buffers, so gzip has nothing left to
+# find. Level 9 was buying zero bytes for extra CPU.
+GZIP_LEVEL = 6
+
+
 def _write_tar_gz(members, dest: Path):
-    raw = io.BytesIO()
-    with tarfile.open(fileobj=raw, mode="w") as tar:
-        for name, data in members:
-            info = tarfile.TarInfo(name)
-            info.size = len(data)
-            info.mtime = 0
-            info.mode = 0o644
-            info.uid = info.gid = 0
-            info.uname = info.gname = ""
-            tar.addfile(info, io.BytesIO(data))
+    """Stream the archive to disk.
+
+    An earlier version staged the whole tar in a BytesIO and then gzipped it, which meant
+    holding roughly twice the pack size in memory — about a gigabyte for the texture packs,
+    on a runner with a few to spare. Writing through the gzip stream keeps peak memory at
+    one member.
+    """
     with open(dest, "wb") as out:
-        with gzip.GzipFile(fileobj=out, mode="wb", mtime=0, compresslevel=9) as gz:
-            gz.write(raw.getvalue())
+        with gzip.GzipFile(fileobj=out, mode="wb", mtime=0, compresslevel=GZIP_LEVEL) as gz:
+            with tarfile.open(fileobj=gz, mode="w|") as tar:
+                for name, data in members:
+                    info = tarfile.TarInfo(name)
+                    info.size = len(data)
+                    info.mtime = 0
+                    info.mode = 0o644
+                    info.uid = info.gid = 0
+                    info.uname = info.gname = ""
+                    tar.addfile(info, io.BytesIO(data))
 
 
 
-def build_pack(lock, root: Path, out_dir: Path, version: str):
+def build_pack(lock, root: Path, out_dir: Path, version: str, progress=None):
+    """Build every variant of one pack.
+
+    `progress` is called with a short status string before each slow step. Packing the
+    texture packs takes tens of seconds each and printed nothing until a whole pack was
+    finished, which is indistinguishable from a hang.
+    """
     """Build every variant of one pack. Returns a list of artifact records."""
     out_dir.mkdir(parents=True, exist_ok=True)
     name = lock["pack"]["name"]
@@ -366,6 +383,9 @@ def build_pack(lock, root: Path, out_dir: Path, version: str):
         entries, excluded_hashes = select(lock, variant)
         if not entries:
             continue
+        if progress:
+            total = sum(e["size"] for e in entries) / 1e6
+            progress(f"  {name}-{variant}: {len(entries)} files, {total:.0f} MB")
         members = _archive_members(lock, variant, entries, root)
 
         # The removal guarantee, enforced rather than trusted.
