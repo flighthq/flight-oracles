@@ -1,0 +1,53 @@
+# usd-fixtures — Universal Scene Description.
+#
+# Declined twice before, both times for the same reason: `PixarAnimationStudios/OpenUSD` is
+# 282 MB, NOASSERTION at the repository root, and a usable slice needs picking rather than
+# globbing. All true — and about the wrong repository. OpenUSD is the *implementation*.
+# `usd-wg/assets` is the USD Working Group's asset repository, it is **Apache-2.0**, and its
+# `test_assets/` tree is exactly the curated slice the earlier note said someone would have
+# to construct.
+#
+# Worth naming as a pattern, because it is the second time it has happened here: when a
+# format's reference implementation has an awkward licence, check whether the standards body
+# publishes assets separately. Khronos does, the USD Working Group does, and in both cases
+# the asset repository is cleaner than the code repository.
+#
+# ALL THREE ENCODINGS, which is the reason to take USD at all rather than treat it as one
+# more scene format:
+#
+#   .usda  ASCII. Human-readable, and what almost every example in the wild is.
+#   .usd   Either encoding — the extension is deliberately ambiguous, and a reader has to
+#          sniff the content. That ambiguity is *in the specification*, not an accident.
+#   .usdc  Crate: Pixar's binary format, 'PXR-USDC' magic.
+#   .usdz  A zip with constraints — uncompressed, aligned, with the root layer first. A
+#          reader that treats it as an ordinary archive works right up until it does not.
+#
+# The MaterialX documents beside them (`.mtlx`) are a second format this corpus carries for
+# free and nothing else here covers.
+#
+# The 570 PNGs are the assets' own reference imagery and their READMEs describe each case,
+# so they travel with them rather than being stripped for weight.
+
+[pack]
+name = "usd-fixtures"
+kind = "fixtures"
+summary = "USD test assets — ASCII, crate and zipped encodings plus MaterialX, from the working group's Apache-2.0 asset repository."
+
+[[source]]
+id = "usd-wg-test-assets"
+kind = "upstream"
+repo = "usd-wg/assets"
+ref = "main"
+fetch = "blobs"
+subtree = "test_assets"
+include = ["test_assets/**"]
+strip = "test_assets/"
+dest = "usd/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "Apache License 2.0 over the Alliance for OpenUSD / USD Working Group asset repository. Individual assets carry per-directory READMEs describing their origin and intent; those travel with the files."

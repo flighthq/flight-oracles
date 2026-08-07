@@ -1,0 +1,1503 @@
+{
+  "pack": {
+    "name": "3mf-fixtures",
+    "kind": "conformance",
+    "summary": "3MF manufacturing format \u2014 the consortium's own MustPass/MustFail validation suite across five specification areas."
+  },
+  "sources": [
+    {
+      "id": "3mf-consortium-samples",
+      "kind": "upstream",
+      "repo": "3MFConsortium/3mf-samples",
+      "ref": "master",
+      "commit": "665e20dc4d7777fd4c9702bca86a2d4028440337",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "BSD-2-Clause",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE",
+        "covers": "BSD 2-Clause, Copyright (c) 3MF Consortium. The samples and validation suite are the consortium's own conformance material for the specification it publishes.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/3mf-consortium-samples@665e20dc4d77.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "README.md",
+      "sha256": "e256324c549cbb7a51ddd10276ebd5bd7f8ce2db12ee89d7277c9c3027608c88",
+      "size": 141
+    },
+    {
+      "path": "examples/beam lattice/pyramid.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/beam lattice/pyramid.3mf",
+      "sha256": "187bbb00a3ad0b31096d27e7a1638736f4560ef3bf9b2a05ba9aa2e5864004f8",
+      "size": 4830,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/beam lattice/pyramid.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/beam lattice/pyramid.png",
+      "sha256": "b2e65ee53cb24d0861ecd3137cd8045568aab580f7daa4a53648c4c0eea55626",
+      "size": 175998,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 660,
+        "height": 644,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "examples/beam lattice/spinal implant.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/beam lattice/spinal implant.3mf",
+      "sha256": "9b4b7d43e071b2b7d4b9cd38031c63f598a0064090acec50696a849da40536e8",
+      "size": 261883,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/3dmodel.model"
+      }
+    },
+    {
+      "path": "examples/beam lattice/spinal implant.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/beam lattice/spinal implant.png",
+      "sha256": "07b9ac46c237b8d11d6e61399179ffa1a68225bd08d516dfc59e5e26c1a08cfa",
+      "size": 98897,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 609,
+        "height": 546,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/beam lattice/variable voronoi.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/beam lattice/variable voronoi.3mf",
+      "sha256": "45bd479e36a05ab0624c1d41fa355d6f4619514101d235172469a83c1d722a43",
+      "size": 20958,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/beam lattice/variable voronoi.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/beam lattice/variable voronoi.png",
+      "sha256": "68017c2b85687d46b8821931ffeeb99b6a4c8642e71835802bf1a5a6eab8321c",
+      "size": 224647,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 625,
+        "height": 607,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "examples/core/box.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/box.3mf",
+      "sha256": "d45d18cbbc4f189c2951b5c8c400333c0de633c4b88608dc6f5416b8f7677524",
+      "size": 1176,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/core/box.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/box.png",
+      "sha256": "d2e86c81ef8c8e7cba611261caf90ede2f8e09763dc7b1f09517d00247798226",
+      "size": 7832,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 531,
+        "height": 734,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/core/cube_gears.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/cube_gears.3mf",
+      "sha256": "5694dd00fec4b1ec118c33840a1984be5ca01494930fd1bdef102b9b70a2d2c2",
+      "size": 263230,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/core/cube_gears.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/cube_gears.png",
+      "sha256": "38370285d9851c695d18462f6b459833bcf018a0660e83227f8fe53f4f1e64cd",
+      "size": 170168,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1025,
+        "height": 827,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/core/cylinder.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/cylinder.3mf",
+      "sha256": "2a263ec8c0e35a677b3a3fc97941f4596a8df3c071bac94551a4512ae95ca086",
+      "size": 1833,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/core/cylinder.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/cylinder.png",
+      "sha256": "7096b9195547a725d38e6cd21fbd1563e96883402d68db52203b572463d74907",
+      "size": 14689,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 563,
+        "height": 735,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/core/dodeca_chain_loop.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/dodeca_chain_loop.3mf",
+      "sha256": "b568f94139bc70d8995c646039563833dd1395a6e443fb3e29d38cab068df7d7",
+      "size": 66809,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/core/dodeca_chain_loop.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/dodeca_chain_loop.png",
+      "sha256": "f95741188b52464c5470463b5d5c597d3a79548af11371039b6b7cf25b6fe0e8",
+      "size": 249040,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1119,
+        "height": 729,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/core/heartgears.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/heartgears.3mf",
+      "sha256": "5fa8cc9b273a108b9da3ad590512abbb63498deec33968d16b75e877d65b4fe0",
+      "size": 382238,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/core/heartgears.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/heartgears.png",
+      "sha256": "2c3a2e4bce75d0f6e7326f45d15fd1e7b3c898e49957c1dbed02c18820b30cab",
+      "size": 145571,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 642,
+        "height": 704,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/core/multiple_cylinders.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/multiple_cylinders.3mf",
+      "sha256": "4725faf69742bb8ed3be117284b6cb47a75e02cfa0f2da3675e6bccfa3f9d54f",
+      "size": 1981,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/core/sphere.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/sphere.3mf",
+      "sha256": "6039ea72ed7822ff1441f556fea88b865078e6bd1937887735bf2d42007d8d74",
+      "size": 34075,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/core/sphere.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/sphere.png",
+      "sha256": "29b664ccc97ec2eb13a7e394cc72c036ad7f4a7c44313434b04048da109e405f",
+      "size": 58412,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 603,
+        "height": 607,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/core/torus.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/torus.3mf",
+      "sha256": "4072eb3a90d53679e7460269402eacb7652078c4acdca331351e0dc5ccf975c5",
+      "size": 21446,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/core/torus.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/core/torus.png",
+      "sha256": "7a6dc906d4108f1b62afc65e09206d052a0c52a3120788b6e97965b3bf456e1a",
+      "size": 58083,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 759,
+        "height": 483,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/material/dodeca_chain_loop_color.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/dodeca_chain_loop_color.3mf",
+      "sha256": "fe4bdcd667044547faf50ce29d0af7c6f2ea39c11caa8c4b26e841d888863cc0",
+      "size": 69587,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/material/dodeca_chain_loop_color.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/dodeca_chain_loop_color.png",
+      "sha256": "a5e659a28322cd07cede52276ac97994ac5523694ff3c8a45e7068db28a027a2",
+      "size": 153606,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 845,
+        "height": 447,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/material/kinect_scan.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/kinect_scan.3mf",
+      "sha256": "5b729c0dd8848902bafc5717bdc73b3d94479a96b21ac56e46628b89956f1118",
+      "size": 5335315,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "[Content_Types].xml"
+      }
+    },
+    {
+      "path": "examples/material/kinect_scan.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/kinect_scan.png",
+      "sha256": "722e5ac4dff35a85b36120d00774ea87f1416e442920804f99eaa24fc0250014",
+      "size": 264223,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 723,
+        "height": 763,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/material/multipletextures.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/multipletextures.3mf",
+      "sha256": "1024c33276043c5ef25bf111496056d87bf5a816ae2f6eb6a6804d75ced02d59",
+      "size": 3093233,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/material/multipletextures.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/multipletextures.png",
+      "sha256": "f2a52c8e9eea7e42e4256d298e63166f810d725e68658b1d166aba36e9440177",
+      "size": 481585,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 911,
+        "height": 762,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/material/multiprop-metallic.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/multiprop-metallic.3mf",
+      "sha256": "88ed6580cad72fa6fcc34fb839e3e6bd3c986829a26df03c85765eee96813346",
+      "size": 254629,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/material/multiprop-metallic.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/multiprop-metallic.png",
+      "sha256": "f65ed0777dc8d7c49f68e4ffb96f6f382167b4e924ab866a87682c122daf05eb",
+      "size": 99255,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 800,
+        "height": 800,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "examples/material/multiprop-opaque.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/multiprop-opaque.3mf",
+      "sha256": "63bb8a8be03ed48e36422d3845d2a35388798a21f71da1c22a46aa409da5f375",
+      "size": 238490,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/material/multiprop-opaque.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/multiprop-opaque.png",
+      "sha256": "9047dfd0ff11535dadea9a560afaa83cd471f58a55426d3edd88857992ea1d3c",
+      "size": 83181,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 800,
+        "height": 800,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "examples/material/multiprop-translucent.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/multiprop-translucent.3mf",
+      "sha256": "9488c10c1a19ac631075f8a951eb97bd29bcbf60e523821b4c8adfc0d97b0474",
+      "size": 280062,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/material/multiprop-translucent.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/multiprop-translucent.png",
+      "sha256": "24558b428c10dfe7c93b0ae93b0a29c70765060f090e821ad7be67b869a1d9aa",
+      "size": 124473,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 800,
+        "height": 800,
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    {
+      "path": "examples/material/pyramid_vertexcolor.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/pyramid_vertexcolor.3mf",
+      "sha256": "1f79beb48ede62406b780a7f42933a05ff695e85d6a95124a2d0eff782b91555",
+      "size": 1261,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/material/pyramid_vertexcolor.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/pyramid_vertexcolor.png",
+      "sha256": "01b1bf9b4ecf405e2563321935765fdfaf41360d4409bb928673fa2e8b18c654",
+      "size": 107175,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 849,
+        "height": 771,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/material/rhombicuboctahedron_color.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/rhombicuboctahedron_color.3mf",
+      "sha256": "76e67544e5398831d29c45c7e424909c022beb55203a0aeaa0778a06d3a5dcb0",
+      "size": 1643,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/material/rhombicuboctahedron_color.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/rhombicuboctahedron_color.png",
+      "sha256": "37c43a512be6c09e4f89e3ed1c73c1ecbfb33bfb2bd29980d120108301d4205c",
+      "size": 20747,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 603,
+        "height": 675,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/material/sphere_logo.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/sphere_logo.3mf",
+      "sha256": "2e46dbb7546545f4dada163ecc0f8747d35b2f42296b7467d03f30542b1ad24c",
+      "size": 141235,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/material/sphere_logo.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/material/sphere_logo.png",
+      "sha256": "9f5fbffd2130abe0fe13856928d73030fe8e2ab9fb2faadf17d75f616a4965c2",
+      "size": 56584,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 591,
+        "height": 595,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/production/box.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/production/box.png",
+      "sha256": "d2e86c81ef8c8e7cba611261caf90ede2f8e09763dc7b1f09517d00247798226",
+      "size": 7832,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 531,
+        "height": 734,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/production/box_prod.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/production/box_prod.3mf",
+      "sha256": "66c24c97b58a32a45b33c5e6537b03c981c4ad4a23623f5bbf344d8fcdfc612e",
+      "size": 10017,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/production/cube_gears.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/production/cube_gears.png",
+      "sha256": "38370285d9851c695d18462f6b459833bcf018a0660e83227f8fe53f4f1e64cd",
+      "size": 170168,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1025,
+        "height": 827,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/production/cube_gears_prod.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/production/cube_gears_prod.3mf",
+      "sha256": "252bad8bfdbf7085ad7364f36043fcadeeb66a888e7bab1a3eec05e68d2164dc",
+      "size": 498014,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/production/cube_gears_prod_req.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/production/cube_gears_prod_req.3mf",
+      "sha256": "2b79685a4f2ef1baff71faa535fbc9349d7aae2fa2accb95f873482af38d748f",
+      "size": 512716,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/production/sphere.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/production/sphere.png",
+      "sha256": "29b664ccc97ec2eb13a7e394cc72c036ad7f4a7c44313434b04048da109e405f",
+      "size": 58412,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 603,
+        "height": 607,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/production/sphere_prod.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/production/sphere_prod.3mf",
+      "sha256": "85c6eafdae59bc337279d6761777bb80b0ae94b74ed84b2c05bece5fd50b32ea",
+      "size": 99655,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/production/torus.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/production/torus.png",
+      "sha256": "7a6dc906d4108f1b62afc65e09206d052a0c52a3120788b6e97965b3bf456e1a",
+      "size": 58083,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 759,
+        "height": 483,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/production/torus_proc.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/production/torus_proc.3mf",
+      "sha256": "fc67774242cfd00368e7fabccb7eb9bb37ba17609fcd9f985fff935e15b0bce7",
+      "size": 82626,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/slices/box.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/slices/box.png",
+      "sha256": "d2e86c81ef8c8e7cba611261caf90ede2f8e09763dc7b1f09517d00247798226",
+      "size": 7832,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 531,
+        "height": 734,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/slices/box_sliced.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/slices/box_sliced.3mf",
+      "sha256": "29cf727f185fac88e9cc6c615753a86d388ccfd687ebfee8bce03cc36615b856",
+      "size": 12217,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/slices/cube_gears.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/slices/cube_gears.png",
+      "sha256": "38370285d9851c695d18462f6b459833bcf018a0660e83227f8fe53f4f1e64cd",
+      "size": 170168,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 1025,
+        "height": 827,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/slices/cube_gears_sliced.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/slices/cube_gears_sliced.3mf",
+      "sha256": "03c9179100e584925b7b82f140526f0a3caa9f8f74ca856df1ed75f7bc356856",
+      "size": 2026553,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/slices/sphere.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/slices/sphere.png",
+      "sha256": "29b664ccc97ec2eb13a7e394cc72c036ad7f4a7c44313434b04048da109e405f",
+      "size": 58412,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 603,
+        "height": 607,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/slices/sphere_sliced.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/slices/sphere_sliced.3mf",
+      "sha256": "f5ae6a654b62f0b6befda86083473b15d1e30e8a70c422b861cf40b3a237f0f0",
+      "size": 230418,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "examples/slices/torus.png",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/slices/torus.png",
+      "sha256": "7a6dc906d4108f1b62afc65e09206d052a0c52a3120788b6e97965b3bf456e1a",
+      "size": 58083,
+      "format": {
+        "kind": "png",
+        "version": null,
+        "width": 759,
+        "height": 483,
+        "bitDepth": 8,
+        "colorType": 6
+      }
+    },
+    {
+      "path": "examples/slices/torus_sliced.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "examples/slices/torus_sliced.3mf",
+      "sha256": "cba8459f6fc5cca9d93b10537fedacf9cd1bb6f7c077f6597a423ebd6137de6c",
+      "size": 99935,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "_rels/.rels"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter2_DuplicatedColorGroupId.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter2_DuplicatedColorGroupId.3mf",
+      "sha256": "d334bd5cfe5d23e0f19c307a2e194748f350829fe3632056c9701ba9a45e2e0f",
+      "size": 15763,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter2_DuplicatedIdAcrossGroup.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter2_DuplicatedIdAcrossGroup.3mf",
+      "sha256": "4fa1663767d75c5fcc6f5b5d0f81ed9a9bd9301b13f3a60844264166c6f28758",
+      "size": 15650,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter2_MissingColorValue.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter2_MissingColorValue.3mf",
+      "sha256": "aab5e1b56b6173d39ba37ccd7149b5663fa797ed0c1e081e3fc7b5420162f78b",
+      "size": 15756,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter3_DuplicatedTexture2DGroup.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter3_DuplicatedTexture2DGroup.3mf",
+      "sha256": "9418580bbcfb1cee53f30815d074b5f1a48a74054850242a1153340caa0435f9",
+      "size": 15763,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter3_MissingTexId.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter3_MissingTexId.3mf",
+      "sha256": "731c7fe84a3491ce7a8bb7bde1c5a3dfb0a3143743cbc7c8397c22853f411293",
+      "size": 15753,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter4a_DuplicatedCompositeMaterials.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter4a_DuplicatedCompositeMaterials.3mf",
+      "sha256": "966d24f59528384577692779791659f1d2f14b616723b50da1c93ebc12d83545",
+      "size": 15761,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter4b_MatId_IsNotBaseMaterials.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter4b_MatId_IsNotBaseMaterials.3mf",
+      "sha256": "a12a30757be9b3d767ec804d19357c2d4b567616daccf75ec49ee5a4207dc619",
+      "size": 15758,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter4c_MissingMatidMatIndices.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter4c_MissingMatidMatIndices.3mf",
+      "sha256": "3cff5eda95a9e2343e6d0316da17789bcf535c6c6af4bff7b4bee8bca1885518",
+      "size": 15748,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter4d_MissingMatIndices.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter4d_MissingMatIndices.3mf",
+      "sha256": "db0877c674e26f44a54aa26b559cd44e09d827fd2737d8a62790bc8888a7743e",
+      "size": 15751,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5a_MissingPIDs.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5a_MissingPIDs.3mf",
+      "sha256": "ae57b45c75e85b4650a9acb27764af732eed5fe889ce870358918e78e153fe40",
+      "size": 15751,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5b_MultipleReferenceToBaseAndCompositeMatterials.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5b_MultipleReferenceToBaseAndCompositeMatterials.3mf",
+      "sha256": "15d2fed7af4181fb04e2e7cee54e5d05bdb99cf70cba2362eeb32fb01fcebb4a",
+      "size": 15765,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5b_MultipleReferenceToBaseMatterials.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5b_MultipleReferenceToBaseMatterials.3mf",
+      "sha256": "c5a662c311e0344b2e2bb512d61704fae7b720a6a54e444ac0445aea669c265e",
+      "size": 15764,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5b_ReferToAnotherMultiProperties.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5b_ReferToAnotherMultiProperties.3mf",
+      "sha256": "63e4a0f7bf33e10dc9dbc564c209567e3ee131da2a6a22bc21634c47507aec5f",
+      "size": 15771,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5c_MultipleReferenceToColorgroup.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5c_MultipleReferenceToColorgroup.3mf",
+      "sha256": "352f92106d6bd1251caef30c5354623d6f64906d558cb20d6d5df5215c4d4d82",
+      "size": 15764,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5d_MultipleReferenceToCompositeMaterials.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5d_MultipleReferenceToCompositeMaterials.3mf",
+      "sha256": "d5a138bee60bc6aef7edf8cb15a5c719f62af51e675af819a66ea7782559c93d",
+      "size": 15765,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5e_ReferenceToMultiProperties.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter5e_ReferenceToMultiProperties.3mf",
+      "sha256": "f22b9ef59061057e392468f12b2eebf2fed06774857b020498bb2d785b4b2666",
+      "size": 15774,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter6_2DTexture_InvalidContentType.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter6_2DTexture_InvalidContentType.3mf",
+      "sha256": "c5294e1aa8b2fa6248369fcc71e1c5f721720e90869a34ac64d6371b76ffcf35",
+      "size": 15752,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter6_2DTexture_MissingPath.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_3MF100_Extension_Chapter6_2DTexture_MissingPath.3mf",
+      "sha256": "8ea12d0dde41bde132950a72ddd1d25bde96c580db34c0bdd1954c87fb62929b",
+      "size": 15745,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.1.1a_PartsRelationships_NonExist3DModelPart.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.1.1a_PartsRelationships_NonExist3DModelPart.3mf",
+      "sha256": "d2c54c09fb71aaf080adb4707c230181faab793897edbb8ecb61f379a2e4d0e5",
+      "size": 12804,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.1.1b_PartsRelationships_LinkToExternal.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.1.1b_PartsRelationships_LinkToExternal.3mf",
+      "sha256": "f3a9600d57a104533cfcc3402c03852de3e59923d52b3125f29ee05c5ce72043",
+      "size": 12900,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.1.2_PartsRelationships_MoreThanOne3DModelPart.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.1.2_PartsRelationships_MoreThanOne3DModelPart.3mf",
+      "sha256": "27d835ee05b59f4a504c7c0a2ea5a02c27ecd6b8574b2864a6dd71a879a70bec",
+      "size": 13872,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.1.3_PartsRelationships_NonExistThumbnailPart.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.1.3_PartsRelationships_NonExistThumbnailPart.3mf",
+      "sha256": "5e467032aa5d0c92ff257ef11447905e3e1a9bca6de30389d18c68370cc5016a",
+      "size": 12890,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.1.4_PartsRelationships_MoreThanOnePrintTicket.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.1.4_PartsRelationships_MoreThanOnePrintTicket.3mf",
+      "sha256": "4e076ec7e9c213971c99ef2dff4be28f16a2b0f5f88a2a23c54bef62098d6fa5",
+      "size": 13333,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.3.2a_NonUTF_Encoding.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.3.2a_NonUTF_Encoding.3mf",
+      "sha256": "e0eb79d7e514e27d2f0d0dc7d70d88632c3376532daa2efddb37cfd27a8b98c2",
+      "size": 1655,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.3.2b_DataTypeDefinitionInXMLMarkup.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.3.2b_DataTypeDefinitionInXMLMarkup.3mf",
+      "sha256": "11dd655a377c883b64717488354c72978ddd8b11a9b45a165378c382c829d735",
+      "size": 12885,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.3.2c_UndefinedNameSpaceInXDS.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.3.2c_UndefinedNameSpaceInXDS.3mf",
+      "sha256": "8949318d913b07f8c15c0ce1f2e7a73ab448909b503f4af2a40039f13dc878c2",
+      "size": 12874,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.3.2d_UndefinedXMLXSIInXSDSchema.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.3.2d_UndefinedXMLXSIInXSDSchema.3mf",
+      "sha256": "e5084e30c89b82e824e27ef40d449498da177a0511916ca801cd54767355c097",
+      "size": 12913,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.3.4_WhiteSpace.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter2.3.4_WhiteSpace.3mf",
+      "sha256": "b8bf40463df5a188dfb4208c99a9ed94657ea451cf7b4eb5094462a722df7aa7",
+      "size": 12864,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4.1a_MissingMetadataName.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4.1a_MissingMetadataName.3mf",
+      "sha256": "0b282fa672b62206f19e491a0b29371a7209080854cd14ba7d7ab05d08f06b03",
+      "size": 12850,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4.1b_DuplicatedMetadataName.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4.1b_DuplicatedMetadataName.3mf",
+      "sha256": "63a4f31762243567a2f7c227e421ea507fc35ba829a5f74fd7cfdba9241ec294",
+      "size": 12847,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4.3.1a_NotMatchingObjectIdInBuildItem.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4.3.1a_NotMatchingObjectIdInBuildItem.3mf",
+      "sha256": "6079a647f7132942cd0f0103ad5155d065a34eac3136a86c7f3dc8ddde68f04c",
+      "size": 12851,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4.3.1b_BuildItemReferToObjectOfTypeOther.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4.3.1b_BuildItemReferToObjectOfTypeOther.3mf",
+      "sha256": "9a98dcf3acc91a62522fa253b491752a6a185328cf3f7f6706354f96ec07df70",
+      "size": 15763,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4a_MoreThanOneModel.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4a_MoreThanOneModel.3mf",
+      "sha256": "804f9f81a43d99f4732f277b28df3236b8d1fc62e93a28262ae1151d06c26fb8",
+      "size": 12899,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4b_MissingBuildElement.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4b_MissingBuildElement.3mf",
+      "sha256": "73d081ac95f92a642adeecb6a1b2e0d29e770c3785df7dd9d97da28af5c0075b",
+      "size": 12760,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4c_MissingResourceElement.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter3.4c_MissingResourceElement.3mf",
+      "sha256": "843668a8f6cf383708110c87e84232d00430246338e816dc86c760a90e189574",
+      "size": 12411,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter4a_InvalidObjectType.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter4a_InvalidObjectType.3mf",
+      "sha256": "9743b9fc961f1ac66034041ac5e361c1d3552519e6bb37d2da737ddd395046b5",
+      "size": 15766,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter4b_PID_IsNotSpecified.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter4b_PID_IsNotSpecified.3mf",
+      "sha256": "9d0d88532e27ccb925196013a1de351b3a1cf28c79b51d7ecacc1c33149060ce",
+      "size": 15778,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter5a_DuplicatedBaseMaterials.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTFAIL/MUSTFAIL_Chapter5a_DuplicatedBaseMaterials.3mf",
+      "sha256": "a3ac8fb2bb7a8dea4f53fbb634119d3cf83272ee855ee31572c999e3b947eafd",
+      "size": 15760,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter2.1_PartsRelationships.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter2.1_PartsRelationships.3mf",
+      "sha256": "e16d5eaf45b3c178575e2d92ec9bc81176f3dd2ca0ecf41368db9670a6623cc7",
+      "size": 12862,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter2.2_PartNaming.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter2.2_PartNaming.3mf",
+      "sha256": "bf20f873b14be5d988978341e7fda77a116ff1893c5f41f1c51d37e837e2e39d",
+      "size": 12869,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter2.3a_IgnorableMarkup.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter2.3a_IgnorableMarkup.3mf",
+      "sha256": "80207083fc6c7b1d97793803fd050fb56cad2420246cc318128fd80180a6bb53",
+      "size": 1580,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter3.2b_UnitsMeasurementMM.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter3.2b_UnitsMeasurementMM.3mf",
+      "sha256": "70125b995328ad0ff90f14a31fab3b63c6db49abbfb31ab4e6a79e154af92723",
+      "size": 1410,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter3.2c_MultipleItemsTransform.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter3.2c_MultipleItemsTransform.3mf",
+      "sha256": "535ca50b2de4659a6d696e03e18ee3d7646265655e0a3f0607734582421afce7",
+      "size": 1570,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter3.4.1c_MustIgnoreUndefinedMetadataName.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter3.4.1c_MustIgnoreUndefinedMetadataName.3mf",
+      "sha256": "a2fa11225ab7bd1cd9d22422f2519fe6b2300905706c850089c758a168131092",
+      "size": 12866,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter3.4.2_MetaData_Resources_Build.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter3.4.2_MetaData_Resources_Build.3mf",
+      "sha256": "71325b5c6c6352628319d76b7417c99fbcc5fe74fe92ff7d9875560d8a72a010",
+      "size": 15617,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter3.4.3a_MustNotOutputNonReferencedObjects.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter3.4.3a_MustNotOutputNonReferencedObjects.3mf",
+      "sha256": "5e44c36ea13fe6f579738caac3c5b82617369604c07141e223272f9abc9dbf8e",
+      "size": 15752,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter4.1_ExplicitSupport.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter4.1_ExplicitSupport.3mf",
+      "sha256": "89182c45f611fd63a6adbc15175ed1a9495ee06414373d9c4cb853bf1dabb9f3",
+      "size": 5510,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter4.2_Components.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter4.2_Components.3mf",
+      "sha256": "edafa758aed598d9a960dc48b04971be6861e017d41bd5fafe81b609c731b2c7",
+      "size": 1597,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter5.1a_MaterialResources_CompositeAndMultiProperties.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter5.1a_MaterialResources_CompositeAndMultiProperties.3mf",
+      "sha256": "9c9bcf83f2be06cf089bd0e84a55fe35a9b40224a568ce37f4d763e9a1970504",
+      "size": 15615,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter5.1b_MaterialResources_MultiObjects_CompositeAndMultiProperties.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter5.1b_MaterialResources_MultiObjects_CompositeAndMultiProperties.3mf",
+      "sha256": "c3a7799a75e02c2b559f3ef60f75536d0f20cdaca3e808869721b4e2b3d0b8a1",
+      "size": 15758,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter5.1c_MaterialResources_sRGB_RGB_Colors.3mf",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/MUSTPASS/MUSTPASS_Chapter5.1c_MaterialResources_sRGB_RGB_Colors.3mf",
+      "sha256": "f33c92890c5aa5a55246c826b9dd5e1a13a9c6c140e7783730dae1a08ec2e87f",
+      "size": 10888,
+      "format": {
+        "kind": "3mf",
+        "version": null,
+        "firstEntry": "3D/"
+      }
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/core.xsd",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/core.xsd",
+      "sha256": "b95ce8204eda99eec2068d70cdf76953b94157312e43259ccf4b1b27a381784c",
+      "size": 8626
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/runverify.ps1",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/runverify.ps1",
+      "sha256": "2d07b26d074458e4699c79676de7eb7b0483faaf663948cf57635473151129f6",
+      "size": 1266
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/test",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/test",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1
+    },
+    {
+      "path": "validation tests/_archive/3mf-Verify/xml.xsd",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/_archive/3mf-Verify/xml.xsd",
+      "sha256": "61960fb3131e38022caad5360e2f33a3382578ab3c80cd58bd74320ede61b20c",
+      "size": 8836
+    },
+    {
+      "path": "validation tests/beamlattice/MustFail/empty.txt",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/beamlattice/MustFail/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "validation tests/beamlattice/MustPass/empty.txt",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/beamlattice/MustPass/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "validation tests/core/MustFail/empty.txt",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/core/MustFail/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "validation tests/core/MustPass/empty.txt",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/core/MustPass/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "validation tests/material/MustFail/empty.txt",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/material/MustFail/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "validation tests/material/MustPass/empty.txt",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/material/MustPass/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "validation tests/production/MustFail/empty.txt",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/production/MustFail/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "validation tests/production/MustPass/empty.txt",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/production/MustPass/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "validation tests/slice/MustFail/empty.txt",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/slice/MustFail/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "validation tests/slice/MustPass/empty.txt",
+      "sourceId": "3mf-consortium-samples",
+      "upstreamPath": "validation tests/slice/MustPass/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "totals": {
+    "files": 122,
+    "bytes": 17916214
+  }
+}

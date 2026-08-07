@@ -3247,7 +3247,13 @@
       "sourceId": "gltf-avocado",
       "upstreamPath": "Models/Avocado/glTF-Draco/Avocado.bin",
       "sha256": "535123a66a19c0427298d0bbe81b0ba5efa6d8155b7c659e11c23d8c6d6fe2c6",
-      "size": 8724
+      "size": 8724,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
     },
     {
       "path": "Avocado/glTF-Draco/Avocado.gltf",
@@ -3314,7 +3320,13 @@
       "sourceId": "gltf-barramundifish",
       "upstreamPath": "Models/BarramundiFish/glTF-Draco/BarramundiFish.bin",
       "sha256": "62dc36deb0f58f0f448a9c16376bb6f1f04665e127aa757bf845d4c600b0258a",
-      "size": 43300
+      "size": 43300,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
     },
     {
       "path": "BarramundiFish/glTF-Draco/BarramundiFish.gltf",
@@ -3356,7 +3368,13 @@
       "sourceId": "gltf-boombox",
       "upstreamPath": "Models/BoomBox/glTF-Draco/BoomBox.bin",
       "sha256": "a619055105a510746d14a599074373ab38fb3c0a04486465f662ae79114f536e",
-      "size": 71144
+      "size": 71144,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
     },
     {
       "path": "BoomBox/glTF-Draco/BoomBox.gltf",
@@ -3434,7 +3452,13 @@
       "sourceId": "gltf-box",
       "upstreamPath": "Models/Box/glTF-Draco/Box.bin",
       "sha256": "610dc6e08aba7c2720c8e4ec0578efd91cf2d88a5e638dab7811a22f0235bf2e",
-      "size": 120
+      "size": 120,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
     },
     {
       "path": "Box/glTF-Draco/Box.gltf",
@@ -4827,7 +4851,13 @@
       "sourceId": "gltf-corset",
       "upstreamPath": "Models/Corset/glTF-Draco/Corset.bin",
       "sha256": "8a19edcd9208a96865cf6f61d7f9257f461ecbb50834b9a8871e485f25374698",
-      "size": 230116
+      "size": 230116,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
     },
     {
       "path": "Corset/glTF-Draco/Corset.gltf",
@@ -5166,7 +5196,13 @@
       "sourceId": "gltf-duck",
       "upstreamPath": "Models/Duck/glTF-Draco/Duck.bin",
       "sha256": "f59b26a8caf37e4f8a2fac83407bc4f2a78fe76b24f943ca48f3add34462744e",
-      "size": 10368
+      "size": 10368,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
     },
     {
       "path": "Duck/glTF-Draco/Duck.gltf",
@@ -5616,7 +5652,13 @@
       "sourceId": "gltf-lantern",
       "upstreamPath": "Models/Lantern/glTF-Draco/Lantern.bin",
       "sha256": "d1fd7356f178e69480fbec43dfcf029f5e94c4d9d1db124886391fe3279c138b",
-      "size": 80968
+      "size": 80968,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
     },
     {
       "path": "Lantern/glTF-Draco/Lantern.gltf",
@@ -7342,7 +7384,13 @@
       "sourceId": "gltf-sunglasseskhronos",
       "upstreamPath": "Models/SunglassesKhronos/glTF-Draco/SunglassesKhronos.data.bin",
       "sha256": "13ecf40786d7a7365494320646cf0652e878f0464bb13fcb0a7420fe057b4e0e",
-      "size": 32160
+      "size": 32160,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
     },
     {
       "path": "SunglassesKhronos/glTF-Draco/SunglassesKhronos.gltf",
@@ -7929,7 +7977,13 @@
       "sourceId": "gltf-waterbottle",
       "upstreamPath": "Models/WaterBottle/glTF-Draco/WaterBottle.bin",
       "sha256": "eb9fda9f5bf32e20f53b107646cb57be32bb2fbefd2f18abf39ae134743b3a53",
-      "size": 49580
+      "size": 49580,
+      "format": {
+        "kind": "drc",
+        "version": "2.2",
+        "encoderType": "triangular-mesh",
+        "encodingMethod": "edgebreaker"
+      }
     },
     {
       "path": "WaterBottle/glTF-Draco/WaterBottle.gltf",

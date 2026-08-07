@@ -1,0 +1,54 @@
+# 3mf-fixtures — the 3D Manufacturing Format.
+#
+# Reopened after being declined on alignment ("manufacturing-oriented, so alignment is
+# weaker"), which was the same reasoning the fonts section got wrong. Judged on its own
+# merits it is one of the better-shaped corpora available: BSD-2-Clause, 18 MB, and it
+# arrives with its expectations already sorted.
+#
+# THE EXPECTATION IS THE DIRECTORY, again. `validation tests/` splits into `MustPass` and
+# `MustFail`, the same structural oracle as gltf-generated-fixtures' Positive/Negative
+# split, and the `MustFail` half is the valuable one: a producer's own catalogue of the ways
+# its format gets written wrong.
+#
+# Where the volume actually is, since the layout is misleading: the five current
+# specification areas — `core`, `material`, `beamlattice`, `production`, `slice` — hold one
+# MustPass and one MustFail each, ten files in total. The remaining 51 sit under
+# `_archive/3mf-Verify/MUSTPASS` and `MUSTFAIL`. The archive is the corpus; the five areas
+# are a newer, barely-populated structure beside it. Both are taken.
+#
+# AND IT IS A ZIP, which is the reason it earns a place independent of whether anything ever
+# reads 3MF. A 3MF file is an OPC package: a zip with a required `[Content_Types].xml`, a
+# `_rels` directory, and the model under `3D/`. USDZ is a zip with different constraints;
+# `.zae` is a zipped Collada. Three formats in this repository are now "a zip with a
+# convention", and a decoder that reaches for the extension instead of the first entry gets
+# all three wrong. The detector reads the first entry's name for exactly this reason.
+
+[pack]
+name = "3mf-fixtures"
+kind = "conformance"
+summary = "3MF manufacturing format — the consortium's own MustPass/MustFail validation suite across five specification areas."
+
+[[source]]
+id = "3mf-consortium-samples"
+kind = "upstream"
+repo = "3MFConsortium/3mf-samples"
+ref = "master"
+include = [
+  "examples/**",
+  "validation tests/**",
+  "README.md",
+]
+dest = ""
+exclude_paths = [
+  # A vendored Windows binary, which is not a fixture and not something to redistribute
+  # without a second thought about what it is.
+  "verifier/**",
+]
+
+[source.license]
+declared = "BSD-2-Clause"
+declared_scope = "repository-root"
+declared_from = "LICENSE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "BSD 2-Clause, Copyright (c) 3MF Consortium. The samples and validation suite are the consortium's own conformance material for the specification it publishes."

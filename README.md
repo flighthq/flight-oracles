@@ -42,8 +42,10 @@ already exist was not worth declining.
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
 | `mesh-legacy-fixtures` | 195 | 64.0 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
 | `atf-fixtures` | 14 | 8.1 MB | Adobe Texture Format — undeclared, build input only |
-| `media-container-fixtures` | 37 | 10.6 MB | MP4/WebM/Ogg/WAV/MP3 — same payload muxed both ways |
+| `media-container-fixtures` | 53 | 195.7 MB | MP4/WebM/Ogg/WAV/MP3 muxed both ways + the 8 Matroska conformance files |
 | `compression-fixtures` | 98 | 19.4 MB | **Oracles** — brotli/zstd/snappy/zlib, input paired with output |
+| `usd-fixtures` | 798 | 68.7 MB | USD in all three encodings — ASCII, crate, USDZ — plus MaterialX |
+| `3mf-fixtures` | 122 | 17.9 MB | **Conformance** — 3MF MustPass/MustFail across five specification areas |
 | `psd-fixtures` | 320 | 51.3 MB | Photoshop PSD **and PSB** — one document per adjustment layer and blend mode |
 | `draco-fixtures` | 98 | 8.8 MB | Draco geometry — **6 bitstream versions**, both encoders, beside the source meshes |
 | `text-rendering-fixtures` | 186 | 24.3 MB | **Oracles** — 744 expected shaping results as vector outlines |
@@ -62,7 +64,7 @@ already exist was not worth declining.
 | `svg-path-fixtures` | 672 | 0.5 MB | **Oracles** — SVG path grammar, 371 expected-output pairs |
 | `xml-conformance-fixtures` | 1,184 | 2.6 MB | **Oracles** — XML with expected diagnostics |
 
-36 packs, 28,947 files. Several packs carry expectations as well as inputs:
+38 packs, 29,883 files. Several packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place), `gltf-generated-fixtures` (positive/negative conformance split),
 `svg-path-fixtures` and `xml-conformance-fixtures` (expected output and expected

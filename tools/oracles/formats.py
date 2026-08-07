@@ -1350,6 +1350,41 @@ def _gzip(data: bytes):
     return info
 
 
+def _usd(data: bytes, name: str):
+    """USD, whose extension deliberately does not tell you the encoding.
+
+    `.usda` is ASCII and `.usdc` is crate, but `.usd` is *either* — that ambiguity is in
+    the specification rather than an accident of the wild, so content is the only way to
+    answer it. The zipped form is handled by `_zip`, which reads the first entry.
+    """
+    if data.startswith(b"PXR-USDC"):
+        info = FormatInfo(kind="usd", version=None, encoding="crate")
+        if len(data) >= 16:
+            info["version"] = f"{data[8]}.{data[9]}.{data[10]}"
+        return info
+    head = data[:64].lstrip()
+    if head.startswith(b"#usda"):
+        version = head[5:16].split(b"\n")[0].strip().decode("latin-1", "replace")
+        return FormatInfo(kind="usd", version=version or None, encoding="ascii")
+    if name.lower().endswith((".usd", ".usda", ".usdc")):
+        return FormatInfo(kind="usd", version=None)
+    return None
+
+
+def _materialx(data: bytes, name: str):
+    if not name.lower().endswith(".mtlx"):
+        return None
+    match = re.search(rb"<materialx\b([^>]*)>", data[:2048], re.I)
+    if match is None:
+        return None
+    attrs = dict(_ATTR.findall(match.group(1)))
+    info = FormatInfo(kind="mtlx", version=None)
+    version = attrs.get(b"version")
+    if version:
+        info["version"] = version.decode("latin-1", "replace")
+    return info
+
+
 def _draco(data: bytes):
     """Draco: a magic, a version, and — the useful part — which encoder produced it.
 
@@ -1616,10 +1651,23 @@ def _zip(data: bytes):
     lowered = first.lower()
     if lowered.endswith(".dae") or lowered == "manifest.xml":
         info["kind"] = "zae"                            # zipped COLLADA
-    elif lowered.startswith("3d/") or lowered == "[content_types].xml":
-        info["kind"] = "3mf"
-    elif lowered.endswith(".usd") or lowered.endswith(".usdc") or lowered.endswith(".usda"):
+    elif lowered.endswith((".usd", ".usdc", ".usda")):
         info["kind"] = "usdz"
+    elif lowered in ("[content_types].xml", "_rels/.rels") or lowered.startswith("3d/"):
+        # An OPC package — 3MF, but so is every .docx. Which one needs the part names, and
+        # those sit in plain text in the zip structure, so they can be found without
+        # inflating anything. Keying on the FIRST entry alone was not enough: 27 of the
+        # consortium's own samples lead with `_rels/.rels` rather than the model.
+        #
+        # Both ends are scanned, and the tail is the one that matters. Local file headers
+        # are scattered through the archive with each part's data between them, so in a
+        # sliced example the model part sits well past any reasonable head window — but the
+        # CENTRAL DIRECTORY at the end lists every name contiguously.
+        window = data[:65536] + data[-65536:]
+        if b"3D/3dmodel.model" in window:
+            info["kind"] = "3mf"
+        else:
+            info["kind"] = "opc"
     return info
 
 
@@ -1917,7 +1965,7 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
         if info is not None:
             return info
     for probe in (_ttx, _pcx, _tga, _webvtt, _mpeg_audio, _bom_text, _xml_dialect, _nff,
-                  _brotli,
+                  _brotli, _usd, _materialx,
                   _dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
                   _ldtk, _effekseer, _bmfont_json, _frames_meta_sheet, _bvh,
                   _starling_atlas, _unity_yaml, _svg, _xml,

@@ -578,13 +578,13 @@ reopened accordingly: both are small and cleanly licensed, which is the whole te
 
 | Format | Domain | Status |
 | --- | --- | --- |
-| **USD / USDZ** | scene graph | The strategic 3D format. `OpenUSD` is 282 MB and NOASSERTION at the repo level; a usable slice needs picking, not a blanket glob. |
+| ~~**USD / USDZ**~~ | scene graph | **Closed** — see `usd-fixtures`. The obstacle was the wrong repository: `OpenUSD` is the implementation, while `usd-wg/assets` is the working group's asset repository under Apache-2.0, already curated. |
 | **COLLADA CTS** | scene graph | Khronos's full conformance suite (176 MB) would deepen Collada well past assimp's 40 files. NOASSERTION — worth resolving. |
 | **Spriter** (`.scml`) | 2D bone | A direct peer of Spine and DragonBones, open XML. No maintained corpus surfaced under an obvious name. |
 | **Live2D Cubism** | 2D bone | Very widely used, but the runtime licence is restrictive and sample models are distributed under a separate agreement. Would need the layered treatment at best. |
 | **Ogmo Editor 3** | tilemap | MIT, small. **Reopened** — was gated on 2D level support widening, which is not a reason to withhold a small MIT corpus. |
 | **MSDF atlas** | text | `msdf-atlas-gen` (MIT) emits a JSON atlas that is becoming the default for GPU text. Aligned with `glyphatlas`. |
-| **3MF** | mesh | `3mf-samples` is BSD-2-Clause and clean. **Reopened** — "manufacturing-oriented" is an alignment argument, and it is a zip-plus-XML container, which is a decoder shape worth having regardless. |
+| ~~**3MF**~~ | mesh | **Closed** — see `3mf-fixtures`. |
 | **Box2D RUBE / physics** | physics | No dominant open serialisation exists. Note that Spine and DragonBones both now carry physics constraints, so physics may reach flight through formats it already reads rather than a new one. |
 
 ## A parser named for a format its namesake does not write

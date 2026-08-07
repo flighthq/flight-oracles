@@ -40,9 +40,236 @@
         "onwardUse": "unrestricted"
       },
       "licenseSnapshot": "licenses/wpt-webaudio@5cf01e01ad9e.txt"
+    },
+    {
+      "id": "matroska-test-files",
+      "kind": "upstream",
+      "repo": "ietf-wg-cellar/matroska-test-files",
+      "ref": "master",
+      "commit": "e6965e5ca666322ed93e2748a10a4f132309e005",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "readme.md",
+        "covers": "The readme declares the source material under Creative Commons Attribution: Big Buck Bunny, (c) copyright 2008 Blender Foundation / www.bigbuckbunny.org, and Elephants Dream, (c) copyright 2006 Blender Foundation / Netherlands Media Art Institute / www.elephantsdream.org. Attribution is required wherever these appear, which NOTICE.md carries.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/matroska-test-files@e6965e5ca666.txt"
     }
   ],
   "files": [
+    {
+      "path": "matroska/test1-tag.xml",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test1-tag.xml",
+      "sha256": "4c55345886074009b385585e5db843de09b221f930ed0f8cd1c05734655fa86b",
+      "size": 565,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "ISO-8859-1"
+      }
+    },
+    {
+      "path": "matroska/test1.mkv",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test1.mkv",
+      "sha256": "0996a309ff2095910b9d30d5253b044d637154297ddf7d0bda7f3adedf5addc1",
+      "size": 23339337,
+      "format": {
+        "kind": "mkv",
+        "version": "2",
+        "docType": "matroska",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "matroska/test2-tag.xml",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test2-tag.xml",
+      "sha256": "ba33b17491bad4d4ac673227a82a94d709f8e4b9d72f131c4940f17c136cdf26",
+      "size": 599,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "ISO-8859-1"
+      }
+    },
+    {
+      "path": "matroska/test2.mkv",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test2.mkv",
+      "sha256": "5b53d306e56f9bda6e80c3fbd9f3ccd20cc885770449d1fc0b5bec35c71d61e2",
+      "size": 21142764,
+      "format": {
+        "kind": "mkv",
+        "version": "2",
+        "docType": "matroska",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "matroska/test3-tag.xml",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test3-tag.xml",
+      "sha256": "f29e63bd95747d8bb24a0d97ca1f998eecd7bbb76c710271e549ba35882685c2",
+      "size": 577,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "ISO-8859-1"
+      }
+    },
+    {
+      "path": "matroska/test3.mkv",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test3.mkv",
+      "sha256": "1722b0d93a6ef1a14dd513bd031cd5901c233b45aa3e3c87be0b0d7348d7d1b5",
+      "size": 21061472,
+      "format": {
+        "kind": "mkv",
+        "version": "2",
+        "docType": "matroska",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "matroska/test4-tag.xml",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test4-tag.xml",
+      "sha256": "e5384ad330b857b4d0673109a9820f46b80d10b1272cadd212574e26c5dca2d2",
+      "size": 567,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "ISO-8859-1"
+      }
+    },
+    {
+      "path": "matroska/test4.mkv",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test4.mkv",
+      "sha256": "43df750a2a01a37949791b717051b41522081a266b71d113be4b713063843699",
+      "size": 21313902,
+      "format": {
+        "kind": "mkv",
+        "version": "1",
+        "docType": "matroska",
+        "docTypeVersion": 1,
+        "docTypeReadVersion": 1
+      }
+    },
+    {
+      "path": "matroska/test5-tag.xml",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test5-tag.xml",
+      "sha256": "c73ea61573ecbb74dda0178ef975b55510e3d274b9391f9130530283453a3f34",
+      "size": 577,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "ISO-8859-1"
+      }
+    },
+    {
+      "path": "matroska/test5.mkv",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test5.mkv",
+      "sha256": "92acdc33bb0b5d7a4d9b0d6ca792230a78c786a30179dc9999cee41c28642842",
+      "size": 31762747,
+      "format": {
+        "kind": "mkv",
+        "version": "2",
+        "ebmlVersion": 1,
+        "docType": "matroska",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "matroska/test6-tag.xml",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test6-tag.xml",
+      "sha256": "209ff58a50160e70f8503f486ba5715bda55678118ff29c7a972dcddaa8c1f6b",
+      "size": 597,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "ISO-8859-1"
+      }
+    },
+    {
+      "path": "matroska/test6.mkv",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test6.mkv",
+      "sha256": "7cad84b434116e023d340dd584ac833b93f03fb1bd7ea2727fa45de50af0abb9",
+      "size": 23343928,
+      "format": {
+        "kind": "mkv",
+        "version": "2",
+        "docType": "matroska",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "matroska/test7-tag.xml",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test7-tag.xml",
+      "sha256": "7b5fb7706b2731601357fe8617cd9cd4a636a9212e490105fe9afcbe7f8baa86",
+      "size": 654,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "ISO-8859-1"
+      }
+    },
+    {
+      "path": "matroska/test7.mkv",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test7.mkv",
+      "sha256": "95b21c92ad5a4fe00914ff5009e2a64f12fd4c5fb9cb1c3c888ab50bf0ffe483",
+      "size": 21848518,
+      "format": {
+        "kind": "mkv",
+        "version": "2",
+        "docType": "matroska",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
+    {
+      "path": "matroska/test8-tag.xml",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test8-tag.xml",
+      "sha256": "604684d3ccde5ad3afe667766ca2ae8ec16c70b70ad6e9068e54cd6c4510d87c",
+      "size": 572,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "ISO-8859-1"
+      }
+    },
+    {
+      "path": "matroska/test8.mkv",
+      "sourceId": "matroska-test-files",
+      "upstreamPath": "test_files/test8.mkv",
+      "sha256": "9dddcd1550b814dae44d62e2b9f27c0eca31d5e190df2220cbf7492e3d6c63da",
+      "size": 21224737,
+      "format": {
+        "kind": "mkv",
+        "version": "2",
+        "docType": "matroska",
+        "docTypeVersion": 2,
+        "docTypeReadVersion": 2
+      }
+    },
     {
       "path": "wpt-webaudio/4ch-440.wav",
       "sourceId": "wpt-webaudio",
@@ -599,7 +826,7 @@
     }
   ],
   "totals": {
-    "files": 37,
-    "bytes": 10644200
+    "files": 53,
+    "bytes": 195686313
   }
 }

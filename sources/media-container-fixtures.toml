@@ -89,3 +89,44 @@ declared_from = "LICENSE.md"
 commercial_use = true
 onward_use = "unrestricted"
 covers = "As above — web-platform-tests' LICENSE.md, 3-Clause BSD."
+
+# ---------------------------------------------------------------------------------------
+# Matroska, which wpt barely carries — the media directory is MP4 and WebM, and WebM is a
+# *profile* of Matroska rather than the whole of it. These eight files are the format's own
+# conformance suite, maintained by the IETF working group that standardises it, and each one
+# isolates a distinct thing a demuxer gets wrong:
+#
+#   test1  the baseline everything else is a variation on
+#   test2  a non-default TimecodeScale — the value nobody overrides until someone does
+#   test3  header stripping, where the codec's own headers are removed and reconstructed
+#   test4  a LIVE stream: unknown-length segment and cluster, which is the case a demuxer
+#          that seeks to the cues cannot handle at all
+#   test5  multiple audio and subtitle tracks
+#   test6  a different EBML head
+#   test7  extra unknown elements, testing that a reader skips what it does not recognise
+#          rather than failing — the forward-compatibility promise EBML is built on
+#   test8  an audio gap
+#
+# SIZE IS THE COST, stated plainly: 185 MB for eight files, because they are real encodes of
+# Big Buck Bunny and Elephants Dream rather than synthetic clips. Nothing smaller covers
+# unknown-length live segments, and a truncated copy would stop being the case it tests.
+# The `.xml` tag sidecars beside them are Matroska's tagging format, which nothing else here
+# carries.
+[[source]]
+id = "matroska-test-files"
+kind = "upstream"
+repo = "ietf-wg-cellar/matroska-test-files"
+ref = "master"
+fetch = "blobs"
+subtree = "test_files"
+include = ["test_files/**"]
+strip = "test_files/"
+dest = "matroska/"
+
+[source.license]
+declared = "CC-BY-4.0"
+declared_scope = "repository-root"
+declared_from = "readme.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "The readme declares the source material under Creative Commons Attribution: Big Buck Bunny, (c) copyright 2008 Blender Foundation / www.bigbuckbunny.org, and Elephants Dream, (c) copyright 2006 Blender Foundation / Netherlands Media Art Institute / www.elephantsdream.org. Attribution is required wherever these appear, which NOTICE.md carries."
