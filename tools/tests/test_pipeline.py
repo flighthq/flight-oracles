@@ -11,6 +11,7 @@ Run: python3 -m unittest discover -s tools/tests
 from __future__ import annotations
 
 import json
+import struct
 import sys
 import pathlib
 import tarfile
@@ -21,6 +22,67 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from oracles import derive, formats, pack, references, spec  # noqa: E402
+
+
+# --- font builders -----------------------------------------------------------------
+#
+# Fonts are built here rather than checked in, because the properties under test are in
+# the headers — a directory offset, a flag byte, an integer encoding — and a committed
+# binary would prove the detector agrees with one file rather than with the format.
+
+
+def _sfnt(flavor: bytes, tags) -> bytes:
+    """A bare sfnt: flavour, table count, then a 16-byte record per table."""
+    head = flavor + struct.pack(">HHHH", len(tags), 0, 0, 0)
+    return head + b"".join(tag + struct.pack(">III", 0, 0, 0) for tag in tags)
+
+
+def _woff(flavor: bytes, tags, total_sfnt: int = 0) -> bytes:
+    """WOFF 1.0: a 44-byte header, then a 20-byte record per table."""
+    head = (b"wOFF" + flavor + struct.pack(">I", 0)
+            + struct.pack(">HH", len(tags), 0)
+            + struct.pack(">I", total_sfnt)
+            + struct.pack(">HH", 0, 0)
+            + struct.pack(">IIIII", 0, 0, 0, 0, 0))
+    assert len(head) == 44, len(head)
+    return head + b"".join(tag + struct.pack(">IIII", 0, 0, 0, 0) for tag in tags)
+
+
+def _uint_base128(value: int) -> bytes:
+    """The WOFF2 variable-length integer: 7 bits a byte, high bit continues."""
+    out = bytearray([value & 0x7F])
+    value >>= 7
+    while value:
+        out.insert(0, 0x80 | (value & 0x7F))
+        value >>= 7
+    return bytes(out)
+
+
+def _woff2(flavor: bytes, tables) -> bytes:
+    """WOFF2: a 48-byte header, then a variable-length record per table.
+
+    *tables* is a sequence of (tag, transform version) pairs. A transformLength follows
+    origLength exactly when the table is transformed, which for glyf and loca means
+    version 0 and for everything else means version other than 0.
+    """
+    head = (b"wOF2" + flavor + struct.pack(">I", 0)
+            + struct.pack(">HH", len(tables), 0)
+            + struct.pack(">II", 0, 0)
+            + struct.pack(">HH", 0, 0)
+            + struct.pack(">IIIII", 0, 0, 0, 0, 0))
+    assert len(head) == 48, len(head)
+    known = {tag: i for i, tag in enumerate(formats._WOFF2_KNOWN_TAGS)}
+    out = bytearray(head)
+    for tag, version in tables:
+        index = known.get(tag, 0x3F)
+        out.append((version << 6) | index)
+        if index == 0x3F:
+            out += tag
+        out += _uint_base128(64)
+        transformed = (version == 0) if tag in (b"glyf", b"loca") else (version != 0)
+        if transformed:
+            out += _uint_base128(32)
+    return bytes(out)
 
 
 class TestFormats(unittest.TestCase):
@@ -202,8 +264,83 @@ class TestFormats(unittest.TestCase):
         self.assertIsNone(formats.detect(b"\x00\x01\x02\x03nonsense", "mystery.bin"))
 
     def test_truncated_input_does_not_raise(self):
-        for blob in (b"", b"F", b"RIVE", b"FWS", b"\x89PNG\r\n\x1a\n"):
+        for blob in (b"", b"F", b"RIVE", b"FWS", b"\x89PNG\r\n\x1a\n",
+                     b"wOFF", b"wOF2", b"ttcf", b"OTTO"):
             formats.detect(blob, "t.bin")
+
+    def test_sfnt_flavour_and_tables(self):
+        ttf = _sfnt(b"\x00\x01\x00\x00", [b"glyf", b"loca", b"fvar", b"COLR"])
+        info = formats.detect(ttf, "a.ttf")
+        self.assertEqual((info["kind"], info["sfntVersion"]), ("ttf", "truetype"))
+        self.assertEqual((info["outlines"], info["variable"], info["color"]),
+                         ("glyf", True, ["colr"]))
+        otf = formats.detect(_sfnt(b"OTTO", [b"CFF ", b"cmap"]), "a.otf")
+        self.assertEqual((otf["kind"], otf["outlines"]), ("otf", "cff"))
+        self.assertNotIn("variable", otf)
+
+    def test_sfnt_magic_alone_is_not_enough(self):
+        # 'true' is a valid sfnt flavour and also four bytes that turn up in text. Without
+        # a table directory that actually fits, this must decline rather than guess.
+        self.assertIsNone(formats.detect(b"true, and then some prose", "notes.txt"))
+        self.assertIsNone(formats.detect(b"OTTO" + b"\xff\xff" + b"\x00" * 6, "a.otf"))
+
+    def test_woff_reports_the_wrapped_flavour_not_its_own(self):
+        # majorVersion/minorVersion in a WOFF header describe the FONT. WOFF's own version
+        # is its signature, so that is what `version` records.
+        woff = _woff(b"OTTO", [b"CFF ", b"cmap"], total_sfnt=4096)
+        info = formats.detect(woff, "a.woff")
+        self.assertEqual((info["kind"], info["version"]), ("woff", "1.0"))
+        self.assertEqual((info["flavor"], info["outlines"], info["totalSfntSize"]),
+                         ("cff", "cff", 4096))
+
+    def test_woff2_table_directory_is_read_without_brotli(self):
+        # Everything identifying the font sits in the uncompressed prologue after the
+        # 48-byte header. Reading it from the wrong offset does not fail — it yields a
+        # plausible tag list for the wrong tables — so the flavour and the outlines it
+        # reports must agree.
+        woff2 = _woff2(b"\x00\x01\x00\x00", [(b"glyf", 0), (b"loca", 0), (b"fvar", 0)])
+        info = formats.detect(woff2, "a.woff2")
+        self.assertEqual((info["kind"], info["version"], info["flavor"]),
+                         ("woff2", "2.0", "truetype"))
+        self.assertEqual((info["outlines"], info["variable"]), ("glyf", True))
+        self.assertEqual(info["transformed"], ["glyf", "loca"])
+
+    def test_woff2_null_transform_carries_no_transform_length(self):
+        # Version 0 means *transformed* for glyf and loca and *untransformed* for every
+        # other table — the one field in this header where the same value means opposite
+        # things, and where getting it wrong desynchronises every later entry.
+        woff2 = _woff2(b"OTTO", [(b"CFF ", 0), (b"cmap", 0), (b"glyf", 3)])
+        info = formats.detect(woff2, "a.woff2")
+        self.assertEqual(info["outlines"], "cff")
+        self.assertNotIn("transformed", info)
+
+    def test_ttc_reports_collection_membership(self):
+        member = _sfnt(b"\x00\x01\x00\x00", [b"glyf", b"cmap"])
+        head = b"ttcf" + struct.pack(">HHI", 1, 0, 2)
+        offsets = struct.pack(">II", 12 + 8, 12 + 8 + len(member))
+        info = formats.detect(head + offsets + member + member, "a.ttc")
+        self.assertEqual((info["kind"], info["version"], info["numFonts"]),
+                         ("ttc", "1.0", 2))
+        self.assertEqual(info["outlines"], "glyf")
+
+    def test_content_beats_extension_for_fonts(self):
+        # OTS's corpus carries collections named .ttf on purpose. The extension is the
+        # thing being tested, so it cannot be the thing we trust.
+        member = _sfnt(b"\x00\x01\x00\x00", [b"glyf"])
+        blob = b"ttcf" + struct.pack(">HHI", 1, 0, 1) + struct.pack(">I", 16) + member
+        self.assertEqual(formats.detect(blob, "deceptive.ttf")["kind"], "ttc")
+
+    def test_ttx_is_identified_as_more_than_generic_xml(self):
+        doc = (b'<?xml version="1.0" encoding="UTF-8"?>\n'
+               b'<ttFont sfntVersion="\\x00\\x01\\x00\\x00" ttLibVersion="4.41">\n'
+               b"  <GlyphOrder>\n  </GlyphOrder>\n"
+               b"  <head>\n  </head>\n  <glyf>\n  </glyf>\n  <OS_2>\n  </OS_2>\n"
+               b"  <cvt_>\n  </cvt_>\n</ttFont>\n")
+        info = formats.detect(doc, "a.ttx")
+        self.assertEqual((info["kind"], info["ttLibVersion"]), ("ttx", "4.41"))
+        self.assertEqual(info["sfntVersion"], "truetype")
+        # GlyphOrder is fontTools bookkeeping, not a table: head, glyf, OS/2, cvt .
+        self.assertEqual((info["numTables"], info["outlines"]), (4, "glyf"))
 
 
 class TestSpecValidation(unittest.TestCase):

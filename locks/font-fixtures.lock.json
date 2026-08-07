@@ -1,0 +1,4086 @@
+{
+  "pack": {
+    "name": "font-fixtures",
+    "kind": "fixtures",
+    "summary": "Real TTF, OTF, TTC, WOFF and WOFF2 binaries \u2014 the same faces in every wrapper, so a decoder can be checked against the sfnt each wrapper was built from."
+  },
+  "sources": [
+    {
+      "id": "adobe-source-sans",
+      "kind": "upstream",
+      "repo": "adobe-fonts/source-sans",
+      "ref": "release",
+      "commit": "87b37a2daaed80fcb8e8ccb0085c4d72ddade12e",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "OFL-1.1",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE.md",
+        "covers": "SIL Open Font License 1.1, Copyright 2010-2023 Adobe, with Reserved Font Name 'Source'. Permits use, study, modification and redistribution, including with software, and permits sale as part of a larger package. Two conditions shape how it may travel: the fonts may not be sold on their own, and a modified version may not carry the reserved name.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/adobe-source-sans@87b37a2daaed.txt"
+    },
+    {
+      "id": "jetbrains-mono",
+      "kind": "upstream",
+      "repo": "JetBrains/JetBrainsMono",
+      "ref": "master",
+      "commit": "19371302b95d218af43299bce79ddbddd0bc364d",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "OFL-1.1",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "OFL.txt",
+        "covers": "SIL Open Font License 1.1, Copyright 2020 The JetBrains Mono Project Authors, with Reserved Font Name 'JetBrains Mono'. Same terms as Adobe's: redistributable and sellable with software, not sellable alone, reserved name not reusable.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/jetbrains-mono@19371302b95d.txt"
+    },
+    {
+      "id": "fontations-test-data",
+      "kind": "upstream",
+      "repo": "googlefonts/fontations",
+      "ref": "main",
+      "commit": "bf31399aa1abace327272a76cbe705ec5afddf95",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "Apache-2.0",
+        "declaredScope": "repository-root",
+        "commercialUse": true,
+        "redistributable": true,
+        "declaredFrom": "LICENSE-APACHE",
+        "covers": "googlefonts/fontations is offered under Apache-2.0 or MIT at the reader's choice; the Apache grant is the one relied on here and the one snapshotted. Its test data mixes fonts the project built with subsets of third-party families carrying OFL-1.1 or Apache-2.0 upstream, none of it separately declared.",
+        "onwardUse": "unrestricted"
+      },
+      "licenseSnapshot": "licenses/fontations-test-data@bf31399aa1ab.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "fontations/ttc/README.md",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttc/README.md",
+      "sha256": "c3e003925c2f9a352c12f4ea82475f0d2f556cf2b9603bca123747dae622d0cf",
+      "size": 87
+    },
+    {
+      "path": "fontations/ttc/TTC.ttc",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttc/TTC.ttc",
+      "sha256": "a8521588045ed5f1f8b07eecaac06ed3186c644655bfac00dd4507cd316fbdc5",
+      "size": 2608,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 2,
+        "numTables": 15,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/Amstelvar-avar2.A.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/Amstelvar-avar2.A.ttf",
+      "sha256": "31bb38aac3a9f94dc3ffa6d3dc87b9006c4059058fde083778255012de91db29",
+      "size": 4700,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/NotoSansJP-Regular.subset.otf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/NotoSansJP-Regular.subset.otf",
+      "sha256": "d3ca35b708367bfcbda288048fcd6483e609d618511a913ece34f4278e93a258",
+      "size": 3344,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 15,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fontations/ttf/NotoSansJP-VF.subset.otf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/NotoSansJP-VF.subset.otf",
+      "sha256": "9a1d6c4e5ab1321fade0bde8905ee12ec7526c544223b55a0f20525cc3fa8eb5",
+      "size": 4760,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 21,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/TestMORXEighteen.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/TestMORXEighteen.ttf",
+      "sha256": "f515b0e5b3a0d517fc1598fd5f4374451f6c1c88c433a646c104a8aab4345ceb",
+      "size": 3256,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/TestMORXFour.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/TestMORXFour.ttf",
+      "sha256": "d80ef2fb8cfe47d08d9736e7014669fe0672a3319d2dcf693fc8d3600dd85070",
+      "size": 4764,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/TestMORXFourtyone.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/TestMORXFourtyone.ttf",
+      "sha256": "9fdcca5f5d0939e7d8619e47b69c28b3d0579a04de26a8fbe80f4390b9dc8013",
+      "size": 2248,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/TestMORXOne.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/TestMORXOne.ttf",
+      "sha256": "fa907c56191881a5734cbbebea55ae6ddbf3ba92c15093fb6edf0ecf5b87d7ad",
+      "size": 2404,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/TestMORXThirtyfour.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/TestMORXThirtyfour.ttf",
+      "sha256": "5c71476aeb3c53ae370bd422969e964c524cbf0dd5494b5675054bb750c1cddc",
+      "size": 3608,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/ahem.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/ahem.ttf",
+      "sha256": "f0a92cd0cc45735591c9b5b1fa8aecd5194e8dc518895ca22af94a46c23550dc",
+      "size": 22572,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/autohint_cmap.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/autohint_cmap.ttf",
+      "sha256": "b8ada2e4bbfe6a35fb738e15f3177374fbdd28432022f75d4f1df75d0d9dd0b8",
+      "size": 1796,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 7,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/avar2checker.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/avar2checker.ttf",
+      "sha256": "0ba0a52f502f27a7d5e70a62e1b16a70a11b1d054b51d490480b127e1643f790",
+      "size": 2112,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 13,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/cantarell_vf_trimmed.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/cantarell_vf_trimmed.ttf",
+      "sha256": "4b3c5e4dbc6437f04fea1fd3c45f96746c8851b4ebb09881b47cc4e44c5ecfa4",
+      "size": 2460,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 17,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/cbdt.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/cbdt.ttf",
+      "sha256": "15e37b3d03bb7fb3200ba07357432832d507efdd4eedf18b440fff4f56f2c7b1",
+      "size": 18000,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 10,
+        "color": [
+          "cbdt"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttf/charstring_path_ops.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/charstring_path_ops.ttf",
+      "sha256": "57539cbebac7537621c7c94d46df6cfc7c90e1c33a737b00792c3ab6f1a0009b",
+      "size": 1456,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 9,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fontations/ttf/cmap10.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/cmap10.ttf",
+      "sha256": "f5c18e994c2691ce66100bc0bdfab85367e0148ebd2cc1d210e7b4330586232a",
+      "size": 164,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 3
+      }
+    },
+    {
+      "path": "fontations/ttf/cmap12_font1.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/cmap12_font1.ttf",
+      "sha256": "1134860fcfa1ab18ac0f4020c30b40aa8caf6bf0287dbc3854cceb97b169a34d",
+      "size": 176,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 3
+      }
+    },
+    {
+      "path": "fontations/ttf/cmap14_font1.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/cmap14_font1.ttf",
+      "sha256": "9e3f0ff71bf961702f81f485030095ad78794654c9d6b3b1e1167469b9f8c30b",
+      "size": 808,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 8
+      }
+    },
+    {
+      "path": "fontations/ttf/cmap4_symbol_pua.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/cmap4_symbol_pua.ttf",
+      "sha256": "e3426dc8eb5c1f5ab301b52d74338fde5f1d1687ccba9b5fccffb8b7be085163",
+      "size": 140,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 2
+      }
+    },
+    {
+      "path": "fontations/ttf/cmap6.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/cmap6.ttf",
+      "sha256": "0c6926c4a334201a67377b8d990fe5da4cf6241099e0ddf4e31ae4299db9c9ee",
+      "size": 156,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 3
+      }
+    },
+    {
+      "path": "fontations/ttf/context_closure.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/context_closure.ttf",
+      "sha256": "91bae652fb23f51af31b78e30d46f1bd5b2250136f2e545d3ac87c44beb934df",
+      "size": 700,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 4
+      }
+    },
+    {
+      "path": "fontations/ttf/context_closure_unreachable_rule.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/context_closure_unreachable_rule.ttf",
+      "sha256": "11a76788d94170b330543c320aa18bee1cfde5bf8055af7cae0c49d5cfda8546",
+      "size": 332,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 4
+      }
+    },
+    {
+      "path": "fontations/ttf/context_only_reachable.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/context_only_reachable.ttf",
+      "sha256": "afff267fd0c60d1f3802cb9a534112d5ced3ff7a6bbc7f4f2e53ec48f3c9de26",
+      "size": 344,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 4
+      }
+    },
+    {
+      "path": "fontations/ttf/cousine_hint_subset.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/cousine_hint_subset.ttf",
+      "sha256": "38e0a9957437763609ba58f5dc27cad1865b77a13c6cc1190237e372b3b517e2",
+      "size": 5256,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/cubic_glyf.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/cubic_glyf.ttf",
+      "sha256": "e039b9e77cb0b75b0ce6bbfdb7dc912a02f2862090f55ee1455f7b33c3ca22e2",
+      "size": 512,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 8,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/cvar.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/cvar.ttf",
+      "sha256": "9e7db56f3fd846cc6a613c1873e826b967562f2bb4418190e2095839e4db94ab",
+      "size": 1360,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/cyclic_context_closure.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/cyclic_context_closure.ttf",
+      "sha256": "62dcfcc664461b83a7ad9e15eb8830313a3d7297f0e8c2be29f2cbd71858e7e3",
+      "size": 348,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 4
+      }
+    },
+    {
+      "path": "fontations/ttf/embedded_bitmaps.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/embedded_bitmaps.ttf",
+      "sha256": "198a925444d20c08ff30a85f9bf56746a5d149685ad0e99f3a7f47a40b295dca",
+      "size": 476,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 6,
+        "color": [
+          "cbdt",
+          "ebdt"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttf/glyf_components.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/glyf_components.ttf",
+      "sha256": "54ea04e57233acfb14aaae3aba80b66dbd16da7c3f0ca610432b175b0d3e9d7f",
+      "size": 1152,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 10,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/gvar_use_my_metrics.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/gvar_use_my_metrics.ttf",
+      "sha256": "a88b0850a2a8d2cfa972c3e8b0ab9ef15a45c91138896d6905a34f617c3f70dd",
+      "size": 908,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 10,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/hvar_with_truncated_adv_index_map.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/hvar_with_truncated_adv_index_map.ttf",
+      "sha256": "6549bbde7cdb55869d167a2587fad20dd33503a3b5c63dcd74b5be20d1978d1a",
+      "size": 2516,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 15,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/ift_base.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/ift_base.ttf",
+      "sha256": "ac68b75817f0483d28ffcc2a04f2072fea5161068c292c3fe0354924ba6d512e",
+      "size": 164,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 3
+      }
+    },
+    {
+      "path": "fontations/ttf/interpolate_this.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/interpolate_this.ttf",
+      "sha256": "ccec81f83f4de1370c1e787471cccc8e163063c26a5a42117f32b48926c1e2a0",
+      "size": 548,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 8,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/linear_gradient_rect_colr_1.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/linear_gradient_rect_colr_1.ttf",
+      "sha256": "f897658789d8c1d62daf65f89d1f3fcf015cc4fa16028586445c4f90685de494",
+      "size": 512,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 8,
+        "outlines": "glyf",
+        "color": [
+          "colr"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttf/material_icons_subset.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/material_icons_subset.ttf",
+      "sha256": "3e28a0ba5bd709f3184828cff1caf55adb826239ef5f3ee76978890fef2e19f7",
+      "size": 1272,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 10,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fontations/ttf/material_icons_subset_matrix.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/material_icons_subset_matrix.ttf",
+      "sha256": "fc54c509ab53c87b9a37f7329e47216da5f5e27141208615d1ff87a0dd07cca7",
+      "size": 1316,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 9,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fontations/ttf/material_symbols_subset.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/material_symbols_subset.ttf",
+      "sha256": "fdd9bade0cde742725168298e39291309c95a826acb979cef1142063f17f44ab",
+      "size": 6912,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/mostly_off_curve.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/mostly_off_curve.ttf",
+      "sha256": "58f156957e7e3ee60cd0491fa68fe517416d1de2349d0febd60d8d00421bf028",
+      "size": 508,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 8,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/names_only.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/names_only.ttf",
+      "sha256": "5b6607d13ec365ca5d706c7032bde1e80727fa219a51bc49fa6c9a0e80634a24",
+      "size": 200,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 1
+      }
+    },
+    {
+      "path": "fontations/ttf/noto_handwriting-sbix.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/noto_handwriting-sbix.ttf",
+      "sha256": "8d9d94e60e93b72ff53c4c249954aa333c764dc6e40301a87dfe16834c134e3b",
+      "size": 17256,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "color": [
+          "sbix"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttf/noto_serif_display_trimmed.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/noto_serif_display_trimmed.ttf",
+      "sha256": "bd4d2631c3004b2c186e1d4f2be410d11158c3ceef4255474d0656393331e05d",
+      "size": 1904,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fontations/ttf/notoserif_autohint_shaping.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/notoserif_autohint_shaping.ttf",
+      "sha256": "9d9171950d1de9af33d97fc556e25cf2f58c969a1ec805d9b6a816ac020eb414",
+      "size": 2636,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/notoserifhebrew_autohint_metrics.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/notoserifhebrew_autohint_metrics.ttf",
+      "sha256": "2c0cd2a2c2ccb8b11a7b9cd6893602e1bf99ea9199b27531b0b78792740a8b0c",
+      "size": 8540,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 16,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/notoseriftc_autohint_metrics.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/notoseriftc_autohint_metrics.ttf",
+      "sha256": "abf3bcacdfd5b6490075ec772b25a17e7941992ad76a3c7fe47c8959443d38e4",
+      "size": 30660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/recursive_closure.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/recursive_closure.ttf",
+      "sha256": "900e9c8ba8f0d522f053e124065fb9dc39432d40cac03061ebbef567e0badb18",
+      "size": 328,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 4
+      }
+    },
+    {
+      "path": "fontations/ttf/recursive_context_closure.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/recursive_context_closure.ttf",
+      "sha256": "877a432a0f730afe3702c905c1b4b98b0a735d0d26a20e195c8d5d48ac396448",
+      "size": 416,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 4
+      }
+    },
+    {
+      "path": "fontations/ttf/simple_closure.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/simple_closure.ttf",
+      "sha256": "bd332102c0c37eb787cb5382d23498d6e875c246c5b72369eb911d72c8aba863",
+      "size": 440,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 4
+      }
+    },
+    {
+      "path": "fontations/ttf/simple_glyf.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/simple_glyf.ttf",
+      "sha256": "426163779071781433bf33d55449ec343cd13e1439d8f83747dc5b5655875d3d",
+      "size": 456,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 7,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/starts_off_curve.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/starts_off_curve.ttf",
+      "sha256": "e61d70f6c959c0092630e40b3782a3a60b65205948dc7e9ffd6f1580a26e5110",
+      "size": 504,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 8,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/test_glyphs-glyf_colr_1.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/test_glyphs-glyf_colr_1.ttf",
+      "sha256": "7a69dec6d8191cf7e3b9b59de362b1d76007c322be83b09b23e7c4b3940a5669",
+      "size": 21568,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "color": [
+          "colr"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttf/test_glyphs-glyf_colr_1_no_cliplist.subset.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/test_glyphs-glyf_colr_1_no_cliplist.subset.ttf",
+      "sha256": "e2f1703ea7168b47f25694931075d8bb4429f7c7f021653214a1490a011492c9",
+      "size": 1116,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "color": [
+          "colr"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttf/test_glyphs-glyf_colr_1_variable.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/test_glyphs-glyf_colr_1_variable.ttf",
+      "sha256": "5647de2386d42946624145a43e80982978727dd27701bb38b791474b8417b91f",
+      "size": 53096,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 16,
+        "outlines": "glyf",
+        "variable": true,
+        "color": [
+          "colr"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttf/tinos_subset.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/tinos_subset.ttf",
+      "sha256": "f443f99843977ab03549bfc31cb6f2413416f04a06a0eacae8815b537ec5cca0",
+      "size": 11196,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/tofu.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/tofu.ttf",
+      "sha256": "5a71cd324fc245485a51ebefcf9f4735d46b85f28331d45d163c9e9d4236b561",
+      "size": 1176,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 10,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/tthint_subset.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/tthint_subset.ttf",
+      "sha256": "cd80e0ad893571d6ef6359ea2cb823bde807aceaf066da033d8208fdbc86ebe5",
+      "size": 32828,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 16,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttf/varc-6868.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/varc-6868.ttf",
+      "sha256": "0015a3a87295a5522f87e32af0fc9d56d667c23c78150b359be1a65705abeaa7",
+      "size": 8784,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/varc-ac00-ac01.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/varc-ac00-ac01.ttf",
+      "sha256": "0d84bdd119c376ae3a666c71516c6aefadbd2ec26371a4fc5dcf695f710447c2",
+      "size": 2748,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/varc-ac01-conditional.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/varc-ac01-conditional.ttf",
+      "sha256": "3d6ecae82b80870c4f4305fcebb520fec1b76d4c4edc7eb8adad10bfdc5433c1",
+      "size": 2736,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/variations_closure.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/variations_closure.ttf",
+      "sha256": "0ee3bcc59069b3fa4942ac9b9e6e809c8d8bac6879bb49f98a7859769eba7f39",
+      "size": 520,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 6,
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/vazirmatn_var_trimmed.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/vazirmatn_var_trimmed.ttf",
+      "sha256": "c6f1e46d4ed8c59e14b5a90af56378ca9d6c39bba218bda643f6fc0764f8dabb",
+      "size": 1200,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttf/vorg.ttf",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttf/vorg.ttf",
+      "sha256": "b6f28d136848a9b94638c8a199dcbf0cccb83593912d8f4d7bb12a8ecc0e31dc",
+      "size": 2804,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fontations/ttx/Amstelvar-avar2.A.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/Amstelvar-avar2.A.ttx",
+      "sha256": "35a56b4b612259a38b331807468ae137a84e118279b65073d7e84c004759c3b0",
+      "size": 80682,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.60",
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttx/TestMORXEighteen.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/TestMORXEighteen.ttx",
+      "sha256": "5cb292605e96432a7503d2f59fc25f4538280d80692b9e364ceeab78092c2308",
+      "size": 35021,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/TestMORXFour.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/TestMORXFour.ttx",
+      "sha256": "3a59f3d32ed07cfb277b74325a58bd0753937482c4c3e9ad01586f3f26b293c9",
+      "size": 59908,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/TestMORXFourtyone.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/TestMORXFourtyone.ttx",
+      "sha256": "9f5d79ce723594cb387ee735cd5804d770ca939ae5a42be3db842977438389b9",
+      "size": 21015,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/TestMORXOne.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/TestMORXOne.ttx",
+      "sha256": "dbd4d128ef1981a80b51dc7bda68cc2939ed1f6f35bc67baf5a7f706790f268a",
+      "size": 23494,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/TestMORXThirtyfour.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/TestMORXThirtyfour.ttx",
+      "sha256": "77cb8df624456b266ac958b49587fd715fdb391a3147ef3263d2c19ab87311b5",
+      "size": 48727,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/ahem.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/ahem.ttx",
+      "sha256": "cab0bfa149e117def166df5bc6f70923d64ee51e72924f03d61263fc774dd3d8",
+      "size": 157296,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/autohint_cmap.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/autohint_cmap.ttx",
+      "sha256": "bd6b189179a3e2e20e16b0b7324fa4f0db6eb09f0f30665dcbaa74c5be8b19e5",
+      "size": 23191,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.51",
+        "sfntVersion": "truetype",
+        "numTables": 7,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/avar2checker.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/avar2checker.ttx",
+      "sha256": "85bb53ef198fb7a244b432163b1de6525aed1d27654f4b8684db2bb471ada903",
+      "size": 22677,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.53",
+        "sfntVersion": "truetype",
+        "numTables": 13,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttx/cantarell_vf_trimmed.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/cantarell_vf_trimmed.ttx",
+      "sha256": "b57d3bcc82cd24295a8f0ae3e32158e1fec28c7db465e41b9a449b9839c519e7",
+      "size": 23187,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "cff",
+        "numTables": 17,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttx/cbdt.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/cbdt.ttx",
+      "sha256": "a4135c884d4e7a064ac230589f8f55120064b52698e10ec341964cad310722c4",
+      "size": 62716,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 10,
+        "color": [
+          "cbdt"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttx/charstring_path_ops.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/charstring_path_ops.ttx",
+      "sha256": "42adc74b98ec4bfb8be94d775dcc88d332e3357d466ab5ce9275099f5534e9bf",
+      "size": 8155,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "cff",
+        "numTables": 9
+      }
+    },
+    {
+      "path": "fontations/ttx/cmap10.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/cmap10.ttx",
+      "sha256": "237befaa3d22da512d472798ff47fdb146f5a339436c4b9b922e26c4318a0042",
+      "size": 1369,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 3
+      }
+    },
+    {
+      "path": "fontations/ttx/cmap12_font1.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/cmap12_font1.ttx",
+      "sha256": "3a5fd9ee498c560d8132b5ad319a8fbcbf29e43ff3e843e23ce86984bfc2c512",
+      "size": 1913,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 3
+      }
+    },
+    {
+      "path": "fontations/ttx/cmap14_font1.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/cmap14_font1.ttx",
+      "sha256": "c3f84a54783f0bca81f90c4ea6676832c0ce1b53605728d8479b524d42c11673",
+      "size": 13519,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 8
+      }
+    },
+    {
+      "path": "fontations/ttx/cmap4_symbol_pua.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/cmap4_symbol_pua.ttx",
+      "sha256": "1078300dc7557e2daaaf0e33fbb649cd1a04c090ad638869af344cf2bd5f07c2",
+      "size": 1047,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 2
+      }
+    },
+    {
+      "path": "fontations/ttx/cmap6.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/cmap6.ttx",
+      "sha256": "6d8cf96cc6b65f67cf31b548d7e6f6db13c334aedfb773d3d791596ae761be2d",
+      "size": 1494,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 3
+      }
+    },
+    {
+      "path": "fontations/ttx/cousine_hint_subset.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/cousine_hint_subset.ttx",
+      "sha256": "06d261abd81f81da9fd9b6737bb07cee88cf3391353333dc579694ee3f320865",
+      "size": 119712,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/cubic_glyf.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/cubic_glyf.ttx",
+      "sha256": "6c4c75fa5025b41b06f25af551c21d47698afc9b72e7ff3b5cb758cacd5b6897",
+      "size": 5889,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 8,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/cvar.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/cvar.ttx",
+      "sha256": "970f6f5f3c6deb5fc6ba32826e9cc723df8c50655711fdd610bd954ee4d66a18",
+      "size": 16381,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttx/cyclic_context_closure.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/cyclic_context_closure.ttx",
+      "sha256": "39adbd94ee38f0268f35280f34777be689262ae93815c335cfa6ef8d24a95d1e",
+      "size": 5251,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.54",
+        "sfntVersion": "truetype",
+        "numTables": 4
+      }
+    },
+    {
+      "path": "fontations/ttx/embedded_bitmaps.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/embedded_bitmaps.ttx",
+      "sha256": "80f7853a7d838675f7d3ed9d6151950e80d3a7458616e4de9914a0c5f54292de",
+      "size": 8042,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 6,
+        "color": [
+          "cbdt",
+          "ebdt"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttx/glyf_components.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/glyf_components.ttx",
+      "sha256": "f21a69c07981cc3c072f462bc5a21fcaa31083ff4fd738998f328f398f0fbe25",
+      "size": 10687,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.48",
+        "sfntVersion": "truetype",
+        "numTables": 10,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/gvar_use_my_metrics.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/gvar_use_my_metrics.ttx",
+      "sha256": "5ca2354fe9421d089407a83d7b0b38dab572f7a1e4766c1fbcdfe63feb9728fd",
+      "size": 7768,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.58",
+        "sfntVersion": "truetype",
+        "numTables": 10,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/hvar_with_truncated_adv_index_map.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/hvar_with_truncated_adv_index_map.ttx",
+      "sha256": "316e19b40287e8573cd0f3600995538230114f6a36f7ea216773732eb547bcd9",
+      "size": 25950,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.43",
+        "sfntVersion": "truetype",
+        "numTables": 15,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttx/ift_base.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/ift_base.ttx",
+      "sha256": "9722a58367cbf66cec14be643d0df64ca6f69edfd408a66b3a3297513805db8c",
+      "size": 1522,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 3
+      }
+    },
+    {
+      "path": "fontations/ttx/interpolate_this.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/interpolate_this.ttx",
+      "sha256": "706db0b89d22a7da4c604df16ba4dd589dfb31843dc8a14fd1b21bee1866aa44",
+      "size": 6902,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 8,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/linear_gradient_rect_colr_1.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/linear_gradient_rect_colr_1.ttx",
+      "sha256": "1dd729591f649c5788b8a9b16f03c78acf353844dc55bbffba081f479ff60304",
+      "size": 5009,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 8,
+        "outlines": "glyf",
+        "color": [
+          "colr"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttx/material_icons_subset.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/material_icons_subset.ttx",
+      "sha256": "2de67ab5c49b01a46e1f8d951594c4d4282e5a21d33b83dca655592f22ff718a",
+      "size": 7820,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "cff",
+        "numTables": 10
+      }
+    },
+    {
+      "path": "fontations/ttx/material_icons_subset_matrix.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/material_icons_subset_matrix.ttx",
+      "sha256": "049d5abb4d36427f505c03894e7214dc63bb11394de8f162018699e3993776dd",
+      "size": 7912,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "cff",
+        "numTables": 9
+      }
+    },
+    {
+      "path": "fontations/ttx/material_symbols_subset.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/material_symbols_subset.ttx",
+      "sha256": "99ef6a743541ec714a30e5888469e65587770fb30eef6ab117c4a909df9cbbb8",
+      "size": 118309,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.49",
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttx/mostly_off_curve.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/mostly_off_curve.ttx",
+      "sha256": "f3829b4f7544c200cff406344d08a4bb8f37952bc8c8bb40f662470ed41c12b8",
+      "size": 6325,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 8,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/names_only.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/names_only.ttx",
+      "sha256": "0c271030bf978af292bb2be0c8561f2a99abfb23bb413d2c71f3270ee16c7a41",
+      "size": 865,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 1
+      }
+    },
+    {
+      "path": "fontations/ttx/noto_handwriting-sbix.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/noto_handwriting-sbix.ttx",
+      "sha256": "ad210cba1c87b59cf361b672afecac86e102da4f4284ea5f659d418b80ccc2f8",
+      "size": 58143,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.54",
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "color": [
+          "sbix"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttx/noto_serif_display_trimmed.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/noto_serif_display_trimmed.ttx",
+      "sha256": "2affdc8293ddadd59082bce0c7bbf7fa4e44b65f1e26139f9206c8642365bb77",
+      "size": 15380,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "cff",
+        "numTables": 14
+      }
+    },
+    {
+      "path": "fontations/ttx/notoserif_autohint_shaping.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/notoserif_autohint_shaping.ttx",
+      "sha256": "2a93c824ac69687e6ea1cea45d0ad22c91f8827aca679b2898023fde4835b2ad",
+      "size": 30922,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/notoserifhebrew_autohint_metrics.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/notoserifhebrew_autohint_metrics.ttx",
+      "sha256": "b2f125f36fa7877a236edb6a2d7cb573e9a3b0423f3304493b5b053fdb1d747f",
+      "size": 133093,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 16,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/notoseriftc_autohint_metrics.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/notoseriftc_autohint_metrics.ttx",
+      "sha256": "3a2738d325db9829707f9f1c22aeb30d6c5f7c3bdffc55eb05201b55a8a7e6ad",
+      "size": 412246,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/simple_glyf.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/simple_glyf.ttx",
+      "sha256": "8a9e91d686ccf061603962889eba72dcff5c91f68b43ac499e0d57c7cfccdfc7",
+      "size": 5080,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 7,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/starts_off_curve.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/starts_off_curve.ttx",
+      "sha256": "755e505c446502c3f20ef709d4960726c42f5f1a4b4256eb42899ac8493289e8",
+      "size": 6274,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.37",
+        "sfntVersion": "truetype",
+        "numTables": 8,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/test_glyphs-glyf_colr_1.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/test_glyphs-glyf_colr_1.ttx",
+      "sha256": "9697d8c681d5164b541acf854c75cf22c3107e37682eebb684e58aa4ce8309ee",
+      "size": 406575,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.38",
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "color": [
+          "colr"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttx/test_glyphs-glyf_colr_1_no_cliplist.subset.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/test_glyphs-glyf_colr_1_no_cliplist.subset.ttx",
+      "sha256": "4bac129f6aacf56d2effd06d8aeacae6f20d20886bec05c640777be69b2be9b9",
+      "size": 7556,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.43",
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "color": [
+          "colr"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttx/test_glyphs-glyf_colr_1_variable.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/test_glyphs-glyf_colr_1_variable.ttx",
+      "sha256": "e1908a7af44388b90968dcf1e83a3dbe526866a0a423b11ae996ff9c45d2f9e5",
+      "size": 1152513,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.38",
+        "sfntVersion": "truetype",
+        "numTables": 16,
+        "outlines": "glyf",
+        "variable": true,
+        "color": [
+          "colr"
+        ]
+      }
+    },
+    {
+      "path": "fontations/ttx/tinos_subset.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/tinos_subset.ttx",
+      "sha256": "130d49fae6608633d8245aca243cd03347c1c1233cc32283602448d0dd26e057",
+      "size": 158576,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/tofu.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/tofu.ttx",
+      "sha256": "16c54b6cf3de093b9c7d505a672f6b8fbd80d98bd2660c3be5b871ce48f73e18",
+      "size": 19335,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 10,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/tthint_subset.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/tthint_subset.ttx",
+      "sha256": "6a358aadd241fe5be03641fcdc9e1de23eded00d98747305d16a1ac8bb5afb0f",
+      "size": 221359,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "truetype",
+        "numTables": 16,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fontations/ttx/varc-6868.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/varc-6868.ttx",
+      "sha256": "f2d145e7e32bb07dc7d676cf94c6d616be93cb0e852f394e5c9ad88d1aa761ac",
+      "size": 115252,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.53",
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttx/varc-ac00-ac01.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/varc-ac00-ac01.ttx",
+      "sha256": "a83f56121007b783bbd7098aefd4d2d423e3b66f74c173e4504b6675bc40f16a",
+      "size": 39689,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.53",
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttx/varc-ac01-conditional.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/varc-ac01-conditional.ttx",
+      "sha256": "a9d8ffcc1e19334590a3cd3e24114fbb89c42d199c40ba9e1a127a5924ca30f4",
+      "size": 39569,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.53",
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttx/vazirmatn_var_trimmed.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/vazirmatn_var_trimmed.ttx",
+      "sha256": "3ae1e395e322661a8a9dcc6ac0872b57c0db8a25aed51a143def8b82d53e0938",
+      "size": 12381,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.38",
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fontations/ttx/vorg.ttx",
+      "sourceId": "fontations-test-data",
+      "upstreamPath": "font-test-data/test_data/ttx/vorg.ttx",
+      "sha256": "850b87068a94aa1d6d595a168c999f45045944ba2ebeb93e145ddd8b16243cb2",
+      "size": 32948,
+      "format": {
+        "kind": "ttx",
+        "version": null,
+        "ttLibVersion": "4.41",
+        "sfntVersion": "cff",
+        "numTables": 14
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-Bold.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-Bold.otf",
+      "sha256": "2e3cb51f4ad4b8d5c99b0e8d82992cedadca9d0e0620237ae0b744ce1dcb0aec",
+      "size": 146896,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-BoldItalic.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-BoldItalic.otf",
+      "sha256": "153243e6e959e581660ff064b14b8958992a69098e75d740d78b85f7207a543f",
+      "size": 154580,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-ExtraBold.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-ExtraBold.otf",
+      "sha256": "67a8df736d6d9b19942b54bf4d81c818385e481ec3048581887489d72c24e5d7",
+      "size": 143096,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-ExtraBoldItalic.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-ExtraBoldItalic.otf",
+      "sha256": "1895786744ea82beb7cc05bdb92be574d0c86d6c10bab0815ec027a6ae900102",
+      "size": 150468,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-ExtraLight.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-ExtraLight.otf",
+      "sha256": "778070e5f5852aeb5b54357e244f61537667f9cadf675b0aaaf4b1eeb223bece",
+      "size": 144616,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-ExtraLightItalic.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-ExtraLightItalic.otf",
+      "sha256": "88b38d33e90e541fac0a4ff8de837119092e47b48207fbb4eb502ebc2c0b0283",
+      "size": 152840,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-Italic.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-Italic.otf",
+      "sha256": "2d459d22733a814a7b00bb416a723a8ff58467940d2c0e5f064154adb7a64bec",
+      "size": 149616,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-Light.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-Light.otf",
+      "sha256": "7e923d2b6999e810a123ca9a5c7d07c851f832ee26cfe9395598e42ba3526bb8",
+      "size": 146836,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-LightItalic.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-LightItalic.otf",
+      "sha256": "7e904b66c9ef28dd0c93d78d7607e589e20acd8ee243358167b8e0eb5a2dbac1",
+      "size": 154112,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-Medium.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-Medium.otf",
+      "sha256": "25f2a3d4fd0fb87999966e7fb954fe4c366ae3c3788ce79e00b765882151a7e2",
+      "size": 145844,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-MediumItalic.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-MediumItalic.otf",
+      "sha256": "397b8aa04b17b80c9f06cae27f4cf3e4af9bbf961a8dde9030d2550c078a1912",
+      "size": 154056,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-Regular.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-Regular.otf",
+      "sha256": "64aeb4a3bed43098e7f2cc599a64f0ce81be06d7ebb05081e6d0c1fdd60b68b8",
+      "size": 142604,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-SemiBold.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-SemiBold.otf",
+      "sha256": "881aa8e0c53b202a27ee0ce91f2fd4f6341148bf04f5d3d48ad451c8763354a6",
+      "size": 146288,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-SemiBoldItalic.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-SemiBoldItalic.otf",
+      "sha256": "82a73bfb6e39705bc16b62d7494f2859364dab559750859659fc3241b38e6ba7",
+      "size": 154652,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-Thin.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-Thin.otf",
+      "sha256": "fa58a723a2213968d8796c6178b50416dcd4bc1b4d45fb8aa92b5e5af25408bd",
+      "size": 141432,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/otf/JetBrainsMono-ThinItalic.otf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/otf/JetBrainsMono-ThinItalic.otf",
+      "sha256": "8f57af8894151a7c02cc1cb89e1f83cf43c9f3af4a5c0dbdba71592553763c89",
+      "size": 148644,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-Bold.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-Bold.ttf",
+      "sha256": "d22c4f3821d725eb01210d278d95dfcfcaadc34699a06658d47c8a5cc5830ada",
+      "size": 274096,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-BoldItalic.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-BoldItalic.ttf",
+      "sha256": "cec9b489af5c98a94cb8d8d8708ef1640cca0f296b207de1f50b2dd95e967bdf",
+      "size": 279172,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-ExtraBold.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-ExtraBold.ttf",
+      "sha256": "ee43f7507a07ed15c4bf6211d5cc78fa0bacca58e7afbc170f4b1e38a5d0cde4",
+      "size": 275876,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-ExtraBoldItalic.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-ExtraBoldItalic.ttf",
+      "sha256": "10fd8f4e1246ed7d62fec79e6d55b792ef4a45a46d36b09cc17dd8f240ae112b",
+      "size": 281260,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-ExtraLight.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-ExtraLight.ttf",
+      "sha256": "a6d4b0e43eecb3823925617bd8052af10cb1ff90247687f07c7676f1bd507714",
+      "size": 270688,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-ExtraLightItalic.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-ExtraLightItalic.ttf",
+      "sha256": "e7d29fa12d5dfecccb31af42df160ec1929f102cf83ab4485bae8a4bcefc2c4d",
+      "size": 273464,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-Italic.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-Italic.ttf",
+      "sha256": "6dc8e1322d4b2013b64e277bf66abc6748207c46a590471d4296876c2c235d0c",
+      "size": 276084,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-Light.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-Light.ttf",
+      "sha256": "ba7e27ea0e9803e57fc1837eae3fa7dc4fe59f3dc548859958fa3f8b77f6909b",
+      "size": 272832,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-LightItalic.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-LightItalic.ttf",
+      "sha256": "9dcdba505dd0091f61e9da2f0f46633abed33d50450b7d6e93633d98de6007b5",
+      "size": 276312,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-Medium.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-Medium.ttf",
+      "sha256": "d16e6dc99672734698d629705f617c79f6eb6040f5113efe3a145204dc988109",
+      "size": 270316,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-MediumItalic.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-MediumItalic.ttf",
+      "sha256": "f85b9eec77d779b4831e763e70e076dafdedd3442cc3fa7fffd781317df0cfe3",
+      "size": 276180,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-Regular.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-Regular.ttf",
+      "sha256": "e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1",
+      "size": 270224,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-SemiBold.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-SemiBold.ttf",
+      "sha256": "12d4b18fe6e1af528e4bea69cb0997aeff22f9e52fccffcf66342dd88aa32ab8",
+      "size": 273504,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-SemiBoldItalic.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-SemiBoldItalic.ttf",
+      "sha256": "e4b0c5bc4d32e1ffd3a548c0baabbcd686745d1a236fc68727ef3a30b6ab8465",
+      "size": 279208,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-Thin.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-Thin.ttf",
+      "sha256": "7ac062c7792f4539841b74b929e9fa3e74a108ef668c6c167e0e6733b0297ad7",
+      "size": 267192,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/ttf/JetBrainsMono-ThinItalic.ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/ttf/JetBrainsMono-ThinItalic.ttf",
+      "sha256": "a46cb57297467702eccd24f379686ca07c8d570a7875b7e93ffece065fe47556",
+      "size": 272244,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "jetbrains-mono/variable/JetBrainsMono-Italic[wght].ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/variable/JetBrainsMono-Italic[wght].ttf",
+      "sha256": "c5c2a1d29297d2a40ec4a0114447c6b7a1477678ab2d9aa4b755356e1a02cead",
+      "size": 308832,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 20,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "jetbrains-mono/variable/JetBrainsMono[wght].ttf",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/variable/JetBrainsMono[wght].ttf",
+      "sha256": "3cfafa86e28b87184d592fef82846e8c10cb48653c62efcda34f082da225ec34",
+      "size": 300144,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 20,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-Bold.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-Bold.woff2",
+      "sha256": "08863c7964612257a90bd821e3127dc5ccb0b5046f881673a1ade5809eb21d0f",
+      "size": 94628,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 274096,
+        "totalCompressedSize": 94523,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-BoldItalic.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-BoldItalic.woff2",
+      "sha256": "7a0a901712a0b6b94914ac49c86168b4a0af32e623c7835840338c36e7eceb78",
+      "size": 98684,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 279172,
+        "totalCompressedSize": 98581,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-ExtraBold.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-ExtraBold.woff2",
+      "sha256": "70b4312f885a27dd20fe1aee8b3433819229b0d3b81e4ae716c444e65ecafb50",
+      "size": 93856,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 275876,
+        "totalCompressedSize": 93751,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-ExtraBoldItalic.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-ExtraBoldItalic.woff2",
+      "sha256": "43661c4916d0113e99af50a3fdec115a82591cd839b7b6b1ebbfa15010cda53f",
+      "size": 97492,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 281260,
+        "totalCompressedSize": 97390,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-ExtraLight.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-ExtraLight.woff2",
+      "sha256": "e6d8a12c5181e2db4740eab2bfa3016ef8583be8b66e444cf9e35e25dd9bee4c",
+      "size": 93040,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 270688,
+        "totalCompressedSize": 92936,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-ExtraLightItalic.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-ExtraLightItalic.woff2",
+      "sha256": "68b2316779675330217a7467efd0ce4cb381796e750b6454b1528128b29775b6",
+      "size": 96572,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 273464,
+        "totalCompressedSize": 96469,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-Italic.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-Italic.woff2",
+      "sha256": "9f158b85eca345daeee01dfffa602709a905ea08b0cc60dbf6153cbbd97da08f",
+      "size": 96428,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 276084,
+        "totalCompressedSize": 96325,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-Italic[wght].woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-Italic[wght].woff2",
+      "sha256": "76a805b6ea613ce2e3973f1bac6fa29db23116b2881390b59247d22890844ecc",
+      "size": 123160,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 20,
+        "totalSfntSize": 310124,
+        "totalCompressedSize": 123041,
+        "outlines": "glyf",
+        "variable": true,
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-Light.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-Light.woff2",
+      "sha256": "48a53f6e5f95e259a0343001a6af6babd1bcfc99a00d60ad38c6646b8abe1e2a",
+      "size": 93920,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 272832,
+        "totalCompressedSize": 93817,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-LightItalic.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-LightItalic.woff2",
+      "sha256": "ac75cc9b682338df3c12b3fb5ffc4d5982069225ea9ebbe85d9336690134266f",
+      "size": 97812,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 276312,
+        "totalCompressedSize": 97709,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-Medium.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-Medium.woff2",
+      "sha256": "fe1c9099e3ea4123a6216d8a4a31970a2cfc6e9d80056da165012f406c83e219",
+      "size": 94284,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 270316,
+        "totalCompressedSize": 94181,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-MediumItalic.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-MediumItalic.woff2",
+      "sha256": "5103c17c5da46146edb7725e7f0aabb5c488c8bb94bf4ab402a549c49bb2d856",
+      "size": 98520,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 276180,
+        "totalCompressedSize": 98418,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-Regular.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-Regular.woff2",
+      "sha256": "f1a7a03672cdd494ce0d5543fac6e4360fe22403c6de297fdc2e55a815f7baff",
+      "size": 92380,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 270224,
+        "totalCompressedSize": 92277,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-SemiBold.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-SemiBold.woff2",
+      "sha256": "8f20245500c375a63879b47c12560a07bcaf7a88672d272f4d8e79b68f9186ae",
+      "size": 94484,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 273504,
+        "totalCompressedSize": 94379,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-SemiBoldItalic.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-SemiBoldItalic.woff2",
+      "sha256": "c5b57341b76836b0eec23b7b1a70c4859f1645c7f19542ec1ccf0a6e6f6688a2",
+      "size": 98720,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 279208,
+        "totalCompressedSize": 98617,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-Thin.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-Thin.woff2",
+      "sha256": "27221a4d9f258a0b12210eb0a1b526d841ae2cae81baca27a068a25507cdb3ee",
+      "size": 90988,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 267192,
+        "totalCompressedSize": 90886,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono-ThinItalic.woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono-ThinItalic.woff2",
+      "sha256": "31cfb53365cc3be37c61fe57fe17d24dd0598a5c58c645d98141cc872fcf449b",
+      "size": 94856,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 272244,
+        "totalCompressedSize": 94752,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "jetbrains-mono/webfonts/JetBrainsMono[wght].woff2",
+      "sourceId": "jetbrains-mono",
+      "upstreamPath": "fonts/webfonts/JetBrainsMono[wght].woff2",
+      "sha256": "31ec365b93e4bad6f202ce23352a56d01ca4462b2afc782ed2cf6fa42ca9ac0e",
+      "size": 113672,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 20,
+        "totalSfntSize": 301288,
+        "totalCompressedSize": 113555,
+        "outlines": "glyf",
+        "variable": true,
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-Black.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-Black.otf",
+      "sha256": "2fef2100eb883a68f04495c98c900c9e0a6b2168a4edcd55837b6e8e05c65952",
+      "size": 337012,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-BlackIt.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-BlackIt.otf",
+      "sha256": "7c6ddd2d1957d7f380620db07fc3b6ca8ca0d4f8196005ee14f9446d2196cfda",
+      "size": 240960,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-Bold.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-Bold.otf",
+      "sha256": "7776ddb9f3eb58683e59f28d558d8896b768c2d0c80799fb3f1c56c54dfd98c9",
+      "size": 343596,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-BoldIt.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-BoldIt.otf",
+      "sha256": "05e97d9adc01059607e97b167a68afb25680db904db7aba831dc2510f14b6515",
+      "size": 243664,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-ExtraLight.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-ExtraLight.otf",
+      "sha256": "ee732d9afc20265c831cb1c1f1060957de036bbfe80a0965db1ccc1d61938499",
+      "size": 318280,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-ExtraLightIt.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-ExtraLightIt.otf",
+      "sha256": "ae94815685f545fe8877290299c28d883b5eff9376612c4c7cc82ce877145f2e",
+      "size": 226468,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-It.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-It.otf",
+      "sha256": "430b9f0eb1170be0981706d14b6cf87122efba9d86c373bbdf69daf276421462",
+      "size": 239048,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-Light.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-Light.otf",
+      "sha256": "bbfab2c58d46defe8a194634744660ee15d560dcf3d7a8c7bb509936acc618c7",
+      "size": 327396,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-LightIt.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-LightIt.otf",
+      "sha256": "abd8f5b080ec26a9592a77285b921a8e296b688f479232a721c7129bf068c64a",
+      "size": 233512,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-Medium.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-Medium.otf",
+      "sha256": "02607dc31274d1589a996b8a78e71f256f56d1633a797fe8103dbd8fa9893db6",
+      "size": 336848,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-MediumIt.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-MediumIt.otf",
+      "sha256": "d2655b319171f712079bcab2352c0c54f166d1d4d8c2d0b9ce55278667562254",
+      "size": 239040,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-Regular.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-Regular.otf",
+      "sha256": "08df266400933d3178d081a45f94a08814c3e55b4b7dd2e0ff69cb1329f13ab6",
+      "size": 334924,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-Semibold.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-Semibold.otf",
+      "sha256": "36f1cd2c344aa3109e64429bce41a41e4b2b923beb2db19b8dbf9bb56f05a4f9",
+      "size": 339636,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/OTF/SourceSans3-SemiboldIt.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "OTF/SourceSans3-SemiboldIt.otf",
+      "sha256": "81204ed282543df2d93db214c98b5ec1c9ce735c4c82e4323d5ae5ee69c6b8b7",
+      "size": 239736,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-Black.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-Black.ttf",
+      "sha256": "ac3a8e48c6076b8dd800bdd6e69f20321ee039fa81aeca57ca630afd6d514d07",
+      "size": 422244,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-BlackIt.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-BlackIt.ttf",
+      "sha256": "ab2a57c339ff7beea3456c8857301cd121448aa9302151dae40a37ec435fc55e",
+      "size": 318288,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-Bold.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-Bold.ttf",
+      "sha256": "9214b9d95e4231c609802815c2646c98174e2102d0d37f88978a7f8e71006e6a",
+      "size": 428176,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-BoldIt.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-BoldIt.ttf",
+      "sha256": "7978291fc1bf314db887e0366853b33c5cf2e964c7b95cfb9ce403a6ec46a842",
+      "size": 318700,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-ExtraLight.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-ExtraLight.ttf",
+      "sha256": "a6f1bda5ddc9125b7e6b882528e898d42e0573dd17c4b9ebd1449990246aa44e",
+      "size": 409912,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-ExtraLightIt.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-ExtraLightIt.ttf",
+      "sha256": "103ad6ff4c8ed1480bf52d2612693f8ffa083ed51f0c11032a2e3cb327f9693a",
+      "size": 307604,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-It.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-It.ttf",
+      "sha256": "192afd78f0f54a3c69eaf02d43f4d9a821e9d6110e41d3d25d61a7385cd580e4",
+      "size": 315812,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-Light.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-Light.ttf",
+      "sha256": "fcc10d83a12844e7dc699b1bb85f65f0d1bb0179de216feb5d28f806500f7cef",
+      "size": 414692,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-LightIt.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-LightIt.ttf",
+      "sha256": "d80928830815a06f805760ff386f0919ab077816b360ca17f146394716e2eca0",
+      "size": 310156,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-Medium.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-Medium.ttf",
+      "sha256": "a7af35c1cab5dd0b29d742f86f2edfdf83fa7ec213643e765c5c51a2dc24edbc",
+      "size": 424748,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-MediumIt.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-MediumIt.ttf",
+      "sha256": "abb47f35400c01bc23406bea4ba3319f4aafc02c19703efe98efedb799719753",
+      "size": 318204,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-Regular.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-Regular.ttf",
+      "sha256": "4644c81b86ec9caaa76b634889968ed3c4f4f52f054855933acc7c2b21e53b0f",
+      "size": 431196,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-Semibold.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-Semibold.ttf",
+      "sha256": "a3f4f8dcf343a8f24dc61951de93f3ba1558b15cd250ba24af8a40e957081b7d",
+      "size": 425904,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/TTF/SourceSans3-SemiboldIt.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "TTF/SourceSans3-SemiboldIt.ttf",
+      "sha256": "8221d5e4bd3cf249e8023a5f8fad024d37c2def0f3d3aa7fd1f5830afda51f34",
+      "size": 319172,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/VF/SourceSans3VF-Italic.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "VF/SourceSans3VF-Italic.otf",
+      "sha256": "3f5646523c6e8c504d06a34ce05a190b87c071c4d318296fd88794fd7b6bab57",
+      "size": 303192,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 19,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "source-sans-3/VF/SourceSans3VF-Italic.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "VF/SourceSans3VF-Italic.ttf",
+      "sha256": "c34791f4f889af43d84e2f84ebeb02e6eed07058aca21e6729d26e6436d18965",
+      "size": 395500,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "source-sans-3/VF/SourceSans3VF-Upright.otf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "VF/SourceSans3VF-Upright.otf",
+      "sha256": "3d0dfd6a3a644ab3d462a737923ffac41fb0ae007ce9ba83c24e6bfa76aa56c7",
+      "size": 538164,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 19,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "source-sans-3/VF/SourceSans3VF-Upright.ttf",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "VF/SourceSans3VF-Upright.ttf",
+      "sha256": "1147db9a3f0edd4956068de77930148acce2742dd76d57f7239b2b1c687ac63f",
+      "size": 646540,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-Black.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-Black.otf.woff",
+      "sha256": "805c72226fa54ec05fa7b185040993095055844e3fca66f2794401b5230d99fe",
+      "size": 181124,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 337012,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-BlackIt.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-BlackIt.otf.woff",
+      "sha256": "bced4723d4d12515e77266c69b37ee2a333954080e53627d7ca272ee60ce43b9",
+      "size": 139520,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 240960,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-Bold.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-Bold.otf.woff",
+      "sha256": "9cd09c2d6984753a2163999c33826d049bd423b504bc44fc8bf29cb4586b0066",
+      "size": 189256,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 343596,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-BoldIt.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-BoldIt.otf.woff",
+      "sha256": "35a8a47ff79149cf166a1dfdd5792f320906fcd4d37ef696c8de4645ee03b122",
+      "size": 143144,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 243664,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-ExtraLight.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-ExtraLight.otf.woff",
+      "sha256": "8c00ac7f1d9916d2c451b077586e3f4d4b993f96a2a1c668e4918b1d4915ae61",
+      "size": 168400,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 318280,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-ExtraLightIt.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-ExtraLightIt.otf.woff",
+      "sha256": "c1cdad871469ed181f20f19c3ea663862f0f4550be2675bef1169062c5151d89",
+      "size": 128672,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 226468,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-It.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-It.otf.woff",
+      "sha256": "c45e5738462958b0ae7587b659ee97d133bc7d7811fcdefeef3b44e92e6bc2e4",
+      "size": 141268,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 239048,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-Light.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-Light.otf.woff",
+      "sha256": "95531749acf308ff6358e8c135a7e5f4083053d719237cd5695773e2440d0935",
+      "size": 179316,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 327396,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-LightIt.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-LightIt.otf.woff",
+      "sha256": "3ca72bfde44777198acc56d53625272f1f6d996479ddd935528a3215fa5dab5f",
+      "size": 136496,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 233512,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-Medium.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-Medium.otf.woff",
+      "sha256": "9dd6329f9a959557d88466060bc65e7f09601ef5b7e2de45e196246f46f88b75",
+      "size": 185940,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 336848,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-MediumIt.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-MediumIt.otf.woff",
+      "sha256": "e0e0d317f9fbfe2fc10b16b324de46b949b27ab73ac7b723b5c3d6443fe8017a",
+      "size": 141468,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 239040,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-Regular.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-Regular.otf.woff",
+      "sha256": "1e4d7d425e9ace7d40defb608000157205b82b5edb2f966bbcd04b55d674b719",
+      "size": 185420,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 334924,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-Semibold.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-Semibold.otf.woff",
+      "sha256": "602c96e2eeac2f13878019069035d728093146b9f99a681d2de21870627179d3",
+      "size": 186668,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 339636,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/OTF/SourceSans3-SemiboldIt.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/OTF/SourceSans3-SemiboldIt.otf.woff",
+      "sha256": "cff3a3963a724bf8839cedbd039d947e07afedbe988d8887937e034c3062ed00",
+      "size": 140804,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 239736,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-Black.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-Black.ttf.woff",
+      "sha256": "83e0c11491b53189fe01fc99cc81316d20aafe7979f75e6010efb642a6cd6080",
+      "size": 180300,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 422244,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-BlackIt.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-BlackIt.ttf.woff",
+      "sha256": "8784b8b66977b557343ac70d4b23409ee7994d22e8da5dfaddbb7ab2e5e28aec",
+      "size": 143708,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 318288,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-Bold.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-Bold.ttf.woff",
+      "sha256": "1a6a0c7057d2bf1c2214c9fbed51b9dce30cc450866048c1a239ce49da045eb8",
+      "size": 188544,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 428176,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-BoldIt.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-BoldIt.ttf.woff",
+      "sha256": "2b96cbc9e9658cf1a6e7155d50b2c64c1073ff05061f069ce421e346553cd3d8",
+      "size": 147176,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 318700,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-ExtraLight.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-ExtraLight.ttf.woff",
+      "sha256": "dd0a9702c7cb2060dbb93bbef2af7eae6be9fb0490c997aff26817cfd7ece65a",
+      "size": 176616,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 409912,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-ExtraLightIt.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-ExtraLightIt.ttf.woff",
+      "sha256": "1951539ee1d7eab2c56d0fb6eba1bb7b91f501d17c576a03b37371d6e8c3dac8",
+      "size": 139832,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 307604,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-It.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-It.ttf.woff",
+      "sha256": "d1d8f83d8f2a032e67569a2eb27633122124eab25aa0d22444836b69b87aa893",
+      "size": 146396,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 315812,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-Light.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-Light.ttf.woff",
+      "sha256": "db07afa7051fb06b1dcaaeadf18fa6ba0a9bfcdf0f19e9c7112432548cb19646",
+      "size": 183248,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 414692,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-LightIt.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-LightIt.ttf.woff",
+      "sha256": "d8a7279aa45590e53d1529631badc2c3ca0104ebd24ec7ab59e62be54321115b",
+      "size": 144500,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 310156,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-Medium.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-Medium.ttf.woff",
+      "sha256": "5b2d2cb0118709546c4f0c02638b3bf583f77b6e5cf90a4d89411f4cd6dd6117",
+      "size": 187704,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 424748,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-MediumIt.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-MediumIt.ttf.woff",
+      "sha256": "f27d1ea1a40873379c2439f821662d4cefac02b95ca39f57f6af5bea5228a21c",
+      "size": 147676,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 318204,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-Regular.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-Regular.ttf.woff",
+      "sha256": "56413337e96f5764882f3e18eaa654eec27515ec7c3de3520eec9e36b25371b9",
+      "size": 188176,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 431196,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-Semibold.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-Semibold.ttf.woff",
+      "sha256": "d2e2dc16ddc30ca0cd5c7991682badd18ed701fd1d2ead8784153af731d79ce6",
+      "size": 187328,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 425904,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/TTF/SourceSans3-SemiboldIt.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/TTF/SourceSans3-SemiboldIt.ttf.woff",
+      "sha256": "2c1a143f576a37be6009891db820e4e6f651dcb89ec88e7a96fa3af920abbaed",
+      "size": 148220,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 19,
+        "totalSfntSize": 319172,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/VF/SourceSans3VF-Italic.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/VF/SourceSans3VF-Italic.otf.woff",
+      "sha256": "4f581e32e1e97bf56eaa02dfafa7df09e87d3c0e01ee4277b86989fa8b1eae85",
+      "size": 152824,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 19,
+        "totalSfntSize": 303192,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/VF/SourceSans3VF-Italic.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/VF/SourceSans3VF-Italic.ttf.woff",
+      "sha256": "6cf198c9bd9778f7c53c5778e6118d6a674dddd597f0964b396d98c66400a40a",
+      "size": 171024,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 21,
+        "totalSfntSize": 395500,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/VF/SourceSans3VF-Upright.otf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/VF/SourceSans3VF-Upright.otf.woff",
+      "sha256": "19f48ba4adda5ed5e18c73b127802b8531d997bb851d321600f88670299035a1",
+      "size": 200996,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 19,
+        "totalSfntSize": 538164,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF/VF/SourceSans3VF-Upright.ttf.woff",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF/VF/SourceSans3VF-Upright.ttf.woff",
+      "sha256": "c3271ad9a7580f3027d46f988dfed74f7b29d97aceb2cee05d72e0874359397d",
+      "size": 218948,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 21,
+        "totalSfntSize": 646540,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-Black.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-Black.otf.woff2",
+      "sha256": "579ccebb76a304adac9f91802067a56c0563104858ca6cebcc89fd3b92bd900f",
+      "size": 150016,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 336988,
+        "totalCompressedSize": 149931,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-BlackIt.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-BlackIt.otf.woff2",
+      "sha256": "c9a39cf9375d8ed619db90cc15423b104692e189d4ee885fd68b376555b45dce",
+      "size": 118964,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 240936,
+        "totalCompressedSize": 118877,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-Bold.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-Bold.otf.woff2",
+      "sha256": "12954097ebbad6749ee1c81a143d555c263420115892211529fe6f51794b8439",
+      "size": 157348,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 343572,
+        "totalCompressedSize": 157263,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-BoldIt.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-BoldIt.otf.woff2",
+      "sha256": "9b7c4112e87b5c4c1bb59d4fd4ca741765c88e515538c7537875738070e9941f",
+      "size": 122532,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 243640,
+        "totalCompressedSize": 122446,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-ExtraLight.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-ExtraLight.otf.woff2",
+      "sha256": "179a142a86302c8e060512094898d05d43d59001718f037009323b559428b449",
+      "size": 139492,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 318256,
+        "totalCompressedSize": 139404,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-ExtraLightIt.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-ExtraLightIt.otf.woff2",
+      "sha256": "722d27de39a6d7e7c6fff086079ef69b4ff1f10057aaaa47866444b7d1e14656",
+      "size": 109948,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 226444,
+        "totalCompressedSize": 109862,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-It.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-It.otf.woff2",
+      "sha256": "69c8e1806941beb7071e2cf0bc54ee03cf4d59eab07fcb5418b1c86c52d39a72",
+      "size": 121304,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 239024,
+        "totalCompressedSize": 121218,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-Light.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-Light.otf.woff2",
+      "sha256": "2d5308c1e971769ab7a3d4a406507bb941e6126b179caf39edabd39b9bb726c0",
+      "size": 149704,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 327372,
+        "totalCompressedSize": 149617,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-LightIt.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-LightIt.otf.woff2",
+      "sha256": "e0f8c24ae66cc7e6e8f32e645e072589b534a9a48ddb14c387d110d47f03b63a",
+      "size": 117064,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 233488,
+        "totalCompressedSize": 116978,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-Medium.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-Medium.otf.woff2",
+      "sha256": "8a0c505a954dea762a41cb9f299b1623902a99e1f34456015313927721e2071f",
+      "size": 154300,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 336824,
+        "totalCompressedSize": 154214,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-MediumIt.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-MediumIt.otf.woff2",
+      "sha256": "546f02badbc25bbbc5168af69519b67e94a8a4882797e56d50ec4ee53e100409",
+      "size": 120964,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 239016,
+        "totalCompressedSize": 120878,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-Regular.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-Regular.otf.woff2",
+      "sha256": "63de0da0cc05298e2e9c6e5cef506d8454ca665f6e668a99d94f51174b9256ed",
+      "size": 153800,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 334900,
+        "totalCompressedSize": 153715,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-Semibold.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-Semibold.otf.woff2",
+      "sha256": "c248b0a178c362916db7c853ed640db77f184d19a0ed9fa5591fa707d3089635",
+      "size": 155624,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 339612,
+        "totalCompressedSize": 155537,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/OTF/SourceSans3-SemiboldIt.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/OTF/SourceSans3-SemiboldIt.otf.woff2",
+      "sha256": "5c1e18e8e97d9d35e819866b3daa944e12b00d76696bbc84c674fa8a23c93891",
+      "size": 120752,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 13,
+        "totalSfntSize": 239712,
+        "totalCompressedSize": 120667,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-Black.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-Black.ttf.woff2",
+      "sha256": "20698b6085d6bc3db5577c1398a42e089ca772b33b9c38267de1325561034d45",
+      "size": 103080,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 323812,
+        "totalCompressedSize": 102986,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-BlackIt.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-BlackIt.ttf.woff2",
+      "sha256": "83327dde35da020a55e31c604eda8ea599771974b70250a6d373852d5d4b77d8",
+      "size": 81732,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 235372,
+        "totalCompressedSize": 81638,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-Bold.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-Bold.ttf.woff2",
+      "sha256": "8d35c6d40e750a4ee23bbbba2bd604ad098d172907369b43281507e16b8e2e7a",
+      "size": 108640,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 329468,
+        "totalCompressedSize": 108545,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-BoldIt.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-BoldIt.ttf.woff2",
+      "sha256": "8c4b66aea0e7887dfd1e296b03ae53b76ce25256fae1437777514933acaef0f3",
+      "size": 85664,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 237292,
+        "totalCompressedSize": 85567,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-ExtraLight.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-ExtraLight.ttf.woff2",
+      "sha256": "ff74c13ea991144c3af065e3a5a8327654d2b560169342ed2748b7d49ba8eff1",
+      "size": 103268,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 331752,
+        "totalCompressedSize": 103171,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-ExtraLightIt.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-ExtraLightIt.ttf.woff2",
+      "sha256": "689861b4ce18b5a17302966c1893ff9f6e1b1eadc1a772b3ce9353a1dc9ef036",
+      "size": 82112,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 237404,
+        "totalCompressedSize": 82017,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-It.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-It.ttf.woff2",
+      "sha256": "4d80b3b801f4c457f1b4adbd3911d8501338e6d282141663770c38d3a2e97859",
+      "size": 86452,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 238612,
+        "totalCompressedSize": 86357,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-Light.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-Light.ttf.woff2",
+      "sha256": "1fd6d4d511c3161a5a3555efa585fbe18cde2f151a79bd0af4655c5093fca90c",
+      "size": 108116,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 334644,
+        "totalCompressedSize": 108022,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-LightIt.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-LightIt.ttf.woff2",
+      "sha256": "a5696d5ee159c1efae034f006be366ef22bb69e154e5cfbe335e2dbda1639f86",
+      "size": 85852,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 239480,
+        "totalCompressedSize": 85755,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-Medium.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-Medium.ttf.woff2",
+      "sha256": "437a67034cb2ce4cb20d7f808e748e08ac201e15077a075a69baf67d8376a0c3",
+      "size": 108844,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 330440,
+        "totalCompressedSize": 108748,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-MediumIt.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-MediumIt.ttf.woff2",
+      "sha256": "908b9776b16254c49b9a98bc7f4d7ccb7399d39272522d446847c5ec73bd7202",
+      "size": 85888,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 238116,
+        "totalCompressedSize": 85792,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-Regular.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-Regular.ttf.woff2",
+      "sha256": "53492fb3a0def77354f166a55d09b63a10855e91c206c7620a81cf56e97f8ec3",
+      "size": 109632,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 331384,
+        "totalCompressedSize": 109537,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-Semibold.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-Semibold.ttf.woff2",
+      "sha256": "47b9b661b9f395fe7f0d0e119637fba5c8dad97bde3df60066fd24229c0792f4",
+      "size": 108900,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 330352,
+        "totalCompressedSize": 108804,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/TTF/SourceSans3-SemiboldIt.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/TTF/SourceSans3-SemiboldIt.ttf.woff2",
+      "sha256": "552d2d08e719d09413fbfff81f6fa16f153ad87edf6a49d69df9c303fea71ae6",
+      "size": 85936,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 237868,
+        "totalCompressedSize": 85841,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/VF/SourceSans3VF-Italic.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/VF/SourceSans3VF-Italic.otf.woff2",
+      "sha256": "2cac627e742dec5b6fa73a0ad243a97e189c362ea11ae85c22b2e52b214d00a3",
+      "size": 132332,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 18,
+        "totalSfntSize": 303168,
+        "totalCompressedSize": 132215,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/VF/SourceSans3VF-Italic.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/VF/SourceSans3VF-Italic.ttf.woff2",
+      "sha256": "b4959abc0569392f87c6c6ac612f90e3fe0104d283724189b7d8b6f61af347d3",
+      "size": 137996,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 20,
+        "totalSfntSize": 396964,
+        "totalCompressedSize": 137872,
+        "outlines": "glyf",
+        "variable": true,
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/VF/SourceSans3VF-Upright.otf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/VF/SourceSans3VF-Upright.otf.woff2",
+      "sha256": "f9e4eac0e8f8ffdae91cf6eff3962b96e81417cba5c728bc1c89efe9510e7653",
+      "size": 164736,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 18,
+        "totalSfntSize": 538140,
+        "totalCompressedSize": 164619,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "source-sans-3/WOFF2/VF/SourceSans3VF-Upright.ttf.woff2",
+      "sourceId": "adobe-source-sans",
+      "upstreamPath": "WOFF2/VF/SourceSans3VF-Upright.ttf.woff2",
+      "sha256": "5f16566f7a40d39b339ad26be151fa5a1ab1f0c2574c7a2e619765584a1acbd8",
+      "size": 170188,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 20,
+        "totalSfntSize": 653116,
+        "totalCompressedSize": 170065,
+        "outlines": "glyf",
+        "variable": true,
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    }
+  ],
+  "totals": {
+    "files": 261,
+    "bytes": 33444433
+  }
+}

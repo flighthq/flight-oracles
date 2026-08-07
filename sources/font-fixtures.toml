@@ -1,0 +1,125 @@
+# font-fixtures — real font binaries in every wrapper.
+#
+# WHY THIS EXISTS AT ALL, given docs/fixture-coverage.md previously argued it should not.
+# That argument was: flight's whole font obligation is `fontFormat.ts`, a four-byte magic
+# sniff, so six synthesized files of four bytes each would discharge it and a real corpus
+# would buy nothing. The premise was true and the conclusion was still wrong — it gated
+# sourcing on what a downstream parsed *at the time we looked*. Downstream has since begun
+# validating WOFF2 rather than sniffing it, at which point the four-byte answer supplies
+# nothing at all. The corpus is the slow half of supporting a format; the parser is the
+# fast half. So this pack is sourced on the format's terms, not on any parser's.
+#
+# THE MATRIX IS THE POINT. Adobe ships the same fourteen faces as OTF, TTF, WOFF-of-OTF,
+# WOFF-of-TTF, WOFF2-of-OTF and WOFF2-of-TTF, plus a variable font in all six. The join key
+# is in the filename — `WOFF2/OTF/SourceSans3-Black.otf.woff2` names `OTF/SourceSans3-Black.otf`
+# — so a decoder can decompress a wrapper and check it against the sfnt it was made from,
+# with no manifest to maintain and nothing to generate.
+#
+# How far that comparison can be pushed differs between the two wrappers, and the difference
+# is worth stating because assuming the stronger one produces false failures:
+#
+#   WOFF  — each table is zlib-compressed independently, so a decoded table's bytes are
+#           IDENTICAL to the same table in the source sfnt. Byte equality is a valid
+#           assertion, per table.
+#   WOFF2 — the container is a brotli stream over a REORDERED table set, and glyf/loca (and
+#           optionally hmtx) are transformed rather than merely compressed. A conforming
+#           decoder reconstructs tables that are functionally equivalent, NOT byte-identical.
+#           Compare parsed structure, or compare the untransformed tables only.
+#
+# The lock records which tables each WOFF2 declared transformed, read from the uncompressed
+# table directory, so that assertion can be made per file rather than assumed.
+
+[pack]
+name = "font-fixtures"
+kind = "fixtures"
+summary = "Real TTF, OTF, TTC, WOFF and WOFF2 binaries — the same faces in every wrapper, so a decoder can be checked against the sfnt each wrapper was built from."
+
+# The wrapper matrix. Source Sans 3 is chosen over a larger family because it ships every
+# wrapper of every face from one build, in one branch, under one licence — the coverage is
+# in the cross product rather than in the glyph count.
+[[source]]
+id = "adobe-source-sans"
+kind = "upstream"
+repo = "adobe-fonts/source-sans"
+ref = "release"
+include = [
+  "OTF/*.otf",
+  "TTF/*.ttf",
+  "VF/*.otf",
+  "VF/*.ttf",
+  "WOFF/**/*.woff",
+  "WOFF2/**/*.woff2",
+]
+dest = "source-sans-3/"
+
+[source.license]
+declared = "OFL-1.1"
+declared_scope = "repository-root"
+declared_from = "LICENSE.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "SIL Open Font License 1.1, Copyright 2010-2023 Adobe, with Reserved Font Name 'Source'. Permits use, study, modification and redistribution, including with software, and permits sale as part of a larger package. Two conditions shape how it may travel: the fonts may not be sold on their own, and a modified version may not carry the reserved name."
+
+# A second producer for WOFF2, because a single toolchain's output is a single toolchain's
+# bugs. JetBrains ships webfont WOFF2 including a variable font, built by a different chain
+# from Adobe's, alongside the OTF and TTF the same release was cut from.
+[[source]]
+id = "jetbrains-mono"
+kind = "upstream"
+repo = "JetBrains/JetBrainsMono"
+ref = "master"
+include = [
+  "fonts/otf/*.otf",
+  "fonts/ttf/*.ttf",
+  "fonts/variable/*.ttf",
+  "fonts/webfonts/*.woff2",
+]
+strip = "fonts/"
+dest = "jetbrains-mono/"
+
+[source.license]
+declared = "OFL-1.1"
+declared_scope = "repository-root"
+declared_from = "OFL.txt"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "SIL Open Font License 1.1, Copyright 2020 The JetBrains Mono Project Authors, with Reserved Font Name 'JetBrains Mono'. Same terms as Adobe's: redistributable and sellable with software, not sellable alone, reserved name not reusable."
+
+# Purpose-built micro-fonts, and the only TTC here. Where the two families above are whole
+# fonts that happen to exercise a decoder, these are the opposite: each is a few hundred
+# bytes built to exercise ONE table — cmap subtable formats 4, 6, 10, 12 and 14; COLRv1;
+# CBDT; sbix; gvar; cvar; VARC; morx — which is the coverage a real font never gives you,
+# because a real font carries whichever subtable its designer's tool happened to emit.
+#
+# The `.ttx` files beside them are fonttools' XML serialisation of the same fonts: a
+# structural description of every table, which is as close to an oracle as a font corpus
+# gets without rendering anything.
+#
+# LICENCE CAVEAT, stated rather than smoothed over. The declaration is the repository's
+# Apache-2.0, which is a statement about the repository. The directory mixes fonts the
+# project authored with SUBSETS OF THIRD-PARTY FAMILIES — Noto, Cantarell, Vazirmatn, Tinos,
+# Amstelvar, Material Icons, and W3C's Ahem — whose own upstreams are OFL-1.1 or Apache-2.0,
+# and fontations makes no per-file declaration to distinguish them. `declaredScope` records
+# that the declaration is repository-wide; consumers weighing it should know the mixture is
+# there rather than infer a per-file grant that nobody made.
+[[source]]
+id = "fontations-test-data"
+kind = "upstream"
+repo = "googlefonts/fontations"
+ref = "main"
+fetch = "blobs"
+include = [
+  "font-test-data/test_data/ttf/**",
+  "font-test-data/test_data/ttc/**",
+  "font-test-data/test_data/ttx/**",
+]
+strip = "font-test-data/test_data/"
+dest = "fontations/"
+
+[source.license]
+declared = "Apache-2.0"
+declared_scope = "repository-root"
+declared_from = "LICENSE-APACHE"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "googlefonts/fontations is offered under Apache-2.0 or MIT at the reader's choice; the Apache grant is the one relied on here and the one snapshotted. Its test data mixes fonts the project built with subsets of third-party families carrying OFL-1.1 or Apache-2.0 upstream, none of it separately declared."

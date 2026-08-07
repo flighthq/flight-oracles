@@ -1,0 +1,80 @@
+# font-malformed-fixtures — fonts a decoder must survive.
+#
+# The negative half of font coverage, and the half that decides whether "we support WOFF2"
+# is a claim or a wish. A decoder that accepts every well-formed font and also accepts a
+# WOFF2 whose declared totalSfntSize exceeds its own decompressed output has no WOFF2
+# support; it has a decompressor and an exploit.
+#
+# OTS — the OpenType Sanitiser — is the font validator that ships inside Chrome and Firefox:
+# every web font either passes it or is not rendered. Its test corpus is therefore not
+# hypothetical damage. It is the material that actually reached browsers.
+#
+# TWO DIRECTORIES, TWO DIFFERENT EXPECTATIONS. Reading them as one set gets both wrong:
+#
+#   bad/      Fonts OTS must REJECT. A decoder that returns a document for one of these has
+#             a bug with a security shape, not a leniency preference.
+#   fuzzing/  Fuzzer output. The expectation is NOT rejection — many are perfectly decodable
+#             — it is that nothing hangs, crashes or allocates unboundedly. This is exactly
+#             the property flight's SWF suite states as its whole error contract ("no input
+#             produces an exception"), and it cannot be established from well-formed files.
+#
+# `good/` IS DELIBERATELY NOT TAKEN. It is 57 MB of real-world fonts named by content hash,
+# with no declaration of any kind and no record of where they were collected. The positive
+# half of the corpus is better served by `font-fixtures`, whose fonts arrive with licences
+# attached, so taking `good/` would add undeclared weight for coverage already held. One
+# `include` line brings it back if that judgement ever looks wrong.
+#
+# WHAT IS DECLARED HERE, AND WHAT IS NOT. The repository is BSD-3-Clause; that covers the
+# sanitiser's source. The test fonts are content-hash filenames with no per-file licence,
+# no manifest and no provenance note anywhere in the tree, and OTS asserts nothing about
+# them. Reporting BSD-3-Clause over them would be reporting a declaration nobody made, so
+# they ship declared UNKNOWN with onward_use = "unknown": usable as build input,
+# structurally barred from -demo and -permissive. Same posture as atf-fixtures, for the
+# same reason.
+
+[pack]
+name = "font-malformed-fixtures"
+kind = "conformance"
+summary = "Malformed and fuzzed fonts from the OpenType Sanitiser's own corpus — the material a browser font validator exists to reject, undeclared provenance, build input only."
+
+# Fonts that must be rejected. 113 files across TTF, OTF, TTC, WOFF and WOFF2, so the
+# rejection path is exercised in every wrapper rather than only in the bare sfnt.
+[[source]]
+id = "ots-bad"
+kind = "upstream"
+repo = "khaledhosny/ots"
+ref = "main"
+include = ["tests/fonts/bad/**"]
+strip = "tests/fonts/bad/"
+dest = "bad/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "khaledhosny/ots is BSD-3-Clause, which covers the sanitiser source. These fonts sit in tests/fonts/ under content-hash filenames with no per-file licence, no manifest and no provenance note; OTS declares nothing about them and neither do we."
+
+# Fuzzer output: must not hang, crash, or allocate without bound. Includes 44 WOFF2 and 46
+# WOFF cases, which is where the wrapper formats' own length and offset fields get tested
+# against a decoder that trusted them.
+#
+# One file is 18.7 MB — a TTC — and dominates the pack's size on its own. It stays: an
+# oversized collection header is precisely the input that separates a decoder with
+# allocation limits from one without, and shrinking the corpus to make the archive tidy
+# would remove the case most worth having.
+[[source]]
+id = "ots-fuzzing"
+kind = "upstream"
+repo = "khaledhosny/ots"
+ref = "main"
+include = ["tests/fonts/fuzzing/**"]
+strip = "tests/fonts/fuzzing/"
+dest = "fuzzing/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "As above: the repository's BSD-3-Clause covers the sanitiser, not the fuzzer corpus in tests/fonts/, which carries no declaration."

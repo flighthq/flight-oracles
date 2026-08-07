@@ -1,0 +1,4706 @@
+{
+  "pack": {
+    "name": "font-malformed-fixtures",
+    "kind": "conformance",
+    "summary": "Malformed and fuzzed fonts from the OpenType Sanitiser's own corpus \u2014 the material a browser font validator exists to reject, undeclared provenance, build input only."
+  },
+  "sources": [
+    {
+      "id": "ots-bad",
+      "kind": "upstream",
+      "repo": "khaledhosny/ots",
+      "ref": "main",
+      "commit": "884861e0103b41d7e9845fdaf9fd1e3c12819103",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "khaledhosny/ots is BSD-3-Clause, which covers the sanitiser source. These fonts sit in tests/fonts/ under content-hash filenames with no per-file licence, no manifest and no provenance note; OTS declares nothing about them and neither do we.",
+        "onwardUse": "unknown"
+      }
+    },
+    {
+      "id": "ots-fuzzing",
+      "kind": "upstream",
+      "repo": "khaledhosny/ots",
+      "ref": "main",
+      "commit": "884861e0103b41d7e9845fdaf9fd1e3c12819103",
+      "retrieved": "2026-08-07",
+      "license": {
+        "declared": "UNKNOWN",
+        "declaredScope": "repository-root",
+        "commercialUse": "unknown",
+        "redistributable": true,
+        "covers": "As above: the repository's BSD-3-Clause covers the sanitiser, not the fuzzer corpus in tests/fonts/, which carries no declaration.",
+        "onwardUse": "unknown"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "bad/0014256514b220c525e98840b0d6ba736a85acbd.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/0014256514b220c525e98840b0d6ba736a85acbd.ttf",
+      "sha256": "fec4f7423488fd439fbb9ad336bfac04b8f374edbe0ed37239a90ad5ff150e40",
+      "size": 57296,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/003a9baf5665abc42fae0d7027718294601385b9.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/003a9baf5665abc42fae0d7027718294601385b9.ttf",
+      "sha256": "71c2ed60e41712f04e3c7f9e9237d0ff9012bd223ea7752a5f3539bfa4acf684",
+      "size": 50760,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/00ac7a910785ea3a30655fe386d4cb02b39719aa.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/00ac7a910785ea3a30655fe386d4cb02b39719aa.otf",
+      "sha256": "0af76f2c39035de742f41e86f61c51709174df1bdc4d5a7ed654c8e263d1b927",
+      "size": 408,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/013d9956e40d1ea194c4d7817fbf220d6be9c33b.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/013d9956e40d1ea194c4d7817fbf220d6be9c33b.ttf",
+      "sha256": "5b0150481ef3c6ebed568ea4fa6c782bb27aada1613675ecedd960f84e7a0702",
+      "size": 344,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/01592f6b2f515888a44dc6311c481a57edf79644.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/01592f6b2f515888a44dc6311c481a57edf79644.ttf",
+      "sha256": "48bb70a461168b075ef1fc29f41c6785d1dd135141ddcd3b2ee77512e5300a7d",
+      "size": 57280,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/024ad17b23e4298f1d80246b63d63d8e54c76e3d.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/024ad17b23e4298f1d80246b63d63d8e54c76e3d.ttf",
+      "sha256": "63fe00f6a13193bd028d84540fd0a499e97a88dd7557035d7fcfd324f09fc33b",
+      "size": 60436,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/0349e0140ce7dc311f52413dea38b8d64df5cd0c.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/0349e0140ce7dc311f52413dea38b8d64df5cd0c.ttf",
+      "sha256": "bf2d740445a92435b1ddf65154b2c77f3f19ea4e7370a00f849e7d3812bba9f0",
+      "size": 57296,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/035341aa98a4342f18cf59d7332a77794c5a8923.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/035341aa98a4342f18cf59d7332a77794c5a8923.ttf",
+      "sha256": "7fc9abed46361a6a516c0e2e9711658602f46571ba5b9c0737c5148476277c37",
+      "size": 57280,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/03b667c2ab94eba7e078bc91cd7145e04f352cd5.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/03b667c2ab94eba7e078bc91cd7145e04f352cd5.ttf",
+      "sha256": "56f6553a98d85fb6d6c245097b605c0994fced22268a117c8ba01a71daa6575b",
+      "size": 61596,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/07165649b488b700585197b1d1083f94ac61d525.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/07165649b488b700585197b1d1083f94ac61d525.ttf",
+      "sha256": "0d15ffecc28183ae21ae8ee585455b8c04aa99fc12067bab5ab58f9a60917d9e",
+      "size": 1660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/078400f5718f84841fc43a04fd28d946ddad5e37.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/078400f5718f84841fc43a04fd28d946ddad5e37.otf",
+      "sha256": "d2696c80890d7f66bb638b24b6a7ad45c750cba2f26805495cc4ba9a1d235ef0",
+      "size": 426,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/080a26ad508861558f5f69836881bb0b8e8842c2.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/080a26ad508861558f5f69836881bb0b8e8842c2.ttf",
+      "sha256": "05547c9dfdbd7080d87bb20f69ceefea21a8744eef71f8df75d6ed0008e326bc",
+      "size": 1679,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/08b3b69027fc071fa71910cc7857833b7e5f4534.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/08b3b69027fc071fa71910cc7857833b7e5f4534.ttf",
+      "sha256": "d8f76061c1ea6a005e5bf3e2564be33efc254ee58c000dc39cc8024d99637e7b",
+      "size": 58868,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/092da87de7e293efee8be43f531b5bf0612693a5.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/092da87de7e293efee8be43f531b5bf0612693a5.ttf",
+      "sha256": "693805060a409dbe5669fed7cc10da3420bd188d8d6decc49791037aa833123c",
+      "size": 59216,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/0a228b7430d18283b6564822c06e8521dac93407.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/0a228b7430d18283b6564822c06e8521dac93407.ttf",
+      "sha256": "a5e489bd0a7d653df48ccd99c8ba8f34bb3313a09ae4a7dc106fc3840e68cad1",
+      "size": 1660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/0a85ab417c6726d99235a6f9aaaf4879f711f01b.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/0a85ab417c6726d99235a6f9aaaf4879f711f01b.ttf",
+      "sha256": "46f7acc5f4a912e36558ce436c7fe70f24330915f2289bc5d6a977f13ec566bf",
+      "size": 57280,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/0c60702ee5003855555fee931a2da7daa917a1ef.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/0c60702ee5003855555fee931a2da7daa917a1ef.ttf",
+      "sha256": "0680675856d29ae5ad179977ce3df80cb93da86e0b9f99ea07357268fd828b12",
+      "size": 59216,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/0da956a1d4dad2962619a3f0a1d87daa677ffcf5.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/0da956a1d4dad2962619a3f0a1d87daa677ffcf5.otf",
+      "sha256": "0132514384f81f25d9c8483b97ef93a6c8ead3ada80b5a18676c201ed2c1b601",
+      "size": 7940,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 18,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "bad/0e4a70a10a82f7f4d63865006e81a445de26d3d1.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/0e4a70a10a82f7f4d63865006e81a445de26d3d1.ttf",
+      "sha256": "5369b5ef5b0493c53ed03b83741fcc66ba051fc43aeb8ab375a8a7aefff5771b",
+      "size": 59167,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/0f4f4a8e4a247694370ff11ae8b129395eca85fd.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/0f4f4a8e4a247694370ff11ae8b129395eca85fd.ttf",
+      "sha256": "a0e2bd51d3a83467980aa02a6132217275c98a65f78ec8591b39f0fac2358c51",
+      "size": 5312,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/0fce4352e04a156a1cb8d4bc344cd2be1dfe7177.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/0fce4352e04a156a1cb8d4bc344cd2be1dfe7177.otf",
+      "sha256": "0a563b922d7859e72543cac8685febe7a8421f8779bb01f7a862c9f3dc6310a8",
+      "size": 408,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/103ad354e517994c447b9c5c6914a290517cb5ed.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/103ad354e517994c447b9c5c6914a290517cb5ed.otf",
+      "sha256": "af54d77c54cf57d6cc51bbf7460ca9696770a2f33c85b309236ae31e431ac3d8",
+      "size": 408,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/103b47d389cb700e76893677f51f7b74d09d08d5.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/103b47d389cb700e76893677f51f7b74d09d08d5.ttf",
+      "sha256": "9cedd57d594e1422743ca7df45711e221326ab3b7778fb5d69f0090cd3072490",
+      "size": 57276,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/13124b99e25a379efbdd1c3820b1484f842e1ad5.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/13124b99e25a379efbdd1c3820b1484f842e1ad5.ttf",
+      "sha256": "b132d70435e44c9a6a4c0f399987063d29663eaa9d5aeaf1f7b805489e6ac39c",
+      "size": 59188,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/173c4c23291c983fead3d734afd8a4de504f508e.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/173c4c23291c983fead3d734afd8a4de504f508e.otf",
+      "sha256": "c2405db2c41a5966aa9a90f6527c43a13c62656421319a7c0190b256e871f9fa",
+      "size": 408,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/17cbd36aad32fe96dfb6dc49ceaaed54553c9189.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/17cbd36aad32fe96dfb6dc49ceaaed54553c9189.ttf",
+      "sha256": "8bd1b3e6469d8be79a88b4554bf4bc942a32a68fe3479e5f11cc7efdb1393244",
+      "size": 12
+    },
+    {
+      "path": "bad/1ccbe1de6cfd3c183f067d4a2549f81405740a1d.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/1ccbe1de6cfd3c183f067d4a2549f81405740a1d.ttf",
+      "sha256": "0fe78930b8dd2434b89984f949d0a2217d1bcc9e369c52d237072c1d17ecbf98",
+      "size": 46644,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 20,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/1de19636832bb7ebb45680fb09b44227f19a96ce.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/1de19636832bb7ebb45680fb09b44227f19a96ce.ttf",
+      "sha256": "9bc0df158462f2efd6edfeedcb3502caa6de4dfd5c5fcbf0e38a6b05ba319799",
+      "size": 58868,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/1ef2c4e95428d382ed8653c6657bdb66eb0f415d.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/1ef2c4e95428d382ed8653c6657bdb66eb0f415d.ttf",
+      "sha256": "c033c1757ab6604171d5bdb98d2cf9981dd2cf6419e079460fa652e4ad1d0938",
+      "size": 3820,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 12,
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/23b2a3316b3797bf9a61acdf36cf63d10ab3342e.woff",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/23b2a3316b3797bf9a61acdf36cf63d10ab3342e.woff",
+      "sha256": "cbcbe9b9127b22d6f38d238061feab021f8d0655d8896ca0194681518e1d47db",
+      "size": 1080,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1080,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/251a4ffb5418b336217a9e7958941192b5a20137.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/251a4ffb5418b336217a9e7958941192b5a20137.otf",
+      "sha256": "8440d4ba371540af86601c7f8241a551ece73bca7c96f2216a3064dafd95b44a",
+      "size": 877,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/257a9ccbda162eec44796987d8e20fca32288029.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/257a9ccbda162eec44796987d8e20fca32288029.otf",
+      "sha256": "dffca31a335786d874ccdfa562d8d3306a0a775f278e7d40c592d606273dd390",
+      "size": 2196,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff",
+        "color": [
+          "colr"
+        ]
+      }
+    },
+    {
+      "path": "bad/28ce9a4dc67328856213bb1da09d55e4cf561c68.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/28ce9a4dc67328856213bb1da09d55e4cf561c68.ttf",
+      "sha256": "55d987250518c663e0b58e553b83595b33f25f2aff9c10e4566d77d731b51230",
+      "size": 1660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/2d0bf4e52a64aa8bda2fdd9597e1bb4fbf33eb2b.woff2",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/2d0bf4e52a64aa8bda2fdd9597e1bb4fbf33eb2b.woff2",
+      "sha256": "85b3b4122c6095eada8c8617c32a04cd7644b0887804ff4a65e8d0b037ea8fa4",
+      "size": 4096,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 7248,
+        "totalCompressedSize": 4005,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "bad/2d80771036e065b9cd582b769d0388a0de90f84f.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/2d80771036e065b9cd582b769d0388a0de90f84f.ttf",
+      "sha256": "09f96a57c7412af9da9c28ad14407e1b0698b797886bbc35a17bb6344550649a",
+      "size": 116108,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 23,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/2edb1d50d2b8f4ccf8b7d56e7f354dd86be081f9.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/2edb1d50d2b8f4ccf8b7d56e7f354dd86be081f9.ttf",
+      "sha256": "9178871c9744fddb1a8ce4455e9b8b987127eff469cb786b888a58a87f0bb0c8",
+      "size": 1660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/2f74c3cb404c60d9a46e883c88d6c10dc3562fad.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/2f74c3cb404c60d9a46e883c88d6c10dc3562fad.otf",
+      "sha256": "3eec6eae44882728c94c070b801be186cfbba8fd0684b4a4e87e632888be7b9d",
+      "size": 1600,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 12,
+        "outlines": "cff2"
+      }
+    },
+    {
+      "path": "bad/335e7e5a354010624679dfb52609652c4a7f6fc8.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/335e7e5a354010624679dfb52609652c4a7f6fc8.ttf",
+      "sha256": "0dca2d79fff50130297accf0ae510f8d412e8617d9569a9d3255c6ccd58cb4d8",
+      "size": 1660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/33df9c8b531928c90a3afebf6b15828dd0cad929.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/33df9c8b531928c90a3afebf6b15828dd0cad929.otf",
+      "sha256": "f591352857e797d35d109fe26b7cc7dd15a0c6cd75c8db7b3f7c7df8f7caca25",
+      "size": 51649,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/33f430d6661b687d4449d0f0878da477a50f41c1.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/33f430d6661b687d4449d0f0878da477a50f41c1.ttf",
+      "sha256": "9bbf02e5b0dbd520b56540571a67cf4a4ac91cbd2bc6ae93877aac11b0bc6d1f",
+      "size": 682942,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 29,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/345cfba1a71738b238de912c04370623f153f72f.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/345cfba1a71738b238de912c04370623f153f72f.ttf",
+      "sha256": "3b0accad55d16b34e43ff7fb9ac0b0fd7c01c131f7e4241d86cc9eefe7a5e529",
+      "size": 146476,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/35159513f8d8422ff1a880a039ad68c857660cdd.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/35159513f8d8422ff1a880a039ad68c857660cdd.ttf",
+      "sha256": "ab0fe6fa95f867797160d09d52b1d87b57e638fd1392607ecccfdb098ccc8b60",
+      "size": 58868,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/3b7eaf30cc528463aa344305b5ab9528e1bc3c15.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/3b7eaf30cc528463aa344305b5ab9528e1bc3c15.ttf",
+      "sha256": "b61dca2f13e8c6add336f507104b1f2c1eaf3e86eb9f566c9e8c5f72ed64a485",
+      "size": 80968,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/3b9bcfd57f7f18dd4c45ba51e77b23b3895faa9f.ttc",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/3b9bcfd57f7f18dd4c45ba51e77b23b3895faa9f.ttc",
+      "sha256": "6b20bd9a0b426d1afff4f73c28dbb7616e07eaf9a60d7b495fd1c46e6962f627",
+      "size": 3161
+    },
+    {
+      "path": "bad/3ba5737414924ed17800ff60ff21a524a513e111.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/3ba5737414924ed17800ff60ff21a524a513e111.ttf",
+      "sha256": "60ce4e65d7475bfa1a48d4b0635b294062a07a8706780ad947eeae8a3969be55",
+      "size": 1680,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/3bfa96a443c19de63f28554b748bf84e57ee51c3.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/3bfa96a443c19de63f28554b748bf84e57ee51c3.otf",
+      "sha256": "062ff0f6dfd23a23a342b5720a2e8d52f8155f8fdb2fd60aee47382aaf37b9f8",
+      "size": 408,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/410761bc1115173bad3f6b0d3d72103e1dc32f67.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/410761bc1115173bad3f6b0d3d72103e1dc32f67.otf",
+      "sha256": "620348fccbfd12632e14f5e0312849ae3a5aa5090ded67fe615b4cb1ee67c3bb",
+      "size": 444,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/41542b89c620cc3159dc2f29bd335d48136478da.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/41542b89c620cc3159dc2f29bd335d48136478da.otf",
+      "sha256": "9e7d3ff5b0e09904c55101a938545465982c3f787cf03c9d3c6d1a015dabd773",
+      "size": 1608,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 12,
+        "outlines": "cff2"
+      }
+    },
+    {
+      "path": "bad/42e947856c0ee90faf78051ffc41e527a8ee8be9.woff2",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/42e947856c0ee90faf78051ffc41e527a8ee8be9.woff2",
+      "sha256": "e3981edb0e6e11adb18d25a54fbd1e3e73d94e7ea92901d7c2d854502d963c5c",
+      "size": 52,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "0xb1abffb2",
+        "numTables": 1,
+        "totalSfntSize": 4,
+        "totalCompressedSize": 1,
+        "transformed": [
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "bad/457227a3d4dbf6dd062d251b2ae0c8b31f14c9b8.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/457227a3d4dbf6dd062d251b2ae0c8b31f14c9b8.otf",
+      "sha256": "d465f8ff7215b43645fbbc45b5b95ae79e687b91ba36d5fed21d4d1e74b63508",
+      "size": 1772,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/47b556f393b0988cf320b165512a97a5da128f05.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/47b556f393b0988cf320b165512a97a5da128f05.ttf",
+      "sha256": "ac6357815df55b18c2c4b6591dfc2a3411a5c530a3ef5bec93afbe39015dc136",
+      "size": 97364,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "bad/494f40cf28ec4c2753aa907941fe48b7d15f6b04.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/494f40cf28ec4c2753aa907941fe48b7d15f6b04.ttf",
+      "sha256": "a8ec40b15f83c4e32580876eda031afafa0e557d094d4ec88f8dedde8557fad5",
+      "size": 1660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/4c8e7bcd6b657941c4e846f6e48bb714fb3faf92.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/4c8e7bcd6b657941c4e846f6e48bb714fb3faf92.otf",
+      "sha256": "6ca7058c04ee70ddc607dd994f3b7b7fc1d0e2281fd7e5890ccb4897e5cc8c7e",
+      "size": 847,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/4d29ba6a49fcba83c9a0cb91835b8e5e9fbe2e0b.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/4d29ba6a49fcba83c9a0cb91835b8e5e9fbe2e0b.ttf",
+      "sha256": "d5c3808b3c5c3762bbe09284a6a5a65f59fac226273e2f7c2e7385cf98792313",
+      "size": 1680,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/4d9ba653319ad56fa13a724e6d2c357ff948c2ea.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/4d9ba653319ad56fa13a724e6d2c357ff948c2ea.ttf",
+      "sha256": "04b22c0be13b2ae7ba7c61d7854248a10f0f9048c868f8463cb74fdbd949f406",
+      "size": 1660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/52053c2de32349ee09bbb6a4e755c2b3e85b9821.woff",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/52053c2de32349ee09bbb6a4e755c2b3e85b9821.woff",
+      "sha256": "b3ed4869587624d0b28fc18b7fecf3446696a74f94e7627d9a07ad44fa1d987d",
+      "size": 1348,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 9,
+        "totalSfntSize": 1856,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "bad/55c321d6932942d22555ff9b985e905eb472d4d1.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/55c321d6932942d22555ff9b985e905eb472d4d1.ttf",
+      "sha256": "15f5ac9178f2b898e3143da9078fc05da88df2e8fdfd5cf92ec87e1c48233fab",
+      "size": 1680,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/56d013275a9626c7b10b677fba1d5d4752eec51f.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/56d013275a9626c7b10b677fba1d5d4752eec51f.otf",
+      "sha256": "892faca6f25067c1985c79f0e7ac64785fcb4b2645e63b4e92ced16f6f4f844a",
+      "size": 1392,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 12,
+        "outlines": "cff2"
+      }
+    },
+    {
+      "path": "bad/5733cd9ca76aead50df6240b6b42d466e78240b2.woff",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/5733cd9ca76aead50df6240b6b42d466e78240b2.woff",
+      "sha256": "1ff3ac4b2c0466649ded9a1569ed9e20ddbb540839bb3846714ce8a67872fdd4",
+      "size": 1344,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 9,
+        "totalSfntSize": 1860,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "bad/58b7bd1ebd3396d226c5a777098d115a2fc9f56f.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/58b7bd1ebd3396d226c5a777098d115a2fc9f56f.ttf",
+      "sha256": "6b3b3131d7a218fd6fa36243530100d8fec85c7f9821353258dde9c8ff13483b",
+      "size": 1660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/58c575a08b375e51c9776275c5f877396ddf552b.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/58c575a08b375e51c9776275c5f877396ddf552b.otf",
+      "sha256": "52d1f26b8d1a9d169e8fc15a4ee9cf3d370c46f4237147e5fdb84a206cfb2d36",
+      "size": 408,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/5c67809a0d4b9a16d9eba881282f920153b761eb.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/5c67809a0d4b9a16d9eba881282f920153b761eb.otf",
+      "sha256": "648c699b20d4e247106b08ffc2ad92b12be973eb479c5a782f728418b78418e0",
+      "size": 633,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 10,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "bad/65932a3c0a5ebcbc1ac55267e98506e9dedf41a5.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/65932a3c0a5ebcbc1ac55267e98506e9dedf41a5.ttf",
+      "sha256": "74776ef0885ec7912bee3eee8a9375fc6975d2ea9a9aab0835e09a54ee1b0739",
+      "size": 1660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/66803a29a4e2dc941921d82abf376857583b49db.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/66803a29a4e2dc941921d82abf376857583b49db.ttf",
+      "sha256": "268275443da70f0df1a868e7b3031ffeec616959d9bf2cd5fd667be14ea42233",
+      "size": 57296,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/68bfc9f9233e34db2c5ecb5fb966bf205f92079a.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/68bfc9f9233e34db2c5ecb5fb966bf205f92079a.otf",
+      "sha256": "d73d221f9f5ce32203a1cf61fb3482a25045dd4877195a0ea431f660bbe75456",
+      "size": 421,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/692df3e4b35e0b83cc8991a19ae29e434e705124.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/692df3e4b35e0b83cc8991a19ae29e434e705124.ttf",
+      "sha256": "3ced5ce00f51d7cfda4f1ddb202cd948ff01b22ac547142e01cd4e977e2e721f",
+      "size": 58868,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/698e25666a75ea6121065b5fced5ccee62b65ca4.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/698e25666a75ea6121065b5fced5ccee62b65ca4.otf",
+      "sha256": "47ff209d04b7ff057a6f49d8427e088ef15a99e8ed4cfba8cb4ca8d1331b7527",
+      "size": 2012,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/6d2cc2870fabdc4fa686b66accd404759349e4a8.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/6d2cc2870fabdc4fa686b66accd404759349e4a8.ttf",
+      "sha256": "d8237842cfe97fffb8e05b3856c8c70e1ebb011172802c4b84d0bf69d6146b60",
+      "size": 1680,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/7304e91492c3ba14030446c92f084f8fb031e8e8.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/7304e91492c3ba14030446c92f084f8fb031e8e8.ttf",
+      "sha256": "3aed20e5a00bdfa6c7cad2b93101f8733c3822901ffefa4875ae62c3219c6e82",
+      "size": 58819,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/7522970cb3bb80a698c206cfa61f8418767c1704.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/7522970cb3bb80a698c206cfa61f8418767c1704.ttf",
+      "sha256": "4fdaa25d3b1306d21cee3e68d32735fda0e001d29c045026af2a02aa4956b4a7",
+      "size": 1660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/7c8eefff708b374fffbce135ba28a4565766e560.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/7c8eefff708b374fffbce135ba28a4565766e560.otf",
+      "sha256": "18753045a061e02a31c63309fc1c7183d37d7dca91ed1d589a5922a8e2415945",
+      "size": 2272,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/7ee3cdda8571ff1e51aa081825f72cd0a545e052.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/7ee3cdda8571ff1e51aa081825f72cd0a545e052.ttf",
+      "sha256": "54e2271e00812cf3490c33eaf3a45c29b4bfe1c99f839aa4c82263b98f077bc7",
+      "size": 1028,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12
+      }
+    },
+    {
+      "path": "bad/81942d3ea419539b69990ba98f824a8a46dcb951.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/81942d3ea419539b69990ba98f824a8a46dcb951.ttf",
+      "sha256": "b36bb9257ed3001bf1318aa3b708daac7901d071b5d5642a405707285a04979a",
+      "size": 46456,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 20,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/85d903c71a429ed98a012e742a700cbe2fef005c.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/85d903c71a429ed98a012e742a700cbe2fef005c.ttf",
+      "sha256": "eff62dbe94cc9ca09ebef6371abe51c98c0693060a907e712db9533196f4f0c6",
+      "size": 46592,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 20,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/8a97d860fcbd1294be09f2d0aebb764f2c12f69c.woff",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/8a97d860fcbd1294be09f2d0aebb764f2c12f69c.woff",
+      "sha256": "0200ea92ac63de9ccdbba955370ff11ed557b3b7fc710f1d7d02f34e7d384d76",
+      "size": 8144,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 18,
+        "totalSfntSize": 12560,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "bad/8edb1c6072ff63478456cc93601b77b0eb3432e7.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/8edb1c6072ff63478456cc93601b77b0eb3432e7.otf",
+      "sha256": "093d2085cf93b69ae332e89f6eb8b637023a062827f27558e1eb9f6d267135f4",
+      "size": 989,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/90d60863109aab420257ee10577f2673cb91b3e7.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/90d60863109aab420257ee10577f2673cb91b3e7.ttf",
+      "sha256": "998269c1cd752db0c453d73f43ed12842885b0bfa12284c04bac97c3e06f7bbc",
+      "size": 33696,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 25,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/92520e16995b11b01f56b3834f200416f656161d.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/92520e16995b11b01f56b3834f200416f656161d.ttf",
+      "sha256": "da517ba1a63035ed36b3220e5ec484a3cfdb5164543c8fffa477885f94fd0b81",
+      "size": 1666,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/927b4dc365aab682749294bc85bd195e4b74e034.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/927b4dc365aab682749294bc85bd195e4b74e034.otf",
+      "sha256": "2baf7e4b6366a7b5207243e289fe1282959f7e71fbcd45ca31c0c542ebab6878",
+      "size": 2532,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 11,
+        "outlines": "cff2"
+      }
+    },
+    {
+      "path": "bad/9682ce841ae16214afca9b5e584162611f88dfff.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/9682ce841ae16214afca9b5e584162611f88dfff.ttf",
+      "sha256": "c01f4932256d04ebb2531f6224ec8fc578d7588a6c6417b883640c3f24a9bb27",
+      "size": 59188,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/975a2ba94ea4f520406e1dae2e99bd366b0b66c1.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/975a2ba94ea4f520406e1dae2e99bd366b0b66c1.otf",
+      "sha256": "4e6daf8e1e016e96eb0101cbceb9d15f10a5b3cad6751743d3c5a58b0073c9f2",
+      "size": 6852,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "bad/985de319c172b29bd9e651b093271a8939c35f13.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/985de319c172b29bd9e651b093271a8939c35f13.ttf",
+      "sha256": "0a2ed0f44816abde4c74048a8610784bb5b0ad131d0c83e5b3c021561ee64550",
+      "size": 80
+    },
+    {
+      "path": "bad/a53afc75de22a49c7eebf925b6f54e6dcf208900.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/a53afc75de22a49c7eebf925b6f54e6dcf208900.ttf",
+      "sha256": "be51433d648d78a35c0e6ce01146a68d486a275b37b5b12698d0ff4fd049e198",
+      "size": 2336,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 15,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/a80d45906af055b269d6e81eeae9e91d5c26ef27.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/a80d45906af055b269d6e81eeae9e91d5c26ef27.ttf",
+      "sha256": "bd4499a08722c8b633432e065997c2020e415996a7e3a4917920cbe7b4dfe1f7",
+      "size": 57296,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/a9a801b5149ecc0c9fe30db4beec2c511b0e3f71.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/a9a801b5149ecc0c9fe30db4beec2c511b0e3f71.ttf",
+      "sha256": "cb02f0b95c3bc0aba6e9646ab218211803899b406559f77cb32bcb2b1117f170",
+      "size": 146476,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/aae49b8143752111464bfee4e06514a648b4365e.woff2",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/aae49b8143752111464bfee4e06514a648b4365e.woff2",
+      "sha256": "645dbb1ce87679fcb9a74d54baf832648f2e1641dcade1a624535ad31b545be2",
+      "size": 3484,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 7156,
+        "totalCompressedSize": 3390,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "bad/af434603052be497e74415f2f160df0d6989aded.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/af434603052be497e74415f2f160df0d6989aded.ttf",
+      "sha256": "16e2464f2cd3dc89aa61c560e1b5842f58c3d4dbf74c04a8be3769dcb3b5f772",
+      "size": 59216,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/af7109c13a67bf110892429dfe658a8f62670ce1.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/af7109c13a67bf110892429dfe658a8f62670ce1.ttf",
+      "sha256": "4aab1b19a1c519a13899636f84881c6d65b3c9bb079d371886a55a6fb66ba904",
+      "size": 46644,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 20,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/b49c3750db6a1538283586cbf1115e973383350c.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/b49c3750db6a1538283586cbf1115e973383350c.ttf",
+      "sha256": "dd1b9514ff6d1c446c4c9a32db8956c3b0bf8afab0f56ffb0a3e4b46ff241d31",
+      "size": 61596,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/b9a7339a1ff85286437d93e59df48cc35e5610d6.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/b9a7339a1ff85286437d93e59df48cc35e5610d6.ttf",
+      "sha256": "98493d29ad92a4dc1fbac31cc15a8f299460dc671730cbb509df1d04b39d2fc4",
+      "size": 80964,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/b9ea4b9b671307bc0f9745dd684e1e4f6e48191d.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/b9ea4b9b671307bc0f9745dd684e1e4f6e48191d.otf",
+      "sha256": "6cf4c6a313cacd0028023b1aa072846c22c7f4de6fb60955056e72f16b3fb265",
+      "size": 2012,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/bd5ee794425c2809f262b4bc6e3c0b33008fca73.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/bd5ee794425c2809f262b4bc6e3c0b33008fca73.otf",
+      "sha256": "47f22abf9a85178bb3ff6b78daa90e7dbdc0097ce3470ec64dedccfb3a73863d",
+      "size": 2540,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/c22404e0f69eaca5bbfbecd13d2941df5748a8e3.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/c22404e0f69eaca5bbfbecd13d2941df5748a8e3.ttf",
+      "sha256": "df4ca5ad7539abfe0f30931d294689185897a601e42439a3b0d8a7cd6c679c04",
+      "size": 61596,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/c69c27b17d332fbf33dbc8f25baa0a0a461293a2.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/c69c27b17d332fbf33dbc8f25baa0a0a461293a2.otf",
+      "sha256": "bfe252f7769c1af2bc78b10c3e77ae668d5375839144339706acefe43c53c0b6",
+      "size": 418,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/c6c0f06e6819b04a2eacca8e20dc0882a21bc312.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/c6c0f06e6819b04a2eacca8e20dc0882a21bc312.otf",
+      "sha256": "c68fb4c652f799a1d8e822a80fd3440b25337491bf4515bbb32687c2d462e6ac",
+      "size": 1392,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 12,
+        "outlines": "cff2"
+      }
+    },
+    {
+      "path": "bad/ca0e0bca764d78f46d533b11bb66466f5b489220.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/ca0e0bca764d78f46d533b11bb66466f5b489220.otf",
+      "sha256": "603ec41f2332cbb71cab72e00587ba3074072bb2301c7558050bd77282225d37",
+      "size": 8176,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 15,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "bad/ca5b8d77bb1f1a094cc0032e83487f3cde33a9d6.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/ca5b8d77bb1f1a094cc0032e83487f3cde33a9d6.ttf",
+      "sha256": "5d5dc7f60c3c02a239ba82351eb2eaa068f25a12933f467df5f250f43fb45f01",
+      "size": 46568,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 20,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/cb5656f950377ad5de2c7a6df0a659fbb7065ffe.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/cb5656f950377ad5de2c7a6df0a659fbb7065ffe.ttf",
+      "sha256": "f7f400988c8e37c1f63617929c348b13a0174349a7a10a4256e5c4d249010990",
+      "size": 58868,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/cbc1d3e183f8138f94b788baa397413d7863eb07.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/cbc1d3e183f8138f94b788baa397413d7863eb07.ttf",
+      "sha256": "810e6ecb45f34cc48c5c45d0422254d037353f4ef0316179042e73cdd934f387",
+      "size": 5288,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/cf6934b8e2d100b495e219d1b079fa2c34133d08.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/cf6934b8e2d100b495e219d1b079fa2c34133d08.ttf",
+      "sha256": "78a39fbd1b1174b899de26f6332efda12b33ea9a918d2798a0239a5df76c3f83",
+      "size": 5288,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/d052cc5e62def2facb5772d1b38112779539ef0a.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/d052cc5e62def2facb5772d1b38112779539ef0a.otf",
+      "sha256": "68f601b830fec37f4f3689219471e55eaa06bedb5bf907dc82d50097504c2adb",
+      "size": 1396,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 12,
+        "outlines": "cff2"
+      }
+    },
+    {
+      "path": "bad/d262af9b0b7836f7395ae8b1a4a37e38fa0ae6c3.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/d262af9b0b7836f7395ae8b1a4a37e38fa0ae6c3.ttf",
+      "sha256": "0e93e002d5ebaffe37e11f357ff4f541b0c2fac920b9cafd2fb963be3c08b872",
+      "size": 80968,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/dbcd1243ae657ee8934a699d474be2d0ba79da94.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/dbcd1243ae657ee8934a699d474be2d0ba79da94.ttf",
+      "sha256": "98f0b4aa26ff75fc64faa239b17ad35a42190adc7f12928b9cd0fc63ec54e43a",
+      "size": 46592,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 20,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/dcc4f3316f90bc8a4c05e0086d2b49fddd3a059b.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/dcc4f3316f90bc8a4c05e0086d2b49fddd3a059b.otf",
+      "sha256": "ec8dceee701dd7892ac458ca586ef5a03901e09abdb0713a2da2315dd6e12fe0",
+      "size": 408,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/e071a5082117ad5a64dc3db1bfcd0a31d6db93ae.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/e071a5082117ad5a64dc3db1bfcd0a31d6db93ae.ttf",
+      "sha256": "25a32476bdba87a980f40cfd455571d1308e107cce397b73ecb60ed9eff14377",
+      "size": 1718,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/ea8c4b1d5178ae184ffd0346f12fd426850729cc.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/ea8c4b1d5178ae184ffd0346f12fd426850729cc.otf",
+      "sha256": "ff0908ff964bb4ea0c3ce7e125f930cdfa316daf89c18142e8c31f542db55c70",
+      "size": 479,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/eaeb6d903b14ee184f887aa8a0a81b917e252da9.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/eaeb6d903b14ee184f887aa8a0a81b917e252da9.otf",
+      "sha256": "cfce427a88bfcdd681015d527142f38f474047c9e5f94e9f1c6e52b2d257e66a",
+      "size": 408,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19
+      }
+    },
+    {
+      "path": "bad/eb44137aa49ccb9ea7aad127a8fdc6e155f20565.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/eb44137aa49ccb9ea7aad127a8fdc6e155f20565.ttf",
+      "sha256": "1264ecab917f57ab34c805ba4630243509c16c315b5ffcc55cd8d70b66314b6e",
+      "size": 59209,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/ed550c912a8c5febfdad9ca2500b3284ecfac0d7.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/ed550c912a8c5febfdad9ca2500b3284ecfac0d7.ttf",
+      "sha256": "50b3bb1c260adfef49a4c477e445a1c1d29b2a509a50c22740f9add7d4629cee",
+      "size": 184293,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 20,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/edaf09c932e0582b1473384f66d5571da752a4d2.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/edaf09c932e0582b1473384f66d5571da752a4d2.otf",
+      "sha256": "74f48152b7917bf777c2f8f1902988cfda9b98bfdda936d119ad50ecb2aae33b",
+      "size": 6564,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 9,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "bad/f1dba4340ce94f5359fa4434debc7efcfd1b521f.ttf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/f1dba4340ce94f5359fa4434debc7efcfd1b521f.ttf",
+      "sha256": "c6550ccec35ca487ef6638c26518b2209e15c4c84a555b630f0f5b21d1415b3a",
+      "size": 1660,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/f457d1f9504dbf206f50ea8ae7ab1bc4c51b95c0.ttc",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/f457d1f9504dbf206f50ea8ae7ab1bc4c51b95c0.ttc",
+      "sha256": "5bb01bb7649bb5466a73e73fb725c4dc61fbbe13c0cb438e22fe23a5f5428d94",
+      "size": 3820,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 7,
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "bad/f80571b9ef07ca19dee1978b1796a98672a9e381.otf",
+      "sourceId": "ots-bad",
+      "upstreamPath": "tests/fonts/bad/f80571b9ef07ca19dee1978b1796a98672a9e381.otf",
+      "sha256": "de9acd9053d1025da44dad40f04408841e7d761af43bdf269344937056d2d7f8",
+      "size": 700,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 9,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/011facefb10ee4f813117eae60bb5940a280ae30.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/011facefb10ee4f813117eae60bb5940a280ae30.woff2",
+      "sha256": "40bc66503ab4189e27723133f23a8905e53a3c4d3b84511417816a94144d1a74",
+      "size": 668,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 1320,
+        "totalCompressedSize": 587,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/0509e80afb379d16560e9e47bdd7d888bebdebc6.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/0509e80afb379d16560e9e47bdd7d888bebdebc6.ttf",
+      "sha256": "cb7b7f690ea3167cf135a43bf94cfdc34b923a7a95a066634e7e518a7620ded2",
+      "size": 61,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 3
+      }
+    },
+    {
+      "path": "fuzzing/051d92f8bc6ff724511b296c27623f824de256e9.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/051d92f8bc6ff724511b296c27623f824de256e9.ttf",
+      "sha256": "1670a9e133bcd790822f2752f87f977591f91011ae3f7c93be66e5395ebbd7c5",
+      "size": 2028,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/05a7abc8e4c954ef105d056bd6249c6fda96d4a8.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/05a7abc8e4c954ef105d056bd6249c6fda96d4a8.otf",
+      "sha256": "92abdb15e74b9ed7ffc4ca0a875724e51f2d3e83c7cc5933b88d8c4943b050e8",
+      "size": 29198,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 17,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "fuzzing/07f054357ff8638bac3711b422a1e31180bba863.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/07f054357ff8638bac3711b422a1e31180bba863.ttf",
+      "sha256": "91a95ff6269c7f317976f9512b4f6cd42c8cba2f97c2decaf722c9a590b389f4",
+      "size": 848,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/10531f9105aa03bf6e0f9754ec8af33ed457ad5c.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/10531f9105aa03bf6e0f9754ec8af33ed457ad5c.otf",
+      "sha256": "6d0304117d3bb2d9fe45c305232bce6fc160946812315e23ad4a7ff62786f00e",
+      "size": 1420,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 12,
+        "outlines": "cff2"
+      }
+    },
+    {
+      "path": "fuzzing/11340844a1190f140c78a0a964d49b5985253ea0.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/11340844a1190f140c78a0a964d49b5985253ea0.woff2",
+      "sha256": "12af96f6dc70ab2916f9d615013581d8884a2cf074ce0d21a1b5ae8a26ba9185",
+      "size": 3916,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 6348,
+        "totalCompressedSize": 3830,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/15dfc433a135a658b9f4b1a861b5cdd9658ccbb9.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/15dfc433a135a658b9f4b1a861b5cdd9658ccbb9.ttf",
+      "sha256": "c3be2b57908d0547cb3bdd08125ee09bf6fd01ee72916e9a5480768547f51983",
+      "size": 4936,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 16,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/1679504907c14c2f27119135bd5da57f8713dd05.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/1679504907c14c2f27119135bd5da57f8713dd05.woff",
+      "sha256": "1891fc10b5127784f590d4ab685652937d039f30680e83c57ce40005075845c2",
+      "size": 2292,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 3000,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/16a8e02ff1373539ca818da4f70e9b8573563f29.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/16a8e02ff1373539ca818da4f70e9b8573563f29.woff",
+      "sha256": "b41bb1029786f2e3179f5805cefdb5cd5e1c9653468e8882fed218cbb391af8b",
+      "size": 1312,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1448,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/17ebbcdaf31a8f80c5efa07f4dc11ee40de7ee7f.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/17ebbcdaf31a8f80c5efa07f4dc11ee40de7ee7f.woff",
+      "sha256": "a0c8f485ac66f29a248a0b7d0eaff3cd2f5df3a45fd57234c9aee5c80c5f7585",
+      "size": 2228,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 12,
+        "totalSfntSize": 3428,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/17f60353ae7621b585e8d98a546bbf8479649535.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/17f60353ae7621b585e8d98a546bbf8479649535.woff2",
+      "sha256": "798f1dfeb95e577dac54333d529503370f129e08f1195290f5abc915fe115714",
+      "size": 1380,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2516,
+        "totalCompressedSize": 1296,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/18052b7fc1ca5c188b54864f163bebf80f488811.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/18052b7fc1ca5c188b54864f163bebf80f488811.otf",
+      "sha256": "07616b28b4ba4a42f37ebc2f4f7eeeb004ff3f204084bcdcb2a2066baa9db90a",
+      "size": 2532,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 11,
+        "outlines": "cff2"
+      }
+    },
+    {
+      "path": "fuzzing/181a03beec3e4aa1814fb24a3b8ca5f930629955.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/181a03beec3e4aa1814fb24a3b8ca5f930629955.woff",
+      "sha256": "88ebb6803544230331fd3b3788782c50cff927291aa67eb18be9235bc8080cf0",
+      "size": 2228,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 12,
+        "totalSfntSize": 3428,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/191826b9643e3f124d865d617ae609db6a2ce203.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/191826b9643e3f124d865d617ae609db6a2ce203.ttf",
+      "sha256": "5d6ff7d26f8d031e35a96be54fa17524b22a76395bcdf020fa575587eda3b69a",
+      "size": 2140,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/1a6f1687b7a221f9f2c834b0b360d3c8463b6daf.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/1a6f1687b7a221f9f2c834b0b360d3c8463b6daf.ttf",
+      "sha256": "6f8751b346c39491475ff868fc3a81e3ca28cddb69a4710359e74c3c8ab479a3",
+      "size": 64,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 3
+      }
+    },
+    {
+      "path": "fuzzing/1acb1be6d45ca77a1b734e3892b823a34634d38e.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/1acb1be6d45ca77a1b734e3892b823a34634d38e.woff2",
+      "sha256": "6cf3330abcb42921df44872fd173f9a0ce21cecc5dfc9f78b43a41158eb45af9",
+      "size": 764,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1456,
+        "totalCompressedSize": 679,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/1c04a16f32a39c26c851b7fc014d2e8d298ba2b8.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/1c04a16f32a39c26c851b7fc014d2e8d298ba2b8.ttf",
+      "sha256": "222f6482a70a2a5aeddc88a52fc0e07241fa53a890b86ec60e07ddd4061d03f5",
+      "size": 820,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/1c2c3fc37b2d4c3cb2ef726c6cdaaabd4b7f3eb9.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/1c2c3fc37b2d4c3cb2ef726c6cdaaabd4b7f3eb9.ttf",
+      "sha256": "bec31c73849db3a863b80d956fcd330a45998bba8eece0defb1e1f5db9afe7bb",
+      "size": 316,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 7,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/1c2fb74c1b2aa173262734c1f616148f1648cfd6.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/1c2fb74c1b2aa173262734c1f616148f1648cfd6.ttf",
+      "sha256": "90f5c31bcc93f2e6038570748b14da72b364d7b31e1cc4f1f95ff95eb6367bbb",
+      "size": 4064,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 13,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/1d5090bfad0eeb11c88882085d4a195f73926327.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/1d5090bfad0eeb11c88882085d4a195f73926327.woff2",
+      "sha256": "491055741edb330fef33620b4dbc9f7cb46bec0b084e81b036474f51f12d8b8d",
+      "size": 676,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 1360,
+        "totalCompressedSize": 596,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/1e665cdc2796a76d8fd46232566795aa890991b1.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/1e665cdc2796a76d8fd46232566795aa890991b1.woff2",
+      "sha256": "4821c0e0e480232851c59a1af4cfaac29598c5b2e6c085ddd8cab936e6f774fc",
+      "size": 628,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1088,
+        "totalCompressedSize": 545,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/1e77a0231fe3d0af9875d314c4c5da04e65b3680.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/1e77a0231fe3d0af9875d314c4c5da04e65b3680.ttf",
+      "sha256": "85f32f4fc8f0a8282fb59e76c955d160d540d2f1e7c86d61753badb7238dd1a2",
+      "size": 424652,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 16,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/2028193bd133228575af7000c60fa6f3e46a4bf0.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/2028193bd133228575af7000c60fa6f3e46a4bf0.woff2",
+      "sha256": "90797502ea84265a3cbdd6cecf00ead84fb8623c826d7aa283b1b36817a26a2a",
+      "size": 1328,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 12,
+        "totalSfntSize": 2748,
+        "totalCompressedSize": 1250,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/205edd09bd3d141cc9580f650109556cc28b22cb.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/205edd09bd3d141cc9580f650109556cc28b22cb.otf",
+      "sha256": "767f8cd0a6d0febfb7d5ad0f539d09a5a395919f0f13f74cfce6b67a790cca63",
+      "size": 1966,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/205edd09bd3d141cc9580f650109556cc28b22cb.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/205edd09bd3d141cc9580f650109556cc28b22cb.ttf",
+      "sha256": "767f8cd0a6d0febfb7d5ad0f539d09a5a395919f0f13f74cfce6b67a790cca63",
+      "size": 1966,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/2069628b7b2ff2f8367f46c366f010c4f5a6295e.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/2069628b7b2ff2f8367f46c366f010c4f5a6295e.woff",
+      "sha256": "abc81846f8ba89e3836ab03a8e789b6634afdfb3360515af2496c2cef5090b7e",
+      "size": 1664,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2028,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/217a934cfe15c548b572c203dceb2befdf026462.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/217a934cfe15c548b572c203dceb2befdf026462.ttf",
+      "sha256": "221680ddf03239e87029fbce440def9a178a02e3f7d28553f812e550177316da",
+      "size": 1384,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14
+      }
+    },
+    {
+      "path": "fuzzing/226bc2deab3846f1a682085f70c67d0421014144.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/226bc2deab3846f1a682085f70c67d0421014144.ttf",
+      "sha256": "7e9f0135b4adb0f9ed1afa50f005de3dcf52fbf8a5866beccb25640fa649c193",
+      "size": 2828,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/2393b84159bd84138529dd136ba6bf45a7addd79.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/2393b84159bd84138529dd136ba6bf45a7addd79.woff",
+      "sha256": "63144011e26b4eb4a25bf4a7feea95bd92612e4e78bcf82c1ff06f357f6d7237",
+      "size": 2204,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2828,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/270b89df543a7e48e206a2d830c0e10e5265c630.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/270b89df543a7e48e206a2d830c0e10e5265c630.ttf",
+      "sha256": "9535d35dab9e002963eef56757c46881f6b3d3b27db24eefcc80929781856c77",
+      "size": 3428,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/27539eee6487a75cc1ddf8c80b8e3f863ee540c3.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/27539eee6487a75cc1ddf8c80b8e3f863ee540c3.woff",
+      "sha256": "4bee9aeac3417e65f8097aa46cfe3ab7bbfcfd25e560de464fa6f9f1b1760bf7",
+      "size": 2512,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 3868,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/294c88607d6ebf0bd78f2c8e234e03e2d9b186d5.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/294c88607d6ebf0bd78f2c8e234e03e2d9b186d5.woff2",
+      "sha256": "1d315b5032f4518382854061477d4a6bfb7efa9341eb28af6d54cd8976ca6744",
+      "size": 1384,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2524,
+        "totalCompressedSize": 1302,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/298c9e1d955f10f6f72c6915c3c6ff9bf9695cec.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/298c9e1d955f10f6f72c6915c3c6ff9bf9695cec.ttf",
+      "sha256": "3ab2f26e9e206d2bee400f37957167e03aefd0f7b30545da53ebb913178278d4",
+      "size": 2520,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/29ca0fe494750bb483ed291cffa89d55279d3ac9.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/29ca0fe494750bb483ed291cffa89d55279d3ac9.woff2",
+      "sha256": "981c012f66bbb38c4f39c519336995063f43bdeef043c7ed5d1f04ddc872ff99",
+      "size": 1596,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 3008,
+        "totalCompressedSize": 1511,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/2a124fa3e39a294280d406c4790398726bdc66ca.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/2a124fa3e39a294280d406c4790398726bdc66ca.woff",
+      "sha256": "5b4f6a2122ce73f01b4a4fbe97de868b07e66212a69270c0651de35655ca0492",
+      "size": 1200,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 1356,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/2a12de12323bfd99b9c4bb33ed20b66b8ff0915f.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/2a12de12323bfd99b9c4bb33ed20b66b8ff0915f.otf",
+      "sha256": "f3613d73a1c259f1e9e34420a7a8613d1e7fb2ae8d83601df55e2a52c94759f1",
+      "size": 2532,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 11,
+        "outlines": "cff2"
+      }
+    },
+    {
+      "path": "fuzzing/2abab3950432f64f17882a6517a9b7d2fb2dafe7.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/2abab3950432f64f17882a6517a9b7d2fb2dafe7.woff",
+      "sha256": "32ba01b726a6a63eb0fc6100addc8c69d36d43b623ae617f168113f04b1433d7",
+      "size": 1512,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2140,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/315da578ec2c7e391a93ed484786b5cc93dc2739.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/315da578ec2c7e391a93ed484786b5cc93dc2739.ttf",
+      "sha256": "0ad799466f984bbe8364be029ad18ae001ae6bd98644d1365b13a099ad7b79c7",
+      "size": 4408,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 8,
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/3493e92eaded2661cadde752a39f9d58b11f0326.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/3493e92eaded2661cadde752a39f9d58b11f0326.ttf",
+      "sha256": "4e81aa10a67b7e510c01854504df16681d6ac172fd37cd6362c456f24d5eb686",
+      "size": 1400,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/3511ff5c1647150595846ac414c595cccac34f18.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/3511ff5c1647150595846ac414c595cccac34f18.ttf",
+      "sha256": "f20716cf77e9c3fadce2bf428553dbc7586f596047010d4092fde9864759c008",
+      "size": 1483,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 16,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/361ce9ae6e20175595cac0cb82addcb184e20953.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/361ce9ae6e20175595cac0cb82addcb184e20953.woff2",
+      "sha256": "26e7511b1381400b0c33a16134c4d8cdf3060a1804917a77846942716a857ab4",
+      "size": 1872,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 3716,
+        "totalCompressedSize": 1788,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/3684bc52f9aa06e9e6de67d80b626d44ca2bccf5.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/3684bc52f9aa06e9e6de67d80b626d44ca2bccf5.woff",
+      "sha256": "c1e1090c51f568366411144a74226503a36021a72e87802fd4db0d07f57d603b",
+      "size": 1160,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 1320,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/37033cc5cf37bb223d7355153016b6ccece93b28.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/37033cc5cf37bb223d7355153016b6ccece93b28.ttf",
+      "sha256": "f3c351bd511ff16f11c9160f20389e393742af8da97c62ded40b7e80bdee67c8",
+      "size": 2780,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/375d6ae32a3cbe52fbf81a4e5777e3377675d5a3.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/375d6ae32a3cbe52fbf81a4e5777e3377675d5a3.ttf",
+      "sha256": "2e3dda7bcf39d8c2450ada068c777bbde90773b50eb23ed2ea5812f44a30b3e5",
+      "size": 1024,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/3857535d8c0d2bfeab7ee2cd6ba5e39bcb4abd90.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/3857535d8c0d2bfeab7ee2cd6ba5e39bcb4abd90.ttf",
+      "sha256": "0c1bf247580d3de10f36fca4af6fb6bdf3efd886b4519d4a7312cdc3e64da447",
+      "size": 1002,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/39e15202b9fa9700438dbae6343ad8b21b359a68.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/39e15202b9fa9700438dbae6343ad8b21b359a68.woff",
+      "sha256": "a85ff2200ecfe21db1b778568bee9d411194402b80ecb8bdf275e98e17ae30b9",
+      "size": 1420,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 1644,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/3b1f374416818644fa5cdb1d592659e502506888.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/3b1f374416818644fa5cdb1d592659e502506888.woff2",
+      "sha256": "6d6fd632706f40bd20324329a1341088e5632fa9732b18172a19c203c545d9fe",
+      "size": 696,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1352,
+        "totalCompressedSize": 613,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/3e66a8cf6c20ccb36bce728f5d818f18145499c7.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/3e66a8cf6c20ccb36bce728f5d818f18145499c7.woff",
+      "sha256": "1636d2c9bd8944e3d9030e9c5496e013f7f4b81434bf24c56f234604558df500",
+      "size": 3796,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 18,
+        "totalSfntSize": 6068,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/3fef5bc4d1567fea803c815a0d53d6d7bfa9bdf7.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/3fef5bc4d1567fea803c815a0d53d6d7bfa9bdf7.woff",
+      "sha256": "d793018b996aa107bc216ec09859c3d151ca4ad8589e31c51bc42dfedd137cf7",
+      "size": 828,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 820,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/41c14459f0f134a81fc5f4051b861bae8503c87b.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/41c14459f0f134a81fc5f4051b861bae8503c87b.woff",
+      "sha256": "7acfcff13822d227d5293a260b9fbb5430f39991adbb4cf5cc3660e4f4fe05ab",
+      "size": 10672,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 16736,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/43979b90b2dd929723cf4fe1715990bcb9c9a56b.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/43979b90b2dd929723cf4fe1715990bcb9c9a56b.otf",
+      "sha256": "f73a1bbfc58c9ce3b193ea897dfe5a4729d7037b1340fa2db96b4abdec0a8ac2",
+      "size": 1804,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/43979b90b2dd929723cf4fe1715990bcb9c9a56b.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/43979b90b2dd929723cf4fe1715990bcb9c9a56b.ttf",
+      "sha256": "f73a1bbfc58c9ce3b193ea897dfe5a4729d7037b1340fa2db96b4abdec0a8ac2",
+      "size": 1804,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/43ef465752be9af900745f72fe29cb853a1401a5.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/43ef465752be9af900745f72fe29cb853a1401a5.ttf",
+      "sha256": "6ee2128aaf0d56446cbc90a617a00ae05bfb0b2a657f4f89870f8f005d8642d6",
+      "size": 4272,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/442a5b09fc1d847eb353b9e219e26067df8b9fb8.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/442a5b09fc1d847eb353b9e219e26067df8b9fb8.woff2",
+      "sha256": "312acf5a8093ef9dde8f0b239f62b804817c7efe44afb8ecdf31d1659b757cb0",
+      "size": 1276,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 2272,
+        "totalCompressedSize": 1188,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/44a458acc6abfe78166e99c5ec9ec0fcf46182af.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/44a458acc6abfe78166e99c5ec9ec0fcf46182af.woff",
+      "sha256": "34134f96f6db5c1cbd9ee0a069fb4b56dedee46e7a9dca24e47715de079f2c52",
+      "size": 1312,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1448,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/4502415a27007e8f37af2d6663ccf909a45abba4.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/4502415a27007e8f37af2d6663ccf909a45abba4.woff2",
+      "sha256": "82d8ff75056cf0d4dd4883dd59fae11d944e70c7db918429bce71a7af9d6fbac",
+      "size": 968,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 12,
+        "totalSfntSize": 1508,
+        "totalCompressedSize": 890,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/45855bc8d46332b39c4ab9e2ee1a26b1f896da6b.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/45855bc8d46332b39c4ab9e2ee1a26b1f896da6b.ttf",
+      "sha256": "51aa07a9c49e342459ae5c9b1cb6cb48b69b3eb209f17cbf6eb2f38e70182c7e",
+      "size": 1088,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/4765a8901e377d1e767f67e1cc768ae3c9207bd1.ttc",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/4765a8901e377d1e767f67e1cc768ae3c9207bd1.ttc",
+      "sha256": "b19aef99f3ed4112a187e5e9643498ecc55ec2faa453f08f4ff45d5e1350e02c",
+      "size": 234559,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 4,
+        "numTables": 16,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/49c9f7485c1392fa09a1b801bc2ffea79275f22e.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/49c9f7485c1392fa09a1b801bc2ffea79275f22e.ttf",
+      "sha256": "0ee838282697b5a9c2377595c76e1ddbbfe530354967fb291d8a6dad59bfc7d8",
+      "size": 1496,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/4a7b3505f054f426efc6057fd0adc27f6c16c41b.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/4a7b3505f054f426efc6057fd0adc27f6c16c41b.ttf",
+      "sha256": "f05c54d7b5d50927dc42aa5f60b05e4177f809085df6d47caaa6c1c018c69365",
+      "size": 4408,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 8,
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/4af3c3b1bf2882e84f25b30bc4aedae2a0b5f98a.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/4af3c3b1bf2882e84f25b30bc4aedae2a0b5f98a.woff2",
+      "sha256": "f07c4de7dc30dad392045d39854b2cc0fc8007eba3b30e3675ef2b96a8ea6806",
+      "size": 624,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 1016,
+        "totalCompressedSize": 544,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/4cce528e99f600ed9c25a2b69e32eb94a03b4ae8.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/4cce528e99f600ed9c25a2b69e32eb94a03b4ae8.ttf",
+      "sha256": "52572fdb2d20e56cb82246d3c366a602560073594a4a4d8097579499f8fe79e0",
+      "size": 1320,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 13,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/4d707d06afca5573a717fa3a9e825863c35ca786.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/4d707d06afca5573a717fa3a9e825863c35ca786.ttf",
+      "sha256": "1d8188fe03fc9bcc61f15bc0d241c8d0c6def9770f0402bc94e77460a0558052",
+      "size": 1000000,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/4fcaec74137a83b5304d7d5f830b81c9abed73e5.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/4fcaec74137a83b5304d7d5f830b81c9abed73e5.woff2",
+      "sha256": "f1b61ebea8c96547fd151a83740dbd438753543a7a9eac6a51b83a5688fc0d79",
+      "size": 936,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2140,
+        "totalCompressedSize": 854,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/5028afb650b1bb718ed2131e872fbcce57828fff.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/5028afb650b1bb718ed2131e872fbcce57828fff.ttf",
+      "sha256": "ab00bd27797af0116646da148d9b28050d725e3e3c5e85970095d95b10b895c4",
+      "size": 4720,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/52a846621453e288b657f84ef423ff3f832b6c0c.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/52a846621453e288b657f84ef423ff3f832b6c0c.woff",
+      "sha256": "f326675e75d126c09c2c7f2606b075d123eb1b7bd3748cbebb4d3bd55db71081",
+      "size": 1080,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1080,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/52b6e52e7382c7c7e5ce839cc5df0cd3ae133add.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/52b6e52e7382c7c7e5ce839cc5df0cd3ae133add.ttf",
+      "sha256": "6b69d5897325a0030414ba8c193b6077ed9658361a0d506ae4e05e77e2f551f7",
+      "size": 9854,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/558661aa659912f4d30ecd27bd09835171a8e2b0.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/558661aa659912f4d30ecd27bd09835171a8e2b0.ttf",
+      "sha256": "d440f1a80e8049d59a29220cab05d0b8748f3312ced280f90c65b288c485f4a8",
+      "size": 1358,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 48
+      }
+    },
+    {
+      "path": "fuzzing/5614290438dcf671fcc1f2858ac9127e45f500bb.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/5614290438dcf671fcc1f2858ac9127e45f500bb.woff2",
+      "sha256": "6682a3d4825b5ad4df851e35582048b6eda2a60b1797d01459fc597d15af2a46",
+      "size": 600,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1024,
+        "totalCompressedSize": 518,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/56bf9590c3f7587a632539b74a7aa0a04dbaadd3.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/56bf9590c3f7587a632539b74a7aa0a04dbaadd3.woff",
+      "sha256": "6fe05b3436b03242416ff4c97fe4d15d09394748086f4b1cff18d730f8d1e652",
+      "size": 2380,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 3440,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/56cfd0e18d07f41c38e9598545a6d369127fc6f9.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/56cfd0e18d07f41c38e9598545a6d369127fc6f9.ttf",
+      "sha256": "0f992875df67ae8773558d87a6a5306a48b4eb63de1cf30236299231446f589b",
+      "size": 1412,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 13,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/57a9d9f83020155cbb1d2be1f43d82388cbecc88.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/57a9d9f83020155cbb1d2be1f43d82388cbecc88.ttf",
+      "sha256": "ba3731ec7e19e6e74ffeab35868b262f45b20a30c79cbe0b58e2162df612722b",
+      "size": 2272,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/5a5daf5eb5a4db77a2baa3ad9c7a6ed6e0655fa8.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/5a5daf5eb5a4db77a2baa3ad9c7a6ed6e0655fa8.ttf",
+      "sha256": "2a44bb69c095e6fe7b1ed734509065eba5027c4fb74c1ac34fc98bc491644161",
+      "size": 61,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 3
+      }
+    },
+    {
+      "path": "fuzzing/5ac36fb372dd26e0e1142c82c95b0e3807ae8136.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/5ac36fb372dd26e0e1142c82c95b0e3807ae8136.woff",
+      "sha256": "6e00d66909dc37c22c9af68de48bc9a7f628e9f4a4f89853563a532a240311d4",
+      "size": 800,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 10,
+        "totalSfntSize": 784,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/5dfad7735c6a67085f1b90d4d497e32907db4c78.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/5dfad7735c6a67085f1b90d4d497e32907db4c78.ttf",
+      "sha256": "6214c6147ce5708a2cb0e822eddc2bdc628937886d0321abfbc02b75d0ad8507",
+      "size": 21160,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 13,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/5dfcc2260fa1a08c72655c18885e50260703c863.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/5dfcc2260fa1a08c72655c18885e50260703c863.woff",
+      "sha256": "7748012f775ecd97bf666a4bd435037ddf58359948033aad0a984b504e85b292",
+      "size": 2584,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 3564,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/60adec4d200651dbf91e7c373789bbc2a2c4b46b.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/60adec4d200651dbf91e7c373789bbc2a2c4b46b.woff",
+      "sha256": "d86253f32e2d4438b1990ee57a3c8ffe8797e8d6f8f2050670d9cefe893ab090",
+      "size": 2500,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 3700,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/641bd9db850193064d17575053ae2bf8ec149ddc.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/641bd9db850193064d17575053ae2bf8ec149ddc.ttf",
+      "sha256": "2b1612c47e2ee2d684cfc9726d4548a2108cad7a4b74d70bf1b45cceeb8517b5",
+      "size": 305,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/6466d38c62e73a39202435a4f73bf5d6acbb73c0.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/6466d38c62e73a39202435a4f73bf5d6acbb73c0.ttf",
+      "sha256": "30dcb5c881c20297841f361a4bc40b0326237bcda7a9e15ba57a102c96a58347",
+      "size": 824,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/6830389bba9787db7da796f364aa47b951e658ae.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/6830389bba9787db7da796f364aa47b951e658ae.woff2",
+      "sha256": "4f0ed1d6045538837bba3c35d1db8400d14e987cc0d5032935df507a1945d9a6",
+      "size": 1544,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2624,
+        "totalCompressedSize": 1462,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/6991b13ce889466be6de3f66e891de2bc0f117ee.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/6991b13ce889466be6de3f66e891de2bc0f117ee.ttf",
+      "sha256": "8440df3446a0724e2498ba62980d55ad0b0ad5e568cdc0ad4efd85c7f8d4b455",
+      "size": 5596,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 15,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/6c1506d68d00e95a065d97e30964857e0d91c5a1.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/6c1506d68d00e95a065d97e30964857e0d91c5a1.woff",
+      "sha256": "f03881d116d7a37f321c2bfdc1378c3c3fb9469062123060c9bf3a96773561d8",
+      "size": 1004,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 976,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/6e43399b43162dedd7054e00ae97e7b0a71bf72d.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/6e43399b43162dedd7054e00ae97e7b0a71bf72d.woff2",
+      "sha256": "10b967501bd7fa67c4c82566e07cc16fb28bb5bbf13b4896670e533bdf731ea8",
+      "size": 892,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 1644,
+        "totalCompressedSize": 814,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/6eb6ce1f3930892d42a24d9fe955585c40a59cc0.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/6eb6ce1f3930892d42a24d9fe955585c40a59cc0.woff2",
+      "sha256": "50b948157eb5b14384c5b8d73fcd362d35651856b52f2dbfa75d866e34a40cbd",
+      "size": 956,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 1804,
+        "totalCompressedSize": 878,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/6ff0fbead4462d9f229167b4e6839eceb8465058.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/6ff0fbead4462d9f229167b4e6839eceb8465058.ttf",
+      "sha256": "55d46f21fc6287909189430e10cad61a8de1838ebea2f00e108958f90a74a573",
+      "size": 1148,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/7042436c3b20a4426fc9a2dba76f68b2b27423af.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/7042436c3b20a4426fc9a2dba76f68b2b27423af.woff2",
+      "sha256": "21498831739031e2f562f31f0628eb9d8f55f3d0743a3a91d716c2bb26698fba",
+      "size": 668,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1152,
+        "totalCompressedSize": 585,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/7043d3c69c50da8eba1a0ad627b9f6de70e832e5.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/7043d3c69c50da8eba1a0ad627b9f6de70e832e5.ttf",
+      "sha256": "f7b000d208e84991e7813b7afdb40b6fca3e8a9ce859dee83feffa8953669dba",
+      "size": 4408,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 8,
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/706c5d7b625f207bc0d874c67237aad6f1e9cd6f.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/706c5d7b625f207bc0d874c67237aad6f1e9cd6f.ttf",
+      "sha256": "6780987d01c5b023864120ca199fc1a27d7ed715d9bbe9c4b4d62e71805069ab",
+      "size": 3868,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/71eca05729f14607e81e9476dce804fe3bafc086.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/71eca05729f14607e81e9476dce804fe3bafc086.woff",
+      "sha256": "8a4ce43615147ad00b13d68acc92c1fa9c92f08de10d0e450ea0fe8c1306ea78",
+      "size": 1052,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1024,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/72106114384cb564d4691bd3ea38960b0148f00b.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/72106114384cb564d4691bd3ea38960b0148f00b.woff",
+      "sha256": "01b2bfec535b5bc84c2bde459690675c962602e6852c164004d71af5fc9b403f",
+      "size": 1248,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1344,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/72566065770241b8c31bd35201ad62102962a5aa.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/72566065770241b8c31bd35201ad62102962a5aa.woff",
+      "sha256": "b9a5905924a360f894fccf57fa45f312ccea81c3cac41486f0de8fb8cf51f7b5",
+      "size": 800,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 10,
+        "totalSfntSize": 784,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/73bf759cd86e12788cd3571daffedeb391fad078.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/73bf759cd86e12788cd3571daffedeb391fad078.woff2",
+      "sha256": "a7ae6ff72ed341fa68fddb97c96d4594bf84b7f1c9c44bf4f8830df6211f624c",
+      "size": 1528,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2828,
+        "totalCompressedSize": 1443,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/757ebd573617a24aa9dfbf0b885c54875c6fe06b.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/757ebd573617a24aa9dfbf0b885c54875c6fe06b.otf",
+      "sha256": "5cc1db3ff5f353c381097906bf786a41b19039c21bfe57729cf3f04ebd1c6268",
+      "size": 1804,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/757ebd573617a24aa9dfbf0b885c54875c6fe06b.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/757ebd573617a24aa9dfbf0b885c54875c6fe06b.ttf",
+      "sha256": "5cc1db3ff5f353c381097906bf786a41b19039c21bfe57729cf3f04ebd1c6268",
+      "size": 1804,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/79e3983181b2bef104af453fdc98f4a335d48bd5.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/79e3983181b2bef104af453fdc98f4a335d48bd5.woff2",
+      "sha256": "9bdcfb53233849e58c8546c90bebeffae6522047c823f4425552cbdca0a2fd01",
+      "size": 1632,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 12,
+        "totalSfntSize": 3436,
+        "totalCompressedSize": 1552,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/7a37dc4d5bf018456aea291cee06daf004c0221c.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/7a37dc4d5bf018456aea291cee06daf004c0221c.ttf",
+      "sha256": "cdfe0a11aaba69db9d78afc1b1f211dba63d88fdedd42e8a99d8d4fdc247a1fb",
+      "size": 1080,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/7bd0df7f6f234108e1f87f45bcde74931dc16efc.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/7bd0df7f6f234108e1f87f45bcde74931dc16efc.ttf",
+      "sha256": "6b317607637ef7bbccd77f43ab58dfa8dc2f2542b198cc4cf64cc2dbc4087352",
+      "size": 4408,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 8,
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/7e14e7883ed152baa158b80e207b66114c823a8b.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/7e14e7883ed152baa158b80e207b66114c823a8b.otf",
+      "sha256": "04f08de22235ada77e942906e68d1d98a964bf312abbfd1bee806d8ab97fcef7",
+      "size": 1644,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/7e14e7883ed152baa158b80e207b66114c823a8b.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/7e14e7883ed152baa158b80e207b66114c823a8b.ttf",
+      "sha256": "04f08de22235ada77e942906e68d1d98a964bf312abbfd1bee806d8ab97fcef7",
+      "size": 1644,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/7ef276fc886ea502a03b9b0e5c8b547d5dc2b61c.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/7ef276fc886ea502a03b9b0e5c8b547d5dc2b61c.ttf",
+      "sha256": "74b7e09dd4fd21c6f8e74df22100169662b4f192f42b1c3fbbc224090d52b9cb",
+      "size": 784,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 10,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/8099955657a54e9ee38a6ba1d6f950ce58e3cc25.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/8099955657a54e9ee38a6ba1d6f950ce58e3cc25.ttf",
+      "sha256": "f4928643a2a861a8b5f5ea312f9eed7a4902f7626894eb35dedfbe7047039aad",
+      "size": 1024,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/813c2f8e5512187fd982417a7fb4286728e6f4a8.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/813c2f8e5512187fd982417a7fb4286728e6f4a8.ttf",
+      "sha256": "df422c0c5233284c11cdeb69bc188726b36a661f0ecf3c5968913dcc0cec3fe4",
+      "size": 3428,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/814e2e2e76682ab9a518493b475b23565993a4df.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/814e2e2e76682ab9a518493b475b23565993a4df.woff2",
+      "sha256": "01048eb1bf45d9415912faac4078e86cefd4731f3395a9bb48f41780cdfeb81e",
+      "size": 1744,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 3876,
+        "totalCompressedSize": 1658,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/81e64d72d3dd87b1d36744927d3842492f1c1001.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/81e64d72d3dd87b1d36744927d3842492f1c1001.woff2",
+      "sha256": "0a2b722f939dae4af6dc4247f29ebda979d3eb20b442ee075b43cce390865a6b",
+      "size": 452,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 10,
+        "totalSfntSize": 788,
+        "totalCompressedSize": 379,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/8240789f6d12d4cfc4b5e8e6f246c3701bcf861f.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/8240789f6d12d4cfc4b5e8e6f246c3701bcf861f.otf",
+      "sha256": "afd3b6f96903737bc4e430d2fbc82e9ab09253a1aaa0c707b93b45bce6594810",
+      "size": 633,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 9,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/8240789f6d12d4cfc4b5e8e6f246c3701bcf861f.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/8240789f6d12d4cfc4b5e8e6f246c3701bcf861f.ttf",
+      "sha256": "afd3b6f96903737bc4e430d2fbc82e9ab09253a1aaa0c707b93b45bce6594810",
+      "size": 633,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 9,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/82fae690a786b2d96af7d4845206b528381fa109.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/82fae690a786b2d96af7d4845206b528381fa109.woff2",
+      "sha256": "ce85e48e9dcb0d792f68b103c22a63656953b047634eb6813ce5866bdc8bf9f5",
+      "size": 1940,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 4084,
+        "totalCompressedSize": 1857,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/8330c9816493e1adccc0500b414455b85088d7d1.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/8330c9816493e1adccc0500b414455b85088d7d1.ttf",
+      "sha256": "4d77392bab0bc8e16beb1f1d6589edf82b1096ba19298bfa9d65616819d72b4a",
+      "size": 6088,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 7,
+        "numTables": 16,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/83670edbe0a52e2e84b4454b1a828c44b6692c63.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/83670edbe0a52e2e84b4454b1a828c44b6692c63.ttf",
+      "sha256": "edbd87f1364a5af6600b8a3acbfed8e537cf095bad0ee720287788486a716082",
+      "size": 4408,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 8,
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/8454d22037f892e76614e1645d066689a0200e61.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/8454d22037f892e76614e1645d066689a0200e61.ttf",
+      "sha256": "6e00ae4a66719293861a2f172e36152f5eab6251c5bd3791be0b33b71b6c88e7",
+      "size": 6068,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/85414f2552b654585b7a8d13dcc3e8fd9f7970a3.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/85414f2552b654585b7a8d13dcc3e8fd9f7970a3.ttf",
+      "sha256": "269b61f14e577e45fff1d4334a77ba1f0f61f2cb968eaded2dd065d52d40eb45",
+      "size": 66936,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/8668cff491460e4c5cd03142b87e9710fd4b5588.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/8668cff491460e4c5cd03142b87e9710fd4b5588.otf",
+      "sha256": "ed75424be18fb284838fd8013fd9813b48f09cb7a579130d9a545c1234afa063",
+      "size": 6992,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 15,
+        "outlines": "cff2",
+        "variable": true
+      }
+    },
+    {
+      "path": "fuzzing/884801ab66022b60168010261438a4ed983ea9a7.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/884801ab66022b60168010261438a4ed983ea9a7.woff",
+      "sha256": "47d02c3e23b708d928f7f093b93781e542a9912f8bc73b92bda2c5e650f3b3ef",
+      "size": 3388,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 4272,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/8a8dc0703e7a9d14427ceadcea275dfda6a7f844.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/8a8dc0703e7a9d14427ceadcea275dfda6a7f844.woff2",
+      "sha256": "1fa5e32a0a30ca935d7691cf2951de258b4e3d5ac4d06c870847f397d44970cf",
+      "size": 756,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 1420,
+        "totalCompressedSize": 675,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/8a9fea2a7384f2116e5b84a9b31f83be7850ce21.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/8a9fea2a7384f2116e5b84a9b31f83be7850ce21.ttf",
+      "sha256": "323c7d53163cf37248aa35c9bdcdb3963b381fdaed0a47ecc0e0b3cc7127ea5c",
+      "size": 3428,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/8faaf7e0d92db057ff26cf5af44a44e873c054cb.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/8faaf7e0d92db057ff26cf5af44a44e873c054cb.woff2",
+      "sha256": "fb63ded7b05cb856e8f59257c0f9c0244cccfae8bb115d788c39648634717597",
+      "size": 6832,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 18,
+        "totalSfntSize": 12560,
+        "totalCompressedSize": 6736,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/908810fd6350c87a62c2dc4bb623e54ddd8aa042.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/908810fd6350c87a62c2dc4bb623e54ddd8aa042.woff",
+      "sha256": "cd192a37a0c9a84aa2b781ec4cd766c7270b588eae72f45dded9017fe546ecbe",
+      "size": 2604,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 4064,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/9192ffc3ddba8dc44a21ccac20bf743593642241.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/9192ffc3ddba8dc44a21ccac20bf743593642241.woff2",
+      "sha256": "ea24031ca6783ac33186f2405bc6fcdd492bc5daf382f4a96995b8d0ba454d34",
+      "size": 508,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 11,
+        "totalSfntSize": 828,
+        "totalCompressedSize": 432,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/93ef7dcd6968068b41515a381aa1b04535312b01.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/93ef7dcd6968068b41515a381aa1b04535312b01.woff",
+      "sha256": "525184bf7a777be4325484dcf72a02df57c1555e81b945e238861798dbd79183",
+      "size": 1128,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1148,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/94895e7495f726fa316ca3f2a03c98b86dc20560.ttc",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/94895e7495f726fa316ca3f2a03c98b86dc20560.ttc",
+      "sha256": "e3c629cb9f416e2e57cfdfee7573d5cac3a06a681c105ec081ab9707c1f147e8",
+      "size": 18748872,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 8,
+        "numTables": 15,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/94bdbcb520c5301750167dc433803ac7933da028.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/94bdbcb520c5301750167dc433803ac7933da028.otf",
+      "sha256": "e65641270d269653d1b4b2181b25160911550d78e591d17f7208887f52ada4aa",
+      "size": 2288,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "cff2"
+      }
+    },
+    {
+      "path": "fuzzing/96813142f8614d945222afa529815dd1213e2b3d.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/96813142f8614d945222afa529815dd1213e2b3d.ttf",
+      "sha256": "808d1e10e1c701ac142b00d4ea64edf18668d5fc9998450449fa76394aae9e16",
+      "size": 4408,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 8,
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/9883c9ae58c5dd598ab2fdc142e2dacbc0ad1cb3.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/9883c9ae58c5dd598ab2fdc142e2dacbc0ad1cb3.woff2",
+      "sha256": "da30ac472559981eb611edcc3e35f236c6f26b4ce05cfb3674e75000bb3649e1",
+      "size": 1800,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 3560,
+        "totalCompressedSize": 1717,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/995ca3cf99525e11fcdfeb5ba9f45a6cc602fcfb.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/995ca3cf99525e11fcdfeb5ba9f45a6cc602fcfb.woff",
+      "sha256": "180d5eeeaf12de242984c31779413731520f80bdb5c490583bbc6eb9259bac58",
+      "size": 1880,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 2272,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/99e0f8817ca25d074ff4456de4296c4397e23563.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/99e0f8817ca25d074ff4456de4296c4397e23563.woff",
+      "sha256": "c3f662c72aae3d51694d36825f713629ddf0334ebfb9b7f38b1c4aa77ca680f6",
+      "size": 1472,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 12,
+        "totalSfntSize": 1496,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/99e872a7478a9f7f7f2a183d623f2a5ebaff72ad.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/99e872a7478a9f7f7f2a183d623f2a5ebaff72ad.woff",
+      "sha256": "d896be6d0e05e4eaaaa597aa8aeeab5b1b258c67a1a84f1b9287f1730f6bba79",
+      "size": 1272,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 1412,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/9a6305f950f8e3960618b78fca6ba7d7abf3b231.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/9a6305f950f8e3960618b78fca6ba7d7abf3b231.ttf",
+      "sha256": "ae6361de2ed6f2df52a017f7f1fdb769e79e4679e97dc34f3d265c41aaa9d349",
+      "size": 3055,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/9c3c16ff5fb0e0adef3344f011b5bbb1469f2fd4.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/9c3c16ff5fb0e0adef3344f011b5bbb1469f2fd4.woff",
+      "sha256": "b409d5b16248a4f3f1ad3b6eb17674c6a17484b0acfca63e6ae1e8440363dd23",
+      "size": 2488,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 3428,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/9cb9bb35205cb4a7588a5a2b8e35fc4be856fc95.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/9cb9bb35205cb4a7588a5a2b8e35fc4be856fc95.woff",
+      "sha256": "14ace296dd42f4b5844c0771d559bd804a4fb5c05469f96bb1f082d4a3a46420",
+      "size": 8144,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 18,
+        "totalSfntSize": 12560,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/9f553001b12ed154a54de011828fd78138c66113.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/9f553001b12ed154a54de011828fd78138c66113.woff2",
+      "sha256": "5f43704736db587f75830c58685199a0f52292080fc096df99c10323cf890cdd",
+      "size": 404,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 852,
+        "totalCompressedSize": 325,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/a0ca212e069702964aba80ab9c28bcb8aabae782.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/a0ca212e069702964aba80ab9c28bcb8aabae782.woff2",
+      "sha256": "4708d615c32b26bf22ce7e490fe8750d9c7f257c818b17c78e170cf5cd73f3cd",
+      "size": 624,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1080,
+        "totalCompressedSize": 542,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/a34a7b00f22ffb5fd7eef6933b81c7e71bc2cdfb.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/a34a7b00f22ffb5fd7eef6933b81c7e71bc2cdfb.ttf",
+      "sha256": "013b8e03811f96207cbee88eccc2703581e1284ea0c1842c2b4aab6ef54ac9ca",
+      "size": 3700,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/a34a9191d9376bda419836effeef7e75c1386016.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/a34a9191d9376bda419836effeef7e75c1386016.ttf",
+      "sha256": "11c0394c764b7635c465a87c954bf79b727320b11babd79d0b47ee09c9aefa74",
+      "size": 1010,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14
+      }
+    },
+    {
+      "path": "fuzzing/a37166581403c1fda5e5689d4e027a085e3186e8.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/a37166581403c1fda5e5689d4e027a085e3186e8.ttf",
+      "sha256": "f38bae64627066abf7167aea6c478e5f989594c5463d18bf5f7c46143f1898d6",
+      "size": 4028,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/a5ea7e8e3e00a6f147a8a77b56e6e88c5e4fe30f.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/a5ea7e8e3e00a6f147a8a77b56e6e88c5e4fe30f.woff",
+      "sha256": "fb0bfc1e6e67f88687dabbaea1c0f84953015877a8e929d13c7aadd792007bbb",
+      "size": 2000,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2512,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/a69118c2c2ada48ff803d9149daa54c9ebdae30e.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/a69118c2c2ada48ff803d9149daa54c9ebdae30e.ttf",
+      "sha256": "e7a87d5f73ed7c0383b807a373bf78f9820318cc2e116eda2b986cb47144dac7",
+      "size": 820,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/a919b33197965846f21074b24e30250d67277bce.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/a919b33197965846f21074b24e30250d67277bce.ttf",
+      "sha256": "9d9e6025284c0833926775248918ec1fa9b2417fde90abaa663cc9b625e3bdb1",
+      "size": 12560,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/a98e908e2ed21b22228ea59ebcc0f05034c86f2e.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/a98e908e2ed21b22228ea59ebcc0f05034c86f2e.ttf",
+      "sha256": "147649c74f0cee8d3a33d6f9ff703004cad68a443e7609e2181c906628c88802",
+      "size": 1016,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 13,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/aca5f8ef7bc0754b0b6fd7a1abd4c69ca7801780.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/aca5f8ef7bc0754b0b6fd7a1abd4c69ca7801780.ttf",
+      "sha256": "2ff1b8cf28ef4fe002cc88dc9608d92e20761baa5fb2ab2e15269368ba271589",
+      "size": 2270,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17
+      }
+    },
+    {
+      "path": "fuzzing/ad24c3e446b9be316db8387adb0c7e2667388d3c.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/ad24c3e446b9be316db8387adb0c7e2667388d3c.woff",
+      "sha256": "d5da60102903cdbf146d22b328923dcb36d7eaf00da0f9c5911908ea93a09127",
+      "size": 4628,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 6332,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/adb242cbc61b3ca428903e397a2c9dcf97fe3042.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/adb242cbc61b3ca428903e397a2c9dcf97fe3042.ttf",
+      "sha256": "6cf28df90c83472967630ee5a6d6d722714aca358ea158353340be0016d3791d",
+      "size": 879,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/aef6783789cb40fd037e26f2b299b9088adce089.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/aef6783789cb40fd037e26f2b299b9088adce089.ttf",
+      "sha256": "576b2ce5f739c4c3debb7883c7a7f5716695bd32375a618b80cc9b2e3b740d39",
+      "size": 4408,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 8,
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/b2093e804590557247aa7bc2070757c26344c565.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/b2093e804590557247aa7bc2070757c26344c565.woff",
+      "sha256": "22ca27407013429b484c5267a839dc582039424462b2a84d0a548e00c23886dd",
+      "size": 1044,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 1016,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/b3fe94051b5612817c31fd406172d6d98b823cc8.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/b3fe94051b5612817c31fd406172d6d98b823cc8.ttf",
+      "sha256": "c677df808fcbe376df2712d3752c7e44fc1b484171a0e917c81a7f1e01626080",
+      "size": 50492,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 21,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/b48e5042d1f1f6cec531b73abf15c8ee4f2afc63.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/b48e5042d1f1f6cec531b73abf15c8ee4f2afc63.ttf",
+      "sha256": "5e26e0361b5a24e7e376dca8cc4525946f3a0cbf5c839c53296bbc6fb48fac02",
+      "size": 9298,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 2,
+        "numTables": 14,
+        "outlines": "glyf",
+        "variable": true
+      }
+    },
+    {
+      "path": "fuzzing/b6acef662e0beb8d5fcf5b61c6b0ca69537b7402.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/b6acef662e0beb8d5fcf5b61c6b0ca69537b7402.ttf",
+      "sha256": "b6eae112d02b6d0b0be27a9ca7a719805738b11d04f31d2d52fe72529deb90f0",
+      "size": 3301,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/b927e6af295696a2307641eb9679d0832dd7c22d.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/b927e6af295696a2307641eb9679d0832dd7c22d.ttf",
+      "sha256": "6146c2dc506f1f9c216d6f76252e513e1221ab1d00a3169e0b7f41cf313bafff",
+      "size": 6088,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 7,
+        "numTables": 18,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/b9e2aaa0d75fcef6971ec3a96d806ba4a6b31fe2.otf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/b9e2aaa0d75fcef6971ec3a96d806ba4a6b31fe2.otf",
+      "sha256": "0185a6d7b588f273ac2a6353b305398dfd1c4217e312ab0ba1090b4fb4a66a90",
+      "size": 1804,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/b9e2aaa0d75fcef6971ec3a96d806ba4a6b31fe2.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/b9e2aaa0d75fcef6971ec3a96d806ba4a6b31fe2.ttf",
+      "sha256": "0185a6d7b588f273ac2a6353b305398dfd1c4217e312ab0ba1090b4fb4a66a90",
+      "size": 1804,
+      "format": {
+        "kind": "otf",
+        "version": null,
+        "sfntVersion": "cff",
+        "numTables": 14,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/bac8d8c1ad2b8a50bf10853c9aeca4fca6c3bf3e.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/bac8d8c1ad2b8a50bf10853c9aeca4fca6c3bf3e.woff2",
+      "sha256": "a9304abc2a6e1a0ae3adceddd4648de2364556fffb190d16cade57acdf4619d3",
+      "size": 1784,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 3428,
+        "totalCompressedSize": 1693,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/bad5283f2b80a5669e03313446c962c50897adb0.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/bad5283f2b80a5669e03313446c962c50897adb0.ttf",
+      "sha256": "712edb892c7b41d4a4207c8b8c8be7d91b60d18c168956e3f2764ebc880fae23",
+      "size": 4408,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 8,
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/bb0c53752e85c3d28973ebc913287b8987d3dfe8.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/bb0c53752e85c3d28973ebc913287b8987d3dfe8.ttf",
+      "sha256": "13e1e85d60ab94bfd58f43cd64eda5cafaaab16f3e6d86a96051b7fff8c3ca7e",
+      "size": 976,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 13,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/bb29ce50df2bdba2d10726427c6b7609bf460e04.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/bb29ce50df2bdba2d10726427c6b7609bf460e04.ttf",
+      "sha256": "ad1c5837c018e3a8ce4c906562c4795e94bad9340b6dd37d6b7b29d1b9810e31",
+      "size": 74856,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/bb9473d2403488714043bcfb946c9f78b86ad627.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/bb9473d2403488714043bcfb946c9f78b86ad627.ttf",
+      "sha256": "3b04f130c686d78c7057ba64fcb8daf039284bf563cc272079f6ce7b7ea5bc11",
+      "size": 3440,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/bdb9d23d51966a2544da5a66fd8727f1e0654a73.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/bdb9d23d51966a2544da5a66fd8727f1e0654a73.ttf",
+      "sha256": "840142df24f72f1bd61e7bd65c6eb7fb23759e233b6038edaf1eff769c324255",
+      "size": 3824,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 8,
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/bfec49121cbe81f898476c5bcc6d188b489f1d7e.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/bfec49121cbe81f898476c5bcc6d188b489f1d7e.woff",
+      "sha256": "e28450d5a718b498f1a8d9eab658d87aa617ad6a34f51cd16273e7813e0f0cb1",
+      "size": 1916,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 12,
+        "totalSfntSize": 2748,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/c077be3830a3fe49277220e2515791cc9a2e5060.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/c077be3830a3fe49277220e2515791cc9a2e5060.woff",
+      "sha256": "09a4a89f298c02fee7348c69d0622358b7dff221dc62bb05ec4057c6f40d939a",
+      "size": 1952,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 12,
+        "totalSfntSize": 2780,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/c455eacf5e313dd37ad87d279f6eba6c3114310f.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/c455eacf5e313dd37ad87d279f6eba6c3114310f.woff2",
+      "sha256": "aa6d8a601ca4847a7a14639c072fd038f54c923843123f74476aeb1093c42dff",
+      "size": 1628,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 12,
+        "totalSfntSize": 3436,
+        "totalCompressedSize": 1549,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/c4e48b0886ef460f532fb49f00047ec92c432ec0.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/c4e48b0886ef460f532fb49f00047ec92c432ec0.ttf",
+      "sha256": "bd996ec9ce8d2a45203bc6ce5ee8d1e61dca2ad78c56edd4604df3cc10cdc80f",
+      "size": 2512,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/c64aff5250ea7360a18154e58678ab14a8e6fee9.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/c64aff5250ea7360a18154e58678ab14a8e6fee9.woff",
+      "sha256": "8c800773e33ad9628e87504a4eee0acc6e62320d164c2df49286597cd7f27ad1",
+      "size": 3120,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 4720,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/c8fda8de3123a35984f9f0811c4481fe3a8d3641.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/c8fda8de3123a35984f9f0811c4481fe3a8d3641.woff2",
+      "sha256": "d7fdaec0b741302728ae4f19b5a922e5b5f6fb028014977a6419ba4a968db82e",
+      "size": 1364,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 12,
+        "totalSfntSize": 2780,
+        "totalCompressedSize": 1286,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/cc5f3d2d717fb6bd4dfae1c16d48a2cb8e12233b.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/cc5f3d2d717fb6bd4dfae1c16d48a2cb8e12233b.ttf",
+      "sha256": "4e45183183725640b3cfe86f77084f656b23f3084e4099b063a7039c9f918686",
+      "size": 1448,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/ccfc10b31bad1fb3ae508a332c7914c6db037188.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/ccfc10b31bad1fb3ae508a332c7914c6db037188.woff2",
+      "sha256": "f448ad882c53919f4b4b33814b8af7d5ae9bc3cec64eb943084a4393d0e28948",
+      "size": 964,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1768,
+        "totalCompressedSize": 880,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/cff4306f450b3b433adca6872ff1c928a6ede2c6.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/cff4306f450b3b433adca6872ff1c928a6ede2c6.woff",
+      "sha256": "6958569ef537555ee44a2e6ed6a83daa30f2187d4e30ebde3d583e1996365018",
+      "size": 860,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 848,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/d32823ca92b0443465c07625325bb64a7d78f47d.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/d32823ca92b0443465c07625325bb64a7d78f47d.woff2",
+      "sha256": "3c1e25f6cb6b2c8633b248a2d2dc0fe05dc3de754ead51fab26a159db56f652d",
+      "size": 2640,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 4284,
+        "totalCompressedSize": 2548,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/d343af630ddff2ed15ae72d9bb4949bb384a8e03.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/d343af630ddff2ed15ae72d9bb4949bb384a8e03.woff2",
+      "sha256": "1e9eea2cd03e4a5a26347490255dfee2ff9a99b51d2749d2f30754a0bd6715ad",
+      "size": 1040,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2032,
+        "totalCompressedSize": 958,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/d3ee8b9422e66a4dc827a15a65667bd5eab9ce5f.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/d3ee8b9422e66a4dc827a15a65667bd5eab9ce5f.woff",
+      "sha256": "cbc9a4665a3dc5274455fc861b8675be6939deedb959189e4504ed2cedba5608",
+      "size": 1488,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "cff",
+        "numTables": 14,
+        "totalSfntSize": 1804,
+        "outlines": "cff"
+      }
+    },
+    {
+      "path": "fuzzing/d4acbc69d72d4ed528367718f022708070ec9635.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/d4acbc69d72d4ed528367718f022708070ec9635.woff2",
+      "sha256": "716676ac17d1ebec955379557272b5674e8f7364e4807b1bced85353afa626b2",
+      "size": 404,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 820,
+        "totalCompressedSize": 325,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/d4e4a9508c6b9e73c514b8af27b56918f45c3f9e.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/d4e4a9508c6b9e73c514b8af27b56918f45c3f9e.ttf",
+      "sha256": "65578d813d10c1c146363af9c08c265a3fd784209f0eb43416d1916e517a1f0c",
+      "size": 2909,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14
+      }
+    },
+    {
+      "path": "fuzzing/d4eaf020145c14e2cd76c49353da1fdff8e4f62f.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/d4eaf020145c14e2cd76c49353da1fdff8e4f62f.woff",
+      "sha256": "8739cac5109070a2ffae36f44b5cc685030abd0a596e209b93cd39d5a7f5c991",
+      "size": 1084,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1088,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/d629e7fedc0b350222d7987345fe61613fa3929a.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/d629e7fedc0b350222d7987345fe61613fa3929a.ttf",
+      "sha256": "ba70f1a2694c48a1580cdb9b161f2339019cf7999b7920f311799479bb2ccb89",
+      "size": 1768,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/d69ecb7001e46df61c33e2ec74fdcdd32e018db3.ttc",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/d69ecb7001e46df61c33e2ec74fdcdd32e018db3.ttc",
+      "sha256": "6d0fec34077428f845510966884ef539735ddf368a26d85df6a0a8f7d34672bb",
+      "size": 307736,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 2,
+        "numTables": 17,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/d77f5dd2f02db900f5d568349dc6ed58683a00a9.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/d77f5dd2f02db900f5d568349dc6ed58683a00a9.woff",
+      "sha256": "f636a6553a026a8bf72a951b1b259d637d2d3fae2155efb9a95acb687d85ebcd",
+      "size": 864,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 11,
+        "totalSfntSize": 824,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/d7aec40dfc478e1adb022406decaadfd46e61f89.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/d7aec40dfc478e1adb022406decaadfd46e61f89.ttf",
+      "sha256": "7339b383733fcd40bcdb9ee1c613768102a31d6b6b4aec596a322ef827884ff1",
+      "size": 17632,
+      "format": {
+        "kind": "ttc",
+        "version": "2.0",
+        "numFonts": 13,
+        "numTables": 15,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/d8df0f95c805bf3986671a5f39d4e1ce1ef278ce.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/d8df0f95c805bf3986671a5f39d4e1ce1ef278ce.woff2",
+      "sha256": "3cc0920042e95a010712a20371cd97e645e0f13d3d4821a19ce3a643d682ad59",
+      "size": 1588,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 17,
+        "totalSfntSize": 3440,
+        "totalCompressedSize": 1496,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/dc2b2ffc9fc5318fea924276dc8298f2b06f26ab.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/dc2b2ffc9fc5318fea924276dc8298f2b06f26ab.woff2",
+      "sha256": "1d7272bd655a464d20e4de7607d89be580614f08ec10697facbd716bc7a78b1c",
+      "size": 8896,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 16800,
+        "totalCompressedSize": 8808,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/dcacf960143aecbc692471b2a658c8dc42c9613e.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/dcacf960143aecbc692471b2a658c8dc42c9613e.woff2",
+      "sha256": "1f81a2b9732c319faa0d48108dbbe9147e2dcbc4ea537c443d9d00c698333775",
+      "size": 588,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 13,
+        "totalSfntSize": 976,
+        "totalCompressedSize": 510,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/df768b9c257e0c9c35786c47cae15c46571d56be.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/df768b9c257e0c9c35786c47cae15c46571d56be.ttf",
+      "sha256": "584bce118fc2ad4e15ba4f7ceb36bddcb8b7972c91212dbcf0fb5b1ff11a139f",
+      "size": 6332,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/dfba97547bf1cc337702d52311dee7029bc51db8.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/dfba97547bf1cc337702d52311dee7029bc51db8.woff",
+      "sha256": "29c7ee299e09fa3b79874185ed676a820210a2dfb560908697aac8461c4ac5f1",
+      "size": 1996,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2520,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/e207635780b42f898d58654b65098763e340f5c7.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/e207635780b42f898d58654b65098763e340f5c7.ttf",
+      "sha256": "cb20520f28da2cdf28a942864314a5bd4458083fb70e72b5370fd0aa2538c1f5",
+      "size": 3000,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/e31aa13e4a7b565c68e4822d2ef7d16069f8ffab.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/e31aa13e4a7b565c68e4822d2ef7d16069f8ffab.woff2",
+      "sha256": "7c8de53cf5a0ccff5dd8ef6b497c5003a61c7de9a9d582316af0068a81f4d1bc",
+      "size": 2276,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 4732,
+        "totalCompressedSize": 2191,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/e88c339237f52d21e01c55f01b9c1b4cc14a0467.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/e88c339237f52d21e01c55f01b9c1b4cc14a0467.ttf",
+      "sha256": "d1dedf6e211d466012aa228e1329ad2767fbdf495d5a02669510452715e8fb84",
+      "size": 515,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14
+      }
+    },
+    {
+      "path": "fuzzing/e9e765985a2beed45d8c4c4666d94a2acede9d48.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/e9e765985a2beed45d8c4c4666d94a2acede9d48.woff2",
+      "sha256": "4d05ffa4cf60e231caa9f3cddc309d8921731a4d34c717e603520429f8117dc3",
+      "size": 764,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1456,
+        "totalCompressedSize": 680,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/ee39587d13b2afa5499cc79e45780aa79293bbd4.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/ee39587d13b2afa5499cc79e45780aa79293bbd4.ttf",
+      "sha256": "d4ffa16000dac307102409de57f9a991ba9f7e8e64a213cd87da185293198795",
+      "size": 3724,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 11,
+        "color": [
+          "cbdt"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/ef86fe710cfea877bbe0dbb6946a1f88d0661031.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/ef86fe710cfea877bbe0dbb6946a1f88d0661031.ttf",
+      "sha256": "7f8f6f44e95dceac6163a49bd4d1239d7e746cb24769565dd3e43b5e2e411779",
+      "size": 2748,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 12,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/f22416c692720a7d46fadf4af99f4c9e094f00b9.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/f22416c692720a7d46fadf4af99f4c9e094f00b9.ttf",
+      "sha256": "aa39bba45e719891fb6464dd35cde6207d19e2702b1c71d51bcda2be341ed8eb",
+      "size": 16736,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/f293a7cc0c9fad957df4904e8ce5e366e7cab93c.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/f293a7cc0c9fad957df4904e8ce5e366e7cab93c.woff",
+      "sha256": "331ca0d928d1a5d8150c63c18ee8517d94e82c26c18918eed432a1303d372314",
+      "size": 1448,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 1768,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/f37d5b05405c0861da62bdad2b00fcaa7d2923f9.woff2",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/f37d5b05405c0861da62bdad2b00fcaa7d2923f9.woff2",
+      "sha256": "c008518df54c3d167fc392ad629d9eed9a85af8c9749e9810b387bd767424f2b",
+      "size": 2856,
+      "format": {
+        "kind": "woff2",
+        "version": "2.0",
+        "flavor": "truetype",
+        "numTables": 18,
+        "totalSfntSize": 6068,
+        "totalCompressedSize": 2759,
+        "outlines": "glyf",
+        "transformed": [
+          "glyf",
+          "loca"
+        ]
+      }
+    },
+    {
+      "path": "fuzzing/f499fbc23865022234775c43503bba2e63978fe1.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/f499fbc23865022234775c43503bba2e63978fe1.ttf",
+      "sha256": "a2a88c82336798a149f29efdd41cc7a2f599669ecc0b43502170e3039f1829df",
+      "size": 3564,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/f4bcb76e745d6390bdf0447f2128db19686c432d.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/f4bcb76e745d6390bdf0447f2128db19686c432d.woff",
+      "sha256": "97e29630f2ef1803d092bcf27e796857db0c7f2300a9a7ebfbb25d7def41c204",
+      "size": 360,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 7,
+        "totalSfntSize": 316,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/f518eb6f6b5eec2946c9fbbbde44e45d46f5e2ac.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/f518eb6f6b5eec2946c9fbbbde44e45d46f5e2ac.ttf",
+      "sha256": "bae5aaec8daab661d77b83222fc7b7a165d1b61e86f043efc92b7915bec69b60",
+      "size": 1356,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 13,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/f5ff6aaa96256b0e2c1abfdebf592c0987a1637a.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/f5ff6aaa96256b0e2c1abfdebf592c0987a1637a.ttf",
+      "sha256": "54f2db95ebfd3ffc1dc7ea6cf8785907ad57f5cca19ad166f13afb1c14496371",
+      "size": 6088,
+      "format": {
+        "kind": "ttc",
+        "version": "1.0",
+        "numFonts": 7,
+        "numTables": 16,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/f9b1dd4dcb515e757789a22cb4241107746fd3d0.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/f9b1dd4dcb515e757789a22cb4241107746fd3d0.ttf",
+      "sha256": "2c6b87b217ad93f66603fcbc1bdb3b2f711ae845ae222021d87f0911663fc2f2",
+      "size": 1004,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/fab39d60d758cb586db5a504f218442cd1395725.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/fab39d60d758cb586db5a504f218442cd1395725.ttf",
+      "sha256": "59b2d0b2ec3874b8a0d3f7ff97420a96a9f1de4ed39a8c8a0ae2a5109c6ed318",
+      "size": 1894,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 19,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/fbb6c84c9e1fe0c39e152fbe845e51fd81f6748e.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/fbb6c84c9e1fe0c39e152fbe845e51fd81f6748e.ttf",
+      "sha256": "cf57816e75a209878b3f7c268a936f2af5ffaec7b1917f6be3c1ea1c4e48e3f7",
+      "size": 2616,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/fc4263389f1a48dd3d1c793dff6b1e0cf8bccd33.woff",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/fc4263389f1a48dd3d1c793dff6b1e0cf8bccd33.woff",
+      "sha256": "69275d03fce66d4622dc07a589e1234fb2685a3e0695b1c2890965a0d8a38dc9",
+      "size": 2224,
+      "format": {
+        "kind": "woff",
+        "version": "1.0",
+        "flavor": "truetype",
+        "numTables": 14,
+        "totalSfntSize": 2616,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/fcdcffbdf1c4c97c05308d7600e4c283eb47dbca.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/fcdcffbdf1c4c97c05308d7600e4c283eb47dbca.ttf",
+      "sha256": "4ebf553336b374d9c5fba6e4917f07b6ff2c44b9d06325b5828f48d96d964acd",
+      "size": 1344,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    },
+    {
+      "path": "fuzzing/ffa0f5d2d9025486d8469d8b1fdd983e7632499b.ttf",
+      "sourceId": "ots-fuzzing",
+      "upstreamPath": "tests/fonts/fuzzing/ffa0f5d2d9025486d8469d8b1fdd983e7632499b.ttf",
+      "sha256": "5580109ea5be46224817012f3f2b400a6fae4a3eceeddfe0edeb036ad0e74bc4",
+      "size": 1448,
+      "format": {
+        "kind": "ttf",
+        "version": null,
+        "sfntVersion": "truetype",
+        "numTables": 14,
+        "outlines": "glyf"
+      }
+    }
+  ],
+  "totals": {
+    "files": 312,
+    "bytes": 25068931
+  }
+}

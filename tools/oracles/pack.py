@@ -44,9 +44,18 @@ PERMISSIVE_DECLARED = {
 #                         licence rather than a recognised permissive one.
 #   LicenseRef-CC-BY-TM   CC-BY 4.0 *with trademark limitations* — the limitation is exactly
 #                         the kind of extra condition -permissive promises you will not meet.
+#   OFL-1.1               A free licence, and the one nearly every open font uses. It is out
+#                         because of one clause with no analogue above: the font may not be
+#                         sold on its own. CC-BY's attribution condition is satisfied by
+#                         shipping NOTICE.md, which the archives already do; "not sellable
+#                         alone" is not a condition you satisfy, it is a limit on what the
+#                         recipient may build. A font is also the one asset class here where
+#                         selling the file itself is a real business, so the clause is live
+#                         rather than theoretical. The reserved-font-name term is a second
+#                         one: a modified Source Sans may not be called Source Sans.
 #
-# Both remain fully available in -full and -demo. The variant means "nothing here needs a
-# second thought", and each of these needs one.
+# All three remain fully available in -full and -demo. The variant means "nothing here needs
+# a second thought", and each of these needs one.
 
 
 class ExclusionBreach(RuntimeError):

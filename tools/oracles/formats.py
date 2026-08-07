@@ -572,6 +572,274 @@ def _atf(data: bytes):
     return FormatInfo(kind="atf", version=str(version) if version is not None else None)
 
 
+# --- fonts -------------------------------------------------------------------------
+#
+# A font's "version" is not one number, and picking the wrong one records something
+# useless. The sfnt header carries a *flavour* rather than a revision (0x00010000 for
+# TrueType outlines, 'OTTO' for CFF), and the majorVersion/minorVersion in a WOFF header
+# describe the *font*, not the WOFF format — WOFF's own version is its signature. So the
+# version recorded here is the container's: "1.0" for WOFF, "2.0" for WOFF2, the TTC
+# header version for collections, and None for a bare sfnt, which has no such number.
+#
+# What actually distinguishes one font fixture from another is which tables it carries,
+# so that is what the detector reports: outline flavour (glyf / CFF / CFF2), whether it
+# is variable (fvar), and which colour technology it uses (COLR / CBDT / sbix / SVG).
+# Those make the manifest queryable — "every fixture with a CFF2 table" is a decoder
+# obligation, and a corpus you cannot ask that question of is a pile of files.
+
+_SFNT_FLAVORS = {
+    b"\x00\x01\x00\x00": "truetype",
+    b"OTTO": "cff",
+    b"true": "truetype",
+    b"typ1": "type1",
+}
+
+# WOFF2 does not spell out table tags it can predict; a 6-bit index into this list stands
+# in for them, and only index 63 means "an arbitrary 4-byte tag follows". Order is
+# normative (WOFF2 spec, "Known Table Tags"), so this list is a specification constant
+# rather than a convenience.
+_WOFF2_KNOWN_TAGS = [
+    b"cmap", b"head", b"hhea", b"hmtx", b"maxp", b"name", b"OS/2", b"post",
+    b"cvt ", b"fpgm", b"glyf", b"loca", b"prep", b"CFF ", b"VORG", b"EBDT",
+    b"EBLC", b"gasp", b"hdmx", b"kern", b"LTSH", b"PCLT", b"VDMX", b"vhea",
+    b"vmtx", b"BASE", b"GDEF", b"GPOS", b"GSUB", b"EBSC", b"JSTF", b"MATH",
+    b"CBDT", b"CBLC", b"COLR", b"CPAL", b"SVG ", b"sbix", b"acnt", b"avar",
+    b"bdat", b"bloc", b"bsln", b"cvar", b"fdsc", b"feat", b"fmtx", b"fvar",
+    b"gvar", b"hsty", b"just", b"lcar", b"mort", b"morx", b"opbd", b"prop",
+    b"trak", b"Zapf", b"Silf", b"Glat", b"Gloc", b"Feat", b"Sill",
+]
+
+
+def _table_traits(tags):
+    """Summarise a table set: outline flavour, variability, colour technology.
+
+    Compact on purpose. Recording all ~20 tags per file would add more bulk to the locks
+    than it buys; these three answer the questions a decoder suite actually asks.
+    """
+    tags = set(tags)
+    traits = {}
+    if b"CFF2" in tags:
+        traits["outlines"] = "cff2"
+    elif b"CFF " in tags:
+        traits["outlines"] = "cff"
+    elif b"glyf" in tags:
+        traits["outlines"] = "glyf"
+    if b"fvar" in tags:
+        traits["variable"] = True
+    colour = [name for tag, name in (
+        (b"COLR", "colr"), (b"CBDT", "cbdt"), (b"sbix", "sbix"), (b"SVG ", "svg"),
+        (b"EBDT", "ebdt"),
+    ) if tag in tags]
+    if colour:
+        traits["color"] = colour
+    return traits
+
+
+def _sfnt_tables(data: bytes, offset: int = 0):
+    """Table tags from an sfnt directory at *offset*, or None if it does not fit."""
+    if len(data) < offset + 12:
+        return None
+    count = struct.unpack(">H", data[offset + 4:offset + 6])[0]
+    # 4096 is far above any real font (the record holder is in the low hundreds) and far
+    # below what a bogus length would produce, so it separates a font from four bytes of
+    # coincidence without rejecting anything real.
+    if not 0 < count <= 4096 or len(data) < offset + 12 + 16 * count:
+        return None
+    base = offset + 12
+    return [data[base + 16 * i:base + 16 * i + 4] for i in range(count)]
+
+
+def _sfnt(data: bytes):
+    """Bare TrueType/OpenType: a 4-byte flavour tag, then the table directory."""
+    flavor = _SFNT_FLAVORS.get(data[:4])
+    if flavor is None:
+        return None
+    tags = _sfnt_tables(data)
+    if tags is None:
+        return None
+    kind = "otf" if flavor == "cff" else "ttf"
+    info = FormatInfo(kind=kind, version=None, sfntVersion=flavor, numTables=len(tags))
+    info.update(_table_traits(tags))
+    return info
+
+
+def _ttc(data: bytes):
+    """TrueType/OpenType Collection: 'ttcf', a header version, then per-font offsets."""
+    if not data.startswith(b"ttcf") or len(data) < 12:
+        return None
+    major, minor, count = struct.unpack(">HHI", data[4:12])
+    if not 0 < count <= 4096 or len(data) < 12 + 4 * count:
+        return None
+    offsets = struct.unpack(f">{count}I", data[12:12 + 4 * count])
+    tags = set()
+    for off in offsets:
+        found = _sfnt_tables(data, off)
+        if found:
+            tags.update(found)
+    info = FormatInfo(
+        kind="ttc", version=f"{major}.{minor}", numFonts=count, numTables=len(tags)
+    )
+    info.update(_table_traits(tags))
+    return info
+
+
+def _woff(data: bytes):
+    """WOFF 1.0: 'wOFF', the wrapped sfnt flavour, then a 20-byte-per-table directory.
+
+    The directory is plain even though the tables are zlib-compressed, so the tag set is
+    readable without decompressing anything.
+    """
+    if not data.startswith(b"wOFF") or len(data) < 44:
+        return None
+    flavor, _length, count = struct.unpack(">IIH", data[4:14])
+    total_sfnt = struct.unpack(">I", data[16:20])[0]
+    info = FormatInfo(
+        kind="woff",
+        version="1.0",
+        flavor=_SFNT_FLAVORS.get(struct.pack(">I", flavor)) or f"0x{flavor:08x}",
+        numTables=count,
+        totalSfntSize=total_sfnt,
+    )
+    if 0 < count <= 4096 and len(data) >= 44 + 20 * count:
+        tags = [data[44 + 20 * i:44 + 20 * i + 4] for i in range(count)]
+        info.update(_table_traits(tags))
+    return info
+
+
+def _uint_base128(data: bytes, pos: int):
+    """WOFF2's variable-length integer: 7 bits per byte, high bit continues."""
+    value = 0
+    for i in range(5):
+        if pos >= len(data):
+            return None, pos
+        byte = data[pos]
+        pos += 1
+        # Leading zeros are forbidden by the spec, and so is overflowing 32 bits; both
+        # mean we are not reading a table directory and should stop rather than guess.
+        if i == 0 and byte == 0x80:
+            return None, pos
+        if value & 0xFE000000:
+            return None, pos
+        value = (value << 7) | (byte & 0x7F)
+        if not byte & 0x80:
+            return value, pos
+    return None, pos
+
+
+def _woff2(data: bytes):
+    """WOFF2: 'wOF2' and a header whose table directory precedes the brotli stream.
+
+    The directory is deliberately parsed here even though the font body needs brotli,
+    which is not in the standard library. Everything that identifies the font — which
+    tables it has, whether glyf/loca were transformed — sits in that uncompressed
+    prologue, so the interesting facts are reachable without a dependency.
+    """
+    if not data.startswith(b"wOF2") or len(data) < 48:
+        return None
+    flavor, _length, count = struct.unpack(">IIH", data[4:14])
+    total_sfnt, total_compressed = struct.unpack(">II", data[16:24])
+    info = FormatInfo(
+        kind="woff2",
+        version="2.0",
+        flavor=_SFNT_FLAVORS.get(struct.pack(">I", flavor))
+        or ("collection" if struct.pack(">I", flavor) == b"ttcf" else f"0x{flavor:08x}"),
+        numTables=count,
+        totalSfntSize=total_sfnt,
+        totalCompressedSize=total_compressed,
+    )
+    # The WOFF2 header is 48 bytes — four more than WOFF's, for totalCompressedSize — and
+    # the table directory begins immediately after it. Starting the walk at the wrong
+    # offset does not fail: it reads the tail of the header as flag bytes and produces a
+    # plausible-looking tag list for the wrong tables, which is how this was caught (a
+    # TrueType-flavoured file reporting CFF outlines).
+    tags, transformed, pos = [], [], 48
+    for _ in range(count):
+        if pos >= len(data):
+            tags = None
+            break
+        flags = data[pos]
+        pos += 1
+        index = flags & 0x3F
+        if index == 0x3F:
+            if pos + 4 > len(data):
+                tags = None
+                break
+            tag = data[pos:pos + 4]
+            pos += 4
+        else:
+            tag = _WOFF2_KNOWN_TAGS[index]
+        orig_length, pos = _uint_base128(data, pos)
+        if orig_length is None:
+            tags = None
+            break
+        # Transform version 0 means *transformed* for glyf and loca and *untransformed*
+        # for everything else — the one place in this header where the same value means
+        # opposite things, and where a transformLength is silently present or absent.
+        version = flags >> 6
+        if tag in (b"glyf", b"loca"):
+            is_transformed = version == 0
+        else:
+            is_transformed = version != 0
+        if is_transformed:
+            transform_length, pos = _uint_base128(data, pos)
+            if transform_length is None:
+                tags = None
+                break
+            transformed.append(tag.decode("latin-1").strip())
+        tags.append(tag)
+    if tags is not None:
+        info.update(_table_traits(tags))
+        if transformed:
+            info["transformed"] = transformed
+    return info
+
+
+_TTX_ROOT = re.compile(rb"<ttFont\b[^>]*>")
+_TTX_ATTR = re.compile(rb'(\w+)="([^"]*)"')
+# Top-level children of <ttFont> are table elements. fontTools spells tags that are not
+# valid XML names with underscores — 'OS/2' becomes 'OS_2', 'cvt ' becomes 'cvt_' — so the
+# element name is the tag, not something to translate back.
+_TTX_TABLE = re.compile(rb"^  <([A-Za-z][\w_]*)[ >/]", re.M)
+
+
+def _ttx(data: bytes, name: str):
+    """fontTools' XML serialisation of a font.
+
+    Reported as its own format rather than falling through to generic XML, because a .ttx
+    beside a .ttf is not incidentally XML — it is that font's table structure written out,
+    which is the closest thing to an expected-output document a font corpus carries.
+    """
+    if not name.lower().endswith(".ttx"):
+        return None
+    root = _TTX_ROOT.search(data[:4096])
+    if root is None:
+        return None
+    attrs = dict(_TTX_ATTR.findall(root.group(0)))
+    info = FormatInfo(kind="ttx", version=None)
+    lib = attrs.get(b"ttLibVersion")
+    if lib:
+        info["ttLibVersion"] = lib.decode("utf-8", "replace")
+    sfnt = attrs.get(b"sfntVersion")
+    if sfnt:
+        # Written as an escaped literal — "\x00\x01\x00\x00" for TrueType, "OTTO" for CFF.
+        raw = sfnt.decode("unicode_escape").encode("latin-1")
+        info["sfntVersion"] = _SFNT_FLAVORS.get(raw) or sfnt.decode("utf-8", "replace")
+    tables = set()
+    for element in _TTX_TABLE.findall(data):
+        # GlyphOrder is fontTools' own bookkeeping, not a table in the font.
+        if element == b"GlyphOrder":
+            continue
+        if element == b"OS_2":
+            element = b"OS/2"
+        elif element.endswith(b"_"):
+            element = element[:-1] + b" "      # 'cvt_' is the tag 'cvt '
+        tables.add(element)
+    if tables:
+        info["numTables"] = len(tables)
+        info.update(_table_traits(tables))
+    return info
+
+
 def _png(data: bytes):
     if not data.startswith(b"\x89PNG\r\n\x1a\n"):
         return None
@@ -586,11 +854,13 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
     """Identify *data*, using *name* only where the bytes are ambiguous."""
     for probe in (_riv, _swf, _glb, _ktx2, _ktx1, _basis, _dds, _md2, _awd, _atf,
                   _iqm,
+                  _woff2, _woff, _ttc, _sfnt,
                   _png, _gltf_json, _spine_json, _lottie):
         info = probe(data)
         if info is not None:
             return info
-    for probe in (_dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
+    for probe in (_ttx,
+                  _dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
                   _ldtk, _effekseer, _bmfont_json, _frames_meta_sheet, _bvh,
                   _starling_atlas, _unity_yaml, _svg, _xml,
                   _stl_ply, _fbx,
