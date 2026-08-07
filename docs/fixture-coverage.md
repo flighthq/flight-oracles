@@ -421,9 +421,30 @@ it is clear what would have to change.
 | **`swf-generated-fixtures`** | Targeted SWF tags need a Flash compiler to emit. The Apache Flex SDK still exists, but this would be the first pack whose inputs are *built* rather than fetched, which is a different kind of reproducibility problem — the compiler becomes part of the pin. |
 | **EOT** | Microsoft's legacy webfont wrapper. No corpus with a usable declaration surfaced; the format predates the conventions that would make one findable, and the tools that produced it are gone. Left as a known gap rather than a target. |
 
-**Not blocked, just large.** USD/USDZ (`OpenUSD`, 282 MB, NOASSERTION at the root) and the
-audio/video **codec bitstream** vector sets are both real work rather than obstacles: they
-need a slice picked deliberately and per-file licence attention, not a decision.
+**Blocked by not being in git at all.** This is the one obstacle the pipeline's whole model
+cannot absorb, and it is worth stating because it looks like laziness otherwise. Codec
+bitstream conformance vectors are published as tarballs on project web servers, not as
+repositories:
+
+| | Where they actually live |
+| --- | --- |
+| **Opus, Vorbis, Theora** | `opus-codec.org` / `people.xiph.org` tarballs. `xiph/opus` itself carries no vectors. |
+| **VP8 / VP9** | Google Cloud Storage buckets that libvpx's build scripts download. |
+| **AV1 video** | AOM's argon and stress suites, likewise hosted rather than versioned. |
+| **FFmpeg FATE** | `ffmpeg.org/fate-suite`, rsync-distributed. |
+
+Everything here is pinned by commit, and a tarball on a web server has no commit to pin.
+The `kind = "recovered"` source type exists for material fetched by URL, but it deliberately
+records `declared: UNKNOWN` and has nobody to notify on a dispute — which is the right
+posture for genuinely orphaned files and the wrong one for a standards body's current
+conformance suite. Adopting these means either mirroring them into a repository first, or
+extending the model with URL pinning plus a content hash. That is a design decision, not an
+afternoon.
+
+**AV1 as a still image was reachable** and is now `avif-fixtures`, which is the closest
+thing to codec-bitstream coverage this repository has: an AVIF file is an AV1 keyframe in an
+ISO base media container, so the 170 images there exercise a real AV1 decoder path even
+though they are filed as images.
 
 ## Three findings worth acting on
 
