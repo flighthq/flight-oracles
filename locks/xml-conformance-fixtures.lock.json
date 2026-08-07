@@ -4539,35 +4539,60 @@
       "sourceId": "libxml2-results",
       "upstreamPath": "result/slashdot16.xml",
       "sha256": "8090b910df02b804aecf4fc1b3bba4664c89c4072d13bf42f2dd1094dbaac52d",
-      "size": 10374
+      "size": 10374,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "expected/text-4-byte-UTF-16-BE-offset.xml",
       "sourceId": "libxml2-results",
       "upstreamPath": "result/text-4-byte-UTF-16-BE-offset.xml",
       "sha256": "d2099bad4c9ff25694c9c703fe6e3c808a7007185a699d1969104f6b65e8030a",
-      "size": 4244
+      "size": 4244,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "expected/text-4-byte-UTF-16-BE.xml",
       "sourceId": "libxml2-results",
       "upstreamPath": "result/text-4-byte-UTF-16-BE.xml",
       "sha256": "54f4e74bcf2a4b46c08a1cd2774685ff7a4536cff459e9a591eb2034c4a1ad2d",
-      "size": 4238
+      "size": 4238,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "expected/text-4-byte-UTF-16-LE-offset.xml",
       "sourceId": "libxml2-results",
       "upstreamPath": "result/text-4-byte-UTF-16-LE-offset.xml",
       "sha256": "d2099bad4c9ff25694c9c703fe6e3c808a7007185a699d1969104f6b65e8030a",
-      "size": 4244
+      "size": 4244,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "expected/text-4-byte-UTF-16-LE.xml",
       "sourceId": "libxml2-results",
       "upstreamPath": "result/text-4-byte-UTF-16-LE.xml",
       "sha256": "54f4e74bcf2a4b46c08a1cd2774685ff7a4536cff459e9a591eb2034c4a1ad2d",
-      "size": 4238
+      "size": 4238,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "expected/title.xml",
@@ -4615,7 +4640,12 @@
       "sourceId": "libxml2-results",
       "upstreamPath": "result/utf16bom.xml",
       "sha256": "7fc2d63fecb5432977335493b8b384f2f5df76dc7bffa88a09fefbfd0eb1ffca",
-      "size": 258
+      "size": 258,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "expected/utf16lebom.xml",
@@ -9509,7 +9539,12 @@
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/errors/truncated-utf16.xml",
       "sha256": "616a97a08062ddc8decea5e1b7e6dd328957c9d8aed740d48e468c742a93dc3b",
-      "size": 11
+      "size": 11,
+      "format": {
+        "kind": "xml",
+        "version": null,
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "input/errors/unclosed-element.xml",
@@ -9654,7 +9689,12 @@
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/japancrlf.xml",
       "sha256": "79d30ba4a245fd3e5bb46cab77f1b73507e05556da1c23770532d46ce2fdb25e",
-      "size": 251
+      "size": 251,
+      "format": {
+        "kind": "xml",
+        "version": null,
+        "encoding": "utf-8-sig"
+      }
     },
     {
       "path": "input/namespaces/err_0.xml",
@@ -10130,35 +10170,60 @@
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/slashdot16.xml",
       "sha256": "8090b910df02b804aecf4fc1b3bba4664c89c4072d13bf42f2dd1094dbaac52d",
-      "size": 10374
+      "size": 10374,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "input/text-4-byte-UTF-16-BE-offset.xml",
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/text-4-byte-UTF-16-BE-offset.xml",
       "sha256": "b3f9048fc5089a124c86d68b9b38707092db39ab99ac357d2b517b3c84d89858",
-      "size": 4244
+      "size": 4244,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-be"
+      }
     },
     {
       "path": "input/text-4-byte-UTF-16-BE.xml",
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/text-4-byte-UTF-16-BE.xml",
       "sha256": "7914de0514989a1d842fda2763f2c5d8dd3e86b027d18c8476b821c0fc63a95e",
-      "size": 4238
+      "size": 4238,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-be"
+      }
     },
     {
       "path": "input/text-4-byte-UTF-16-LE-offset.xml",
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/text-4-byte-UTF-16-LE-offset.xml",
       "sha256": "d2099bad4c9ff25694c9c703fe6e3c808a7007185a699d1969104f6b65e8030a",
-      "size": 4244
+      "size": 4244,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "input/text-4-byte-UTF-16-LE.xml",
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/text-4-byte-UTF-16-LE.xml",
       "sha256": "54f4e74bcf2a4b46c08a1cd2774685ff7a4536cff459e9a591eb2034c4a1ad2d",
-      "size": 4238
+      "size": 4238,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "input/title.xml",
@@ -10199,14 +10264,24 @@
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/utf16bebom.xml",
       "sha256": "818b2f7d2a01658e2b9173a03472b1ea867b39637ac5abd0ae6e9a4a2c487502",
-      "size": 346
+      "size": 346,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-be"
+      }
     },
     {
       "path": "input/utf16bom.xml",
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/utf16bom.xml",
       "sha256": "ca5d10bc1fd28dba563742910deeb33af1964825ca1640d54b422d325677b3e8",
-      "size": 256
+      "size": 256,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "input/utf16lebom.xml",
@@ -10224,7 +10299,12 @@
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/utf8bom.xml",
       "sha256": "e0ef4c7e0310192f8c9ef4247ad70a3d6f9c78ba5dab153fe5006d3e2af7ab68",
-      "size": 10
+      "size": 10,
+      "format": {
+        "kind": "xml",
+        "version": null,
+        "encoding": "utf-8-sig"
+      }
     },
     {
       "path": "input/valid/127772.xml",
@@ -10359,7 +10439,12 @@
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/valid/dtds/694228.dtd",
       "sha256": "94a7257a36e3a52551c2bb76426cbb7ee15c7fc451ca76593f30b76fbf363c5c",
-      "size": 155
+      "size": 155,
+      "format": {
+        "kind": "xml",
+        "version": "1.0",
+        "encoding": "utf-8-sig"
+      }
     },
     {
       "path": "input/valid/dtds/737840.ent",
@@ -10568,14 +10653,24 @@
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/valid/dtds/utf16b.ent",
       "sha256": "bd40ca00c2ff85b262e83d97a84a4435c23c355fb9ca497e202c1dfa12c3d4e6",
-      "size": 98
+      "size": 98,
+      "format": {
+        "kind": "xml",
+        "version": null,
+        "encoding": "utf-16-be"
+      }
     },
     {
       "path": "input/valid/dtds/utf16l.ent",
       "sourceId": "libxml2-tests",
       "upstreamPath": "test/valid/dtds/utf16l.ent",
       "sha256": "864ab6ec3989e7093598386111c536b0e2ed8c8b555c7c067950b0ba291cf81c",
-      "size": 98
+      "size": 98,
+      "format": {
+        "kind": "xml",
+        "version": null,
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "input/valid/dtds/xhtml-lat1.ent",

@@ -450,6 +450,76 @@ class TestFormats(unittest.TestCase):
         info = formats.detect(tagged, "unknown")
         self.assertEqual((info["kind"], info["id3"]), ("mp3", "2.4"))
 
+    def test_pvr_has_two_generations_and_only_one_has_a_magic(self):
+        # Version 3 leads with 'PVR\x03'. Version 2 has no magic at all — it starts with
+        # its own header length and hides a 'PVR!' fourCC at offset 44, so a reader that
+        # checks only for the magic silently rejects every v2 file.
+        v2 = (struct.pack("<IIII", 52, 64, 32, 3) + b"\x00" * 28
+              + b"PVR!" + struct.pack("<I", 1))
+        info = formats.detect(v2, "t.pvr")
+        self.assertEqual((info["kind"], info["version"], info["width"], info["height"]),
+                         ("pvr", "2", 32, 64))
+        v3 = (b"PVR\x03" + struct.pack("<II", 0, 7) + b"\x00" * 12
+              + struct.pack("<II", 16, 8) + b"\x00" * 20)
+        self.assertEqual(formats.detect(v3, "t.pvr")["version"], "3")
+        self.assertIsNone(formats.detect(struct.pack("<I", 52) + b"\x00" * 60, "x.bin"))
+
+    def test_iff_form_type_separates_lightwave_from_modo(self):
+        def form(kind):
+            return b"FORM" + struct.pack(">I", 32) + kind + b"\x00" * 16
+        self.assertEqual(formats.detect(form(b"LWO2"), "a.lwo")["kind"], "lwo")
+        self.assertEqual(formats.detect(form(b"LXOB"), "a.lxo")["kind"], "lxo")
+        # An unfamiliar form type is still IFF; the type itself is what gets recorded.
+        other = formats.detect(form(b"ILBM"), "a.iff")
+        self.assertEqual((other["kind"], other["formType"]), ("iff", "ILBM"))
+
+    def test_directx_x_reports_its_encoding(self):
+        # The same version ships as text, binary, or either one zip-compressed, and the
+        # encoding is the part a reader has to branch on.
+        text = formats.detect(b"xof 0303txt 0032\ntemplate X", "a.x")
+        self.assertEqual((text["kind"], text["version"], text["encoding"]),
+                         ("x", "3.03", "text"))
+        self.assertEqual(formats.detect(b"xof 0302bin 0032\x01\x00", "a.x")["encoding"],
+                         "binary")
+
+    def test_bom_encoded_text_formats_are_still_identified(self):
+        # assimp ships UTF-16 copies of its ASCII models on purpose, because a reader that
+        # byte-compares against "AC3D" fails on every one. A byte-comparison probe is
+        # exactly what cannot find them, so the BOM is honoured and the head transcoded.
+        body = 'AC3Db\nMATERIAL "m" rgb 1 1 1\n'
+        for bom, encoding in ((b"\xff\xfe", "utf-16-le"), (b"\xfe\xff", "utf-16-be"),
+                              (b"\xef\xbb\xbf", "utf-8-sig")):
+            raw = bom + body.encode(encoding.removesuffix("-sig"))
+            info = formats.detect(raw, "m.ac")
+            self.assertEqual((info["kind"], info["encoding"]), ("ac3d", encoding))
+        # And it must not invent matches: a BOM in front of nothing recognisable is None.
+        self.assertIsNone(formats.detect(b"\xff\xfe" + "no magic".encode("utf-16-le"),
+                                         "m.bin"))
+
+    def test_zip_is_identified_by_its_first_entry_not_its_extension(self):
+        # .zae, 3MF and USDZ are all zips with a convention rather than a magic number.
+        def zipped(entry):
+            return (b"PK\x03\x04" + b"\x00" * 22 + struct.pack("<HH", len(entry), 0)
+                    + entry.encode())
+        self.assertEqual(formats.detect(zipped("duck.dae"), "a.zae")["kind"], "zae")
+        self.assertEqual(formats.detect(zipped("3D/3dmodel.model"), "a.3mf")["kind"], "3mf")
+        self.assertEqual(formats.detect(zipped("scene.usdc"), "a.usdz")["kind"], "usdz")
+        plain = formats.detect(zipped("readme.txt"), "a.zip")
+        self.assertEqual((plain["kind"], plain["firstEntry"]), ("zip", "readme.txt"))
+
+    def test_gzip_keeps_the_original_name_it_carries(self):
+        # Cocos ships `grossini.pvr.gz`, and the header repeats the inner name — so what
+        # the payload is survives even if the outer filename is changed.
+        blob = b"\x1f\x8b\x08\x08" + b"\x00" * 6 + b"grossini.pvr\x00" + b"\x00" * 8
+        self.assertEqual(formats.detect(blob, "renamed.gz")["originalName"], "grossini.pvr")
+
+    def test_ccz_reports_encryption_rather_than_pretending_to_read_it(self):
+        head = struct.pack(">HH", 0, 2) + b"\x00" * 4 + struct.pack(">I", 4096)
+        plain = formats.detect(b"CCZ!" + head, "a.ccz")
+        self.assertEqual((plain["version"], plain["compression"]), ("2", "zlib"))
+        self.assertNotIn("encrypted", plain)
+        self.assertTrue(formats.detect(b"CCZp" + head, "a.ccz")["encrypted"])
+
     def test_ttx_is_identified_as_more_than_generic_xml(self):
         doc = (b'<?xml version="1.0" encoding="UTF-8"?>\n'
                b'<ttFont sfntVersion="\\x00\\x01\\x00\\x00" ttLibVersion="4.41">\n'

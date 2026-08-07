@@ -209,70 +209,112 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/SphereWithLight.ac",
       "sha256": "334d64402c97d2566d934b2777790ca34e81f032e7454e0bed3a1b74402d214b",
-      "size": 18117
+      "size": 18117,
+      "format": {
+        "kind": "ac3d",
+        "version": "11"
+      }
     },
     {
       "path": "AC/SphereWithLight.acc",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/SphereWithLight.acc",
       "sha256": "a73b391aa28824d99bf0f00ab1fb1eae1927c6c869e84d90f8634aa96bc09e61",
-      "size": 31682
+      "size": 31682,
+      "format": {
+        "kind": "ac3d",
+        "version": "11"
+      }
     },
     {
       "path": "AC/SphereWithLightUvScaling4X.ac",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/SphereWithLightUvScaling4X.ac",
       "sha256": "80cb781e7e2ed67d2c8050d618d0572c721e0545a40fcc21f6f9cf5cbd2f1a0b",
-      "size": 18149
+      "size": 18149,
+      "format": {
+        "kind": "ac3d",
+        "version": "11"
+      }
     },
     {
       "path": "AC/SphereWithLight_UTF16LE.ac",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/SphereWithLight_UTF16LE.ac",
       "sha256": "24c4e27966f398e391ab7dd241efa2bc5586969a5387899f0348df57a3d833cb",
-      "size": 38484
+      "size": 38484,
+      "format": {
+        "kind": "ac3d",
+        "version": "11",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "AC/SphereWithLight_UTF8BOM.ac",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/SphereWithLight_UTF8BOM.ac",
       "sha256": "8e826722177c8c279dc6d45e6ebd84ec17dd5d2d3d33380e31964c12a6dcbbf1",
-      "size": 18128
+      "size": 18128,
+      "format": {
+        "kind": "ac3d",
+        "version": "11",
+        "encoding": "utf-8-sig"
+      }
     },
     {
       "path": "AC/TestFormatDetection",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/TestFormatDetection",
       "sha256": "a5c2902b795b5eeafe5431bc15f12164afebb90d00ba471d977c8539675794e0",
-      "size": 258
+      "size": 258,
+      "format": {
+        "kind": "ac3d",
+        "version": "11"
+      }
     },
     {
       "path": "AC/Wuson.ac",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/Wuson.ac",
       "sha256": "00522133fb66688d9137ec24dd1092b27bd42d7b8a63ae31faec37e9228bc0f9",
-      "size": 562467
+      "size": 562467,
+      "format": {
+        "kind": "ac3d",
+        "version": "11"
+      }
     },
     {
       "path": "AC/Wuson.acc",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/Wuson.acc",
       "sha256": "171e1faa46b17bf3bb24f236119cdd9bf37fd2d529d291288ae0a7a430bfea60",
-      "size": 300323
+      "size": 300323,
+      "format": {
+        "kind": "ac3d",
+        "version": "11"
+      }
     },
     {
       "path": "AC/closedLine.ac",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/closedLine.ac",
       "sha256": "365115508808657ee0b0690d21e661df8f0127ea72d9c880ad438804f2f221d1",
-      "size": 258
+      "size": 258,
+      "format": {
+        "kind": "ac3d",
+        "version": "11"
+      }
     },
     {
       "path": "AC/doubleSidedFace.ac",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/doubleSidedFace.ac",
       "sha256": "a5c2902b795b5eeafe5431bc15f12164afebb90d00ba471d977c8539675794e0",
-      "size": 258
+      "size": 258,
+      "format": {
+        "kind": "ac3d",
+        "version": "11"
+      }
     },
     {
       "path": "AC/earthSpherical.jpg",
@@ -296,14 +338,22 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/nosurfaces.ac",
       "sha256": "e5b846244ab172d89d92c640d4d79098854ab91885c9fc944aebdc77f9d20280",
-      "size": 160
+      "size": 160,
+      "format": {
+        "kind": "ac3d",
+        "version": "11"
+      }
     },
     {
       "path": "AC/openLine.ac",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/openLine.ac",
       "sha256": "a16723bb96b4e63ed6c7a81c09a42e1fd92f0415bd5a9fd2d75fc473be455b9f",
-      "size": 264
+      "size": 264,
+      "format": {
+        "kind": "ac3d",
+        "version": "11"
+      }
     },
     {
       "path": "AC/ref/README.md",
@@ -332,7 +382,11 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/sample_subdiv.ac",
       "sha256": "3df663cdd6195eff2efada06ae8ad60ef42362aca131c9c5efb2746cb17160ea",
-      "size": 2770
+      "size": 2770,
+      "format": {
+        "kind": "ac3d",
+        "version": "11"
+      }
     },
     {
       "path": "AMF/README",
@@ -346,98 +400,155 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AMF/test1.amf",
       "sha256": "1e906ae702d7d034e23f4fc08b6d0ffc5d4f4c138906cb7130816fa0fb7d875e",
-      "size": 924
+      "size": 924,
+      "format": {
+        "kind": "amf",
+        "version": null
+      }
     },
     {
       "path": "AMF/test2.amf",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AMF/test2.amf",
       "sha256": "eb7ae079aaa050e7237b081c39fc3fd1436593875f7663362559b53390a5d385",
-      "size": 999
+      "size": 999,
+      "format": {
+        "kind": "amf",
+        "version": null
+      }
     },
     {
       "path": "AMF/test3.amf",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AMF/test3.amf",
       "sha256": "a436958c7843168fb43920f6a4bdef29ea4032a1499255f82ad98f2f47848723",
-      "size": 1086
+      "size": 1086,
+      "format": {
+        "kind": "amf",
+        "version": null
+      }
     },
     {
       "path": "AMF/test4.amf",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AMF/test4.amf",
       "sha256": "cbed72e0be0301cb7dc588c29e666417bc9ce842426567e468c9e35ba332830f",
-      "size": 1177
+      "size": 1177,
+      "format": {
+        "kind": "amf",
+        "version": null
+      }
     },
     {
       "path": "AMF/test5.amf",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AMF/test5.amf",
       "sha256": "7b4e91400233ae453bdd71aa9cb6cbcaccd0df06bc277e3fc1170fe74f21b6d4",
-      "size": 1456
+      "size": 1456,
+      "format": {
+        "kind": "amf",
+        "version": null
+      }
     },
     {
       "path": "AMF/test5a.amf",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AMF/test5a.amf",
       "sha256": "5477a28281ae3c28e1767965ddd2fae45dc9f326b56c8ae52527dd6966441d82",
-      "size": 1177
+      "size": 1177,
+      "format": {
+        "kind": "amf",
+        "version": null
+      }
     },
     {
       "path": "AMF/test6.amf",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AMF/test6.amf",
       "sha256": "d39c05732c88124e428074562557a333808c785119c8c9ad8a248a0aaacfee20",
-      "size": 1268
+      "size": 1268,
+      "format": {
+        "kind": "amf",
+        "version": null
+      }
     },
     {
       "path": "AMF/test7.amf",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AMF/test7.amf",
       "sha256": "5b84e7eb1c8b0405ef68366fd2f11d191f7ae5df74ba6e1502a6137a3bafd5dd",
-      "size": 1721
+      "size": 1721,
+      "format": {
+        "kind": "amf",
+        "version": null
+      }
     },
     {
       "path": "AMF/test8.amf",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AMF/test8.amf",
       "sha256": "dee00cabc972ab6452d3bdc9e2f921a9de60241a621d794ab8bdc2f83ae682ef",
-      "size": 2063
+      "size": 2063,
+      "format": {
+        "kind": "amf",
+        "version": null
+      }
     },
     {
       "path": "AMF/test9.amf",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AMF/test9.amf",
       "sha256": "f1b1ce1419e8679ea2458b73523f92386c4841b3784175376b5fedbb3d7bc530",
-      "size": 3007
+      "size": 3007,
+      "format": {
+        "kind": "amf",
+        "version": null
+      }
     },
     {
       "path": "AMF/test_with_mat.amf",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AMF/test_with_mat.amf",
       "sha256": "23e32ed4ad893e6f3ff136719877003e3335825cf898abf8c6673873aba34e8a",
-      "size": 1607
+      "size": 1607,
+      "format": {
+        "kind": "amf",
+        "version": "1.1",
+        "unit": "inch"
+      }
     },
     {
       "path": "ASE/CameraRollAnim.ase",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/CameraRollAnim.ase",
       "sha256": "86048a4174c3a631ac34f8d14234a3d1f5ad0da7cad81a25aae743eedf8dc946",
-      "size": 13881
+      "size": 13881,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/CameraRollAnimWithChildObject.ase",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/CameraRollAnimWithChildObject.ase",
       "sha256": "f009b94ff7094d3beaffdf455bc09f3311deda16f4d1f348be6a1e6efbdf7f1a",
-      "size": 29855
+      "size": 29855,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/MotionCaptureROM.ase",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/MotionCaptureROM.ase",
       "sha256": "146ad5142c27127a7d7783169428483be82fc528ddc7152f6b4a6435ab4bb61c",
-      "size": 1104364
+      "size": 1104364,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/MotionCaptureROM.source.txt",
@@ -451,91 +562,145 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/RotatingCube.ASE",
       "sha256": "66d8507065c3780083a8ef150618e7de996d085612b171da4359d069f2faa790",
-      "size": 16307
+      "size": 16307,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/TargetCameraAnim.ase",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/TargetCameraAnim.ase",
       "sha256": "64c751068eb1c0ecd17f9ec7615cc314fff770d3750daf36cf79f50151b332b8",
-      "size": 17062
+      "size": 17062,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/TestFormatDetection",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/TestFormatDetection",
       "sha256": "6ed6b2fae78d32889fc02eaf5ba38a244ea493420e764d31d271222adebd5a10",
-      "size": 15432
+      "size": 15432,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/TestUVTransform/UVTransform_Normal.ASE",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/TestUVTransform/UVTransform_Normal.ASE",
       "sha256": "e6bd169d04dfd9a013b1229186c34edb4030379c8e28119c3b2d8c8bc360a1d1",
-      "size": 14713
+      "size": 14713,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/TestUVTransform/UVTransform_ScaleUV1-2_OffsetUV0-0.9_Rotate-72_mirrorU.ase",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/TestUVTransform/UVTransform_ScaleUV1-2_OffsetUV0-0.9_Rotate-72_mirrorU.ase",
       "sha256": "8ddf327db8297fad2f2d8676e8a561a8182715de188533af9c6f256de511562e",
-      "size": 14714
+      "size": 14714,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/TestUVTransform/UVTransform_ScaleUV2x.ASE",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/TestUVTransform/UVTransform_ScaleUV2x.ASE",
       "sha256": "911ce1f44504591de7844fe873a061ee89a332c97cf6962e2993e92f80b7d50f",
-      "size": 14713
+      "size": 14713,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/TestUVTransform/UVTransform_ScaleUV2x_Rotate45.ASE",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/TestUVTransform/UVTransform_ScaleUV2x_Rotate45.ASE",
       "sha256": "cf02cb0f5904cd8fb34ccf32e3fbaa6169a26fde2e436cd1b5f4cd4d7973062a",
-      "size": 14713
+      "size": 14713,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/ThreeCubesGreen.ASE",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/ThreeCubesGreen.ASE",
       "sha256": "44624fc9ac196addc5feaf89b4e643654f101ae0a393f6cea7de6eb5f2b12040",
-      "size": 8731
+      "size": 8731,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/ThreeCubesGreen_UTF16BE.ASE",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/ThreeCubesGreen_UTF16BE.ASE",
       "sha256": "fd340010434ab1bd13e617ec8693af901573eae93b703b14c92c37652dcca2d3",
-      "size": 17840
+      "size": 17840,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200",
+        "encoding": "utf-16-be"
+      }
     },
     {
       "path": "ASE/ThreeCubesGreen_UTF16LE.ASE",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/ThreeCubesGreen_UTF16LE.ASE",
       "sha256": "6e866f028f6513507b96fc10f90400707506090feac0bc583829e8eda068188d",
-      "size": 17900
+      "size": 17900,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200",
+        "encoding": "utf-16-le"
+      }
     },
     {
       "path": "ASE/anim.ASE",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/anim.ASE",
       "sha256": "f67e1ef5a090826c00608daf5dbd9c8fd5f1dcd8bdb2656a2dcfd83e1c438b2a",
-      "size": 13532
+      "size": 13532,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/anim2.ASE",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/anim2.ASE",
       "sha256": "660d6d7025315fd68ec5db9065267bac855b651a857e4f4d6f7b5d0f501d2e9e",
-      "size": 41904
+      "size": 41904,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/invalid/InvalidUVIndex.ase",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/invalid/InvalidUVIndex.ase",
       "sha256": "c8ace87e641c2f0c627003b0b620f2881030e6a32e45fab09f7ff18b58e43013",
-      "size": 856
+      "size": 856,
+      "format": {
+        "kind": "ase-3dsmax",
+        "version": "200"
+      }
     },
     {
       "path": "ASE/ref/README.md",
@@ -672,7 +837,13 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/COB/dwarf.cob",
       "sha256": "5569c42d4ab6e0dba840245cbc9d5464228d5226b3bce1c87d93298d3b1158f5",
-      "size": 962915
+      "size": 962915,
+      "format": {
+        "kind": "cob",
+        "version": "00.01",
+        "encoding": "binary",
+        "byteOrder": "little"
+      }
     },
     {
       "path": "COB/dwarf.jpg",
@@ -713,21 +884,39 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/COB/dwarf_ascii.cob",
       "sha256": "aec0b7094e61fd6d4f5ad008e7d5dcefbdb2359263f717c53752db677e257b19",
-      "size": 2263260
+      "size": 2263260,
+      "format": {
+        "kind": "cob",
+        "version": "00.01",
+        "encoding": "ascii",
+        "byteOrder": "little"
+      }
     },
     {
       "path": "COB/molecule.cob",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/COB/molecule.cob",
       "sha256": "05c46da06eff9d5b7624dc7cecb96c6c6a1785da442a0d875cddbcb11ad2a170",
-      "size": 36394
+      "size": 36394,
+      "format": {
+        "kind": "cob",
+        "version": "00.01",
+        "encoding": "binary",
+        "byteOrder": "little"
+      }
     },
     {
       "path": "COB/molecule_ascii.cob",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/COB/molecule_ascii.cob",
       "sha256": "3e1fb340d5db0316bfa975c9c168f356f3a6d59cbff114392148ec1c88798ddc",
-      "size": 78098
+      "size": 78098,
+      "format": {
+        "kind": "cob",
+        "version": "00.01",
+        "encoding": "ascii",
+        "byteOrder": "little"
+      }
     },
     {
       "path": "COB/ref/README.md",
@@ -756,28 +945,52 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/COB/spider_4_3.cob",
       "sha256": "7d29ec31c0d869a1ce9bf834227e4022ec4fd6447dccaaf4955ae7ba7b0ddf2a",
-      "size": 180033
+      "size": 180033,
+      "format": {
+        "kind": "cob",
+        "version": "00.01",
+        "encoding": "binary",
+        "byteOrder": "little"
+      }
     },
     {
       "path": "COB/spider_4_3_ascii.cob",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/COB/spider_4_3_ascii.cob",
       "sha256": "e1e8d2f89768dc44bf65dd2fc1e33453fd6fd9b8949cf054f5031da33b169fc3",
-      "size": 95734
+      "size": 95734,
+      "format": {
+        "kind": "cob",
+        "version": "00.01",
+        "encoding": "ascii",
+        "byteOrder": "little"
+      }
     },
     {
       "path": "COB/spider_6_6.cob",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/COB/spider_6_6.cob",
       "sha256": "07502b6d7acf7f87c8aea29b280705d214de5ea8a97cc17ee531cabd2a0291a3",
-      "size": 54453
+      "size": 54453,
+      "format": {
+        "kind": "cob",
+        "version": "00.01",
+        "encoding": "binary",
+        "byteOrder": "little"
+      }
     },
     {
       "path": "COB/spider_6_6_ascii.cob",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/COB/spider_6_6_ascii.cob",
       "sha256": "3de8a518c2d718e473fad52919a8df2000403cd14cbb39b04349ca055efbdf5e",
-      "size": 484651
+      "size": 484651,
+      "format": {
+        "kind": "cob",
+        "version": "00.01",
+        "encoding": "ascii",
+        "byteOrder": "little"
+      }
     },
     {
       "path": "Collada/AsXML.xml",
@@ -977,7 +1190,12 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/Collada/duck.zae",
       "sha256": "4f75c3ed25b3d6d8b632b1900c46360710d619d5e2a80f8b1ec827f0586a7213",
-      "size": 132811
+      "size": 132811,
+      "format": {
+        "kind": "zae",
+        "version": null,
+        "firstEntry": "duck zae.dae"
+      }
     },
     {
       "path": "Collada/duckCM.tga",
@@ -1001,7 +1219,12 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/Collada/duck_nomanifest.zae",
       "sha256": "13bbb6719d268fb1dd1629cb13e363e801c05428f4174eb309e60fccc4dcdc5d",
-      "size": 132634
+      "size": 132634,
+      "format": {
+        "kind": "zae",
+        "version": null,
+        "firstEntry": "duckzae.dae"
+      }
     },
     {
       "path": "Collada/duck_sample.jpg",
@@ -1047,7 +1270,12 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/Collada/human.zae",
       "sha256": "567a85e7c8023e28626e60ea057da69f83a48364f496854df11901d732ca54c3",
-      "size": 1093924
+      "size": 1093924,
+      "format": {
+        "kind": "zae",
+        "version": null,
+        "firstEntry": "human.dae"
+      }
     },
     {
       "path": "Collada/kwxport_test_vcolors.dae",
@@ -1564,154 +1792,264 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_x.lwo",
       "sha256": "92a44a99c62ef03db1e20cc42be8ed554d229111d064c6257939c5bfc79ee3d1",
-      "size": 8978
+      "size": 8978,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_cylindrical_x_scale_222_wrap_21.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_x_scale_222_wrap_21.lwo",
       "sha256": "d3edb33e554309a221f7884adb1f3f527796a2d12a521009439c622ef09f86a2",
-      "size": 8994
+      "size": 8994,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_cylindrical_y.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_y.lwo",
       "sha256": "851ee2ca3a6c9c90f1f32d451e6bedf11eba6849be8e1b2787f31776a98fb05d",
-      "size": 8994
+      "size": 8994,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_cylindrical_y_scale_111.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_y_scale_111.lwo",
       "sha256": "06db9bc07f5e21e583867dc361d6f299636950b19d8bcb58197d227cdad9370f",
-      "size": 8994
+      "size": 8994,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_cylindrical_y_scale_111_wrap_21.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_y_scale_111_wrap_21.lwo",
       "sha256": "1501da854ebd73ac585f47c840e7d244c14c3829aa8a8d9265dfacad02c7e157",
-      "size": 8994
+      "size": 8994,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_cylindrical_z.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_cylindrical_z.lwo",
       "sha256": "ce95a3096d33f49fee59d35495b1d5eb3f0e7c0b5301d282f38370cefa14137d",
-      "size": 8978
+      "size": 8978,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_planar_x.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_planar_x.lwo",
       "sha256": "a3e029266b4006f06756082d18e110de98d9376c0570ce2e881f13e00773532c",
-      "size": 8978
+      "size": 8978,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_planar_y.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_planar_y.lwo",
       "sha256": "c54c6ab0c9a98a55369b2400745f22631cbdb3e5b1ab445100a571baca666089",
-      "size": 8978
+      "size": 8978,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_planar_z.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_planar_z.lwo",
       "sha256": "723f3c76e2ec9cf568d0051b29ec179b12ab17edfaee3179cee6d898a018a915",
-      "size": 8978
+      "size": 8978,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_planar_z_scale_111.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_planar_z_scale_111.lwo",
       "sha256": "c08edc685209df166ddb7c45e0555444324ca53a92def235beba4d768eb4d346",
-      "size": 8978
+      "size": 8978,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_spherical_x.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_spherical_x.lwo",
       "sha256": "334b7d17f2688d0b158248c65478a990dc5cd39b378e52116fe7952dcca8e6a4",
-      "size": 8978
+      "size": 8978,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_spherical_x_scale_222_wrap_22.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_spherical_x_scale_222_wrap_22.lwo",
       "sha256": "e0ee275783663a62769977ffa641fe5fa042b343e524cbe15014f17eaf50ace1",
-      "size": 8994
+      "size": 8994,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_spherical_y.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_spherical_y.lwo",
       "sha256": "d7704d85b9ee3063f54abaa0f164968ba8a82ecfe1f902a8ad985ccc3158ea3a",
-      "size": 8978
+      "size": 8978,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_spherical_z.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_spherical_z.lwo",
       "sha256": "146ad0920907a8b54867414f76aaff6e6c787661430820f8100f386108dfbc92",
-      "size": 8978
+      "size": 8978,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_spherical_z_wrap_22.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_spherical_z_wrap_22.lwo",
       "sha256": "fa46b97237dd171fd7babde058dafa2a5dd41cd4be7e3893a7786ae727d1543b",
-      "size": 8978
+      "size": 8978,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earth_uv_cylindrical_y.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earth_uv_cylindrical_y.lwo",
       "sha256": "4767f77290b59a9d430cb7fe896c26bad93a25ab604d8786e1a6f05af7ec5858",
-      "size": 12002
+      "size": 12002,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/ModoExport_vertNormals.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/ModoExport_vertNormals.lwo",
       "sha256": "ed9b58ac24c5d427922eb5fa0f077b0572a09df00d2b0322c110c717da63e3c8",
-      "size": 24626
+      "size": 24626,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/Subdivision.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/Subdivision.lwo",
       "sha256": "bbebe6cc067f9ff231ed56c2be6420ea04a8545092fefcd1403fe7a38947b4f7",
-      "size": 1332
+      "size": 1332,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/UglyVertexColors.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/UglyVertexColors.lwo",
       "sha256": "e89b30d2892b17ec97d46036abffa5694b72d50670079d05df44e6e27a503998",
-      "size": 66848
+      "size": 66848,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/box_2uv_1unused.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/box_2uv_1unused.lwo",
       "sha256": "2a9f4e7749e5f36e56ff80b02d48654ce08ea5b8c93ae46f9a991678d88061c8",
-      "size": 1236
+      "size": 1236,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/box_2vc_1unused.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/box_2vc_1unused.lwo",
       "sha256": "c94f3c0a86228b1fa68329f5bc5c38ba7f7c483f43b418d4778b8669d2a3bf5c",
-      "size": 22924
+      "size": 22924,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/boxuv.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/boxuv.lwo",
       "sha256": "a2e2f7aba857df5c88bf0116a0189eb0acac451cd7e72740cb82c16a9c6f184b",
-      "size": 1100
+      "size": 1100,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/boxuv.png",
@@ -1733,14 +2071,24 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/concave_polygon.lwo",
       "sha256": "5a83af5ab8f07122e8b0b4bb5d07f60642b14c1d5a31da6b3b2439a34e3de398",
-      "size": 2512
+      "size": 2512,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/concave_self_intersecting.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/concave_self_intersecting.lwo",
       "sha256": "32288b72c4e74e6a4a7cf39235beed0e08b1b85679e738ac6abf0aad53858275",
-      "size": 562
+      "size": 562,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/concrete.source.txt",
@@ -1754,77 +2102,132 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/formatDetection",
       "sha256": "ad1d9daf42d3a74c560802c09330a4d1a8dc54e41b03ed3ae63cf8e60caac438",
-      "size": 702
+      "size": 702,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/hierarchy.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/hierarchy.lwo",
       "sha256": "aa440a69297b334f9f9d3679d50ef60f697b09421f8fdea321a1da4286aacfa2",
-      "size": 13390
+      "size": 13390,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/hierarchy_smoothed.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/hierarchy_smoothed.lwo",
       "sha256": "e83459c4f1d9bbd1c7a8712448efc051b12f937c97ba1b6a2ef467df788f7eac",
-      "size": 13400
+      "size": 13400,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/nonplanar_polygon.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/nonplanar_polygon.lwo",
       "sha256": "e5e637082d13090858e8e7df20b5200e59dcee63a8704c3c6ad9d85b21f6d822",
-      "size": 618
+      "size": 618,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/shader_test/CellShader.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/shader_test/CellShader.lwo",
       "sha256": "6f5c00ed5b204bfe9dd4ea98143c80731bdc077730788e31e066fa01ac329be6",
-      "size": 806
+      "size": 806,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/shader_test/SuperCellShader.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/shader_test/SuperCellShader.lwo",
       "sha256": "45d8537909bd36f0cb249478a440a5e2ed508d481686f3d1065ce54bf3a57202",
-      "size": 926
+      "size": 926,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/shader_test/fastFresnel.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/shader_test/fastFresnel.lwo",
       "sha256": "05cf830e77c2dc37125f22faa8a7e88d979fe1337f3984bae8cbb982f8f7a608",
-      "size": 864
+      "size": 864,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/shader_test/realFresnel.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/shader_test/realFresnel.lwo",
       "sha256": "5bd139c03acc3741a3f1d1a702460858f987b9a7e9b48d49bc52159874b80f8e",
-      "size": 820
+      "size": 820,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/sphere_with_gradient.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/sphere_with_gradient.lwo",
       "sha256": "c07156e50ce4b0f03aef44413d60018ff30d703193ab151ec6580d60851f1d72",
-      "size": 9614
+      "size": 9614,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/sphere_with_mat_gloss_10pc.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/sphere_with_mat_gloss_10pc.lwo",
       "sha256": "e42b0facf2699a40df312a40fa9e9d4ad86778ffd964ce6eba0af07413974445",
-      "size": 7584
+      "size": 7584,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/transparency.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/transparency.lwo",
       "sha256": "fb444cd572e8e7071fc1b5f95fd63c1a8c685a432a9c32a0361f9ec17a8c5fda",
-      "size": 9078
+      "size": 9078,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/uvtest-source.txt",
@@ -1838,7 +2241,12 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/uvtest.lwo",
       "sha256": "e7b6cc7bde320aa04e8b6b00e1cf3321bd5899b8eb6a781d103336019e7da040",
-      "size": 6978
+      "size": 6978,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "LWO/LWO2/uvtest.png",
@@ -1877,210 +2285,352 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWOB/ConcavePolygon.lwo",
       "sha256": "0e61cf23e22187fe0b753a35c9be74bf6e3536f660091f47d9fb395b88c1dd3d",
-      "size": 1134
+      "size": 1134,
+      "format": {
+        "kind": "lwo",
+        "version": "LWOB",
+        "formType": "LWOB"
+      }
     },
     {
       "path": "LWO/LWOB/MappingModes/bluewithcylindrictexz.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWOB/MappingModes/bluewithcylindrictexz.lwo",
       "sha256": "2f686f1bb3ff13c17194dce418d55051a266c2279ba7c7cff047b558cfc438d9",
-      "size": 600
+      "size": 600,
+      "format": {
+        "kind": "lwo",
+        "version": "LWOB",
+        "formType": "LWOB"
+      }
     },
     {
       "path": "LWO/LWOB/formatDetection",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWOB/formatDetection",
       "sha256": "d3e44cad71c907aaf81852db8dc477c5d23e0875dc01af99196231463cc1df60",
-      "size": 544
+      "size": 544,
+      "format": {
+        "kind": "lwo",
+        "version": "LWOB",
+        "formType": "LWOB"
+      }
     },
     {
       "path": "LWO/LWOB/sphere_with_mat_gloss_10pc.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWOB/sphere_with_mat_gloss_10pc.lwo",
       "sha256": "34a9d84220e5fd5cd68b7434ab5895e311acb15c7b50f3f45ca36dfc23ad6089",
-      "size": 6766
+      "size": 6766,
+      "format": {
+        "kind": "lwo",
+        "version": "LWOB",
+        "formType": "LWOB"
+      }
     },
     {
       "path": "LWO/LWOB/sphere_with_mat_gloss_50pc.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWOB/sphere_with_mat_gloss_50pc.lwo",
       "sha256": "df75d60d672e558a50c48e70dad06524a9bb1397428d6db89f77615e63e848d0",
-      "size": 6766
+      "size": 6766,
+      "format": {
+        "kind": "lwo",
+        "version": "LWOB",
+        "formType": "LWOB"
+      }
     },
     {
       "path": "LWO/LXOB_Modo/CrazyEngine.lxo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LXOB_Modo/CrazyEngine.lxo",
       "sha256": "d9c295b7a4608878c72245dc4b698b10dd94e11295e429c8862efffe0fbd4304",
-      "size": 60696
+      "size": 60696,
+      "format": {
+        "kind": "lxo",
+        "version": "LXOB",
+        "formType": "LXOB"
+      }
     },
     {
       "path": "LWO/LXOB_Modo/sphereWithVertMap.lxo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LXOB_Modo/sphereWithVertMap.lxo",
       "sha256": "d905042540a09b2997c398ad00b0e1e61765b6c0d09942814aa4e1e3c48a11e6",
-      "size": 35408
+      "size": 35408,
+      "format": {
+        "kind": "lxo",
+        "version": "LXOB",
+        "formType": "LXOB"
+      }
     },
     {
       "path": "LWS/move_x.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_x.lws",
       "sha256": "34aa54b472dca0212ca883337896f3c8c20adfb17c6137c8d65a65a606bbd6fc",
-      "size": 7246
+      "size": 7246,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/move_x_oldformat_56.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_x_oldformat_56.lws",
       "sha256": "983ec6746705f3805f5c5c3c8b5f40797d72837fd8cc78a3513f0bfaf3840bae",
-      "size": 3142
+      "size": 3142,
+      "format": {
+        "kind": "lws",
+        "version": "2"
+      }
     },
     {
       "path": "LWS/move_x_oldformat_6.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_x_oldformat_6.lws",
       "sha256": "c5543d8a138f81e02236346bb305713467293ec83a0ca745a2c19424584183af",
-      "size": 6787
+      "size": 6787,
+      "format": {
+        "kind": "lws",
+        "version": "3"
+      }
     },
     {
       "path": "LWS/move_x_post_constant.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_x_post_constant.lws",
       "sha256": "03b1b7a3357f2a9ca3835196e66da03abce9fb800be81a0f9eda6fdf7577900c",
-      "size": 7159
+      "size": 7159,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/move_x_post_linear.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_x_post_linear.lws",
       "sha256": "4e697dcdfa1cc193137076e8c77bfebf72d8bc91c03b122a727e1bab6aadf11e",
-      "size": 7159
+      "size": 7159,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/move_x_post_offset_repeat.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_x_post_offset_repeat.lws",
       "sha256": "dd17ddb7c0c1e3068c669d1255bdfbc215e022cd757f0e7bba49042605c2b36d",
-      "size": 7159
+      "size": 7159,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/move_x_post_repeat.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_x_post_repeat.lws",
       "sha256": "5198e0e338211404d36d81c4fa26a8fb71f14736b300afb6ac6f125ceb7407ac",
-      "size": 7161
+      "size": 7161,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/move_x_post_reset.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_x_post_reset.lws",
       "sha256": "254ba995c45943d588bd4acfad66d7f14f8827b342594c3da2379112d2afc7b8",
-      "size": 7159
+      "size": 7159,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/move_xz_bezier.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_xz_bezier.lws",
       "sha256": "bf26f1e6ac6e39d5f3d8e591e4571d3a4bc5c9084dcf9e31195ddb816bb1ed0f",
-      "size": 7519
+      "size": 7519,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/move_xz_hermite.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_xz_hermite.lws",
       "sha256": "7e10348a1d147d86714d94a8c74ccd4ea31c0db1a1fb166cf41330392fd18f44",
-      "size": 7352
+      "size": 7352,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/move_xz_linear.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_xz_linear.lws",
       "sha256": "1a7184b36d6e4efe93c2ff94491bcd3aa19e6e393d0a145180fda01e5add1875",
-      "size": 7352
+      "size": 7352,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/move_xz_spline.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_xz_spline.lws",
       "sha256": "787b98819df51d4afc52ef0be6d35a75611acad4e1ae58e6318fbbe25b66f1f4",
-      "size": 7352
+      "size": 7352,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/move_xz_stepped.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_xz_stepped.lws",
       "sha256": "26444f11a16280faabf2f8a382f5c242fe8c16eb11be87a0ae098124b7154315",
-      "size": 7353
+      "size": 7353,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/move_y_pre_ofrep_post_osc.lws",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/move_y_pre_ofrep_post_osc.lws",
       "sha256": "d0cd6c7ffa7bbd21f3b153ebcf82b599d8474e4df783c0229ca0d51b8a6869c6",
-      "size": 7307
+      "size": 7307,
+      "format": {
+        "kind": "lws",
+        "version": "5"
+      }
     },
     {
       "path": "LWS/simple_cube.lwo",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWS/simple_cube.lwo",
       "sha256": "e19be259e868c6943a05d28129b80a052468a37e82a18a4e915a778d53e5e6e3",
-      "size": 560
+      "size": 560,
+      "format": {
+        "kind": "lwo",
+        "version": "LWO2",
+        "formType": "LWO2"
+      }
     },
     {
       "path": "M3D/WusonBlitz0.m3d",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/M3D/WusonBlitz0.m3d",
       "sha256": "02594460e3e31981f7c1a8acfbae717dfdcc069660c1a6281856fa35048fc23a",
-      "size": 29223
+      "size": 29223,
+      "format": {
+        "kind": "m3d",
+        "version": null,
+        "declaredLength": 29223,
+        "compression": "deflate"
+      }
     },
     {
       "path": "M3D/WusonBlitz1.m3d",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/M3D/WusonBlitz1.m3d",
       "sha256": "85229784d5c0b08aee7b67cd9842452fbcae1d3675d781a6cd71faf8b7a3018d",
-      "size": 35058
+      "size": 35058,
+      "format": {
+        "kind": "m3d",
+        "version": null,
+        "declaredLength": 35058,
+        "compression": "deflate"
+      }
     },
     {
       "path": "M3D/WusonBlitz2.m3d",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/M3D/WusonBlitz2.m3d",
       "sha256": "5c3d90949a8f3e1a4bfd6275b1ea0b73d505707e6ff1acf814e4a337972d3a7d",
-      "size": 42228
+      "size": 42228,
+      "format": {
+        "kind": "m3d",
+        "version": null,
+        "declaredLength": 42228,
+        "compression": "deflate"
+      }
     },
     {
       "path": "M3D/cube_normals.m3d",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/M3D/cube_normals.m3d",
       "sha256": "bbbaa2a1682ca4e3721eb7906da2a85cd86b45bcfac72400c8b3c64b4e2b5901",
-      "size": 156
+      "size": 156,
+      "format": {
+        "kind": "m3d",
+        "version": null,
+        "declaredLength": 156,
+        "compression": "deflate"
+      }
     },
     {
       "path": "M3D/cube_usemtl.m3d",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/M3D/cube_usemtl.m3d",
       "sha256": "d8f344a482e720917a8567979205e957480b9a9ae083eb5e2e358d60543502af",
-      "size": 249
+      "size": 249,
+      "format": {
+        "kind": "m3d",
+        "version": null,
+        "declaredLength": 249,
+        "compression": "deflate"
+      }
     },
     {
       "path": "M3D/cube_with_vertexcolors.a3d",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/M3D/cube_with_vertexcolors.a3d",
       "sha256": "c103592b184757a0060b38e074dbf2aa44b5828498d0d58fbde676853bf11be0",
-      "size": 458
+      "size": 458,
+      "format": {
+        "kind": "a3d",
+        "version": "1"
+      }
     },
     {
       "path": "M3D/cube_with_vertexcolors.m3d",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/M3D/cube_with_vertexcolors.m3d",
       "sha256": "9308087facea7eefc7591b3e62ee4b89ebf79f25c262ef024d35fe71382ee58a",
-      "size": 228
+      "size": 228,
+      "format": {
+        "kind": "m3d",
+        "version": null,
+        "declaredLength": 228,
+        "compression": "deflate"
+      }
     },
     {
       "path": "M3D/suzanne.m3d",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/M3D/suzanne.m3d",
       "sha256": "6c058c089c7865eacd8bc1d07d2a5611685685bb2d9d8d1a55bbe19b4e46e0b0",
-      "size": 11645
+      "size": 11645,
+      "format": {
+        "kind": "m3d",
+        "version": null,
+        "declaredLength": 11645,
+        "compression": "deflate"
+      }
     },
     {
       "path": "MD2/faerie-source.txt",
@@ -2205,35 +2755,55 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/ManyEarthsNotJustOne.nff",
       "sha256": "2ec7e3682a90aeb096e2ab4094bc7654c38a63fcd1fbfa44586ce74993090e85",
-      "size": 600
+      "size": 600,
+      "format": {
+        "kind": "nff",
+        "version": null
+      }
     },
     {
       "path": "NFF/WithCamera.nff",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/WithCamera.nff",
       "sha256": "dc5fb07b249ecb62a4d3ec1ae7c737d0700d8a5c77a2340e454a22932e7a478d",
-      "size": 255
+      "size": 255,
+      "format": {
+        "kind": "nff",
+        "version": null
+      }
     },
     {
       "path": "NFF/cone.nff",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/cone.nff",
       "sha256": "5fc7726cae7c6a5d24b507a6d656b32642374331c5462ab4369dd7d71104e9d5",
-      "size": 355
+      "size": 355,
+      "format": {
+        "kind": "nff",
+        "version": null
+      }
     },
     {
       "path": "NFF/cylinder.nff",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/cylinder.nff",
       "sha256": "9eb03422d1e4e159b2788062d4069f19d5b6912adee8b4692d29d74f8fdc81cb",
-      "size": 153
+      "size": 153,
+      "format": {
+        "kind": "nff",
+        "version": null
+      }
     },
     {
       "path": "NFF/dodecahedron.nff",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/dodecahedron.nff",
       "sha256": "d913b21d42580f0be574c147fd1bbac5305ec1b287c18954b3b37738ec1a3fba",
-      "size": 11
+      "size": 11,
+      "format": {
+        "kind": "nff",
+        "version": null
+      }
     },
     {
       "path": "NFF/earthCylindric.jpg",
@@ -2274,21 +2844,33 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/hexahedron.nff",
       "sha256": "909f8f551055b1d92d59792037173178f36b19d8e65991a449ecfdfc4fede804",
-      "size": 25
+      "size": 25,
+      "format": {
+        "kind": "nff",
+        "version": null
+      }
     },
     {
       "path": "NFF/octahedron.nff",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/octahedron.nff",
       "sha256": "70bd9e4228714aaa2dde04972cb51548f57232e7a4a4fe38ba39414fcfa1050e",
-      "size": 15
+      "size": 15,
+      "format": {
+        "kind": "nff",
+        "version": null
+      }
     },
     {
       "path": "NFF/positionTest.nff",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/positionTest.nff",
       "sha256": "0dc49d47e36011af0bee4142a46c62f0349e4ecc720721ebd72c496dede00066",
-      "size": 351
+      "size": 351,
+      "format": {
+        "kind": "nff",
+        "version": null
+      }
     },
     {
       "path": "NFF/ref/README.md",
@@ -2317,14 +2899,22 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/spheres.nff",
       "sha256": "5a06376f39d59605efe24c53391f1bb6639aa60176a690020be7d733e28b0ee6",
-      "size": 295
+      "size": 295,
+      "format": {
+        "kind": "nff",
+        "version": null
+      }
     },
     {
       "path": "NFF/tetrahedron.nff",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/tetrahedron.nff",
       "sha256": "0bab251b773c25e591dc0d52fd9faa14f6243a2b75afbd7dc1f4e6ab9e8e0d49",
-      "size": 11
+      "size": 11,
+      "format": {
+        "kind": "nff",
+        "version": null
+      }
     },
     {
       "path": "PLY/Wuson.ply",
@@ -2561,14 +3151,24 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/WRL/HelloWorld.wrl",
       "sha256": "098359e50b5e1c5480b3e9eb52a9a562942a3fe4aa41957f4e60c93510121d17",
-      "size": 3442
+      "size": 3442,
+      "format": {
+        "kind": "vrml",
+        "version": "2.0",
+        "encoding": "utf8"
+      }
     },
     {
       "path": "WRL/MotionCaptureROM.WRL",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/WRL/MotionCaptureROM.WRL",
       "sha256": "03ae0041fb3bbe17e9685f45eee0af11b9377703b77d0b708dec7f94d036b07f",
-      "size": 2314611
+      "size": 2314611,
+      "format": {
+        "kind": "vrml",
+        "version": "2.0",
+        "encoding": "utf8"
+      }
     },
     {
       "path": "WRL/README.md",
@@ -2582,7 +3182,12 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/WRL/Wuson.wrl",
       "sha256": "78a8d5c441a488a3c9f93fb0b0b2aa606cd4286906da9928e5875289bbf20fef",
-      "size": 222394
+      "size": 222394,
+      "format": {
+        "kind": "vrml",
+        "version": "2.0",
+        "encoding": "utf8"
+      }
     },
     {
       "path": "WRL/credits.txt",
@@ -2633,7 +3238,13 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/BCN_Epileptic.X",
       "sha256": "f6f8e859702a6975fa23188efd804fe1720cdff65ce601396e17677ea3ff10ea",
-      "size": 697217
+      "size": 697217,
+      "format": {
+        "kind": "x",
+        "version": "3.03",
+        "encoding": "text",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/BCN_Epileptic.txt",
@@ -2647,21 +3258,39 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/OV_GetNextToken",
       "sha256": "043d9bd7259c1d9aedc67b86fb663d4917258ad1c7bae8ef2416f240720f872d",
-      "size": 775
+      "size": 775,
+      "format": {
+        "kind": "x",
+        "version": "3.03",
+        "encoding": "binary-zip",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/TestFormatDetection",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/TestFormatDetection",
       "sha256": "e6e2b562d8def8e6a395c3384b9903b93a2df889637bf82c9b461a5ad429e9c9",
-      "size": 7733
+      "size": 7733,
+      "format": {
+        "kind": "x",
+        "version": "3.03",
+        "encoding": "text",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/Testwuson.X",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/Testwuson.X",
       "sha256": "1cab9dc2ed0b378b27e301195f7368aa02ca5a7de2fb23a78fe2b8beecd85ccf",
-      "size": 838658
+      "size": 838658,
+      "format": {
+        "kind": "x",
+        "version": "3.03",
+        "encoding": "text",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/anim_test.txt",
@@ -2675,7 +3304,13 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/anim_test.x",
       "sha256": "218380799d54eeb34f4c6ce09eb250ef5fe8ff0b561fc598ee0549b9b6249cd4",
-      "size": 816835
+      "size": 816835,
+      "format": {
+        "kind": "x",
+        "version": "3.03",
+        "encoding": "text",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/bottom.tga",
@@ -2699,7 +3334,13 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/fromtruespace_bin32.x",
       "sha256": "808d735db17f47db930382077874fbae3f616f6bb208341120e3de1099a22b75",
-      "size": 372321
+      "size": 372321,
+      "format": {
+        "kind": "x",
+        "version": "3.02",
+        "encoding": "binary",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/kwxport_test_cubewithvcolors.source.txt",
@@ -2713,14 +3354,26 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/kwxport_test_cubewithvcolors.x",
       "sha256": "712da1f66b8b704dcd28c5fe0da11449fdcc0977809da11a1ce64433ff5d7423",
-      "size": 9077
+      "size": 9077,
+      "format": {
+        "kind": "x",
+        "version": "3.03",
+        "encoding": "text",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/malformed_skinweights_oob.x",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/malformed_skinweights_oob.x",
       "sha256": "804c3670f9691a35a7b116d168f337c6403f2cf87a0512279bd5963b4fcb3bcb",
-      "size": 4990
+      "size": 4990,
+      "format": {
+        "kind": "x",
+        "version": "3.03",
+        "encoding": "text",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/ref/README.md",
@@ -2784,28 +3437,52 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/test.x",
       "sha256": "e6e2b562d8def8e6a395c3384b9903b93a2df889637bf82c9b461a5ad429e9c9",
-      "size": 7733
+      "size": 7733,
+      "format": {
+        "kind": "x",
+        "version": "3.03",
+        "encoding": "text",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/test_cube_binary.x",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/test_cube_binary.x",
       "sha256": "9de2f1315d8f64de4a05ef07f3490fc228a212b179d3fe95ca812e5f8a576d55",
-      "size": 2816
+      "size": 2816,
+      "format": {
+        "kind": "x",
+        "version": "3.03",
+        "encoding": "binary",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/test_cube_compressed.x",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/test_cube_compressed.x",
       "sha256": "d043380b5ea86621a015ce78a267e9a52c08f7f6419498091633ff87c4f14541",
-      "size": 775
+      "size": 775,
+      "format": {
+        "kind": "x",
+        "version": "3.03",
+        "encoding": "binary-zip",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/test_cube_text.x",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/test_cube_text.x",
       "sha256": "8b3c3fe7960a709f6894c281c68a1c23a89b86f3cc738f090a13ebc02310d113",
-      "size": 4985
+      "size": 4985,
+      "format": {
+        "kind": "x",
+        "version": "3.03",
+        "encoding": "text",
+        "floatSize": "0032"
+      }
     },
     {
       "path": "X/top.tga",
@@ -2846,28 +3523,48 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X3D/ComputerKeyboard.x3d",
       "sha256": "cb80529f99bfa25a9cbd3c3456ddfab9eb9e7e86cbcf10c159ef00527e5757b1",
-      "size": 9682
+      "size": 9682,
+      "format": {
+        "kind": "x3d",
+        "version": "3.0",
+        "profile": "Immersive"
+      }
     },
     {
       "path": "X3D/HelloWorld.x3d",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X3D/HelloWorld.x3d",
       "sha256": "12faa2a66b25d0d1c631c29b47b89a2490437494b23f8505d5a34f785f0715a5",
-      "size": 3554
+      "size": 3554,
+      "format": {
+        "kind": "x3d",
+        "version": "3.3",
+        "profile": "Immersive"
+      }
     },
     {
       "path": "X3D/HelloX3dTrademark.x3d",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X3D/HelloX3dTrademark.x3d",
       "sha256": "1f30aa9473a27e6d82a058b5107a33436b1f3b2680de29c8cd2f094b5b0f31b5",
-      "size": 3384
+      "size": 3384,
+      "format": {
+        "kind": "x3d",
+        "version": "3.0",
+        "profile": "Immersive"
+      }
     },
     {
       "path": "X3D/IndexedLineSet.x3d",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X3D/IndexedLineSet.x3d",
       "sha256": "91f9adcf28bc51ed35522a1fb3da00ade0c93f7e506904799fd5af15c3bfba50",
-      "size": 751
+      "size": 751,
+      "format": {
+        "kind": "x3d",
+        "version": "3.0",
+        "profile": "Interchange"
+      }
     },
     {
       "path": "X3D/README.md",
@@ -2948,7 +3645,12 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/invalid/OutOfMemory.off",
       "sha256": "4e337750dcd6b28e6c68392126a93d5756ef0f0d4f7d69c3c1c6ec413aefef7d",
-      "size": 309
+      "size": 309,
+      "format": {
+        "kind": "off",
+        "version": null,
+        "variant": "off"
+      }
     },
     {
       "path": "invalid/box_nested_animation_4286.dae",

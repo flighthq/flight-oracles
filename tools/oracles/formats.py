@@ -1325,6 +1325,305 @@ def _webvtt(data: bytes, name: str):
     return FormatInfo(kind="webvtt", version=None)
 
 
+# --- containers that wrap other containers -------------------------------------------
+
+
+def _gzip(data: bytes):
+    """gzip: two magic bytes, a method, and a flag byte that may carry the original name.
+
+    The name is worth taking. Cocos ships `grossini.pvr.gz`, and the gzip header repeats
+    `grossini.pvr` inside — so what the payload *is* survives even if the outer filename
+    is changed, which is exactly the provenance a lock should carry.
+    """
+    if not data.startswith(b"\x1f\x8b") or len(data) < 10 or data[2] != 8:
+        return None
+    info = FormatInfo(kind="gzip", version=None)
+    flags = data[3]
+    pos = 10
+    if flags & 0x04 and pos + 2 <= len(data):          # FEXTRA
+        pos += 2 + struct.unpack("<H", data[pos:pos + 2])[0]
+    if flags & 0x08:                                    # FNAME
+        end = data.find(b"\x00", pos)
+        if 0 <= end < pos + 256:
+            info["originalName"] = data[pos:end].decode("latin-1", "replace")
+    return info
+
+
+def _zip(data: bytes):
+    """A zip archive, and the name of its first entry.
+
+    Several formats here are zips with a convention rather than a magic number — `.zae` is
+    a zipped COLLADA, 3MF and USDZ are zips with required members. The first entry's name
+    is what separates them, so it is read rather than the extension trusted.
+    """
+    if not data.startswith(b"PK\x03\x04") or len(data) < 30:
+        return None
+    name_len = struct.unpack("<H", data[26:28])[0]
+    first = data[30:30 + name_len].decode("latin-1", "replace") if name_len < 512 else ""
+    info = FormatInfo(kind="zip", version=None, firstEntry=first)
+    lowered = first.lower()
+    if lowered.endswith(".dae") or lowered == "manifest.xml":
+        info["kind"] = "zae"                            # zipped COLLADA
+    elif lowered.startswith("3d/") or lowered == "[content_types].xml":
+        info["kind"] = "3mf"
+    elif lowered.endswith(".usd") or lowered.endswith(".usdc") or lowered.endswith(".usda"):
+        info["kind"] = "usdz"
+    return info
+
+
+def _ccz(data: bytes):
+    """Cocos2d's CCZ wrapper: 'CCZ!', a compression id, and a version.
+
+    'CCZp' is the same container encrypted, and its body cannot be read without the key
+    the application compiled in. Reporting it as encrypted is the useful answer: a
+    consumer that treats it as a normal CCZ gets bytes that decompress to noise.
+    """
+    if data[:4] not in (b"CCZ!", b"CCZp") or len(data) < 16:
+        return None
+    compression, version = struct.unpack(">HH", data[4:8])
+    length = struct.unpack(">I", data[12:16])[0]
+    info = FormatInfo(kind="ccz", version=str(version),
+                      compression={0: "zlib", 1: "bzip2", 2: "gzip", 3: "none"}
+                      .get(compression, str(compression)),
+                      uncompressedLength=length)
+    if data[:4] == b"CCZp":
+        info["encrypted"] = True
+    return info
+
+
+# --- texture containers ---------------------------------------------------------------
+
+
+def _pvr(data: bytes):
+    """PowerVR texture: two incompatible generations that share one extension.
+
+    Version 3 has a real magic ('PVR\\x03'). Version 2 has none — it starts with its own
+    header length, 52, and hides a 'PVR!' fourCC at offset 44. A reader that checks only
+    for the magic silently rejects every v2 file, which is most of what is in the wild.
+    """
+    if data.startswith(b"PVR\x03") and len(data) >= 52:
+        flags, fmt = struct.unpack("<II", data[4:12])
+        height, width = struct.unpack("<II", data[24:32])
+        return FormatInfo(kind="pvr", version="3", width=width, height=height,
+                          pixelFormat=fmt, premultiplied=bool(flags & 0x02))
+    if len(data) >= 52 and struct.unpack("<I", data[:4])[0] == 52 and data[44:48] == b"PVR!":
+        height, width, mipmaps = struct.unpack("<III", data[4:16])
+        surfaces = struct.unpack("<I", data[48:52])[0]
+        return FormatInfo(kind="pvr", version="2", width=width, height=height,
+                          mipmapCount=mipmaps, surfaces=surfaces)
+    return None
+
+
+# --- the assimp long tail -------------------------------------------------------------
+#
+# Sixteen formats came in with `interchange-fixtures` and only six had probes, so the docs
+# claimed detection the locks did not have. These are mostly small: a magic word and a
+# version, in formats old enough that the version is spelled in ASCII on the first line.
+
+
+def _iff(data: bytes):
+    """Electronic Arts IFF: 'FORM', a length, then a four-character form type.
+
+    LightWave objects (LWO2 / LWOB / LWO3) and Modo scenes (LXOB) are both this, which is
+    the whole reason to probe the container rather than the extension.
+    """
+    if not data.startswith(b"FORM") or len(data) < 12:
+        return None
+    form = data[8:12]
+    kind = {b"LWO2": "lwo", b"LWOB": "lwo", b"LWO3": "lwo", b"LXOB": "lxo"}.get(form)
+    if kind is None:
+        return FormatInfo(kind="iff", version=None,
+                          formType=form.decode("latin-1", "replace").strip())
+    return FormatInfo(kind=kind, version=form.decode("ascii"),
+                      formType=form.decode("ascii"))
+
+
+def _lws(data: bytes):
+    """LightWave scene: 'LWSC', then the version alone on the next line."""
+    if not data.startswith(b"LWSC"):
+        return None
+    line = data[4:16].strip().split(b"\n")[0].strip()
+    return FormatInfo(kind="lws", version=line.decode("ascii", "replace") or None)
+
+
+def _directx_x(data: bytes):
+    """DirectX .x: 'xof ', a four-digit version, a four-character encoding, a float size.
+
+    All three facts sit in the first sixteen bytes, and the encoding is the one that
+    matters — the same version ships as text, binary, or either one zip-compressed.
+    """
+    if not data.startswith(b"xof ") or len(data) < 16:
+        return None
+    version = data[4:8].decode("latin-1", "replace")
+    encoding = data[8:12].decode("latin-1", "replace").strip()
+    floats = data[12:16].decode("latin-1", "replace").strip()
+    return FormatInfo(kind="x", version=f"{version[:2].lstrip('0') or '0'}.{version[2:]}",
+                      encoding={"txt": "text", "bin": "binary", "tzip": "text-zip",
+                                "bzip": "binary-zip"}.get(encoding, encoding),
+                      floatSize=floats)
+
+
+def _ac3d(data: bytes):
+    """AC3D: 'AC3D' then a single hex digit that is the version."""
+    if not data.startswith(b"AC3D") or len(data) < 5:
+        return None
+    digit = data[4:5].decode("latin-1")
+    try:
+        return FormatInfo(kind="ac3d", version=str(int(digit, 16)))
+    except ValueError:
+        return None
+
+
+def _cob(data: bytes):
+    """Caligari trueSpace: a fixed-width header naming version, encoding and byte order."""
+    if not data.startswith(b"Caligari ") or len(data) < 32:
+        return None
+    version = data[9:15].decode("latin-1", "replace").strip()
+    encoding = "ascii" if data[15:16] == b"A" else "binary"
+    order = data[16:18].decode("latin-1", "replace")
+    return FormatInfo(kind="cob", version=version.lstrip("V"), encoding=encoding,
+                      byteOrder="little" if order == "LH" else "big")
+
+
+def _m3d(data: bytes):
+    """Model 3D: '3DMO', a length, then a deflate stream — or raw, if it is uncompressed."""
+    if not data.startswith(b"3DMO") or len(data) < 12:
+        return None
+    length = struct.unpack("<I", data[4:8])[0]
+    info = FormatInfo(kind="m3d", version=None, declaredLength=length)
+    if data[8:9] == b"x":
+        info["compression"] = "deflate"
+    return info
+
+
+def _vrml(data: bytes):
+    """VRML: '#VRML V2.0 utf8' — the whole header is one comment line."""
+    if not data.startswith(b"#VRML"):
+        return None
+    line = data[:64].split(b"\n")[0].decode("latin-1", "replace")
+    parts = line.split()
+    version = parts[1].lstrip("Vv") if len(parts) > 1 else None
+    return FormatInfo(kind="vrml", version=version,
+                      encoding=parts[2] if len(parts) > 2 else None)
+
+
+def _off(data: bytes):
+    """Object File Format, and its coloured / normal / 4D prefixed variants."""
+    for prefix, variant in ((b"OFF", "off"), (b"COFF", "coff"), (b"NOFF", "noff"),
+                            (b"4OFF", "4off"), (b"STOFF", "stoff")):
+        if data.startswith(prefix) and data[len(prefix):len(prefix) + 1] in b"\r\n \t":
+            return FormatInfo(kind="off", version=None, variant=variant)
+    return None
+
+
+def _a3d(data: bytes):
+    """Away3D ASCII: '3dmodel' and a version on the first line."""
+    if not data.startswith(b"3dmodel"):
+        return None
+    line = data[:32].split(b"\r")[0].split(b"\n")[0].decode("latin-1", "replace")
+    parts = line.split()
+    return FormatInfo(kind="a3d", version=parts[1] if len(parts) > 1 else None)
+
+
+def _nff(data: bytes, name: str):
+    """Neutral File Format: plain text with no signature whatsoever.
+
+    Name-gated, and it has to be: a viewpoint line and some primitives are not a shape any
+    content probe can claim without also claiming half the text files in the corpus.
+    """
+    if not name.lower().endswith(".nff"):
+        return None
+    return FormatInfo(kind="nff", version=None)
+
+
+_AMF_ROOT = re.compile(rb"<amf\b([^>]*)>", re.I)
+_X3D_ROOT = re.compile(rb"<X3D\b([^>]*)>", re.I)
+_ATTR = re.compile(rb"(\w+)\s*=\s*['\"]([^'\"]*)['\"]")
+
+
+def _xml_dialect(data: bytes, name: str):
+    """AMF and X3D: both XML, both carrying their version as a root attribute.
+
+    Ordered ahead of the generic XML probe for the same reason SVG and Tiled are —
+    reporting these as "xml" loses the identification that matters.
+    """
+    head = data[:2048]
+    for pattern, kind in ((_AMF_ROOT, "amf"), (_X3D_ROOT, "x3d")):
+        match = pattern.search(head)
+        if match is None:
+            continue
+        attrs = dict(_ATTR.findall(match.group(1)))
+        info = FormatInfo(kind=kind, version=None)
+        version = attrs.get(b"version")
+        if version:
+            info["version"] = version.decode("latin-1", "replace")
+        profile = attrs.get(b"profile")
+        if profile:
+            info["profile"] = profile.decode("latin-1", "replace")
+        unit = attrs.get(b"unit")
+        if unit:
+            info["unit"] = unit.decode("latin-1", "replace")
+        return info
+    return None
+
+
+_BOMS = (
+    (b"\xff\xfe\x00\x00", "utf-32-le"), (b"\x00\x00\xfe\xff", "utf-32-be"),
+    (b"\xff\xfe", "utf-16-le"), (b"\xfe\xff", "utf-16-be"), (b"\xef\xbb\xbf", "utf-8-sig"),
+)
+
+
+def _bom_text(data: bytes, name: str):
+    """A text format whose magic is real but not in ASCII.
+
+    assimp ships `SphereWithLight_UTF16LE.ac` and `ThreeCubesGreen_UTF16BE.ASE` on purpose:
+    the same model in a wider encoding, because a reader that compares raw bytes against
+    "AC3D" fails on every one of them. Those are the files most worth identifying, and a
+    byte-comparison probe is exactly what cannot identify them — so the BOM is honoured
+    first, the head is transcoded, and the ordinary probes run against that.
+
+    Only formats whose signature is *text* are retried. A binary magic in UTF-16 is not a
+    thing, and retrying binary probes against transcoded bytes would invent matches.
+    """
+    for bom, encoding in _BOMS:
+        if data.startswith(bom):
+            break
+    else:
+        return None
+    try:
+        text = data[len(bom):].decode(encoding.removesuffix("-sig"), "replace")
+    except (UnicodeDecodeError, LookupError):
+        return None
+    transcoded = text.encode("latin-1", "replace")
+    for probe in (_ac3d, _ase_3dsmax, _vrml, _lws, _a3d, _off, _cob, _iff):
+        info = probe(transcoded)
+        if info is not None:
+            info["encoding"] = encoding
+            return info
+    for probe in (_directx_x, _xml_dialect, _svg, _xml):
+        info = probe(transcoded, name) if probe is not _directx_x else probe(transcoded)
+        if info is not None:
+            info["encoding"] = encoding
+            return info
+    return None
+
+
+_ASE_HEADER = re.compile(rb"\*3DSMAX_ASCIIEXPORT\s+(\d+)")
+
+
+def _ase_3dsmax(data: bytes):
+    """3DS MAX ASCII Export.
+
+    Worth a note: `.ase` is also Aseprite's binary sprite format and Adobe's swatch
+    exchange. Three unrelated formats, one extension — so this probes the content and the
+    extension is not consulted at all.
+    """
+    match = _ASE_HEADER.match(data[:64])
+    if match is None:
+        return None
+    return FormatInfo(kind="ase-3dsmax", version=match.group(1).decode("ascii"))
+
+
 def _tga(data: bytes, name: str):
     """TGA: version 2 put a signature in the FOOTER; version 1 has no magic anywhere.
 
@@ -1356,11 +1655,14 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
                   _png, _jpeg, _gif, _bmp, _riff, _isobmff, _qoi, _farbfeld,
                   _radiance, _openexr, _jxl, _xcf, _ico, _pnm, _tiff,
                   _ebml, _ogg, _flac,
+                  _gzip, _zip, _ccz, _pvr,
+                  _iff, _lws, _directx_x, _ac3d, _cob, _m3d, _vrml, _off, _a3d,
+                  _ase_3dsmax,
                   _gltf_json, _spine_json, _lottie):
         info = probe(data)
         if info is not None:
             return info
-    for probe in (_ttx, _pcx, _tga, _webvtt, _mpeg_audio,
+    for probe in (_ttx, _pcx, _tga, _webvtt, _mpeg_audio, _bom_text, _xml_dialect, _nff,
                   _dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
                   _ldtk, _effekseer, _bmfont_json, _frames_meta_sheet, _bvh,
                   _starling_atlas, _unity_yaml, _svg, _xml,

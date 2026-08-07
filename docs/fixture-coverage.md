@@ -511,8 +511,26 @@ Skipped: glTF/glTF2 (Khronos's own corpora are better and already here), BLEND (
 internal memory layout, a moving target tied to one application), IRR/IRRMesh/MDL
 (engine-specific rather than interchange).
 
-Detection now reports Collada 1.4.0/1.4.1, FBX 7400/7500/7700, PLY 1.0 with ASCII/binary
-encoding, STL ASCII/binary, BVH with frame counts, and IQM v2.
+Detection now reports every one of them. It did not always: for a while this document
+claimed detection for six — Collada 1.4.0/1.4.1, FBX 7400/7500/7700, PLY 1.0 with
+ASCII/binary encoding, STL ASCII/binary, BVH with frame counts, IQM v2 — while the other
+fourteen sat in the locks with no format at all. Now added: LWO (by IFF form type, which is
+also what separates it from Modo's LXO), LWS, DirectX `.x` with its text/binary/zip
+encoding, AC3D, NFF, COB with its byte order, M3D, X3D, AMF, VRML, OFF, A3D, zipped Collada,
+and 3DS MAX ASCII export.
+
+Two of those are worth singling out.
+
+**`.ase` is three unrelated formats.** Here it is 3DS MAX ASCII Export; elsewhere it is
+Aseprite's binary sprite format or Adobe's swatch exchange. The probe reads content and does
+not consult the extension at all, which is the only way that ends well.
+
+**assimp ships UTF-16 copies of its ASCII models on purpose** — `SphereWithLight_UTF16LE.ac`,
+`ThreeCubesGreen_UTF16BE.ASE` — because a reader that byte-compares against `AC3D` fails on
+every one of them. Those are the files most worth identifying, and a byte-comparison probe is
+precisely what cannot identify them. A BOM-aware pass transcodes the head first and records
+the encoding it found, which also picked up **19 UTF-16 XML documents** in
+`xml-conformance-fixtures` that had been sitting unidentified for the same reason.
 
 ### Candidates not taken, and why
 

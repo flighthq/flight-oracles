@@ -2090,7 +2090,14 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/encryptedAtlas.pvr.ccz",
       "sha256": "7b74e9950f16b9048fe04dbcad10d7fc8aa986f978d0c0195363d623ab6ac29e",
-      "size": 40197
+      "size": 40197,
+      "format": {
+        "kind": "ccz",
+        "version": "0",
+        "compression": "zlib",
+        "uncompressedLength": 3578622443,
+        "encrypted": true
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/f1.png",
@@ -2157,7 +2164,15 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/fire_rgba8888.pvr",
       "sha256": "38e9bb5ef8ab4f776e38dd3564db05984229b43fd1abb0c5fe2e0fa77aeb4beb",
-      "size": 4148
+      "size": 4148,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 32,
+        "height": 32,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/fps_images.png",
@@ -2194,7 +2209,15 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/grossini_128x256_mipmap.pvr",
       "sha256": "0528d2c51cd61b7ab7dc009c9fbdd6f92b4f49a3662da243295791eb3b8eb634",
-      "size": 87434
+      "size": 87434,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 256,
+        "mipmapCount": 8,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/grossini_dance_01.png",
@@ -2456,14 +2479,30 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/grossini_pvr_rgba4444.pvr",
       "sha256": "30c307bb493ddb7fbc37d5b60f8026eb2ab71f900b26d7231ce604344c26f909",
-      "size": 20622
+      "size": 20622,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 85,
+        "height": 121,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/grossini_pvr_rgba8888.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/grossini_pvr_rgba8888.pvr",
       "sha256": "9d0a9a0c71f09ef0c51a6e64fda66aa61dfed8f7eb83d655c1e9c8f7de424ed0",
-      "size": 41192
+      "size": 41192,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 85,
+        "height": 121,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/grossinis_heads.png",
@@ -2500,14 +2539,30 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/grossinis_sister1-testalpha_nopremult.pvr",
       "sha256": "8a78fd5abcb7fee4eacc317aab9309f82265be84096a1f0359824ff774123c91",
-      "size": 41652
+      "size": 41652,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 52,
+        "height": 200,
+        "pixelFormat": 1633838962,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/grossinis_sister1-testalpha_premult.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/grossinis_sister1-testalpha_premult.pvr",
       "sha256": "1e15999fdc689827440f6da033cc0b1dd795aa47463ec34cc214f97cc0b6b013",
-      "size": 41652
+      "size": 41652,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 52,
+        "height": 200,
+        "pixelFormat": 1633838962,
+        "premultiplied": true
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/grossinis_sister1.png",
@@ -2634,14 +2689,30 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/logo-mipmap.pvr",
       "sha256": "7ec22e9a301f0070c4db82cef5cbf7210e8dc62999172ad11f6381a88b119fbc",
-      "size": 43828
+      "size": 43828,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 256,
+        "height": 256,
+        "mipmapCount": 8,
+        "surfaces": 0
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/logo-nomipmap.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/logo-nomipmap.pvr",
       "sha256": "a539803354ffacfbb0229099ae0cb3a6491cbe7ada5ed6fcbabb0882e0cf58c6",
-      "size": 32820
+      "size": 32820,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 256,
+        "height": 256,
+        "mipmapCount": 0,
+        "surfaces": 0
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/menuitemsprite.png",
@@ -2693,7 +2764,13 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/nonencryptedAtlas.pvr.ccz",
       "sha256": "2e01f29bf4e2da81630f0f1f0a65948ca0c218a812f45a2c8f8fa89d82133e74",
-      "size": 7232
+      "size": 7232,
+      "format": {
+        "kind": "ccz",
+        "version": "2",
+        "compression": "zlib",
+        "uncompressedLength": 16436
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/paddle.png",
@@ -2895,21 +2972,45 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_PVRTC2.pvr",
       "sha256": "f32771d57b149bf2b2f38cfc6b95aa6d886e20d1479faaad13419696354b85ca",
-      "size": 4148
+      "size": 4148,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 1,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_PVRTC2_NOALPHA.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_PVRTC2_NOALPHA.pvr",
       "sha256": "8b6c35af6916037157e43c0d15a8bb9bcce138a891c699a2c008129efa161777",
-      "size": 4148
+      "size": 4148,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 0,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_PVRTC4.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/sprite_frames_test/test_PVRTC4.pvr",
       "sha256": "1ba67b32142fcd53a6ce7e72f639678fa1a36129ad1a5893f1d9b7557d54a5ff",
-      "size": 8244
+      "size": 8244,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 3,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/sprite_frames_test/test_RGBA8888.png",
@@ -4011,7 +4112,12 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_1021x1024_a8.pvr.gz",
       "sha256": "352e95a1bfbd1ff9afc8b06ba2b7fdeb39527a927f5cdfa6839d6db54c638612",
-      "size": 86117
+      "size": 86117,
+      "format": {
+        "kind": "gzip",
+        "version": null,
+        "originalName": "test_1021x1024_a8.pvr"
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_blend.png",
@@ -4033,7 +4139,15 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image-bad_encoding.pvr",
       "sha256": "c3d16447a8aa37abd90279962c2546d4848ce60c49a548d7cda0a6396c910500",
-      "size": 65588
+      "size": 65588,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image.png",
@@ -4055,21 +4169,45 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image.pvr",
       "sha256": "82f305f3c87babbc83d1a907c8d84d706d15979d16184c50703292aaab98205d",
-      "size": 8244
+      "size": 8244,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 0
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_a8.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_a8.pvr",
       "sha256": "b29e7993e6afe62e24823fb3a945fbc017e1c51247ba1805af1c95ced5994c32",
-      "size": 16436
+      "size": 16436,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_a8_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_a8_v3.pvr",
       "sha256": "f51438ddf582d488485ad6588ef2463bde063105612e23aa997bd2013c7726d8",
-      "size": 16436
+      "size": 16436,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 97,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_ai88.png",
@@ -4091,28 +4229,60 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_ai88.pvr",
       "sha256": "b68e044fccfec2f3c7e933e6eb595e76619df710af3119927d79b138e7f2c676",
-      "size": 32820
+      "size": 32820,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_ai88_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_ai88_v3.pvr",
       "sha256": "d9adb34d16a0cb64b7a3d1fc745ba322b2d3dbffc538a5099cd8dcc95ad714cb",
-      "size": 32820
+      "size": 32820,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 24940,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_bgra8888.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_bgra8888.pvr",
       "sha256": "940094937c3b5b64c4aec2cee445ae2534ac2ebc75ab66eb4bd32508bdf00400",
-      "size": 65588
+      "size": 65588,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_bgra8888_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_bgra8888_v3.pvr",
       "sha256": "332c5663efea0ca9300b6eafc012e3ad87bffb3d7a0a6fee6ef0ebf58ad1890e",
-      "size": 65588
+      "size": 65588,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 1634887522,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_i8.png",
@@ -4134,70 +4304,150 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_i8.pvr",
       "sha256": "f42dcf30e64095d71c6e5868f7c4686d0a00efa81a76770f802e0e10dd29a8a6",
-      "size": 16436
+      "size": 16436,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_i8_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_i8_v3.pvr",
       "sha256": "76314b770f45f17d7b0959cf26edc0b1987243517185c5814d8d54b40c08f3c3",
-      "size": 16436
+      "size": 16436,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 108,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_pvrtc2bpp.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_pvrtc2bpp.pvr",
       "sha256": "244fc146c14a43a8214f6e0641332157759bff80e54cc6cc944d26a9dfcf1ca3",
-      "size": 4148
+      "size": 4148,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_pvrtc2bpp_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_pvrtc2bpp_v3.pvr",
       "sha256": "8cab80f06efc73e7534894c86e36e407983f775764da0b31f89550e65930fc90",
-      "size": 4148
+      "size": 4148,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 1,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_pvrtc4bpp.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_pvrtc4bpp.pvr",
       "sha256": "0cf45ec96c5a19845ebf8cf4e442d1348f4ba01efb287dde4c24f8e187cb0d66",
-      "size": 8244
+      "size": 8244,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_pvrtc4bpp_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_pvrtc4bpp_v3.pvr",
       "sha256": "77487393d1207f9d42cebf260167b7aac0f15c95fa0b40e2627e36db33670dc3",
-      "size": 8244
+      "size": 8244,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 3,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_pvrtcii2bpp_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_pvrtcii2bpp_v3.pvr",
       "sha256": "ca7c2a6ed85e7f2487aee1305fc3caa775e188f6645070b62ab62fa775de1fd6",
-      "size": 5532
+      "size": 5532,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 4,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_pvrtcii4bpp_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_pvrtcii4bpp_v3.pvr",
       "sha256": "fbcebf84dc28f40c1ee857a62dc08a375981b75afc063a4e95d2115e2c11bd16",
-      "size": 10988
+      "size": 10988,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 5,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgb565.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgb565.pvr",
       "sha256": "f2a915e52506525b5c7e0084456f7976a066a574ff4152acbcda39007f43837e",
-      "size": 32820
+      "size": 32820,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgb565_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgb565_v3.pvr",
       "sha256": "9f3d98569d0969249cd8b40d3f6f2d811cc2f67e8611f4c6b1b73bd264447cdf",
-      "size": 43742
+      "size": 43742,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 6449010,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgb888.png",
@@ -4219,63 +4469,130 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgb888.pvr",
       "sha256": "1beada0c14c6db2b072cc67282b77ae0fe777184f00a3f68e478c5b108596b65",
-      "size": 49204
+      "size": 49204,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgb888_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgb888_v3.pvr",
       "sha256": "b0d2bbc40b9c7db9aec9857aa9c8dbe873e5759ac275b4a428cbe9bef37ce1f4",
-      "size": 65587
+      "size": 65587,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 6449010,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgba4444.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgba4444.pvr",
       "sha256": "17e7e14fc6dd38f09466d9dfe13fe92bb4c1c3b1d113827f1ec019fd9ad9cff7",
-      "size": 32820
+      "size": 32820,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgba4444.pvr.ccz",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgba4444.pvr.ccz",
       "sha256": "b5115dbad906d6321240b851ae90e448ef87ed7371c9a30124b6ac45d7d1d96f",
-      "size": 23792
+      "size": 23792,
+      "format": {
+        "kind": "ccz",
+        "version": "1",
+        "compression": "zlib",
+        "uncompressedLength": 32820
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgba4444.pvr.gz",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgba4444.pvr.gz",
       "sha256": "54f9e59c89a0b3cea0d185b068ff65ba32e06101a5de9d4fdcf72b3ab9edb239",
-      "size": 23805
+      "size": 23805,
+      "format": {
+        "kind": "gzip",
+        "version": null,
+        "originalName": "test_image_rgba4444.pvr"
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgba4444_mipmap.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgba4444_mipmap.pvr",
       "sha256": "c4a335c89c3d51c6836d0666d36200f6a82ccacb2ea83f1652c0ed843d0624d8",
-      "size": 43742
+      "size": 43742,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 7,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgba4444_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgba4444_v3.pvr",
       "sha256": "e44913aee5c1b83e7c5266252502d7702fbde2b60781452ab749674386a97bba",
-      "size": 43742
+      "size": 43742,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 1633838962,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgba5551.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgba5551.pvr",
       "sha256": "aa2ef754e5767e8d2906616be7a6273cc89c65f82670ca4d1422b4702f4309e7",
-      "size": 32820
+      "size": 32820,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgba5551_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgba5551_v3.pvr",
       "sha256": "8851c199f816c8aede98d13ebfa71f656b78c514da2c9e73fdafa4ea37d42f59",
-      "size": 43742
+      "size": 43742,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 1633838962,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgba8888.png",
@@ -4297,14 +4614,30 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgba8888.pvr",
       "sha256": "c097fae3a7f151f994d18b2471e52c56ec0f05568e2e498e16bcbdaff9d05a2a",
-      "size": 65588
+      "size": 65588,
+      "format": {
+        "kind": "pvr",
+        "version": "2",
+        "width": 128,
+        "height": 128,
+        "mipmapCount": 0,
+        "surfaces": 1
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_image_rgba8888_v3.pvr",
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/Images/test_image_rgba8888_v3.pvr",
       "sha256": "aed93ec72d3c701c17667802c1f0f69632793755f4b72d50301a3d6368f42aa3",
-      "size": 65588
+      "size": 65588,
+      "format": {
+        "kind": "pvr",
+        "version": "3",
+        "width": 128,
+        "height": 128,
+        "pixelFormat": 1633838962,
+        "premultiplied": false
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/Images/test_polygon.png",
@@ -6944,7 +7277,12 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/animations/grossini.pvr.gz",
       "sha256": "99828b2600f127fe704cdb714ce9bcd9b7574fe0f68f8261293d4ee2ea963394",
-      "size": 5704
+      "size": 5704,
+      "format": {
+        "kind": "gzip",
+        "version": null,
+        "originalName": "grossini.pvr"
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/animations/grossini_anchors.png",
@@ -9132,7 +9470,13 @@
       "sourceId": "cocos2dx-images",
       "upstreamPath": "tests/cpp-tests/Resources/hd/Images/only_in_hd.pvr.ccz",
       "sha256": "f244ea8d4f97b10aad8259f62ed4cc0c45e31a3c82dceb7e9f589146633c002c",
-      "size": 2104
+      "size": 2104,
+      "format": {
+        "kind": "ccz",
+        "version": "1",
+        "compression": "zlib",
+        "uncompressedLength": 2097204
+      }
     },
     {
       "path": "cocos/cpp-tests/Resources/hd/Images/paddle.png",
