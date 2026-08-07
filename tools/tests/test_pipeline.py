@@ -330,6 +330,91 @@ class TestFormats(unittest.TestCase):
         blob = b"ttcf" + struct.pack(">HHI", 1, 0, 1) + struct.pack(">I", 16) + member
         self.assertEqual(formats.detect(blob, "deceptive.ttf")["kind"], "ttc")
 
+    def test_jpeg_reports_the_coding_process(self):
+        # "Supports JPEG" almost always means baseline. A progressive file decoded by a
+        # baseline-only path does not error — it renders the first scan, which looks like
+        # a blurry version of the right picture. So the SOF marker is the fact to record.
+        def jpeg(sof):
+            frame = bytes([8]) + struct.pack(">HH", 32, 64) + bytes([3])
+            return (b"\xff\xd8"
+                    + b"\xff\xe0" + struct.pack(">H", 16) + b"JFIF\x00" + b"\x00" * 9
+                    + bytes([0xFF, sof]) + struct.pack(">H", len(frame) + 2) + frame
+                    + b"\xff\xda")
+        base = formats.detect(jpeg(0xC0), "a.jpg")
+        self.assertEqual((base["kind"], base["coding"], base["container"]),
+                         ("jpeg", "baseline", "jfif"))
+        self.assertEqual((base["width"], base["height"]), (64, 32))
+        self.assertEqual(formats.detect(jpeg(0xC2), "a.jpg")["coding"], "progressive")
+
+    def test_bmp_version_is_its_dib_header_size(self):
+        def bmp(dib):
+            head = b"BM" + struct.pack("<IHHI", 0, 0, 0, 14 + dib) + struct.pack("<I", dib)
+            return head + struct.pack("<iiHHI", 8, -4, 1, 32, 3) + b"\x00" * 128
+        self.assertEqual(formats.detect(bmp(40), "a.bmp")["dibHeader"], "BITMAPINFOHEADER")
+        v5 = formats.detect(bmp(124), "a.bmp")
+        self.assertEqual((v5["version"], v5["dibHeader"]), ("124", "BITMAPV5HEADER"))
+        # A negative height means top-down rows, which flips the image if ignored.
+        self.assertEqual((v5["height"], v5["topDown"]), (4, True))
+
+    def test_bmp_does_not_claim_binary_bmfont(self):
+        # AngelCode's binary BMFont starts 'BMF' and passes a naive "starts with BM" test.
+        fnt = b"BMF\x03" + b"\x01" + struct.pack("<i", 20) + b"\x00" * 64
+        self.assertNotEqual((formats.detect(fnt, "a.fnt") or {}).get("kind"), "bmp")
+
+    def test_tiff_endianness_and_bigtiff(self):
+        self.assertEqual(formats.detect(b"II\x2a\x00" + b"\x08\x00\x00\x00", "a.tif")
+                         ["byteOrder"], "little")
+        self.assertEqual(formats.detect(b"MM\x00\x2a" + b"\x00\x00\x00\x08", "a.tif")
+                         ["byteOrder"], "big")
+        big = formats.detect(b"II\x2b\x00" + b"\x08\x00\x00\x00", "a.tif")
+        self.assertEqual((big["kind"], big["version"]), ("bigtiff", "43"))
+        self.assertIsNone(formats.detect(b"II\x99\x00" + b"\x00" * 8, "a.bin"))
+
+    def test_webp_variant_and_extended_flags(self):
+        def riff(form, body):
+            return b"RIFF" + struct.pack("<I", len(body) + 4) + form + body
+        self.assertEqual(formats.detect(riff(b"WEBP", b"VP8L" + b"\x00" * 32), "a.webp")
+                         ["variant"], "lossless")
+        # VP8X is the only place alpha and animation are declared before the frames.
+        body = b"VP8X" + struct.pack("<I", 10) + bytes([0x02 | 0x04]) + b"\x00" * 3
+        body += (7).to_bytes(3, "little") + (15).to_bytes(3, "little")
+        ext = formats.detect(riff(b"WEBP", body), "a.webp")
+        self.assertEqual((ext["variant"], ext["width"], ext["height"]),
+                         ("extended", 8, 16))
+        self.assertEqual(sorted(ext["features"]), ["alpha", "animation"])
+
+    def test_riff_shell_is_shared_with_wav_and_ani(self):
+        fmt = b"fmt " + struct.pack("<I", 16) + struct.pack("<HHIIHH", 1, 2, 44100, 0, 0, 16)
+        wav = b"RIFF" + struct.pack("<I", len(fmt) + 4) + b"WAVE" + fmt
+        info = formats.detect(wav, "a.wav")
+        self.assertEqual((info["kind"], info["channels"], info["sampleRate"]),
+                         ("wav", 2, 44100))
+        self.assertEqual(formats.detect(b"RIFF" + b"\x00" * 4 + b"ACON" + b"\x00" * 8,
+                                        "a.ani")["kind"], "ani")
+
+    def test_isobmff_brands_pick_the_format(self):
+        def ftyp(major, compatible=b""):
+            body = major + b"\x00\x00\x00\x00" + compatible
+            return struct.pack(">I", len(body) + 8) + b"ftyp" + body + b"\x00" * 8
+        self.assertEqual(formats.detect(ftyp(b"avif"), "a.avif")["kind"], "avif")
+        self.assertEqual(formats.detect(ftyp(b"avis"), "a.avifs")["kind"], "avif-sequence")
+        mp4 = formats.detect(ftyp(b"isom", b"mp42avc1"), "a.mp4")
+        self.assertEqual((mp4["kind"], mp4["compatibleBrands"]), ("mp4", ["mp42", "avc1"]))
+        # An unknown brand is still an ISO base media file; saying so beats declining.
+        self.assertEqual(formats.detect(ftyp(b"zzzz"), "a.bin")["kind"], "isobmff")
+
+    def test_ico_requires_a_payload_that_is_actually_an_image(self):
+        def ico(payload):
+            entry = bytes([16, 16, 0, 0]) + struct.pack("<HHII", 1, 32, len(payload), 22)
+            return b"\x00\x00\x01\x00" + struct.pack("<H", 1) + entry + payload
+        png = formats.detect(ico(b"\x89PNG\r\n\x1a\n" + b"\x00" * 32), "a.ico")
+        self.assertEqual((png["kind"], png["entryEncodings"]), ("ico", ["png"]))
+        bmp = formats.detect(ico(struct.pack("<I", 40) + b"\x00" * 36), "a.ico")
+        self.assertEqual(bmp["entryEncodings"], ["bmp"])
+        # Four leading zero bytes and a small count are common in binary buffers — 27 glTF
+        # buffers matched on containment alone. The payload check is what rules them out.
+        self.assertIsNone(formats.detect(ico(b"\x11" * 40), "buffer.bin"))
+
     def test_ttx_is_identified_as_more_than_generic_xml(self):
         doc = (b'<?xml version="1.0" encoding="UTF-8"?>\n'
                b'<ttFont sfntVersion="\\x00\\x01\\x00\\x00" ttLibVersion="4.41">\n'

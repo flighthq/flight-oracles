@@ -467,7 +467,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -480,7 +482,9 @@
         "kind": "png",
         "version": null,
         "width": 250,
-        "height": 188
+        "height": 188,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -493,7 +497,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -506,7 +512,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -519,7 +527,9 @@
         "kind": "png",
         "version": null,
         "width": 254,
-        "height": 376
+        "height": 376,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -532,7 +542,9 @@
         "kind": "png",
         "version": null,
         "width": 300,
-        "height": 300
+        "height": 300,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -540,14 +552,34 @@
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/badlogic.jpg",
       "sha256": "66d550b8f9a169a4490805efe04e9d02c1aab9828417fc8f29ee7407f8e48652",
-      "size": 68465
+      "size": 68465,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "libgdx/data/badlogicsmall.jpg",
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/badlogicsmall.jpg",
       "sha256": "133f1aac53b0ef6a82a57cef9f8766a445d5f4f66226321cd185f75bdfa77acd",
-      "size": 1787
+      "size": 1787,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 32,
+        "height": 32,
+        "components": 3
+      }
     },
     {
       "path": "libgdx/data/black_marked_0.png",
@@ -559,7 +591,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -572,7 +606,9 @@
         "kind": "png",
         "version": null,
         "width": 32,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -585,7 +621,9 @@
         "kind": "png",
         "version": null,
         "width": 32,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -598,7 +636,9 @@
         "kind": "png",
         "version": null,
         "width": 38,
-        "height": 38
+        "height": 38,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -611,7 +651,9 @@
         "kind": "png",
         "version": null,
         "width": 2,
-        "height": 2
+        "height": 2,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -624,7 +666,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -637,7 +681,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -650,7 +696,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -663,7 +711,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -671,7 +721,17 @@
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/g2d/progressive-libgdx.jpg",
       "sha256": "da0a0109215bacd125ddec07a1a1ffb8ea8eec66f9a8a7e6c320fbba0501c3a8",
-      "size": 87033
+      "size": 87033,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "libgdx/data/g3d/Knight.png",
@@ -683,7 +743,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -696,7 +758,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -709,7 +773,9 @@
         "kind": "png",
         "version": null,
         "width": 400,
-        "height": 400
+        "height": 400,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -722,7 +788,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -735,7 +803,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -748,7 +818,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -761,7 +833,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -774,7 +848,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -787,7 +863,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -800,7 +878,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -813,7 +893,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -826,7 +908,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -839,7 +923,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -852,7 +938,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -865,7 +953,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -878,7 +968,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -891,7 +983,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -904,7 +998,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -917,7 +1013,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -930,7 +1028,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -943,7 +1043,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -956,7 +1058,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -969,7 +1073,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -982,7 +1088,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -995,7 +1103,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1008,7 +1118,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1021,7 +1133,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1034,7 +1148,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1042,21 +1158,51 @@
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Deep Fire.jpg",
       "sha256": "0ca123f098481973d983d208e798beacc4bcd4395890e729b8f3c035fff8a363",
-      "size": 148255
+      "size": 148255,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "libgdx/data/g3d/materials/Lava Cracks.jpg",
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Lava Cracks.jpg",
       "sha256": "b3490d632829e1f0bace027e574466b990202b989afbf918d45448efcfdb866a",
-      "size": 114251
+      "size": 114251,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "libgdx/data/g3d/materials/Searing Gorge.jpg",
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/materials/Searing Gorge.jpg",
       "sha256": "4eb20b4749bf76529166f9639635218b039e7814d018a0efd68fff098deacfca",
-      "size": 119976
+      "size": 119976,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "libgdx/data/g3d/materials/badlogic_normal.png",
@@ -1068,7 +1214,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1081,7 +1229,9 @@
         "kind": "png",
         "version": null,
         "width": 700,
-        "height": 700
+        "height": 700,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1094,7 +1244,9 @@
         "kind": "png",
         "version": null,
         "width": 700,
-        "height": 700
+        "height": 700,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1107,7 +1259,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1120,7 +1274,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1133,7 +1289,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1146,7 +1304,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1159,7 +1319,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1172,7 +1334,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1185,7 +1349,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1198,7 +1364,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1211,7 +1379,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1224,7 +1394,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1237,7 +1409,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1250,7 +1424,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1263,7 +1439,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1276,7 +1454,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1289,7 +1469,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1302,7 +1484,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1315,7 +1499,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1328,7 +1514,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1341,7 +1529,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1354,7 +1544,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1367,7 +1559,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1380,7 +1574,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1393,7 +1589,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1406,7 +1604,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1419,7 +1619,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1432,7 +1634,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1445,7 +1649,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1458,7 +1664,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1471,7 +1679,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1484,7 +1694,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1497,7 +1709,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1510,7 +1724,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1523,7 +1739,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1536,7 +1754,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1549,7 +1769,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1562,7 +1784,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1575,7 +1799,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1588,7 +1814,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1601,7 +1829,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1609,7 +1839,17 @@
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/g3d/space.jpg",
       "sha256": "55b19f0752b1a40bf21a92247a519a4c0f7c6c40d3ddbeddbf58e2f34cb35d81",
-      "size": 167005
+      "size": 167005,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "libgdx/data/g3d/tiles.png",
@@ -1621,7 +1861,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1634,7 +1876,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1647,7 +1891,9 @@
         "kind": "png",
         "version": null,
         "width": 33,
-        "height": 33
+        "height": 33,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1660,7 +1906,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1673,7 +1921,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1686,7 +1936,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1699,7 +1951,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1712,7 +1966,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1725,7 +1981,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -1738,7 +1996,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -1751,7 +2011,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -1764,7 +2026,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -1777,7 +2041,9 @@
         "kind": "png",
         "version": null,
         "width": 640,
-        "height": 720
+        "height": 720,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1790,7 +2056,9 @@
         "kind": "png",
         "version": null,
         "width": 640,
-        "height": 480
+        "height": 480,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1803,7 +2071,9 @@
         "kind": "png",
         "version": null,
         "width": 640,
-        "height": 480
+        "height": 480,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1816,7 +2086,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1824,7 +2096,17 @@
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-animations/Start.bmp",
       "sha256": "ce512d8720c316b4cf0f59b0d8dd0ae924662628402e8dd0452bd09326e7ecf3",
-      "size": 2102
+      "size": 2102,
+      "format": {
+        "kind": "bmp",
+        "version": "40",
+        "dibHeader": "BITMAPINFOHEADER",
+        "width": 32,
+        "height": 32,
+        "bitsPerPixel": 8,
+        "compression": 0,
+        "topDown": false
+      }
     },
     {
       "path": "libgdx/data/maps/tiled-atlas-processed/tileset/packed.png",
@@ -1836,7 +2118,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1849,7 +2133,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1862,7 +2148,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1875,7 +2163,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1888,7 +2178,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1901,7 +2193,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1914,7 +2208,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1927,7 +2223,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1940,7 +2238,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1953,7 +2253,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1966,7 +2268,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1974,7 +2278,17 @@
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-groups-imagelayer/tileset/badlogicsmall.jpg",
       "sha256": "133f1aac53b0ef6a82a57cef9f8766a445d5f4f66226321cd185f75bdfa77acd",
-      "size": 1787
+      "size": 1787,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 32,
+        "height": 32,
+        "components": 3
+      }
     },
     {
       "path": "libgdx/data/maps/tiled-groups-imagelayer/tileset/test_image.png",
@@ -1986,7 +2300,9 @@
         "kind": "png",
         "version": null,
         "width": 112,
-        "height": 112
+        "height": 112,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1999,7 +2315,9 @@
         "kind": "png",
         "version": null,
         "width": 112,
-        "height": 112
+        "height": 112,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2012,7 +2330,9 @@
         "kind": "png",
         "version": null,
         "width": 112,
-        "height": 112
+        "height": 112,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2025,7 +2345,9 @@
         "kind": "png",
         "version": null,
         "width": 112,
-        "height": 112
+        "height": 112,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2038,7 +2360,9 @@
         "kind": "png",
         "version": null,
         "width": 112,
-        "height": 112
+        "height": 112,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2051,7 +2375,9 @@
         "kind": "png",
         "version": null,
         "width": 112,
-        "height": 112
+        "height": 112,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2064,7 +2390,9 @@
         "kind": "png",
         "version": null,
         "width": 112,
-        "height": 112
+        "height": 112,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2077,7 +2405,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2085,7 +2415,17 @@
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/maps/tiled-objects/Start.bmp",
       "sha256": "ce512d8720c316b4cf0f59b0d8dd0ae924662628402e8dd0452bd09326e7ecf3",
-      "size": 2102
+      "size": 2102,
+      "format": {
+        "kind": "bmp",
+        "version": "40",
+        "dibHeader": "BITMAPINFOHEADER",
+        "width": 32,
+        "height": 32,
+        "bitsPerPixel": 8,
+        "compression": 0,
+        "topDown": false
+      }
     },
     {
       "path": "libgdx/data/maps/tiled-objects/grass_1.png",
@@ -2097,7 +2437,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 48
+        "height": 48,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2110,7 +2452,9 @@
         "kind": "png",
         "version": null,
         "width": 75,
-        "height": 75
+        "height": 75,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2123,7 +2467,9 @@
         "kind": "png",
         "version": null,
         "width": 240,
-        "height": 320
+        "height": 320,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2136,7 +2482,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 48
+        "height": 48,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2149,7 +2497,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 48
+        "height": 48,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2162,7 +2512,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 48
+        "height": 48,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2175,7 +2527,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2188,7 +2542,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 384
+        "height": 384,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2201,7 +2557,9 @@
         "kind": "png",
         "version": null,
         "width": 17,
-        "height": 25
+        "height": 25,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2214,7 +2572,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2227,7 +2587,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2240,7 +2602,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2253,7 +2617,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -2266,7 +2632,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -2279,7 +2647,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2303,7 +2673,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2316,7 +2688,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2329,7 +2703,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2342,7 +2718,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2355,7 +2733,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2368,7 +2748,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2381,7 +2763,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2394,7 +2778,9 @@
         "kind": "png",
         "version": null,
         "width": 32,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2407,7 +2793,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2420,7 +2808,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2428,7 +2818,17 @@
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/planet_heavyclouds.jpg",
       "sha256": "a14a63da4b8f265047001922f5038611d2c6d6b4f2b9277ae80ab378835846f8",
-      "size": 20237
+      "size": 20237,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "libgdx/data/player_pause.png",
@@ -2440,7 +2840,9 @@
         "kind": "png",
         "version": null,
         "width": 120,
-        "height": 120
+        "height": 120,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2453,7 +2855,9 @@
         "kind": "png",
         "version": null,
         "width": 120,
-        "height": 120
+        "height": 120,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2466,7 +2870,9 @@
         "kind": "png",
         "version": null,
         "width": 120,
-        "height": 120
+        "height": 120,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2479,7 +2885,9 @@
         "kind": "png",
         "version": null,
         "width": 32,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2492,7 +2900,9 @@
         "kind": "png",
         "version": null,
         "width": 400,
-        "height": 400
+        "height": 400,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2505,7 +2915,9 @@
         "kind": "png",
         "version": null,
         "width": 32,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2518,7 +2930,9 @@
         "kind": "png",
         "version": null,
         "width": 32,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2526,7 +2940,17 @@
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/resource1.jpg",
       "sha256": "63595b04029fe2132d85ccfe6f0db4a842d74f8927b9c7551d6bca49a2e204d8",
-      "size": 29054
+      "size": 29054,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "libgdx/data/rgb.png",
@@ -2538,7 +2962,9 @@
         "kind": "png",
         "version": null,
         "width": 250,
-        "height": 188
+        "height": 188,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -2551,7 +2977,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2575,7 +3003,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -2583,7 +3013,17 @@
       "sourceId": "libgdx-particles",
       "upstreamPath": "tests/gdx-tests-android/assets/data/stones.jpg",
       "sha256": "1cb34d43f0bbc591975f680e050bc4e7c591707e3b0c311194ed13a49810b538",
-      "size": 21898
+      "size": 21898,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "libgdx/data/sys.png",
@@ -2595,7 +3035,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -2608,7 +3050,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -2632,7 +3076,9 @@
         "kind": "png",
         "version": null,
         "width": 32,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -2645,7 +3091,9 @@
         "kind": "png",
         "version": null,
         "width": 38,
-        "height": 76
+        "height": 76,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2658,7 +3106,9 @@
         "kind": "png",
         "version": null,
         "width": 38,
-        "height": 76
+        "height": 76,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2671,7 +3121,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2684,7 +3136,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -2697,7 +3151,9 @@
         "kind": "png",
         "version": null,
         "width": 16,
-        "height": 16
+        "height": 16,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -2710,7 +3166,9 @@
         "kind": "png",
         "version": null,
         "width": 16,
-        "height": 16
+        "height": 16,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2723,7 +3181,9 @@
         "kind": "png",
         "version": null,
         "width": 35,
-        "height": 35
+        "height": 35,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2736,7 +3196,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2749,7 +3211,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2762,7 +3226,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2775,7 +3241,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2788,7 +3256,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -2801,7 +3271,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -2814,7 +3286,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -2827,7 +3301,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2840,7 +3316,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2866,7 +3344,9 @@
         "kind": "png",
         "version": null,
         "width": 32,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2879,7 +3359,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2892,7 +3374,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2905,7 +3389,9 @@
         "kind": "png",
         "version": null,
         "width": 630,
-        "height": 168
+        "height": 168,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2918,7 +3404,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 768
+        "height": 768,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -2931,7 +3419,9 @@
         "kind": "png",
         "version": null,
         "width": 170,
-        "height": 170
+        "height": 170,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2944,7 +3434,9 @@
         "kind": "png",
         "version": null,
         "width": 312,
-        "height": 662
+        "height": 662,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2957,7 +3449,9 @@
         "kind": "png",
         "version": null,
         "width": 45,
-        "height": 45
+        "height": 45,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2970,7 +3464,9 @@
         "kind": "png",
         "version": null,
         "width": 28,
-        "height": 26
+        "height": 26,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2983,7 +3479,9 @@
         "kind": "png",
         "version": null,
         "width": 211,
-        "height": 148
+        "height": 148,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2996,7 +3494,9 @@
         "kind": "png",
         "version": null,
         "width": 29,
-        "height": 29
+        "height": 29,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3009,7 +3509,9 @@
         "kind": "png",
         "version": null,
         "width": 315,
-        "height": 302
+        "height": 302,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3022,7 +3524,9 @@
         "kind": "png",
         "version": null,
         "width": 241,
-        "height": 241
+        "height": 241,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3035,7 +3539,9 @@
         "kind": "png",
         "version": null,
         "width": 30,
-        "height": 30
+        "height": 30,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3048,7 +3554,9 @@
         "kind": "png",
         "version": null,
         "width": 15,
-        "height": 11
+        "height": 11,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3061,7 +3569,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3074,7 +3584,9 @@
         "kind": "png",
         "version": null,
         "width": 116,
-        "height": 116
+        "height": 116,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3087,7 +3599,9 @@
         "kind": "png",
         "version": null,
         "width": 122,
-        "height": 138
+        "height": 138,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3100,7 +3614,9 @@
         "kind": "png",
         "version": null,
         "width": 132,
-        "height": 132
+        "height": 132,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3113,7 +3629,9 @@
         "kind": "png",
         "version": null,
         "width": 140,
-        "height": 140
+        "height": 140,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3126,7 +3644,9 @@
         "kind": "png",
         "version": null,
         "width": 118,
-        "height": 133
+        "height": 133,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3139,7 +3659,9 @@
         "kind": "png",
         "version": null,
         "width": 49,
-        "height": 206
+        "height": 206,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3152,7 +3674,9 @@
         "kind": "png",
         "version": null,
         "width": 208,
-        "height": 509
+        "height": 509,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3165,7 +3689,9 @@
         "kind": "png",
         "version": null,
         "width": 135,
-        "height": 320
+        "height": 320,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3178,7 +3704,9 @@
         "kind": "png",
         "version": null,
         "width": 26,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3191,7 +3719,9 @@
         "kind": "png",
         "version": null,
         "width": 200,
-        "height": 200
+        "height": 200,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3204,7 +3734,9 @@
         "kind": "png",
         "version": null,
         "width": 90,
-        "height": 82
+        "height": 82,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3217,7 +3749,9 @@
         "kind": "png",
         "version": null,
         "width": 134,
-        "height": 51
+        "height": 51,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3230,7 +3764,9 @@
         "kind": "png",
         "version": null,
         "width": 37,
-        "height": 82
+        "height": 82,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3243,7 +3779,9 @@
         "kind": "png",
         "version": null,
         "width": 300,
-        "height": 300
+        "height": 300,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3256,7 +3794,9 @@
         "kind": "png",
         "version": null,
         "width": 37,
-        "height": 2
+        "height": 2,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3269,7 +3809,9 @@
         "kind": "png",
         "version": null,
         "width": 663,
-        "height": 663
+        "height": 663,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3282,7 +3824,9 @@
         "kind": "png",
         "version": null,
         "width": 192,
-        "height": 192
+        "height": 192,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3295,7 +3839,9 @@
         "kind": "png",
         "version": null,
         "width": 478,
-        "height": 97
+        "height": 97,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3308,7 +3854,9 @@
         "kind": "png",
         "version": null,
         "width": 348,
-        "height": 348
+        "height": 348,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3321,7 +3869,9 @@
         "kind": "png",
         "version": null,
         "width": 96,
-        "height": 99
+        "height": 99,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3334,7 +3884,9 @@
         "kind": "png",
         "version": null,
         "width": 2,
-        "height": 2
+        "height": 2,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3347,7 +3899,9 @@
         "kind": "png",
         "version": null,
         "width": 434,
-        "height": 674
+        "height": 674,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3360,7 +3914,9 @@
         "kind": "png",
         "version": null,
         "width": 50,
-        "height": 50
+        "height": 50,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3373,7 +3929,9 @@
         "kind": "png",
         "version": null,
         "width": 28,
-        "height": 27
+        "height": 27,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3399,7 +3957,9 @@
         "kind": "png",
         "version": null,
         "width": 132,
-        "height": 132
+        "height": 132,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3412,7 +3972,9 @@
         "kind": "png",
         "version": null,
         "width": 117,
-        "height": 119
+        "height": 119,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3425,7 +3987,9 @@
         "kind": "png",
         "version": null,
         "width": 145,
-        "height": 145
+        "height": 145,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3438,7 +4002,9 @@
         "kind": "png",
         "version": null,
         "width": 95,
-        "height": 95
+        "height": 95,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3451,7 +4017,9 @@
         "kind": "png",
         "version": null,
         "width": 126,
-        "height": 126
+        "height": 126,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3464,7 +4032,9 @@
         "kind": "png",
         "version": null,
         "width": 114,
-        "height": 114
+        "height": 114,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3490,7 +4060,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3516,7 +4088,9 @@
         "kind": "png",
         "version": null,
         "width": 32,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3542,7 +4116,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -3568,7 +4144,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 64
+        "height": 64,
+        "bitDepth": 8,
+        "colorType": 6
       }
     }
   ],

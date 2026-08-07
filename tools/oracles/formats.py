@@ -844,10 +844,371 @@ def _png(data: bytes):
     if not data.startswith(b"\x89PNG\r\n\x1a\n"):
         return None
     # IHDR is always the first chunk: width/height at a fixed offset.
-    if len(data) >= 24:
+    info = FormatInfo(kind="png", version=None)
+    if len(data) >= 26:
         width, height = struct.unpack(">II", data[16:24])
-        return FormatInfo(kind="png", version=None, width=width, height=height)
-    return FormatInfo(kind="png", version=None)
+        info.update(width=width, height=height, bitDepth=data[24], colorType=data[25])
+    # APNG is PNG plus an acTL chunk, and a decoder that ignores it renders frame one and
+    # calls it done — a failure with no error. Cheap to spot, so it is recorded.
+    head = data[:4096]
+    if b"acTL" in head:
+        info["animated"] = True
+    return info
+
+
+# --- raster codecs -----------------------------------------------------------------
+#
+# `image-codec` claims eight formats and had fixtures for one. What each of these probes
+# reports is chosen to be the thing a decoder branches on rather than the thing a file
+# browser shows: JPEG's SOF marker (baseline / progressive / arithmetic), BMP's DIB header
+# size (which *is* its version), TIFF's endianness and whether it is BigTIFF, WebP's chunk
+# variant and feature flags. Dimensions come along because they are free.
+
+
+_JPEG_SOF = {
+    0xC0: "baseline", 0xC1: "extended-sequential", 0xC2: "progressive",
+    0xC3: "lossless", 0xC5: "differential-sequential", 0xC6: "differential-progressive",
+    0xC7: "differential-lossless", 0xC9: "arithmetic-extended-sequential",
+    0xCA: "arithmetic-progressive", 0xCB: "arithmetic-lossless",
+    0xCD: "arithmetic-differential-sequential", 0xCE: "arithmetic-differential-progressive",
+    0xCF: "arithmetic-differential-lossless",
+}
+
+
+def _jpeg(data: bytes):
+    """JPEG: SOI, then marker segments until a start-of-frame names the coding process.
+
+    The coding process is the fact worth having. "Supports JPEG" usually means baseline
+    only, and a progressive file decoded by a baseline-only path does not error — it
+    produces the first scan, which looks like a blurry version of the right image.
+    """
+    if not data.startswith(b"\xff\xd8\xff"):
+        return None
+    info = FormatInfo(kind="jpeg", version=None)
+    pos = 2
+    while pos + 4 <= len(data):
+        if data[pos] != 0xFF:
+            break
+        marker = data[pos + 1]
+        if marker in (0xD8, 0x01) or 0xD0 <= marker <= 0xD7:
+            pos += 2
+            continue
+        if marker == 0xDA:          # start of scan: entropy-coded data follows
+            break
+        length = struct.unpack(">H", data[pos + 2:pos + 4])[0]
+        segment = data[pos + 4:pos + 2 + length]
+        if marker in _JPEG_SOF:
+            info["coding"] = _JPEG_SOF[marker]
+            if len(segment) >= 5:
+                info["bitDepth"] = segment[0]
+                height, width = struct.unpack(">HH", segment[1:5])
+                info.update(width=width, height=height, components=segment[5]
+                            if len(segment) > 5 else None)
+            break
+        if marker == 0xE0 and segment.startswith(b"JFIF\x00"):
+            info["container"] = "jfif"
+        elif marker == 0xE1 and segment.startswith(b"Exif\x00"):
+            info["container"] = "exif"
+        pos += 2 + length
+    return info
+
+
+def _gif(data: bytes):
+    """GIF: the version is the header — 'GIF87a' or 'GIF89a'."""
+    if data[:6] not in (b"GIF87a", b"GIF89a"):
+        return None
+    info = FormatInfo(kind="gif", version=data[3:6].decode("ascii"))
+    if len(data) >= 10:
+        width, height = struct.unpack("<HH", data[6:10])
+        info.update(width=width, height=height)
+    # The Netscape application extension is what makes a GIF loop; without it a decoder
+    # may still find several frames, so animation is reported on either signal.
+    if b"NETSCAPE2.0" in data[:1024] or data[:6] == b"GIF89a" and data.count(b"\x21\xf9") > 1:
+        info["animated"] = True
+    return info
+
+
+# A BMP's "version" is not written anywhere: it is the SIZE of the DIB header that follows
+# the file header, and every field a decoder may read is conditional on it.
+_BMP_DIB = {
+    12: "BITMAPCOREHEADER", 16: "OS22XBITMAPHEADER", 40: "BITMAPINFOHEADER",
+    52: "BITMAPV2INFOHEADER", 56: "BITMAPV3INFOHEADER", 64: "OS22XBITMAPHEADER",
+    108: "BITMAPV4HEADER", 124: "BITMAPV5HEADER",
+}
+
+
+def _bmp(data: bytes):
+    if not data.startswith(b"BM") or len(data) < 26:
+        return None
+    # AngelCode's binary BMFont starts 'BMF' and a one-byte version, which passes a naive
+    # "starts with BM" test and was mislabelling six .fnt files as bitmaps. Ruled out
+    # explicitly rather than by probe ordering, because the ordering that fixes it is not
+    # obvious to the next person and would be re-broken silently.
+    if data[:3] == b"BMF" and data[3] in (1, 2, 3):
+        return None
+    dib = struct.unpack("<I", data[14:18])[0]
+    # "BM" is two letters that start plenty of text. The DIB size is the corroboration:
+    # a known value, or at least in the range one could be. Damaged headers in the
+    # negative corpora are wanted, so the range is permissive rather than the exact set.
+    if dib not in _BMP_DIB and not 12 <= dib <= 256:
+        return None
+    info = FormatInfo(kind="bmp", version=str(dib), dibHeader=_BMP_DIB.get(dib, "unknown"))
+    if dib == 12:
+        width, height = struct.unpack("<hh", data[18:22])
+        info.update(width=width, height=height, bitsPerPixel=struct.unpack("<H", data[24:26])[0])
+    elif len(data) >= 34:
+        width, height = struct.unpack("<ii", data[18:26])
+        info.update(width=width, height=abs(height),
+                    bitsPerPixel=struct.unpack("<H", data[28:30])[0],
+                    compression=struct.unpack("<I", data[30:34])[0],
+                    topDown=height < 0)
+    return info
+
+
+def _tiff(data: bytes):
+    """TIFF: a byte-order mark, then 42 — or 43, which means BigTIFF and 64-bit offsets."""
+    if data[:2] == b"II":
+        endian, order = "<", "little"
+    elif data[:2] == b"MM":
+        endian, order = ">", "big"
+    else:
+        return None
+    if len(data) < 8:
+        return None
+    magic = struct.unpack(endian + "H", data[2:4])[0]
+    if magic == 42:
+        return FormatInfo(kind="tiff", version="42", byteOrder=order)
+    if magic == 43:
+        return FormatInfo(kind="bigtiff", version="43", byteOrder=order)
+    return None
+
+
+_RIFF_WEBP_FLAGS = (
+    (0x02, "alpha"), (0x08, "exif"), (0x04, "animation"),
+    (0x10, "xmp"), (0x20, "icc"),
+)
+
+
+def _riff(data: bytes):
+    """RIFF containers: WebP, WAV and the animated-cursor format share one shell.
+
+    WebP is the one with variants that matter — 'VP8 ' is lossy, 'VP8L' is lossless, and
+    'VP8X' is the extended form whose flag byte is the only place alpha and animation are
+    declared before the frames.
+    """
+    if not data.startswith(b"RIFF") or len(data) < 16:
+        return None
+    form = data[8:12]
+    if form == b"WEBP":
+        chunk = data[12:16]
+        variant = {b"VP8 ": "lossy", b"VP8L": "lossless", b"VP8X": "extended"}.get(chunk)
+        info = FormatInfo(kind="webp", version=None, variant=variant or
+                          chunk.decode("latin-1").strip())
+        if chunk == b"VP8X" and len(data) >= 30:
+            flags = data[20]
+            features = [name for bit, name in _RIFF_WEBP_FLAGS if flags & bit]
+            if features:
+                info["features"] = features
+            width = int.from_bytes(data[24:27], "little") + 1
+            height = int.from_bytes(data[27:30], "little") + 1
+            info.update(width=width, height=height)
+        return info
+    if form == b"WAVE":
+        info = FormatInfo(kind="wav", version=None)
+        # 'fmt ' is required and comes first in every file anyone has written.
+        if data[12:16] == b"fmt " and len(data) >= 36:
+            audio_format, channels, rate = struct.unpack("<HHI", data[20:28])
+            bits = struct.unpack("<H", data[34:36])[0]
+            info.update(audioFormat=audio_format, channels=channels,
+                        sampleRate=rate, bitsPerSample=bits)
+        return info
+    if form == b"ACON":
+        return FormatInfo(kind="ani", version=None)
+    return FormatInfo(kind="riff", version=None, form=form.decode("latin-1").strip())
+
+
+# ISO base media: AVIF, HEIF, JPEG XL's container, MP4 and MOV are all this box format,
+# distinguished only by the brands in `ftyp`. One probe covers the still-image codecs here
+# and the video containers when they arrive.
+_ISOBMFF_BRANDS = {
+    b"avif": "avif", b"avis": "avif-sequence", b"heic": "heic", b"heix": "heic",
+    b"heim": "heic", b"heis": "heic", b"hevc": "heic-sequence", b"mif1": "heif",
+    b"msf1": "heif-sequence", b"jxl ": "jxl", b"crx ": "cr3",
+    b"qt  ": "mov", b"isom": "mp4", b"iso2": "mp4", b"iso4": "mp4", b"iso5": "mp4",
+    b"iso6": "mp4", b"mp41": "mp4", b"mp42": "mp4", b"M4A ": "m4a", b"M4V ": "m4v",
+    b"3gp4": "3gp", b"3gp5": "3gp", b"3g2a": "3g2", b"dash": "mp4",
+}
+
+
+def _isobmff(data: bytes):
+    if len(data) < 16 or data[4:8] != b"ftyp":
+        return None
+    major = data[8:12]
+    size = struct.unpack(">I", data[0:4])[0]
+    brands = []
+    if 16 <= size <= len(data):
+        for off in range(16, min(size, len(data)) - 3, 4):
+            brand = data[off:off + 4]
+            if brand.strip():
+                brands.append(brand.decode("latin-1").strip())
+    kind = _ISOBMFF_BRANDS.get(major)
+    if kind is None:
+        # An unrecognised major brand is still an ISO base media file, and saying so is
+        # more useful than declining — the brand itself is recorded for whoever looks.
+        kind = "isobmff"
+    info = FormatInfo(kind=kind, version=None,
+                      majorBrand=major.decode("latin-1").strip())
+    if brands:
+        info["compatibleBrands"] = brands
+    return info
+
+
+def _ico(data: bytes):
+    """ICO and CUR: a reserved zero, a type, and a count — no magic string at all.
+
+    Entries are BMP-encoded or PNG-encoded at the icon author's discretion, and which one
+    is a per-entry decision inside a single file, so it is recorded per file.
+    """
+    if len(data) < 6 or data[0:2] != b"\x00\x00" or data[2:4] not in (b"\x01\x00", b"\x02\x00"):
+        return None
+    count = struct.unpack("<H", data[4:6])[0]
+    if not 0 < count <= 4096 or len(data) < 6 + 16 * count:
+        return None
+    kind = "ico" if data[2] == 1 else "cur"
+    encodings = set()
+    directory = 6 + 16 * count
+    for i in range(count):
+        entry = data[6 + 16 * i:6 + 16 * (i + 1)]
+        size, offset = struct.unpack("<II", entry[8:16])
+        # Four zero bytes and a small count are not rare — 81 glTF binary buffers led with
+        # exactly that and were being reported as icons. The directory is what corroborates
+        # it: a reserved byte that must be zero, and entries whose payloads have to sit
+        # inside the file after the directory itself.
+        if entry[3] != 0 or size == 0 or offset < directory or offset + size > len(data):
+            return None
+        # And the payload has to be one of the two things an entry may hold. Containment
+        # alone still claimed 27 glTF binary buffers, because a large file gives random
+        # offsets plenty of room to land inside it; a PNG signature or a real DIB header
+        # does not happen by accident.
+        if data[offset:offset + 8] == b"\x89PNG\r\n\x1a\n":
+            encodings.add("png")
+        elif struct.unpack("<I", data[offset:offset + 4])[0] in _BMP_DIB:
+            encodings.add("bmp")
+        else:
+            return None
+    info = FormatInfo(kind=kind, version=None, images=count)
+    if encodings:
+        info["entryEncodings"] = sorted(encodings)
+    return info
+
+
+def _qoi(data: bytes):
+    if not data.startswith(b"qoif") or len(data) < 14:
+        return None
+    width, height = struct.unpack(">II", data[4:12])
+    return FormatInfo(kind="qoi", version=None, width=width, height=height,
+                      channels=data[12], colorspace=data[13])
+
+
+def _farbfeld(data: bytes):
+    if not data.startswith(b"farbfeld") or len(data) < 16:
+        return None
+    width, height = struct.unpack(">II", data[8:16])
+    return FormatInfo(kind="farbfeld", version=None, width=width, height=height)
+
+
+def _radiance(data: bytes):
+    """Radiance HDR: a '#?' signature line, then a FORMAT= line naming the encoding."""
+    if not data.startswith((b"#?RADIANCE", b"#?RGBE")):
+        return None
+    info = FormatInfo(kind="hdr", version=None)
+    match = re.search(rb"FORMAT=([\w_\-/]+)", data[:512])
+    if match:
+        info["encoding"] = match.group(1).decode("ascii", "replace")
+    return info
+
+
+def _openexr(data: bytes):
+    if not data.startswith(b"\x76\x2f\x31\x01") or len(data) < 8:
+        return None
+    flags = struct.unpack("<I", data[4:8])[0]
+    info = FormatInfo(kind="exr", version=str(flags & 0xFF))
+    if flags & 0x200:
+        info["tiled"] = True
+    if flags & 0x1000:
+        info["multipart"] = True
+    if flags & 0x2000:
+        info["deep"] = True
+    return info
+
+
+_PNM_KINDS = {b"P1": "pbm", b"P2": "pgm", b"P3": "ppm",
+              b"P4": "pbm", b"P5": "pgm", b"P6": "ppm", b"P7": "pam"}
+
+
+def _pnm(data: bytes):
+    """Netpbm: 'P1'–'P6' pick the colour model and whether it is ASCII or binary."""
+    kind = _PNM_KINDS.get(data[:2])
+    if kind is None or len(data) < 3 or data[2:3] not in b" \t\r\n":
+        return None
+    info = FormatInfo(kind=kind, version=data[:2].decode("ascii"))
+    if kind != "pam":
+        info["encoding"] = "ascii" if data[1] in b"123" else "binary"
+    return info
+
+
+def _jxl(data: bytes):
+    """JPEG XL's bare codestream. Its container form is ISO base media, handled above."""
+    if not data.startswith(b"\xff\x0a"):
+        return None
+    return FormatInfo(kind="jxl", version=None, variant="codestream")
+
+
+def _xcf(data: bytes):
+    if not data.startswith(b"gimp xcf "):
+        return None
+    version = data[9:13].rstrip(b"\x00").decode("latin-1", "replace")
+    return FormatInfo(kind="xcf", version=version or "file")
+
+
+def _pcx(data: bytes, name: str):
+    """PCX: a 0x0A byte and a version, which is not enough to identify it on its own.
+
+    Every field here is a plausible byte anywhere, so this one is gated on the extension
+    as well — the opposite of the rule used elsewhere, and deliberate: guessing PCX from
+    content would mislabel other files, which is worse than declining.
+    """
+    if not name.lower().endswith(".pcx") or len(data) < 68 or data[0] != 0x0A:
+        return None
+    if data[1] not in (0, 2, 3, 4, 5) or data[2] not in (0, 1):
+        return None
+    xmin, ymin, xmax, ymax = struct.unpack("<HHHH", data[4:12])
+    return FormatInfo(kind="pcx", version=str(data[1]),
+                      width=xmax - xmin + 1, height=ymax - ymin + 1,
+                      bitsPerPlane=data[3], planes=data[65])
+
+
+def _tga(data: bytes, name: str):
+    """TGA: version 2 put a signature in the FOOTER; version 1 has no magic anywhere.
+
+    So the footer is checked first and the header is only trusted when the name already
+    says TGA — otherwise every file whose third byte happens to be a valid image type
+    would be claimed.
+    """
+    if len(data) >= 26 and data[-18:] == b"TRUEVISION-XFILE.\x00":
+        version = "2"
+    elif name.lower().endswith(".tga") and len(data) >= 18:
+        version = "1"
+    else:
+        return None
+    image_type = data[2]
+    if image_type not in (0, 1, 2, 3, 9, 10, 11, 32, 33):
+        return None
+    width, height = struct.unpack("<HH", data[12:16])
+    return FormatInfo(kind="tga", version=version, imageType=image_type,
+                      colorMapped=image_type in (1, 9, 32, 33),
+                      rle=image_type in (9, 10, 11, 32, 33),
+                      width=width, height=height, bitsPerPixel=data[16])
 
 
 def detect(data: bytes, name: str = "") -> FormatInfo | None:
@@ -855,11 +1216,13 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
     for probe in (_riv, _swf, _glb, _ktx2, _ktx1, _basis, _dds, _md2, _awd, _atf,
                   _iqm,
                   _woff2, _woff, _ttc, _sfnt,
-                  _png, _gltf_json, _spine_json, _lottie):
+                  _png, _jpeg, _gif, _bmp, _riff, _isobmff, _qoi, _farbfeld,
+                  _radiance, _openexr, _jxl, _xcf, _ico, _pnm, _tiff,
+                  _gltf_json, _spine_json, _lottie):
         info = probe(data)
         if info is not None:
             return info
-    for probe in (_ttx,
+    for probe in (_ttx, _pcx, _tga,
                   _dragonbones, _md5, _tiled_xml, _tiled_json, _bmfont, _plist,
                   _ldtk, _effekseer, _bmfont_json, _frames_meta_sheet, _bvh,
                   _starling_atlas, _unity_yaml, _svg, _xml,

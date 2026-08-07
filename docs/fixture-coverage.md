@@ -137,7 +137,7 @@ Status: ✅ shipped · ◐ declared, not ingested · ○ not started
 | ✅ `text-conformance-fixtures` | UAX #9/#14/#29 | `textbidi`, `textsegment` | Unicode UCD | Unicode-3.0 |
 | ○ `text-rendering-fixtures` | shaping cases | `textshaper`, `textlayout` | unicode-org/text-rendering-tests | NOASSERTION |
 | ✅ `image-fixtures` | PNG only — PngSuite | `image-codec` | pnggroup/libpng | LicenseRef-PngSuite-Permissive |
-| ○ `image-codec-fixtures` | JPEG, GIF, WebP, AVIF, BMP, TIFF, ICO | `image-codec` | per-codec conformance sets | varies |
+| ✅ `image-codec-fixtures` | JPEG, GIF, WebP, AVIF, BMP, TIFF, ICO, TGA, QOI, HDR, EXR, farbfeld, JXL, PNM, PCX, XCF | `image-codec` | image-rs/image, libsdl-org/SDL_image, webmproject/libwebp-test-data | MIT, Zlib, BSD-3-Clause, **undeclared** |
 | ✅ `spritesheet-fixtures` | TexturePacker, Starling, cocos plist, libgdx, Aseprite | `spritesheet-formats`, `textureatlas-formats` | per-tool samples | varies |
 | ✅ `tilemap-fixtures` | Tiled TMX/TMJ | `tilemap-formats` | mapeditor/tiled | NOASSERTION |
 | ✅ `particle-fixtures` | libgdx, PEX, pixi, Unity, ParticleDesigner, Spine | `particles-formats` | per-tool samples | varies |
@@ -228,6 +228,77 @@ cannot, by construction.
 If a real font is needed for an end-to-end *rendering* path rather than a decode path,
 `flighthq/flight-assets` still ships several — that is example media and remains its home.
 
+## Raster codecs: a target set that had been read as a shipped set
+
+`image-fixtures` was listed in this table against "PNG, JPEG, GIF, WebP, AVIF, BMP, TIFF,
+ICO". It is PngSuite, and PngSuite is PNG. The other seven had nothing behind them, and the
+row read as though they did — a target set entered as a shipped one, which is the failure
+mode a coverage table exists to prevent.
+
+`image-codec-fixtures` closes it, and closes more than the row claimed: JPEG, GIF, WebP,
+AVIF, BMP, TIFF, ICO, plus TGA, QOI, HDR, EXR, farbfeld, JPEG XL, PNM, PCX, CUR, ANI and XCF.
+
+### The reference renderings are the oracle, joined by a suffix
+
+`image-rs/image` stores each input under `images/<codec>/…` and its decoded rendering under
+`reference/<codec>/…` with `.png` appended:
+
+    images/gif/anim/mixed-disposal.gif
+    reference/gif/anim/mixed-disposal.gif.png            <- the composited result
+    reference/gif/anim/mixed-disposal.gif.anim_01.png    <- and each frame
+
+So the join is "append `.png`", with `.anim_NN` for frames. That is a per-file expectation
+across twelve codecs, and the per-frame half matters most: disposal and blend modes produce
+a plausible frame one and diverge at frame two, which is the animation bug that ships.
+
+The renderings are PNG — TIFF where the content is floating point — and carry a CRC of the
+image data in the filename, so a consumer is comparing decoded pixels rather than file bytes.
+
+### Three licence postures inside one upstream
+
+image-rs is MIT/Apache-2.0, but it imported two corpora that arrived with their own terms and
+kept those declarations in place, so it is split across three source blocks:
+
+- **The TrueVision TGA 2.0 suite** carries a `LICENSE` saying the material was "publicly
+  available, free of charge and under **no specific licensing terms**" from a TrueVision FTP
+  server that no longer exists, and that everything is "copyright to TrueVision, Inc." A
+  statement that no terms were specified is not a grant, so it ships declared UNKNOWN. It is
+  still the canonical TGA corpus — colour-mapped, RLE, 16-bit, attribute-bit and origin-flag
+  cases nothing else here reaches — so it is kept and labelled rather than dropped or
+  laundered under the crate's MIT.
+- **The APNG cases** came from web-platform-tests and carry WPT's BSD-3-Clause.
+- **Everything else** is the crate's own regression material under MIT.
+
+`libwebp-test-data` is the fourth posture: 131 WebP files covering each alpha filter and
+compression method separately, the lossless transforms, and a run of named decoder bugs — and
+**no licence file of any kind**. libwebp itself is BSD-3-Clause, but that declaration is about
+the library and was never carried into the data repository, so claiming it would be inventing
+the grant. UNKNOWN, build input only.
+
+### Detection, and what it is for
+
+Sixteen probes were added, each reporting what a decoder branches on rather than what a file
+browser shows: JPEG's SOF marker (baseline / progressive / arithmetic, the distinction where
+a baseline-only decoder produces a blurry picture instead of an error), BMP's DIB header size
+— which *is* its version, and the corpus turns out to span six of them — TIFF's byte order
+and whether it is BigTIFF, WebP's `VP8 `/`VP8L`/`VP8X` variant and the extended flag byte that
+is the only place alpha and animation are declared before the frames, and ISO base media
+brands, which cover AVIF and HEIF now and MP4, MOV and 3GP when video arrives.
+
+Two false positives were worth the guards they cost, and both are the same shape — a magic
+number short enough to occur by accident:
+
+- **`\x00\x00\x01\x00` claimed 81 glTF binary buffers as icons.** ICO has no magic string,
+  only a reserved zero and a count. Requiring each directory entry's payload to actually
+  begin with a PNG signature or a real DIB header rules them out; containment alone did not.
+- **`BM` claimed six binary BMFont descriptors as bitmaps.** AngelCode's binary `.fnt` starts
+  `BMF` and a version byte. Ruled out explicitly rather than by probe ordering, because the
+  ordering that fixes it is invisible to whoever edits the list next.
+
+Both are recorded here because the lesson generalises past these two: a two-to-four byte
+signature is a hypothesis, and the corroboration has to come from a structure that cannot
+line up by chance.
+
 ## Three findings worth acting on
 
 ### 1. Several upstream corpora already carry their expected outputs
@@ -291,10 +362,9 @@ The original sequencing here — glTF, then Unicode, then malformed, then the lo
 done, and every pack it named has shipped. What remains is the queue after the decode-surface
 gate was dropped, ordered by coverage per unit of licence work:
 
-1. **`image-codec-fixtures`** — the largest live gap, and mislabelled until now: the shipped
-   `image-fixtures` is PngSuite and nothing else, while `image-codec` claims JPEG, GIF, WebP,
-   AVIF, BMP, TIFF and ICO. Each has a conformance corpus of its own; the licence work is
-   per-codec rather than one negotiation.
+1. ~~**`image-codec-fixtures`**~~ — **done**, see below. It was the largest live gap and it
+   was mislabelled: `image-fixtures` is PngSuite and nothing else, while `image-codec`
+   claims eight formats.
 2. **`audio-fixtures`** and **`video-fixtures`** — the codecs the old gate excluded outright.
    Container-first is the right cut: MP4, WebM, Ogg and MKV structure is what a decode surface
    meets before any codec bitstream, and container fixtures are small where codec corpora are

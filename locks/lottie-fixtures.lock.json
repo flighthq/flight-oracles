@@ -150,7 +150,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -845,7 +847,9 @@
         "kind": "png",
         "version": null,
         "width": 702,
-        "height": 1479
+        "height": 1479,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -858,7 +862,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {

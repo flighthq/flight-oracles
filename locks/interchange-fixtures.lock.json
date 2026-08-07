@@ -30,7 +30,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/3DS/CWALL02.jpg",
       "sha256": "c8227d3b02acc5ab961ba938433fb3f31d858c4d8bcbc69e526dd05644142b6d",
-      "size": 165342
+      "size": 165342,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 800,
+        "height": 446,
+        "components": 3
+      }
     },
     {
       "path": "3DS/CameraRollAnim.3ds",
@@ -59,14 +69,34 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/3DS/IMAGE1.jpg",
       "sha256": "d02820623a71b8b3f6dd1857b133ef1ea4b1a2f016e4de24ecaf24a45fa2f351",
-      "size": 24711
+      "size": 24711,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 400,
+        "height": 300,
+        "components": 3
+      }
     },
     {
       "path": "3DS/IMAGE2.jpg",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/3DS/IMAGE2.jpg",
       "sha256": "fe57f3a7ef10468d02961cac3cbba144834d94033279b614ffdbc7084278cafa",
-      "size": 283212
+      "size": 283212,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 800,
+        "height": 608,
+        "components": 3
+      }
     },
     {
       "path": "3DS/RotatingCube.3DS",
@@ -144,7 +174,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -247,7 +279,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/AC/earthSpherical.jpg",
       "sha256": "c558d0d7f103eb6ea91f91353fc88c5dda8caed3ee9049e63e282b69b8f5feae",
-      "size": 422120
+      "size": 422120,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "AC/nosurfaces.ac",
@@ -280,7 +322,9 @@
         "kind": "png",
         "version": null,
         "width": 1080,
-        "height": 2400
+        "height": 2400,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -505,7 +549,14 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/ASE/ref/screenshots/MotionCaptureROM_ase.gif",
       "sha256": "12b1dc00f8040da21f8d3712231b89c16ac8b203429e549bfbd66c3cf5a75186",
-      "size": 7023262
+      "size": 7023262,
+      "format": {
+        "kind": "gif",
+        "version": "89a",
+        "width": 1600,
+        "height": 720,
+        "animated": true
+      }
     },
     {
       "path": "BVH/01_01.bvh",
@@ -562,28 +613,59 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/BVH/ref/screenshots/01_01_bvh.gif",
       "sha256": "4f9987c1cd791d642b8a996645ee2f951bba3bb6f7a834ea91213c4bb8ee0635",
-      "size": 2507650
+      "size": 2507650,
+      "format": {
+        "kind": "gif",
+        "version": "89a",
+        "width": 720,
+        "height": 1600,
+        "animated": true
+      }
     },
     {
       "path": "BVH/ref/screenshots/01_03_bvh.gif",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/BVH/ref/screenshots/01_03_bvh.gif",
       "sha256": "b69c434ff10e612114b4d4e65c5d02646cbda4915bd05145efcd16ff1b79ebca",
-      "size": 3838515
+      "size": 3838515,
+      "format": {
+        "kind": "gif",
+        "version": "89a",
+        "width": 1600,
+        "height": 720,
+        "animated": true
+      }
     },
     {
       "path": "BVH/ref/screenshots/Boxing_Toes_bvh.gif",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/BVH/ref/screenshots/Boxing_Toes_bvh.gif",
       "sha256": "67e53a6e70bffca933b46f8b68b9fe541856228e66c9f9792d08490cdb54ed43",
-      "size": 4503296
+      "size": 4503296,
+      "format": {
+        "kind": "gif",
+        "version": "89a",
+        "width": 720,
+        "height": 1600,
+        "animated": true
+      }
     },
     {
       "path": "COB/axe.jpg",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/COB/axe.jpg",
       "sha256": "d687604fad2c8d79831149d65129ebbfe00674937aaef085bc4aefcf550ebc35",
-      "size": 65191
+      "size": 65191,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "COB/dwarf.cob",
@@ -597,14 +679,34 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/COB/dwarf.jpg",
       "sha256": "56ac47c8d5b06073d87264362998cc5ffe6c07926281863bd99d4c228c25c983",
-      "size": 84158
+      "size": 84158,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "COB/dwarf2.jpg",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/COB/dwarf2.jpg",
       "sha256": "97da8f6ea00f834d56acca57c333fc6bd15c1c8e86f9558a0468c0f135ae37c9",
-      "size": 83046
+      "size": 83046,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "COB/dwarf_ascii.cob",
@@ -644,7 +746,9 @@
         "kind": "png",
         "version": null,
         "width": 1080,
-        "height": 2400
+        "height": 2400,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -724,7 +828,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/Collada/Collada_Sample.jpg",
       "sha256": "ff2cf7c5431657a3d12b244ebb039a79fc38647ab873ef71e84615eb16c629e1",
-      "size": 35624
+      "size": 35624,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "Collada/ConcavePolygon.dae",
@@ -870,7 +984,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/Collada/duckCM.tga",
       "sha256": "25f5ff38a5db9465c871947c5e805d707d734bf50fb4e52793f03483afa5c22a",
-      "size": 786476
+      "size": 786476,
+      "format": {
+        "kind": "tga",
+        "version": "2",
+        "imageType": 2,
+        "colorMapped": false,
+        "rle": false,
+        "width": 512,
+        "height": 512,
+        "bitsPerPixel": 24
+      }
     },
     {
       "path": "Collada/duck_nomanifest.zae",
@@ -884,7 +1008,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/Collada/duck_sample.jpg",
       "sha256": "00def5cf08ab748c1e7236f84b7c6431bc47e8f18edd3674e7ab00ef2bd9c494",
-      "size": 14223
+      "size": 14223,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 640,
+        "height": 480,
+        "components": 3
+      }
     },
     {
       "path": "Collada/duck_triangulate.dae",
@@ -979,7 +1113,9 @@
         "kind": "png",
         "version": null,
         "width": 1080,
-        "height": 2400
+        "height": 2400,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1009,7 +1145,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/Collada/sphere_sample.jpg",
       "sha256": "13ee1321b83e2e285cc2918d728c2742045201890fb7f8eaec3c451086d1a28e",
-      "size": 8559
+      "size": 8559,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 640,
+        "height": 480,
+        "components": 3
+      }
     },
     {
       "path": "Collada/sphere_triangulate.dae",
@@ -1054,7 +1200,9 @@
         "kind": "png",
         "version": null,
         "width": 640,
-        "height": 480
+        "height": 480,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1290,14 +1438,34 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/IQM/Body.jpg",
       "sha256": "e0f150bfe70341e96e948e99063e93aecaad1ef6437f1f8b7928127c2eab577a",
-      "size": 369618
+      "size": 369618,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "IQM/Head.jpg",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/IQM/Head.jpg",
       "sha256": "b4e841e4bb34a988f1c42702674b9a6dfa4c57bf94fd654bdf5152f728df82d4",
-      "size": 118263
+      "size": 118263,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "IQM/invalid/InvalidMeshOffset.iqm",
@@ -1338,7 +1506,9 @@
         "kind": "png",
         "version": null,
         "width": 1080,
-        "height": 2400
+        "height": 2400,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1346,7 +1516,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earthCylindric.jpg",
       "sha256": "9515873d147e872633ee894534e120c328c898563f3fd070444d2df987b8c03f",
-      "size": 624832
+      "size": 624832,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earthCylindric.txt",
@@ -1360,7 +1540,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/MappingModes/earthSpherical.jpg",
       "sha256": "c558d0d7f103eb6ea91f91353fc88c5dda8caed3ee9049e63e282b69b8f5feae",
-      "size": 422120
+      "size": 422120,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "LWO/LWO2/MappingModes/earthSpherical.source.txt",
@@ -1533,7 +1723,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1658,7 +1850,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1666,7 +1860,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/LWO/LWO2/white.bmp",
       "sha256": "f939a17e586c3feb4be7da7fa3b7e3b1ea15bbd9eaadf6a36a3e907e4dad5873",
-      "size": 58
+      "size": 58,
+      "format": {
+        "kind": "bmp",
+        "version": "40",
+        "dibHeader": "BITMAPINFOHEADER",
+        "width": 1,
+        "height": 1,
+        "bitsPerPixel": 24,
+        "compression": 0,
+        "topDown": false
+      }
     },
     {
       "path": "LWO/LWOB/ConcavePolygon.lwo",
@@ -1901,7 +2105,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/MD2/faerie2.bmp",
       "sha256": "40a790bd72ca491fec218da04dd17fd12049357f9468f05fc2c258cc29b8c9a0",
-      "size": 43538
+      "size": 43538,
+      "format": {
+        "kind": "bmp",
+        "version": "40",
+        "dibHeader": "BITMAPINFOHEADER",
+        "width": 220,
+        "height": 193,
+        "bitsPerPixel": 8,
+        "compression": 0,
+        "topDown": false
+      }
     },
     {
       "path": "MD2/malformed_zero_numvertices.md2",
@@ -1931,7 +2145,9 @@
         "kind": "png",
         "version": null,
         "width": 1080,
-        "height": 2400
+        "height": 2400,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1944,7 +2160,9 @@
         "kind": "png",
         "version": null,
         "width": 1080,
-        "height": 2400
+        "height": 2400,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1959,7 +2177,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/MD2/sydney.bmp",
       "sha256": "c8ac91f68cb81543c1626dea02ac1e07e6ae7ce672bd2a3269f2c95bc24ac4e6",
-      "size": 60522
+      "size": 60522,
+      "format": {
+        "kind": "bmp",
+        "version": "40",
+        "dibHeader": "BITMAPINFOHEADER",
+        "width": 308,
+        "height": 193,
+        "bitsPerPixel": 8,
+        "compression": 0,
+        "topDown": false
+      }
     },
     {
       "path": "MD2/sydney.md2",
@@ -2012,14 +2240,34 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/earthCylindric.jpg",
       "sha256": "9515873d147e872633ee894534e120c328c898563f3fd070444d2df987b8c03f",
-      "size": 624832
+      "size": 624832,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "NFF/earthSpherical.jpg",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/NFF/earthSpherical.jpg",
       "sha256": "c558d0d7f103eb6ea91f91353fc88c5dda8caed3ee9049e63e282b69b8f5feae",
-      "size": 422120
+      "size": 422120,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "NFF/hexahedron.nff",
@@ -2059,7 +2307,9 @@
         "kind": "png",
         "version": null,
         "width": 1080,
-        "height": 2400
+        "height": 2400,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2351,7 +2601,9 @@
         "kind": "png",
         "version": null,
         "width": 720,
-        "height": 360
+        "height": 360,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -2371,7 +2623,9 @@
         "kind": "png",
         "version": null,
         "width": 1080,
-        "height": 2400
+        "height": 2400,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -2428,7 +2682,17 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/bottom.tga",
       "sha256": "6a76e82cd130439ec7c8d91a7e967b0b2ffc301d58d6a10605d916c703808805",
-      "size": 196652
+      "size": 196652,
+      "format": {
+        "kind": "tga",
+        "version": "2",
+        "imageType": 2,
+        "colorMapped": false,
+        "rle": false,
+        "width": 256,
+        "height": 256,
+        "bitsPerPixel": 24
+      }
     },
     {
       "path": "X/fromtruespace_bin32.x",
@@ -2470,14 +2734,28 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/ref/screenshots/BCN_Epileptic_X.gif",
       "sha256": "e487c7fd917f5dae1a65111416e0cfed116c3175c22faed288ef7ce465df382d",
-      "size": 1356453
+      "size": 1356453,
+      "format": {
+        "kind": "gif",
+        "version": "89a",
+        "width": 720,
+        "height": 1600,
+        "animated": true
+      }
     },
     {
       "path": "X/ref/screenshots/Testwuson_X_anim_Wuson_Run.gif",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/ref/screenshots/Testwuson_X_anim_Wuson_Run.gif",
       "sha256": "d6e33216bc61151d0b65109083ee79ee8b9d0d0c85a027f7d99189bf5d28d1c8",
-      "size": 2639740
+      "size": 2639740,
+      "format": {
+        "kind": "gif",
+        "version": "89a",
+        "width": 720,
+        "height": 1600,
+        "animated": true
+      }
     },
     {
       "path": "X/test.png",
@@ -2489,7 +2767,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -2532,14 +2812,34 @@
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/top.tga",
       "sha256": "78331704ebee5325a342fbb79684b47676d62ae66f7bfdd74f3daff651664a60",
-      "size": 196652
+      "size": 196652,
+      "format": {
+        "kind": "tga",
+        "version": "2",
+        "imageType": 2,
+        "colorMapped": false,
+        "rle": false,
+        "width": 256,
+        "height": 256,
+        "bitsPerPixel": 24
+      }
     },
     {
       "path": "X/updown.tga",
       "sourceId": "assimp-test-models",
       "upstreamPath": "test/models/X/updown.tga",
       "sha256": "454d16ab381f4622e668d9c2e381e1037500b2cfda2ccd21029f511059075bc0",
-      "size": 196652
+      "size": 196652,
+      "format": {
+        "kind": "tga",
+        "version": "2",
+        "imageType": 2,
+        "colorMapped": false,
+        "rle": false,
+        "width": 256,
+        "height": 256,
+        "bitsPerPixel": 24
+      }
     },
     {
       "path": "X3D/ComputerKeyboard.x3d",
@@ -2586,7 +2886,9 @@
         "kind": "png",
         "version": null,
         "width": 720,
-        "height": 360
+        "height": 360,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -2606,7 +2908,9 @@
         "kind": "png",
         "version": null,
         "width": 2340,
-        "height": 1080
+        "height": 1080,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -2619,7 +2923,9 @@
         "kind": "png",
         "version": null,
         "width": 2340,
-        "height": 1080
+        "height": 1080,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -2632,7 +2938,9 @@
         "kind": "png",
         "version": null,
         "width": 1080,
-        "height": 2400
+        "height": 2400,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {

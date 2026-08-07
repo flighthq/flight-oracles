@@ -3796,98 +3796,168 @@
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Dash_E.webp",
       "sha256": "fd17ffdd3e6b638d16c934ece4cf63bf6e7300c55af92bb3b2153a3d3ee83145",
-      "size": 9764
+      "size": 9764,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Dot_C.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Dot_C.webp",
       "sha256": "ad468ff4a4cee31f595847eeda50fb23432c1b52be1991e0543cb6bd1ac84e85",
-      "size": 268
+      "size": 268,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Dot_N.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Dot_N.webp",
       "sha256": "7eb4771f6a73b483a6940f6c89ae7225243163af394b229f8405c5ec717e3d18",
-      "size": 6438
+      "size": 6438,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Hex_N.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Hex_N.webp",
       "sha256": "bcde9a997f7a79e1908c1d212564a2263a6b95a3bca12cbd1f437e1f57c5fd8f",
-      "size": 3142
+      "size": 3142,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Khronos_C.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Khronos_C.webp",
       "sha256": "b4f81a98ffa615095fd32d35c6710ee8057dbb14809bbd3eefebbaf7dc2239c5",
-      "size": 3414
+      "size": 3414,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Mechanical_N.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Mechanical_N.webp",
       "sha256": "020ebe88f3876916a3e69673bf87158f7277a16ab5ea0ee3907bdb79f4f7af48",
-      "size": 223440
+      "size": 223440,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Mechanical_ORM.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Mechanical_ORM.webp",
       "sha256": "d1f1e5c59781b79db7e84da5e9b1fbb284b21efc7a539574ee0ebe1ce104421e",
-      "size": 9514
+      "size": 9514,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Occlusion.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Occlusion.webp",
       "sha256": "7fe3e166951f7bdb6d4e8388c0d5714dbba50e5cc275de1915e6eab8d6d5cb47",
-      "size": 294098
+      "size": 294098,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Powdercoat_N.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Powdercoat_N.webp",
       "sha256": "5528b60f02ad913071304a868c387bab78f87d09b246459a892307132a335ae9",
-      "size": 36868
+      "size": 36868,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Rib_N.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Rib_N.webp",
       "sha256": "c959f3710698cf6dff847297e2d6d97daf594672eec01f2c4856a18e6b4fa03f",
-      "size": 92
+      "size": 92,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Thickness.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Thickness.webp",
       "sha256": "3c7e018cd11a1239619be11d0acd08289c06fc5f75d6632e81c96911eaff412e",
-      "size": 25758
+      "size": 25758,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Tireside_C.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Tireside_C.webp",
       "sha256": "913effce24c0f5a9c0a5fa91bc8addb5f640efe6b858f2327e93abc2299d28b6",
-      "size": 5538
+      "size": 5538,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Tireside_N.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Tireside_N.webp",
       "sha256": "8b8dd254dbb7dc5202cd99e4ae9dbf890d8de3dcd79e77f12af923f29753c57a",
-      "size": 286764
+      "size": 286764,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "CarConcept/glTF-WEBP/Tiretread_N.webp",
       "sourceId": "gltf-carconcept",
       "upstreamPath": "Models/CarConcept/glTF-WEBP/Tiretread_N.webp",
       "sha256": "734af0dc6949c29e6da80657638b2b2d7ab5e265373b85bc131224931de1da52",
-      "size": 37136
+      "size": 37136,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "CarConcept/glTF/CarConcept.data.bin",
@@ -4216,56 +4286,96 @@
       "sourceId": "gltf-chronographwatch",
       "upstreamPath": "Models/ChronographWatch/glTF-WEBP/band_occlusion.webp",
       "sha256": "dff489cedbcf7ef0c169149df4e321861f588513a4476051c7286dbdbbf5d323",
-      "size": 340176
+      "size": 340176,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "ChronographWatch/glTF-WEBP/carbonfiber_normal.webp",
       "sourceId": "gltf-chronographwatch",
       "upstreamPath": "Models/ChronographWatch/glTF-WEBP/carbonfiber_normal.webp",
       "sha256": "ddbba4b6c94c8c2cfd0e6383dfbc935adc1128ce005d625ae09ce3a59397371d",
-      "size": 80266
+      "size": 80266,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "ChronographWatch/glTF-WEBP/dgg_basecolor.webp",
       "sourceId": "gltf-chronographwatch",
       "upstreamPath": "Models/ChronographWatch/glTF-WEBP/dgg_basecolor.webp",
       "sha256": "a0a5fe4a9ced1e257ef159d4c5915e330ceb9677cb3118da2e9b6d62448d541e",
-      "size": 7364
+      "size": 7364,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "ChronographWatch/glTF-WEBP/dgg_rm.webp",
       "sourceId": "gltf-chronographwatch",
       "upstreamPath": "Models/ChronographWatch/glTF-WEBP/dgg_rm.webp",
       "sha256": "78fbd8cbe28840b3976b558ccc1dbea653660dcd0c5a3e7f6741286c0ad0112a",
-      "size": 7210
+      "size": 7210,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "ChronographWatch/glTF-WEBP/khronos_basecolor.webp",
       "sourceId": "gltf-chronographwatch",
       "upstreamPath": "Models/ChronographWatch/glTF-WEBP/khronos_basecolor.webp",
       "sha256": "ea7a05820d03d9ebd0f64e7b2a3efd3c9de25ed3f6f821d674c45659792d890d",
-      "size": 8518
+      "size": 8518,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "ChronographWatch/glTF-WEBP/khronos_rm.webp",
       "sourceId": "gltf-chronographwatch",
       "upstreamPath": "Models/ChronographWatch/glTF-WEBP/khronos_rm.webp",
       "sha256": "4dfe26c09d96677b0ea9b00a449b8656e52594810ff5371b9edf9493e3e57d18",
-      "size": 8546
+      "size": 8546,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "ChronographWatch/glTF-WEBP/watchface_basecolor.webp",
       "sourceId": "gltf-chronographwatch",
       "upstreamPath": "Models/ChronographWatch/glTF-WEBP/watchface_basecolor.webp",
       "sha256": "9d89c385fb677a94374d0b51a07315f0cc3aecbbbaf77c126831d4c5f347d51a",
-      "size": 235830
+      "size": 235830,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "ChronographWatch/glTF-WEBP/watchface_orm.webp",
       "sourceId": "gltf-chronographwatch",
       "upstreamPath": "Models/ChronographWatch/glTF-WEBP/watchface_orm.webp",
       "sha256": "eacfc0ae21ef2ea2e68cb06e2af286176f1e69e8ec21decc945254087af67e76",
-      "size": 543794
+      "size": 543794,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "ChronographWatch/glTF/ChronographWatch.data.bin",
@@ -6443,77 +6553,137 @@
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Brown_BaseColor.webp",
       "sha256": "e9855a9b76665791d5621b3dc92ae1d6cfe11617bb7c7b65074669c68654f6c2",
-      "size": 35826
+      "size": 35826,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/Brown_Normal.webp",
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Brown_Normal.webp",
       "sha256": "e125b18bb4659ef896042bf1f77b372332fd8f16bcba47171191dc2d3bbbb744",
-      "size": 127894
+      "size": 127894,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/Cushions_Occlusion.webp",
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Cushions_Occlusion.webp",
       "sha256": "a5f5ad45806f88c951d93e12fed07831ac3f75429276c739632b0341fcb6b5b7",
-      "size": 13818
+      "size": 13818,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/Frame_BaseColor.webp",
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Frame_BaseColor.webp",
       "sha256": "776f5cdaf7fe59594736c078473f90c61c218a81a8bcd998b83bbec44a615df7",
-      "size": 179030
+      "size": 179030,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/Frame_Normal.webp",
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Frame_Normal.webp",
       "sha256": "0f14705ad8ecde49c5b8dd08ec61e4dc6ec501471fd5e49f25d1b777cb29745d",
-      "size": 1806934
+      "size": 1806934,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossless"
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/Frame_ORM.webp",
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Frame_ORM.webp",
       "sha256": "79eee3ed267eea0a1a79cd7f2fcc3b3d9ba1ab0374e131dcda61181b021e307d",
-      "size": 17024
+      "size": 17024,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/Fringe_BaseColor.webp",
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Fringe_BaseColor.webp",
       "sha256": "bee5f5e46764f239e1cbd6b53f549e498066584d8af60e3a6a5e5d29d710b310",
-      "size": 102468
+      "size": 102468,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "extended",
+        "features": [
+          "xmp"
+        ],
+        "width": 512,
+        "height": 256
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/Fringe_Normal.webp",
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Fringe_Normal.webp",
       "sha256": "2ea3999ff3776023342aeac9f4ad64e28e3aca4d86050f10fec39b852d291fe8",
-      "size": 16420
+      "size": 16420,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/Fringe_Occlusion.webp",
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Fringe_Occlusion.webp",
       "sha256": "11e92e42b48be5f9e6fc28e728a2fc116594556206c7c4c8d63ffb124dd670eb",
-      "size": 3166
+      "size": 3166,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/Paisley_BaseColor.webp",
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Paisley_BaseColor.webp",
       "sha256": "b1faf966c2382d01248dafe3638672189371c5f08b89a07bdd5e2b748c25ffa2",
-      "size": 463824
+      "size": 463824,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/Paisley_Normal.webp",
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Paisley_Normal.webp",
       "sha256": "044c24c24c8ad550010f72e808814d5a6e48b426bcde90ff99550b38aaf6b09b",
-      "size": 760918
+      "size": 760918,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/SheenWoodLeatherSofa.bin",
@@ -6548,14 +6718,24 @@
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Striped_BaseColor.webp",
       "sha256": "b6089cb31022255dbb1c47299c5f3d4e4b867b5a53fa97cda24cd3a9530a19e1",
-      "size": 19890
+      "size": 19890,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SheenWoodLeatherSofa/glTF/Striped_Normal.webp",
       "sourceId": "gltf-sheenwoodleathersofa",
       "upstreamPath": "Models/SheenWoodLeatherSofa/glTF/Striped_Normal.webp",
       "sha256": "c676fe1c014520b17a50ee6946ca948eaf3df8d334b26a5260d32a7b69d96267",
-      "size": 14144
+      "size": 14144,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SimpleInstancing/glTF/SimpleInstancing.bin",
@@ -7192,7 +7372,12 @@
       "sourceId": "gltf-sunglasseskhronos",
       "upstreamPath": "Models/SunglassesKhronos/glTF-Draco/SunglassesKhronos.webp",
       "sha256": "7456274b6ef28f36ef8e3deb6de714ff80e6ae5735573444ae47f54c6f725f23",
-      "size": 15904
+      "size": 15904,
+      "format": {
+        "kind": "webp",
+        "version": null,
+        "variant": "lossy"
+      }
     },
     {
       "path": "SunglassesKhronos/glTF/SunglassesKhronos.gltf",

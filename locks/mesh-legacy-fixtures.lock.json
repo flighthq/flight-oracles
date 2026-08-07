@@ -36,7 +36,17 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/CoarseRedSand.jpg",
       "sha256": "18d9d058bcc354d2a48899372662f35cda2da79f6ee261744e761a59a0b7cb09",
-      "size": 473052
+      "size": 473052,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/Halo_3_SPARTAN4.obj",
@@ -59,14 +69,34 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/beachball_diffuse.jpg",
       "sha256": "1ed5bf78549b8eed815295a383e68b604ef0bcc91a2420b44ff67f3fd80b1cea",
-      "size": 18884
+      "size": 18884,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/beachball_specular.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/beachball_specular.jpg",
       "sha256": "cd01d9acc97f37160ffd4d6d65dae42b36b71a0f54af2374827eacd3299c5dec",
-      "size": 15764
+      "size": 15764,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/blue.png",
@@ -78,7 +108,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -91,7 +123,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -104,7 +138,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -112,7 +148,17 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/diffuseGradient.jpg",
       "sha256": "49eaedfbad2b6c7606057f22c0d65228ea0684d1af4ffc3de6e2b52506dadb7f",
-      "size": 15781
+      "size": 15781,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 8,
+        "components": 3
+      }
     },
     {
       "path": "meshes/dots.png",
@@ -124,7 +170,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -132,70 +180,170 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/Pilota_militare.jpg",
       "sha256": "89f51b2d3c8b9c4412badafc87040f1281adccdfd6825ef8b7b68b8e4f1d0df6",
-      "size": 29910
+      "size": 29910,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14_stores.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14_stores.jpg",
       "sha256": "def550ee735eea3b0ea8b4cccf3ca272c3c99beec3b83f88833589afd6ab0417",
-      "size": 26528
+      "size": 26528,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14_wing_1.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14_wing_1.jpg",
       "sha256": "893b2fec8e58e49f4642c075171ea68b174f63dbb32e928a14a3b209d6ed93c9",
-      "size": 21877
+      "size": 21877,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14_wing_1_Normal.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14_wing_1_Normal.jpg",
       "sha256": "bc914b214b5c9f486a19a186ef26993b6d0af2642a29e8c5785283ea6c37ff90",
-      "size": 2345
+      "size": 2345,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14_wing_1_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14_wing_1_spec.jpg",
       "sha256": "909f001453fc95de76fd57b1207539d1260b4474a340643cc709d95f7ddda79c",
-      "size": 18435
+      "size": 18435,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14_wing_2.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14_wing_2.jpg",
       "sha256": "e80932dce2e6afc1e2613a514b2e160f3ca9710a1a75f84caa392e6274ae31c9",
-      "size": 21818
+      "size": 21818,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14_wing_2_Normal.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14_wing_2_Normal.jpg",
       "sha256": "bc914b214b5c9f486a19a186ef26993b6d0af2642a29e8c5785283ea6c37ff90",
-      "size": 2345
+      "size": 2345,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14_wing_2_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14_wing_2_spec.jpg",
       "sha256": "019108c422557111501a796c71d55223c59b0d5d8ef5fffb6fcc25c5cae15f1d",
-      "size": 18410
+      "size": 18410,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14canopy.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14canopy.jpg",
       "sha256": "c0e3054d6e185f117e0915d6042c41134ed839d484f256fc8dcfecd5eab8e62b",
-      "size": 19775
+      "size": 19775,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14canopy_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14canopy_spec.jpg",
       "sha256": "7f586075f633cb9b7b9ab577d5800b69eed6f0e5bc12767fa6a583d8ac604141",
-      "size": 16684
+      "size": 16684,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14d.mtl",
@@ -224,175 +372,425 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14d_stores_Normal.jpg",
       "sha256": "863c289f76ea312c2c2bc534ce6c92de555b69eaade42e5a2dc14b83d2ff2d08",
-      "size": 709
+      "size": 709,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 128,
+        "height": 128,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14engine.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14engine.jpg",
       "sha256": "6d7c99abecd0bd7ed6262a61a44558545ce30d2a6ea8ae719a257c7110070bb3",
-      "size": 5000
+      "size": 5000,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 128,
+        "height": 128,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14fuselage.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14fuselage.jpg",
       "sha256": "c6c4e1156c33974d1c612a2b53a82b2bf63e768f393951fcc41e213c01cc7891",
-      "size": 23971
+      "size": 23971,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14fuselage_Normal.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14fuselage_Normal.jpg",
       "sha256": "c37da2a1cfb262d6e8922371c6870c4cd746ca83e7eacd746cff71d17ad6c14c",
-      "size": 2807
+      "size": 2807,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14fuselage_lower.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14fuselage_lower.jpg",
       "sha256": "c35dc72ccda98db3aaaf56fe4e9d6ee1951c39b8e2cca01c2a6f9744b3b61184",
-      "size": 21186
+      "size": 21186,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14fuselage_lower_Normal.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14fuselage_lower_Normal.jpg",
       "sha256": "004df7b8e4ddcbfe020bc021feba93ff424eb0cb36579bbadc64e53a2ca3697b",
-      "size": 3469
+      "size": 3469,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14fuselage_lower_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14fuselage_lower_spec.jpg",
       "sha256": "e3ec8446439d2bb6714e8b42a1479d53cf2a0414f28aa8b0e7f7d6e020cfcc58",
-      "size": 14853
+      "size": 14853,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14fuselage_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14fuselage_spec.jpg",
       "sha256": "26046e2b740a2a73da8d1e64e75e0259138185b929eff7a7153d3ea4c4b2267e",
-      "size": 16039
+      "size": 16039,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14intakes_misc.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14intakes_misc.jpg",
       "sha256": "46ecc4386b8328ae1f5bfafcfe3a1159018b37824d6e5f4609a7490e9db2df82",
-      "size": 20522
+      "size": 20522,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14intakes_misc_Normal.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14intakes_misc_Normal.jpg",
       "sha256": "9a805be124c3afc19efd52889884886d92b1f4343ebb6ab77e258456cecac987",
-      "size": 1384
+      "size": 1384,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14intakes_misc_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14intakes_misc_spec.jpg",
       "sha256": "3636565350457c38b8abcd379878160599e87939879c383cb7c86436f889890f",
-      "size": 15126
+      "size": 15126,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14interior_detail.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14interior_detail.jpg",
       "sha256": "9ffae04741a89e44badcc8dcdafd6e49d5d4637fea49d12672cfd179d506e14f",
-      "size": 27440
+      "size": 27440,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14landinggear.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14landinggear.jpg",
       "sha256": "00e4f3bb648cd74d0f0bd998a9054347da49a0a4de4b12e01fc4ac29fb66da5c",
-      "size": 28547
+      "size": 28547,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14tail_lt.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14tail_lt.jpg",
       "sha256": "805f7848bb048e85f1a35ca60155eed8326e413fe93bd456f957554a80abeff5",
-      "size": 16522
+      "size": 16522,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14tail_lt_Normal.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14tail_lt_Normal.jpg",
       "sha256": "75e7d8b4dca2811c3a240e270640be9f265c7e390f8778cd95632526fadb6e6b",
-      "size": 3230
+      "size": 3230,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14tail_lt_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14tail_lt_spec.jpg",
       "sha256": "c51cb68a870306b2fafb335f95e377857fb0eca1629f823d15b0f52ccaf65844",
-      "size": 14672
+      "size": 14672,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14tail_rt.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14tail_rt.jpg",
       "sha256": "a2d07ba3c8c9b2fcd5b85cceb20ca9899df904e6889397b810dc087a82d9d20e",
-      "size": 15812
+      "size": 15812,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14tail_rt_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14tail_rt_spec.jpg",
       "sha256": "8547a2edc0447dc28384ded8c5d9e5ea9aa184cd7e1bf2390a561c16e60d6def",
-      "size": 14117
+      "size": 14117,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14taileron_lt.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14taileron_lt.jpg",
       "sha256": "dc3f7138366c82e70caf6213d598b8ec67f1c179217afd5f8f177b7d6b0af9de",
-      "size": 16183
+      "size": 16183,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14taileron_lt_Normal.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14taileron_lt_Normal.jpg",
       "sha256": "de5801f1469d8f3ec62ef0960b07a72bb4d7963b89c08dbf43406ac71df352d7",
-      "size": 3249
+      "size": 3249,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14taileron_lt_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14taileron_lt_spec.jpg",
       "sha256": "062ca703751ad75b14186b5ca269b3804f61b009145639975e8d41aabf5a51f7",
-      "size": 14006
+      "size": 14006,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14taileron_rt.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14taileron_rt.jpg",
       "sha256": "e7ec997727c0c7eb8db55b27c094576edc662c224b5caa38c92482a810822efd",
-      "size": 16309
+      "size": 16309,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14taileron_rt_Normal.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14taileron_rt_Normal.jpg",
       "sha256": "de5801f1469d8f3ec62ef0960b07a72bb4d7963b89c08dbf43406ac71df352d7",
-      "size": 3249
+      "size": 3249,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/f14taileron_rt_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/f14taileron_rt_spec.jpg",
       "sha256": "e0b3583600bef58fa4b5821ba8cca7f61fddb1b856572cd54f0bc5b88003795c",
-      "size": 13952
+      "size": 13952,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/f14/sju17ejectionseat.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/f14/sju17ejectionseat.jpg",
       "sha256": "15e61126c65c3beccd469ce12152534c902eb7097e577aeeca4d87c1dc200bf1",
-      "size": 32018
+      "size": 32018,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/fire.png",
@@ -404,7 +802,9 @@
         "kind": "png",
         "version": null,
         "width": 2048,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -417,7 +817,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -425,21 +827,51 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/floor_diffuse.jpg",
       "sha256": "69e7e153aa1b42427b50745985ac47a7db405e2d1bae7c92e3725036f5433913",
-      "size": 139264
+      "size": 139264,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/floor_normal.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/floor_normal.jpg",
       "sha256": "58cf8229e586fd4e334c96b42624ef5f29501e6dfb7743d101c2ea84057c5a2f",
-      "size": 147456
+      "size": 147456,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/floor_specular.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/floor_specular.jpg",
       "sha256": "c8f9441052283af0fbeb086f2a88d051418f16f78fb3ec9b999f0a14d887dc81",
-      "size": 36864
+      "size": 36864,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/globe/EarthNormal.png",
@@ -451,7 +883,9 @@
         "kind": "png",
         "version": null,
         "width": 2048,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -459,28 +893,68 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/globe/cloud_combined_2048.jpg",
       "sha256": "daddaad84d7a33bbbc86cdda3f591099f57cee8607b7bcf3b67eb7e4f7a1c793",
-      "size": 829367
+      "size": 829367,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/globe/earth_specular_2048.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/globe/earth_specular_2048.jpg",
       "sha256": "2df48906732d7a458b2d0a7cdec51a829262307c6bdee4cfdf079a4dd7c71c69",
-      "size": 223421
+      "size": 223421,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/globe/land_lights_16384.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/globe/land_lights_16384.jpg",
       "sha256": "b623f77e6e6ae633a67b1543f5b0fa524ab789f06a8e9f49f24396407d3bda22",
-      "size": 297192
+      "size": 297192,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/globe/land_ocean_ice_2048_match.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/globe/land_ocean_ice_2048_match.jpg",
       "sha256": "22e3545bf85c84e36136aaeb45d055cccd807bca6c4437d175fc02b74bca933d",
-      "size": 364542
+      "size": 364542,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/head.obj",
@@ -498,21 +972,51 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/head_diffuse.jpg",
       "sha256": "b2cff389fa4e47cfd8d5516fbbb352a49ec1f09660ae1d5f02b395fde2e58113",
-      "size": 366403
+      "size": 366403,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 2048,
+        "components": 3
+      }
     },
     {
       "path": "meshes/head_normals.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/head_normals.jpg",
       "sha256": "ecfd5e097af474c405b949bdb23ba693c3a5b094f058616872f402803bde2ef1",
-      "size": 2638692
+      "size": 2638692,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 2048,
+        "components": 3
+      }
     },
     {
       "path": "meshes/head_specular.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/head_specular.jpg",
       "sha256": "21deae9b236fa332d4c34ba702ac064ae30a0139d892b417fb7657120430726c",
-      "size": 543842
+      "size": 543842,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 2048,
+        "components": 3
+      }
     },
     {
       "path": "meshes/hellknight/attack2.md5anim",
@@ -557,7 +1061,9 @@
         "kind": "png",
         "version": null,
         "width": 32,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -592,7 +1098,17 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/hellknight/hellknight_diffuse.jpg",
       "sha256": "a761b6a26cbb19ddbe446ae9ba0d1d87cd03142ac7b22f0c080e8d640251e44f",
-      "size": 123847
+      "size": 123847,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/hellknight/hellknight_normals.png",
@@ -604,7 +1120,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -617,7 +1135,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -718,7 +1238,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -726,49 +1248,119 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/lensflare/flare10.jpg",
       "sha256": "014f5d2692529daf2e21ac18b5ac7f38f5c600acd4b3e52867583fd9578491ae",
-      "size": 7524
+      "size": 7524,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 128,
+        "height": 128,
+        "components": 3
+      }
     },
     {
       "path": "meshes/lensflare/flare2.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/lensflare/flare2.jpg",
       "sha256": "1f47b808e58befad2444a680c0bfe66869817017ec2f831d8214ff91d29b9000",
-      "size": 5953
+      "size": 5953,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 128,
+        "height": 128,
+        "components": 3
+      }
     },
     {
       "path": "meshes/lensflare/flare3.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/lensflare/flare3.jpg",
       "sha256": "449f9988919c87040626cc54e0806de83c19f562d1444338672c2b440ca0c66c",
-      "size": 7838
+      "size": 7838,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 128,
+        "height": 128,
+        "components": 3
+      }
     },
     {
       "path": "meshes/lensflare/flare4.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/lensflare/flare4.jpg",
       "sha256": "df715c43b46bae86e00c9812b18af73534007b443b0c97644826ffb3cfcd57fe",
-      "size": 7726
+      "size": 7726,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 128,
+        "height": 128,
+        "components": 3
+      }
     },
     {
       "path": "meshes/lensflare/flare6.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/lensflare/flare6.jpg",
       "sha256": "269d415aadc0987a31f9741bbb5a68ea5ba4fb62397905bd0265e43550552378",
-      "size": 10335
+      "size": 10335,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 128,
+        "height": 128,
+        "components": 3
+      }
     },
     {
       "path": "meshes/lensflare/flare7.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/lensflare/flare7.jpg",
       "sha256": "ced4d787d92fc7acff6cd647a6c98471a3a14008e2044bc0733c7a254cb6e33e",
-      "size": 12795
+      "size": 12795,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 128,
+        "height": 128,
+        "components": 3
+      }
     },
     {
       "path": "meshes/lensflare/flare8.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/lensflare/flare8.jpg",
       "sha256": "f2601d4c18b06c275233676f979cd541ddfdafe1da8ff2ab93ba05353ab7182d",
-      "size": 8487
+      "size": 8487,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 128,
+        "height": 128,
+        "components": 3
+      }
     },
     {
       "path": "meshes/masterchief_base.png",
@@ -780,7 +1372,9 @@
         "kind": "png",
         "version": null,
         "width": 1024,
-        "height": 1024
+        "height": 1024,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -799,21 +1393,51 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/monsterhead/monsterhead_diffuse.jpg",
       "sha256": "df76409564d22668cfe492c264620df01cce53810ec63c2a9919facd9c98ad34",
-      "size": 3139861
+      "size": 3139861,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 2048,
+        "components": 3
+      }
     },
     {
       "path": "meshes/monsterhead/monsterhead_normals.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/monsterhead/monsterhead_normals.jpg",
       "sha256": "8bc74bb0efe7edc487954e28f18f56229ec7da06df10717d2577b6cc927f677a",
-      "size": 1039910
+      "size": 1039910,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 2048,
+        "components": 3
+      }
     },
     {
       "path": "meshes/monsterhead/monsterhead_specular.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/monsterhead/monsterhead_specular.jpg",
       "sha256": "c7c66db674e46d03f330c282163c49163859e530e90a24d3853d42ceb8033b6b",
-      "size": 449744
+      "size": 449744,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 2048,
+        "height": 2048,
+        "components": 1
+      }
     },
     {
       "path": "meshes/pknight.md2",
@@ -836,7 +1460,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -849,7 +1475,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -862,7 +1490,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -875,7 +1505,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 3
       }
     },
     {
@@ -888,7 +1520,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -896,7 +1530,17 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/rockbase_diffuse.jpg",
       "sha256": "fd3ea79490a1d68d0d021ab331e5e39605e432e4aa41dea2385923c731deaa9c",
-      "size": 135246
+      "size": 135246,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/rockbase_normals.png",
@@ -908,7 +1552,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -921,7 +1567,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -934,7 +1582,9 @@
         "kind": "png",
         "version": null,
         "width": 128,
-        "height": 128
+        "height": 128,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -942,7 +1592,17 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sea_normals.jpg",
       "sha256": "b624745da1e69f40865642961d4de9eeaecdc70678d79ee1aa203c2092b3f4a1",
-      "size": 14553
+      "size": 14553,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/shambler.awd",
@@ -965,7 +1625,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -978,7 +1640,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -991,7 +1655,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1004,7 +1670,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1017,7 +1685,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1030,7 +1700,9 @@
         "kind": "png",
         "version": null,
         "width": 512,
-        "height": 512
+        "height": 512,
+        "bitDepth": 8,
+        "colorType": 2
       }
     },
     {
@@ -1038,168 +1710,408 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/hourglass_negX.jpg",
       "sha256": "e32d370972b6ded779371694013d5f00885f936261312ed825ef2a417f43e1c7",
-      "size": 43262
+      "size": 43262,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/hourglass_negY.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/hourglass_negY.jpg",
       "sha256": "49ff5aea65779234bde94db459be474aaf74e6ca78ad94b68283f2d236c0be70",
-      "size": 44855
+      "size": 44855,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/hourglass_negZ.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/hourglass_negZ.jpg",
       "sha256": "21d02bb81ae6f17c2cdd00ee4745ee3dce0a2062e0a6735386027eb1565aa70e",
-      "size": 41347
+      "size": 41347,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/hourglass_posX.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/hourglass_posX.jpg",
       "sha256": "3b778c1c5fe8e7e114b06e8a6dc77992d231f7fa0194e3507c9e19b17e335fe9",
-      "size": 55656
+      "size": 55656,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/hourglass_posY.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/hourglass_posY.jpg",
       "sha256": "2d80ac03595164f3535873a63ef7648ea2a2a4cf0c51d05fd306bddc1e92e5df",
-      "size": 24573
+      "size": 24573,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/hourglass_posZ.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/hourglass_posZ.jpg",
       "sha256": "0905cd7a7b8acceaae4e7b8c02004c6c639576de69cbda3b35e5bfdfd558be5e",
-      "size": 38039
+      "size": 38039,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/sky_negX.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/sky_negX.jpg",
       "sha256": "fa7f9fffa67ed3c5dda445ad5948f85e8262c1b334709ef3112df8a755bfe5d2",
-      "size": 25305
+      "size": 25305,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/sky_negY.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/sky_negY.jpg",
       "sha256": "efe6831971a94504df00cd17f4b7cbe7215c5efc98019cd7856d31e12a236ecd",
-      "size": 13413
+      "size": 13413,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/sky_negZ.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/sky_negZ.jpg",
       "sha256": "09f9016351a0c8727966bf0f1fb949c698d857467175cf0369ef1315e23d70c3",
-      "size": 46843
+      "size": 46843,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/sky_posX.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/sky_posX.jpg",
       "sha256": "c703fdac3aa902aa8eae084d66f2473efb31d93456c121ff30e32d7967cf9a07",
-      "size": 56380
+      "size": 56380,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/sky_posY.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/sky_posY.jpg",
       "sha256": "37413d77ad4cf0d8852e9346b1a511d8958f06625fb8605625ba5ab40f863989",
-      "size": 34144
+      "size": 34144,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/sky_posZ.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/sky_posZ.jpg",
       "sha256": "b6502ee5d6d6f4174b13cd4823e401a1120ea6133e81cf31e15a891da11f9e3e",
-      "size": 33173
+      "size": 33173,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/snow_negative_x.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/snow_negative_x.jpg",
       "sha256": "c8ced57fb01b2047c418489fc4b0432b6dc8829c9529bca266fe68a18e243612",
-      "size": 131259
+      "size": 131259,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/snow_negative_y.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/snow_negative_y.jpg",
       "sha256": "3262534a36fb2a2e819c7c8549ad98cff74b6054b14fd7320418cce6848d25d6",
-      "size": 166931
+      "size": 166931,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/snow_negative_z.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/snow_negative_z.jpg",
       "sha256": "94b97e01c1f29e13374463c257d2c488ddb836532096946fba370f88264c3645",
-      "size": 117586
+      "size": 117586,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/snow_positive_x.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/snow_positive_x.jpg",
       "sha256": "8e4bce249fa05e69e1b4ef75d15aff3b66bb23481c436581cd0d844b088a1a7e",
-      "size": 107566
+      "size": 107566,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/snow_positive_y.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/snow_positive_y.jpg",
       "sha256": "13d562243b6bce372427696d15b690768679a85829c189eb16ecbfc30e155f37",
-      "size": 17953
+      "size": 17953,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/snow_positive_z.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/snow_positive_z.jpg",
       "sha256": "714b8c4e430453991c51cf738805032bfb6b2f3568d78ec1b92039aeebabf116",
-      "size": 103885
+      "size": 103885,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/space_negX.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/space_negX.jpg",
       "sha256": "b935ae2010b0cba0f0e0062dbb44516051300d60d411e70d48665d42d2415be7",
-      "size": 40987
+      "size": 40987,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/space_negY.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/space_negY.jpg",
       "sha256": "6b95f1a24157c1577a4d38778fe5ac9ae097ecb86d3b303953d280385e9a7f08",
-      "size": 60762
+      "size": 60762,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/space_negZ.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/space_negZ.jpg",
       "sha256": "1076ff49c07440f93d9b7fc1b7d5c0de1927faa07059162e585d70865148370d",
-      "size": 51181
+      "size": 51181,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/space_posX.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/space_posX.jpg",
       "sha256": "e529d8b109998d5b60ee1776d52c7705a76390c24f3e447b9a815f790ed97850",
-      "size": 56869
+      "size": 56869,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/space_posY.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/space_posY.jpg",
       "sha256": "520ec868dfe1d9368847527656a81de8ac4b1d81ce4a0761028d32e54d1c09d3",
-      "size": 74698
+      "size": 74698,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/skybox/space_posZ.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/skybox/space_posZ.jpg",
       "sha256": "f7263027f9b1383cf52944eb40a7bd7ef34206cf65333b5c46a6f61d3581158c",
-      "size": 64299
+      "size": 64299,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/soldier_ant.3ds",
@@ -1217,7 +2129,17 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/soldier_ant.jpg",
       "sha256": "1f6ec45135562754ea41127fc21447dd17af1f09a0c50cb141560a739587f28b",
-      "size": 70942
+      "size": 70942,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "progressive",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/spacy_texture.png",
@@ -1229,7 +2151,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1237,70 +2161,170 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/arch_ddn.jpg",
       "sha256": "0e918904426f5b3adad63c287257cc1540c67669c7c0123118e86e16c3a7ca5f",
-      "size": 69197
+      "size": 69197,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/arch_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/arch_diff.jpg",
       "sha256": "98a4dcf6b47e4861676d7b6dd67def96b261d30b7dbe907931610453ffc1b1c4",
-      "size": 128970
+      "size": 128970,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/arch_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/arch_spec.jpg",
       "sha256": "5e0943eae901c02a8e34adaad2ccae06670eb6f893b06217ae9cab78a86ecc2a",
-      "size": 101482
+      "size": 101482,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/background.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/background.jpg",
       "sha256": "05c3a216ea7825e4447d8b147acbd7c1d67547a02255b47fae521936b43d858e",
-      "size": 49593
+      "size": 49593,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/background_ddn.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/background_ddn.jpg",
       "sha256": "e3a7a938fb2c7c7dd74412f337b9ba7e10c840f6a7497ec864882f0a4ce842e3",
-      "size": 93138
+      "size": 93138,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/bricks_a_ddn.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/bricks_a_ddn.jpg",
       "sha256": "8ec10e532ba65d495674cd3fa06d671ac7f6f26b20f2bfe00159e9826e49a351",
-      "size": 714511
+      "size": 714511,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/bricks_a_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/bricks_a_diff.jpg",
       "sha256": "bd99444b5c4c50ce47bad6faadb80161ffa2859c2d3ebaa8c29d0b2eb153fc63",
-      "size": 509308
+      "size": 509308,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/bricks_a_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/bricks_a_spec.jpg",
       "sha256": "1317020b48b5f35da6339a756045daf07a5d68da8fa872300487938a7e02b97d",
-      "size": 188602
+      "size": 188602,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 1
+      }
     },
     {
       "path": "meshes/sponza/ceiling_a_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/ceiling_a_diff.jpg",
       "sha256": "1b17922a01ee5da9df77d945ce4bfdc0fff18d17585c90f6c0161d078ea242b4",
-      "size": 135606
+      "size": 135606,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/ceiling_a_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/ceiling_a_spec.jpg",
       "sha256": "b257a7231d421208092edebf54a14522221726acc91fd41ef2ede5ca27eeec77",
-      "size": 123185
+      "size": 123185,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/chain_texture.png",
@@ -1312,7 +2336,9 @@
         "kind": "png",
         "version": null,
         "width": 64,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1320,196 +2346,476 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/chain_texture_ddn.jpg",
       "sha256": "d4cd7e48a804635b712e2787de5eb30cc614c0f4852eed66de97432cd5bb32e4",
-      "size": 22962
+      "size": 22962,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 64,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/column_a_ddn.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/column_a_ddn.jpg",
       "sha256": "df23fd1e379f7dd1fe999599e09ae69337b2c730dc603df10c8f732da34d148b",
-      "size": 136453
+      "size": 136453,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/column_a_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/column_a_diff.jpg",
       "sha256": "83d42b622439684f21bee716cfcecd061721f870e7942e989af5dc6382b03d56",
-      "size": 132505
+      "size": 132505,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/column_a_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/column_a_spec.jpg",
       "sha256": "2c06a58e6ff9837c83921bfc7e0e24f9df04246e1001d29daf6990761a2e6775",
-      "size": 126649
+      "size": 126649,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/column_b_ddn.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/column_b_ddn.jpg",
       "sha256": "bb371a85c746602c295db3a83303f3617ac2f5e8df2e2c1a3b6e4c9a7ef5b507",
-      "size": 160482
+      "size": 160482,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/column_b_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/column_b_diff.jpg",
       "sha256": "2aa15efaaeb3309858fc1c80703feb2b314770ef505e3d0bddffd2e2473ca97b",
-      "size": 133617
+      "size": 133617,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/column_b_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/column_b_spec.jpg",
       "sha256": "12ed3414b3b7572afbeb0822a45c63cf622bf8a3ab9a58fdbecb048d405e397b",
-      "size": 123250
+      "size": 123250,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/column_c_ddn.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/column_c_ddn.jpg",
       "sha256": "9eb5104f8567731a45a313ec0ea9aba69cb49870b4d4cb34ff65341d7ab9514b",
-      "size": 168902
+      "size": 168902,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/column_c_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/column_c_diff.jpg",
       "sha256": "44be6df499bca7e34cf69f6b2e14ace6926d4f2dfae8610fd60e87c326797f7f",
-      "size": 172377
+      "size": 172377,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/column_c_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/column_c_spec.jpg",
       "sha256": "339b62875d2065a91bd6882b38bbe08f72d60fd2e352d16b1307a9c80dd45743",
-      "size": 144649
+      "size": 144649,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/curtain_blue_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/curtain_blue_diff.jpg",
       "sha256": "4b2a751c550641f575aeda1dbdf572f0202f22bf18fd6ccabb6192f21d55c3e2",
-      "size": 219873
+      "size": 219873,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/curtain_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/curtain_diff.jpg",
       "sha256": "3e790fe029cbaadab50ce3f39ce6dd4879a0697d69db1d8bb819c7126356f94f",
-      "size": 187675
+      "size": 187675,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/curtain_green_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/curtain_green_diff.jpg",
       "sha256": "da24fbcc869d2c52946a173c6d6c2c637de5f14286332f574f48f5775de9778a",
-      "size": 180852
+      "size": 180852,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/curtain_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/curtain_spec.jpg",
       "sha256": "d118cc7105d6340ad5ba69deee0069e21e63e07d6fe549bd73169a79f18bdfc1",
-      "size": 159692
+      "size": 159692,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/details_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/details_diff.jpg",
       "sha256": "903db7e6c3c67d899dc554634faf88aa9e08c1cea0b6325d04c58c00714102ff",
-      "size": 97466
+      "size": 97466,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/details_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/details_spec.jpg",
       "sha256": "175ad9c65559eb0574814f7762c6aff443393f4b627a36b1511dba0f407d8ed7",
-      "size": 126115
+      "size": 126115,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/fabric_blue_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/fabric_blue_diff.jpg",
       "sha256": "2d0064b6eeb18f562a3a6674dd05c0d989a5cf76337e276d06beb88f11340859",
-      "size": 170257
+      "size": 170257,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/fabric_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/fabric_diff.jpg",
       "sha256": "8ee5aae2d5154251d8befeea3acd3d297437b36a0bf907bfdd123e1fa9515e54",
-      "size": 174914
+      "size": 174914,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/fabric_green_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/fabric_green_diff.jpg",
       "sha256": "226da3c28518da9d85a611f709ff25616b7091eeee78ef69b130ae66edebd97d",
-      "size": 166430
+      "size": 166430,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/fabric_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/fabric_spec.jpg",
       "sha256": "6dbffce3e21db94633d898dc450cfd639c2d5871dbf5441d3e0e942845891ace",
-      "size": 129081
+      "size": 129081,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/flagpole_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/flagpole_diff.jpg",
       "sha256": "ba4f83ce5197fc0fd70d9aa0ea7e2da16ae8726e35e08b23e4404a27755eb282",
-      "size": 40466
+      "size": 40466,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/flagpole_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/flagpole_spec.jpg",
       "sha256": "dd8365f34224c2a4b565b388ad94d75c60abca5a76a545ef956ae1a40ff165ce",
-      "size": 48947
+      "size": 48947,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/floor_a_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/floor_a_diff.jpg",
       "sha256": "d5f7b6e596552792cbe12676cd489390a32ba5f09c2f7e773eb21fd14f2649f0",
-      "size": 501063
+      "size": 501063,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/floor_a_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/floor_a_spec.jpg",
       "sha256": "1ff490590c8a1ea4814b9b1510b598bf8ad9e3d17e46c1487605a7d036ebc029",
-      "size": 66483
+      "size": 66483,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/gi_flag.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/gi_flag.jpg",
       "sha256": "7108fe1d8704066165acb97275b664e0bf62c1f907e0d26c24be5890a4e3de91",
-      "size": 11619
+      "size": 11619,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 64,
+        "height": 64,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/lion.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/lion.jpg",
       "sha256": "a7d5a14bb50c3531c10b2c0ef263c82e2c37c6219a3351244a7f57911c66d844",
-      "size": 62683
+      "size": 62683,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/lion2_ddn.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/lion2_ddn.jpg",
       "sha256": "1aebc0154b5196fbedc31ad5ae9317745f8ddba0c0adedb0e668b817450f6563",
-      "size": 125472
+      "size": 125472,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/roof_diff.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/roof_diff.jpg",
       "sha256": "4d22dbdf77409335d7d2cba6574d6c469ba272411d08865773ce5632f452a726",
-      "size": 100515
+      "size": 100515,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/sponza.awd",
@@ -1527,7 +2833,17 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/thorn_ddn.jpg",
       "sha256": "c49f4f2aa869aa5041fe29b9d05317f9564325c2008677850534377180e54599",
-      "size": 172559
+      "size": 172559,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/thorn_diff.png",
@@ -1539,7 +2855,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1547,28 +2865,68 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/thorn_spec.jpg",
       "sha256": "750dfe1b0e2f48f3e7fe661f31557cc42b39edae4da8de44afd8660c66c22df8",
-      "size": 91752
+      "size": 91752,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/vase_ddn.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/vase_ddn.jpg",
       "sha256": "9f0559fdc60627934cf6d5a3a1dc0095cc7d8c44c84fc817706c93e7db4dc6e3",
-      "size": 125040
+      "size": 125040,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/vase_dif.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/vase_dif.jpg",
       "sha256": "c7783f75f23314374000ee8831550fce85ed4e298cdea94e7119ed72085760e9",
-      "size": 57214
+      "size": 57214,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/vase_hanging.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/vase_hanging.jpg",
       "sha256": "6945205175ed4cc5f221bc1f7790f646b3b468d156820dc766e401b0393ed2c3",
-      "size": 32507
+      "size": 32507,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/vase_plant.png",
@@ -1580,7 +2938,9 @@
         "kind": "png",
         "version": null,
         "width": 256,
-        "height": 256
+        "height": 256,
+        "bitDepth": 8,
+        "colorType": 6
       }
     },
     {
@@ -1588,35 +2948,85 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/vase_plant_spec.jpg",
       "sha256": "b40f0f46dc0907384068dd33ebdd12e35f8a6bbe107cc7947cfd42c3b92d7ee2",
-      "size": 59590
+      "size": 59590,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/vase_round.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/vase_round.jpg",
       "sha256": "4a73e3aca3c79049f6dd67e5e260e195a8d8c873e3a773abf4d79a690851b59c",
-      "size": 62441
+      "size": 62441,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/vase_round_ddn.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/vase_round_ddn.jpg",
       "sha256": "13d8c3fdc2d7b98776107fd5c0d2687fb1e1312d2105a48b7c2d84859e869af1",
-      "size": 64184
+      "size": 64184,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/sponza/vase_round_spec.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/sponza/vase_round_spec.jpg",
       "sha256": "3d649ffa61e72457562d5ff76a761311c314c30b6ec5f66fc250cbc1c9b6a58b",
-      "size": 49862
+      "size": 49862,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 256,
+        "height": 256,
+        "components": 3
+      }
     },
     {
       "path": "meshes/stone_tx.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/stone_tx.jpg",
       "sha256": "bebf05880ddf5fdf7c509d383357e359d5f2a39f5a17d2af24b53660334d9b43",
-      "size": 478068
+      "size": 478068,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "exif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 1024,
+        "height": 1024,
+        "components": 3
+      }
     },
     {
       "path": "meshes/suzanne.awd",
@@ -1645,35 +3055,85 @@
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/trinket_diffuse.jpg",
       "sha256": "9354dd3ab2aa77f5699e0a0374877ef908d13fd957a8ba07423018e0c5295ce7",
-      "size": 262144
+      "size": 262144,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/trinket_normal.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/trinket_normal.jpg",
       "sha256": "0279ee0d023cf7875d7c10e0542b240c2df077778c741110a6d67faf4771ff49",
-      "size": 131072
+      "size": 131072,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/trinket_specular.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/trinket_specular.jpg",
       "sha256": "321a1b97185efab2ca634e00bdaacb0bb783fd5b610d74cd6f7115751f53c688",
-      "size": 131072
+      "size": 131072,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/weave_diffuse.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/weave_diffuse.jpg",
       "sha256": "e40b6f89ec991c032ace74ec7330b6bfe4ed7d5d3a7c184d980572fde8bdef5d",
-      "size": 131072
+      "size": 131072,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/weave_normal.jpg",
       "sourceId": "awayjs-examples-meshes",
       "upstreamPath": "assets/weave_normal.jpg",
       "sha256": "d083cadda55a50deab2e397c4a487aa22d48eb7f328840e7206c0f07af32ecc0",
-      "size": 262144
+      "size": 262144,
+      "format": {
+        "kind": "jpeg",
+        "version": null,
+        "container": "jfif",
+        "coding": "baseline",
+        "bitDepth": 8,
+        "width": 512,
+        "height": 512,
+        "components": 3
+      }
     },
     {
       "path": "meshes/white.png",
@@ -1685,7 +3145,9 @@
         "kind": "png",
         "version": null,
         "width": 32,
-        "height": 32
+        "height": 32,
+        "bitDepth": 8,
+        "colorType": 2
       }
     }
   ],

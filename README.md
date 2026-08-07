@@ -15,7 +15,11 @@ came from. This repository sources fixtures from their real upstreams, records p
 per file, carries each licence with the bytes it covers, and ships versioned archives a test
 suite can pin.
 
-**Oracles** (expected-output data for comparison) are a later phase. Today this is fixtures.
+**Oracles** (expected-output data for comparison) were planned as a later phase, and several
+arrived early because the upstreams ship them coupled to their inputs — Unicode puts an
+input and its required output on the same line, and image-rs stores a decoded rendering
+beside every image. Generating our own goldens is still deferred; adopting the ones that
+already exist was not worth declining.
 
 ## Current packs
 
@@ -34,10 +38,11 @@ suite can pin.
 | `gltf-khronos-binary` | 118 | 432.7 MB | GLB: self-contained models, textures embedded |
 | `texture-container-fixtures` | 98 | 36.3 MB | KTX2, KTX1, Basis Universal, DDS |
 | `lottie-fixtures` | 79 | 15.3 MB | Lottie animations — 14 versions, v3.1.6–v5.12.2 |
-| `image-fixtures` | 60 | 0.1 MB | PngSuite — canonical PNG conformance corpus |
+| `image-fixtures` | 60 | 0.1 MB | PngSuite — canonical PNG conformance corpus (PNG only) |
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
 | `mesh-legacy-fixtures` | 195 | 64.0 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
 | `atf-fixtures` | 14 | 8.1 MB | Adobe Texture Format — undeclared, build input only |
+| `image-codec-fixtures` | 670 | 33.2 MB | **Oracles** — 12 codecs, each input paired with its decoded rendering |
 | `font-malformed-fixtures` | 312 | 25.1 MB | **Negative** — malformed and fuzzed fonts, every wrapper |
 | `spritesheet-fixtures` | 280 | 21.4 MB | libgdx `.atlas` texture atlas descriptors |
 | `font-fixtures` | 261 | 33.4 MB | TTF/OTF/TTC/WOFF/WOFF2 — the same faces in every wrapper |
@@ -52,12 +57,13 @@ suite can pin.
 | `svg-path-fixtures` | 672 | 0.5 MB | **Oracles** — SVG path grammar, 371 expected-output pairs |
 | `xml-conformance-fixtures` | 1,184 | 2.6 MB | **Oracles** — XML with expected diagnostics |
 
-30 packs, 27,034 files. Several packs carry expectations as well as inputs:
+31 packs, 27,704 files. Several packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
 outputs paired in place), `gltf-generated-fixtures` (positive/negative conformance split),
 `svg-path-fixtures` and `xml-conformance-fixtures` (expected output and expected
-diagnostics), and `font-fixtures`, where the same face ships as sfnt, WOFF and WOFF2 so
-each wrapper can be checked against the font it was built from.
+diagnostics), `image-codec-fixtures` (a decoded rendering per input, per animation frame),
+and `font-fixtures`, where the same face ships as sfnt, WOFF and WOFF2 so each wrapper can
+be checked against the font it was built from.
 
 **Git LFS is resolved, not stored.** `raw.githubusercontent` serves LFS *pointers* rather
 than objects, and a 130-byte text stub where a texture belongs passes every other check —

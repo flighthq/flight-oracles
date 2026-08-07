@@ -1,0 +1,180 @@
+# image-codec-fixtures — every raster codec except the one already covered.
+#
+# `image-fixtures` is PngSuite, and PngSuite is PNG. The coverage table listed that pack
+# against "PNG, JPEG, GIF, WebP, AVIF, BMP, TIFF, ICO", which was a target set read as a
+# shipped set — the seven other codecs had nothing behind them. This pack is those seven,
+# plus the formats that turned up alongside them.
+#
+# ORACLE-BEARING, and mechanically so. `image-rs/image` stores every input under
+# `images/<codec>/…` and its decoded rendering under `reference/<codec>/…` with `.png`
+# appended:
+#
+#     images/gif/anim/mixed-disposal.gif
+#     reference/gif/anim/mixed-disposal.gif.png              <- the composited result
+#     reference/gif/anim/mixed-disposal.gif.anim_01.png      <- and each frame
+#
+# So the join is "append .png", with `.anim_NN` for animation frames. That covers twelve
+# codecs at once, including per-frame expectations for animated GIF, APNG and WebP, which
+# is the part of animation decoding that silently goes wrong: disposal and blend modes
+# produce a plausible first frame and diverge from frame two.
+#
+# The reference renderings are PNG (TIFF where the content is floating point) and carry a
+# CRC of the image data in the filename, so a consumer comparing against them is comparing
+# decoded pixels rather than file bytes.
+#
+# THREE LICENCE POSTURES IN ONE UPSTREAM, which is why image-rs is split across three
+# source blocks rather than one. The repository is MIT/Apache-2.0, but it imported two
+# corpora that came with their own terms and it kept those declarations in place — a
+# `LICENSE` beside the TGA suite and a `LICENSE.md` beside the APNG cases. Reporting the
+# repository's MIT over either would be reporting a declaration nobody made about them.
+
+[pack]
+name = "image-codec-fixtures"
+kind = "conformance"
+summary = "JPEG, GIF, WebP, AVIF, BMP, TIFF, ICO, TGA, QOI, HDR, EXR and farbfeld — inputs paired with decoded reference renderings, plus corpora that must fail to decode."
+
+# The bulk: twelve codecs of inputs, their reference renderings, the deliberately-invalid
+# set, and the crash/OOM regressions that fuzzing found.
+#
+# `bad/` states its expectation in its own README — "invalid in some way and should fail to
+# decode" — and the README travels with the files so that expectation is not lore. Note
+# that this is a stricter contract than `font-malformed-fixtures/fuzzing`, where the
+# property is only that nothing crashes: here, accepting the input is itself the failure.
+[[source]]
+id = "image-rs"
+kind = "upstream"
+repo = "image-rs/image"
+ref = "main"
+include = [
+  "tests/images/**",
+  "tests/reference/**",
+  "tests/bad/**",
+  "tests/regression/**",
+  "tests/assets/**",
+]
+exclude_paths = [
+  "tests/images/tga/testsuite/**",
+  "tests/reference/tga/testsuite/**",
+  "tests/images/png/apng/wpt/**",
+  "tests/reference/png/apng/wpt/**",
+]
+strip = "tests/"
+dest = "image-rs/"
+
+[source.license]
+declared = "MIT"
+declared_scope = "repository-root"
+declared_from = "LICENSE-MIT"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "image-rs/image is offered under MIT or Apache-2.0 at the reader's choice; the MIT grant is the one relied on here and the one snapshotted. The declaration is repository-wide — these are the crate's regression images, not separately declared assets — and the two sub-corpora that DO carry their own declarations are split into the blocks below rather than swept under this one."
+
+# The TrueVision TGA 2.0 conformance suite, with the only honest declaration available:
+# none. Its LICENSE says the material "originally been publicly available, free of charge
+# and under no specific licensing terms" from TrueVision's FTP server, that everything is
+# "copyright to TrueVision, Inc.", and that the server went away when Pinnacle Systems
+# acquired them. A statement that no terms were specified is not a grant, so this ships
+# declared UNKNOWN and is barred from -demo and -permissive.
+#
+# It is still the canonical TGA corpus — colour-mapped, RLE, 16-bit, attribute-bit and
+# origin-flag cases that no other source here covers — so it is kept, labelled, and easy to
+# drop. The LICENSE file itself is inside the include glob so it travels beside the images.
+[[source]]
+id = "image-rs-tga-truevision"
+kind = "upstream"
+repo = "image-rs/image"
+ref = "main"
+include = [
+  "tests/images/tga/testsuite/**",
+  "tests/reference/tga/testsuite/**",
+]
+strip = "tests/"
+dest = "image-rs/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "directory"
+declared_from = "tests/images/tga/testsuite/LICENSE"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "Quoting the suite's own LICENSE: the format specification, sample images and utilities 'originally been publicly available, free of charge and under no specific licensing terms, from TrueVision, Inc.'s FTP server', and 'all of the material contained here is therefore copyright to TrueVision, Inc., unless otherwise stated.' No terms specified is not a grant, so nothing is claimed here."
+
+# The APNG cases image-rs took from web-platform-tests, which carries WPT's own BSD-3-Clause
+# rather than the crate's MIT. These are the frame-disposal and blend-mode cases — exactly
+# where an APNG decoder that looks correct on frame one stops being correct.
+[[source]]
+id = "image-rs-apng-wpt"
+kind = "upstream"
+repo = "image-rs/image"
+ref = "main"
+include = [
+  "tests/images/png/apng/wpt/**",
+  "tests/reference/png/apng/wpt/**",
+]
+strip = "tests/"
+dest = "image-rs/"
+
+[source.license]
+declared = "BSD-3-Clause"
+declared_scope = "directory"
+declared_from = "tests/images/png/apng/wpt/LICENSE.md"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "The 3-Clause BSD License, Copyright (c) web-platform-tests contributors. Carried into image-rs with the LICENSE.md and README.txt that came with it, both of which are included here."
+
+# Breadth rather than depth, and the widest single-request breadth available: the same
+# sample image encoded as BMP, GIF, PNG, JPEG, WebP, AVIF, JPEG XL, QOI, TGA, TIFF, PCX,
+# PNM, XCF, XPM, ICO and CUR, plus animated GIF/WebP/AVIFS/ANI variants.
+#
+# One sample across sixteen containers is a cross-codec equality check the way the wrapper
+# matrix is one for fonts: whatever `sample.bmp` decodes to, `sample.webp` and `sample.qoi`
+# should decode to as well. It also reaches formats nothing else here carries at all — JPEG
+# XL, QOI, ANI, CUR, XCF — and `svg.svg` ships beside `svg.bmp`, its expected rendering.
+[[source]]
+id = "sdl-image-samples"
+kind = "upstream"
+repo = "libsdl-org/SDL_image"
+ref = "main"
+fetch = "blobs"
+include = [
+  "test/*.bmp", "test/*.gif", "test/*.png", "test/*.jpg", "test/*.webp",
+  "test/*.avif", "test/*.avifs", "test/*.jxl", "test/*.qoi", "test/*.tga",
+  "test/*.tif", "test/*.pcx", "test/*.pnm", "test/*.xcf", "test/*.xpm",
+  "test/*.ico", "test/*.cur", "test/*.ani", "test/*.svg",
+  "test/README.md",
+]
+strip = "test/"
+dest = "sdl-image/"
+
+[source.license]
+declared = "Zlib"
+declared_scope = "repository-root"
+declared_from = "LICENSE.txt"
+commercial_use = true
+onward_use = "unrestricted"
+covers = "zlib licence, Copyright (C) 1997-2025 Sam Lantinga. Permits use for any purpose including commercial, with no attribution requirement beyond not misrepresenting the origin of altered source."
+
+# WebP depth, which neither source above reaches: 131 files covering the alpha filters and
+# compression methods individually, the lossless transforms, colour-cache sizes, and a run
+# of named decoder bugs (`big_endian_bug_393`, `bad_palette_index`, `bug3`). It also carries
+# `libwebp_tests.md5`, a list of expected decode digests, and the `grid`/`lossless_color_transform`
+# sets, where the same image ships as BMP, PAM, PGM, PPM, TIFF and WebP together.
+#
+# UNDECLARED. The repository has no LICENSE file of any kind — not a permissive one, not a
+# restrictive one, none. libwebp itself is BSD-3-Clause, but that covers the library, and
+# reading it across into a separate data repository that omitted it would be inventing the
+# grant. Ships UNKNOWN: build input, barred from -demo and -permissive.
+[[source]]
+id = "libwebp-test-data"
+kind = "upstream"
+repo = "webmproject/libwebp-test-data"
+ref = "main"
+include = ["*.webp", "*.bmp", "*.pam", "*.pgm", "*.ppm", "*.png", "*.tiff", "*.md5"]
+dest = "libwebp/"
+
+[source.license]
+declared = "UNKNOWN"
+declared_scope = "repository-root"
+commercial_use = "unknown"
+onward_use = "unknown"
+covers = "webmproject/libwebp-test-data carries no licence file. The sibling libwebp repository is BSD-3-Clause, but that declaration is about the library and was not carried into this repository; nothing here establishes terms for the data."
