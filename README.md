@@ -38,7 +38,9 @@ suite can pin.
 | `rive-fixtures` | 27 | 1.1 MB | Rive WebGPU player demo corpus |
 | `mesh-legacy-fixtures` | 195 | 64.0 MB | OBJ/MTL, AWD2, MD5 mesh+anim, MD2, 3DS |
 | `atf-fixtures` | 14 | 8.1 MB | Adobe Texture Format — undeclared, build input only |
+| `font-malformed-fixtures` | 312 | 25.1 MB | **Negative** — malformed and fuzzed fonts, every wrapper |
 | `spritesheet-fixtures` | 280 | 21.4 MB | libgdx `.atlas` texture atlas descriptors |
+| `font-fixtures` | 261 | 33.4 MB | TTF/OTF/TTC/WOFF/WOFF2 — the same faces in every wrapper |
 | `bitmapfont-fixtures` | 252 | 21.7 MB | AngelCode BMFont `.fnt` descriptors |
 | `text-conformance-fixtures` | 8 | 19.0 MB | **Oracles** — 614,914 Unicode conformance cases |
 | `particle-fixtures` | 279 | 19.7 MB | libgdx `.p` particle effect configs |
@@ -50,9 +52,12 @@ suite can pin.
 | `svg-path-fixtures` | 672 | 0.5 MB | **Oracles** — SVG path grammar, 371 expected-output pairs |
 | `xml-conformance-fixtures` | 1,184 | 2.6 MB | **Oracles** — XML with expected diagnostics |
 
-28 packs, 26,461 files. Three packs carry expectations as well as inputs:
+30 packs, 27,034 files. Several packs carry expectations as well as inputs:
 `text-conformance-fixtures` (614,914 Unicode cases), `swf-ruffle-fixtures` (4,291 trace
-outputs paired in place) and `gltf-generated-fixtures` (positive/negative conformance split).
+outputs paired in place), `gltf-generated-fixtures` (positive/negative conformance split),
+`svg-path-fixtures` and `xml-conformance-fixtures` (expected output and expected
+diagnostics), and `font-fixtures`, where the same face ships as sfnt, WOFF and WOFF2 so
+each wrapper can be checked against the font it was built from.
 
 **Git LFS is resolved, not stored.** `raw.githubusercontent` serves LFS *pointers* rather
 than objects, and a 130-byte text stub where a texture belongs passes every other check —
@@ -73,8 +78,10 @@ non-commercial assets an author intends to be displayed. **`-permissive`** may t
 commercial work — declared-permissive licence, no unresolved third-party subject matter,
 commercial use permitted.
 
-`.zip` is emitted alongside `.tar.gz` only for packs under 150 MB; above that the payloads
-are already-compressed images and the zip is a near-identical duplicate. `spine-fixtures` produces no `-permissive` archive — every Spine example is
+Archives are `.tar.gz` only. A parallel `.zip` was dropped: both hold identical content and
+both use DEFLATE, but gzip compresses the tar stream *solidly* while zip compresses each
+entry alone, so `.tar.gz` is same-or-smaller everywhere and 10% smaller on the SWF corpus.
+The second container bought format convenience at roughly double the storage. `spine-fixtures` produces no `-permissive` archive — every Spine example is
 declared non-commercial.
 
 Two models are **not vendored at all**, because their declarations explicitly forbid
@@ -166,6 +173,16 @@ exist. Not every unfixtured format is a gap: `shapeJson` and `UnityParticleDocum
 flight owns rather than foreign formats, so no corpus exists for them by construction, and
 Spine's particle format appears never to have shipped. See
 [`docs/fixture-coverage.md`](docs/fixture-coverage.md) for that classification.
+
+**Coverage is no longer bounded by what flight parses today.** Packs were once selected
+against the current decode surface, which meant a format flight handled shallowly got a
+shallow corpus — fonts were written off as "a four-byte magic sniff" and given nothing. That
+held until downstream started validating WOFF2, at which point four bytes established
+nothing at all. A corpus takes weeks of licence work and a parser takes days, so gating the
+slow half on the fast half guarantees it arrives late. Formats are now sourced on their own
+terms and consumers decide what they need; the variants mean a pack nobody fetches costs
+nobody anything. What still bounds sourcing is licence that cannot be established, size that
+cannot be justified, and corpora that do not exist.
 
 See [`docs/sourcing-policy.md`](docs/sourcing-policy.md) for the full reasoning, and
 [`docs/fixture-coverage.md`](docs/fixture-coverage.md) for the exhaustive fixture target set

@@ -8,6 +8,30 @@ Method: flight has 143 packages. The `*-formats` packages, plus `swf`, `abc`, `i
 Every format one of them claims is a fixture obligation. Sources below were checked for
 licence on 2026-08-05.
 
+## The decode surface is the floor, not the ceiling
+
+**Corrected 2026-08-07.** An earlier revision of this document used flight's current
+parsers as a *filter* as well as a starting point: a format flight did not parse, or parsed
+only shallowly, was written off as not worth sourcing. The section on fonts made that case
+at length and was wrong within the year — downstream began validating WOFF2, at which point
+the six four-byte files this document recommended supplied nothing at all.
+
+The error is worth naming because it is not specific to fonts. Fixture demand is set by
+where a consumer is *going*, and a corpus takes weeks of licence work while a parser takes
+days; gating the slow half on the current state of the fast half guarantees the corpus
+arrives after it was needed. Nothing about that reasoning was visible at the time — the
+argument looked like admirable restraint, and the evidence that would have refuted it did
+not exist yet.
+
+So the standing rule is now the opposite: **source the format, let downstream decide
+whether it needs it.** The obligations below are still obligations. They are no longer the
+boundary. What still constrains sourcing is unchanged and unrelated to demand — licence
+that cannot be established, size that cannot be justified, and corpora that do not exist.
+
+The `-full` / `-demo` / `-permissive` variants are what make this affordable: a consumer
+fetches the pack it wants, so a pack it never fetches costs it nothing. Breadth is paid for
+in this repository's release size, not in every consumer's build.
+
 ## Why this matters more than it looks
 
 `packages/scene2d-formats/src/riveDocument.test.ts` opens with an unusually honest comment:
@@ -98,52 +122,111 @@ Status: ✅ shipped · ◐ declared, not ingested · ○ not started
 | ✅ `spine-fixtures` | Spine JSON/skel/atlas | `skeleton2d-formats` | EsotericSoftware/spine-runtimes | per-example, non-commercial |
 | ✅ `swf-ruffle-fixtures` | SWF v4–v50 | `swf`, `abc` | ruffle-rs/ruffle | Apache-2.0/MIT + GPL/MPL subtrees |
 | ✅ `rive-fixtures` | .riv | `scene2d-formats` | rive-app/rive-runtime | MIT (repo-root) |
-| ◐ `rive-fixtures-unit` | .riv (380 files) | `scene2d-formats` | rive-app/rive-runtime | MIT (repo-root) |
+| ✅ `rive-fixtures-unit` | .riv (388 files) | `scene2d-formats` | rive-app/rive-runtime | MIT (repo-root) |
 | ✅ `gltf-khronos-fixtures` | glTF, 28 KHR/EXT ext. | `scene3d-formats` | KhronosGroup/glTF-Sample-Assets | **per-model LICENSE.md** |
-| ◐ `gltf-khronos-textures` | raster textures | demo/render | KhronosGroup/glTF-Sample-Assets | per-model |
-| ◐ `gltf-khronos-binary` | GLB container | `scene3d-formats` | KhronosGroup/glTF-Sample-Assets | per-model |
-| ○ `gltf-generated-fixtures` | glTF conformance matrix | `scene3d-formats` | KhronosGroup/glTF-Asset-Generator | MIT |
-| ○ `lottie-fixtures` | Lottie JSON/.lottie | `scene2d-formats` | LottieFiles/lottie-docs, airbnb/lottie-web | CC-BY-4.0 / MIT |
-| ○ `dragonbones-fixtures` | DragonBones JSON | `skeleton2d-formats` | DragonBones/DragonBonesJS | MIT |
-| ○ `mesh-legacy-fixtures` | OBJ, MTL, MD2, MD5, 3DS, AWD2 | `scene3d-formats` | flighthq-ports/awayjs-examples (AWD2) + per-format | MIT |
-| ○ `texture-container-fixtures` | KTX2, Basis, DDS, ATF | `texture-formats` | KTX-Software, basis_universal | NOASSERTION / Apache-2.0 |
+| ✅ `gltf-khronos-textures` | raster textures | demo/render | KhronosGroup/glTF-Sample-Assets | per-model |
+| ✅ `gltf-khronos-binary` | GLB container | `scene3d-formats` | KhronosGroup/glTF-Sample-Assets | per-model |
+| ✅ `gltf-generated-fixtures` | glTF conformance matrix | `scene3d-formats` | KhronosGroup/glTF-Asset-Generator | MIT |
+| ✅ `lottie-fixtures` | Lottie JSON/.lottie | `scene2d-formats` | LottieFiles/lottie-docs, airbnb/lottie-web | CC-BY-4.0 / MIT |
+| ✅ `dragonbones-fixtures` | DragonBones JSON | `skeleton2d-formats` | DragonBones/DragonBonesJS | MIT |
+| ✅ `mesh-legacy-fixtures` | OBJ, MTL, MD2, MD5, 3DS, AWD2 | `scene3d-formats` | flighthq-ports/awayjs-examples (AWD2) + per-format | MIT |
+| ✅ `texture-container-fixtures` | KTX2, Basis, DDS, ATF | `texture-formats` | KTX-Software, basis_universal | NOASSERTION / Apache-2.0 |
 | ○ `draco-fixtures` | Draco-compressed meshes | `scene3d-formats` | google/draco | Apache-2.0 |
-| ○ `font-signature-fixtures` | TTF/OTF/WOFF/WOFF2/TTC signatures | `font` | **synthesized** — see below | n/a |
-| ○ `text-conformance-fixtures` | UAX #9/#14/#29 | `textbidi`, `textsegment` | Unicode UCD | Unicode-3.0 |
+| ✅ `font-fixtures` | TTF, OTF, TTC, WOFF, WOFF2, variable | `font` | adobe-fonts/source-sans, JetBrains/JetBrainsMono, googlefonts/fontations | OFL-1.1, Apache-2.0 |
+| ✅ `font-malformed-fixtures` | malformed/fuzzed fonts, all wrappers | `font` | khaledhosny/ots | **undeclared** |
+| ✅ `text-conformance-fixtures` | UAX #9/#14/#29 | `textbidi`, `textsegment` | Unicode UCD | Unicode-3.0 |
 | ○ `text-rendering-fixtures` | shaping cases | `textshaper`, `textlayout` | unicode-org/text-rendering-tests | NOASSERTION |
-| ○ `image-fixtures` | PNG, JPEG, GIF, WebP, AVIF, BMP, TIFF, ICO | `image-codec` | PngSuite, libwebp, av1-avif | varies |
-| ○ `spritesheet-fixtures` | TexturePacker, Starling, cocos plist, libgdx, Aseprite | `spritesheet-formats`, `textureatlas-formats` | per-tool samples | varies |
-| ○ `tilemap-fixtures` | Tiled TMX/TMJ | `tilemap-formats` | mapeditor/tiled | NOASSERTION |
-| ○ `particle-fixtures` | libgdx, PEX, pixi, Unity, ParticleDesigner, Spine | `particles-formats` | per-tool samples | varies |
-| ○ `bitmapfont-fixtures` | BMFont .fnt/XML/JSON | `bitmapfont-formats` | AngelCode BMFont | varies |
-| ○ `svg-path-fixtures` | SVG path `d` grammar | `path-formats` | W3C SVG test suite | W3C |
-| ○ `xml-fixtures` | XML incl. malformed | `xml` | W3C XML conformance suite | W3C |
+| ✅ `image-fixtures` | PNG only — PngSuite | `image-codec` | pnggroup/libpng | LicenseRef-PngSuite-Permissive |
+| ○ `image-codec-fixtures` | JPEG, GIF, WebP, AVIF, BMP, TIFF, ICO | `image-codec` | per-codec conformance sets | varies |
+| ✅ `spritesheet-fixtures` | TexturePacker, Starling, cocos plist, libgdx, Aseprite | `spritesheet-formats`, `textureatlas-formats` | per-tool samples | varies |
+| ✅ `tilemap-fixtures` | Tiled TMX/TMJ | `tilemap-formats` | mapeditor/tiled | NOASSERTION |
+| ✅ `particle-fixtures` | libgdx, PEX, pixi, Unity, ParticleDesigner, Spine | `particles-formats` | per-tool samples | varies |
+| ✅ `bitmapfont-fixtures` | BMFont .fnt/XML/JSON | `bitmapfont-formats` | AngelCode BMFont | varies |
+| ✅ `svg-path-fixtures` | SVG path `d` grammar, 371 expected-output pairs | `path-formats` | svg/svgo, feathericons/feather | MIT |
+| ✅ `xml-conformance-fixtures` | XML incl. malformed, with expected diagnostics | `xml` | GNOME/libxml2 | MIT |
 | ○ `audio-fixtures` | WAV, MP3, AAC, FLAC, Ogg, WebM, MP4, SWF-ADPCM | `audio` | per-codec samples | varies |
 | ○ `video-fixtures` | MP4, WebM, Ogg, MOV, 3GPP, MKV | `video` | per-codec samples | varies |
 | ○ `swf-generated-fixtures` | targeted SWF tags | `swf` | self-compiled (Apache Flex SDK) | Apache-2.0 |
-| ○ `malformed-fixtures` | truncated/corrupt, all formats | all decoders | derived + PngSuite | derived |
+| ✅ `malformed-fixtures` | truncated/corrupt, all formats | all decoders | derived + PngSuite | derived |
 
-## Fonts need almost nothing — flight does not implement shaping
+## Fonts: what the four-byte argument got wrong
 
-Worth stating explicitly, because "font formats" reads like a large sourcing job and is not.
-
-`packages/font/src/fontFormat.ts` is the whole font-file obligation, and it is a **four-byte
-magic-number sniff**: `00 01 00 00` → truetype, `OTTO` → opentype, `wOFF` → woff,
-`wOF2` → woff2, `ttcf` → collection, `true` → truetype. Its sibling
+This section previously argued that fonts needed almost nothing. The observation it rested
+on was correct and is still correct: `packages/font/src/fontFormat.ts` is a **four-byte
+magic-number sniff** — `00 01 00 00` → truetype, `OTTO` → opentype, `wOFF` → woff,
+`wOF2` → woff2, `ttcf` → collection, `true` → truetype — and its sibling
 `inferFontFormatFromUrl` is pure string handling on the extension. Neither reads a glyph.
+The architectural reason still holds too: `textshaper-canvas` delegates shaping to the
+platform, so what flight implements itself — itemization, clustering, bidi, segmentation —
+is exercised by Unicode character data rather than font binaries.
 
-So the fixtures are six files of four bytes each, plus a couple of near-miss cases to prove
-the sniffer rejects rather than guesses. Those are **synthesized, not sourced** — no upstream
-corpus, no licence question, no megabytes. `google/fonts` at 3.2 GB would buy nothing.
+The conclusion drawn from all that — six synthesized files of four bytes each, sourcing a
+real corpus "would buy nothing" — did not survive. A downstream font-formats library is now
+validating WOFF2, and against that, four bytes establish that a file *claims* to be WOFF2
+and nothing else. The corpus needed to have existed before the parser did.
 
-The reason is architectural: `textshaper-canvas` delegates glyph shaping to the platform
-(`canvasTextShaper.ts` over canvas text measurement). What flight implements itself is
-*itemization, clustering, bidi, and segmentation* — `textShaperItemize.ts`,
-`textShaperCluster.ts`, `textbidi`, `textsegment`. Those are exercised by **Unicode character
-data, not by font binaries**, which is exactly what `text-conformance-fixtures` supplies.
+**`font-fixtures` and `font-malformed-fixtures` now hold it.** What they are built around:
 
-If a real font is ever needed for an end-to-end path, `flighthq/flight-assets` already ships
-several — that is example media, and it is the right home for it.
+### The wrapper matrix is the oracle
+
+Adobe ships Source Sans 3 as the same fourteen faces in OTF, TTF, WOFF-of-OTF, WOFF-of-TTF,
+WOFF2-of-OTF and WOFF2-of-TTF, plus a variable font in all six. The join key is in the
+filename — `WOFF2/OTF/SourceSans3-Black.otf.woff2` names `OTF/SourceSans3-Black.otf` — so a
+decoder can decompress a wrapper and check it against the sfnt it was built from, with
+nothing to generate and no manifest to maintain.
+
+How hard that check can be pushed differs between the wrappers, and assuming the stronger
+one produces false failures:
+
+| | Relationship to the source sfnt |
+| --- | --- |
+| **WOFF** | Each table is zlib-compressed independently. Decoded table bytes are **identical** to the source sfnt's. Verified here: all 19 tables of `SourceSans3-Regular.ttf.woff` match the TTF byte for byte, and the header's `totalSfntSize` equals the TTF's file size exactly. |
+| **WOFF2** | A brotli stream over a **reordered** table set, with `glyf`/`loca` (and optionally `hmtx`) **transformed** rather than merely compressed. A conforming decoder produces functionally equivalent tables, **not** identical bytes. Compare parsed structure, or restrict byte comparison to untransformed tables. |
+
+The lock records which tables each WOFF2 declared transformed, so that distinction is a
+per-file fact rather than an assumption.
+
+### Micro-fonts cover what real fonts cannot
+
+A real font carries whichever `cmap` subtable its designer's tool emitted. `fontations`'
+test data is the opposite: a few hundred bytes each, built to exercise **one** thing —
+`cmap` formats 4, 6, 10, 12 and 14; COLRv1; CBDT; sbix; `gvar`; `cvar`; VARC; `morx` — plus
+the only TTC here, and `.ttx` files that are fontTools' XML serialisation of the same fonts,
+which is as close to a structural expectation as a font corpus gets without rendering.
+
+### The negative half decides whether support is real
+
+`font-malformed-fixtures` takes the OpenType Sanitiser's corpus. OTS is the validator inside
+Chrome and Firefox — every web font either passes it or is not rendered — so its test
+material is what actually reached browsers, not hypothetical damage. Its two directories
+carry **different** expectations, and reading them as one set gets both wrong: `bad/` must be
+rejected, while `fuzzing/` need not be — the property there is that nothing hangs, crashes
+or allocates unboundedly, which is exactly the contract `swfDocument.test.ts` states for
+flight and which no well-formed corpus can establish.
+
+Its `good/` directory is deliberately left behind: 57 MB of real-world fonts named by content
+hash with no declaration of any kind, where the positive half is already better served by
+fonts that arrive with licences attached.
+
+### Detection now reads font containers properly
+
+`formats.py` reports sfnt flavour, TTC membership, WOFF/WOFF2 flavour and `totalSfntSize`,
+which tables were transformed, and for every container the outline flavour (`glyf`/`CFF`/
+`CFF2`), whether it is variable (`fvar`), and which colour technology it uses (COLR, CBDT,
+sbix, SVG). WOFF2's table directory is parsed **without brotli** — it sits uncompressed
+after the 48-byte header — so those facts are recorded for compressed fonts too, with no
+dependency added.
+
+That makes the manifest queryable in the way the container-format facts elsewhere already
+are: "every fixture carrying a `CFF2` table" is a decoder obligation, and a corpus you
+cannot ask that question of is a pile of files.
+
+One thing the corpus establishes immediately: **19 files in the OTS set carry `ttcf` magic
+under a `.ttf` extension.** Content-based detection catches it; `inferFontFormatFromUrl`
+cannot, by construction.
+
+If a real font is needed for an end-to-end *rendering* path rather than a decode path,
+`flighthq/flight-assets` still ships several — that is example media and remains its home.
 
 ## Three findings worth acting on
 
@@ -204,26 +287,25 @@ that silently mis-parses an unsupported version is the failure mode with no symp
 
 ## Suggested sequencing
 
-1. **`gltf-khronos-fixtures`** — largest coverage win per unit of work, and it earns its place
-   twice: 148 models against a package implementing 17 extensions, *and* a ready-made source
-   of demo and example content. The per-model `LICENSE.md` layout is exactly the
-   `declaredScope: file-adjacent` case the pipeline already handles.
+The original sequencing here — glTF, then Unicode, then malformed, then the long tail — is
+done, and every pack it named has shipped. What remains is the queue after the decode-surface
+gate was dropped, ordered by coverage per unit of licence work:
 
-   Dual use raises the stakes on the licence metadata, in a good way. Most models are
-   CC-BY-4.0 or CC0; CC-BY **requires attribution wherever the work appears**, so a demo
-   shipping one owes credit in the running application, not merely in the archive's
-   `NOTICE.md`. The per-model declarations make that mechanical: the `-permissive` variant
-   separates the no-attribution CC0 models cleanly, and `NOTICE.md` is already generated in a
-   form a demo build can consume for its credits screen. Sourcing them here rather than in
-   `flight-assets` means demo content inherits the same provenance record as test content.
-2. **`text-conformance-fixtures`** — tiny, unambiguous, and delivers working oracles
-   immediately for `textbidi`/`textsegment`.
-3. **`malformed-fixtures`** — mostly generated, validates the null-sentinel contract across
-   every decoder at once.
-4. **Spine 3.8 rejection block** — one source block, closes a stated gap.
-5. **`lottie-fixtures`**, **`gltf-generated-fixtures`**, then the long tail.
-
-`rive-fixtures-unit` remains a size decision (~139 MB) rather than a work item.
+1. **`image-codec-fixtures`** — the largest live gap, and mislabelled until now: the shipped
+   `image-fixtures` is PngSuite and nothing else, while `image-codec` claims JPEG, GIF, WebP,
+   AVIF, BMP, TIFF and ICO. Each has a conformance corpus of its own; the licence work is
+   per-codec rather than one negotiation.
+2. **`audio-fixtures`** and **`video-fixtures`** — the codecs the old gate excluded outright.
+   Container-first is the right cut: MP4, WebM, Ogg and MKV structure is what a decode surface
+   meets before any codec bitstream, and container fixtures are small where codec corpora are
+   not.
+3. **`text-rendering-fixtures`** — unicode-org/text-rendering-tests, which carries expected
+   output and would be the fifth oracle-bearing pack here. Now that real fonts are held, the
+   shaping suite has fonts to shape.
+4. **`draco-fixtures`**, **`swf-generated-fixtures`** — narrower, and both are self-contained.
+5. **The candidates not taken below, re-judged.** Several were declined on the old reasoning
+   (alignment with what flight parses) rather than on licence or size, and those declines
+   should be revisited on their own merits.
 
 ## Sizing note
 
@@ -274,15 +356,21 @@ encoding, STL ASCII/binary, BVH with frame counts, and IQM v2.
 
 ### Candidates not taken, and why
 
+Re-read after the decode-surface gate was dropped. Three declines below rest on licence or
+on a corpus not existing, and those still hold — no policy change makes an undeclared
+upstream declared. The two that rested on **alignment** — "we do not do 2D levels", "this
+is manufacturing-oriented" — were the same reasoning the fonts section made, and are
+reopened accordingly: both are small and cleanly licensed, which is the whole test now.
+
 | Format | Domain | Status |
 | --- | --- | --- |
 | **USD / USDZ** | scene graph | The strategic 3D format. `OpenUSD` is 282 MB and NOASSERTION at the repo level; a usable slice needs picking, not a blanket glob. |
 | **COLLADA CTS** | scene graph | Khronos's full conformance suite (176 MB) would deepen Collada well past assimp's 40 files. NOASSERTION — worth resolving. |
 | **Spriter** (`.scml`) | 2D bone | A direct peer of Spine and DragonBones, open XML. No maintained corpus surfaced under an obvious name. |
 | **Live2D Cubism** | 2D bone | Very widely used, but the runtime licence is restrictive and sample models are distributed under a separate agreement. Would need the layered treatment at best. |
-| **Ogmo Editor 3** | tilemap | MIT, small. Worth adding next to LDtk if 2D level support widens. |
+| **Ogmo Editor 3** | tilemap | MIT, small. **Reopened** — was gated on 2D level support widening, which is not a reason to withhold a small MIT corpus. |
 | **MSDF atlas** | text | `msdf-atlas-gen` (MIT) emits a JSON atlas that is becoming the default for GPU text. Aligned with `glyphatlas`. |
-| **3MF** | mesh | `3mf-samples` is BSD-2-Clause and clean; manufacturing-oriented, so alignment is weaker. |
+| **3MF** | mesh | `3mf-samples` is BSD-2-Clause and clean. **Reopened** — "manufacturing-oriented" is an alignment argument, and it is a zip-plus-XML container, which is a decoder shape worth having regardless. |
 | **Box2D RUBE / physics** | physics | No dominant open serialisation exists. Note that Spine and DragonBones both now carry physics constraints, so physics may reach flight through formats it already reads rather than a new one. |
 
 ## A parser named for a format its namesake does not write
