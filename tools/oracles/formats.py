@@ -1350,6 +1350,89 @@ def _gzip(data: bytes):
     return info
 
 
+def _draco(data: bytes):
+    """Draco: a magic, a version, and — the useful part — which encoder produced it.
+
+    Sequential and edgebreaker are genuinely different decoders sharing one container, and
+    a suite that only ever meets the default has tested half the format. The encoder type
+    matters for the same reason: point clouds and triangular meshes take different paths.
+    """
+    if not data.startswith(b"DRACO") or len(data) < 11:
+        return None
+    major, minor, encoder, method = data[5], data[6], data[7], data[8]
+    return FormatInfo(
+        kind="drc", version=f"{major}.{minor}",
+        encoderType={0: "point-cloud", 1: "triangular-mesh"}.get(encoder, str(encoder)),
+        encodingMethod={0: "sequential", 1: "edgebreaker"}.get(method, str(method)),
+    )
+
+
+_PSD_COLOR_MODES = {0: "bitmap", 1: "grayscale", 2: "indexed", 3: "rgb", 4: "cmyk",
+                    7: "multichannel", 8: "duotone", 9: "lab"}
+
+
+def _psd(data: bytes):
+    """Photoshop: '8BPS' and a version that decides the width of everything after it.
+
+    Version 1 is PSD; version 2 is PSB, "large document format", where several 32-bit
+    length fields become 64-bit. A reader written against PSD parses a PSB header
+    successfully — the first 26 bytes are identical in layout — and then walks off the end
+    of every section that follows. So the version is not a label here, it is the parse.
+    """
+    if not data.startswith(b"8BPS") or len(data) < 26:
+        return None
+    version = struct.unpack(">H", data[4:6])[0]
+    if version not in (1, 2):
+        return None
+    channels = struct.unpack(">H", data[12:14])[0]
+    height, width = struct.unpack(">II", data[14:22])
+    depth, mode = struct.unpack(">HH", data[22:26])
+    return FormatInfo(kind="psb" if version == 2 else "psd", version=str(version),
+                      width=width, height=height, channels=channels, bitDepth=depth,
+                      colorMode=_PSD_COLOR_MODES.get(mode, str(mode)))
+
+
+def _aseprite(data: bytes):
+    """Aseprite: a file size, then a magic word four bytes in.
+
+    The colour depth is what a reader branches on — indexed files carry a palette and
+    one byte per pixel, RGBA files carry four and no palette — so it is recorded rather
+    than discovered halfway through the frame data.
+    """
+    if len(data) < 128 or struct.unpack("<H", data[4:6])[0] != 0xA5E0:
+        return None
+    frames, width, height, depth = struct.unpack("<HHHH", data[6:14])
+    return FormatInfo(kind="aseprite", version=None, frames=frames,
+                      width=width, height=height,
+                      colorDepth={32: "rgba", 16: "grayscale", 8: "indexed"}
+                      .get(depth, str(depth)))
+
+
+def _icc(data: bytes):
+    """An ICC colour profile: the signature is 'acsp', 36 bytes in.
+
+    Leading with a size rather than a magic is why this probe checks an interior offset —
+    and why an ICC profile embedded in a PNG chunk or JPEG APP2 segment is easy to miss.
+    """
+    if len(data) < 132 or data[36:40] != b"acsp":
+        return None
+    size = struct.unpack(">I", data[:4])[0]
+    # The version is BCD across two bytes: a whole major in the first, then minor and
+    # bugfix as nibbles of the second. 0x02 0x10 is 2.1, not 0.2 — reading both nibbles
+    # out of the first byte gives a plausible-looking wrong answer for every profile.
+    info = FormatInfo(
+        kind="icc", version=f"{data[8]}.{data[9] >> 4}",
+        deviceClass=data[12:16].decode("latin-1", "replace").strip(),
+        colorSpace=data[16:20].decode("latin-1", "replace").strip(),
+        connectionSpace=data[20:24].decode("latin-1", "replace").strip(),
+    )
+    if size != len(data):
+        # The header's own length disagreeing with the file is worth surfacing: it is how
+        # a profile extracted from an image chunk arrives padded or truncated.
+        info["declaredSize"] = size
+    return info
+
+
 def _astc(data: bytes):
     """ARM ASTC: a magic, the block footprint, then the dimensions as 24-bit integers.
 
@@ -1825,6 +1908,7 @@ def detect(data: bytes, name: str = "") -> FormatInfo | None:
                   _radiance, _openexr, _jxl, _xcf, _ico, _pnm, _tiff,
                   _ebml, _ogg, _flac,
                   _gzip, _zstd, _xz_bzip2_lz4, _zip, _ccz, _pvr, _astc,
+                  _draco, _psd, _aseprite, _icc,
                   _iff, _lws, _directx_x, _ac3d, _cob, _m3d, _vrml, _off, _a3d,
                   _ase_3dsmax,
                   _gltf_json, _spine_json, _lottie,
